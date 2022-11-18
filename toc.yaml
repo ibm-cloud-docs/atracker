@@ -1,0 +1,242 @@
+toc:
+  properties:
+    subcollection: atracker
+    service-name: atracker
+    version: 2
+    category: logging_monitoring
+    audience: service
+    href: /docs/atracker
+    path: atracker
+    label: Activity Tracker Event Routing
+
+  entries:
+  - navgroup:
+      id: learn
+      topics:
+      - getting-started.md
+      - topic: about.md
+        navtitle: Overview
+      - topic: scenarios.md
+        navtitle: Scenarios
+
+      - topicgroup:
+          label:  Configuring the account
+          topics:
+          - topic: overview.md
+            navtitle: Overview
+          - topic: planning.md
+            navtitle: Planning
+          - topic: atracker-resources.md
+            navtitle: Specifications
+
+      - topicgroup:
+          label: IBM Cloud services generating auditing events
+          topics:
+          - topic: cloud_services_atracker.md
+            navtitle: Managed through Activity Tracker Event Routing
+          - topic: cloud_services_other.md
+            navtitle: Managed through Activity Tracker hosted event search
+
+      - topicgroup:
+          label: Events
+          topics:
+          - events/event_types.md
+          - events/event.md
+          - events/events_opt-in.md
+          - events/events_collect.md
+
+      - topic: releasenotes.md
+        navtitle: Release notes
+      - releasenotes_notifications.md
+
+  - navgroup:
+      id: tutorial
+      topics:
+      - topic: tutorials/getting-started-target-cos.md
+        navtitle: Configuring a COS target
+      - topic: tutorials/getting-started-target-logdna.md
+        navtitle: Configuring a logdna target
+      - topic: tutorials/getting-started-target-event-streams.md
+        navtitle: Configuring an Event Streams target
+
+  - navgroup:
+      id: howto
+      topics:
+      - topic: tf/atracker-tf-config.md
+        navtitle: Configuring your account by using terraform
+
+      - topicgroup:
+          label: Enhancing security
+          topics:
+          - core/iam.md
+          - topic: core/architecture-workload-isolation.md
+            navtitle: Architecture and workload isolation
+          - topic: core/service-endpoints.md
+            navtitle: Service endpoints
+          - core/data-security.md
+
+      - topicgroup:
+          label: Generating reports
+          topics:
+          - topic: config_report_v2.md
+            navtitle: Generating a report
+
+      - topicgroup:
+          label: Managing account settings
+          topics:
+          - topic: settings.md
+            navtitle: Configuring account settings
+          - topic: get-config-version.md
+            navtitle: Determining the account configuration version
+          - topic: tutorials/getting-started-mng-endpoints.md
+            navtitle: Enforcing private endpoints
+          - topic: target-default.md
+            navtitle: Configuring default targets
+          - topic: target-locations.md
+            navtitle: Enforcing target locations
+          - topic: target-default-reset.md
+            navtitle: Reseting default targets
+          - topic: target_v2.md
+
+      - topicgroup:
+          label: Managing endpoints
+          topics:
+          - topic: endpoints_manage_v2.md
+            navtitle: Managing endpoints
+
+      - topicgroup:
+          label: Managing keys
+          topics:
+          - retrieve-iam-token.md
+
+      - topicgroup:
+          label: Managing targets
+          topics:
+          - topic: target_v2_cos.md
+            navtitle: Managing a COS target
+          - topic: target_v2_at.md
+            navtitle: Managing a logdna target
+          - topic: target_v2_ies.md
+            navtitle: Managing an Event Streams target
+
+      - topicgroup:
+          label: Managing routes
+          topics:
+          - topic: route_v2.md
+            navtitle: Managing routes
+
+      - topicgroup:
+          label: Observability
+          topics:
+          - topic: observability/at_events.md
+            navtitle: Activity Tracker events
+          - topic: observability/platform_metrics.md
+            navtitle: Platform metrics
+
+  - navgroup:
+      id: reference
+      topics:
+      - topic: limitations.md
+        navtitle: Restrictions and limitations
+      - core/iam_by_role.md
+      - core/regions.md
+      - core/endpoints.md
+      - core/cidr.md
+      - topic: core/shared-responsibilities.md
+        navtitle: Your responsibilities
+      - core/ha-dr.md
+
+      - topicgroup:
+          label: CLI Reference
+          topics:
+          - topic: cli/atracker-cli-config.md
+            navtitle: Configuring the CLI
+          - link:
+              label: Event Routing CLI
+              href: https://{DomainName}/docs/atracker-cli-plugin?topic=atracker-cli-plugin-atracker-v2-cli
+
+      - topicgroup:
+          label: API Reference
+          links:
+            - link:
+                label: Activity Tracker Event Routing API V2
+                href: https://{DomainName}/apidocs/atracker
+
+      - topicgroup:
+          label: Terraform Reference
+          links:
+            - link:
+                label: Settings
+                href: https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/atracker_settings
+            - link:
+                label: Target
+                href: https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/atracker_target
+            - link:
+                label: Route
+                href: https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/atracker_route
+
+      - topicgroup:
+          label: Events
+          topics:
+          - services/at_events_iam.md
+          - services/at_events_acc_mgt.md
+          - services/at_events_rc.md
+          - services/at_event_dashdb.md
+          - services/at_events_cbr.md
+
+      - topicgroup:
+          label: Targets
+          topics:
+          - cos.md
+
+      - topicgroup:
+          label: Deprecated (V1 API)
+          topics:
+          - topic: tutorials/getting-started-routing.md
+            navtitle: Configuring Activity Tracker (V1 API)
+          - topic: target_v1.md
+            navtitle: Managing targets (API V1)
+          - topic: route_v1.md
+            navtitle: Managing routes (API V1)
+          - topic: endpoints_manage.md
+            navtitle: Managing endpoints (API V1)
+          - topic: config_report.md
+            navtitle: Generating a report (API V1)
+          - link:
+              label: Event Routing V1 CLI
+              href: https://{DomainName}/docs/atracker-cli-plugin?topic=atracker-cli-plugin-atracker-v1-cli
+
+      - topicgroup:
+          label: Migrating to V2 the account configuration
+          topics:
+          - topic: migration.md
+            navtitle: Migrating the account configuration from V1 to V2
+          - topic: tf/atracker-tf-migration.md
+            navtitle: Using Terraformn to migrate the account configuration from V1 to V2
+
+  - navgroup:
+        id: help
+        topics:
+        - gettinghelp.md
+        - faq.md
+
+        - topicgroup:
+            label: Troubleshooting
+            topics:
+            - ts/troubleshoot-01.md
+            - ts/troubleshoot-02.md
+            - ts/troubleshoot-03.md
+            - ts/troubleshoot-06.md
+            - ts/troubleshoot-07.md
+            - ts/troubleshoot-08.md
+            - ts/troubleshoot-09.md
+            - ts/troubleshoot-10.md
+            - ts/troubleshoot-11.md
+            - ts/troubleshoot-12.md
+            - ts/troubleshoot-13.md
+            - ts/troubleshoot-14.md
+            - ts/troubleshoot-15.md
+            - ts/troubleshoot-16.md
+            - ts/troubleshoot-17.md
+            - ts/troubleshoot-18.md
+            - ts/troubleshoot-19.md

@@ -1,0 +1,48 @@
+{
+    "title": "IBM Cloud Activity Tracker Event Routing",
+    "lastupdated": "2022-08-10",
+    "introduction": "Use IBM Cloud Activity Tracker Event Routing to configure how to route auditing events, both global and location-based event data, in your {IBM Cloud account. Audit events are critical data for security operations and a key element for meeting compliance requirements. Control of the storage location is critical to building enterprise-grade solutions.",
+    "section_devtools": {
+      "api": "/apidocs/activity-tracker", 
+      "cli": "/docs/atracker?topic=atracker-cli-plugin-activity-tracker-cli", 
+      "terraform": "/docs/atracker?topic=atracker-terraform-setup"
+    },
+    "section_recommended": [  
+      {
+        "title": "Understand IBM Cloud Activity Tracker Event Routing",
+        "description": "Learn how to configure your account to manage auditing events by using IBM Cloud Activity Tracker",
+        "href": "/docs/atracker?topic=atracker-atracker-acc-config"
+      },
+      {
+        "title": "Get started with Activity Tracker Event Routing",
+        "description": "Use the Activity Tracker CLI to configure your account to manage auditing events.",
+        "href": "/docs/atracker?topic=atracker-getting-started"
+      },
+      {
+        "title": "Plan your environment",
+        "description": "Plan how to configure the account to manage auditing events.",
+        "href": "/docs/atracker?topic=atracker-atracker-resources-planning"
+      },
+      {
+        "title": "See what's new",
+        "description": "Read about the latest changes to IBM Cloud Activity Tracker Event Routing. ",
+        "href": "/docs/atracker?topic=atracker-activity-tracker-release-notes"
+      },
+      {
+        "title": "Find out which IBM Cloud services are onboarded",
+        "description": "Learn about the IBM Cloud services that you can monitor in your account and the actions that they report on.",
+        "href": "/docs/atracker?topic=atracker-atracker_cloud_services&interface=cli"
+      },
+      {
+        "title": "Looking for compliance with Financial Services (FS)?",
+        "description": "Learn how you can use Activity Tracker in a Financial Services (FS) validated environment.",
+        "href": "/docs/atracker?topic=atracker-atracker-scenarios&interface=cli#atracker-scenario-1"
+      }
+    ],
+    "section_learn": {
+      "developer": "https://developer.ibm.com/depmodels/cloud/",
+      "architecture": "https://www.ibm.com/cloud/architecture",
+      "training": "https://www.ibm.com/training/cloud",
+      "community": "https://community.ibm.com/community/user/publiccloud/home"
+    }
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="320" height="200" viewBox="0 0 463.81 257.57">
+    <defs>
+        <style>.cls-1{fill:#f4f4f4;}.cls-2{fill:#5a6872;fill-rule:evenodd;}.cls-3{font-family:IBMPlexSans, 'IBM Plex Sans';}.cls-4{font-family:IBMPlexSans-Bold, 'IBM Plex Sans';font-weight:700;}.cls-5{font-size:18px;}</style>
+    </defs>
+    <rect class="cls-1" width="403" height="251" />
+    <g id="checkmark-icon">
+        <polygon id="Path" class="cls-2" points="66.18 32 72.05 38.76 47.34 67.25 33 50.72 38.86 43.96 47.34 53.73 66.18 32" />
+    </g>
+    <text class="cls-5" transform="translate(42.68 106.92)">
+        <tspan class="cls-4">
+            <tspan x="0" y="0">Global events</tspan>
+        </tspan>
+        <tspan class="cls-3">
+            <tspan x="0" y="43.2">Learn how you can use Activity Tracker </tspan>
+        </tspan>
+        <tspan class="cls-3">
+            <tspan x="0" y="64.8">to manage global events in an account</tspan>
+        </tspan>
+        <tspan class="cls-3">
+            <tspan x="0" y="86.4">and route them to a location of your choice.</tspan>
+        </tspan>
+    </text>
+</svg>
