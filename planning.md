@@ -121,7 +121,7 @@ Define the routing rules that indicate how to route events in your account.
 
 Decide if you want to drop the collection of auditing events in 1 or more regions. Check any compliance requirements to confirm that you can.
 
- -To drop the collection of auditing events in 1 or more regions, you can configure a route for those regions with no targets defined.
+- To drop the collection of auditing events in 1 or more regions, you can configure a route for those regions with no targets defined.
 
 For more information, see [Routes](/docs/atracker?topic=atracker-atracker-resources#atracker-resources-routes).
 
