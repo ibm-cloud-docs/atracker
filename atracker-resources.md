@@ -85,7 +85,13 @@ Note the following information about targets:
 
 * Each account can have up to 2 default targets. A default target defines a resource where auditing events that are not explicitly managed in the account's routing rules are sent.
 
-* A target can be either an {{site.data.keyword.cos_full_notm}} (COS) bucket or the {{site.data.keyword.atracker_short}} hosted event search offering.
+* A target can be:
+
+   * An {{site.data.keyword.cos_full_notm}} (COS) bucket
+
+   * The {{site.data.keyword.atracker_short}} hosted event search offering
+
+   * An {{site.data.keyword.messagehub_full}} topic
 
 * All targets can be accessed by any {{site.data.keyword.atracker_short}} API endpoint.
 
