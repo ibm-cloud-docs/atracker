@@ -19,7 +19,7 @@ subcollection: atracker
 In {{site.data.keyword.atracker_full}}, events are collected automatically for most {{site.data.keyword.atracker_short}}-enabled services. However, some services might require an upgrade of the service plan, a configuration setting, or both, for you to be able to collect and route their events.
 {: shortdesc}
 
-To collect and monitor activity in your account by using {{site.data.keyword.atracker_full_short}}, you can choose any of the following methods:
+To collect and monitor activity in your account by using {{site.data.keyword.atracker_short}}, you can choose any of the following methods:
 
 - You can [configure {{site.data.keyword.atracker_short}}](/docs/atracker?topic=atracker-getting-started-routing-2) to manage auditing events in your account while maintaining Financial Services Validated status.
 
