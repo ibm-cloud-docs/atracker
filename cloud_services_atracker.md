@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2022
-lastupdated: "2022-08-08"
+lastupdated: "2022-12-07"
 
 keywords:
 
@@ -139,7 +139,7 @@ The following table lists platform services that send auditing events:
 | [User management](/docs/account?topic=account-iamuserinv) | `user-management` | [Global events](/docs/atracker?topic=atracker-at_events_acc_mgt#at_events_acc_mgt_users) |
 | [Provisioning](/docs/account?topic=account-manage_resource) | `provisioning` | [Global events](/docs/atracker?topic=atracker-at_events_rc#at_events_rc) |
 | [{{site.data.keyword.iamlong}}](/docs/account?topic=account-iamoverview)   | `iam-identity`   \n `iam-groups`   \n `iam-am` | [Global events](/docs/atracker?topic=atracker-at_events_iam) |
-| [{{site.data.keyword.compliance_full}}](/docs/security-compliance?topic=security-compliance-getting-started) | `compliance`  \n `security-advisor` | [Global events](/docs/security-compliance?topic=security-compliance-at_events) |
+| [{{site.data.keyword.compliance_full}}](/docs/security-compliance?topic=security-compliance-getting-started) | `compliance`  \n `security-advisor` | [Location-based events](/docs/security-compliance?topic=security-compliance-at_events) |
 | [Global Search Service](/docs/account?topic=account-tag) | `global-search-tagging` | [Global events](/docs/atracker?topic=atracker-at_events_acc_mgt#at_events_acc_mgt_resources) |
 | [Catalog Management](/docs/account?topic=account-filter-account) | `globalcatalog-collection` | [Global events](/docs/atracker?topic=atracker-at_events_acc_mgt#at_events_catalog_management) |
 | [Software instances](/docs/account?topic=account-sw-instance-details) | `globalcatalog-instance` | [Global events](/docs/atracker?topic=atracker-at_events_acc_mgt#at_events_sw_instance) |
