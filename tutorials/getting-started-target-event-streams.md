@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2022
+  years: 2022, 2023
 lastupdated: "2022-11-16"
 
 keywords:
@@ -161,7 +161,7 @@ You must define 2 policies, 1 for the resource type `topic`, and 1 for the resou
     2. Select the service ID.
 
     3. In the **Access policies** section, select **Assign access**.
-    
+
     4. Add a policy for the {{site.data.keyword.messagehub}} service, resource type **cluster** with **reader** permissions.
 
         ![Edit Policy](../images/es-credentials-4.png "Configure resource type")

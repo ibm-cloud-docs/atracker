@@ -1,17 +1,17 @@
 ---
 
 copyright:
-  years: 2019, 2022
+  years: 2019, 2023
 lastupdated: "2022-05-23"
 
-keywords: 
+keywords:
 
 subcollection: atracker
 
 ---
 
 {{site.data.keyword.attribute-definition-list}}
- 
+
 
 # Restrictions and limitations
 {: #limitations}
@@ -30,8 +30,4 @@ Learn about restrictions and limitations using the {{site.data.keyword.atracker_
     - {{site.data.keyword.dev_cli_notm}}
 
 
-- To collect {{site.data.keyword.cos_full}} auditing events by configuring {{site.data.keyword.atracker_short}}, you must enable collection of data events. To enable data events through the UI, you need to select or provision an instance of {{site.data.keyword.atracker_short}} hosted event search. If you use the API, you must define the CRN of an {{site.data.keyword.atracker_short}} hosted event search instance. 
-
-
-
-
+- To collect {{site.data.keyword.cos_full}} auditing events by configuring {{site.data.keyword.atracker_short}}, you must enable collection of data events. To enable data events through the UI, you need to select or provision an instance of {{site.data.keyword.atracker_short}} hosted event search. If you use the API, you must define the CRN of an {{site.data.keyword.atracker_short}} hosted event search instance.

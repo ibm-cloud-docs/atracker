@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2022
+  years: 2022, 2023
 lastupdated: "2022-05-24"
 
-keywords: 
+keywords:
 
 subcollection: atracker
 
@@ -13,7 +13,7 @@ subcollection: atracker
 {{site.data.keyword.attribute-definition-list}}
 
 
-# Managing routes using the V2 API 
+# Managing routes using the V2 API
 {: #route_v2}
 
 You can manage routes in your account by using the {{site.data.keyword.atracker_full}} CLI, {{site.data.keyword.atracker_short}} REST API, and Terraform scripts. A route defines the rules that indicate what auditing events are routed in a region and where to route them.
@@ -88,7 +88,7 @@ To include global events in a route, specify `global` in the list of `locations`
 
 You must grant users IAM permissions to manage routes. For more information, see [Assign access to resources](/docs/account?topic=account-assign-access-resources).
 
-When you define a policy, you can must set the scope of the policy to the account. A route is a global resource that is not bound to a specific region.  
+When you define a policy, you can must set the scope of the policy to the account. A route is a global resource that is not bound to a specific region.
 {: note}
 
 
@@ -611,4 +611,3 @@ See the following table for some HTTP response codes:
 | `429` |	Too Many Requests |	Too many requests hit the API too quickly. |
 | `500` |	Internal Server Error |	Something went wrong in {{site.data.keyword.atracker_short}} processing. |
 {: caption="Table 2. List of HTTP response codes" caption-side="top"}
-

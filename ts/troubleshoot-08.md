@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2019, 2022
+  years: 2019, 2023
 lastupdated: "2022-05-13"
 
-keywords: 
+keywords:
 
 subcollection: atracker
 
@@ -32,5 +32,3 @@ You have more than one target defined with the same name and {{site.data.keyword
 
 To work with a target, use the target ID instead of the target name when you have multiple targets defined with the same name.
 {: tsResolve}
-
-

@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2019, 2022
+  years: 2019, 2023
 lastupdated: "2022-08-08"
 
-keywords: 
+keywords:
 
 subcollection: atracker
 
@@ -17,7 +17,7 @@ subcollection: atracker
 # Event fields
 {: #event}
 
-{{site.data.keyword.at_full_notm}} events are based on the Cloud Auditing Data Federation (CADF) standard. 
+{{site.data.keyword.at_full_notm}} events are based on the Cloud Auditing Data Federation (CADF) standard.
 {: shortdesc}
 
 The CADF standard defines a full event model that includes the information that is needed to certify, manage, and audit security of applications in cloud environments.
@@ -31,7 +31,7 @@ The CADF event model includes the following components:
 | `Observer` | The observer is the resource that creates and stores a CADF record from information available in a CADF event. |
 | `Outcome`  | The outcome is the status of the action against the target. |
 | `Target`   | The target is the resource against which the action is performed, attempted to perform, or is pending to complete. |
-{: caption="Table 1. Components that are available in a CADF event model" caption-side="top"} 
+{: caption="Table 1. Components that are available in a CADF event model" caption-side="top"}
 
 
 The following fields are included in each Activity Tracker event:
@@ -40,7 +40,7 @@ The following fields are included in each Activity Tracker event:
 ## action (string)
 {: #action_field}
 
-This field indicates the action that triggers an event. 
+This field indicates the action that triggers an event.
 
 The format of this field is the following:
 
@@ -49,15 +49,15 @@ serviceName.objectType.action
 ```
 {: codeblock}
 
-Where 
+Where
 
 * `servicename` is the name of the service.
 
     There is an exception on the `servicename` that is set for actions reported by the VPC infrastructure. The format of the `servicename` is composed of 2 parts that are separated by a dot (`.`).
 
-* `objectType` describes the resource or resource attribute on which the action is requested. 
+* `objectType` describes the resource or resource attribute on which the action is requested.
 
-* `action` defines the task requested by the initiator.  
+* `action` defines the task requested by the initiator.
 
     Some valid actions are: `activate`, `add`, `bulkdelete`, `create`, `read`, `update`,`delete`, `backup`, `build`, `capture`, `clear`, `commit`, `configure`, `deploy`, `disable`, `enable`, `get`, `import`, `inspect`, `list`, `monitor`, `pull`, `push`, `restore`, `start`, `stop`, `undeploy`, `receive`, `reimport`, `remove`, `send`, `set`, `setkeyfordeletion`, `set-on`, `set-off`, `authenticate`, `renew`, `revoke`, `allow`, `deny`, `evaluate`, `notify`, `reset`, `rotate`, `ack-delete`, `ack-restore`, `ack-disable`, `ack-enable`, `ack-rotate`, `edit`, `publish`, `authorize`, `write`, `pause`, `resume`, `unsetkeyfordeletion`, `failover`, `split`
 
@@ -82,20 +82,20 @@ This field specifies the type of event, whether it is a management event or a da
 ## eventTime (string)
 {: #eventTime_field}
 
-This field indicates the timestamp when the event was created. 
+This field indicates the timestamp when the event was created.
 
 The timestamp that you see for an event in the UI is set from eventTime and indicates the time when the event was created.
 {: note}
-  
-The date is represented as Universal Time Coordinated (UTC). 
 
-The format of this field is: 
+The date is represented as Universal Time Coordinated (UTC).
+
+The format of this field is:
 
 ```text
 YYYY-MM-DDTHH:mm:ss.SS+0000
 ```
 {: codeblock}
-   
+
 For example, a sample eventTime is `2017-10-19T19:07:50.32+0000`.
 
 
@@ -103,13 +103,13 @@ For example, a sample eventTime is `2017-10-19T19:07:50.32+0000`.
 ## Initiator fields
 {: #initiator}
 
-Initiator fields provide information about the user, service, or application that request to run an action in your account. 
+Initiator fields provide information about the user, service, or application that request to run an action in your account.
 
 
 ### initiator.id (string)
 {: #initiator.id}
 
-This field provides information about the ID of the initiator that requests the action. 
+This field provides information about the ID of the initiator that requests the action.
 
 You can find any of the following initiators:
 * `IBM ID` for users that use an IAM token to trigger an action in your account.
@@ -122,10 +122,10 @@ You can find any of the following initiators:
 
 ### initiator.name (string)
 {: #initiator.name}
- 
+
 This field provides information about the username of the initiator of the action.
 
-This is the human readable name that corresponds to the `initiator.id` value. 
+This is the human readable name that corresponds to the `initiator.id` value.
 
 When the initiator is an {{site.data.keyword.cloud_notm}} service, the field is set to `IBM` or the name of the service.
 
@@ -145,7 +145,7 @@ Username of the user that logs in to {{site.data.keyword.cloud_notm}}.
 
 This field defines the type of the source of the event.
 
-Valid values are: 
+Valid values are:
 - `service/security/account/user`
 - `service/security/account/serviceid`,
 - `service/security/client/certificateid`
@@ -158,7 +158,7 @@ Valid values are:
 
 This field defines the type of credential that is used by the initiator to run the action.
 
-Valid values are: 
+Valid values are:
 - `token`
 - `user`
 - `apikey`
@@ -175,7 +175,7 @@ Valid values are:
 ### initiator.host.address (string)
 {: #initiator.host.address}
 
-This field provides information about the address where the request came from. 
+This field provides information about the address where the request came from.
 
 The format of this field is:
 
@@ -194,7 +194,7 @@ When the initiator of an action is an {{site.data.keyword.cloud_notm}} service, 
 
 This field provides information about the type of IP address where the request came from.
 
-Valid values are: 
+Valid values are:
 - `IPv4`
 - `IPv6`
 - `CSE`
@@ -219,16 +219,16 @@ This field defines the Cloud Resoiurce Name (CRN) of the resource on which the a
 ## message (string)
 {: #message}
 
-This field is set to the human-readable description of the event. 
+This field is set to the human-readable description of the event.
 
-The format of this field is: 
+The format of this field is:
 
 ```text
 serviceName: {event description} [outcome]
 ```
 {: codeblock}
 
-Where 
+Where
 
 * `servicename` indicates the name of the service.
 * `{event description}` provides a human-readable version of the what the event is reporting.
@@ -246,7 +246,7 @@ This field is set to the fixed value **ActivityTracker**.
 ## outcome (string)
 {: #outcome}
 
-This field indicates the result of the action. 
+This field indicates the result of the action.
 
 Valid values are: `success`, `pending`, or `failure`.
 
@@ -254,7 +254,7 @@ Valid values are: `success`, `pending`, or `failure`.
 ## Reason fields
 {: #reason}
 
-Reason fields provide information about the outcome of the request. 
+Reason fields provide information about the outcome of the request.
 
 
 ### reason.reasonCode (numeric)
@@ -269,7 +269,7 @@ For example the `reason.reasonCode` field is set to:
 ### reason.reasonType (string)
 {: #reason.reasonType}
 
-This field provides additional information about the result of the action requested. 
+This field provides additional information about the result of the action requested.
 
 ### reason.reasonForFailure (string)
 {: #reason.reasonForFailure}
@@ -280,15 +280,15 @@ This field provides additional information as to why the action has failed.
 ## requestData (JSON)
 {: #requestData}
 
-When the field is available, it includes additional information about the request.  
+When the field is available, it includes additional information about the request.
 
 The information that is included in requestData is specific for each type of action. Check the [API documentation](/docs?tab=api-docs&) of a request to learn about some of the fields that may be included.
 
 
 ## responseData (JSON)
 {: #responseData}
- 
-When the field is available, it includes additional information about the request. 
+
+When the field is available, it includes additional information about the request.
 
 The information that is included in responseData is specific for each type of action. Check the [API documentation](/docs?tab=api-docs&) of a request to learn about some of the fields that may be included.
 
@@ -312,8 +312,8 @@ The following table describes how this field is set based on the type of action:
 
 | Value      | Type of action | Sample of action |
 |------------|----------------|------------------|
-| `normal`   | Routine actions in the {{site.data.keyword.cloud_notm}} | Start an instance | 
-| `warning`  | Actions that fail   \n Actions where a resource is updated or its metadata is modified | Rename a service instance | 
+| `normal`   | Routine actions in the {{site.data.keyword.cloud_notm}} | Start an instance |
+| `warning`  | Actions that fail   \n Actions where a resource is updated or its metadata is modified | Rename a service instance |
 | `critical` | Actions that affect security in the {{site.data.keyword.cloud_notm}} such as changing credentials of a user or deleting data   \n Actions where the initiator is not authorized to work with an {{site.data.keyword.cloud_notm}} resource | Delete a security key |
 {: caption="Table 3. Severity values by type of action" caption-side="top"}
 
@@ -338,7 +338,7 @@ When the reasonCode for an API call is any of the following values, the value of
 ## Target fields
 {: #target}
 
-Target fields provide information about the resource that is accessed, created, updated, or deleted by the initiator's action in your account. 
+Target fields provide information about the resource that is accessed, created, updated, or deleted by the initiator's action in your account.
 
 
 The following table lists common target fields that are available for each event:
@@ -348,15 +348,15 @@ The following table lists common target fields that are available for each event
 | `target.id` `[1]` | Cloud Resource Name (CRN) of the resource on which the action is executed. | For example, `crn:v1:bluemix:public:cloud-object-storage:global:a/12345678e6232019c6567c9123456789:fr56et47-befb-440a-a223c-12345678dae1:bucket:bucket1` |
 | `target.name` | Human-readable name of the resource on which the action is executed. |  |
 | `target.typeURI` | Type of the cloud resource on which the action is executed. | For example, `iam-am/policy` or `cloud-object-storage/bucket/acl` |
-| `target.host.address` | IP Address or URL of the target service |  | 
-{: caption="Table 5. Common target fields" caption-side="top"} 
+| `target.host.address` | IP Address or URL of the target service |  |
+{: caption="Table 5. Common target fields" caption-side="top"}
 
-`[1]` For events that are generated by Cloud Foundry, the `target.id` is set to the GUID of the resource. 
+`[1]` For events that are generated by Cloud Foundry, the `target.id` is set to the GUID of the resource.
 
 ### target.id (string)
 {: #target.id}
 
-This field indicates the {{site.data.keyword.cloud_notm}} resource on which the action is executed. 
+This field indicates the {{site.data.keyword.cloud_notm}} resource on which the action is executed.
 
 The format of this field is a **CRN**. For more information, see [CRN format](/docs/account?topic=account-crn).
 
@@ -367,7 +367,7 @@ The format of this field is a **CRN**. For more information, see [CRN format](/d
 
 This field indicates the human readable name of the {{site.data.keyword.cloud_notm}} resource on which the action is executed.
 
-Make sure that the name of resources does not include sensitive or PII data. 
+Make sure that the name of resources does not include sensitive or PII data.
 
 ### target.alias (string)
 {: #target.alias}
@@ -379,9 +379,9 @@ This field is optional.
 ### target.typeURI (string)
 {: #target.typeURI}
 
-This field indicates the type of the target of the event. 
+This field indicates the type of the target of the event.
 
-The format of this field is: 
+The format of this field is:
 
 ```text
 serviceName/objectType/attribute
@@ -392,7 +392,7 @@ Where
 
 * `servicename` is the name of the service.
 * `objectType` is the resource on which the action is run.
- 
+
 For example:
 
 | action                                            | target.typeURI                                  |
@@ -437,8 +437,3 @@ The following table outlines common labels and line identifiers that you can fin
 | `Line identifier`  | `Env`              | Environment: `production`                            | `env`            |
 | `Line identifier`  | `App`              | CRN of the service instance in your account          | `app`            |
 {: caption="Table 7. labels and line identifiers" caption-side="top"}
-
-
-
-
-

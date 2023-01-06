@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2019, 2022
+  years: 2019, 2023
 lastupdated: "2022-05-24"
 
-keywords: 
+keywords:
 
 subcollection: atracker
 
@@ -16,7 +16,7 @@ subcollection: atracker
 # Managing targets by using the V1 API
 {: #target}
 
-You can manage targets in your account by using the {{site.data.keyword.atracker_full}} CLI or the {{site.data.keyword.atracker_full_notm}} REST API. A target is a resource where you can collect auditing events. 
+You can manage targets in your account by using the {{site.data.keyword.atracker_full}} CLI or the {{site.data.keyword.atracker_full_notm}} REST API. A target is a resource where you can collect auditing events.
 {: shortdesc}
 
 
@@ -26,9 +26,9 @@ The V1 API is deprecated. See [managing {{site.data.keyword.atracker_full_notm}}
 The version of the API running in your account can be determined by running the [`ibmcloud atracker init version` command.](/docs/atracker?topic=atracker-v2api)
 {: note}
 
-You can define up to 16 targets in each region. 
+You can define up to 16 targets in each region.
 
-You must define a {{site.data.keyword.cos_full_notm}} (COS) target for each region. While you can use the same COS bucket for collecting auditing events in your account across multiple regions, you should consider defining a bucket in each region to improve performance and reduce network latency. 
+You must define a {{site.data.keyword.cos_full_notm}} (COS) target for each region. While you can use the same COS bucket for collecting auditing events in your account across multiple regions, you should consider defining a bucket in each region to improve performance and reduce network latency.
 {: important}
 
 The following table outlines valid target types:
@@ -74,7 +74,7 @@ Use this command to create an {{site.data.keyword.atracker_full_notm}} service t
 ```
 {: pre}
 
-### Command options 
+### Command options
 {: #target-create-options}
 
 `--region <REGION>` | `-r <REGION>`
@@ -94,9 +94,9 @@ Use this command to create an {{site.data.keyword.atracker_full_notm}} service t
 
     ```json
     {
-      "endpoint": "aaaaa", 
+      "endpoint": "aaaaa",
       "target_crn": "yyyyy",
-      "bucket": "zzzzzz", 
+      "bucket": "zzzzzz",
       "api_key": "xxxxxx"
     }
     ```
@@ -119,7 +119,7 @@ Use this command to create an {{site.data.keyword.atracker_full_notm}} service t
 
 `help` | `--help` | `-h`
 :   List options available for the command.
-  
+
 ### Example
 {: #target-create-example}
 
@@ -155,7 +155,7 @@ ibmcloud atracker target update --target <TARGET> [--name <TARGET_NAME>] [ --fil
 ```
 {: pre}
 
-### Command options 
+### Command options
 {: #target-update-options}
 
 `--target <TARGET>`
@@ -175,9 +175,9 @@ ibmcloud atracker target update --target <TARGET> [--name <TARGET_NAME>] [ --fil
 
     ```json
     {
-      "endpoint": "aaaaa", 
+      "endpoint": "aaaaa",
       "target_crn": "yyyyy",
-      "bucket": "zzzzzz", 
+      "bucket": "zzzzzz",
       "api_key": "xxxxxx"
     }
     ```
@@ -200,7 +200,7 @@ ibmcloud atracker target update --target <TARGET> [--name <TARGET_NAME>] [ --fil
 
 `help` | `--help` | `-h`
 :   List options available for the command.
-  
+
 ### Example
 {: #target-update-example}
 
@@ -226,14 +226,14 @@ Updated:            2021-07-21T17:49:56.452Z
 {: #target-delete-cli}
 {: cli}
 
-Use this command to delete a target for an {{site.data.keyword.atracker_full_notm}} region. 
+Use this command to delete a target for an {{site.data.keyword.atracker_full_notm}} region.
 
 ```sh
 ibmcloud atracker target rm --target <TARGET> [--region <REGION>] [--force]
 ```
 {: pre}
 
-### Command options 
+### Command options
 {: #target-rm-options}
 
 `--target <TARGET>`
@@ -247,7 +247,7 @@ ibmcloud atracker target rm --target <TARGET> [--region <REGION>] [--force]
 
 `help` | `--help` | `-h`
 :   List options available for the command.
-  
+
 ### Example
 {: #target-rm-example}
 
@@ -275,14 +275,14 @@ Something went wrong. Error: Delete "https://us-east.atracker.cloud.ibm.com/api/
 {: #target-validate-cli}
 {: cli}
 
-Use this command to validate that a target is correctly configured for an {{site.data.keyword.atracker_full_notm}} region. 
+Use this command to validate that a target is correctly configured for an {{site.data.keyword.atracker_full_notm}} region.
 
 ```sh
 ibmcloud atracker target validate --target <TARGET> [--region <REGION>] [--output JSON]
 ```
 {: pre}
 
-### Command options 
+### Command options
 {: #target-validate-options}
 
 `--target <TARGET>`
@@ -296,7 +296,7 @@ ibmcloud atracker target validate --target <TARGET> [--region <REGION>] [--outpu
 
 `help` | `--help` | `-h`
 :   List options available for the command.
-  
+
 ### Example
 {: #target-validate-example}
 
@@ -325,14 +325,14 @@ Updated:            2021-07-21T17:49:56.452Z
 {: #target-get-cli}
 {: cli}
 
-Use this command to get information about a target for an {{site.data.keyword.atracker_full_notm}} region. 
+Use this command to get information about a target for an {{site.data.keyword.atracker_full_notm}} region.
 
 ```sh
 ibmcloud atracker target get --target <TARGET> [--region <REGION>] [--output JSON]
 ```
 {: pre}
 
-### Command options 
+### Command options
 {: #target-get-options}
 
 `--target <TARGET>`
@@ -346,7 +346,7 @@ ibmcloud atracker target get --target <TARGET> [--region <REGION>] [--output JSO
 
 `help` | `--help` | `-h`
 :   List options available for the command.
-  
+
 ### Example
 {: #target-get-example}
 
@@ -379,7 +379,7 @@ ibmcloud atracker target ls [--region <REGION>] [--output JSON]
 ```
 {: pre}
 
-### Command options 
+### Command options
 {: #target-options}
 
 `--region <REGION>` | `-r <REGION>`
@@ -390,7 +390,7 @@ ibmcloud atracker target ls [--region <REGION>] [--output JSON]
 
 `help` | `--help` | `-h`
 :   List options available for the command.
-  
+
 ### Example
 {: #target-example}
 
@@ -411,7 +411,7 @@ target-02-backup           xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx   us-south   clo
 
 The following table lists the actions that you can run to manage targets:
 
-| Action                     | REST API Method  | API_URL                                          | 
+| Action                     | REST API Method  | API_URL                                          |
 |----------------------------|------------------|--------------------------------------------------|
 | Create a target            | `POST`           | `<ENDPOINT>/api/v1/targets`              |
 | Update a target            | `PUT`            | `<ENDPOINT>/api/v1/targets/<TARGET_ID>`  |
@@ -469,8 +469,8 @@ Where
 
 - `TARGET_TYPE` is the type of the target. The only valid type is `cloud-object-storage`.
 - `cos_endpoint` includes information about the target. For more information on how to get the bucket details, see [Getting the bucket configuration details](/docs/atracker?topic=atracker-cos#cos_bucket_details).
-    
-    `endpoint` indicates the {{site.data.keyword.atracker_full_notm}} endpoint where to look for this bucket. Use the private endpoint. 
+
+    `endpoint` indicates the {{site.data.keyword.atracker_full_notm}} endpoint where to look for this bucket. Use the private endpoint.
 
     `target_crn` indicates the [CRN](/docs/account?topic=account-crn) of the COS instance where you provisioned the bucket.
 
@@ -496,7 +496,7 @@ curl -X POST   https://private.us-south.atracker.cloud.ibm.com/api/v1/targets   
 {: screen}
 
 In the response, you get information about the target such as the `id`, that indicates the GUID of the target, and the `crn`, that indicates the CRN of the target.
- 
+
 
 
 
@@ -504,7 +504,7 @@ In the response, you get information about the target such as the `id`, that ind
 {: #target-update-api}
 {: api}
 
-When you update a target, you must include the target information in the data section of the request. 
+When you update a target, you must include the target information in the data section of the request.
 - You must pass all fields.
 - Update the fields that need changing.
 
@@ -524,18 +524,18 @@ curl -X PUT  <ENDPOINT>/api/v1/targets/<target_ID>   -H "Authorization:  $ACCESS
 ```
 {: codeblock}
 
-Where 
+Where
 
 - `<target_ID>` is the ID of the target.
 - `TARGET_NAME` is the name of the target. The maximum length of the name is 256 characters.
 
     Do not include any personal identifying information (PII) in any resource names.
     {: important}
-    
+
 - `TARGET_TYPE` is the type of the target. The only valid type is `cloud-object-storage`.
 - `cos_endpoint` includes information about the target. For more information on how to get the bucket details, see [Getting the bucket configuration details](/docs/atracker?topic=atracker-cos#cos_bucket_details).
-    
-    `endpoint` indicates the {{site.data.keyword.atracker_full_notm}} endpoint where to look for this bucket. Use the private endpoint. 
+
+    `endpoint` indicates the {{site.data.keyword.atracker_full_notm}} endpoint where to look for this bucket. Use the private endpoint.
 
     `target_crn` indicates the [CRN](/docs/account?topic=account-crn) of the COS instance where you provisioned the bucket.
 
@@ -581,10 +581,10 @@ Where
 {: #target-validate-api}
 {: api}
 
-You can use the following cURL command to validate a target by checking the credentials to write to the bucket. 
+You can use the following cURL command to validate a target by checking the credentials to write to the bucket.
 
 ```shell
-curl -X POST  <ENDPOINT>/api/v1/targets/<target_ID>/validate   -H "Authorization:  $ACCESS_TOKEN"   -H "content-type: application/json" 
+curl -X POST  <ENDPOINT>/api/v1/targets/<target_ID>/validate   -H "Authorization:  $ACCESS_TOKEN"   -H "content-type: application/json"
 ```
 {: codeblock}
 
@@ -596,7 +596,7 @@ Where
 For example, you can use the following cURL request to validate a target in US-South:
 
 ```shell
-curl -X POST   https://private.us-south.atracker.cloud.ibm.com/api/v1/targets/<TARGETID>/validate   -H "Authorization:  $ACCESS_TOKEN"   -H "content-type: application/json" 
+curl -X POST   https://private.us-south.atracker.cloud.ibm.com/api/v1/targets/<TARGETID>/validate   -H "Authorization:  $ACCESS_TOKEN"   -H "content-type: application/json"
 ```
 {: screen}
 
@@ -608,7 +608,7 @@ In the response, you get information in the section `cos_write_status`, for exam
   },
 ```
 {: screen}
- 
+
 
 ## Viewing a target using the API
 {: #target-view-api}
@@ -664,9 +664,9 @@ curl -X GET   https://private.us-south.atracker.cloud.ibm.com/api/v1/targets    
 {: #target-rc-api}
 {: api}
 
-When you use the {{site.data.keyword.atracker_full_notm}} REST API, you can get standard HTTP response codes to indicate whether a method completed successfully. 
+When you use the {{site.data.keyword.atracker_full_notm}} REST API, you can get standard HTTP response codes to indicate whether a method completed successfully.
 
-- A 200 response always indicates success. 
+- A 200 response always indicates success.
 - A 4xx response indicates a failure.
 - A 5xx response usually indicates an internal system error.
 
@@ -683,9 +683,3 @@ See the following table for some HTTP response codes:
 | `429` |	Too Many Requests |	Too many requests hit the API too quickly. |
 | `500` |	Internal Server Error |	Something went wrong in {{site.data.keyword.atracker_full_notm}} processing. |
 {: caption="Table 3. List of HTTP response codes" caption-side="top"}
-
-
-
-
-
-

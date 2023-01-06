@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2019, 2022
+  years: 2019, 2023
 lastupdated: "2022-05-13"
 
-keywords: 
+keywords:
 
 subcollection: atracker
 
@@ -32,5 +32,3 @@ You will receive this error if you try to create an {{site.data.keyword.cos_full
 
 Resolve the quota or authorization issues with your {{site.data.keyword.cos_full_notm}} bucket and retry the request.
 {: tsResolve}
-
-

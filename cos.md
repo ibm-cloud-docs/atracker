@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2019, 2022
+  years: 2019, 2023
 lastupdated: "2021-08-09"
 
-keywords: 
+keywords:
 
 subcollection: atracker
 
@@ -17,7 +17,7 @@ subcollection: atracker
 {: #cos}
 
 
-Buckets are a way to organize your data in an {{site.data.keyword.cos_full_notm}} instance. 
+Buckets are a way to organize your data in an {{site.data.keyword.cos_full_notm}} instance.
 {: shortdesc}
 
 
@@ -60,16 +60,16 @@ Complete the following steps to create a bucket through the {{site.data.keyword.
 
 4. Enter a bucket name for the *Unique bucket name* field.
 
-    **Note:** All buckets in all regions across the globe share a single namespace. 
+    **Note:** All buckets in all regions across the globe share a single namespace.
 
 5. Choose the type of resiliency and a location where you would like your data to be physically stored.
 
-    Resiliency refers to the scope and scale of the geographic area across which your data is distributed. 
-    
+    Resiliency refers to the scope and scale of the geographic area across which your data is distributed.
+
     Cross Region resiliency will spread your data across several metropolitan areas.
-    
-    Regional resiliency will spread data across a single metropolitan area. 
-    
+
+    Regional resiliency will spread data across a single metropolitan area.
+
     A Single Data Center will only distribute data across devices within a single site.
 
     For more information, see [Select regions and endpoints](/docs/services/cloud-object-storage?topic=cloud-object-storage-endpoints).
@@ -111,7 +111,7 @@ Complete the following steps to get the bucket configuration details through the
 ## Generating an API key to access a bucket
 {: #cos_bucket_access}
 
-When Activity Tracking collects auditing events in your account, it uses an API key to upload data into a bucket. Therefore, you must define credentials in your account to work with the {{site.data.keyword.cos_full_notm}} service. 
+When Activity Tracking collects auditing events in your account, it uses an API key to upload data into a bucket. Therefore, you must define credentials in your account to work with the {{site.data.keyword.cos_full_notm}} service.
 
 To configure a region in your account to collect auditing events and store them in a bucket, you need a service credential with permissions to upload objects into the bucket.
 
@@ -125,10 +125,10 @@ For more information on how to grant access to a service ID, see [Granting acces
 You can use the {{site.data.keyword.at_full_notm}} service to track how users and applications interact with {{site.data.keyword.cos_full_notm}} (COS). For more information about the auditing events that are generated for a bucket and its objects, see [Activity Tracker events](/docs/cloud-object-storage?topic=cloud-object-storage-at-events).
 
 To collect auditing events for a bucket, consider the following information:
-* Collection of auditing events in your account is optional. 
-* You must configure each bucket to enable management events, or management and data events. Notice that you cannot enable data events only for a bucket. 
+* Collection of auditing events in your account is optional.
+* You must configure each bucket to enable management events, or management and data events. Notice that you cannot enable data events only for a bucket.
 * To monitor management events, you must configure a bucket and specify the Activity Tracker instance where those events will be collected and forwarded.
-* To monitor data events, you must select the option **Track data events**. Then, select **read**, **write**, or **read & write** to collect events when an object is uploaded or downloaded from a bucket. 
+* To monitor data events, you must select the option **Track data events**. Then, select **read**, **write**, or **read & write** to collect events when an object is uploaded or downloaded from a bucket.
 
 Enable collection of auditing events after you have configured Activity Tracking in the region where the bucket is located.
 {: important}
@@ -151,7 +151,7 @@ Complete the following steps to list the objects in a bucket through the {{site.
 
 2. Select the {{site.data.keyword.cos_full_notm}} instance where the bucket is available.
 
-3. Select **Buckets**. 
+3. Select **Buckets**.
 
 4. Select a bucket. The list of objects is displayed.
 
@@ -167,10 +167,10 @@ Every user or service ID that accesses the {{site.data.keyword.cos_short}} servi
 To define a policy, first you must set the scope. You can define a policy to grant access in any of the following contexts:
 * Across all instances of the service in your account
 * For an individual service instance in your account
-* For a specific bucket within an instance 
+* For a specific bucket within an instance
 * For all IAM-enabled services in your account
 
-After you define the scope of the access policy, you must assign a role. 
+After you define the scope of the access policy, you must assign a role.
 - For more information about what actions are allowed per role within the {{site.data.keyword.cos_short}} service, see [COS Identity and Access Management roles](/docs/cloud-object-storage?topic=cloud-object-storage-iam#iam-roles).
 - For more information about bucket permissions per role, see [Bucket permissions](/docs/cloud-object-storage?topic=cloud-object-storage-iam-bucket-permissions).
 - For information about assigning roles, see [Managing IAM access](/docs/account?topic=account-assign-access-resources).
@@ -205,8 +205,3 @@ ibmcloud cos bucket-head --bucket BUCKET_NAME
 {: codeblock}
 
 Where `BUCKET_NAME` is the name of the bucket.
-
-
-
-
-

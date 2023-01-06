@@ -1,37 +1,37 @@
 ---
 
 copyright:
-  years: 2019, 2022
+  years: 2019, 2023
 lastupdated: "2022-05-16"
 
-keywords: 
+keywords:
 
 subcollection: atracker
 
 content-type: tutorial
 services: activity-tracker
-account-plan: lite 
-completion-time: 1h 
+account-plan: lite
+completion-time: 1h
 
 ---
 
 {{site.data.keyword.attribute-definition-list}}
- 
+
 
 # Enforcing private endpoints to configure {{site.data.keyword.atracker_short}} resources
 {: #getting-started-mng-endpoints}
 {: toc-content-type="tutorial"}
-{: toc-services="activity-tracker"} 
-{: toc-completion-time="1h"} 
+{: toc-services="activity-tracker"}
+{: toc-completion-time="1h"}
 
 Use this tutorial to learn how to enforce the use of private endpoints to configure {{site.data.keyword.atracker_short}} resources in your account.
 {: shortdesc}
 
-You can use the {{site.data.keyword.atracker_short}} CLI or the {{site.data.keyword.atracker_short}} REST API to define the type of endpoints that are allowed to configure {{site.data.keyword.atracker_short}} resources in the account. 
+You can use the {{site.data.keyword.atracker_short}} CLI or the {{site.data.keyword.atracker_short}} REST API to define the type of endpoints that are allowed to configure {{site.data.keyword.atracker_short}} resources in the account.
 
 
-[![Step 1. Check that your account is VRF enabled.](../images/endpoint_s1.svg)](#getting-started-mng-endpoints-step1) 
-[![Step 2. Disable public endpoints.](../images/endpoint_s2.svg)](#getting-started-mng-endpoints-step2) 
+[![Step 1. Check that your account is VRF enabled.](../images/endpoint_s1.svg)](#getting-started-mng-endpoints-step1)
+[![Step 2. Disable public endpoints.](../images/endpoint_s2.svg)](#getting-started-mng-endpoints-step2)
 [![Step 3. Check you have access to private endpoints.](../images/endpoint_s3.svg)](#getting-started-mng-endpoints-step3)
 
 
@@ -123,7 +123,3 @@ For example, you can run the following command to check access to the Dallas reg
 ping private.us-south.atracker.cloud.ibm.com
 ```
 {: screen}
-
-
-
-

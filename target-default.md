@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2019, 2022
+  years: 2019, 2023
 lastupdated: "2022-08-12"
 
-keywords: 
+keywords:
 
 subcollection: atracker
 
@@ -16,7 +16,7 @@ subcollection: atracker
 # Enforcing default targets
 {: #target-default}
 
-You can configure 1 or more default targets for events that are not explicitly managed in the {{site.data.keyword.atracker_short}} account's routing rules. 
+You can configure 1 or more default targets for events that are not explicitly managed in the {{site.data.keyword.atracker_short}} account's routing rules.
 {: shortdesc}
 
 
@@ -27,7 +27,7 @@ You can configure 1 or more default targets for events that are not explicitly m
 
 2. [Install the {{site.data.keyword.atracker_full_notm}} CLI](/docs/atracker?topic=atracker-atracker-cli-config).
 
-3. Check that you have IAM permissions to read and update the {{site.data.keyword.atracker_short}} account settings. 
+3. Check that you have IAM permissions to read and update the {{site.data.keyword.atracker_short}} account settings.
 
 | Role                      | Minimum scope  | Minimum required roles | Action         |
 | ------------------------- | -------------- | ---------------------- | -------------- |
@@ -66,7 +66,7 @@ The setting **Default targets** lists any targets in the account that have been 
 ## Step 3. Configure default targets
 {: #target-default-step3}
 
-Check the list of IDs for the targets that you want to configure and identify the ones that are not configured. Then, run the following command to configure the default targets in the account: 
+Check the list of IDs for the targets that you want to configure and identify the ones that are not configured. Then, run the following command to configure the default targets in the account:
 
 When you run the command, make sure that you include the target IDs of all the default targets in the account. The command replaces the exiting configuration with the new one.
 {: important}
@@ -77,7 +77,3 @@ ibmcloud atracker setting update  --default-targets TARGETS
 {: pre}
 
 Where `TARGETS` represent the list of comma-separated target IDs.
-
-
-
-

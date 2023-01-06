@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2019, 2022
+  years: 2019, 2023
 lastupdated: "2022-05-05"
 
-keywords: 
+keywords:
 
 subcollection: atracker
 ---
@@ -23,7 +23,7 @@ You can view the type of endpoints that are available in the account to manage {
 ## Private endpoints
 {: #endpoints_manage_v2_private}
 
-By default, private endpoints are enabled. 
+By default, private endpoints are enabled.
 
 - You cannot disable private endpoints.
 
@@ -40,7 +40,7 @@ By default, private endpoints are enabled.
 ## Public endpoints
 {: #endpoints_manage_v2_public}
 
-By default, public endpoints are enabled. 
+By default, public endpoints are enabled.
 
 - You can disable public endpoints per region in your account.
 
@@ -50,7 +50,7 @@ By default, public endpoints are enabled.
     https://<region>.atracker.cloud.ibm.com/api/v2
     ```
     {: codeblock}
- 
+
 For more information about the list of `ENDPOINTS` that are available, see [Public endpoints](/docs/atracker?topic=atracker-endpoints#endpoints_api-public).
 
 
@@ -58,11 +58,8 @@ For more information about the list of `ENDPOINTS` that are available, see [Publ
 {: #endpoints_manage_v2_public_disable}
 
 If public and private endpoints are enabled, you can disable a public endpoint by using private or public endpoints.
-    
+
 If public endpoints have been disabled, you can only enable public endpoints by using the private endpoint.
 {: important}
 
 See [Enforcing private endpoints to configure Activity Tracker resources](/docs/atracker?topic=atracker-getting-started-mng-endpoints).
-
-
-

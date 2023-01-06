@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2019, 2022
+  years: 2019, 2023
 lastupdated: "2022-06-30"
 
-keywords: 
+keywords:
 
 subcollection: atracker
 
@@ -17,7 +17,7 @@ subcollection: atracker
 # Auditing events for IAM
 {: #at_events_iam}
 
-As a security officer, auditor, or manager, you can use the {{site.data.keyword.at_full_notm}} service to track how users and applications interact with the {{site.data.keyword.iamlong}} (IAM) service in {{site.data.keyword.cloud_notm}}. 
+As a security officer, auditor, or manager, you can use the {{site.data.keyword.at_full_notm}} service to track how users and applications interact with the {{site.data.keyword.iamlong}} (IAM) service in {{site.data.keyword.cloud_notm}}.
 {: shortdesc}
 
 IAM enables you to securely authenticate users for both platform services and control access to resources consistently across {{site.data.keyword.cloud_notm}}. [Learn more](/docs/account?topic=account-iamoverview).
@@ -38,7 +38,7 @@ The following table lists the actions that generate an event:
 |-----------------------------|-------------|
 | `iam-groups.account-settings.read` | An event is generated when an initiator views the account settings for the access groups service. |
 | `iam-groups.account-settings.update` | An event is generated when an initiator updates their account settings for the access groups service. |
-{: caption="Table 1. Events that are generated for access groups" caption-side="top"} 
+{: caption="Table 1. Events that are generated for access groups" caption-side="top"}
 
 
 
@@ -49,12 +49,12 @@ The following table lists the actions that generate an event:
 
 | Action                      | Description |
 |-----------------------------|-------------|
-| `iam-groups.group.create`   | An event is generated when an initiator creates an access group. | 
+| `iam-groups.group.create`   | An event is generated when an initiator creates an access group. |
 | `iam-groups.group.read`     | An event is generated when an initiator views an access group. |
 | `iam-groups.group.update`   | An event is generated when an initiator updates a group name or a description. |
 | `iam-groups.group.delete`   | An event is generated when an initiator deletes an access group. |
 | `iam-groups.groups.list`    | An event is generated when an initiator views the access groups. |
-{: caption="Table 2. Events that are generated for access groups" caption-side="top"} 
+{: caption="Table 2. Events that are generated for access groups" caption-side="top"}
 
 ### Members events
 {: #at_events_iam_access_members}
@@ -68,7 +68,7 @@ The following table lists the actions that generate an event:
 | `iam-groups.member.delete`  | An event is generated when an initiator removes a member from an access group. |
 | `iam-groups.member.read`    | An event is generated when an initiator views a member's membership. |
 |`iam-groups.members.list`    | An event is generated when an initiator views the members for an access group. |
-{: caption="Table 3. Events that are generated for access groups" caption-side="top"} 
+{: caption="Table 3. Events that are generated for access groups" caption-side="top"}
 
 ### Rules events
 {: #at_events_iam_access_rules}
@@ -82,7 +82,7 @@ The following table lists the actions that generate an event:
 | `iam-groups.rule.update`    | An event is generated when an initiator modifies the rule name. |
 | `iam-groups.rule.delete`    | An event is generated when an initiator deletes a rule from an access group. |
 | `iam-groups.rules.list`     | An event is generated when an initiator views the rules for an access group. |
-{: caption="Table 4. Events that are generated for access groups" caption-side="top"} 
+{: caption="Table 4. Events that are generated for access groups" caption-side="top"}
 
 ## Trusted profiles events
 {: #at_events_iam_profiles}
@@ -94,7 +94,7 @@ The following table lists the actions that generate an event:
 | `iam-identity.account-profile.create`  | An event is generated when an initiator creates a trusted profile. |
 | `iam-identity.account-profile.update`   | An event is generated when an initiator updates a trusted profile. |
 | `iam-identity.account-profile.delete`   | An event is generated when an initiator deletes a trusted profile. |
-{: caption="Table 5. Events that are generated for trusted profiles" caption-side="top"} 
+{: caption="Table 5. Events that are generated for trusted profiles" caption-side="top"}
 
 ## Policy events
 {: #at_events_iam_policies}
@@ -106,7 +106,7 @@ The following table lists the actions that generate an event:
 | `iam-am.policy.create` | An event is generated when an initiator adds a policy to a user or access group. |
 | `iam-am.policy.update` | An event is generated when an initiator modifies permissions to a policy of a user or access group.|
 | `iam-am.policy.delete` | An event is generated when an initiator deletes a policy that is assigned to a user or access group. |
-{: caption="Table 6. Events that are generated for policy actions" caption-side="top"} 
+{: caption="Table 6. Events that are generated for policy actions" caption-side="top"}
 
 
 
@@ -117,10 +117,10 @@ The following table lists the actions that generate an event:
 
 | Action | Description |
 |----------|---------|
-| `iam-identity.account-serviceid.create` | An event is generated when an initiator creates a service ID.  | 
-| `iam-identity.account-serviceid.update` | An event is generated when an initiator renames a service ID or modifies its description. | 
-| `iam-identity.account-serviceid.delete` | An event is generated when an initiator deletes a service ID. | 
-{: caption="Table 7. Events that are generated for service IDs actions" caption-side="top"} 
+| `iam-identity.account-serviceid.create` | An event is generated when an initiator creates a service ID.  |
+| `iam-identity.account-serviceid.update` | An event is generated when an initiator renames a service ID or modifies its description. |
+| `iam-identity.account-serviceid.delete` | An event is generated when an initiator deletes a service ID. |
+{: caption="Table 7. Events that are generated for service IDs actions" caption-side="top"}
 
 
 ## API key events
@@ -130,13 +130,13 @@ The following table lists the actions that generate an event:
 
 | Action | Description |
 |----------|---------|
-| `iam-identity.user-apikey.create`      | An event is generated when an initiator creates an API key. | 
-| `iam-identity.user-apikey.update`      | An event is generated when an initiator renames an API key or modifies its description. |  
-| `iam-identity.user-apikey.delete`      | An event is generated when an initiator deletes an API key. |  
-| `iam-identity.serviceid-apikey.create` | An event is generated when an initiator creates an API key for a service ID. |  
-| `iam-identity.serviceid-apikey.delete` | An event is generated when an initiator deletes an API key for a service ID. |  
+| `iam-identity.user-apikey.create`      | An event is generated when an initiator creates an API key. |
+| `iam-identity.user-apikey.update`      | An event is generated when an initiator renames an API key or modifies its description. |
+| `iam-identity.user-apikey.delete`      | An event is generated when an initiator deletes an API key. |
+| `iam-identity.serviceid-apikey.create` | An event is generated when an initiator creates an API key for a service ID. |
+| `iam-identity.serviceid-apikey.delete` | An event is generated when an initiator deletes an API key for a service ID. |
 | `iam-identity.serviceid-apikey.update` | An event is generated when an initiator renames an API key for a service ID or modifies its description. |
-{: caption="Table 8. Events that are generated for API keys actions" caption-side="top"} 
+{: caption="Table 8. Events that are generated for API keys actions" caption-side="top"}
 
 
 ## Login and logout events
@@ -146,35 +146,35 @@ The following table lists the actions that generate an event:
 
 | Action                                   | Description |
 |------------------------------------------|---------|
-| `iam-identity.user-apikey.login`         | An event is generated when a user logs in to the {{site.data.keyword.cloud_notm}} by using an API key. |  
-| `iam-identity.serviceid-apikey.login`    | An event is generated when an initiator logs in to the {{site.data.keyword.cloud_notm}} by using an API key that is associated with a service ID. |  
+| `iam-identity.user-apikey.login`         | An event is generated when a user logs in to the {{site.data.keyword.cloud_notm}} by using an API key. |
+| `iam-identity.serviceid-apikey.login`    | An event is generated when an initiator logs in to the {{site.data.keyword.cloud_notm}} by using an API key that is associated with a service ID. |
 | `iam-identity.user-identitycookie.login` | This is an event that is generated when an initiator requests an identity cookie to run an action. |
 | `iam-identity.user-refreshtoken.login`   | This is an event that is generated when the initiator logs in to {{site.data.keyword.cloud_notm}}, or when an initiator that is already logged in requests a new refresh token to run an action. |
 | `iam-identity.user-passcode.login` `iam-identity.trustedprofile-apikey.login` | This is an event that is generated when the initiator logs in to {{site.data.keyword.cloud_notm}} by applying a trusted profile, or when an initiator that is already logged in by applying a trusted profile requests a new refresh token to run an action. |
 | `iam-identity.user.logout` | This is an event that is generated when the initiator logs out of the {{site.data.keyword.cloud_notm}}. |
-{: caption="Table 9. Events that are generated for user login and logout actions" caption-side="top"} 
- 
+{: caption="Table 9. Events that are generated for user login and logout actions" caption-side="top"}
+
 
 
 ## Viewing events
 {: #at_events_iam_ui}
 
-Events are available in the **Frankfurt (eu-de)** region. 
+Events are available in the **Frankfurt (eu-de)** region.
 
-To view these events, you must [provision an instance](/docs/services/activity-tracker?topic=activity-tracker-provision#provision) of the {{site.data.keyword.at_full_notm}} service in the **Frankfurt (eu-de)** region. Then, you must [open the {{site.data.keyword.at_full_notm}} UI](/docs/atracker?topic=atracker-launch#launch_cloud_ui). 
+To view these events, you must [provision an instance](/docs/services/activity-tracker?topic=activity-tracker-provision#provision) of the {{site.data.keyword.at_full_notm}} service in the **Frankfurt (eu-de)** region. Then, you must [open the {{site.data.keyword.at_full_notm}} UI](/docs/atracker?topic=atracker-launch#launch_cloud_ui).
 
 
 ## Analyzing events
 {: #at_events_iam_analyze}
 
 ### Login events
-{: #at_events_iam_analyze_login_events} 
+{: #at_events_iam_analyze_login_events}
 
-In the {{site.data.keyword.cloud_notm}}, an administrator, or a user that has the correct access in your account, has different options to manage a user's login settings. For example, an administrator can order external authentication options, enable a one-time passcode to be used during login, enable the use of security questions at login, or set a password expiration time period. For more information, see [Types of multifactor authentication](/docs/account?topic=account-types). 
+In the {{site.data.keyword.cloud_notm}}, an administrator, or a user that has the correct access in your account, has different options to manage a user's login settings. For example, an administrator can order external authentication options, enable a one-time passcode to be used during login, enable the use of security questions at login, or set a password expiration time period. For more information, see [Types of multifactor authentication](/docs/account?topic=account-types).
 
 * A user can log in by using a user ID and password.
-* A federated user that uses a corporate or enterprise single sign-on ID can log in to {{site.data.keyword.cloud_notm}} from the command-line interface (CLI) by using either a one-time passcode or an API key. For more information, see [Logging in with a federated ID](/docs/account?topic=account-federated_id). 
-* A user can log in by using an API key.  
+* A federated user that uses a corporate or enterprise single sign-on ID can log in to {{site.data.keyword.cloud_notm}} from the command-line interface (CLI) by using either a one-time passcode or an API key. For more information, see [Logging in with a federated ID](/docs/account?topic=account-federated_id).
+* A user can log in by using an API key.
 * A federated user that uses a corporate or enterprise single sign-on ID can log in to {{site.data.keyword.cloud_notm}} by applying a trusted profile.
 
 The following fields include extra information:
@@ -210,14 +210,14 @@ When a user [logs in with a federated ID by using trusted profiles](/docs/accoun
 {: #at_events_iam_analyze_login_events-3}
 
 
-When a user logs in to the {{site.data.keyword.cloud_notm}}, the user ID (IBMid) and credentiasls are validated first. At this point, the user has not selected an account. Notice that a user can belong to multiple accounts. 
+When a user logs in to the {{site.data.keyword.cloud_notm}}, the user ID (IBMid) and credentiasls are validated first. At this point, the user has not selected an account. Notice that a user can belong to multiple accounts.
 
 After the user ID is authenticated successfully in the {{site.data.keyword.cloud_notm}}, the user can choose an account. It is at this point in the process that an account is associated to the log in request, and an event with action `iam-identity.user-refreshtoken.login`, or `iam-identity.user-apikey.login` is generated in your account.
 
 In Activity Tracker, you can see events that are associated to your account. Failed log in actions do not generate an event that you can monitor in your account.
 
 ### Logout events
-{: #at_events_iam_analyze_logout_events} 
+{: #at_events_iam_analyze_logout_events}
 
 When a user logs out of the {{site.data.keyword.cloud_notm}}, the `iam-identity.user.logout` event is generated.
 
@@ -231,7 +231,7 @@ When an action to update a service ID is requested, you get an event in the acco
 The following fields include extra information:
 * The `initiator.name` field includes information about who has requested to update the service ID.
 * The `target.name` field includes information about the service ID that is changed.
-* The `initiator.host.agent` field indicates if the request comes from the UI or the CLI. When the field is set to **Not Set**, the request originates in the UI. When the field is set to **{{site.data.keyword.cloud_notm}} CLI**, the request originates at the command line. 
+* The `initiator.host.agent` field indicates if the request comes from the UI or the CLI. When the field is set to **Not Set**, the request originates in the UI. When the field is set to **{{site.data.keyword.cloud_notm}} CLI**, the request originates at the command line.
 
 #### Lock and unlock a service ID
 {: #at_events_iam_analyze_update_acc_scvid_1}
@@ -251,7 +251,7 @@ When a request to change a description generates an event, the following fields 
 
 The following fields include extra information:
 * In requestData, the `lock` field is set to **false**.
-* In requestData, the `instance_name` field includes the new name of the API key. 
+* In requestData, the `instance_name` field includes the new name of the API key.
 * In requestData, the `prev_instance_name` field includes the name of the API key before it was changed.
 
 
@@ -264,9 +264,9 @@ When an action to update an API key is requested, you get an event in the accoun
 * To update a service ID API key, the action is `iam-identity.account-serviceid.update`.
 
 The following fields include extra information:
-* The `initiator.name` field includes information about who has requested to update the API key. 
+* The `initiator.name` field includes information about who has requested to update the API key.
 * The `target.name` field includes information about the API key that is changed.
-* The `initiator.host.agent` field indicates if the request comes from the UI or the CLI. When the field is set to **Not Set**, the request originates in the UI. When the field is set to **{{site.data.keyword.cloud_notm}} CLI**, the request originates at the command line. 
+* The `initiator.host.agent` field indicates if the request comes from the UI or the CLI. When the field is set to **Not Set**, the request originates in the UI. When the field is set to **{{site.data.keyword.cloud_notm}} CLI**, the request originates at the command line.
 
 #### Lock and unlock a service ID
 {: #at_events_iam_update_apikey_1}
@@ -286,7 +286,7 @@ When a request to change a description generates an event, the following fields 
 
 The following fields include extra information:
 * In requestData, the `lock` field is set to **false**.
-* In requestData, the `instance_name` field includes the new name of the API key. 
+* In requestData, the `instance_name` field includes the new name of the API key.
 * In requestData, the `prev_instance_name` field includes the name of the API key before it was changed.
 
 ## Analyzing events that fail
@@ -308,16 +308,16 @@ When a user does not have permissions to run this action in your account, you ge
 * The user ID is not authorized to run this action in your account.
 
 To find out the user who has tried to modify an API key or a service ID, complete the following steps:
-1. Copy the value of the `initiator.id`. This field includes the ID of the user that is trying to run this action in your account. 
+1. Copy the value of the `initiator.id`. This field includes the ID of the user that is trying to run this action in your account.
 2. Get the email address that is associated with the user. To complete this step, you must have administrator permissions in the account. Run the following command:
 
     ```text
-    ibmcloud iam users --output json | grep -A 1 InitiatorID 
+    ibmcloud iam users --output json | grep -A 1 InitiatorID
     ```
     {: codeblock}
 
     Where InitiatorID is the value of the field `initiator.id`, and has the format IBMid-XXXXXXXXXX.
-    
+
     The output of this command returns 2 fields. The `ibmUniqueId` field shows the ID of the user that matched the event `initiator.name` field. The `email` field shows the email address associated with that ID.
 
 To get the API key on which the action has been requested and failed, see the field `prev_instance_name` in requestData.
@@ -336,6 +336,3 @@ Depending on the resource type, you can get any of the following messages:
 In the event, the `lock` field in requestData is set to **true**. This is the reason why this action fails. To successfully change an attribute of a service ID, the `lock` field must be set to **false**.
 
 Notice that the field `severity` is set to **critical**. Someone is trying to modify a service ID that is locked in the account.
-
-
-

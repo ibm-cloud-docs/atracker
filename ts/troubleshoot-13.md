@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2019, 2022
+  years: 2019, 2023
 lastupdated: "2022-05-16"
 
-keywords: 
+keywords:
 
 subcollection: atracker
 
@@ -31,5 +31,3 @@ You are trying to create a new route and you already have 4 routes configured in
 
 Only 4 routes are supported in an account across all regions.  If you need to create a new route, [delete an existing route](/docs/atracker?topic=atracker-route_v2&interface=api#route-delete-api) and retry the request.
 {: tsResolve}
-
-

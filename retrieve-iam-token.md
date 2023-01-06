@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2019, 2022
+  years: 2019, 2023
 lastupdated: "2021-08-09"
 
-keywords: 
+keywords:
 
 subcollection: atracker
 
@@ -96,8 +96,8 @@ curl -X POST \
 ```
 {: codeblock}
 
-Replace `<API_KEY>` with your API key. 
-    
+Replace `<API_KEY>` with your API key.
+
 The following truncated example shows the contents of the `token.json` file:
 
 ```json
@@ -114,9 +114,3 @@ The following truncated example shows the contents of the `token.json` file:
 
 Use the full `access_token` value, prefixed by the _Bearer_ token type.
 {: note}
-
-
-
-
-
-

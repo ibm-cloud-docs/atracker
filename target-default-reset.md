@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2019, 2022
+  years: 2019, 2023
 lastupdated: "2022-08-12"
 
-keywords: 
+keywords:
 
 subcollection: atracker
 
@@ -16,7 +16,7 @@ subcollection: atracker
 # Reseting the default targets in the account
 {: #target-default-reset}
 
-To reset the {{site.data.keyword.atracker_short}} account's default targets, you must delete any default targets from the account configuration. 
+To reset the {{site.data.keyword.atracker_short}} account's default targets, you must delete any default targets from the account configuration.
 {: shortdesc}
 
 
@@ -27,7 +27,7 @@ To reset the {{site.data.keyword.atracker_short}} account's default targets, you
 
 2. [Install the {{site.data.keyword.atracker_full_notm}} CLI](/docs/atracker?topic=atracker-atracker-cli-config).
 
-3. Check that you have IAM permissions to read and update the {{site.data.keyword.atracker_short}} account settings. 
+3. Check that you have IAM permissions to read and update the {{site.data.keyword.atracker_short}} account settings.
 
 | Role                      | Minimum scope  | Minimum required roles | Action         |
 | ------------------------- | -------------- | ---------------------- | -------------- |
@@ -71,9 +71,3 @@ Run the following command to reset the account's defaul targets:
 ibmcloud atracker setting update  --default-targets ""
 ```
 {: pre}
-
-
-
-
-
-

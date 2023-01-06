@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2019, 2022
+  years: 2019, 2023
 lastupdated: "2022-05-13"
 
-keywords: 
+keywords:
 
 subcollection: atracker
 
@@ -17,7 +17,7 @@ content-type: troubleshoot
 # Are you getting an "access denied" error when trying to create a COS target?
 {: #troubleshoot-06}
 {: troubleshoot}
-{: support} 
+{: support}
 
 When creating an {{site.data.keyword.cos_full_notm}} target using service-to-service authorization, the message `Your request to test a target has failed because the target details are not valid. The service could not write to the Cloud Object Storage bucket that is configured. {'error_code':'403','error_message':'Access Denied'}` is returned.
 {: shortdesc}
@@ -32,5 +32,3 @@ You define a bucket in an account but have not set up [service-to-service author
 
 Either setup [service-to-service authorization to the bucket](/docs/atracker?topic=atracker-target_v2_cos&interface=cli#cos_s2s) and retry the target create request, or use the [COS bucket API key](/docs/atracker?topic=atracker-target_v2_cos&interface=cli#cos_apikey) on the create request.
 {: tsResolve}
-
-

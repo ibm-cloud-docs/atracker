@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2019, 2022
+  years: 2019, 2023
 lastupdated: "2021-09-23"
 
-keywords: 
+keywords:
 
 subcollection: atracker
 
@@ -17,7 +17,7 @@ content-type: troubleshoot
 # Are you getting an error when you try to install the CLI?
 {: #troubleshoot-03}
 {: troubleshoot}
-{: support} 
+{: support}
 
 You cannot install the {{site.data.keyword.atracker_short}} CLI.
 {: shortdesc}
@@ -60,11 +60,3 @@ To resolve the problem, complete the following steps:
     ibmcloud plugin install atracker
     ```
     {: pre}
-
-
-
-
-
-
-
-

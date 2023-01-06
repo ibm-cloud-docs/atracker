@@ -1,17 +1,17 @@
 ---
 
 copyright:
-  years: 2019, 2022
+  years: 2019, 2023
 lastupdated: "2022-05-23"
 
-keywords: 
+keywords:
 
 subcollection: atracker
 
 content-type: tutorial
 services: atracker
-account-plan: lite 
-completion-time: 1h 
+account-plan: lite
+completion-time: 1h
 
 ---
 
@@ -21,8 +21,8 @@ completion-time: 1h
 # Configuring a Cloud Object Storage target
 {: #getting-started-target-cos}
 {: toc-content-type="tutorial"}
-{: toc-services="activity-tracker"} 
-{: toc-completion-time="1h"} 
+{: toc-services="activity-tracker"}
+{: toc-completion-time="1h"}
 
 
 A target is an {{site.data.keyword.cloud_notm}} resource where you can collect auditing events. Use this tutorial to learn how to configure a Cloud Object Storage target in the account.
@@ -50,7 +50,7 @@ You can define a Cloud Object Storage bucket as a target in any of the following
 
 - You need a user ID that is a member, or an owner of, an {{site.data.keyword.cloud_notm}} account. To get an {{site.data.keyword.cloud_notm}} user ID, go to: [Create an account](https://cloud.ibm.com/login){: external}.
 
-- Every user that manages the {{site.data.keyword.atracker_short}} configuration in your account must be assigned an access policy. The policy determines what actions the user can perform. The allowable actions are customized and defined by {{site.data.keyword.atracker_short}} as operations that are allowed to be performed on the service. The actions are then mapped to IAM user roles. [Learn more](/docs/atracker?topic=atracker-iam). 
+- Every user that manages the {{site.data.keyword.atracker_short}} configuration in your account must be assigned an access policy. The policy determines what actions the user can perform. The allowable actions are customized and defined by {{site.data.keyword.atracker_short}} as operations that are allowed to be performed on the service. The actions are then mapped to IAM user roles. [Learn more](/docs/atracker?topic=atracker-iam).
 
     Your user ID needs **administrator platform permissions** to manage the {{site.data.keyword.atracker_full_notm}} service. Contact the account owner. The account owner can grant another user access to the account for the purposes of managing user access, and managing account resources. [Learn more](/docs/account?topic=account-userroles).
 
@@ -65,13 +65,13 @@ Auditing events that are collected in your account can be stored in {{site.data.
 When you configure {{site.data.keyword.atracker_short}}, you must define a target per region. The target defines the COS bucket where auditing events in that region are collected.
 
 Before you create a bucket, consider the following information:
-- You can create the bucket in any location. 
+- You can create the bucket in any location.
 - You can only configure 1 bucket per target.
 - If you have regulatory and compliance requirements, check the locations where you can create a bucket. Then, if performance is critical, consider creating the COS bucket in the same region where the auditing events are generated.
 
 For more information, see [Managing {{site.data.keyword.cos_full_notm}} (COS) buckets](/docs/atracker?topic=atracker-cos).
 
-You can define a bucket in the account that generates the auditing events or in a different account. 
+You can define a bucket in the account that generates the auditing events or in a different account.
 {: important}
 
 Choose one of the following options to create a bucket:
@@ -136,7 +136,7 @@ You will only be able to authorize to the {{site.data.keyword.cos_full_notm}} in
 {: #getting-started-routing-step5}
 {: step}
 
-After you create the bucket and configure the authorizartion method, you can configure a target. The target defines the COS bucket where auditing events will be routed.  
+After you create the bucket and configure the authorizartion method, you can configure a target. The target defines the COS bucket where auditing events will be routed.
 
 The region identifies the location from which the writing to the bucket will occur.  If you want events from all regions to flow to this one COS bucket, then you only require a single target to be defined.
 
@@ -147,9 +147,9 @@ ibmcloud atracker target create --name <TARGET_NAME> --type cloud-object-storage
 ```
 {: pre}
 
-Where 
+Where
 
-`--region <REGION>` 
+`--region <REGION>`
 :   Name of the region that will process the events, for example, `us-south` or `eu-gb`. If not specified, the region logged into, or targeted, will be used.
 
 `--name <TARGET_NAME>`
@@ -165,7 +165,7 @@ Where
 :   The CRN of the {{site.data.keyword.cos_full_notm}} instance.
 
 `--service-to-service-enabled`
-:   Indicates if [service-to-service authorization](#getting-started-routing-step3) has been enabled for the bucket.  Specify `TRUE` if service-to-service authorization is enabled and `FALSE` if service-to-service authorization is not enable.  
+:   Indicates if [service-to-service authorization](#getting-started-routing-step3) has been enabled for the bucket.  Specify `TRUE` if service-to-service authorization is enabled and `FALSE` if service-to-service authorization is not enable.
 
 For example, to create a target in the US-South region, you can run the following command:
 
@@ -188,8 +188,6 @@ Define 1 or more routes in the account. For more information, see [Configuring a
 When you configure a route, you associate a target with the route and define which type of auditing events are collected. The route defines the rules that determine where auditing events are collected in your account. For example, you can define a route that collects auditing events from 2 different regions, and also collects global events.
 
 
-You can collect [global events](/docs/atracker?topic=atracker-event_types#event_types_global) and [location-based events](/docs/atracker?topic=atracker-event_types#event_types_location). 
-- Global events report on activity in your account that relate to data and resources that are generally synchronized across all regions. 
-- Location-based events report on activity in your account that is generated by IBM Cloud services that are hosted within an IBM data center location, such as US-South or US-East. 
-
-
+You can collect [global events](/docs/atracker?topic=atracker-event_types#event_types_global) and [location-based events](/docs/atracker?topic=atracker-event_types#event_types_location).
+- Global events report on activity in your account that relate to data and resources that are generally synchronized across all regions.
+- Location-based events report on activity in your account that is generated by IBM Cloud services that are hosted within an IBM data center location, such as US-South or US-East.

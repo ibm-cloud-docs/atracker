@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2019, 2022
+  years: 2019, 2023
 lastupdated: "2022-05-16"
 
-keywords: 
+keywords:
 
 subcollection: atracker
 
@@ -32,5 +32,3 @@ You are trying to update settings and have specified a target name for `--defaul
 
 Retry the request specifying the target IDs instead of the target names.
 {: tsResolve}
-
-

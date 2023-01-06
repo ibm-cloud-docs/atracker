@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2019, 2022
+  years: 2019, 2023
 lastupdated: "2022-05-05"
 
-keywords: 
+keywords:
 
 subcollection: atracker
 
@@ -16,7 +16,7 @@ subcollection: atracker
 # Generating a report of {{site.data.keyword.atracker_short}} resources
 {: #config_report}
 
-You can validate your account configuration for {{site.data.keyword.atracker_full}} by generating a report of the {{site.data.keyword.atracker_full_notm}} resources using the {{site.data.keyword.atracker_full_notm}} CLI. 
+You can validate your account configuration for {{site.data.keyword.atracker_full}} by generating a report of the {{site.data.keyword.atracker_full_notm}} resources using the {{site.data.keyword.atracker_full_notm}} CLI.
 {: shortdesc}
 
 The V1 API is deprecated. This CLI and API can only be used while using the {{site.data.keyword.atracker_full_notm}} V1 API.  Once you have [migrated to the V2 API](/docs/atracker?topic=atracker-migrate-resources) this CLI and API can no longer be used.
@@ -40,10 +40,10 @@ Before you use the CLI to generate your {{site.data.keyword.atracker_full_notm}}
 ## Running the report
 {: #route-report-running}
 
-Use the following command to return a report about the {{site.data.keyword.atracker_full_notm}} service configuration.  This report will include any issues in the configuration. 
+Use the following command to return a report about the {{site.data.keyword.atracker_full_notm}} service configuration.  This report will include any issues in the configuration.
 
 ```text
-ibmcloud atracker config report --output YAML 
+ibmcloud atracker config report --output YAML
 ```
 {: pre}
 
@@ -82,5 +82,3 @@ config-report:
 
 If no configuration is available for the region, the region will be listed with no data under it.
 {: note}
- 
- 

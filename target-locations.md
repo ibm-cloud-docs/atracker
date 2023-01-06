@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2019, 2022
+  years: 2019, 2023
 lastupdated: "2022-08-12"
 
-keywords: 
+keywords:
 
 subcollection: atracker
 
@@ -27,7 +27,7 @@ To enforce target locations in your {{site.data.keyword.cloud_notm}} account, yo
 
 2. [Install the {{site.data.keyword.atracker_full_notm}} CLI](/docs/atracker?topic=atracker-atracker-cli-config).
 
-3. Check that you have IAM permissions to read and update the {{site.data.keyword.atracker_short}} account settings. 
+3. Check that you have IAM permissions to read and update the {{site.data.keyword.atracker_short}} account settings.
 
 | Role                      | Minimum scope  | Minimum required roles | Action         |
 | ------------------------- | -------------- | ---------------------- | -------------- |
@@ -52,7 +52,7 @@ ibmcloud atracker setting get
 
 The setting **Permitted target regions** list all the locations where you allowd administrators to configure targets in the account.
 
-## Step 2. 
+## Step 2.
 {: #target-default-step2}
 
 To manage the list of permitted regions, run the following command:
@@ -70,5 +70,3 @@ For example, you can run the following command to set 3 regions only:
 ibmcloud atracker setting update --permitted-target-regions "us-south","us-east","eu-de"
 ```
 {: screen}
-
-

@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2019, 2022
+  years: 2019, 2023
 lastupdated: "2021-08-09"
 
-keywords: 
+keywords:
 
 subcollection: atracker
 
@@ -32,7 +32,7 @@ When you use {{site.data.keyword.atracker_short}} to manage your audit events, y
 {: #mng-data-config}
 
 
-To configure {{site.data.keyword.atracker_short}}, you must configure account settings, targets, and routes. You can configure {{site.data.keyword.atracker_short}} via REST API calls, CLI commands, or by using terraform scripts. The definitions of these resources are hosted on the {{site.data.keyword.cloud_notm}}. 
+To configure {{site.data.keyword.atracker_short}}, you must configure account settings, targets, and routes. You can configure {{site.data.keyword.atracker_short}} via REST API calls, CLI commands, or by using terraform scripts. The definitions of these resources are hosted on the {{site.data.keyword.cloud_notm}}.
 
 - You can configure the {{site.data.keyword.atracker_short}} account settings to indicate the primary and backup metadata locations where global definitions are stored such as route definitions and the type of endpoints that are enabled.
 
@@ -52,9 +52,9 @@ To configure {{site.data.keyword.atracker_short}}, you must configure account se
 ### Auditing data
 {: #mng-data-audit}
 
-{{site.data.keyword.atracker_short}} collects management and data events from {{site.data.keyword.cloud_notm}} services and resources: 
-* **Management Events** are generated when an API call changes the state of a Cloud resource. A resource might be an entire service instance or a resource managed by the service. 
-* **Data Events** are generated when an API call reads or modifies a resource's data. 
+{{site.data.keyword.atracker_short}} collects management and data events from {{site.data.keyword.cloud_notm}} services and resources:
+* **Management Events** are generated when an API call changes the state of a Cloud resource. A resource might be an entire service instance or a resource managed by the service.
+* **Data Events** are generated when an API call reads or modifies a resource's data.
 
 Data from [{{site.data.keyword.cloud_notm}} services and resources](/docs/atracker?topic=atracker-cloud_services_atracker) is collected automatically.  However, some services might require an upgrade of the service plan, a configuration setting, or both, for you to be able to collect and analyze them.
 
@@ -70,12 +70,12 @@ Data from [{{site.data.keyword.cloud_notm}} services and resources](/docs/atrack
 
 You can configure {{site.data.keyword.atracker_short}} resources by using public and private endpoints.
 
-To ensure that you have enhanced control and security over your data, your account must be virtual routing and forwarding (VRF) enabled and you must use private routes to {{site.data.keyword.cloud}} service endpoints. Consider configuring {{site.data.keyword.atracker_short}} resources over a private network connection. 
+To ensure that you have enhanced control and security over your data, your account must be virtual routing and forwarding (VRF) enabled and you must use private routes to {{site.data.keyword.cloud}} service endpoints. Consider configuring {{site.data.keyword.atracker_short}} resources over a private network connection.
 {: note}
 
-{{site.data.keyword.atracker_short}} stores the configuration of settings, targets and routes for your account. 
+{{site.data.keyword.atracker_short}} stores the configuration of settings, targets and routes for your account.
 - Connections use TLS/SSL encryption for data in transit. The current supported version of this encryption is TLS 1.2.
-- The storage where the configuration is stored is encrypted with LUKS using AES-256. 
+- The storage where the configuration is stored is encrypted with LUKS using AES-256.
 
 
 ### Auditing data
@@ -113,4 +113,3 @@ To delete auditing data, check the target type instructions.
 - For {{site.data.keyword.cos_full_notm}} bucket, see [Data security](/docs/cloud-object-storage?topic=cloud-object-storage-security).
 - For {{site.data.keyword.at_short}} instance, see [Data security](/docs/activity-tracker?topic=activity-tracker-mng-data).
 - For {{site.data.keyword.messagehub}}, see [Data security](/docs/EventStreams?topic=EventStreams-data_security).
-

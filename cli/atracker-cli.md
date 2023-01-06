@@ -1,12 +1,12 @@
 ---
- 
+
 copyright:
-  years: 2019, 2022
+  years: 2019, 2023
 lastupdated: "2021-08-09"
 
 subcollection: atracker
 
-keywords: 
+keywords:
 
 ---
 
@@ -17,7 +17,7 @@ keywords:
 {: #activity-tracking-cli}
 
 The {{site.data.keyword.cloud}} command-line interface (CLI) provides extra capabilities for service offerings. This information describes how you can use the CLI to interact with {{site.data.keyword.atracker_full}}.
-{: shortdesc} 
+{: shortdesc}
 
 
 ## Prerequisites
@@ -34,7 +34,7 @@ The {{site.data.keyword.cloud}} command-line interface (CLI) provides extra capa
 You're notified on the command line when updates to the {{site.data.keyword.cloud_notm}} CLI and plug-ins are available. Be sure to keep your CLI up to date so that you can use the latest commands. You can view the current version of all installed plug-ins by running `ibmcloud plugin list`.
 {: tip}
 
-Whether the `atracker` API uses public or private endpoints depends on the CLI API connection setting.  Use the `bx api` command to determine which will be used.  If the `bx api` command returns `https://cloud.ibm.com`, then the `atracker` plug-in uses the public API.  If the `bx api` command returns `https://private.cloud.ibm.com`, then the `atracker` private API will be used. 
+Whether the `atracker` API uses public or private endpoints depends on the CLI API connection setting.  Use the `bx api` command to determine which will be used.  If the `bx api` command returns `https://cloud.ibm.com`, then the `atracker` plug-in uses the public API.  If the `bx api` command returns `https://private.cloud.ibm.com`, then the `atracker` private API will be used.
 {: note}
 
 ## ibmcloud atracker endpoint api ls
@@ -47,7 +47,7 @@ ibmcloud atracker endpoint api ls [--output JSON]
 ```
 {: pre}
 
-### Command options 
+### Command options
 {: #activity-tracking-endpoint-ls-options}
 
 `--output JSON`
@@ -55,7 +55,7 @@ ibmcloud atracker endpoint api ls [--output JSON]
 
 `help` | `--help` | `-h`
 :   List options available for the command.
-  
+
 ### Example
 {: #activity-tracking-endpoint-ls-example}
 
@@ -81,7 +81,7 @@ ibmcloud atracker endpoint api get [--region <REGION>] [--output JSON]
 ```
 {: pre}
 
-### Command options 
+### Command options
 {: #activity-tracking-endpoint-get-options}
 
 `--region <REGION>` | `-r <REGION>`
@@ -92,7 +92,7 @@ ibmcloud atracker endpoint api get [--region <REGION>] [--output JSON]
 
 `help` | `--help` | `-h`
 :   List options available for the command.
-  
+
 ### Example
 {: #activity-tracking-endpoint-get-example}
 
@@ -120,7 +120,7 @@ ibmcloud atracker endpoint api update --public-enabled ( TRUE | FALSE ) [--regio
 Before disabling a public endpoint (`--public-enabled FALSE`), make sure your account has access to the private endpoint.  You can do this by running the command `bx account show`.  If `VRF Enabled` is `true` and `Service Endpoint Enabled` is `true` then you have access to the private endpoint.  If you do not have access to the private endpoint, you will be unable to re-enable the public endpoint since private endpoint access is required to re-enable the public endpoint.
 {: important}
 
-### Command options 
+### Command options
 {: #activity-tracking-endpoint-update-options}
 
 `--public-enabled (TRUE | FALSE)`
@@ -138,7 +138,7 @@ Before disabling a public endpoint (`--public-enabled FALSE`), make sure your ac
 `help` | `--help` | `-h`
 :   List options available for the command.
 
-  
+
 ### Example
 {: #activity-tracking-endpoint-update-example}
 
@@ -165,7 +165,7 @@ Use this command to create an {{site.data.keyword.atracker_full_notm}} service t
 ```
 {: pre}
 
-### Command options 
+### Command options
 {: #activity-tracking-target-create-options}
 
 `--region <REGION>` | `-r <REGION>`
@@ -181,10 +181,10 @@ Use this command to create an {{site.data.keyword.atracker_full_notm}} service t
 :   A file containing an endpoint definition in the following format:
 
     ```json
-    {   
-      "endpoint": "aaaaa",    
+    {
+      "endpoint": "aaaaa",
       "target_crn": "yyyyy",
-      "bucket": "zzzzzz", 
+      "bucket": "zzzzzz",
       "api_key": "xxxxxx"
     }
     ```
@@ -207,7 +207,7 @@ Use this command to create an {{site.data.keyword.atracker_full_notm}} service t
 
 `help` | `--help` | `-h`
 :   List options available for the command.
-  
+
 ### Example
 {: #activity-tracking-target-create-example}
 
@@ -242,7 +242,7 @@ ibmcloud atracker target ls [--region <REGION>] [--output JSON]
 ```
 {: pre}
 
-### Command options 
+### Command options
 {: #activity-tracking-target-options}
 
 `--region <REGION>` | `-r <REGION>`
@@ -253,7 +253,7 @@ ibmcloud atracker target ls [--region <REGION>] [--output JSON]
 
 `help` | `--help` | `-h`
 :   List options available for the command.
-  
+
 ### Example
 {: #activity-tracking-target-example}
 
@@ -279,7 +279,7 @@ ibmcloud atracker target update --target <TARGET> [--name <TARGET_NAME>] [ --fil
 ```
 {: pre}
 
-### Command options 
+### Command options
 {: #activity-tracking-target-update-options}
 
 `--target <TARGET>`
@@ -293,12 +293,12 @@ ibmcloud atracker target update --target <TARGET> [--name <TARGET_NAME>] [ --fil
 
 `--file <@COS_ENDPOINT_DEFINITION_JSON_FILE>`
 :   A file containing an endpoint definition in the following format
-    
+
     ```json
-    {   
-      "endpoint": "aaaaa",    
+    {
+      "endpoint": "aaaaa",
       "target_crn": "yyyyy",
-      "bucket": "zzzzzz", 
+      "bucket": "zzzzzz",
       "api_key": "xxxxxx"
     }
     ```
@@ -321,7 +321,7 @@ ibmcloud atracker target update --target <TARGET> [--name <TARGET_NAME>] [ --fil
 
 `help` | `--help` | `-h`
 :   List options available for the command.
-  
+
 ### Example
 {: #activity-tracking-target-update-example}
 
@@ -346,14 +346,14 @@ Updated:            2021-07-21T17:49:56.452Z
 ## ibmcloud atracker target get
 {: #activity-tracking-target-get}
 
-Use this command to get information about a target for an {{site.data.keyword.atracker_full_notm}} region. 
+Use this command to get information about a target for an {{site.data.keyword.atracker_full_notm}} region.
 
 ```text
 ibmcloud atracker target get --target <TARGET> [--region <REGION>] [--output JSON]
 ```
 {: pre}
 
-### Command options 
+### Command options
 {: #activity-tracking-target-get-options}
 
 `--target <TARGET>`
@@ -367,7 +367,7 @@ ibmcloud atracker target get --target <TARGET> [--region <REGION>] [--output JSO
 
 `help`| `--help` | `-h`
 :   List options available for the command.
-  
+
 ### Example
 {: #activity-tracking-target-get-example}
 
@@ -392,17 +392,17 @@ Updated:            2021-07-21T17:49:56.452Z
 ## ibmcloud atracker target rm
 {: #activity-tracking-target-rm}
 
-Use this command to delete a target for an {{site.data.keyword.atracker_full_notm}} region. 
+Use this command to delete a target for an {{site.data.keyword.atracker_full_notm}} region.
 
 ```text
 ibmcloud atracker target rm --target <TARGET> [--region <REGION>] [--force]
 ```
 {: pre}
 
-### Command options 
+### Command options
 {: #activity-tracking-target-rm-options}
 
-`--target <TARGET>`  
+`--target <TARGET>`
 :   The ID or name of the target.
 
 `--region <REGION>` | `-r <REGION>`
@@ -413,7 +413,7 @@ ibmcloud atracker target rm --target <TARGET> [--region <REGION>] [--force]
 
 `help` | `--help` | `-h`
 :   List options available for the command.
-  
+
 ### Example
 {: #activity-tracking-target-rm-example}
 
@@ -440,14 +440,14 @@ Something went wrong. Error: Delete "https://us-east.atracker.cloud.ibm.com/api/
 ## ibmcloud atracker target validate
 {: #activity-tracking-target-validate}
 
-Use this command to validate that a target is correctly configured for an {{site.data.keyword.atracker_full_notm}} region. 
+Use this command to validate that a target is correctly configured for an {{site.data.keyword.atracker_full_notm}} region.
 
 ```text
 ibmcloud atracker target validate --target <TARGET> [--region <REGION>] [--output JSON]
 ```
 {: pre}
 
-### Command options 
+### Command options
 {: #activity-tracking-target-validate-options}
 
 `--target <TARGET>`
@@ -461,7 +461,7 @@ ibmcloud atracker target validate --target <TARGET> [--region <REGION>] [--outpu
 
 `help` | `--help` | `-h`
 :   List options available for the command.
-  
+
 ### Example
 {: #activity-tracking-target-validate-example}
 
@@ -489,14 +489,14 @@ Updated:            2021-07-21T17:49:56.452Z
 ## ibmcloud atracker route create
 {: #activity-tracking-route-create}
 
-Use this command to create a new route for an {{site.data.keyword.atracker_full_notm}} target in a region. 
+Use this command to create a new route for an {{site.data.keyword.atracker_full_notm}} target in a region.
 
 ```text
 ibmcloud atracker route create --name <ROUTE_NAME> --target <TARGET> [--receive-global-events] [--region <REGION>] [--output JSON]
 ```
 {: pre}
 
-### Command options 
+### Command options
 {: #activity-tracking-route-create-options}
 
 `--target <TARGET_ID>`
@@ -517,7 +517,7 @@ ibmcloud atracker route create --name <ROUTE_NAME> --target <TARGET> [--receive-
 `help` | `--help` | `-h`
 :   List options available for the command.
 
-  
+
 ### Example
 {: #activity-tracking-route-create-example}
 
@@ -539,14 +539,14 @@ Updated:                 2021-07-21T18:10:44.456Z
 ## ibmcloud atracker route ls
 {: #activity-tracking-route-ls}
 
-Use this command to list all the configured routes for a specific {{site.data.keyword.atracker_full_notm}} region or all {{site.data.keyword.atracker_full_notm}} regions. 
+Use this command to list all the configured routes for a specific {{site.data.keyword.atracker_full_notm}} region or all {{site.data.keyword.atracker_full_notm}} regions.
 
 ```text
 ibmcloud atracker route ls [--region <REGION> | --all-regions ] [--output JSON]
 ```
 {: pre}
 
-### Command options 
+### Command options
 {: #activity-tracking-route-ls-options}
 
 `--region <REGION>` | `-r <REGION>`
@@ -560,7 +560,7 @@ ibmcloud atracker route ls [--region <REGION> | --all-regions ] [--output JSON]
 
 `help` | `--help` | `-h`
 :   List options available for the command.
-  
+
 ### Example
 {: #activity-tracking-route-ls-example}
 
@@ -583,7 +583,7 @@ ibmcloud atracker route update --route <ROUTE> [--name <ROUTE_NAME>] [--receive-
 ```
 {: pre}
 
-### Command options 
+### Command options
 {: #activity-tracking-route-update-options}
 
 `--route <ROUTE>`
@@ -606,7 +606,7 @@ ibmcloud atracker route update --route <ROUTE> [--name <ROUTE_NAME>] [--receive-
 
 `help` | `--help` | `-h`
 :   List options available for the command.
-  
+
 ### Example
 {: #activity-tracking-route-update-example}
 
@@ -628,14 +628,14 @@ Updated:                 2021-07-21T18:33:48.898Z
 ## ibmcloud atracker route get
 {: #activity-tracking-route-get}
 
-Use this command to get information about a route for an {{site.data.keyword.atracker_full_notm}} region. 
+Use this command to get information about a route for an {{site.data.keyword.atracker_full_notm}} region.
 
 ```text
 ibmcloud atracker route get --route [ <ROUTE_ID> | <ROUTE_NAME> ] [--region <REGION>] [--output JSON]
 ```
 {: pre}
 
-### Command options 
+### Command options
 {: #activity-tracking-route-get-options}
 
 `--route <ROUTE_ID>` | `<ROUTE_NAME>`
@@ -649,7 +649,7 @@ ibmcloud atracker route get --route [ <ROUTE_ID> | <ROUTE_NAME> ] [--region <REG
 
 `help` | `--help` | `-h`
 :   List options available for the command.
-  
+
 ### Example
 {: #activity-tracking-route-get-example}
 
@@ -679,14 +679,14 @@ The following is an example using the **`ibmcloud atracker route get --route my_
 ## ibmcloud atracker route rm
 {: #activity-tracking-route-rm}
 
-Use this command to delete a route for an {{site.data.keyword.atracker_full_notm}} region. 
+Use this command to delete a route for an {{site.data.keyword.atracker_full_notm}} region.
 
 ```text
 ibmcloud atracker route rm --route <ROUTE> [--region <REGION>] [--force]
 ```
 {: pre}
 
-### Command options 
+### Command options
 {: #activity-tracking-route-rm-options}
 
 `--route <ROUTE>`
@@ -700,7 +700,7 @@ ibmcloud atracker route rm --route <ROUTE> [--region <REGION>] [--force]
 
 `help` | `--help` | `-h`
 :   List options available for the command.
-  
+
 ### Example
 {: #activity-tracking-route-rm-example}
 
@@ -727,14 +727,14 @@ Something went wrong. Error: No route found with route name - my_route.
 ## ibmcloud atracker config report
 {: #activity-tracking-config-report}
 
-Use this command to return a report about the {{site.data.keyword.atracker_full_notm}} service configuration which includes any issues in the configuration. 
+Use this command to return a report about the {{site.data.keyword.atracker_full_notm}} service configuration which includes any issues in the configuration.
 
 ```text
-ibmcloud atracker config report --output YAML 
+ibmcloud atracker config report --output YAML
 ```
 {: pre}
 
-### Command options 
+### Command options
 {: #activity-tracking-config-report-options}
 
 `--output YAML`
@@ -742,7 +742,7 @@ ibmcloud atracker config report --output YAML
 
 `help` | `--help` | `-h`
 :   List options available for the command.
-  
+
 ### Example
 {: #activity-tracking-config-report-example}
 
@@ -758,7 +758,3 @@ config-report:
 - region: us-south
 ```
 {: screen}
-
-
-
-

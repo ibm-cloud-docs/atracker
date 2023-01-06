@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2019, 2022
+  years: 2019, 2023
 lastupdated: "2022-05-13"
 
-keywords: 
+keywords:
 
 subcollection: atracker
 
@@ -32,5 +32,3 @@ You are trying to configure a target and the region you requested the target be 
 
 [Configure the --permitted-target-regions in the configuration settings](/docs/atracker?topic=atracker-settings&interface=cli) to include the the region where you want to configure a target, or specify a target region (`-r`) on your create request in one of the existing permitted target regions.
 {: tsResolve}
-
-

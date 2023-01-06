@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2019, 2022
+  years: 2019, 2023
 lastupdated: "2022-05-13"
 
-keywords: 
+keywords:
 
 subcollection: atracker
 
@@ -31,5 +31,3 @@ You are trying to create a new target and you already have 16 targets configured
 
 Only 16 targets are supported in an account across all regions. If you need to create a new target, delete an existing [COS target](/docs/atracker?topic=atracker-target_v2_cos&interface=api#target-delete-api-cos) or an existing [LogDNA target](/docs/atracker?topic=atracker-target_v2_at&interface=api#target-delete-api-at) that is no longer needed and retry the request.
 {: tsResolve}
-
-

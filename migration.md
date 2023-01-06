@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2019, 2022
+  years: 2019, 2023
 lastupdated: "2022-05-24"
 
-keywords: 
+keywords:
 
 subcollection: atracker
 
@@ -34,7 +34,7 @@ Once you have migrated from your existing V1 configuration to V2, you must use t
 
 When you migrate the {{site.data.keyword.atracker_short}} account configuration from V1 to V2 in your account, you must plan and decide how the account's {{site.data.keyword.atracker_short}} configuration is managed and stored:
 
-1. Decide the location in your {{site.data.keyword.cloud_notm}} account where the {{site.data.keyword.atracker_short}} account configuration metadata is stored. 
+1. Decide the location in your {{site.data.keyword.cloud_notm}} account where the {{site.data.keyword.atracker_short}} account configuration metadata is stored.
 
     You can choose any of the supported locations where {{site.data.keyword.atracker_short}} is available. For more information, see [Locations](/docs/atracker?topic=atracker-regions&interface=cli).
 
@@ -64,11 +64,11 @@ Users must have the following [IAM roles](/docs/account?topic=account-assign-acc
 | `atracker.setting.update` | Account        | `Administrator`| Update settings |
 {: caption="Table 1. Required IAM roles to manage the {{site.data.keyword.atracker_short}} account settings." caption-side="top"}
 
-Users must have the following [IAM roles](/docs/account?topic=account-assign-access-resources) to migrate the account's {{site.data.keyword.atracker_short}} configuration. 
+Users must have the following [IAM roles](/docs/account?topic=account-assign-access-resources) to migrate the account's {{site.data.keyword.atracker_short}} configuration.
 
 | Role                      | Minimum scope  | Minimum required roles | Action         |
 | ------------------------- | -------------- | ---------------------- | -------------- |
-| `atracker.migration.post` | Account        | `Administrator`        | Start the migration of {{site.data.keyword.atracker_short}} resources in the account. | 
+| `atracker.migration.post` | Account        | `Administrator`        | Start the migration of {{site.data.keyword.atracker_short}} resources in the account. |
 | `atracker.migration.get`  | Account        | `Administrator`  \n `Editor`  \n `Viewer`  \n `Operator` | Get the status of {{site.data.keyword.atracker_short}} resources that are being migrated from V1 to V2. |
 | `atracker.migration.delete`  | Account        | IBM INTERNAL USE ONLY | IBM INTERNAL USE ONLY |
 {: caption="Table 2. Required IAM roles to migrate the {{site.data.keyword.atracker_short}} account configuration." caption-side="top"}
@@ -78,9 +78,9 @@ Users must have the following [IAM roles](/docs/account?topic=account-assign-acc
 
 Use the following diagrams to follow the steps to migrate the {{site.data.keyword.atracker_short}} account configuration from V1 to V2 using the CLI or API:
 
-| CLI | API | 
+| CLI | API |
 | -------------- | -------------- |
-| [![Step 1: Configure and initialize the Activity Tracker CLI V2 in your local system](/images/mig_s1.svg)](/docs/atracker?topic=atracker-migration&interface=cli#migration-step1) |[![Step 1: Configure and initialize the Activity Tracker CLI V2 in your local system](/images/mig_s1.svg)](/docs/atracker?topic=atracker-migration&interface=api#migration-step1-api) | 
+| [![Step 1: Configure and initialize the Activity Tracker CLI V2 in your local system](/images/mig_s1.svg)](/docs/atracker?topic=atracker-migration&interface=cli#migration-step1) |[![Step 1: Configure and initialize the Activity Tracker CLI V2 in your local system](/images/mig_s1.svg)](/docs/atracker?topic=atracker-migration&interface=api#migration-step1-api) |
 | [![Step 2: Check the Activity Tracker resources that must be migrated in the account](/images/mig_s2.svg)](/docs/atracker?topic=atracker-migration&interface=cli#migration-step2) | [![Step 2: Check the Activity Tracker resources that must be migrated in the account](/images/mig_s2.svg)](/docs/atracker?topic=atracker-migration&interface=api#migration-step2-api) |
 | [![Step 3: Configure the Activity Tracker account settings](/images/mig_s3.svg)](/docs/atracker?topic=atracker-migration&interface=cli#migration-step3) | [![Step 3: Configure the Activity Tracker account settings](/images/mig_s3.svg)](/docs/atracker?topic=atracker-migration&interface=api#migration-step3-api) |
 | [![Step 4: Migrate the Activity Tracker resources](/images/mig_s4.svg)](/docs/atracker?topic=atracker-migration&interface=cli#migration-step4) | [![Step 4: Migrate the Activity Tracker resources](/images/mig_s4.svg)](/docs/atracker?topic=atracker-migration&interface=api#migration-step4-api) |
@@ -138,12 +138,12 @@ Complete the following steps:
 
     ```text
     OK
-    IBM Cloud Activity Tracker settings       
-    Metadata region primary:                                
-    Default targets:                                     []   
-    Permitted target regions:                            []   
-    Private api endpoint only:                           false   
-    API version:                                         1   
+    IBM Cloud Activity Tracker settings
+    Metadata region primary:
+    Default targets:                                     []
+    Permitted target regions:                            []
+    Private api endpoint only:                           false
+    API version:                                         1
     ```
     {: screen}
 
@@ -155,16 +155,16 @@ Complete the following steps:
     {: pre}
 
     Where
-    
+
     - `METADATA_REGION` defines the {{site.data.keyword.cloud_notm}} location where the {{site.data.keyword.atracker_short}} account metadata is stored. For more information, see [Locations](/docs/atracker?topic=atracker-regions&interface=cli).
 
-    - `TARGET` defines 1 or more target IDs. When a supported {{site.data.keyword.atracker_short}} location is not configured to collect auditing events, these events are routed to every target that is listed in this section. 
+    - `TARGET` defines 1 or more target IDs. When a supported {{site.data.keyword.atracker_short}} location is not configured to collect auditing events, these events are routed to every target that is listed in this section.
 
         The target IDs that you list must be defined within the account where the auditing events are being generated.
         {: important}
 
     - `REGION` defines the list of supported {{site.data.keyword.atracker_short}} locations where the account administrator can define a target to collect auditing events.
-    
+
     - `--private-api-endpoint-only` indicates whether an account administrator can only use private api endpoints to manage the {{site.data.keyword.atracker_short}} account configuration.
 
     Make sure that the `--permitted-target-regions` list all the regions where you have currently defined targets in your account. Also, you must have a `--metadata-region-primary` defined as well as a `--default-targets` target before [migrating your account configuration.](#migration-step4)
@@ -174,10 +174,10 @@ Complete the following steps:
 {: #migration-step4}
 {: cli}
 
-Use this command to migrate the {{site.data.keyword.atracker_short}} account configuration from a V1 API configuration to a V2 API configuration. 
+Use this command to migrate the {{site.data.keyword.atracker_short}} account configuration from a V1 API configuration to a V2 API configuration.
 
 ```text
-ibmcloud atracker migration start 
+ibmcloud atracker migration start
 ```
 {: pre}
 
@@ -194,7 +194,7 @@ OK
       "resource_type": "route",
       "id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
       "status": "pending",
-      "detailed_status": 
+      "detailed_status":
       [
         "migration of this resource is not started yet."
       ],
@@ -207,10 +207,10 @@ OK
       "detailed_status": [
         "migration of this resource is not started yet."
       ],
-      "error" : "",                    
+      "error" : "",
     },
   ]
-}         
+}
 ```
 {: codeblock}
 
@@ -273,7 +273,7 @@ ibmcloud atracker init version
 
 The following table lists the actions that you can run to migrate your accounts and find the status of an existing migration request:
 
-| Action                     | REST API Method  | API_URL                                          | 
+| Action                     | REST API Method  | API_URL                                          |
 |----------------------------|------------------|--------------------------------------------------|
 | Migrate account            | `POST`            | `<ENDPOINT>/api/v2/migration`  |
 | Get migration status            | `GET`           | `<ENDPOINT>/api/v2/migration`              |
@@ -314,7 +314,7 @@ Complete the following prerequisites to configure and initialize the {{site.data
 
 2. Log in to the {{site.data.keyword.cloud_notm}}. Run the following command: [ibmcloud login](/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_login)
 
-3. Make sure that your account is configured to use the V1 APIs. 
+3. Make sure that your account is configured to use the V1 APIs.
 
     Initialize the {{site.data.keyword.atracker_short}} CLI plugin to use the API version that was used to create the configuration resources in your account. Run the following command:
 
@@ -332,9 +332,9 @@ Complete the following prerequisites to configure and initialize the {{site.data
 Check the resources that must be migrated. Run the following command:
 
 ```shell
-curl -X GET 
-  https://<ENDPOINT>/api/v2/migration 
-  -H "Authorization: Bearer <IAM_TOKEN>" 
+curl -X GET
+  https://<ENDPOINT>/api/v2/migration
+  -H "Authorization: Bearer <IAM_TOKEN>"
   -H 'accept: application/json'
 ```
 {: codeblock}
@@ -352,13 +352,13 @@ Complete the following steps:
 1. Check the account settings. Run the following command:
 
    ```shell
-   curl -X GET <ENDPOINT>/api/v2/settings   -H "Authorization:  $ACCESS_TOKEN"   
+   curl -X GET <ENDPOINT>/api/v2/settings   -H "Authorization:  $ACCESS_TOKEN"
    ```
    {: codeblock}
 
    Where:
 
-   `<ENDPOINT>` 
+   `<ENDPOINT>`
    :   Is the API endpoint in the region where you plan to configure or manage a target. For more information, see [Endpoints](/docs/atracker?topic=atracker-endpoints#endpoints_api).
 
    You will get a response similar to the following one where no settings have been configured and only some values are displayed to indicate default values. The account settings is new in V2.
@@ -377,9 +377,9 @@ Complete the following steps:
 2. Configure the V2 account settings. Run the following command:
 
    ```shell
-   curl -X PUT  <ENDPOINT>/api/v2/settings   
-   -H "Authorization:  $ACCESS_TOKEN"   
-   -H "content-type: application/json"  
+   curl -X PUT  <ENDPOINT>/api/v2/settings
+   -H "Authorization:  $ACCESS_TOKEN"
+   -H "content-type: application/json"
    -d '{
       "default_targets": ["IDs"],
       "permitted_target_regions": ["REGIONS"],
@@ -391,7 +391,7 @@ Complete the following steps:
 
    Where:
 
-   `ENDPOINT` 
+   `ENDPOINT`
    :    Is the API endpoint in the region where you plan to configure or manage a target. For more information, see [Endpoints](/docs/atracker?topic=atracker-endpoints#endpoints_api).
 
    `default_targets`
@@ -413,12 +413,12 @@ Complete the following steps:
 {: #migration-step4-api}
 {: api}
 
-Use this command to migrate the {{site.data.keyword.atracker_short}} account configuration from a V1 API configuration to a V2 API configuration. 
+Use this command to migrate the {{site.data.keyword.atracker_short}} account configuration from a V1 API configuration to a V2 API configuration.
 
 ```shell
-curl -X POST 
-  https://<ENDPOINT>/api/v2/migration 
-  -H "Authorization: Bearer <IAM_TOKEN>" 
+curl -X POST
+  https://<ENDPOINT>/api/v2/migration
+  -H "Authorization: Bearer <IAM_TOKEN>"
   -H 'accept: application/json'
 ```
 {: codeblock}
@@ -436,7 +436,7 @@ The following is an example when a migration has started.
       "resource_type": "route",
       "id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
       "status": "pending",
-      "detailed_status": 
+      "detailed_status":
       [
         "migration of this resource is not started yet."
       ],
@@ -460,9 +460,9 @@ The following is an example when a migration has started.
 Use the following command to get the status of an in-progress migration:
 
 ```shell
-curl -X GET 
-  https://<ENDPOINT>/api/v2/migration 
-  -H "Authorization: Bearer <IAM_TOKEN>" 
+curl -X GET
+  https://<ENDPOINT>/api/v2/migration
+  -H "Authorization: Bearer <IAM_TOKEN>"
   -H 'accept: application/json'
 ```
 {: codeblock}
@@ -514,9 +514,9 @@ ibmcloud atracker init version
 {: #migration-rc}
 {: api}
 
-When you use the {{site.data.keyword.atracker_short}} REST API, you can get standard HTTP response codes to indicate whether a method completed successfully. 
+When you use the {{site.data.keyword.atracker_short}} REST API, you can get standard HTTP response codes to indicate whether a method completed successfully.
 
-- A 200 response always indicates success. 
+- A 200 response always indicates success.
 - A 4xx response indicates a failure.
 - A 5xx response usually indicates an internal system error.
 
@@ -533,5 +533,3 @@ See the following table for some HTTP response codes:
 | `429` |	Too Many Requests |	Too many requests hit the API too quickly. |
 | `500` |	Internal Server Error |	Something went wrong in {{site.data.keyword.atracker_short}} processing. |
 {: caption="Table 4. List of HTTP response codes" caption-side="top"}
-
-

@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2019, 2022
+  years: 2019, 2023
 lastupdated: "2022-08-08"
 
 keywords: Observability
@@ -11,9 +11,9 @@ subcollection: atracker
 ---
 
 {{site.data.keyword.attribute-definition-list}}
- 
 
-# Getting started 
+
+# Getting started
 {: #getting-started}
 
 Use {{site.data.keyword.atracker_full}} to configure how to route auditing events, both [global](/docs/atracker?topic=atracker-event_types#event_types_global) and [location-based](/docs/atracker?topic=atracker-event_types#event_types_location) event data, in your {{site.data.keyword.cloud_notm}}. auditing events are critical data for security operations and a key element for meeting compliance requirements. Control of the storage location is critical to building enterprise-grade solutions on the {{site.data.keyword.cloud_notm}}.
@@ -30,7 +30,7 @@ You can use {{site.data.keyword.atracker_short}}, a platform service, to manage 
 
 - [Install the {{site.data.keyword.atracker_full_notm}} CLI](/docs/atracker?topic=atracker-atracker-cli-config).
 
-- You must have a user ID with permissions to manage {{site.data.keyword.atracker_full_notm}}. For more information about IAM roles and how to assign them, see [Managing access with IAM](/docs/atracker?topic=atracker-iam) and [IAM roles](/docs/account?topic=account-assign-access-resources). 
+- You must have a user ID with permissions to manage {{site.data.keyword.atracker_full_notm}}. For more information about IAM roles and how to assign them, see [Managing access with IAM](/docs/atracker?topic=atracker-iam) and [IAM roles](/docs/account?topic=account-assign-access-resources).
 
 
 
@@ -74,7 +74,7 @@ In this step, you will configure a route to redirect regional and global events 
 Run the following command to create the route:
 
 ```text
-ibmcloud atracker route create --name <ROUTE_NAME> --rules 
+ibmcloud atracker route create --name <ROUTE_NAME> --rules
 ```
 {: pre}
 
@@ -124,7 +124,7 @@ Where
 - `<REGION>` defines the region from where auditing events are collected. For example, valid values are `us-south` and `us-east`.
 - `<DATE>` defines the date when auditing events are collected. The format is `YYYY-MM-DD`.
 - `<HOUR>` defines the hour of the day. The value is set by using a 24-hour clock.
-- `<FILENAME>` defines a timestamp. The format is `YYYY-MM-DDTHH:MM+SS`. 
+- `<FILENAME>` defines a timestamp. The format is `YYYY-MM-DDTHH:MM+SS`.
 
 Each log file includes auditing events that have an `eventTime` that maps the filename timestamp. `eventTime` indicates when the auditing event was generated.
 
@@ -149,7 +149,3 @@ You can choose any of the following methods to list objects in a bucket:
 {: #getting-started-next}
 
 Plan your account configuration. For more information, see [Planning your account configuration settings](/docs/atracker?topic=atracker-atracker-resources-planning).
-
-
-
-
