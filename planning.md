@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2022
+  years: 2022, 2023
 lastupdated: "2022-10-24"
 
-keywords: 
+keywords:
 
 subcollection: atracker
 
@@ -44,7 +44,7 @@ You can use {{site.data.keyword.atracker_short}} to manage auditing events at th
 ## Metadata location
 {: #planning-1}
 
-Decide the location in your {{site.data.keyword.cloud_notm}} account where the {{site.data.keyword.atracker_short}} account configuration metadata is stored. 
+Decide the location in your {{site.data.keyword.cloud_notm}} account where the {{site.data.keyword.atracker_short}} account configuration metadata is stored.
 
 You can choose any of the supported locations where {{site.data.keyword.atracker_short}} is available. For more information, see [Locations](/docs/atracker?topic=atracker-regions).
 
@@ -81,7 +81,7 @@ The location of a target definition must be a supported location where {{site.da
 ## Default targets
 {: #planning-4}
 
-You can define up to 2 default targets in the account. 
+You can define up to 2 default targets in the account.
 - Each target collects auditing events that are not explicitly managed in the account's routing rules.
 - Each target must be defined in the account before you can configure it as default one in the account.
 - If you define more than 1 default target, all default targets get a copy of an auditing event that does not have a clearly defined routing rule to indicate where to route events in the account.
@@ -111,12 +111,12 @@ For more information, see [Targets](/docs/atracker?topic=atracker-atracker-resou
 
 Define the routing rules that indicate how to route events in your account.
 
-- Routes are global. 
+- Routes are global.
 
 - You can define up to 4 routes per account.
-    
+
 - You can define 1 or more routes to configure how auditing events across all regions in your account are collected and stored in 1 or more targets.
-    
+
 - For each route that you define, you can configure 4 rules. These rules are applied top down. When a rule is identified for a region, any follow up rules withing that route definition that apply to that region are not considered.
 
 Decide if you want to drop the collection of auditing events in 1 or more regions. Check any compliance requirements to confirm that you can.
@@ -125,10 +125,8 @@ Decide if you want to drop the collection of auditing events in 1 or more region
 
 For more information, see [Routes](/docs/atracker?topic=atracker-atracker-resources#atracker-resources-routes).
 
- 
+
 ## Next
 {: #planning-next}
 
-Next, [check samples of different scenarios](/docs/atracker?topic=atracker-atracker-scenarios). 
-
-
+Next, [check samples of different scenarios](/docs/atracker?topic=atracker-atracker-scenarios).

@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2019, 2022
+  years: 2019, 2023
 lastupdated: "2022-08-08"
 
-keywords: 
+keywords:
 
 subcollection: atracker
 
@@ -18,7 +18,7 @@ subcollection: atracker
 # {{site.data.keyword.cloud_notm}} services that generate events that are managed through {{site.data.keyword.at_short}} hosted event search
 {: #cloud_services_other}
 
-List of {{site.data.keyword.cloud}} services that generate auditing events in an {{site.data.keyword.cloud_notm}} account that you can only manage through {{site.data.keyword.at_short}} hosted event search instances. 
+List of {{site.data.keyword.cloud}} services that generate auditing events in an {{site.data.keyword.cloud_notm}} account that you can only manage through {{site.data.keyword.at_short}} hosted event search instances.
 {: shortdesc}
 
 {{site.data.keyword.at_short}} hosted event search routes location-based auditing events to an {{site.data.keyword.at_short}} hosted event search instance in the region where they are generated and routes global auditing events to the {{site.data.keyword.at_short}} instance that is provisioned in Frankfurt. Some exceptions may apply, see [IBM Cloud services that generate Activity Tracker events by location](/activity-tracker?topic=activity-tracker-cloud_services_locations&interface=cli).
@@ -63,7 +63,7 @@ The following table lists database services that send auditing events:
 |-------------|------------------|--------|
 | [{{site.data.keyword.databases-for-enterprisedb_full}}](/docs/databases-for-enterprisedb?topic=databases-for-enterprisedb-getting-started) | `databases-for-enterprisedb-group` | [Location-based events](/docs/databases-for-enterprisedb?topic=cloud-databases-activity-tracker-integration) |
 | [{{site.data.keyword.databases-for-cassandra_full}}](/docs/databases-for-cassandra?topic=databases-for-cassandra-getting-started) | `databases-for-cassandra-group` | [Location-based events](/docs/databases-for-enterprisedb?topic=cloud-databases-activity-tracker-integration) |
-| [{{site.data.keyword.databases-for-postgresql_full}}](/docs/databases-for-postgresql?topic=databases-for-postgresql-getting-started) | `databases-for-postgresql` | [Location-based events](/docs/databases-for-postgresql?topic=cloud-databases-activity-tracker-integration) | 
+| [{{site.data.keyword.databases-for-postgresql_full}}](/docs/databases-for-postgresql?topic=databases-for-postgresql-getting-started) | `databases-for-postgresql` | [Location-based events](/docs/databases-for-postgresql?topic=cloud-databases-activity-tracker-integration) |
 | [{{site.data.keyword.databases-for-redis_full_notm}}](/docs/databases-for-redis?topic=databases-for-redis-getting-started) | `databases-for-redis-group` | [Location-based events](/docs/databases-for-redis?topic=cloud-databases-activity-tracker-integration) |
 | [{{site.data.keyword.databases-for-etcd_full_notm}}](/docs/databases-for-etcd?topic=databases-for-etcd-getting-started) | `databases-for-etcd-group` | [Location-based events](/docs/databases-for-etcd?topic=cloud-databases-activity-tracker-integration) |
 | [{{site.data.keyword.databases-for-elasticsearch_full_notm}}](/docs/databases-for-elasticsearch?topic=databases-for-elasticsearch-getting-started) | `databases-for-elasticsearch-group` | [Location-based events](/docs/databases-for-elasticsearch?topic=cloud-databases-activity-tracker-integration) |
@@ -93,7 +93,7 @@ The following table lists {{site.data.keyword.contdelivery_full}} services that 
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
 | [{{site.data.keyword.contdelivery_full}}](/docs/ContinuousDelivery?topic=ContinuousDelivery-getting-started) | `continuous-delivery` | [Location-based events](/docs/ContinuousDelivery?topic=ContinuousDelivery-cd-at-events) |
-| [Toolchain](/docs/ContinuousDelivery?topic=ContinuousDelivery-cd_about) | `toolchain` | [Location-based events](/docs/ContinuousDelivery?topic=ContinuousDelivery-cd-at-events#toolchain-events) | 
+| [Toolchain](/docs/ContinuousDelivery?topic=ContinuousDelivery-cd_about) | `toolchain` | [Location-based events](/docs/ContinuousDelivery?topic=ContinuousDelivery-cd-at-events#toolchain-events) |
 {: caption="Table 5. List of developer tools services" caption-side="top"}
 
 
@@ -131,7 +131,7 @@ The following table lists observability services that send auditing events:
 | [{{site.data.keyword.at_full}} hosted event search offering](/docs/atracker?topic=atracker-getting-started) | `logdnaat` | [Location-based events](/docs/atracker?topic=atracker-at_events) |
 | [{{site.data.keyword.la_full}}](/docs/log-analysis?topic=log-analysis-getting-started#getting-started) | `logdna` | [Location-based events](/docs/log-analysis?topic=log-analysis-at_events) |
 | [{{site.data.keyword.mon_full}}](/docs/monitoring?topic=monitoring-getting-started) | `sysdig-monitor` | [Location-based events](/docs/monitoring?topic=monitoring-at_events) |
-{: caption="Table 8. List of observability services" caption-side="top"} 
+{: caption="Table 8. List of observability services" caption-side="top"}
 
 
 ## Security services
@@ -161,6 +161,3 @@ The following table lists Watson AI services that send auditing events:
 | [{{site.data.keyword.languagetranslatorfull}}](/docs/language-translator?topic=language-translator-gettingstarted) | `language-translator` | [Location-based events](/docs/language-translator?topic=language-translator-at_events) |
 | [{{site.data.keyword.pm_full}}](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/ml-overview.html) | `pm-20` | [Location-based events](https://dataplatform.cloud.ibm.com/docs/content/wsj/admin/at-events.html#wml) |
 {: caption="Table 10. List of Watson AI services" caption-side="top"}
-
-
-

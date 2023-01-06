@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2019, 2022
+  years: 2019, 2023
 lastupdated: "2022-08-08"
 
-keywords: 
+keywords:
 
 subcollection: atracker
 
@@ -12,7 +12,7 @@ subcollection: atracker
 
 {{site.data.keyword.attribute-definition-list}}
 
- 
+
 # IAM actions by role
 {: #iam_by_role}
 
@@ -22,7 +22,7 @@ The following tables show the {{site.data.keyword.atracker_short}} actions by ro
 For {{site.data.keyword.atracker_short}}, the IAM actions and Activity Tracker actions are the same.
 {: note}
 
- 
+
 ## Operator
 {: #iam_by_role_operator}
 
@@ -99,6 +99,3 @@ For {{site.data.keyword.atracker_short}}, the IAM actions and Activity Tracker a
 
 `[V2]` is only applicable once you have [migrated to the V2 configuration.](/docs/activity-tracker?topic=activity-tracker-migration)  `[V1]` is only applicable to the V1 configuration and is unavailable after you migrate to the V2 configuration. All others are applicable to both configurations.
 {: note}
-
-
-

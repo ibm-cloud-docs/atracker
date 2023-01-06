@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2019, 2022
+  years: 2019, 2023
 lastupdated: "2021-08-09"
 
-keywords: 
+keywords:
 
 subcollection: atracker
 
@@ -17,9 +17,9 @@ content-type: troubleshoot
 # Are you getting a binding_error code when you make a cURL API request?
 {: #troubleshoot-01}
 {: troubleshoot}
-{: support} 
+{: support}
 
-If you use single quotes in an API request, the request fails with a binding error. 
+If you use single quotes in an API request, the request fails with a binding error.
 {: shortdesc}
 
 
@@ -44,6 +44,4 @@ Check the header in your cURL request is set with double quotes.
 ```text
 -H "Authorization:  $ACCESS_TOKEN"   -H "content-type: application/json"
 ```
-{: codeblock} 
-
-
+{: codeblock}

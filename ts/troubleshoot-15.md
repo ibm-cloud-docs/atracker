@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2019, 2022
+  years: 2019, 2023
 lastupdated: "2022-06-21"
 
-keywords: 
+keywords:
 
 subcollection: atracker
 
@@ -31,5 +31,3 @@ If Administrator privileges are set to `All Identity and Access enabled services
 
 Reconfigure the Administrator privileges in {{site.data.keyword.iamshort}} and retry your {{site.data.keyword.atracker_full_notm}} requests.
 {: tsResolve}
-
-

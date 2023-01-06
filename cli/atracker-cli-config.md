@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2019, 2022
+  years: 2019, 2023
 lastupdated: "2022-08-08"
 
-keywords: 
+keywords:
 
 subcollection: atracker
 
@@ -44,7 +44,7 @@ Complete the following steps to install the {{site.data.keyword.atracker_short}}
     ```
     {: pre}
 
-    The output of the command will list the versions that are available. 
+    The output of the command will list the versions that are available.
 
 3. Install the CLI plugin in your local system. Run the following command:
 
@@ -56,7 +56,7 @@ Complete the following steps to install the {{site.data.keyword.atracker_short}}
     Where `VERSION` is the value of a listed version that is available for the plugin.
 
     If you already have the {{site.data.keyword.atracker_short}} CLI plugin installed in your local system and you want to update the version of the plugin, run the following command: `ibmcloud plugin update atracker`.
-   
+
 
 If you want to delete the {{site.data.keyword.atracker_short}} CLI plugin from your local system, run the following command: `ibmcloud plugin delete atracker`.
 {: tip}
@@ -70,7 +70,7 @@ If you want to delete the {{site.data.keyword.atracker_short}} CLI plugin from y
 Initialize the CLI plugin in your local system to set the API version that the CLI plugin uses to manage the {{site.data.keyword.atracker_short}} account configuration. Use the `ibmcloud atracker init` command.
 
 You must set the API version that the CLI plugin targets in your local system in any of the following scenarios:
-- After you complete the migration of an {{site.data.keyword.atracker_short}} V1 configuration to V2. 
+- After you complete the migration of an {{site.data.keyword.atracker_short}} V1 configuration to V2.
 - After you have installed the CLI V2 plugin in your local system and you have an {{site.data.keyword.atracker_short}} V1 configuration configured in your account.
 
 ![Flowchart showing how to configure my local CLI to manage the {{site.data.keyword.atracker_short}} account configuration](../images/atracker_version.svg "Flowchart showing how to configure my local CLI to manage the {{site.data.keyword.atracker_short}} account configuration"){: caption="Figure 1. Flowchart showing steps depending on your configuration version" caption-side="bottom"}
@@ -82,19 +82,19 @@ When you are logged in to an {{site.data.keyword.cloud_notm}} account from your 
 
 - If your {{site.data.keyword.cloud_notm}} account is running an {{site.data.keyword.atracker_short}} V1 configuration and you have a CLI V1 plugin installed in your local system, the CLI plugin is set by default in your local system to use the API V1.
 
-- If your {{site.data.keyword.cloud_notm}} account is running an {{site.data.keyword.atracker_short}} V1 configuration and you have a CLI V2 plugin installed in your local system, you must set the API version that the CLI plugin targets in your local system to V1 by running the `ibmcloud atracker init version` command. 
+- If your {{site.data.keyword.cloud_notm}} account is running an {{site.data.keyword.atracker_short}} V1 configuration and you have a CLI V2 plugin installed in your local system, you must set the API version that the CLI plugin targets in your local system to V1 by running the `ibmcloud atracker init version` command.
 
 - If your {{site.data.keyword.cloud_notm}} account is running an {{site.data.keyword.atracker_short}} V2 configuration and you have a CLI V1 plugin installed in your local system, you must upgrade your local system by installing the CLI V2 plugin.
 
 - If your {{site.data.keyword.cloud_notm}} account is running an {{site.data.keyword.atracker_short}} V2 configuration and you have a CLI V2 plugin installed in your local system, the CLI plugin is set by default in your local system to use the API V2.
 
-- If you have a CLI V2 plugin installed in your local system and you migrate your account from an {{site.data.keyword.atracker_short}} V1 configuration to an {{site.data.keyword.atracker_short}} V2 configuration, you must set the API version that the CLI plugin targets in your local system to V2 by running the `ibmcloud atracker init version` command. 
+- If you have a CLI V2 plugin installed in your local system and you migrate your account from an {{site.data.keyword.atracker_short}} V1 configuration to an {{site.data.keyword.atracker_short}} V2 configuration, you must set the API version that the CLI plugin targets in your local system to V2 by running the `ibmcloud atracker init version` command.
 
 
-### IAM permissions 
+### IAM permissions
 {: #atracker-cli-config-iam}
 
-To run the `ibmcloud atracker init` command, you must have the following [IAM roles](/docs/account?topic=account-assign-access-resources): 
+To run the `ibmcloud atracker init` command, you must have the following [IAM roles](/docs/account?topic=account-assign-access-resources):
 
 | Role                      | Minimum required roles | Action
 | ------------------------- | ---------------------- | -------------- |
@@ -105,7 +105,7 @@ To run the `ibmcloud atracker init` command, you must have the following [IAM ro
 ### Scenario 1: Before you migrate the {{site.data.keyword.atracker_short}} configuration
 {: #atracker-cli-config-set-1}
 
-If you have routes and targets already configured in your {{site.data.keyword.cloud_notm}} account when the V2 CLI is deployed to your local system, you must run the `ibmcloud atracker init version` command to revert your local system to use the V1 API until you have [migrated your routes and targets to a V2 configuration.](/docs/atracker?topic=atracker-migrate-resources) 
+If you have routes and targets already configured in your {{site.data.keyword.cloud_notm}} account when the V2 CLI is deployed to your local system, you must run the `ibmcloud atracker init version` command to revert your local system to use the V1 API until you have [migrated your routes and targets to a V2 configuration.](/docs/atracker?topic=atracker-migrate-resources)
 {: important}
 
 Complete the following steps to set the CLI version to V1 so that you can manage an {{site.data.keyword.atracker_short}} V1 configuration with a CLI V2 plugin:
@@ -149,5 +149,3 @@ When you migrate your account's {{site.data.keyword.atracker_short}} configurati
     {: pre}
 
     The plugin is set to V2.
-
-

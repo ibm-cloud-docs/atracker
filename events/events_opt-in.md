@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2019, 2022
+  years: 2019, 2023
 lastupdated: "2022-08-08"
 
-keywords: 
+keywords:
 
 subcollection: atracker
 
@@ -55,13 +55,13 @@ The following table lists the services that require additional steps for you to 
 
 The following table lists the Watson services and related information about additional steps that you might need to be able to monitor events:
 
-| Service Name | Paid plan required | Other configuration required | 
+| Service Name | Paid plan required | Other configuration required |
 |--|--|--|
 | {{site.data.keyword.conversationfull}} | ![Checkmark icon](../../icons/checkmark-icon.svg)   \n Premium & Enterprise Plans only feature | |
 | {{site.data.keyword.discoveryfull}} |   |   |
-| {{site.data.keyword.DSX_full}} | ![Checkmark icon](../../icons/checkmark-icon.svg) |   |  
+| {{site.data.keyword.DSX_full}} | ![Checkmark icon](../../icons/checkmark-icon.svg) |   |
 | IBM Watson&trade; Knowledge Catalog | ![Checkmark icon](../../icons/checkmark-icon.svg) |   |
-| {{site.data.keyword.pm_full}} | ![Checkmark icon](../../icons/checkmark-icon.svg) |   |  
+| {{site.data.keyword.pm_full}} | ![Checkmark icon](../../icons/checkmark-icon.svg) |   |
 | {{site.data.keyword.knowledgestudiofull}} |  |   |
 | {{site.data.keyword.languagetranslatorfull}} | ![Checkmark icon](../../icons/checkmark-icon.svg) |   |
 | {{site.data.keyword.nlufull}} | ![Checkmark icon](../../icons/checkmark-icon.svg) |   |
@@ -71,11 +71,11 @@ The following table lists the Watson services and related information about addi
 
 The following table lists Watson services that are deprecated:
 
-| Service Name | Paid plan required | Other configuration required | 
+| Service Name | Paid plan required | Other configuration required |
 | -- | -- | -- |
-| {{site.data.keyword.cncfull}} | ![Checkmark icon](../../icons/checkmark-icon.svg) |   |  
-| {{site.data.keyword.visualrecognitionfull}} | ![Checkmark icon](../../icons/checkmark-icon.svg) |   | 
+| {{site.data.keyword.cncfull}} | ![Checkmark icon](../../icons/checkmark-icon.svg) |   |
+| {{site.data.keyword.visualrecognitionfull}} | ![Checkmark icon](../../icons/checkmark-icon.svg) |   |
 | {{site.data.keyword.iva_full}} | ![Checkmark icon](../../icons/checkmark-icon.svg) |   |
-| {{site.data.keyword.nlclassifierfull}} | ![Checkmark icon](../../icons/checkmark-icon.svg) |   |  
+| {{site.data.keyword.nlclassifierfull}} | ![Checkmark icon](../../icons/checkmark-icon.svg) |   |
 | {{site.data.keyword.wh-acd_full}} |   |   |
 {: caption="Table 3. Watson services that require actions for data events and are deprecated" caption-side="top"}

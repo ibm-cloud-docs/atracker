@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2019, 2022
+  years: 2019, 2023
 lastupdated: "2022-08-08"
 
-keywords: 
+keywords:
 
 subcollection: atracker
 
@@ -16,7 +16,7 @@ subcollection: atracker
 # Configuring account settings
 {: #settings}
 
-You can configure the {{site.data.keyword.atracker_short}} account settings in your account by using the {{site.data.keyword.atracker_short}} CLI, the {{site.data.keyword.atracker_short}} REST API, and Terraform scripts. Set these settings to define where and how auditing events are collected, routed, and managed in your account. 
+You can configure the {{site.data.keyword.atracker_short}} account settings in your account by using the {{site.data.keyword.atracker_short}} CLI, the {{site.data.keyword.atracker_short}} REST API, and Terraform scripts. Set these settings to define where and how auditing events are collected, routed, and managed in your account.
 {: shortdesc}
 
 When you configure or modify the {{site.data.keyword.atracker_short}} account settings, consider the following information:
@@ -33,7 +33,7 @@ When you configure or modify the {{site.data.keyword.atracker_short}} account se
 {: #settings-what}
 
 You can define any of the following information:
-1. The location in your {{site.data.keyword.cloud_notm}} account where the {{site.data.keyword.atracker_short}} account configuration metadata is stored. 
+1. The location in your {{site.data.keyword.cloud_notm}} account where the {{site.data.keyword.atracker_short}} account configuration metadata is stored.
 
     By metadata, we refer to the target/route/settings data that is available across the account in any region.
 
@@ -41,28 +41,28 @@ You can define any of the following information:
 
     Take into account any corporate or industry compliance requirements such as Financial Services Validated locations, or EU-managed regions.
 
-2. The type of endpoints that are allowed to manage the {{site.data.keyword.atracker_short}} account configuration in the account. 
+2. The type of endpoints that are allowed to manage the {{site.data.keyword.atracker_short}} account configuration in the account.
 
     You can configiure public endpoints, private endpoints, or both.
 
 3. The locations where an account administrator can define targets to collect auditing events.
 
     You can choose any of the supported locations where {{site.data.keyword.atracker_short}} is available. For more information, see [Locations](/docs/atracker?topic=atracker-regions&interface=cli).
-    
+
     Take into account any corporate or industry compliance requirements such as Financial Services Validated locations, or EU-managed regions.
 
-4. 1 or more targets in the account that will collect auditing events from supported {{site.data.keyword.atracker_short}} locations where you have not configured how you want to collect the auditing data. 
+4. 1 or more targets in the account that will collect auditing events from supported {{site.data.keyword.atracker_short}} locations where you have not configured how you want to collect the auditing data.
 
     If you define more than 1 target, all default targets get a copy of auditing events that do not have a routing rule to indicate where to collect them in the account. You can define up to 2 default targets per account.
     {: note}
 
 
-## IAM permissions 
+## IAM permissions
 {: #settings_access}
 
 You must grant users IAM permissions to manage the account settings. For more information, see [Assign access to resources](/docs/account?topic=account-assign-access-resources).
 
-When you define a policy, you can must set the scope of the policy to the account. A route is a global resource that is not bound to a specific region.  
+When you define a policy, you can must set the scope of the policy to the account. A route is a global resource that is not bound to a specific region.
 {: note}
 
 | IAM action               | IAM Policy scope  | IAM Roles                          | Description         |
@@ -80,7 +80,7 @@ When you define a policy, you can must set the scope of the policy to the accoun
 
 Before you use the the CLI to manage {{site.data.keyword.atracker_short}} account settings, [Install the {{site.data.keyword.atracker_full_notm}} CLI](/docs/atracker?topic=atracker-atracker-cli-config).
 
-Check that you have IAM permissions to read, update, or both the {{site.data.keyword.atracker_short}} account settings. 
+Check that you have IAM permissions to read, update, or both the {{site.data.keyword.atracker_short}} account settings.
 
 
 ## Getting account settings using the CLI
@@ -94,7 +94,7 @@ ibmcloud atracker setting get [--output FORMAT]
 ```
 {: pre}
 
-### Command options 
+### Command options
 {: #settings-get-options}
 
 `--output FORMAT`
@@ -103,7 +103,7 @@ ibmcloud atracker setting get [--output FORMAT]
 `help` | `--help` | `-h`
 :   List options available for the command.
 
- 
+
 ### Example
 {: #settings-get-example}
 
@@ -124,14 +124,14 @@ API version:                 2
 {: #settings-update-cli}
 {: cli}
 
-Use this command to modify current account settings such as the default targets, permitted target regions, and the primary metadata region. 
+Use this command to modify current account settings such as the default targets, permitted target regions, and the primary metadata region.
 
 ```sh
 ibmcloud atracker setting update [--metadata-region-primary REGION] [--metadata-region-backup REGION] [--default-targets TARGET] [--permitted-target-regions REGIONS] [--private-api-endpoint-only ( TRUE | FALSE )] [--output FORMAT] [--force]
 ```
 {: pre}
 
-### Command options 
+### Command options
 {: #settings-update-options}
 
 `default-targets`
@@ -154,7 +154,7 @@ ibmcloud atracker setting update [--metadata-region-primary REGION] [--metadata-
 
  `help` | `--help` | `-h`
 :   List options available for the command.
- 
+
 If the update is successful, the current settings will be displayed.
 
 
@@ -164,7 +164,7 @@ If the update is successful, the current settings will be displayed.
 
 The following table lists the actions that you can run to manage settings:
 
-| Action                     | REST API Method  | API_URL                                          | 
+| Action                     | REST API Method  | API_URL                                          |
 |----------------------------|------------------|--------------------------------------------------|
 | Get settings information            | `GET`           | `<ENDPOINT>/api/v2/settings`              |
 | Update settings            | `PUT`            | `<ENDPOINT>/api/v2/settings`  |
@@ -195,19 +195,19 @@ To make API calls to manage settings, complete the following steps:
 You can use the following cURL command to get existing settings information:
 
 ```shell
-curl -X GET  ENDPOINT/api/v2/settings   -H "Authorization:  $ACCESS_TOKEN"   
+curl -X GET  ENDPOINT/api/v2/settings   -H "Authorization:  $ACCESS_TOKEN"
 ```
 {: codeblock}
 
 Where:
 
-`ENDPOINT` 
+`ENDPOINT`
 :   Is the API endpoint in the region where you plan to configure or manage a target. For more information, see [Endpoints](/docs/atracker?topic=atracker-endpoints#endpoints_api).
 
-For example, you can use the following cURL request settings information the US South region: 
+For example, you can use the following cURL request settings information the US South region:
 
 ```shell
-curl -X GET   https://private.us-south.atracker.cloud.ibm.com/api/v2/settings   -H "Authorization:  $ACCESS_TOKEN"  
+curl -X GET   https://private.us-south.atracker.cloud.ibm.com/api/v2/settings   -H "Authorization:  $ACCESS_TOKEN"
 ```
 {: screen}
 
@@ -246,16 +246,16 @@ Where:
 {: #settings-update-api}
 {: api}
 
-When you update settings, you must include the settings information in the data section of the request. 
+When you update settings, you must include the settings information in the data section of the request.
 - You must pass all fields.
 - Update the fields that need changing.
 
 You can use the following cURL command to update settings:
 
 ```shell
-curl -X PUT  <ENDPOINT>/api/v2/settings   
--H "Authorization:  $ACCESS_TOKEN"   
--H "content-type: application/json"  
+curl -X PUT  <ENDPOINT>/api/v2/settings
+-H "Authorization:  $ACCESS_TOKEN"
+-H "content-type: application/json"
 -d '{
    "default_targets": ["IDs"],
    "permitted_target_regions": ["REGIONS"],
@@ -268,7 +268,7 @@ curl -X PUT  <ENDPOINT>/api/v2/settings
 
 Where:
 
-`ENDPOINT` 
+`ENDPOINT`
 :    Is the API endpoint in the region where you plan to configure or manage a target. For more information, see [Endpoints](/docs/atracker?topic=atracker-endpoints#endpoints_api).
 
 `default_targets`
@@ -292,9 +292,9 @@ Where:
 {: #settings-rc}
 {: api}
 
-When you use the {{site.data.keyword.atracker_full_notm}} REST API, you can get standard HTTP response codes to indicate whether a method completed successfully. 
+When you use the {{site.data.keyword.atracker_full_notm}} REST API, you can get standard HTTP response codes to indicate whether a method completed successfully.
 
-- A 200 response always indicates success. 
+- A 200 response always indicates success.
 - A 4xx response indicates a failure.
 - A 5xx response usually indicates an internal system error.
 
@@ -311,4 +311,3 @@ See the following table for some HTTP response codes:
 | `429` |	Too Many Requests |	Too many requests hit the API too quickly. |
 | `500` |	Internal Server Error |	Something went wrong in {{site.data.keyword.atracker_full_notm}} processing. |
 {: caption="Table 2. List of HTTP response codes" caption-side="top"}
-

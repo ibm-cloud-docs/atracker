@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2019, 2022
+  years: 2019, 2023
 lastupdated: "2022-05-13"
 
-keywords: 
+keywords:
 
 subcollection: atracker
 
@@ -32,5 +32,3 @@ You are trying to configure a COS target and have not specified `--api-key` or `
 
 Retry the request after adding `--api-key` with your [COS bucket API key.](/docs/atracker?topic=atracker-target_v2_cos&interface=cli#cos_apikey) or `--service-to-service-enabled TRUE` as appropriate for your environment. Specifying `--service-to-service-enabled TRUE` requires that you have [service-to-service authorization](/docs/atracker?topic=atracker-target_v2_cos&interface=cli#cos_s2s) configured for your COS bucket.
 {: tsResolve}
-
-

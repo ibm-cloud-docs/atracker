@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2021, 2022
+  years: 2021, 2023
 lastupdated: "2022-06-14"
 
-keywords: 
+keywords:
 
 subcollection: atracker
 
@@ -64,5 +64,5 @@ The following table lists the actions that generate account settings events:
 {: #cdr_viewing_events}
 
 Events are available in the Frankfurt (eu-de) region. To view these events, complete the following steps:
-1. Provision an instance of the {{site.data.keyword.at_full_notm}} service in the Frankfurt (eu-de) region. 
+1. Provision an instance of the {{site.data.keyword.at_full_notm}} service in the Frankfurt (eu-de) region.
 1. Open the {{site.data.keyword.at_full_notm}} UI.

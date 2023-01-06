@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2019, 2022
+  years: 2019, 2023
 lastupdated: "2021-08-09"
 
-keywords: 
+keywords:
 
 subcollection: atracker
 
@@ -30,9 +30,9 @@ The following figure shows the high level architecture for {{site.data.keyword.a
 
 ![A diagram that shows a sample {{site.data.keyword.atracker_short}} architecture.](../images/atracker_arch.svg "{{site.data.keyword.atracker_short}} architecture sample."){: caption="Figure 1. {{site.data.keyword.atracker_short}} sample architecture" caption-side="bottom"}
 
-{{site.data.keyword.atracker_short}} is deployed and managed per region. See [List of supported regions](/docs/atracker?topic=atracker-regions). In each region, the service runs in three physically separate data centers to ensure availability. 
+{{site.data.keyword.atracker_short}} is deployed and managed per region. See [List of supported regions](/docs/atracker?topic=atracker-regions). In each region, the service runs in three physically separate data centers to ensure availability.
 
-All data and the configuration for each service deployment is retained within the region in which it is hosted. 
+All data and the configuration for each service deployment is retained within the region in which it is hosted.
 
 You can use the {{site.data.keyword.atracker_full_notm}} CLI, the {{site.data.keyword.atracker_full_notm}} API, and {{site.data.keyword.atracker_full_notm}} Terraform to manage the service in your account. You must define targets and routes to define how to manage auditing events per region in your account.
 - A target is a resource where you can collect auditing events.
@@ -40,7 +40,7 @@ You can use the {{site.data.keyword.atracker_full_notm}} CLI, the {{site.data.ke
 
 You can define account settings to define global configuration parameters that apply when  you configure the account.
 
-In your account, auditing events are automatically collected from {{site.data.keyword.cloud_notm}} services that run in the account, with the exception of some services that require additional configuration to enable auditing events. 
+In your account, auditing events are automatically collected from {{site.data.keyword.cloud_notm}} services that run in the account, with the exception of some services that require additional configuration to enable auditing events.
 - For more information about services that generate events, see [Cloud services](/docs/atracker?topic=atracker-cloud_services).
 - For more information about services that require additional configuration to generate events, see [Enabling Activity Tracker events](/docs/atracker?topic=atracker-events-opt-in).
 
@@ -52,7 +52,7 @@ The flow of all customer data between {{site.data.keyword.atracker_short}} and i
 ## Connections
 {: #compute-isolation-connections}
 
-You can use private and public endpoints to configure {{site.data.keyword.atracker_short}} resources in your account. 
+You can use private and public endpoints to configure {{site.data.keyword.atracker_short}} resources in your account.
 
 ### Private connections
 {: #compute-isolation-private-connections}
@@ -64,7 +64,7 @@ You cannot disable private endpoints.
 ### Public connections
 {: #compute-isolation-public-connections}
 
-You can choose to disable public endpoints for {{site.data.keyword.atracker_short}}. 
+You can choose to disable public endpoints for {{site.data.keyword.atracker_short}}.
 
 For more information, see [Enforcing private endpoints to configure {{site.data.keyword.atracker_short}} resources](/docs/atracker?topic=atracker-getting-started-mng-endpoints).
 
@@ -100,9 +100,3 @@ Each regional deployment serves multiple tenants that are identified by the {{si
 - The data that is collected is associated with the {{site.data.keyword.cloud_notm}} account ID and not visible to the other users by virtue of this association.
 - Data for all tenants is co-located in the same data stores and segmented by the tenant-specific {{site.data.keyword.cloud_notm}} account ID to enforce access control policies.
 - You can use IBM Cloud Identity and Access Management (IAM) to control which users see, create, use, and manage resources.
-
-
-
-
-
-

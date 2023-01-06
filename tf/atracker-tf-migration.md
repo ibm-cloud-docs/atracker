@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2019, 2022
+  years: 2019, 2023
 lastupdated: "2022-05-16"
 
-keywords: 
+keywords:
 
 subcollection: atracker
 
@@ -130,7 +130,7 @@ provider "ibm" {
 }
 
 # Since this migration would be done "inplace" or in the same folder as the current `us-south` infrastructure
-# We don't need to run `terraform import -var-file="secret.tfvars" ibm_atracker_target.atracker_target-us-south <TARGET ID>` on this unless the terraform state is lost  
+# We don't need to run `terraform import -var-file="secret.tfvars" ibm_atracker_target.atracker_target-us-south <TARGET ID>` on this unless the terraform state is lost
 resource "ibm_atracker_target" "atracker_target-us-south" {
   name = var.cos_target_name-us-south
   target_type = "cloud_object_storage"
@@ -184,5 +184,3 @@ resource "ibm_atracker_route" "atracker_route_instance-us-east" {
 }
 ```
 {: codeblock}
-
-

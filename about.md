@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2019, 2022
+  years: 2019, 2023
 lastupdated: "2022-11-03"
 
 keywords:
@@ -16,7 +16,7 @@ subcollection: atracker
 # About {{site.data.keyword.atracker_full_notm}}
 {: #about}
 
-Use {{site.data.keyword.atracker_full}} to configure how to route auditing events, both [global](/docs/atracker?topic=atracker-event_types#event_types_global) and [location-based](/docs/atracker?topic=atracker-event_types#event_types_location) event data, in your {{site.data.keyword.cloud_notm}}. 
+Use {{site.data.keyword.atracker_full}} to configure how to route auditing events, both [global](/docs/atracker?topic=atracker-event_types#event_types_global) and [location-based](/docs/atracker?topic=atracker-event_types#event_types_location) event data, in your {{site.data.keyword.cloud_notm}}.
 {: shortdesc}
 
 
@@ -76,8 +76,3 @@ In {{site.data.keyword.atracker_full_notm}}, a route defines the rules that indi
 - Feed a data lake for analytics
 
 - Forward your activity event data to {{site.data.keyword.cos_full_notm}} (COS) for {{site.data.keyword.cloud_notm}} for Financial Services compliance
-
-
-
-
-

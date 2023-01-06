@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2022
+  years: 2022, 2023
 lastupdated: "2022-05-24"
 
-keywords: 
+keywords:
 
 subcollection: atracker
 
@@ -28,7 +28,7 @@ For more information on {{site.data.keyword.atracker_full_notm}} targets, see [T
 
 You must grant users IAM permissions to manage targets. For more information, see [Assign access to resources](/docs/account?topic=account-assign-access-resources).
 
-When you define a policy, you can indicate the scope of the permissions. You can choose from granting permissions for a specific region or for the entire account.   
+When you define a policy, you can indicate the scope of the permissions. You can choose from granting permissions for a specific region or for the entire account.
 
 Users with regional scope will be limited to access targets in their authorized region.
 {: note}
@@ -639,4 +639,3 @@ See the following table for some HTTP response codes:
 | `429` |	Too Many Requests |	Too many requests hit the API too quickly. |
 | `500` |	Internal Server Error |	Something went wrong in {{site.data.keyword.atracker_full_notm}} processing. |
 {: caption="Table 3. List of HTTP response codes" caption-side="top"}
-

@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2019, 2022
+  years: 2019, 2023
 lastupdated: "2022-05-24"
 
-keywords: 
+keywords:
 
 subcollection: atracker
 
@@ -16,7 +16,7 @@ subcollection: atracker
 # Managing routes using the V1 API
 {: #route}
 
-You can manage routes in your account by using the {{site.data.keyword.atracker_full}} CLI or {{site.data.keyword.atracker_full_notm}} REST API. A route defines the rules that indicate what auditing events are collected in a region and where to store them. 
+You can manage routes in your account by using the {{site.data.keyword.atracker_full}} CLI or {{site.data.keyword.atracker_full_notm}} REST API. A route defines the rules that indicate what auditing events are collected in a region and where to store them.
 {: shortdesc}
 
 The V1 API is deprecated. See [managing routes using the V2 API](/docs/atracker?topic=atracker-route_v2) for information on using the V2 API.  Also see [migrating resources](/docs/atracker?topic=atracker-migrate-resources) for information on migrating from your V1 configuration.
@@ -29,12 +29,12 @@ The version of the API running in your account can be determined by running the 
 {: #route_behaviour}
 
 Note the following information about routes:
-- You can define 1 route per region. 
-- By default, the account has 0 routes configured. 
+- You can define 1 route per region.
+- By default, the account has 0 routes configured.
 - You can configure 1 or more rules for each route.
 - You can configure 1 target for each rule.
 - If you plan to share a target across multiple regions, you must define the target in each region. You can only configure a route with a target that is defined in the same region.
-- For each rule, you must specify what auditing events are affected by the rule. In additon, you must define the target where you want the auditing events to be collected. 
+- For each rule, you must specify what auditing events are affected by the rule. In additon, you must define the target where you want the auditing events to be collected.
 - You can only configure 1 route for each account to collect global events.
 
 After you configure a route, it takes over 1 hour for the configuration to be enabled in that region.
@@ -68,7 +68,7 @@ There are 2 types of auditing events:
 - [Global events](/docs/atracker?topic=atracker-event_types#event_types_global)
 - [Location-based events](/docs/atracker?topic=atracker-event_types#event_types_location)
 
-When you configure a route in a region, you must specify the type of event. When you set `receive_global_events` to true or false, you are indicating the type of events that are collected in the region: 
+When you configure a route in a region, you must specify the type of event. When you set `receive_global_events` to true or false, you are indicating the type of events that are collected in the region:
 * When you set `receive_global_events` to true, you are indicating that you want global events and location-based events to go to the target that is configured in the rule that is defined in the route.
 * When you set `receive_global_events` to false, you are indicating that you want location-based events to go to the target that is configured in the rule that is defined in the route.
 
@@ -110,14 +110,14 @@ Before you use the the CLI to manage routes, complete the following steps:
 {: #route-create-cli}
 {: cli}
 
-Use this command to create a new route for an {{site.data.keyword.atracker_full_notm}} target in a region. 
+Use this command to create a new route for an {{site.data.keyword.atracker_full_notm}} target in a region.
 
 ```sh
 ibmcloud atracker route create --name <ROUTE_NAME> --target <TARGET> [--receive-global-events] [--region <REGION>] [--output JSON]
 ```
 {: pre}
 
-### Command options 
+### Command options
 {: #route-create-options}
 
 `--target <TARGET_ID>`
@@ -140,7 +140,7 @@ ibmcloud atracker route create --name <ROUTE_NAME> --target <TARGET> [--receive-
 
 `help` | `--help` | `-h`
 :   List options available for the command.
-  
+
 ### Example
 {: #route-create-example}
 
@@ -170,7 +170,7 @@ ibmcloud atracker route update --route <ROUTE> [--name <ROUTE_NAME>] [--receive-
 ```
 {: pre}
 
-### Command options 
+### Command options
 {: #route-update-options}
 
 `--route <ROUTE>`
@@ -196,7 +196,7 @@ ibmcloud atracker route update --route <ROUTE> [--name <ROUTE_NAME>] [--receive-
 
 `help` | `--help` | `-h`
 :   List options available for the command.
-  
+
 ### Example
 {: #route-update-example}
 
@@ -219,14 +219,14 @@ Updated:                 2021-07-21T18:33:48.898Z
 {: #route-delete-cli}
 {: cli}
 
-Use this command to delete a route for an {{site.data.keyword.atracker_full_notm}} region. 
+Use this command to delete a route for an {{site.data.keyword.atracker_full_notm}} region.
 
 ```sh
 ibmcloud atracker route rm --route <ROUTE> [--region <REGION>] [--force]
 ```
 {: pre}
 
-### Command options 
+### Command options
 {: #route-rm-options}
 
 `--route <ROUTE>`
@@ -241,7 +241,7 @@ ibmcloud atracker route rm --route <ROUTE> [--region <REGION>] [--force]
 `help` | `--help` | `-h`
 :   List options available for the command.
 
-  
+
 ### Example
 {: #route-rm-example}
 
@@ -269,14 +269,14 @@ Something went wrong. Error: No route found with route name - my_route.
 {: #route-view-cli}
 {: cli}
 
-Use this command to get information about a route for an {{site.data.keyword.atracker_full_notm}} region. 
+Use this command to get information about a route for an {{site.data.keyword.atracker_full_notm}} region.
 
 ```sh
 ibmcloud atracker route get --route [ <ROUTE_ID> | <ROUTE_NAME> ] [--region <REGION>] [--output JSON]
 ```
 {: pre}
 
-### Command options 
+### Command options
 {: #route-get-options}
 
 `--route <ROUTE_ID>` | `<ROUTE_NAME>`
@@ -290,7 +290,7 @@ ibmcloud atracker route get --route [ <ROUTE_ID> | <ROUTE_NAME> ] [--region <REG
 
 `help` | `--help` | `-h`
 :   List options available for the command.
-  
+
 ### Example
 {: #route-get-example}
 
@@ -320,14 +320,14 @@ The following is an example using the **`ibmcloud atracker route get --route my_
 {: #route-list-cli}
 {: cli}
 
-Use this command to list all the configured routes for a specific {{site.data.keyword.atracker_full_notm}} region or all {{site.data.keyword.atracker_full_notm}} regions. 
+Use this command to list all the configured routes for a specific {{site.data.keyword.atracker_full_notm}} region or all {{site.data.keyword.atracker_full_notm}} regions.
 
 ```sh
 ibmcloud atracker route ls [--region <REGION> | --all-regions ] [--output JSON]
 ```
 {: pre}
 
-### Command options 
+### Command options
 {: #route-ls-options}
 
 `--region <REGION>` | `-r <REGION>`
@@ -342,7 +342,7 @@ ibmcloud atracker route ls [--region <REGION> | --all-regions ] [--output JSON]
 `help` | `--help` | `-h`
 :   List options available for the command.
 
-  
+
 ### Example
 {: #route-ls-example}
 
@@ -361,7 +361,7 @@ my_route   xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx   us-south   true               
 
 The following table lists the actions that you can run to manage routes:
 
-| Action                     | REST API Method  | API_URL                                          | 
+| Action                     | REST API Method  | API_URL                                          |
 |----------------------------|------------------|--------------------------------------------------|
 | Create a route            | `POST`           | `<ENDPOINT>/api/v1/routes`              |
 | Update a route            | `PUT`            | `<ENDPOINT>/api/v1/routes/<ROUTE_ID>`  |
@@ -409,15 +409,15 @@ curl -X POST  <ENDPOINT>/api/v1/routes   -H "Authorization:  $ACCESS_TOKEN"   -H
 ```
 {: codeblock}
 
-Where 
+Where
 
 - `ENDPOINT` is the API endpoint in the region where you plan to configure or manage a route. For more information, see [Endpoints](/docs/atracker?topic=atracker-endpoints#endpoints_api).
 - `ROUTE_NAME` is the name of the route. The maximum length of the name is 180 characters and cannot include any of the following special characters:`-`, `.`, `_`, `:`.
-   
+
     Do not include any personal identifying information (PII) in any resource names.
     {: important}
 
-- `TARGET_ID` is the GUID of the target that defines the bucket where auditing events are routed and collected. 
+- `TARGET_ID` is the GUID of the target that defines the bucket where auditing events are routed and collected.
 - `receive_global_events` indicate the type of events that are collected in the region. When you set `receive_global_events` to true, you are indicating that you want global events and location-based events to go to the target that is configured in the rule that is defined in the route. When you set `receive_global_events` to false, you are indicating that you want location-based events to go to the target that is configured in the rule that is defined in the route.
 
 For example, you can use the following cURL request to create a route in US South that defines how global and US South-location-based events are collected and routed in the account:
@@ -442,7 +442,7 @@ In the response, you get information about the route such as the `id`, that indi
 {: #route-update-api}
 {: api}
 
-When you update a route, you must include the route information in the data section of the request. 
+When you update a route, you must include the route information in the data section of the request.
 - You must pass all fields.
 - Update the fields that need changing.
 
@@ -461,14 +461,14 @@ curl -X POST  <ENDPOINT>/api/v1/routes/<route_ID>   -H "Authorization:  $ACCESS_
 ```
 {: codeblock}
 
-Where 
+Where
 
 - `ROUTE_NAME` is the name of the route. The maximum length of the name is 180 characters and cannot include any of the following special characters:`-`, `.`, `_`, `:`.
 
     Do not include any personal identifying information (PII) in any resource names.
     {: important}
-    
-- `TARGET_ID` is the GUID of the target that defines the bucket where auditing events are routed and collected. 
+
+- `TARGET_ID` is the GUID of the target that defines the bucket where auditing events are routed and collected.
 - `receive_global_events` indicate the type of events that are collected in the region. When you set `receive_global_events` to true, you are indicating that you want global events and location-based events to go to the target that is configured in the rule that is defined in the route. When you set `receive_global_events` to false, you are indicating that you want location-based events to go to the target that is configured in the rule that is defined in the route.
 
 
@@ -526,9 +526,9 @@ curl -X GET   https://private.us-south.atracker.cloud.ibm.com/api/v1/routes    -
 {: #route-target-rc}
 {: api}
 
-When you use the {{site.data.keyword.atracker_full_notm}} REST API, you can get standard HTTP response codes to indicate whether a method completed successfully. 
+When you use the {{site.data.keyword.atracker_full_notm}} REST API, you can get standard HTTP response codes to indicate whether a method completed successfully.
 
-- A 200 response always indicates success. 
+- A 200 response always indicates success.
 - A 4xx response indicates a failure.
 - A 5xx response usually indicates an internal system error.
 

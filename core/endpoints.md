@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2019, 2022
+  years: 2019, 2023
 lastupdated: "2022-08-08"
 
-keywords: 
+keywords:
 
 subcollection: atracker
 
@@ -46,6 +46,3 @@ The following table shows the public API endpoints:
 | `London (eu-gb)`         | `https://eu-gb.atracker.cloud.ibm.com`          | `https/443`  |
 | `Sydney (au-syd)`        | `https://au-syd.atracker.cloud.ibm.com` | `https/443`  |
 {: caption="Table 2. Lists of public API endpoints for interacting with {{site.data.keyword.atracker_full_notm}}" caption-side="top"}
-
-
-

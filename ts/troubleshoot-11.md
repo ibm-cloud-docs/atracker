@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2019, 2022
+  years: 2019, 2023
 lastupdated: "2022-05-13"
 
-keywords: 
+keywords:
 
 subcollection: atracker
 
@@ -31,5 +31,3 @@ You are trying to create or update your settings and specified more than two def
 
 [Only two default target values are supported.](/docs/atracker?topic=atracker-settings) Retry your request specifying only two default targets for `--default-targets`.
 {: tsResolve}
-
-

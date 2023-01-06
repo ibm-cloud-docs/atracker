@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2019, 2022
+  years: 2019, 2023
 lastupdated: "2022-05-16"
 
-keywords: 
+keywords:
 
 subcollection: atracker
 
@@ -21,12 +21,12 @@ To collect auditing events in your {{site.data.keyword.cloud_notm}} account, you
 
 
 
-## IAM permissions 
+## IAM permissions
 {: #get-config-version-iam}
 
 You must grant users IAM permissions to manage the account settings. For more information, see [Assign access to resources](/docs/account?topic=account-assign-access-resources).
 
-When you define a policy, you can must set the scope of the policy to the account. A route is a global resource that is not bound to a specific region.  
+When you define a policy, you can must set the scope of the policy to the account. A route is a global resource that is not bound to a specific region.
 {: note}
 
 | IAM action               | IAM Policy scope  | IAM Roles                          | Description         |
@@ -49,7 +49,7 @@ ibmcloud atracker setting get
 ```
 {: pre}
 
-If the command indicates that `setting` is not a valid command, then you do not have the V2 CLI installed. 
+If the command indicates that `setting` is not a valid command, then you do not have the V2 CLI installed.
 
 Install the V2 CLI by running the following command:
 
@@ -83,6 +83,4 @@ If the response shows your deployment is running V1, you will need to [migrate y
 
 If [step 1](#cli_version) and [step 2](#conf_version) show you have a V2 configuration, or you have completed the migration in step 2, if needed, you are ready to create and manage your {{site.data.keyword.atracker_full}} instance using the V2 configuration.
 
-If you have a V1 configuration, migrate to a V2 configuration. For more information, see [Migrating the {{site.data.keyword.atracker_short}} account configuration from V1 to V2](/docs/atracker?topic=atracker-migration&interface=cli). 
-
-
+If you have a V1 configuration, migrate to a V2 configuration. For more information, see [Migrating the {{site.data.keyword.atracker_short}} account configuration from V1 to V2](/docs/atracker?topic=atracker-migration&interface=cli).
