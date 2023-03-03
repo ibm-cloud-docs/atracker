@@ -13,7 +13,7 @@ subcollection: atracker
 {{site.data.keyword.attribute-definition-list}}
 
 
-# Managing Event Streams targets
+# Managing {{site.data.keyword.messagehub}} targets
 {: #target_v2_ies}
 
 You can manage {{site.data.keyword.messagehub_full}} (Event Streams) targets in your account by using the {{site.data.keyword.atracker_full_notm}} CLI, the {{site.data.keyword.atracker_full_notm}} REST API, and Terraform scripts. A target is a resource where you can collect auditing events.
@@ -40,7 +40,7 @@ Users with regional scope will be limited to access targets in their authorized 
 | `atracker.target.list`   | Account           | `Administrator`  \n `Editor`  \n `Viewer`  \n `Operator` | List all targets |
 {: caption="Table 1. IAM actions and the IAM roles that include them."}
 
-### IAM access for Event Streams
+### IAM access for {{site.data.keyword.messagehub}}
 {: #target_es}
 
 If you need to restrict access to a single {{site.data.keyword.messagehub}} topic, you will need to create two policies:
@@ -66,7 +66,7 @@ Before you use the CLI to manage targets, complete the following steps:
 3. Log in to {{site.data.keyword.cloud_notm}}. Run the following command: [ibmcloud login](/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_login)
 
 
-## Creating an Event Streams target using the CLI
+## Creating an {{site.data.keyword.messagehub}} target using the CLI
 {: #target-create-cli-ies}
 {: cli}
 
@@ -90,7 +90,7 @@ Use this command to create a {{site.data.keyword.messagehub_full}} target to be 
     {: important}
 
 `--type TARGET_TYPE`
-:   Set the `TARGET_TYPE` to `event_streams` for an Event Streams target.
+:   Set the `TARGET_TYPE` to `event_streams` for an {{site.data.keyword.messagehub}} target.
 
 `--file @EVENTSTREAMS_ENDPOINT_DEFINITION_JSON_FILE`
 :   A file containing an endpoint definition in the following format:
@@ -109,13 +109,13 @@ Use this command to create a {{site.data.keyword.messagehub_full}} target to be 
 :   The CRN of the {{site.data.keyword.messagehub_full}} instance. You can get the source crn from the service credentials.
 
 `--brokers BROKER_LIST`
-:   The list of Event Streams brokers (endpoints). This is the value of the `kafka_brokers_sasl` in the service credentials.
+:   The list of {{site.data.keyword.messagehub}} brokers (endpoints). This is the value of the `kafka_brokers_sasl` in the service credentials.
 
 `--topic TOPIC`
-:   Event Streams topic name to where the events are sent. This is the name of the topic created for an Event streams instance
+:   {{site.data.keyword.messagehub}} topic name to where the events are sent. This is the name of the topic created for an {{site.data.keyword.messagehub}} instance.
 
 `--api-key EVENTSTREAMS_API_KEY` | `@EVENTSTREAMS_API_KEY_FILE`
-:   The password value found in the Event Streams service credential. This is the IAM API key
+:   The password value found in the {{site.data.keyword.messagehub}} service credential. This is the IAM API key.
 
 `--output FORMAT`
 :   Currently supported format is JSON. If specified, output will be returned in JSON format.  If `JSON` is not specified, output will be returned in a tabular format.
@@ -148,11 +148,11 @@ UpdatedAt:                2022-10-20T19:20:38.888Z
 {: screen}
 
 
-## Updating an Event Streams target using the CLI
+## Updating an {{site.data.keyword.messagehub}} target using the CLI
 {: #target-update-cli-ies}
 {: cli}
 
-Use this command to update an Event Streams target for an {{site.data.keyword.atracker_full_notm}} region.  Any specified value that is different from when the target was originally created will be updated to the value specified in the command.
+Use this command to update an {{site.data.keyword.messagehub}} target for an {{site.data.keyword.atracker_full_notm}} region.  Any specified value that is different from when the target was originally created will be updated to the value specified in the command.
 
 ```sh
 ibmcloud atracker target update --target TARGET [--name TARGET_NAME] [ [--file EVENTSTREAMS_ENDPOINT_DEFINITION_JSON_FILE] | ( [--brokers BROKER_LIST] [--target-crn EVENTSTREAMS_TARGET_CRN] [--topic TOPIC]( [--api-key ( EVENTSTREAMS_API_KEY | @EVENTSTREAMS_API_KEY_FILE )]))] [--output FORMAT]
@@ -203,13 +203,13 @@ ibmcloud atracker target update --target TARGET [--name TARGET_NAME] [ [--file E
 :   The CRN of the {{site.data.keyword.messagehub_full}} instance. You can get the source crn from the service credentials.
 
 `--brokers BROKER_LIST`
-:   The list of Event Streams brokers (endpoints). This is the value of the `kafka_brokers_sasl` in the service credentials.
+:   The list of {{site.data.keyword.messagehub}} brokers (endpoints). This is the value of the `kafka_brokers_sasl` in the service credentials.
 
 `--topic TOPIC`
-:   Event Streams topic name to where the events are sent. This is the name of the topic created for an Event streams instance
+:   {{site.data.keyword.messagehub}} topic name to where the events are sent. This is the name of the topic created for an {{site.data.keyword.messagehub}} instance
 
 `--api-key EVENTSTREAMS_API_KEY` | `@EVENTSTREAMS_API_KEY_FILE`
-:   The password value found in the Event Streams service credential. This is the IAM API key
+:   The password value found in the {{site.data.keyword.messagehub}} service credential. This is the IAM API key
 
 `--output FORMAT`
 :   Currently supported format is JSON. If specified, output will be returned in JSON format.  If `JSON` is not specified, output will be returned in a tabular format.
@@ -321,7 +321,7 @@ ibmcloud atracker target validate --target TARGET [--region REGION] [--output FO
 
 The following is an example using the **`ibmcloud atracker target validate --target new-target-name`** command.
 
-This example shows a successfully validated Event Streams target.
+This example shows a successfully validated {{site.data.keyword.messagehub}} target.
 {: note}
 
 ```text
@@ -366,7 +366,7 @@ ibmcloud atracker target get --target TARGET [--output FORMAT]
 ### Example
 {: #target-get-example-ies}
 
-The following is an example using the **`ibmcloud atracker target get --target new-target-name`** command showing a Event Streams target.
+The following is an example using the **`ibmcloud atracker target get --target new-target-name`** command showing a {{site.data.keyword.messagehub}} target.
 
 ```text
 Target
@@ -456,11 +456,11 @@ To make API calls to manage targets, complete the following steps:
 
 
 
-## Creating a Event Streams target using the API
+## Creating an {{site.data.keyword.messagehub}} target using the API
 {: #target-create-api-ies}
 {: api}
 
-You can use the following curl command to create a {{site.data.keyword.messagehub_full}} (Event Streams) target:
+You can use the following curl command to create an {{site.data.keyword.messagehub_full}} (Event Streams) target:
 
 ```shell
 curl -X POST  <ENDPOINT>/api/v2/targets   -H "Authorization:  $ACCESS_TOKEN"   -H "content-type: application/json"   -d '{
@@ -483,20 +483,18 @@ Where
     Do not include any personal identifying information (PII) in any resource names.
     {: important}
 
-- `TARGET_TYPE` is the type of the target. Set the value to `event_streams` for a Event Streams target.
+- `TARGET_TYPE` is the type of the target. Set the value to `event_streams` for an {{site.data.keyword.messagehub}} target.
 
-- `BROKER_LIST` is the list of Event Streams brokers (endpoints).
+- `BROKER_LIST` is the list of {{site.data.keyword.messagehub}} brokers (endpoints).
 
-- `TOPIC_NAME` is the name of Event Streams topic name where the events are sent.
+- `TOPIC_NAME` is the name of an {{site.data.keyword.messagehub}} topic name where the events are sent.
 
-- `API_KEY` is the password value found in the Event Streams service credential. This is the IAM API key
-
-{: screen}
+- `API_KEY` is the password value found in the {{site.data.keyword.messagehub}} service credential. This is the IAM API key.
 
 In the response, you get information about the target such as the `id`, that indicates the GUID of the target, and the `crn`, that indicates the CRN of the target.
 
 
-## Updating an Event Streams target using the API
+## Updating an {{site.data.keyword.messagehub}} target using the API
 {: #target-update-api-ies}
 {: api}
 
@@ -530,16 +528,13 @@ Where
     Do not include any personal identifying information (PII) in any resource names.
     {: important}
 
-- `TARGET_TYPE` is the type of the target. Set the value to `event_streams` for a Event Streams target.
+- `TARGET_TYPE` is the type of the target. Set the value to `event_streams` for an {{site.data.keyword.messagehub}} target.
 
-- `BROKER_LIST` is the list of Event Streams brokers (endpoints).
+- `BROKER_LIST` is the list of {{site.data.keyword.messagehub}} brokers (endpoints).
 
-- `TOPIC_NAME` is the name of Event Streams topic name where the events are sent.
+- `TOPIC_NAME` is the name of an {{site.data.keyword.messagehub}} topic where the events are sent.
 
-- `API_KEY` is the password value found in the Event Streams service credential. This is the IAM API key
-
-{: screen}
-
+- `API_KEY` is the password value found in the {{site.data.keyword.messagehub}} service credential. This is the IAM API key.
 
 
 ## Deleting a target using the API
@@ -631,7 +626,7 @@ curl -X GET https://private.us-south.atracker.cloud.ibm.com/api/v2/targets/00000
 ```
 {: screen}
 
-Results will show if the target is COS (`"target_type": "cloud_object_storage"`) or AT (`"target_type": "logdna"`) or Event Streams (`"target_type": "event_streams"`) or an {{site.data.keyword.at_full_notm}} hosted event search offering.
+Results will show if the target is COS (`"target_type": "cloud_object_storage"`) or AT (`"target_type": "logdna"`) or {{site.data.keyword.messagehub}} (`"target_type": "event_streams"`) or an {{site.data.keyword.at_full_notm}} hosted event search offering.
 
 ## Listing all targets using the API
 {: #target-list-targets-ies}
@@ -656,7 +651,7 @@ curl -X GET https://private.us-south.atracker.cloud.ibm.com/api/v2/targets -H "A
 ```
 {: screen}
 
-Results will show if the target is COS (`"target_type": "cloud_object_storage"`) or AT (`"target_type": "logdna"`) or Event Streams (`"target_type": "event_streams"`) or an {{site.data.keyword.atracker_full_notm}} hosted event search offering.
+Results will show if the target is COS (`"target_type": "cloud_object_storage"`) or AT (`"target_type": "logdna"`) or {{site.data.keyword.messagehub}} (`"target_type": "event_streams"`) or an {{site.data.keyword.atracker_full_notm}} hosted event search offering.
 
 
 ## HTTP response codes
