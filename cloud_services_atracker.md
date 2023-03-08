@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2023
-lastupdated: "2022-12-07"
+lastupdated: "2023-03-08"
 
 keywords:
 
@@ -83,7 +83,6 @@ The following table lists developer tools and DevOps services that send auditing
 
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
-| [{{site.data.keyword.apigw_full}}](/docs/api-gateway?topic=api-gateway-getting-started) | `api-gateway` | [Location-based events](/docs/api-gateway?topic=api-gateway-at_events) |
 | [{{site.data.keyword.bplong}}](/docs/schematics?topic=schematics-getting-started)  | `schematics` | [Location-based events](/docs/schematics?topic=schematics-at_events) |
 | [Apps](/docs/apps?topic=apps-getting-started) | `developer-experience` | [Location-based events](/docs/apps?topic=apps-at_events) |
 | [{{site.data.keyword.en_full}}](/docs/event-notifications?topic=event-notifications-getting-started) | `event-notifications`| [Location-based events](/docs/event-notifications?topic=event-notifications-en-at_events)|
