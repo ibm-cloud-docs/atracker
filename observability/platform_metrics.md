@@ -146,7 +146,6 @@ The following attributes are available for all metrics.
 | `Location`       | `ibm_location`            | The location of the monitored resource, which can be a region, data center, or global. |
 | `Resource`       | `ibm_resource`            | The resource that is measured by the service, which is typically an identifying name or GUID. |
 | `Resource Type`  | `ibm_resource_type`       | The type of the resource that is measured by the service. |
-| `Resource group` | `ibm_resource_group_name` | The resource group where the service instance was created. |
 | `Scope`          | `ibm_scope`               | The scope is the account, organization, or space GUID associated with the metric. |
 | `Service name`   | `ibm_service_name`        | The name of the service that is generating this metric. |
 {: caption="Table 3. Global atributes" caption-side="top"}
