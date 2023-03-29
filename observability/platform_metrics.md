@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2023
-lastupdated: "2022-08-08"
+lastupdated: "2023-03-29"
 
 keywords:
 
@@ -158,6 +158,6 @@ The following attributes are available for one or more attributes described in t
 
 | Attribute     | Attribute Name             | Attribute Description |
 |---------------|----------------------------|-----------------------|
-| `target type` | `ibm_atracker_target_type` | The target type destination of the event. Valid values are: `IBM COS` or `LogDNA`. |
+| `target type` | `ibm_atracker_target_type` | The target type destination of the event. Valid values are: `cloud_object_storage`, `logdna`, or `event_streams`. |
 | `reason`      | `ibm_atracker_reason_code` | The reason for the failure of an event delivery to its destination. |
 {: caption="Table 4. Other atributes" caption-side="top"}
