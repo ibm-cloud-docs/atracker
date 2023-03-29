@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2023
-lastupdated: "2022-08-08"
+lastupdated: "2023-03-29"
 
 keywords: Observability
 
@@ -148,4 +148,4 @@ You can choose any of the following methods to list objects in a bucket:
 ## Next
 {: #getting-started-next}
 
-Plan your account configuration. For more information, see [Planning your account configuration settings](/docs/atracker?topic=atracker-atracker-resources-planning).
+Plan your account configuration. For more information, see [Planning the account configuration](/docs/atracker?topic=atracker-planning).
