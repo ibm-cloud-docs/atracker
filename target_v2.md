@@ -49,9 +49,9 @@ You can configure any of the following target types:
 
 | Target                                                             | Type                     | Learn more |
 |--------------------------------------------------------------------|--------------------------|------------|
-| {{site.data.keyword.cos_full_notm}} (COS)                          | `cloud_object_storage`   | [ Managing {{site.data.keyword.cos_full_notm}} (COS) targets](/docs/atracker?topic=atracker-target_v2_cos) |
+| {{site.data.keyword.cos_full_notm}} (COS)                          | `cloud_object_storage`   | [Managing {{site.data.keyword.cos_full_notm}} (COS) targets](/docs/atracker?topic=atracker-target_v2_cos) |
 | {{site.data.keyword.atracker_full_notm}} AT hosted event search    | `logdna`                 | [Managing {{site.data.keyword.atracker_full_notm}} hosted event search targets](/docs/atracker?topic=atracker-target_v2_at). |
-| {{site.data.keyword.messagehub_full}} (Event Streams)              | `event_streams`          | [ Managing {{site.data.keyword.messagehub_full}} (Event Streams) targets](/docs/atracker?topic=atracker-target_v2_ies) |
+| {{site.data.keyword.messagehub_full}} (Event Streams)              | `event_streams`          | [Managing {{site.data.keyword.messagehub_full}} (Event Streams) targets](/docs/atracker?topic=atracker-target_v2_ies) |
 {: caption="Table 1. List of targets" caption-side="top"}
 
 
@@ -85,7 +85,23 @@ To route events to a target, check the options that you can use to authenticate 
 |--------------------------|-----------------------------------------|------------|
 | `cloud_object_storage`   | ![Checkmark icon](../icons/checkmark-icon.svg "checkmark") | ![Checkmark icon](../icons/checkmark-icon.svg "checkmark") |
 | `logdna`                 |  | ![Checkmark icon](../icons/checkmark-icon.svg "checkmark") |
+| `event_streams`          |  |  ![Checkmark icon](../icons/checkmark-icon.svg "checkmark") |
 {: caption="Table 3. Authentication options by target type" caption-side="top"}
+
+
+## Validating targets
+{: #target_v2_validate}
+
+When you validate a target, you check that the credentials that are configured for a target are valid. These credentials are used by {{site.data.keyword.atracker_short}} to authenticate with the destination target.
+
+You can validate a target by using the {{site.data.keyword.metrics_router_full_notm}} CLI, the {{site.data.keyword.metrics_router_full_notm}} REST API, and Terraform scripts.
+
+| Target type | CLI | API |
+|-------------|-----|-----|
+| `cloud-object-storage` | [Validate via CLI](/docs/atracker?topic=atracker-target_v2_cos&interface=cli#target-validate-cli-cos) | [Validate via API](/docs/atracker?topic=atracker-target_v2_cos&interface=api#target-validate-api-cos) |
+| `logdna` | [Validate via CLI](/docs/atracker?topic=atracker-target_v2_at&interface=cli#target-validate-cli-at) | [Validate via API](/docs/atracker?topic=atracker-target_v2_at&interface=api#target-validate-api-at) |
+| `event_streams` | [Validate via CLI](/docs/atracker?topic=atracker-target_v2_ies&interface=cli#target-validate-cli-ies) | [Validate via API](/docs/atracker?topic=atracker-target_v2_ies&interface=api#target-validate-api-ies) |
+{: caption="Table 4. Validating options by target type" caption-side="top"}
 
 
 
@@ -114,10 +130,10 @@ The following table lists the actions that you can run to manage targets:
 | Read a target              | `ibmcloud atracker target get`      |
 | List all targets           | `ibmcloud atracker target ls`       |
 | Validate a target          | `ibmcloud atracker target validate` |
-{: caption="Table 4. Target actions by using the {{site.data.keyword.atracker_full_notm}}Event Routing CLI" caption-side="top"}
+{: caption="Table 5. Target actions by using the {{site.data.keyword.atracker_full_notm}}Event Routing CLI" caption-side="top"}
 
 
-For more information, see [{{site.data.keyword.atracker_full_notm}} V2 CLI ](/docs/activity-tracker-cli-plugin?topic=activity-tracker-cli-plugin-atracker-v2-cli).
+For more information, see [{{site.data.keyword.atracker_full_notm}} V2 CLI](/docs/activity-tracker-cli-plugin?topic=activity-tracker-cli-plugin-atracker-v2-cli).
 
 
 
@@ -140,10 +156,10 @@ The following table lists the actions that you can run to manage targets:
 | Read a target              | `GET`            | `<ENDPOINT>/api/v2/targets/<TARGET_ID>`  |
 | List all targets           | `GET`            | `<ENDPOINT>/api/v2/targets`             |
 | Validate a target          | `POST`           | `<ENDPOINT>/api/v2/targets/{id}/validate` |
-{: caption="Table 5. Target actions by using the {{site.data.keyword.atracker_full_notm}} REST API" caption-side="top"}
+{: caption="Table 6. Target actions by using the {{site.data.keyword.atracker_full_notm}} REST API" caption-side="top"}
 
 
-For more information, see [{{site.data.keyword.atracker_full_notm}} V2 API ](https://{DomainName}/apidocs/atracker).
+For more information, see [{{site.data.keyword.atracker_full_notm}} V2 API](https://{DomainName}/apidocs/atracker).
 
 
 ## HTTP response codes
@@ -168,7 +184,7 @@ See the following table for some HTTP response codes:
 | `404` | Not Found |	The requested resource doesn't exist or is already deleted. |
 | `429` |	Too Many Requests |	Too many requests hit the API too quickly. |
 | `500` |	Internal Server Error |	Something went wrong in {{site.data.keyword.atracker_full_notm}} processing. |
-{: caption="Table 6. List of HTTP response codes" caption-side="top"}
+{: caption="Table 7. List of HTTP response codes" caption-side="top"}
 
 
 ## Next

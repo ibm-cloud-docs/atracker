@@ -21,7 +21,7 @@ completion-time: 1h
 # Configuring a Cloud Object Storage target
 {: #getting-started-target-cos}
 {: toc-content-type="tutorial"}
-{: toc-services="activity-tracker"}
+{: toc-services="atracker"}
 {: toc-completion-time="1h"}
 
 

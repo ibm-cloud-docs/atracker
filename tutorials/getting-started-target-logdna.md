@@ -21,7 +21,7 @@ completion-time: 1h
 # Configuring a logdna target
 {: #getting-started-target-logdna}
 {: toc-content-type="tutorial"}
-{: toc-services="activity-tracker"}
+{: toc-services="atracker"}
 {: toc-completion-time="1h"}
 
 A target is an {{site.data.keyword.cloud_notm}} resource where you can collect auditing events. Use this tutorial to learn how to configure an {{site.data.keyword.atracker_short}} hosted event search target in the account.

@@ -44,7 +44,7 @@ Next, log in to {{site.data.keyword.cloud_notm}}. Run the following command: [ib
 
 Get the list of targets that are defined in the account. Run the following command:
 
-```
+```text
 ibmcloud atracker target ls
 ```
 {: pre}
@@ -55,7 +55,7 @@ ibmcloud atracker target ls
 
 To check your account's configuration and find out if there are default targets configured, run the following command:
 
-```
+```text
 ibmcloud atracker setting get
 ```
 {: pre}
