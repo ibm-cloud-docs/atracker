@@ -348,7 +348,7 @@ resource "ibm_atracker_target" "atracker_eventstreams_target" {
 
 The following code shows sample configurations to define a route:
 
-```
+```terraform
 ## Create a route to route auditing events from Frankfurt
 
 resource "ibm_atracker_route" "atracker_route_instance" {

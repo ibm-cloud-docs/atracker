@@ -124,7 +124,7 @@ You must run the Terraform script in bothe regions.
 {: note}
 
 
-```
+```terraform
 provider "ibm" {
   region = "us-south"
 }

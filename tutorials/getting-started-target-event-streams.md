@@ -21,7 +21,7 @@ completion-time: 1h
 # Configuring an {{site.data.keyword.messagehub}} target
 {: #getting-started-target-event-streams}
 {: toc-content-type="tutorial"}
-{: toc-services="activity-tracker"}
+{: toc-services="atracker"}
 {: toc-completion-time="1h"}
 
 
@@ -88,18 +88,18 @@ Complete the following steps:
 
 4. Click **Create a topic**.
 
-    ![Create a topic.](../images/es-topic.png "Create a topic")
+    ![Create a topic.](../images/es-topic.png "Create a topic"){: caption="Create a topic" caption-side="bottom"}
 
 5. Enter a topic name and click **Next**.
 
-    ![Create a topic part 2.](../images/es-topic-1.png "Create a topic part 2")
+    ![Enter a topic name](../images/es-topic-1.png "Enter a topic name"){: caption="Enter a topic name" caption-side="bottom"}
 
 6. Enter the number of partitions and click **Next**.
 
     One or more partitions make up a topic. A partition is an ordered list of messages. Partitions are distributed across the brokers in order to increase the scalability of your topic. You can also use them to distribute messages across the members of a consumer group.
     {: note}
 
-    ![Create a topic part 3.](../images/es-topic-2.png "Create a topic part 3")
+    ![Enter the number of partitions](../images/es-topic-2.png "Enter the number of partitions"){: caption="Enter the number of partitions" caption-side="bottom"}
 
 7.  Select a **Message retention** and click **Create Topic**.
 
@@ -128,7 +128,7 @@ Complete the following steps to create service credentials that {{site.data.keyw
 
 5. Enter a name and select the **writer** role.
 
-    ![Create a credential.](../images/es-credentials.png "Create a credential")
+    ![Create a credential.](../images/es-credentials.png "Create a credential"){: caption="Create a credential" caption-side="bottom"}
 
 6. Click **Add**.
 
@@ -140,7 +140,7 @@ You must define 2 policies, 1 for the resource type `topic`, and 1 for the resou
 
     1. From the menu bar, click **Manage** &gt; **Access (IAM)**, and select **Service IDS**.
 
-        ![Service IDs](../images/es-credentials2.png "Service IDs")
+        ![Service IDs](../images/es-credentials2.png "Service IDs"){: caption="Service IDs" caption-side="bottom"}
 
     2. Select the service ID.
 
@@ -148,25 +148,25 @@ You must define 2 policies, 1 for the resource type `topic`, and 1 for the resou
 
         For example, in the following image the topic ID is *demo-streaming*.
 
-        ![Edit Policy](../images/es-credentials-2.png "Edit Policy")
+        ![Edit Policy](../images/es-credentials-2.png "Edit Policy"){: caption="Edit policy" caption-side="bottom"}
 
-        ![Select Role](../images/es-credentials-3.png "Select Role")
+        ![Select Role](../images/es-credentials-3.png "Select Role"){: caption="Select role" caption-side="bottom"}
 
 2. Add an access policy for the {{site.data.keyword.messagehub}} service with resource type set to `cluster`.
 
    1. From the menu bar, click **Manage** &gt; **Access (IAM)**, and select **Service IDS**.
 
-        ![Service IDs](../images/es-credentials2.png "Service IDs")
+        ![Service IDs](../images/es-credentials2.png "Service IDs"){: caption="Service IDs" caption-side="bottom"}
 
-    2. Select the service ID.
+   2. Select the service ID.
 
-    3. In the **Access policies** section, select **Assign access**.
+   3. In the **Access policies** section, select **Assign access**.
 
-    4. Add a policy for the {{site.data.keyword.messagehub}} service, resource type **cluster** with **reader** permissions.
+   4. Add a policy for the {{site.data.keyword.messagehub}} service, resource type **cluster** with **reader** permissions.
 
-        ![Edit Policy](../images/es-credentials-4.png "Configure resource type")
+        ![Edit Policy](../images/es-credentials-4.png "Configure resource type"){: caption="Edit policy" caption-side="bottom"}
 
-        ![Select Role](../images/es-credentials-5.png "Add permissions")
+        ![Select Role](../images/es-credentials-5.png "Add permissions"){: caption="Select role" caption-side="bottom"}
 
 
 You can [get credentials by using the {{site.data.keyword.cloud_notm}} CLI](/docs/EventStreams?topic=EventStreams-connecting#connect_enterprise_external_cli) and make note of the api key and broker URL values.

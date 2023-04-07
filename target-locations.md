@@ -45,7 +45,7 @@ Next, log in to {{site.data.keyword.cloud_notm}}. Run the following command: [ib
 
 Get details of your current account settings. Run the following command:
 
-```
+```text
 ibmcloud atracker setting get
 ```
 {: pre}
@@ -57,7 +57,7 @@ The setting **Permitted target regions** list all the locations where you allowd
 
 To manage the list of permitted regions, run the following command:
 
-```
+```text
 ibmcloud atracker setting update --permitted-target-regions REGIONS
 ```
 {: pre}
@@ -66,7 +66,7 @@ Where `REGIONS` define a comma-separated list of regions.
 
 For example, you can run the following command to set 3 regions only:
 
-```
+```text
 ibmcloud atracker setting update --permitted-target-regions "us-south","us-east","eu-de"
 ```
 {: screen}

@@ -34,6 +34,7 @@ The following table lists the actions that generate nerwork zone events:
 | context-based-restrictions.zone.read | An event is generated when an initiator looks at information that is related with a CBR zone. |
 | context-based-restrictions.zone.update | An event is generated when an initiator modifies a CBR zone. Users can identify system initiated updates (vs. user initiated updates) by the initiator name "IBM". |
 | context-based-restrictions.zone.delete | An event is generated when an initiator deletes a CBR zone. |
+{: caption="Table 1. Actions generating network zone events" caption-side="bottom"}
 
 
 ## Context-based restrictions rules events
@@ -48,6 +49,7 @@ The following table lists the actions that generate context-based restricitons r
 | context-based-restrictions.policy.read | An event is generated when an initiator looks at information that is related with a CBR rule. |
 | context-based-restrictions.policy.update | An event is generated when an initiator modifies a CBR rule. |
 | context-based-restrictions.policy.delete | An event is generated when an initiator deletes a CBR rule. |
+{: caption="Table 2. Actions generating context-based restrictions rule events" caption-side="bottom"}
 
 
 ## Account settings events
@@ -58,6 +60,7 @@ The following table lists the actions that generate account settings events:
 | Action | Description |
 | -----  | ----------- |
 | context-based-restrictions.account-settings.read | An event is generated when an initiator looks at information that is related with account settings. |
+{: caption="Table 3. Actions generating account settings events" caption-side="bottom"}
 
 
 ## Viewing events
