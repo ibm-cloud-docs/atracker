@@ -16,7 +16,7 @@ subcollection: atracker
 # Getting started with {{site.data.keyword.atracker_full_notm}}
 {: #getting-started}
 
-Use {{site.data.keyword.atracker_full}} to configure how to route auditing events, both [global](/docs/atracker?topic=atracker-event_types#event_types_global) and [location-based](/docs/atracker?topic=atracker-event_types#event_types_location) event data, in your {{site.data.keyword.cloud_notm}}. auditing events are critical data for security operations and a key element for meeting compliance requirements. Control of the storage location is critical to building enterprise-grade solutions on the {{site.data.keyword.cloud_notm}}.
+Use {{site.data.keyword.atracker_full}} to configure how to route auditing events, both [global](/docs/atracker?topic=atracker-event_types#event_types_global) and [location-based](/docs/atracker?topic=atracker-event_types#event_types_location) event data, in your {{site.data.keyword.cloud_notm}}. Auditing events are critical data for security operations and a key element for meeting compliance requirements. Control of the storage location is critical to building enterprise-grade solutions on the {{site.data.keyword.cloud_notm}}.
 {: shortdesc}
 
 
