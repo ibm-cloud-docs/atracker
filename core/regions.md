@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2023
-lastupdated: "2022-08-08"
+lastupdated: "2023-05-19"
 
 keywords:
 
@@ -19,7 +19,7 @@ subcollection: atracker
 {: shortdesc}
 
 
-![The image shows the locations where the {{site.data.keyword.atracker_short}} service is available.](../images/world-map_min.svg){: caption="Figure 1. Displays the regions where you can create and manage {{site.data.keyword.atracker_short}} resources." caption-side="bottom"}
+![The image shows the locations where the {{site.data.keyword.atracker_short}} service is available.](../images/Activity-Tracker-Routing-03-Locations.svg){: caption="Figure 1. Displays the regions where you can create and manage {{site.data.keyword.atracker_short}} resources." caption-side="bottom"}
 
 This image is an artistic representation and does not reflect actual political or geographic boundaries.
 {: note}
