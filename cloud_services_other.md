@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2023
-lastupdated: "2023-04-14"
+lastupdated: "2023-06-01"
 
 keywords:
 
@@ -36,11 +36,6 @@ The following table lists analytics services that send auditing events:
 | [{{site.data.keyword.dv_short}}](/docs/data-virtualization?topic=data-virtualization-getting-started) | `data-virtualization` | [Location-based events](/docs/data-virtualization?topic=data-virtualization-activity-tracker) |
 {: caption="Table 1. List of analytics services" caption-side="top"}
 
-
-## Cloud Foundry applications
-{: #cloud_services_other_cfapps}
-
-The events that are sent by Cloud Foundry applications to {{site.data.keyword.cloudaccesstrailshort}} are listed in the response area of the `GET /v2/events`, under the body section. The *Type* field lists all actions that generate an event. For more information, see the [Events API](https://apidocs.cloudfoundry.org/270/events/list_all_events.html){: external}.
 
 ## Compute serverless services
 {: #cloud_services_other_serverless}
