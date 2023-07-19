@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2023
-lastupdated: "2022-05-23"
+lastupdated: "2023-07-17"
 
 keywords:
 
@@ -26,9 +26,6 @@ completion-time: 1h
 
 A target is an {{site.data.keyword.cloud_notm}} resource where you can collect auditing events. Use this tutorial to learn how to configure an {{site.data.keyword.atracker_short}} hosted event search target in the account.
 {: shortdesc}
-
-This tutorial uses the {{site.data.keyword.atracker_full}} v2 API.
-{: important}
 
 ## Scenarios
 {: #getting-started-target-LOGDNA-scenarios}

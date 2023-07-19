@@ -159,7 +159,7 @@ toc:
           label: API Reference
           links:
             - link:
-                label: Activity Tracker Event Routing API V2
+                label: Activity Tracker Event Routing API
                 href: https://{DomainName}/apidocs/atracker
 
       - topicgroup:
@@ -188,31 +188,6 @@ toc:
           label: Targets
           topics:
           - cos.md
-
-      - topicgroup:
-          label: Deprecated (V1 API)
-          topics:
-          - topic: tutorials/getting-started-routing.md
-            navtitle: Configuring Activity Tracker (V1 API)
-          - topic: target_v1.md
-            navtitle: Managing targets (API V1)
-          - topic: route_v1.md
-            navtitle: Managing routes (API V1)
-          - topic: endpoints_manage.md
-            navtitle: Managing endpoints (API V1)
-          - topic: config_report.md
-            navtitle: Generating a report (API V1)
-          - link:
-              label: Event Routing V1 CLI
-              href: https://{DomainName}/docs/atracker-cli-plugin?topic=atracker-cli-plugin-atracker-v1-cli
-
-      - topicgroup:
-          label: Migrating to V2 the account configuration
-          topics:
-          - topic: migration.md
-            navtitle: Migrating the account configuration from V1 to V2
-          - topic: tf/atracker-tf-migration.md
-            navtitle: Using Terraformn to migrate the account configuration from V1 to V2
 
   - navgroup:
         id: help

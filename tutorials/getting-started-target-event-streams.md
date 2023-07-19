@@ -2,7 +2,7 @@
 
 copyright:
   years: 2022, 2023
-lastupdated: "2022-11-16"
+lastupdated: "2023-07-17"
 
 keywords:
 
@@ -27,9 +27,6 @@ completion-time: 1h
 
 You can define an {{site.data.keyword.messagehub}} topic as a {{site.data.keyword.atracker_full_notm}} target to send auditing events to other corporate tools such as Security Information and Event Management (SIEM) tools.
 {: shortdesc}
-
-This tutorial uses the {{site.data.keyword.atracker_full_notm}} v2 API.
-{: important}
 
 ## Scenarios
 {: #getting-started-target-event-streams-scenarios}
