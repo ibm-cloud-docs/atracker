@@ -2,7 +2,7 @@
 
 copyright:
   years: 2022, 2023
-lastupdated: "2022-05-24"
+lastupdated: "2023-07-17"
 
 keywords:
 
@@ -13,14 +13,11 @@ subcollection: atracker
 {{site.data.keyword.attribute-definition-list}}
 
 
-# Managing routes using the V2 API
+# Managing routes
 {: #route_v2}
 
 You can manage routes in your account by using the {{site.data.keyword.atracker_full}} CLI, {{site.data.keyword.atracker_short}} REST API, and Terraform scripts. A route defines the rules that indicate what auditing events are routed in a region and where to route them.
 {: shortdesc}
-
-The version of the API running in your account can be determined by running the [`ibmcloud atracker init version`](/docs/atracker?topic=atracker-v2api) command.
-{: tip}
 
 ## Understanding how routes work in your account
 {: #route_behaviour}
@@ -52,7 +49,7 @@ Note the following information about routes:
 After you configure a route, it might take up to 1 hour for the configuration to be enabled.
 {: note}
 
-The target defines where auditing events are collected. The target can be an [{{site.data.keyword.cos_full_notm}} (COS) target](/docs/atracker?topic=atracker-target_v2_cos) or an [{{site.data.keyword.atracker_short}} hosted event search target](/docs/atracker?topic=atracker-target_v2_at).  The route defines what auditing events are routed to a target.
+The target defines where auditing events are collected. The target can be an [{{site.data.keyword.cos_full_notm}} (COS) target](/docs/atracker?topic=atracker-target_v2_cos), an [{{site.data.keyword.atr_short}} hosted event search target](/docs/atracker?topic=atracker-target_v2_at) or an [{{site.data.keyword.messagehub_full}} target](/docs/atracker?topic=atracker-target_v2_ies&interface=cli).  The route defines what auditing events are routed to a target.
 
 The following sample route definition will:
 - send all `us-south`, `us-east` and `global` events to the target identified by the ID `281f78a2-3333-4444-5555-e896f03cb403`

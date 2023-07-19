@@ -2,8 +2,7 @@
 
 copyright:
   years: 2019, 2023
-
-lastupdated: "2021-08-09"
+lastupdated: "2023-07-17"
 
 keywords:
 
@@ -127,7 +126,7 @@ The following table lists the auditing events that are generated when you manage
 | `atracker.target.get` | This event is generated when an administrator retrieves a target and its details by specifying the ID of the target.|
 | `atracker.target.update` | This event is generated when an administrator updates a target details by specifying the ID of the target. |
 | `atracker.target.delete` | This event is generated when an administrator deletes a target by specifying the ID of the target. |
-{: caption="Table 1. Events for managing targets" caption-side="top"}
+{: caption="Table 5. Events for managing targets" caption-side="top"}
 
 
 ### Routes
@@ -142,22 +141,8 @@ The following table lists the auditing events that are generated when you manage
 | `atracker.route.get` | This event is generated when an administrator retrieves a route and its details by specifying the ID of the route. |
 | `atracker.route.update` | This event is generated when an administrator replaces a route details by specifying the ID of the route. You can also get this event when you validate a target by checking the credentials to write to the bucket. |
 | `atracker.route.delete` | This event is generated when an administrator deletes a route by specifying the ID of the route. |
-{: caption="Table 2. Events for managing routes" caption-side="top"}
+{: caption="Table 6. Events for managing routes" caption-side="top"}
 
-
-### Endpoints
-{: #at_events_mgt_endpoint}
-
-The following table lists the auditing events that are generated when you manage endpoints:
-
-| Action                                            | Description                |
-|---------------------------------------------------|----------------------------|
-| `atracker.endpoint.set` | This event is generated when an administrator configures the public endpoint availability in a region. |
-| `atracker.endpoint.get` | This event is generated when an administrator gets information about the public and private endpoints that are enabled in a region.  |
-{: caption="Table 3. Events for managing endpoints" caption-side="top"}
-
-These events are only applicable to the {{site.data.keyword.atracker_short}} V1 configuration and are unavailable after you have [migrated to the V2 configuration.](/docs/atracker?topic=atracker-migration)
-{: note}
 
 ### Settings
 {: #at_events_setting}
@@ -168,21 +153,4 @@ The following table lists the auditing events that are generated when you manage
 |---------------------------------------------------|----------------------------|
 | `atracker.setting.set` | This event is generated when an administrator configures the {{site.data.keyword.atracker_short}} settings for an account. |
 | `atracker.setting.get` | This event is generated when an administrator gets information about the {{site.data.keyword.atracker_short}} settings for an account. |
-{: caption="Table 4. Events for managing settings" caption-side="top"}
-
-These events are only applicable to the {{site.data.keyword.atracker_short}} V2 configuration and are not available before you have [migrated to the V2 configuration.](/docs/atracker?topic=atracker-migration)
-{: note}
-
-### Migration
-{: #at_events_migrate}
-
-The following table lists the auditing events that are generated when you migrate your {{site.data.keyword.atracker_short}} configuration from V1 to V2:
-
-| Action                                            | Description                |
-|---------------------------------------------------|----------------------------|
-| `atracker.migration.post` | This event is generated when an administrator starts the migration of the {{site.data.keyword.atracker_short}} configuration from V1 to V2. |
-| `atracker.migration.get` | This event is generated when an administrator request the status of a migration of the {{site.data.keyword.atracker_short}} configuration. |
-{: caption="Table 5. Events for migration" caption-side="top"}
-
-These events are only applicable when an account is being [migrated from an {{site.data.keyword.atracker_short}} V1 configuration to V2.](/docs/atracker?topic=atracker-migration)
-{: note}
+{: caption="Table 7. Events for managing settings" caption-side="top"}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2023
-lastupdated: "2023-03-29"
+lastupdated: "2023-07-17"
 
 keywords:
 
@@ -40,34 +40,12 @@ For more information on how to enable platform metrics, select 1 of the followin
 
 [![Option 1. UI](../images/platform_metrics_option_1.svg)](/docs/monitoring?topic=monitoring-platform_metrics_enabling#platform_metrics_enabling_ui) [![Option 2. CLI](../images/platform_metrics_option_2.svg)](/docs/monitoring?topic=monitoring-platform_metrics_enabling#platform_metrics_enabling_cli)
 
-## Viewing metrics for {{site.data.keyword.atracker_short}} V2 API
+## Viewing metrics for {{site.data.keyword.atracker_short}}
 {: #monitoring_metrics_view_v2}
 
 You monitor metrics in the {{site.data.keyword.mon_short}} web UI.
 
 To monitor {{site.data.keyword.atracker_short}} metrics, you must launch the {{site.data.keyword.mon_short}} UI for the instance that is enabled for platform metrics in the region where your target is defined. For example, if you have a target defined in US-South, you must launch the {{site.data.keyword.mon_short}} instance in US-South that has the flag platform metrics. For more information, see [Launching the {{site.data.keyword.mon_short}} UI from the Observability page](/docs/monitoring?topic=monitoring-launch#launch_step2).
-
-You can use the *IBM {{site.data.keyword.atracker_short}} Overview* predefined dashboard template to monitor {{site.data.keyword.atracker_short}} in {{site.data.keyword.cloud_notm}}.
-
-To open the predefined {{site.data.keyword.atracker_short}} template, complete the following steps from the {{site.data.keyword.mon_short}} UI:
-
-1. In the {{site.data.keyword.mon_short}} UI, go to **Dashboards** &gt; **Dashboard templates** &gt; **IBM**.
-2. Select **IBM {{site.data.keyword.atracker_short}} Overview**.
-
-You cannot modify a dashboard template. However, you can copy the template and create a custom dashboard that you can then configure.
-{: note}
-
-Next, choose any of the following tasks to learn more about how to manage and work with platform metrics:
-
-[![Working with platform metrics](../images/platform_metrics_task_1.svg)](/docs/monitoring?topic=monitoring-platform_metrics_working) [![Controlling what data is visible](../images/platform_metrics_task_2.svg)](/docs/monitoring?topic=monitoring-platform_metrics_working#controlling-what-data-is-visible) [![Monitoring metrics through dashboards](../images/platform_metrics_task_3.svg)](/docs/monitoring?topic=monitoring-platform_metrics_working#platform_metrics_working_dash) [![Configuring an alert on a platform metric](../images/platform_metrics_task_4.svg)](/docs/monitoring?topic=monitoring-platform_metrics_working#platform_metrics_working_alert) [![Controlling access by using teams](../images/platform_metrics_task_5.svg)](/docs/monitoring?topic=monitoring-platform_metrics_working#platform_metrics_working_team)
-
-
-## Viewing metrics for {{site.data.keyword.atracker_short}} V1 API
-{: #monitoring_metrics_view}
-
-You monitor metrics in the {{site.data.keyword.mon_short}} web UI.
-
-To monitor {{site.data.keyword.atracker_short}} metrics, you must launch the {{site.data.keyword.mon_short}} UI for the instance that is enabled for platform metrics in the region where you are using {{site.data.keyword.atracker_short}}. For more information, see [Launching the {{site.data.keyword.mon_short}} UI from the Observability page](/docs/monitoring?topic=monitoring-launch#launch_step2).
 
 You can use the *IBM {{site.data.keyword.atracker_short}} Overview* predefined dashboard template to monitor {{site.data.keyword.atracker_short}} in {{site.data.keyword.cloud_notm}}.
 
@@ -133,8 +111,6 @@ Total number of events that are discarded.
 | `Segment By`  | `target type, reason` |
 {: caption="Table 3. Total number of events that are discarded" caption-side="top"}
 
-
-
 ### Global Attributes
 {: #global-attributes}
 
@@ -148,7 +124,7 @@ The following attributes are available for all metrics.
 | `Resource Type`  | `ibm_resource_type`       | The type of the resource that is measured by the service. |
 | `Scope`          | `ibm_scope`               | The scope is the account, organization, or space GUID associated with the metric. |
 | `Service name`   | `ibm_service_name`        | The name of the service that is generating this metric. |
-{: caption="Table 3. Global atributes" caption-side="top"}
+{: caption="Table 4. Global atributes" caption-side="top"}
 
 ### More attributes
 {: #additional-attributes}
@@ -159,4 +135,4 @@ The following attributes are available for one or more attributes described in t
 |---------------|----------------------------|-----------------------|
 | `target type` | `ibm_atracker_target_type` | The target type destination of the event. Valid values are: `cloud_object_storage`, `logdna`, or `event_streams`. |
 | `reason`      | `ibm_atracker_reason_code` | The reason for the failure of an event delivery to its destination. |
-{: caption="Table 4. Other atributes" caption-side="top"}
+{: caption="Table 5. Other atributes" caption-side="top"}

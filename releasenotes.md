@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2023
-lastupdated: "2022-11-11"
+lastupdated: "2023-07-17"
 
 keywords:
 
@@ -21,6 +21,13 @@ content-type: release-note
 
 Use these release notes to learn about the latest updates to {{site.data.keyword.atracker_full}}.
 {: shortdesc}
+
+## 17 July 2023
+{: #activity-tracker-jul1723}
+{: release-note}
+
+References to {{site.data.keyword.atracker_short}} V1 API removed.
+:   All references to the deprecated V1 API have been removed from the {{site.data.keyword.atracker_short}} documentation.
 
 ## 18 November 2022
 {: #activity-tracker-nov1822}

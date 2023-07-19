@@ -2,7 +2,7 @@
 
 copyright:
   years: 2022, 2023
-lastupdated: "2022-11-11"
+lastupdated: "2023-07-17"
 
 keywords:
 
@@ -154,33 +154,4 @@ A route defines the rules that indicate where auditing events that are generated
 
 To collect auditing events in your {{site.data.keyword.cloud_notm}} account, you can configure {{site.data.keyword.atracker_short}} by using the {{site.data.keyword.atracker_short}} API, the {{site.data.keyword.atracker_short}} CLI and Terraform scripts.
 
-The {{site.data.keyword.atracker_full}} feature has been enhanced and a new API version 2 is available. To use the new V2 features and configurations, your existing {{site.data.keyword.atracker_short}} V1 account configuration must be migrated to an {{site.data.keyword.atracker_short}} V2 account configuration.
-{: note}
-
-If you configured {{site.data.keyword.atracker_full}} prior to 16 May 2022, you will need to migrate your configuration to the new version V2. The {{site.data.keyword.atracker_full}} API version 1 is deprecated. For more information, see [Migrating the {{site.data.keyword.atracker_short}} account configuration from V1 to V2](/docs/atracker?topic=atracker-migration&interface=cli).
-
 For more in formation, see [Collecting events](/docs/atracker?topic=atracker-events_collect&interface=cli).
-
-
-## What are the API V2 enhancements?
-{: #atracker-api-diff}
-
-The following table outlines key feature differences between {{site.data.keyword.atracker_short}} API versions:
-
-| Feature comparison | API Version 2 | API Version 1 (deprecated) |
-|--------------------|---------------|----------------------------|
-| Each region is managed separately. | | ![Checkmark icon](images/checkmark-icon.svg) |
-| The account configuration is managed in a user-specified location. | ![Checkmark icon](images/checkmark-icon.svg) | |
-| You can restrict the location where targets are defined in the account. | ![Checkmark icon](images/checkmark-icon.svg) | |
-| You can configure 1 or more default targets for events not explicitly managed in the account's routing rules. | ![Checkmark icon](images/checkmark-icon.svg) | |
-| You can define a Cloud Object Storage target by configuring a bucket within the account. | ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) |
-| You can define a Cloud Object Storage target by configuring a bucket in a different the account. | ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) |
-| You can define an instance of the {{site.data.keyword.atracker_short}} Event Search offering as a target. | ![Checkmark icon](images/checkmark-icon.svg) | |
-| You can use an API Key to write auditing events into a bucket. | ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) |
-| You can configure service to service authorization to write auditing events to a bucket. The bucket can be in the same account where events are generated or in a different account. | ![Checkmark icon](images/checkmark-icon.svg) | |
-| You can define the target where global events are collected in your account. | ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) |
-| Auditing events are routed based on the location where they are generated. | | ![Checkmark icon](images/checkmark-icon.svg) |
-| Auditing events are routed based on the location that is specified in the field `logSourceCRN`. | ![Checkmark icon](images/checkmark-icon.svg) | |
-| Routes are specific to a region. | | ![Checkmark icon](images/checkmark-icon.svg) |
-| Routes are global to the account. | ![Checkmark icon](images/checkmark-icon.svg) | |
-{: caption="Table 1. {{site.data.keyword.atracker_short}} API version feature comparison" caption-side="top"}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2023
-lastupdated: "2022-05-05"
+lastupdated: "2023-07-17"
 
 keywords:
 
@@ -11,7 +11,7 @@ subcollection: atracker
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Managing endpoints (API V2)
+# Managing endpoints
 {: #endpoints_manage_v2}
 
 You can use the the {{site.data.keyword.atracker_full}} CLI or {{site.data.keyword.atracker_full_notm}} REST API to manage private and public endpoints in your account.

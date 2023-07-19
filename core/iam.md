@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2023
-lastupdated: "2022-11-11"
+lastupdated: "2023-07-17"
 
 keywords:
 
@@ -16,45 +16,11 @@ subcollection: atracker
 # Managing access with IAM
 {: #iam}
 
-{{site.data.keyword.iamlong}} (IAM) enables you to securely authenticate users and control access to all cloud resources consistently in the {{site.data.keyword.cloud_notm}}. Access to {{site.data.keyword.at_full_notm}} service instances for users in your account is controlled by {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM).
+{{site.data.keyword.iamlong}} (IAM) enables you to securely authenticate users and control access to all cloud resources consistently in the {{site.data.keyword.cloud_notm}}. Access to {{site.data.keyword.atracker_full_notm}} service instances for users in your account is controlled by {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM).
 {: shortdesc}
 
 The access policy that you assign users in your account determines what actions a user can perform within the context of the service or specific instance that you select. The allowable actions are customized and defined by {{site.data.keyword.atracker_short}} as operations that are allowed to be performed on the service. An action is mapped to an IAM platform or service role that you can assign to a user.
 
-For more information about the steps to assign IAM access, see [Managing access to resources](/docs/account?topic=account-assign-access-resources).
-- When you assign policies to users by using a CLI command or API call, use `atracker`.
-- When you assign policies to users through the UI, use `Activity Tracking`.
-
-**To organize a set of users and service IDs into a single entity that makes it easy for you to manage IAM permissions, use *access groups*.** You can assign a single policy to the group instead of assigning the same access multiple times per individual user or service ID.
-{: tip}
-
-
-## Managing access by using access groups
-{: #groups}
-
-To manage access or assign new access for users by using access groups, you must be the account owner, administrator, or editor on all Identity and Access enabled services in the account, or the assigned administrator or editor for the IAM Access Groups Service.
-
-Choose any of the following actions to manage access groups in the {{site.data.keyword.cloud_notm}}:
-
-* [Creating an access group](/docs/account?topic=account-groups#create_ag).
-* [Assigning access to a group](/docs/account?topic=account-groups#access_ag).
-
-
-## Managing access by assigning policies directly to users
-{: #users}
-
-To manage access or assign new access for users by using IAM policies, you must be the account owner, administrator on all services in the account, or an administrator for the particular service or service instance.
-
-Choose any of the following actions to manage IAM policies in the {{site.data.keyword.cloud_notm}}:
-
-* To grant permissions to a user, see [Assigning access](/docs/account?topic=account-assign-access-resources#assign_new_access).
-* To revoke permissions, see [Removing access](/docs/account?topic=account-assign-access-resources#removing_access).
-* To review a user's permissions, see [Reviewing your assigned access](/docs/account?topic=account-assign-access-resources#review_your_access).
-
-## Managing access through trusted profiles
-{: #iam-profiles}
-
-[Trusted profiles](/docs/account?topic=account-identity-overview#trustedprofiles-bestpract) are supported.
 
 ## {{site.data.keyword.cloud_notm}} platform roles
 {: #platform}
@@ -115,28 +81,14 @@ For {{site.data.keyword.atracker_short}}, the IAM actions and Activity Tracker a
 
 | Action | IAM and Activity Tracker action | Administrator | Editor | Operator | Viewer |
 |--------|------------|---------------|--------|-----------|--------|
-| Set endpoint properties `[V1]` | `atracker.endpoint.set` | ![Checkmark icon](../../icons/checkmark-icon.svg) | | |  |
-| View endpoint properties `[V1]` | `atracker.endpoint.get` | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) |
-{: caption="Table 5. IAM platform roles for {{site.data.keyword.atracker_short}} endpoint actions" caption-side="top"}
+| View configuration settings  | `atracker.setting.get` | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) |
+| Update configuration settings | `atracker.setting.update` | ![Checkmark icon](../../icons/checkmark-icon.svg) | | | |
+{: caption="Table 5. IAM platform roles for {{site.data.keyword.atracker_short}} configuration actions" caption-side="top"}
 
+## Assigning access to {{site.data.keyword.atracker_full_notm}}
+{: #iam-assign-access-how}
 
-| Action | IAM and Activity Tracker action | Administrator | Editor | Operator | Viewer |
-|--------|------------|---------------|--------|-----------|--------|
-| View configuration settings `[V2]` | `atracker.setting.get` | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) |
-| Update configuration settings `[V2]` | `atracker.setting.update` | ![Checkmark icon](../../icons/checkmark-icon.svg) | | | |
-{: caption="Table 6. IAM platform roles for {{site.data.keyword.atracker_short}} configuration actions" caption-side="top"}
-
-| Action | IAM and Activity Tracker action | Administrator | Editor | Operator | Viewer |
-|--------|------------|---------------|--------|-----------|--------|
-| Start migration `[V2]` | `atracker.migration.post` | ![Checkmark icon](../../icons/checkmark-icon.svg) | | | |
-| View migration status `[V2]` | `atracker.migration.get` | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) |
-{: caption="Table 7. IAM platform roles for {{site.data.keyword.atracker_short}} migration actions" caption-side="top"}
-
-`[V2]` is only applicable once you have [migrated to the V2 configuration.](/docs/activity-tracker?topic=activity-tracker-migration)  `[V1]` is only applicable to the V1 configuration and is unavailable after you migrate to the V2 configuration. All others are applicable to both configurations.
-{: note}
-
-
-
+For details on assigning access, see [Assigning access to {{site.data.keyword.atracker_full_notm}}](docs/atracker?topic=atracker-iam-assign-access).
 
 ## How do I know which access policies are set for me?
 {: #iam_accesspolicy}

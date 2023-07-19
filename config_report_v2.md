@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2023
-lastupdated: "2022-05-25"
+lastupdated: "2023-07-17"
 
 keywords:
 
@@ -13,7 +13,7 @@ subcollection: atracker
 {{site.data.keyword.attribute-definition-list}}
 
 
-# Creating a report of the {{site.data.keyword.atracker_short}} V2 configuration
+# Creating a report of the {{site.data.keyword.atracker_short}} configuration
 {: #config_report_v2}
 
 After configuring your {{site.data.keyword.atracker_full}} resources for your account, you should save a copy of your configuration for reference and backup purposes.
@@ -28,9 +28,7 @@ Before you use the CLI to save your {{site.data.keyword.atracker_full_notm}} res
 
 2. [Install the {{site.data.keyword.atracker_full_notm}} CLI](/docs/atracker?topic=atracker-activity-tracking-cli#activity-tracking-cli-prereq).
 
-3. Make sure your account is [running the V2 configuration.](/docs/atracker?topic=atracker-settings&interface=cli#settings-get-cli)  If you are running the V1 configuration [migrated to the {{site.data.keyword.atracker_full_notm}} V2 configuration](/docs/atracker?topic=atracker-migration).
-
-4. Make sure you have configured your [settings](/docs/atracker?topic=atracker-settings), [routes](/docs/atracker?topic=atracker-route_v2), and [targets](/docs/atracker?topic=atracker-atracker-resources&interface=cli#atracker-resources-targets).
+3. Make sure you have configured your [settings](/docs/atracker?topic=atracker-settings), [routes](/docs/atracker?topic=atracker-route_v2), and [targets](/docs/atracker?topic=atracker-atracker-resources&interface=cli#atracker-resources-targets).
 
 
 ## Saving a copy of your account settings
