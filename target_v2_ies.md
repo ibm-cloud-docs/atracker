@@ -241,7 +241,7 @@ UpdatedAt:                2022-10-20T19:20:38.888Z
 
 ## Deleting a target using the CLI
 {: #target-delete-cli-ies}
-{: cli}-ies
+{: cli}
 
 Use this command to delete a target.
 
