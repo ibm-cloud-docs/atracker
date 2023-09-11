@@ -190,7 +190,7 @@ See the following table for some HTTP response codes:
 ## Next
 {: #target_v2_next}
 
-Choose 1 of the following options to con figure a target in your account:
+Choose 1 of the following options to configure a target in your account:
 - [Managing {{site.data.keyword.cos_full_notm}} (COS) targets](/docs/atracker?topic=atracker-target_v2_cos).
-- [Managing {{site.data.keyword.atracker_full_notm}} AT hosted event search targets](/docs/atracker?topic=atracker-target_v2_at).
-- [Managing {{site.data.keyword.atracker_full_notm}} (Event Streams) hosted event search targets](/docs/atracker?topic=atracker-target_v2_ies)
+- [Managing {{site.data.keyword.atracker_full_notm}} hosted event search targets](/docs/atracker?topic=atracker-target_v2_at).
+- [Managing {{site.data.keyword.messagehub_full}} targets](/docs/atracker?topic=atracker-target_v2_ies)
