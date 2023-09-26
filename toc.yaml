@@ -126,6 +126,14 @@ toc:
             navtitle: Managing routes
 
       - topicgroup:
+          label: Working with events in non-supported locations
+          topics:
+          - topic: manage-events-for-new-region.md
+            navtitle: Working with events before a region is available
+          - topic: manage-events-to-new-region.md
+            navtitle: Working with events after a region is open for business
+
+      - topicgroup:
           label: Observability
           topics:
           - topic: observability/at_events.md
