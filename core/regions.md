@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2023
-lastupdated: "2023-05-19"
+lastupdated: "2023-09-12"
 
 keywords:
 
@@ -27,11 +27,12 @@ This image is an artistic representation and does not reflect actual political o
 
 | Geography             | Region                   | EU-Supported | HA Status |
 |-----------------------|--------------------------|--------------|-----------|
-| `North America`       | `Dallas (us-south)`      | `N/A`        | `MZR`     |
-| `North America`       | `Washington (us-east)`   | `N/A`        | `MZR`     |
+| `Asia Pacific`        | `Sydney (au-syd)`        | `N/A`        | `MZR`     |
 | `Europe`              | `Frankfurt (eu-de) (*)`  | `YES`        | `MZR`     |
 | `Europe`              | `London (eu-gb)`  | `NO`        | `MZR`     |
-| `Asia Pacific`        | `Sydney (au-syd)`        | `N/A`        | `MZR`     |
+| `Europe`              | `Madrid (eu-es) (*)`  | `YES`        | `MZR`     |
+| `North America`       | `Dallas (us-south)`      | `N/A`        | `MZR`     |
+| `North America`       | `Washington (us-east)`   | `N/A`        | `MZR`     !
 {: caption="Table 1. List of locations for {{site.data.keyword.atracker_short}}" caption-side="top"}
 
 Where
@@ -39,4 +40,4 @@ Where
 * A *region* is a defined geographic territory. A region could be a specific postal code area, a town, a city, a state, a group of states, or even a group of countries.
 * `N/A` means feature that is not applicable to that geography.
 
-`(*)` For more information, see [Enabling the EU Supported setting](/docs/account?topic=account-eu-hipaa-supported#bill_eusupported).
+`(*)` For more information, see [Enabling EU support for your account](/docs/account?topic=account-eu-supported).
