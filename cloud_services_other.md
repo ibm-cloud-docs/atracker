@@ -66,29 +66,9 @@ The following table lists database services that send auditing events:
 | [{{site.data.keyword.databases-for-mongodb_full_notm}}](/docs/databases-for-mongodb) | `databases-for-mongodb-group` | [Location-based events](/docs/databases-for-mongodb?topic=databases-for-mongodb-activity-tracker) |
 | [{{site.data.keyword.databases-for-mysql_full}}](/docs/databases-for-mysql) | `databases-for-mysql-group` | [Location-based events](/docs/databases-for-mysql?topic=databases-for-mysql-activity-tracker) |
 | [{{site.data.keyword.Db2_on_Cloud_long}}](/docs/Db2onCloud?topic=Db2onCloud-about) | `db2oncloud` | [Location-based events](/docs/Db2onCloud?topic=Db2onCloud-activity-tracker) |
-| [{{site.data.keyword.dashdblong_notm}}](/docs/Db2whc?topic=Db2whc-getting-started) | `dashdb` | [Global events](/docs/atracker?topic=atracker-at_events_dashdb) |
 {: caption="Table 3. List of database services" caption-side="top"}
 
 `[*]` - Events provided by the BSS service.
-
-## Developer tools
-{: #cloud_services_other_devops}
-
-The following table lists developer tools and DevOps services that send auditing events:
-
-| Service     | CRN service name | Events |
-|-------------|------------------|--------|
-| [{{site.data.keyword.cloud-shell_full}}](/docs/cloud-shell?topic=cloud-shell-getting-started) | `cloudshell` | [Location-based events](/docs/cloud-shell?topic=cloud-shell-at_events) |
-{: caption="Table 4. List of developer tools services" caption-side="top"}
-
-
-The following table lists {{site.data.keyword.contdelivery_full}} services that send auditing events:
-
-| Service     | CRN service name | Events |
-|-------------|------------------|--------|
-| [{{site.data.keyword.contdelivery_full}}](/docs/ContinuousDelivery?topic=ContinuousDelivery-getting-started) | `continuous-delivery` | [Location-based events](/docs/ContinuousDelivery?topic=ContinuousDelivery-cd-at-events) |
-| [Toolchain](/docs/ContinuousDelivery?topic=ContinuousDelivery-cd_about) | `toolchain` | [Location-based events](/docs/ContinuousDelivery?topic=ContinuousDelivery-cd-at-events#toolchain-events) |
-{: caption="Table 5. List of developer tools services" caption-side="top"}
 
 
 
@@ -99,7 +79,7 @@ The following table lists integration services that send auditing events:
 
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
-| [MQ on IBM Cloud]/docs/mqcloud?topic=mqcloud-getting_started) |`mqcloud` | [Location-based events](/docs/mqcloud?topic=mqcloud-at_events) |
+| [MQ on IBM Cloud](/docs/mqcloud?topic=mqcloud-getting_started) |`mqcloud` | [Location-based events](/docs/mqcloud?topic=mqcloud-at_events) |
 |[{{site.data.keyword.apiconnect_long}}](/docs/apiconnect?topic=apiconnect-getting-started)| `apiconnect` | [Location-based events](/docs/apiconnect?topic=apiconnect-at_events) |
 {: caption="Table 6. List of integration Cloud services" caption-side="top"}
 
@@ -126,19 +106,6 @@ The following table lists observability services that send auditing events:
 | [{{site.data.keyword.la_full}}](/docs/log-analysis?topic=log-analysis-getting-started#getting-started) | `logdna` | [Location-based events](/docs/log-analysis?topic=log-analysis-at_events) |
 | [{{site.data.keyword.mon_full}}](/docs/monitoring?topic=monitoring-getting-started) | `sysdig-monitor` | [Location-based events](/docs/monitoring?topic=monitoring-at_events) |
 {: caption="Table 8. List of observability services" caption-side="top"}
-
-
-## Security services
-{: #cloud_services_other_security}
-
-The following table lists security Cloud services that send auditing events:
-
-
-| Service     | CRN service name | Events |
-|-------------|------------------|--------|
-| [{{site.data.keyword.keymanagementservicelong}}](/docs/key-protect?topic=key-protect-getting-started-tutorial#getting-started-tutorial) | `kms` | [Location-based events](/docs/key-protect?topic=key-protect-at-events) |
-| [{{site.data.keyword.secrets-manager_full_notm}}](/docs/secrets-manager?topic=secrets-manager-getting-started) | `cloudcerts` | [Location-based events](/docs/secrets-manager?topic=secrets-manager-at-events) |
-{: caption="Table 9. List of security services" caption-side="top"}
 
 
 

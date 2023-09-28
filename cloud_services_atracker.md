@@ -73,6 +73,7 @@ The following table lists database services that send auditing events:
 | [{{site.data.keyword.cloudantfull}}](/docs/Cloudant?topic=Cloudant-getting-started-with-cloudant) | `cloudantnosqldb`  | [Location-based events](/docs/Cloudant?topic=Cloudant-at_events) |
 | [{{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}}](/docs/hyper-protect-dbaas-for-mongodb?topic=hyper-protect-dbaas-for-mongodb-gettingstarted) | `hyperp-dbaas-mongodb` |  [Location-based events](/docs/hyper-protect-dbaas-for-mongodb?topic=hyper-protect-dbaas-for-mongodb-activity-tracker-events) |
 | [{{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}}](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-gettingstarted) | `hyperp-dbaas-postgresql`| [Location-based events](/docs/hyper-protect-dbaas-for-postgresql?topic=hyper-protect-dbaas-for-postgresql-activity-tracker-events) |
+| [{{site.data.keyword.dashdblong_notm}}](/docs/Db2whc?topic=Db2whc-getting-started) | `dashdb` | [Global events](/docs/atracker?topic=atracker-at_events_dashdb) |
 {: caption="Table 4. List of database services" caption-side="top"}
 
 
@@ -87,6 +88,16 @@ The following table lists developer tools and DevOps services that send auditing
 | [Apps](/docs/apps?topic=apps-getting-started) | `developer-experience` | [Location-based events](/docs/apps?topic=apps-at_events) |
 | [{{site.data.keyword.en_full}}](/docs/event-notifications?topic=event-notifications-getting-started) | `event-notifications`| [Location-based events](/docs/event-notifications?topic=event-notifications-en-at_events)|
 | [{{site.data.keyword.appconfig_full}}](/docs/app-configuration?topic=app-configuration-getting-started) | `apprapp`| [Location-based events](/docs/app-configuration?topic=app-configuration-ac-at_events)|
+| [{{site.data.keyword.cloud-shell_full}}](/docs/cloud-shell?topic=cloud-shell-getting-started) | `cloudshell` | [Location-based events](/docs/cloud-shell?topic=cloud-shell-at_events) |
+{: caption="Table 5. List of developer tools services" caption-side="top"}
+
+
+The following table lists {{site.data.keyword.contdelivery_full}} services that send auditing events:
+
+| Service     | CRN service name | Events |
+|-------------|------------------|--------|
+| [{{site.data.keyword.contdelivery_full}}](/docs/ContinuousDelivery?topic=ContinuousDelivery-getting-started) | `continuous-delivery` | [Location-based events](/docs/ContinuousDelivery?topic=ContinuousDelivery-cd-at-events) |
+| [Toolchain](/docs/ContinuousDelivery?topic=ContinuousDelivery-cd_about) | `toolchain` | [Location-based events](/docs/ContinuousDelivery?topic=ContinuousDelivery-cd-at-events#toolchain-events) |
 {: caption="Table 5. List of developer tools services" caption-side="top"}
 
 
@@ -124,6 +135,7 @@ The following table lists observability services that send auditing events:
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
 | [{{site.data.keyword.atracker_full}}](/docs/atracker?topic=atracker-getting-started) | `atracker` | [Location-based events](/docs/atracker?topic=atracker-at_events). |
+| [{{site.data.keyword.metrics_router_full}}](/docs/metrics-router?topic=metrics-router-getting-started) | `metrics-router` | [Location-based events](/docs/metrics-router?topic=metrics-router-at_events). |
 {: caption="Table 8. List of observability services" caption-side="top"}
 
 
@@ -157,6 +169,7 @@ The following table lists security Cloud services that send auditing events:
 | [{{site.data.keyword.appid_full}}](/docs/appid?topic=appid-getting-started) | `appid` | [Location-based events](/docs/appid?topic=appid-at-events)   |
 | [{{site.data.keyword.cloud_notm}} {{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-get-started) | `hs-crypto` | [Location-based events](/docs/hs-crypto?topic=hs-crypto-at-events) |
 | [{{site.data.keyword.secrets-manager_full}}](/docs/secrets-manager?topic=secrets-manager-getting-started) | `secrets-manager` |  [Location-based events](/docs/secrets-manager?topic=secrets-manager-at-events) |
+| [{{site.data.keyword.keymanagementservicelong}}](/docs/key-protect?topic=key-protect-getting-started-tutorial#getting-started-tutorial) | `kms` | [Location-based events](/docs/key-protect?topic=key-protect-at-events) |
 {: caption="Table 10. List of security services" caption-side="top"}
 
 
