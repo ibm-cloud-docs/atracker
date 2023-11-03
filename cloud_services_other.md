@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2023
-lastupdated: "2023-06-01"
+lastupdated: "2023-11-03"
 
 keywords:
 
@@ -35,17 +35,6 @@ The following table lists analytics services that send auditing events:
 | [{{site.data.keyword.sqlquery_full}}](/docs/sql-query?topic=sql-query-overview#overview) | `sql-query` | [Location-based events](/docs/sql-query?topic=sql-query-activitytracker#activitytracker) |
 | [{{site.data.keyword.dv_short}}](/docs/data-virtualization?topic=data-virtualization-getting-started) | `data-virtualization` | [Location-based events](/docs/data-virtualization?topic=data-virtualization-activity-tracker) |
 {: caption="Table 1. List of analytics services" caption-side="top"}
-
-
-## Compute serverless services
-{: #cloud_services_other_serverless}
-
-The following table lists serverless compute services that send auditing events:
-
-| Service     | CRN service name | Events |
-|-------------|------------------|--------|
-| [{{site.data.keyword.openwhisk}}](/docs/openwhisk?topic=openwhisk-getting-started) | `functions` | [Location-based events](/docs/openwhisk?topic=openwhisk-at_events) |
-{: caption="Table 2. List of serverless compute services" caption-side="top"}
 
 
 
