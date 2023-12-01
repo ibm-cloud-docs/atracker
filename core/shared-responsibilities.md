@@ -63,8 +63,7 @@ Review the following sections for the specific responsibilities for you and for 
 
 | Task                                       | {{site.data.keyword.IBM_notm}} Responsibilities | Your Responsibilities |
 |--------------------------------------------|-------------------------------------------------|-----------------------|
-| Encrypt data  | Encrypt data in motion and at rest per compliance specifications. | When using a `cloud_object_storage` target, ensure encryption of auditing data by configuring a COS bucket that has full control over the data encryption keys that are used. [{{site.data.keyword.cos_full}} provides several options to encrypt your data.](/docs/cloud-object-storage?topic=cloud-object-storage-encryption) |
-| Meet security and compliance objectives  | Maintain controls that are commensurate to various industry compliance standards such the Financial Services specification. | Set up and maintain security and regulation compliance for your apps and data.   |
+| Meet security and compliance objectives  | Maintain controls that are commensurate to various industry compliance standards such the Financial Services specification. For more information, see [Securing your data](/docs/atracker?topic=atracker-mng-data).| Set up and maintain security and regulation compliance for your apps and data.  \n When using a `cloud_object_storage` target, ensure encryption of auditing data by configuring a COS bucket that has full control over the data encryption keys that are used. [{{site.data.keyword.cos_full}} provides several options to encrypt your data.](/docs/cloud-object-storage?topic=cloud-object-storage-encryption)  |
 {: caption="Table 4. Responsibilities for security and regulation compliance" caption-side="top"}
 
 
