@@ -96,7 +96,7 @@ toc:
             navtitle: Enforcing target locations
           - topic: target-default-reset.md
             navtitle: Reseting default targets
-          - topic: target_v2.md
+
 
       - topicgroup:
           label: Managing endpoints
@@ -112,6 +112,7 @@ toc:
       - topicgroup:
           label: Managing targets
           topics:
+          - topic: target_v2.md
           - topic: target_v2_cos.md
             navtitle: Managing a COS target
           - topic: target_v2_at.md
