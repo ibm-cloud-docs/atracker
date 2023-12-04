@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2023
-lastupdated: "2023-10-24"
+lastupdated: "2023-12-01"
 
 keywords:
 
@@ -113,8 +113,10 @@ The following table shows the regions where the copy of a regular backup is repl
 
 Disaster recovery is about surviving a catastrophic failure or loss of availability in a single location. 
 
-{{site.data.keyword.atracker_short}} is a platform service. There is no automatic cross-regional failover or cross-regional disaster recovery. If all of the availability zones in a region fail, {{site.data.keyword.atracker_short}} becomes unavailable in that location. 
+{{site.data.keyword.atracker_short}} is a platform service. There is no automatic cross-regional failover or cross-regional disaster recovery. If all of the availability zones in a region fail, {{site.data.keyword.atracker_short}} becomes unavailable in that location.
 
+[You can create a configuration to route to a backup target in a different region.](/docs/atracker?topic=atracker-dr_config)
+{: tip}
 
 In the event of a regional disaster, you must complete the following steps to establish cross-region high availability:
 
