@@ -132,7 +132,7 @@ Complete the following steps to create a target in the US-South region in your a
 2. [Create a target](/docs/atracker?topic=atracker-target#target-create). Run the following cURL command:
 
     ```shell
-    curl -X POST  <ENDPOINT>/api/v1/targets   -H "Authorization:  $ACCESS_TOKEN"   -H "content-type: application/json"   -d '{
+    curl -X POST  <ENDPOINT>/api/v2/targets   -H "Authorization:  $ACCESS_TOKEN"   -H "content-type: application/json"   -d '{
         "name": "TARGET_NAME",
         "target_type": "TARGET_TYPE",
         "logdna_endpoint": {
