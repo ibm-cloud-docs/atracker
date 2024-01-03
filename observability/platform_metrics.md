@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2023
-lastupdated: "2023-07-17"
+lastupdated: "2023-12-11"
 
 keywords:
 
@@ -69,7 +69,7 @@ Next, choose any of the following tasks to learn more about how to manage and wo
 - [Total number of events successfully sent to the storage target](/docs/atracker?topic=atracker-monitoring_metrics#ibm_atracker_successful_events_by_target)
 - [Total number of events that failed to send to the storage target](/docs/atracker?topic=atracker-monitoring_metrics#ibm_atracker_failed_events_by_target)
 - [Total number of events that are discarded](/docs/atracker?topic=atracker-monitoring_metrics#ibm_atracker_discarded_events)
-
+- [The target mode](#ibm_atracker_target_mode)
 
 ### Total number of events successfully sent to the storage target
 {: #ibm_atracker_successful_events_by_target}
@@ -111,6 +111,26 @@ Total number of events that are discarded.
 | `Segment By`  | `target type, reason` |
 {: caption="Table 3. Total number of events that are discarded" caption-side="top"}
 
+### Target mode
+{: #ibm_atracker_target_mode}
+
+The current mode for {{site.data.keyword.atracker_short}} targets. There are two possible values for the metric:
+- `1` indicates that valid targets are configured.
+- `0` indicates that there are misconfigured or discarded targets.
+
+You need to resolve misconfigured or discarded targets. One of the following needs to be fixed:
+* Make sure that your IAM token has the appropriate authorization, see [IAM token authorization error](/docs/atracker?topic=atracker-troubleshoot-02).
+* Your target destination must be a CRN for a target instance that exists.
+
+| Metadata | Description |
+|----------|-------------|
+| `Metric Name` | `ibm_atracker_target_mode`|
+| `Metric Type` | `gauge` |
+| `Value Type`  | `none` |
+| `Segment By`  | `ibm_atracker_target_type` |
+{: caption="Table 4. Target modes" caption-side="top"}
+
+
 ### Global Attributes
 {: #global-attributes}
 
@@ -124,7 +144,7 @@ The following attributes are available for all metrics.
 | `Resource Type`  | `ibm_resource_type`       | The type of the resource that is measured by the service. |
 | `Scope`          | `ibm_scope`               | The scope is the account, organization, or space GUID associated with the metric. |
 | `Service name`   | `ibm_service_name`        | The name of the service that is generating this metric. |
-{: caption="Table 4. Global atributes" caption-side="top"}
+{: caption="Table 5. Global atributes" caption-side="top"}
 
 ### More attributes
 {: #additional-attributes}
@@ -135,4 +155,4 @@ The following attributes are available for one or more attributes described in t
 |---------------|----------------------------|-----------------------|
 | `target type` | `ibm_atracker_target_type` | The target type destination of the event. Valid values are: `cloud_object_storage`, `logdna`, or `event_streams`. |
 | `reason`      | `ibm_atracker_reason_code` | The reason for the failure of an event delivery to its destination. |
-{: caption="Table 5. Other atributes" caption-side="top"}
+{: caption="Table 6. Other atributes" caption-side="top"}
