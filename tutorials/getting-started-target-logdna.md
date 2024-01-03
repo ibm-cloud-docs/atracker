@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2023
-lastupdated: "2023-07-17"
+lastupdated: "2023-12-11"
 
 keywords:
 
@@ -132,7 +132,7 @@ Complete the following steps to create a target in the US-South region in your a
 2. [Create a target](/docs/atracker?topic=atracker-target#target-create). Run the following cURL command:
 
     ```shell
-    curl -X POST  <ENDPOINT>/api/v1/targets   -H "Authorization:  $ACCESS_TOKEN"   -H "content-type: application/json"   -d '{
+    curl -X POST  <ENDPOINT>/api/v2/targets   -H "Authorization:  $ACCESS_TOKEN"   -H "content-type: application/json"   -d '{
         "name": "TARGET_NAME",
         "target_type": "TARGET_TYPE",
         "logdna_endpoint": {
@@ -159,18 +159,21 @@ Complete the following steps to create a target in the US-South region in your a
 For example, to create a target in the US-South region, you can run the following cURL command:
 
 ```shell
-curl -X POST   https://private.us-south.atracker.cloud.ibm.com/api/v1/targets   -H "Authorization:  $ACCESS_TOKEN"   -H "content-type: application/json"   -d '{
-"name": "My target",
-"target_type": "logdna",
-"logdna_endpoint": {
-  "target_crn": "crn:v1:bluemix:public:logdnaat:global:a/<AccountID>:<COSinstanceID>::",
-  "ingestion_key": "xxxxxxxxxxxxx"
-  }
-}'
+curl -X POST https://private.us-south.atracker.cloud.ibm.com/api/v2/targets
+  -H "Authorization: Bearer IAM_TOKEN"
+  -H 'content-type: application/json'
+  -d '{
+       "name": "TARGET_NAME",
+       "target_type": "TARGET_TYPE",
+       "logdna_endpoint": {
+         "target_crn": "TARGET_CRN",
+         "ingestion_key": "TARGET_KEY"
+        }
+      }
 ```
 {: codeblock}
 
-To get the target definition in a region, see [Viewing a target](/docs/atracker?topic=atracker-target#target-view).
+To get the target definition in a region, see [Viewing a target](/docs/atracker?topic=atracker-target_v2_at&interface=api#target-view-api-at).
 
 
 
