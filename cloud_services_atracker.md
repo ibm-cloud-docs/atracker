@@ -83,7 +83,7 @@ The following table lists developer tools and DevOps services that send auditing
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
 | [{{site.data.keyword.bplong}}](/docs/schematics?topic=schematics-getting-started)  | `schematics` | [Location-based events](/docs/schematics?topic=schematics-at_events) |
-| [Apps](/docs/apps?topic=apps-getting-started) | `developer-experience` | [Location-based events](/docs/apps?topic=apps-at_events) |
+| [Apps](/docs/apps?topic=apps-getting-started) | `developer-experience` | Location-based events |
 | [{{site.data.keyword.en_full}}](/docs/event-notifications?topic=event-notifications-getting-started) | `event-notifications`| [Location-based events](/docs/event-notifications?topic=event-notifications-en-at_events)|
 | [{{site.data.keyword.appconfig_full}}](/docs/app-configuration?topic=app-configuration-getting-started) | `apprapp`| [Location-based events](/docs/app-configuration?topic=app-configuration-ac-at_events)|
 | [{{site.data.keyword.cloud-shell_full}}](/docs/cloud-shell?topic=cloud-shell-getting-started) | `cloudshell` | [Location-based events](/docs/cloud-shell?topic=cloud-shell-at_events) |
@@ -152,7 +152,7 @@ The following table lists platform services that send auditing events:
 | [Global Search Service](/docs/account?topic=account-tag) | `global-search-tagging` | [Global events](/docs/atracker?topic=atracker-at_events_acc_mgt#at_events_acc_mgt_resources) |
 | [Catalog Management](/docs/account?topic=account-filter-account) | `globalcatalog-collection` | [Global events](/docs/atracker?topic=atracker-at_events_acc_mgt#at_events_catalog_management) |
 | [Software instances](/docs/account?topic=account-sw-instance-details) | `globalcatalog-instance` | [Global events](/docs/atracker?topic=atracker-at_events_acc_mgt#at_events_sw_instance) |
-| [Context-based restrictions](/docs/account?topic=account-context-restrictions-whatis) | `context-based-restrections` | [Global events](/docs/atracker?topic=atracker-auditing-events-for-context-based-restrictions) |
+| [Context-based restrictions](/docs/account?topic=account-context-restrictions-whatis) | `context-based-restrictions` | [Global events](/docs/activity-tracker?topic=activity-tracker-events_context_based#restriction_rules_events) |
 {: caption="Table 9. List of platform services" caption-side="top"}
 
 
@@ -181,7 +181,6 @@ The following table lists storage services that send auditing events:
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
 | [{{site.data.keyword.cos_full}}](/docs/cloud-object-storage?topic=cloud-object-storage-getting-started-cloud-object-storage)| `cloud-object-storage` | [Global and location-based events `[*]`](/docs/cloud-object-storage?topic=cloud-object-storage-at-events) |
-| [{{site.data.keyword.mdms_short}}](/docs/mass-data-migration?topic=mass-data-migration-getting-started-tutorial)| `mass-data-migration` | [Events](/docs/mass-data-migration?topic=mass-data-migration-at-events) |
 {: caption="Table 11. List of storage events" caption-side="top"}
 
 
@@ -242,17 +241,6 @@ The following table lists Watson AI services that send auditing events:
 | [{{site.data.keyword.texttospeechfull}}](/docs/text-to-speech?topic=text-to-speech-gettingStarted) | `text-to-speech` | [Location-based events](/docs/text-to-speech?topic=text-to-speech-at-events) |
 {: caption="Table 14. List of Watson AI services" caption-side="top"}
 
-## Web and mobile services
-{: #web}
-
-The following table lists web and mobile services that send auditing events:
-
-| Service     | CRN service name | Events |
-|-------------|------------------|--------|
-| [{{site.data.keyword.mobilefoundation_long}}](/docs/mobilefoundation?topic=mobilefoundation-getting-started)| `mobile-foundation` | [Location-based events](/docs/mobilefoundation?topic=mobilefoundation-mfp_activity_tracker) |
-{: caption="Table 15. List of web and mobile events" caption-side="top"}
-
-
 
 ## Power IaaS services
 {: #power_iaas_services}
@@ -275,6 +263,6 @@ The following table lists Power IaaS infrastructure services that send auditing 
 | [NetworkPorts](/docs/power-iaas?topic=power-iaas-configuring-subnet) | `power-iaas` | [Location-based events](/docs/power-iaas?topic=power-iaas-at-events#at-network-ports) |
 | [Tenant](/docs/power-iaas?topic=power-iaas-managing-resources-and-users) | `power-iaas` | [Location-based events](/docs/power-iaas?topic=power-iaas-at-events#at-tenants) |
 | [SSHKeys](/docs/power-iaas?topic=power-iaas-create-vm) | `pcloud.ssh-key` | [Location-based events](/docs/power-iaas?topic=power-iaas-at-events#at-actions-ssh) |
-| [IKE](https://test.cloud.ibm.com/docs/power-iaas?topic=power-iaas-ordering-direct-link-connect) | `power-iaas` | [Location-based events](/docs/power-iaas?topic=power-iaas-at-events#at-actions-ssh) |
-| [IPSec](/docs/power-iaas?topic=power-iaas-ordering-direct-link-connect) | `power-iaas` | [Location-based events](/docs/power-iaas?topic=power-iaas-at-events#at-actions-ssh) |
+| [IKE](https://test.cloud.ibm.com/docs/power-iaas?topic=power-iaas-ordering-direct-link-connect) | `power-iaas` | [Location-based events](/docs/power-iaas?topic=power-iaas-at-events) |
+| [IPSec](/docs/power-iaas?topic=power-iaas-ordering-direct-link-connect) | `power-iaas` | [Location-based events](/docs/power-iaas?topic=power-iaas-at-events) |
 {: caption="Table 16. List of Power Systems Virtual Server infrastructure services" caption-side="top"}
