@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2024
-lastupdated: "2024-01-03"
+lastupdated: "2024-01-09"
 
 keywords:
 
@@ -187,7 +187,6 @@ The following table lists storage services that send auditing events:
 `[*]` {{site.data.keyword.cos_full_notm}} (COS) generates global, and location-based events.
 * By default, bucket management events such as the creation of a bucket are collected automatically.
 * Collection of data events in your account is optional. You must configure each bucket to enable data events by selecting the option **Track data events**.
-* {{site.data.keyword.mdms_short}} generates global events only, for each transition of the order state.
 
 
 ## VMware Solutions

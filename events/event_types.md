@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2023
-lastupdated: "2022-12-07"
+  years: 2019, 2024
+lastupdated: "2024-01-09"
 
 keywords:
 
@@ -116,7 +116,6 @@ The following services generate global events in the {{site.data.keyword.cloud_n
 * Catalog Management
 * Software instances
 * Context-based restrictions
-* {{site.data.keyword.mdms_short}}
 * {{site.data.keyword.vmwaresolutions_short}}
 * {{site.data.keyword.BluDirectLink}} solution
 
