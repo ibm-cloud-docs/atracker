@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2024
-lastupdated: "2024-01-09"
+lastupdated: "2024-01-19"
 
 keywords:
 
@@ -262,6 +262,6 @@ The following table lists Power IaaS infrastructure services that send auditing 
 | [NetworkPorts](/docs/power-iaas?topic=power-iaas-configuring-subnet) | `power-iaas` | [Location-based events](/docs/power-iaas?topic=power-iaas-at-events#at-network-ports) |
 | [Tenant](/docs/power-iaas?topic=power-iaas-managing-resources-and-users) | `power-iaas` | [Location-based events](/docs/power-iaas?topic=power-iaas-at-events#at-tenants) |
 | [SSHKeys](/docs/power-iaas?topic=power-iaas-create-vm) | `pcloud.ssh-key` | [Location-based events](/docs/power-iaas?topic=power-iaas-at-events#at-actions-ssh) |
-| [IKE](https://test.cloud.ibm.com/docs/power-iaas?topic=power-iaas-ordering-direct-link-connect) | `power-iaas` | [Location-based events](/docs/power-iaas?topic=power-iaas-at-events) |
-| [IPSec](/docs/power-iaas?topic=power-iaas-ordering-direct-link-connect) | `power-iaas` | [Location-based events](/docs/power-iaas?topic=power-iaas-at-events) |
+| [IKE](/docs/power-iaas?topic=power-iaas-ordering-direct-link-connect) | `power-iaas` |  [Location-based events](docs/power-iaas?topic=power-iaas-at-events#at-ike-policy) |
+| [IPSec](/docs/power-iaas?topic=power-iaas-ordering-direct-link-connect) | `power-iaas` | [Location-based events](/docs/power-iaas?topic=power-iaas-at-events#at-ipsec-policy) |
 {: caption="Table 16. List of Power Systems Virtual Server infrastructure services" caption-side="top"}
