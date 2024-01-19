@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2023
-lastupdated: "2023-07-17"
+  years: 2019, 2024
+lastupdated: "2024-01-18"
 
 keywords:
 
@@ -20,9 +20,6 @@ You must configure your local {{site.data.keyword.atracker_short}} CLI so that y
 {: shortdesc}
 
 You must install the latest version of the {{site.data.keyword.atracker_full_notm}} CLI in order to pick up the latest CLI features.
-
-## Step 1. Installing the {{site.data.keyword.atracker_short}} CLI
-{: #atracker-cli-config-install}
 
 Complete the following steps to install the {{site.data.keyword.atracker_short}} CLI:
 

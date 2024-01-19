@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2023
-lastupdated: "2023-09-26"
+  years: 2019, 2024
+lastupdated: "2024-01-18"
 
 keywords:
 
@@ -74,14 +74,14 @@ New V2 API support for {{site.data.keyword.atracker_short}} including the abilit
     * For existing {{site.data.keyword.atracker_short}} users, you will need to follow a migration process to use the new V2 features.  For customers that have not yet configured a target using {{site.data.keyword.atracker_short}}, you will default to V2 and will not require a migration.
 
 {{site.data.keyword.atracker_short}} available in Sydney (au-syd)
-:   {{site.data.keyword.atracker_short}} is now available in the in Sydney (au-syd) region.  [Learn more](/docs/atracker?topic=atracker-regions#regions-atracker).
+:   {{site.data.keyword.atracker_short}} is now available in the in Sydney (au-syd) region.  [Learn more](/docs/atracker?topic=atracker-regions).
 
 ## 22 March 2022
 {: #activity-tracker-mar2222}
 {: release-note}
 
 {{site.data.keyword.atracker_short}} available in Frankfurt (eu-de) and London (eu-gb)
-:   {{site.data.keyword.atracker_short}} is now available in the Frankfurt (eu-de) and London (eu-gb) regions.  [Learn more](/docs/atracker?topic=atracker-regions#regions-atracker).
+:   {{site.data.keyword.atracker_short}} is now available in the Frankfurt (eu-de) and London (eu-gb) regions.  [Learn more](/docs/atracker?topic=atracker-regions).
 
 
 ## 13 August 2021
@@ -89,4 +89,4 @@ New V2 API support for {{site.data.keyword.atracker_short}} including the abilit
 {: release-note}
 
 General availability of {{site.data.keyword.atracker_short}}
-:   [Learn more about {{site.data.keyword.atracker_short}}](/docs/atracker?topic=atracker-getting-started-routing).
+:   [Learn more about {{site.data.keyword.atracker_short}}](/docs/atracker?topic=atracker-getting-started).

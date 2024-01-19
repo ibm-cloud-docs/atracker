@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2023
-lastupdated: "2023-09-13"
+  years: 2019, 2024
+lastupdated: "2024-01-18"
 
 keywords: Observability
 
@@ -73,5 +73,5 @@ Select services that are available in the Madrid region send auditing events to 
 
 
 The following list outlines services that operate in non-supported {{site.data.keyword.at_short}} regions and generate auditing events:
-- [{{site.data.keyword.BluVirtServers_full}} (Classic)](/docs/vsi?topic=virtual-servers-about-virtual-servers#about-virtual-servers)
+- [{{site.data.keyword.BluVirtServers_full}} (Classic)](/docs/virtual-servers?topic=virtual-servers-about-virtual-servers)
 - [{{site.data.keyword.baremetal_long}} (Classic)](/docs/bare-metal?topic=bare-metal-about-bm#about-bm)

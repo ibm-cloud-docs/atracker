@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2022, 2023
-lastupdated: "2022-05-24"
+  years: 2022, 2024
+lastupdated: "2024-01-18"
 
 keywords:
 
@@ -396,7 +396,7 @@ For more information about the REST API, see [Targets](https://{DomainName}/apid
 
 To make API calls to manage targets, complete the following steps:
 1. Get an IAM access token. For more information, see [Retrieving IAM access tokens](/docs/atracker?topic=atracker-retrieve-iam-token).
-2. Identify the API endpoint in the region where you plan to configure or manage a target. For more information, see [Endpoints](/docs/atracker?topic=atracker-endpoints#endpoints_api).
+2. Identify the API endpoint in the region where you plan to configure or manage a target. For more information, see [Endpoints](/docs/atracker?topic=atracker-endpoints).
 
 
 
@@ -425,7 +425,7 @@ curl -X POST <ENDPOINT>/api/v2/targets
 
 Where
 
-- `<ENDPOINT>` is the API endpoint in the region where you plan to configure or manage a target. For more information, see [Endpoints](/docs/atracker?topic=atracker-endpoints#endpoints_api).
+- `<ENDPOINT>` is the API endpoint in the region where you plan to configure or manage a target. For more information, see [Endpoints](/docs/atracker?topic=atracker-endpoints).
 - `TARGET_NAME` is the name of the target. The maximum length of the name is 256 characters.
 
     Do not include any personal identifying information (PII) in any resource names.
@@ -485,7 +485,7 @@ curl -X PUT <ENDPOINT>/api/v2/targets
 
 Where
 
-- `<ENDPOINT>` is the API endpoint in the region where you plan to configure or manage a target. For more information, see [Endpoints](/docs/atracker?topic=atracker-endpoints#endpoints_api).
+- `<ENDPOINT>` is the API endpoint in the region where you plan to configure or manage a target. For more information, see [Endpoints](/docs/atracker?topic=atracker-endpoints).
 - `TARGET_NAME` is the name of the target. The maximum length of the name is 256 characters.
 
     Do not include any personal identifying information (PII) in any resource names.
@@ -527,7 +527,7 @@ curl -X DELETE <ENDPOINT>/api/v2/targets/TARGET_ID -H "Authorization: $ACCESS_TO
 
 Where
 
-- `<ENDPOINT>` is the API endpoint in the region where you plan to configure or manage a target. For more information, see [Endpoints](/docs/atracker?topic=atracker-endpoints#endpoints_api).
+- `<ENDPOINT>` is the API endpoint in the region where you plan to configure or manage a target. For more information, see [Endpoints](/docs/atracker?topic=atracker-endpoints).
 - `TARGET_ID` is the ID of the target.
 
 
@@ -544,7 +544,7 @@ curl -X POST <ENDPOINT>/api/v2/targets/TARGET_ID/validate -H "Authorization: $AC
 
 Where
 
-- `<ENDPOINT>` is the API endpoint in the region where you plan to configure or manage a target. For more information, see [Endpoints](/docs/atracker?topic=atracker-endpoints#endpoints_api).
+- `<ENDPOINT>` is the API endpoint in the region where you plan to configure or manage a target. For more information, see [Endpoints](/docs/atracker?topic=atracker-endpoints).
 - `TARGET_ID` is the ID of the target.
 
 For example, you can use the following cURL request to validate a target in US-South:
@@ -577,7 +577,7 @@ curl -X GET <ENDPOINT>/api/v2/targets/TARGET_ID -H "Authorization: $ACCESS_TOKEN
 
 Where
 
-- `<ENDPOINT>` is the API endpoint in the region where you plan to configure or manage a target. For more information, see [Endpoints](/docs/atracker?topic=atracker-endpoints#endpoints_api).
+- `<ENDPOINT>` is the API endpoint in the region where you plan to configure or manage a target. For more information, see [Endpoints](/docs/atracker?topic=atracker-endpoints).
 - `TARGET_ID` is the ID of the target.
 
 
@@ -603,7 +603,7 @@ curl -X GET <ENDPOINT>/api/v2/targets -H "Authorization: $ACCESS_TOKEN" -H "cont
 
 Where
 
-- `<ENDPOINT>` is the API endpoint in the region where you plan to configure or manage a target. For more information, see [Endpoints](/docs/atracker?topic=atracker-endpoints#endpoints_api).
+- `<ENDPOINT>` is the API endpoint in the region where you plan to configure or manage a target. For more information, see [Endpoints](/docs/atracker?topic=atracker-endpoints).
 
 
 For example, you can run the following cURL request to get information about the targets that are defined in Dallas:

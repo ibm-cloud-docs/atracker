@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2023
-lastupdated: "2023-07-17"
+  years: 2019, 2024
+lastupdated: "2024-01-19"
 
 keywords:
 
@@ -34,7 +34,7 @@ By default, private endpoints are enabled.
     ```
     {: codeblock}
 
-- For more information about the list of `ENDPOINTS` that are available, see [Private endpoints](/docs/atracker?topic=atracker-endpoints#endpoints_api-private).
+- For more information about the list of `ENDPOINTS` that are available, see [Private endpoints](/docs/atracker?topic=atracker-endpoints_manage_v2#endpoints_manage_v2_private).
 
 
 ## Public endpoints
@@ -51,7 +51,7 @@ By default, public endpoints are enabled.
     ```
     {: codeblock}
 
-For more information about the list of `ENDPOINTS` that are available, see [Public endpoints](/docs/atracker?topic=atracker-endpoints#endpoints_api-public).
+For more information about the list of `ENDPOINTS` that are available, see [Public endpoints](/docs/atracker?topic=atracker-endpoints_manage_v2#endpoints_manage_v2_public).
 
 
 ## Disabling public endpoints

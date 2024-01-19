@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2023
-lastupdated: "2023-12-11"
+  years: 2019, 2024
+lastupdated: "2024-01-18"
 
 keywords:
 
@@ -59,7 +59,7 @@ You cannot modify a dashboard template. However, you can copy the template and c
 
 Next, choose any of the following tasks to learn more about how to manage and work with platform metrics:
 
-[![Working with platform metrics](../images/platform_metrics_task_1.svg)](/docs/monitoring?topic=monitoring-platform_metrics_working) [![Controlling what data is visible](../images/platform_metrics_task_2.svg)](/docs/monitoring?topic=monitoring-platform_metrics_working#controlling-what-data-is-visible) [![Monitoring metrics through dashboards](../images/platform_metrics_task_3.svg)](/docs/monitoring?topic=monitoring-platform_metrics_working#platform_metrics_working_dash) [![Configuring an alert on a platform metric](../images/platform_metrics_task_4.svg)](/docs/monitoring?topic=monitoring-platform_metrics_working#platform_metrics_working_alert) [![Controlling access by using teams](../images/platform_metrics_task_5.svg)](/docs/monitoring?topic=monitoring-platform_metrics_working#platform_metrics_working_team)
+[![Working with platform metrics](../images/platform_metrics_task_1.svg)](/docs/monitoring?topic=monitoring-platform_metrics_working) [![Controlling what data is visible](../images/platform_metrics_task_2.svg)](/docs/monitoring?topic=monitoring-platform_metrics_working#global-attributes) [![Monitoring metrics through dashboards](../images/platform_metrics_task_3.svg)](/docs/monitoring?topic=monitoring-platform_metrics_working#platform_metrics_working_dash) [![Configuring an alert on a platform metric](../images/platform_metrics_task_4.svg)](/docs/monitoring?topic=monitoring-platform_metrics_working#platform_metrics_working_alert) [![Controlling access by using teams](../images/platform_metrics_task_5.svg)](/docs/monitoring?topic=monitoring-platform_metrics_working#platform_metrics_working_team)
 
 ## Metrics
 {: #monitoring_metrics_details}
@@ -70,6 +70,7 @@ Next, choose any of the following tasks to learn more about how to manage and wo
 - [Total number of events that failed to send to the storage target](/docs/atracker?topic=atracker-monitoring_metrics#ibm_atracker_failed_events_by_target)
 - [Total number of events that are discarded](/docs/atracker?topic=atracker-monitoring_metrics#ibm_atracker_discarded_events)
 - [The target mode](#ibm_atracker_target_mode)
+
 
 ### Total number of events successfully sent to the storage target
 {: #ibm_atracker_successful_events_by_target}
@@ -129,7 +130,6 @@ You need to resolve misconfigured or discarded targets. One of the following nee
 | `Value Type`  | `none` |
 | `Segment By`  | `ibm_atracker_target_type` |
 {: caption="Table 4. Target modes" caption-side="top"}
-
 
 ### Global Attributes
 {: #global-attributes}

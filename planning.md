@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2022, 2023
-lastupdated: "2022-10-24"
+  years: 2022, 2024
+lastupdated: "2024-01-19"
 
 keywords:
 
@@ -37,7 +37,7 @@ Check the regions where you operate and identify how you can manage those auditi
 - Identify the locations where you can configure IBM Cloud Activity Tracker to manage auditing events. Check [Locations](/docs/atracker?topic=atracker-regions).
 - Identify which services in those locations generate events that you can manage by using IBM Cloud Activity Tracker. Check [Services generating events](/docs/atracker?topic=atracker-cloud_services_atracker).
 
-You can use {{site.data.keyword.atracker_short}} to manage auditing events at the account-level. {{site.data.keyword.atracker_short}} can only route events that are generated in [supported regions](/docs/atracker?topic=atracker-regions#regions-atracker). Other regions, where {{site.data.keyword.atracker_short}} is not available, continue to manage events by using [{{site.data.keyword.at_short}}](/docs/activity-tracker?topic=activity-tracker-getting-started).
+You can use {{site.data.keyword.atracker_short}} to manage auditing events at the account-level. {{site.data.keyword.atracker_short}} can only route events that are generated in [supported regions](/docs/atracker?topic=atracker-regions). Other regions, where {{site.data.keyword.atracker_short}} is not available, continue to manage events by using [{{site.data.keyword.at_short}}](/docs/activity-tracker?topic=activity-tracker-getting-started).
 
 
 
@@ -117,7 +117,7 @@ Define the routing rules that indicate how to route events in your account.
 
 - You can define 1 or more routes to configure how auditing events across all regions in your account are collected and stored in 1 or more targets.
 
-- For each route that you define, you can configure 4 rules. These rules are applied top down. When a rule is identified for a region, any follow up rules withing that route definition that apply to that region are not considered.
+- For each route that you define, you can configure 4 rules. These rules are applied from the beginning to the end. When a rule is identified for a region, any follow up rules withing that route definition that apply to that region are not considered.
 
 Decide if you want to drop the collection of auditing events in 1 or more regions. Check any compliance requirements to confirm that you can.
 
@@ -129,4 +129,4 @@ For more information, see [Routes](/docs/atracker?topic=atracker-atracker-resour
 ## Next
 {: #planning-next}
 
-Next, [check samples of different scenarios](/docs/atracker?topic=atracker-atracker-scenarios).
+Next, [check samples of different scenarios](/docs/atracker?topic=atracker-scenarios).

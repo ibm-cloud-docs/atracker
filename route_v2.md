@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2022, 2023
-lastupdated: "2023-07-17"
+  years: 2022, 2024
+lastupdated: "2024-01-18"
 
 keywords:
 
@@ -413,14 +413,14 @@ For more information about the REST API, see [Routes](https://{DomainName}/apido
 
 To make API calls to manage routes, complete the following steps:
 1. Get an IAM access token. For more information, see [Retrieving IAM access tokens](/docs/atracker?topic=atracker-retrieve-iam-token).
-2. Identify the API endpoint in the region where you plan to configure or manage a route. For more information, see [Endpoints](/docs/atracker?topic=atracker-endpoints#endpoints_api).
+2. Identify the API endpoint in the region where you plan to configure or manage a route. For more information, see [Endpoints](/docs/atracker?topic=atracker-endpoints).
 
 
 ## Creating a route using the API
 {: #route-create-api}
 {: api}
 
-You must [create a target](/docs/atracker?topic=atracker-target#target-create) before you create a route.
+You must [create a target](/docs/atracker?topic=atracker-target_v2) before you create a route.
 
 You can use the following cURL command to create a route:
 
@@ -439,7 +439,7 @@ curl -X POST  <ENDPOINT>/api/v2/routes   -H "Authorization:  $ACCESS_TOKEN"   -H
 
 Where
 
-- `<ENDPOINT>` is the API endpoint in the region where you plan to configure or manage a route. For more information, see [Endpoints](/docs/atracker?topic=atracker-endpoints#endpoints_api).
+- `<ENDPOINT>` is the API endpoint in the region where you plan to configure or manage a route. For more information, see [Endpoints](/docs/atracker?topic=atracker-endpoints).
 - `ROUTE_NAME` is the name of the route. The maximum length of the name is 180 characters and cannot include any of the following special characters:`-`, `.`, `_`, `:`.
 
     Do not include any personal identifying information (PII) in any resource names.
@@ -490,7 +490,7 @@ curl -X PUT  <ENDPOINT>/api/v2/routes/<ROUTE_ID>   -H "Authorization:  $ACCESS_T
 {: codeblock}
 
 Where
-- `<ENDPOINT>` is the API endpoint in the region where you plan to configure or manage a route. For more information, see [Endpoints](/docs/atracker?topic=atracker-endpoints#endpoints_api).
+- `<ENDPOINT>` is the API endpoint in the region where you plan to configure or manage a route. For more information, see [Endpoints](/docs/atracker?topic=atracker-endpoints).
 - `<ROUTE_ID>` is the ID of the route to be updated
 - `ROUTE_NAME` is the name of the route. The maximum length of the name is 180 characters and cannot include any of the following special characters:`-`, `.`, `_`, `:`.
 
@@ -530,7 +530,7 @@ curl -X DELETE   <ENDPOINT>/api/v2/routes/<ROUTE_ID>   -H "Authorization:  $ACCE
 {: codeblock}
 
 Where
-- `<ENDPOINT>` is the API endpoint in the region where you plan to configure or manage a route. For more information, see [Endpoints](/docs/atracker?topic=atracker-endpoints#endpoints_api).
+- `<ENDPOINT>` is the API endpoint in the region where you plan to configure or manage a route. For more information, see [Endpoints](/docs/atracker?topic=atracker-endpoints).
 - `<ROUTE_ID>` is the ID of the route to be deleted
 
 For example, you can run the following cURL request to delete the route with the ID `aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa`:
@@ -552,7 +552,7 @@ curl -X GET   <ENDPOINT>/api/v2/routes/<ROUTE_ID>   -H "Authorization:  $ACCESS_
 {: codeblock}
 
 Where
-- `<ENDPOINT>` is the API endpoint in the region where you plan to configure or manage a route. For more information, see [Endpoints](/docs/atracker?topic=atracker-endpoints#endpoints_api).
+- `<ENDPOINT>` is the API endpoint in the region where you plan to configure or manage a route. For more information, see [Endpoints](/docs/atracker?topic=atracker-endpoints).
 - `<ROUTE_ID>` is the ID of the route to be fetched
 
 For example, you can run the following cURL request to get information about a route with the ID `aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa`:
@@ -575,7 +575,7 @@ curl -X GET   <ENDPOINT>/api/v2/routes   -H "Authorization:  $ACCESS_TOKEN"   -H
 {: codeblock}
 
 Where
-- `<ENDPOINT>` is the API endpoint in the region where you plan to configure or manage a route. For more information, see [Endpoints](/docs/atracker?topic=atracker-endpoints#endpoints_api).
+- `<ENDPOINT>` is the API endpoint in the region where you plan to configure or manage a route. For more information, see [Endpoints](/docs/atracker?topic=atracker-endpoints).
 
 For example, you can run the following cURL request to get information about the routes that are defined in US South:
 

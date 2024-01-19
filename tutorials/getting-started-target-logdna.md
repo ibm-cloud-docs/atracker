@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2023
-lastupdated: "2023-12-11"
+  years: 2019, 2024
+lastupdated: "2024-01-18"
 
 keywords:
 
@@ -93,9 +93,9 @@ Users must have the following [{{site.data.keyword.atracker_full}} IAM roles](/d
 {: caption="Table 2. Required IAM roles"}
 
 Choose one of the following options to grant your user permissions:
-- [Using the console to assign access](/docs/account?topic=account-account-services#console-acct-mgmt)
-- [Using the CLI to assign access](/docs/account?topic=account-account-services#using-the-cli-to-assign-access)
-- [Using the API to assign access](/docs/account?topic=account-account-services#api-acct-mgmt). Use the **serviceName** `atracker`.
+- [Using the console to assign access](/docs/account?topic=account-account-services&interface=ui#console-acct-mgmt)
+- [Using the CLI to assign access](/docs/account?topic=account-account-services&interface=cli#cli-acct-mgmt)
+- [Using the API to assign access](/docs/account?topic=account-account-services&interface=api#api-acct-mgmt). Use the **serviceName** `atracker`.
 
 
 ## Provision an {{site.data.keyword.at_short}} hosted event search instance
@@ -129,7 +129,7 @@ Complete the following steps to create a target in the US-South region in your a
 
     The access token is only valid for 1 hour.
 
-2. [Create a target](/docs/atracker?topic=atracker-target#target-create). Run the following cURL command:
+2. [Create a target](/docs/atracker?topic=atracker-target_v2). Run the following cURL command:
 
     ```shell
     curl -X POST  <ENDPOINT>/api/v2/targets   -H "Authorization:  $ACCESS_TOKEN"   -H "content-type: application/json"   -d '{

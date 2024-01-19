@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2024
-lastupdated: "2024-01-09"
+lastupdated: "2024-01-18"
 
 keywords:
 
@@ -119,9 +119,9 @@ The following services generate global events in the {{site.data.keyword.cloud_n
 * {{site.data.keyword.vmwaresolutions_short}}
 * {{site.data.keyword.BluDirectLink}} solution
 
-For more information on services generating global events, see [IBM Cloud services that generate Activity Tracker events](/docs/atracker?topic=atracker-atracker_cloud_services).
+For more information on services generating global events, see [Services that generate events that are managed through {{site.data.keyword.atracker_full_notm}}](/atracker?topic=atracker-cloud_services_atracker) and [Services that generate events that are managed through {{site.data.keyword.at_full_notm}} hosted event search](/docs/atracker?topic=atracker-cloud_services_other).
 
-For {{site.data.keyword.atracker_short}}, you can choose the region where events are collected. [Learn more](/docs/atracker?topic=atracker-getting-started-routing#getting-started-routing-setp5).
+For {{site.data.keyword.atracker_short}}, you can choose the region where events are collected. [Learn more](/docs/atracker?topic=atracker-getting-started).
 
 
 For example, when account administrators invite users to join the account, they can do it from any {{site.data.keyword.cloud_notm}} location. They might invite a user that is located in Frankfurt and grant this user permissions to work with a service that is provisioned in Dallas. Events that report on this type of action are considered global events and are available through the global domain in your account.

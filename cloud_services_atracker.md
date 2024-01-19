@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2024
-lastupdated: "2024-01-19"
+lastupdated: "2024-01-18"
 
 keywords:
 
@@ -32,7 +32,7 @@ The following table lists services that send auditing events:
 
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
-| [{{site.data.keyword.BluVirtServers_full}} (Classic)](/docs/vsi?topic=virtual-servers-about-virtual-servers#about-virtual-servers)| `audit-log` | [Location-based events](/docs/vsi?topic=virtual-servers-at_events#at_events) |
+| [{{site.data.keyword.BluVirtServers_full}} (Classic)](/docs/virtual-servers?topic=virtual-servers-about-virtual-servers)| `audit-log` | [Location-based events](/docs/virtual-servers?topic=virtual-servers-at_events#at_events) |
 | [{{site.data.keyword.baremetal_long}} (Classic)](/docs/bare-metal?topic=bare-metal-about-bm#about-bm) | `audit-log` | [Location-based events](/docs/bare-metal?topic=bare-metal-bm-at-events#bm-at-events) |
 {: caption="Table 1. List of classic services" caption-side="top"}
 
@@ -106,7 +106,7 @@ The following table lists integration services that send auditing events:
 
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
-| [{{site.data.keyword.messagehub_full}}](/docs/EventStreams?topic=EventStreams-getting_started)| `event-streams` | [Location-based events](/docs/EventStreams?topic=EventStreams-at_events) |
+| [{{site.data.keyword.messagehub_full}}](/docs/EventStreams?topic=EventStreams-getting-started)| `event-streams` | [Location-based events](/docs/EventStreams?topic=EventStreams-at_events) |
 {: caption="Table 6. List of integration Cloud services" caption-side="top"}
 
 
@@ -192,7 +192,7 @@ The following table lists storage services that send auditing events:
 ## VMware Solutions
 {: #vmware_solutions}
 
-With {{site.data.keyword.vmwaresolutions_full_notm}}, you can quickly and seamlessly integrate or migrate your on-premises VMware workloads to the {{site.data.keyword.cloud_notm}} by using the scalable, secure, and high-performance {{site.data.keyword.cloud_notm}} infrastructure and the industry-leading VMware hybrid virtualization technology. You can easily deploy your VMware virtual environments and manage the infrastructure resources on {{site.data.keyword.cloud_notm}}. At the same time, you can still use your familiar native VMware product console to manage the VMware workloads. [Learn more](https://www.ibm.com/cloud/vmware){: external}.
+With {{site.data.keyword.vmwaresolutions_full_notm}}, you can quickly and seamlessly integrate or migrate your on-premises VMware workloads to the {{site.data.keyword.cloud_notm}} by using the scalable, secure, and high-performance {{site.data.keyword.cloud_notm}} infrastructure and the industry-leading VMware hybrid virtualization technology. You can easily deploy your VMware virtual environments and manage the infrastructure resources on {{site.data.keyword.cloud_notm}}. At the same time, you can still use your familiar native VMware product console to manage the VMware workloads. [Learn more](https://www.ibm.com/products/vmware){: external}.
 
 The following table lists VMware solution services that send auditing events:
 
@@ -252,16 +252,16 @@ The following table lists Power IaaS infrastructure services that send auditing 
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
 | [Images](/docs/power-iaas?topic=power-iaas-deploy-custom-image) | `power-iaas` | [Location-based events](/docs/power-iaas?topic=power-iaas-at-events#at-actions-images) |
-| [Networks](/docs/power-iaas?topic=power-iaas-connecting-networks) | `power-iaas` | [Location-based events](/docs/power-iaas?topic=power-iaas-at-events#at-actions-networks) |
+| [Networks](/docs/power-iaas?topic=power-iaas-cloud-connections) | `power-iaas` | [Location-based events](/docs/power-iaas?topic=power-iaas-at-events#at-actions-networks) |
 | [PVM-Instance](/docs/power-iaas?topic=power-iaas-creating-power-virtual-server) | `power-iaas` | [Location-based events](/docs/power-iaas?topic=power-iaas-at-events#at-actions-servers) |
 | [Volumes](/docs/power-iaas?topic=power-iaas-modifying-server#modifying-volume-network) | `power-iaas` | [Location-based events](/docs/power-iaas?topic=power-iaas-at-events#at-actions-volumes) |
-| [VPN](/docs/power-iaas?topic=power-iaas-vpn-connectivity) | `power-iaas` | [Location-based events](/docs/power-iaas?topic=power-iaas-at-events#at-vpn-connection) |
+| [VPN](/docs/power-iaas?topic=power-iaas-VPN-connections) | `power-iaas` | [Location-based events](/docs/power-iaas?topic=power-iaas-at-events#at-vpn-connection) |
 | [PlacementGroups](/docs/power-iaas?topic=power-iaas-placement-groups) | `power-iaas` | [Location-based events](/docs/power-iaas?topic=power-iaas-at-events#at-placement-groups) |
 | [CloudConnections](/docs/power-iaas?topic=power-iaas-cloud-connections) | `power-iaas` | [Location-based events](/docs/power-iaas?topic=power-iaas-at-events#at-cloud-connection) |
 | [SAP](/docs/power-iaas?topic=power-iaas-about-virtual-server#support-SAPNetWeaver-or-SAPHANA) | `power-iaas` | [Location-based events](/docs/power-iaas?topic=power-iaas-at-events#at-sap) |
 | [NetworkPorts](/docs/power-iaas?topic=power-iaas-configuring-subnet) | `power-iaas` | [Location-based events](/docs/power-iaas?topic=power-iaas-at-events#at-network-ports) |
 | [Tenant](/docs/power-iaas?topic=power-iaas-managing-resources-and-users) | `power-iaas` | [Location-based events](/docs/power-iaas?topic=power-iaas-at-events#at-tenants) |
 | [SSHKeys](/docs/power-iaas?topic=power-iaas-create-vm) | `pcloud.ssh-key` | [Location-based events](/docs/power-iaas?topic=power-iaas-at-events#at-actions-ssh) |
-| [IKE](/docs/power-iaas?topic=power-iaas-ordering-direct-link-connect) | `power-iaas` |  [Location-based events](docs/power-iaas?topic=power-iaas-at-events#at-ike-policy) |
+| [IKE](/docs/power-iaas?topic=power-iaas-ordering-direct-link-connect) | `power-iaas` |  [Location-based events](/docs/power-iaas?topic=power-iaas-at-events#at-ike-policy) |
 | [IPSec](/docs/power-iaas?topic=power-iaas-ordering-direct-link-connect) | `power-iaas` | [Location-based events](/docs/power-iaas?topic=power-iaas-at-events#at-ipsec-policy) |
 {: caption="Table 16. List of Power Systems Virtual Server infrastructure services" caption-side="top"}

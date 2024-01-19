@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2023
-lastupdated: "2022-08-08"
+  years: 2019, 2024
+lastupdated: "2024-01-18"
 
 keywords:
 
@@ -21,7 +21,7 @@ Learn how to configure your account to manage auditing events by using {{site.da
 
 ![The {{site.data.keyword.atracker_short}} service](images/atracker_ov.svg "The {{site.data.keyword.atracker_short}} service"){: caption="Figure 1. The {{site.data.keyword.atracker_short}} service" caption-side="bottom"}
 
-You can use {{site.data.keyword.atracker_short}}, a platform service, to manage auditing events at the account-level by configuring targets and routes that define where auditing data is routed. {{site.data.keyword.atracker_short}} can only route events that are generated in [supported regions](/docs/atracker?topic=atracker-regions#regions-atracker). Other regions, where {{site.data.keyword.atracker_short}} is not available, continue to manage events by using [{{site.data.keyword.atracker_short}} hosted event search](/docs/atracker?topic=atracker-getting-started).
+You can use {{site.data.keyword.atracker_short}}, a platform service, to manage auditing events at the account-level by configuring targets and routes that define where auditing data is routed. {{site.data.keyword.atracker_short}} can only route events that are generated in [supported regions](/docs/atracker?topic=atracker-regions). Other regions, where {{site.data.keyword.atracker_short}} is not available, continue to manage events by using [{{site.data.keyword.atracker_short}} hosted event search](/docs/atracker?topic=atracker-getting-started).
 
 The following table outlines the locations where you can configure {{site.data.keyword.atracker_short}} to collect and manage auditing events:
 
@@ -58,7 +58,7 @@ To configure {{site.data.keyword.atracker_short}} in your account, you must defi
 
 For each account, you can choose the regions where auditing events are collected.
 
-You can only configure regions where {{site.data.keyword.atracker_short}} is supported. See [Locations](/docs/atracker?topic=atracker-regions&interface=cli#regions-atracker).
+You can only configure regions where {{site.data.keyword.atracker_short}} is supported. See [Locations](/docs/atracker?topic=atracker-regions).
 {: important}
 
 
@@ -69,6 +69,6 @@ You can only configure regions where {{site.data.keyword.atracker_short}} is sup
 
 To configure your account to manage auditing events that are generated in regions where {{site.data.keyword.atracker_short}} is not available or in regions where is supported but some services that you use are not supported, use {{site.data.keyword.at_short}} hosted event search.
 
-You must provision 1 instance of the {{site.data.keyword.at_short}} hosted event search service for each location where you operate and {{site.data.keyword.atracker_short}} is [not supported](/docs/atracker?topic=atracker-regions#regions-atracker).
+You must provision 1 instance of the {{site.data.keyword.at_short}} hosted event search service for each location where you operate and {{site.data.keyword.atracker_short}} is [not supported](/docs/atracker?topic=atracker-regions).
 
 You can provision only 1 instance of the {{site.data.keyword.at_short}} hosted event search service per location. To get the list of locations where the service is available in the {{site.data.keyword.cloud_notm}}, see [Locations](/docs/activity-tracker?topic=activity-tracker-regions).

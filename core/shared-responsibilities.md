@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2023
-lastupdated: "2022-11-11"
+  years: 2019, 2024
+lastupdated: "2024-01-19"
 
 keywords:
 
@@ -19,7 +19,7 @@ subcollection: atracker
 Learn about the management responsibilities and terms and conditions that you have when you use {{site.data.keyword.atracker_short}}. For a high-level view of the service types in {{site.data.keyword.cloud_notm}} and the breakdown of responsibilities between the customer and {{site.data.keyword.IBM_notm}} for each type, see [Shared responsibilities for {{site.data.keyword.cloud_notm}} offerings](/docs/overview?topic=overview-shared-responsibilities).
 {: shortdesc}
 
-Review the following sections for the specific responsibilities for you and for {{site.data.keyword.IBM_notm}} when you use {{site.data.keyword.atracker_short}}. For the overall terms of use, see [{{site.data.keyword.cloud_notm}} Terms and Notices](/docs/overview/terms-of-use?topic=overview-terms).
+Review the following sections for the specific responsibilities for you and for {{site.data.keyword.IBM_notm}} when you use {{site.data.keyword.atracker_short}}. For the overall terms of use, see [{{site.data.keyword.cloud_notm}} Terms of Use](/docs/overview?topic=overview-terms).
 
 
 ## Incident and operations management
@@ -28,9 +28,9 @@ Review the following sections for the specific responsibilities for you and for 
 | Task              | {{site.data.keyword.IBM_notm}} Responsibilities | Your Responsibilities |
 |-------------------|-------------------------------------------------|-----------------------|
 | Incident and operations management | Maintain service instances and infrastructure workloads. | Maintain incident and operations management of your data. |
-| Monitor incidents  | Provide notifications for planned maintenance, security bulletins, or unplanned outages. | * Set preferences to [receive emails about platform notifications](/docs/overview?topic=overview-ui#email-prefsl).   \n * Monitor the [IBM Cloud status page](https://{DomainName}/status?selected=announcement) for general announcements. |
+| Monitor incidents  | Provide notifications for planned maintenance, security bulletins, or unplanned outages. | * Set preferences to [receive emails about platform notifications](/docs/get-support?topic=get-support-viewing-cloud-status).   \n * Monitor the [IBM Cloud status page](https://{DomainName}/status?selected=announcement) for general announcements. |
 | Maintain {{site.data.keyword.cloud_notm}} high availability SLA for {{site.data.keyword.atracker_short}}   | * Provide {{site.data.keyword.atracker_short}} functionality across availability zones in a Multi-Zone Region (MZR).  \n * Provide replication, fail-over features, and infrastructure maintenance and updates. | * Keep your {{site.data.keyword.atracker_short}}  configuration in a version control system so that you can reconfigure a region if needed.   \n * Comply with [Operational responsibilities when using {{site.data.keyword.cos_full_notm}}](/docs/cloud-object-storage?topic=cloud-object-storage-responsibilities#responsibilities-operational).  \n * Comply with [Operational responsibilities when using {{site.data.keyword.at_short}} hosted event search](/docs/activity-tracker?topic=activity-tracker-shared-responsibilities).  \n * Comply with [Operational responsibilities when using {{site.data.keyword.messagehub_full}}](/docs/EventStreams?topic=EventStreams-event_streams_responsibilities). |
-| Monitor events for {{site.data.keyword.atracker_short}}  | [Participating Cloud services](/docs/activity-tracker?topic=activity-tracker-cloud_service) publish relevant event data to their subscribing clients. Clients have the ability to receive this data once their account is configured. | [Configure your account](/docs/atracker?topic=atracker-getting-started) where Cloud service subscriptions publish events to receive the published events. Notice that {{site.data.keyword.atracker_short}}  can only route events that are generated in [supported regions](/docs/atracker?topic=atracker-regions#regions-atracker). Other regions, where {{site.data.keyword.atracker_short}}  is not available, continue to manage events by using {{site.data.keyword.at_short}} hosted event search. |
+| Monitor events for {{site.data.keyword.atracker_short}}  | [Participating Cloud services](/docs/atracker?topic=atracker-cloud_services_atracker) publish relevant event data to their subscribing clients. Clients have the ability to receive this data once their account is configured. | [Configure your account](/docs/atracker?topic=atracker-getting-started) where Cloud service subscriptions publish events to receive the published events. Notice that {{site.data.keyword.atracker_short}}  can only route events that are generated in [supported regions](/docs/atracker?topic=atracker-regions). Other regions, where {{site.data.keyword.atracker_short}}  is not available, continue to manage events by using {{site.data.keyword.at_short}} hosted event search. |
 | Monitor {{site.data.keyword.atracker_short}} targets  |  |  Check the health and status of the targets through {{site.data.keyword.mon_short}} by configuring alerts to notify of problems writing events to a target, and generate notifications, for example, to the {{site.data.keyword.en_full_notm}} service. |
 {: caption="Table 1. Responsibilities for incident and operations" caption-side="top"}
 
@@ -74,7 +74,7 @@ Review the following sections for the specific responsibilities for you and for 
 
 | Task                                                            | {{site.data.keyword.IBM_notm}} Responsibilities | Your Responsibilities |
 |-----------------------------------------------------------------|-------------------------------------------------|-----------------------|
-| Restore functionality for {{site.data.keyword.atracker_short}}  | Automatically recover and restart {{site.data.keyword.atracker_short}} components after any disaster event.    \n In case of a regional disaster, {{site.data.keyword.cloud_notm}} service teams, who are responsible for the operations of services that generate auditing events, will point their service to {{site.data.keyword.atracker_short}} endpoints in their alternate region within the same regulatory boundaries. | [Complete the disaster recovery (DR) steps for {{site.data.keyword.atracker_short}}](/docs/atracker?topic=atracker-ha_dr#dr-atracker). |
+| Restore functionality for {{site.data.keyword.atracker_short}}  | Automatically recover and restart {{site.data.keyword.atracker_short}} components after any disaster event.    \n In case of a regional disaster, {{site.data.keyword.cloud_notm}} service teams, who are responsible for the operations of services that generate auditing events, will point their service to {{site.data.keyword.atracker_short}} endpoints in their alternate region within the same regulatory boundaries. | [Complete the disaster recovery (DR) steps for {{site.data.keyword.atracker_short}}](/docs/atracker?topic=atracker-ha_dr). |
 | Backup {{site.data.keyword.atracker_short}} components   | Daily backup of the {{site.data.keyword.atracker_short}} infrastructure and components. | `N/A` |
 {: caption="Table 5. Responsibilities for disaster recovery" caption-side="top"}
 

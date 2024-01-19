@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2023
-lastupdated: "2022-05-13"
+  years: 2019, 2024
+lastupdated: "2024-01-19"
 
 keywords:
 
@@ -14,7 +14,7 @@ content-type: troubleshoot
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Are you getting a "CosEndpoint.APIKey is not valid" error when creating a COS target?
+# Are you getting a `CosEndpoint.APIKey is not valid` error when creating a COS target?
 {: #troubleshoot-09}
 {: troubleshoot}
 {: support}
@@ -30,5 +30,5 @@ Your request fails with an error message and a code of `invalid_value`.
 You are trying to configure a COS target and have not specified `--api-key` or `--service-to-service-enabled TRUE` on the request.
 {: tsCauses}
 
-Retry the request after adding `--api-key` with your [COS bucket API key.](/docs/atracker?topic=atracker-target_v2_cos&interface=cli#cos_apikey) or `--service-to-service-enabled TRUE` as appropriate for your environment. Specifying `--service-to-service-enabled TRUE` requires that you have [service-to-service authorization](/docs/atracker?topic=atracker-target_v2_cos&interface=cli#cos_s2s) configured for your COS bucket.
+Retry the request after adding `--api-key` with your [COS bucket API key.](/docs/atracker?topic=atracker-cos#cos_bucket_access) or `--service-to-service-enabled TRUE` as appropriate for your environment. Specifying `--service-to-service-enabled TRUE` requires that you have [service-to-service authorization](/docs/atracker?topic=atracker-target_v2_cos&interface=ui#target_v2_cos_s2s_ui) configured for your COS bucket.
 {: tsResolve}

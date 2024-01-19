@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2023
-lastupdated: "2023-12-01"
+  years: 2019, 2024
+lastupdated: "2024-01-18"
 
 keywords:
 
@@ -65,7 +65,7 @@ Where
     A region contains [multiple availability zones](https://www.ibm.com/cloud/data-centers/) to meet local access, low latency, and security requirements for the region.
 
 * `N/A` means feature that is not applicable to that geography.
-* `MZR` means multi-zone region. [Learn more](/docs/overview?topic=overview-locations#mzr-table).
+* `MZR` means multi-zone region. [Learn more](/docs/overview?topic=overview-locations#table-mzr).
 
 
 ## Data availability
@@ -122,7 +122,7 @@ In the event of a regional disaster, you must complete the following steps to es
 
 1. Decide which location is going to be your recovery region. Choose 1 of the following options:
 
-    - [Check the suggested DR recovery region](/docs/atracker?topic=atracker-ha_dr#ha_dr_recovery_region) and use that region as your recovery region.
+    - [Check the suggested DR recovery region](/docs/atracker?topic=atracker-ha_dr#bc-dr-locations) and use that region as your recovery region.
 
     - If you have configured the {{site.data.keyword.atracker_short}} account settings with a primary location and a secondary backup location, check if either location is still operational and use 1 of those locations as your recovery region.
 

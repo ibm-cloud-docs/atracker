@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2023
-lastupdated: "2021-08-09"
+  years: 2019, 2024
+lastupdated: "2024-01-18"
 
 keywords:
 
@@ -41,7 +41,7 @@ You can use the {{site.data.keyword.atracker_full_notm}} CLI, the {{site.data.ke
 You can define account settings to define global configuration parameters that apply when  you configure the account.
 
 In your account, auditing events are automatically collected from {{site.data.keyword.cloud_notm}} services that run in the account, with the exception of some services that require additional configuration to enable auditing events.
-- For more information about services that generate events, see [Cloud services](/docs/atracker?topic=atracker-cloud_services).
+- For more information about services that generate events, see [Cloud services](/docs/atracker?topic=atracker-cloud_services_atracker).
 - For more information about services that require additional configuration to generate events, see [Enabling Activity Tracker events](/docs/atracker?topic=atracker-events-opt-in).
 
 After you configure targets and routes in the account, auditing events that are collected are uploaded to the destination target of your choice. You are responsible for managing the auditing data in the target resources.

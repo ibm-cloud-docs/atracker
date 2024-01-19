@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021, 2023
-lastupdated: "2022-06-14"
+  years: 2021, 2024
+lastupdated: "2024-01-18"
 
 keywords:
 
@@ -19,7 +19,7 @@ As a security officer, auditor, or manager, you can use the {{site.data.keyword.
 
 The {{site.data.keyword.at_full_notm}} service records user-initiated activities that change the state of these resources in {{site.data.keyword.cloud_notm}}.
 
-To get started monitoring your user's actions, see [IBM Cloud Activity Tracker](https://cloud.ibm.com/docs/services/activity-tracker?topic=activity-tracker-getting-started#getting-started). An initiator can be a user, a service, or an application.
+To get started monitoring your user's actions, see [IBM Cloud Activity Tracker](/docs/activity-tracker?topic=activity-tracker-getting-started). An initiator can be a user, a service, or an application.
 
 
 ## Network zone events

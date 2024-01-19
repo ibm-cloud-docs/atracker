@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2022, 2023
-lastupdated: "2022-05-24"
+  years: 2022, 2024
+lastupdated: "2024-01-18"
 
 keywords:
 
@@ -133,7 +133,7 @@ The following table lists the actions that you can run to manage targets:
 {: caption="Table 5. Target actions by using the {{site.data.keyword.atracker_full_notm}}Event Routing CLI" caption-side="top"}
 
 
-For more information, see [{{site.data.keyword.atracker_full_notm}} V2 CLI](/docs/activity-tracker-cli-plugin?topic=activity-tracker-cli-plugin-atracker-v2-cli).
+For more information, see [{{site.data.keyword.atracker_full_notm}} V2 CLI](/docs/atracker-cli-plugin?topic=atracker-cli-plugin-atracker-v2-cli).
 
 
 
@@ -143,7 +143,7 @@ For more information, see [{{site.data.keyword.atracker_full_notm}} V2 CLI](/doc
 
 To make API calls to manage targets, complete the following steps:
 1. Get an IAM access token. For more information, see [Retrieving IAM access tokens](/docs/atracker?topic=atracker-retrieve-iam-token).
-2. Identify the API endpoint in the region where you plan to configure or manage a target. For more information, see [Endpoints](/docs/atracker?topic=atracker-endpoints#endpoints_api).
+2. Identify the API endpoint in the region where you plan to configure or manage a target. For more information, see [Endpoints](/docs/atracker?topic=atracker-endpoints).
 
 
 The following table lists the actions that you can run to manage targets:

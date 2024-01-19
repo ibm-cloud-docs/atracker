@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2023
-lastupdated: "2023-07-17"
+  years: 2019, 2024
+lastupdated: "2024-01-18"
 
 keywords:
 
@@ -26,7 +26,7 @@ Before you use the CLI to save your {{site.data.keyword.atracker_full_notm}} res
 
 1. [Install the {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cli-install-ibmcloud-cli).
 
-2. [Install the {{site.data.keyword.atracker_full_notm}} CLI](/docs/atracker?topic=atracker-activity-tracking-cli#activity-tracking-cli-prereq).
+2. [Install the {{site.data.keyword.atracker_full_notm}} CLI](/docs/atracker?topic=atracker-atracker-cli-config).
 
 3. Make sure you have configured your [settings](/docs/atracker?topic=atracker-settings), [routes](/docs/atracker?topic=atracker-route_v2), and [targets](/docs/atracker?topic=atracker-atracker-resources&interface=cli#atracker-resources-targets).
 

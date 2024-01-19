@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2023
-lastupdated: "2021-08-09"
+  years: 2019, 2024
+lastupdated: "2024-01-18"
 
 keywords:
 
@@ -21,10 +21,10 @@ subcollection: atracker
 As a security officer, auditor, or manager, you can use the {{site.data.keyword.at_full_notm}} service to track how users and applications interact with the {{site.data.keyword.dashdblong}} service in {{site.data.keyword.cloud_notm}}.
 {: shortdesc}
 
-You can provision an instance of {{site.data.keyword.dashdblong}} through the [{{site.data.keyword.cloud_notm}} catalog](https://cloud.ibm.com/catalog/db2-warehouse){: external}. [Learn more](/docs/account?topic=account-iamoverview).
+You can provision an instance of {{site.data.keyword.dashdblong}} through the [{{site.data.keyword.cloud_notm}} catalog](https://cloud.ibm.com/db2-wh){: external}. [Learn more](/docs/account?topic=account-iamoverview).
 
 
-The {{site.data.keyword.at_full_notm}} service records user-initiated activities that change the state of a service in {{site.data.keyword.cloud_notm}}. To get started monitoring your user's actions, see [{{site.data.keyword.at_full_notm}}](/docs/services/activity-tracker?topic=activity-tracker-getting-started#getting-started). An initiator can be a user, a service, or an application.
+The {{site.data.keyword.at_full_notm}} service records user-initiated activities that change the state of a service in {{site.data.keyword.cloud_notm}}. To get started monitoring your user's actions, see [{{site.data.keyword.at_full_notm}}](/docs/activity-tracker?topic=activity-tracker-getting-started). An initiator can be a user, a service, or an application.
 
 
 ## Platform events
@@ -55,4 +55,4 @@ The following table lists the actions that generate an event for managing servic
 
 Events are available in the **Frankfurt (eu-de)** region.
 
-To view these events, you must [provision an instance](/docs/services/activity-tracker?topic=activity-tracker-provision#provision) of the {{site.data.keyword.at_full_notm}} service in the **Frankfurt (eu-de)** region. Then, you must [open the {{site.data.keyword.at_full_notm}} UI](/docs/atracker?topic=atracker-launch#launch_cloud_ui).
+To view these events, you must [provision an instance](/docs/activity-tracker?topic=activity-tracker-provision#provision) of the {{site.data.keyword.at_full_notm}} service in the **Frankfurt (eu-de)** region. Then, you must [open the {{site.data.keyword.at_full_notm}} UI](/docs/activity-tracker?topic=activity-tracker-launch).

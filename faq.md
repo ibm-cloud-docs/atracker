@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2023
-lastupdated: "2022-07-14"
+  years: 2019, 2024
+lastupdated: "2024-01-19"
 
 keywords:
 
@@ -22,7 +22,7 @@ Frequently asked questions about {{site.data.keyword.atracker_short}}.
 {: #faq_0}
 {: faq}
 
-{{site.data.keyword.atracker_short}} offers 2 different ways to manage auditing events in an {{site.data.keyword.cloud_notm}} account. You can use {{site.data.keyword.at_short}}, an IAM enabled service, to manage auditing events through instances that you provision in each {{site.data.keyword.cloud_notm}} region where you operate. Alternatively, you can use {{site.data.keyword.atracker_short}}, a platform service, to manage auditing events at the account-level by configuring targets and routes that define where auditing data is routed. {{site.data.keyword.atracker_short}} can only route events that are generated in [supported regions](/docs/atracker?topic=atracker-regions#regions-atracker). Other regions, where {{site.data.keyword.atracker_short}} is not available, continue to manage events by using {{site.data.keyword.atracker_short}} hosted event search.
+{{site.data.keyword.atracker_short}} offers 2 different ways to manage auditing events in an {{site.data.keyword.cloud_notm}} account. You can use {{site.data.keyword.at_short}}, an IAM enabled service, to manage auditing events through instances that you provision in each {{site.data.keyword.cloud_notm}} region where you operate. Alternatively, you can use {{site.data.keyword.atracker_short}}, a platform service, to manage auditing events at the account-level by configuring targets and routes that define where auditing data is routed. {{site.data.keyword.atracker_short}} can only route events that are generated in [supported regions](/docs/atracker?topic=atracker-regions). Other regions, where {{site.data.keyword.atracker_short}} is not available, continue to manage events by using {{site.data.keyword.atracker_short}} hosted event search.
 
 {{site.data.keyword.at_short}} routes location-based auditing events to an {{site.data.keyword.at_short}} instance in the region where they are generated and routes global auditing events to the {{site.data.keyword.at_short}} instance that is provisioned in Frankfurt.
 
@@ -67,7 +67,7 @@ Use {{site.data.keyword.atracker_short}} to manage auditing events in your accou
 ### PCI, SOC2, Privacy Shield and HIPAA compliance
 {: #faq_1_nonfinserv}
 
-{{site.data.keyword.at_short}} offers ready to run event search offerings that you can use to expedite your time to greater insights. You can choose to retain your events for 7, 14, or 30 days. In addition, a 30 day HIPAA compliant offering is also available. For more information about these offerings, see [Service plans](/docs/atracker?topic=atracker-service_plan).
+{{site.data.keyword.at_short}} offers ready to run event search offerings that you can use to expedite your time to greater insights. You can choose to retain your events for 7, 14, or 30 days. In addition, a 30 day HIPAA compliant offering is also available. For more information about these offerings, see [Service plans](/docs/activity-tracker?topic=activity-tracker-service_plan).
 
 Use {{site.data.keyword.at_short}} hosted event search offerings to manage events using a UI or to manage auditing events that are not routed by {{site.data.keyword.atracker_short}}.
 {: tip}
@@ -78,7 +78,7 @@ Use {{site.data.keyword.at_short}} hosted event search offerings to manage event
 
 To collect and monitor activity in your account, you must configure the {{site.data.keyword.atracker_short}} service in your account by using any of the following methods:
 
-- You can [configure {{site.data.keyword.atracker_short}}](/docs/atracker?topic=atracker-getting-started-routing-2) to manage auditing events in your account while maintaining Financial Services Validated status.
+- You can [configure {{site.data.keyword.atracker_short}}](/docs/atracker?topic=atracker-getting-started) to manage auditing events in your account while maintaining Financial Services Validated status.
 
     The target resource must be an {{site.data.keyword.cos_full}} bucket that is available in the same account where the auditing events are generated.
 
@@ -87,7 +87,7 @@ To collect and monitor activity in your account, you must configure the {{site.d
     You must follow and comply with the Financial Services Validated requirements for buckets to maintain Financial Services Validated status.
     {: important}
 
-- You can [configure the {{site.data.keyword.atracker_short}} hosted event search offering](/docs/atracker?topic=atracker-getting-started-search) to manage auditing events through the UI, or if you need PCI, SOC2, Privacy Shield or HIPAA compliance.
+- You can [configure the {{site.data.keyword.atracker_short}} hosted event search offering](/docs/activity-tracker?topic=activity-tracker-getting-started) to manage auditing events through the UI, or if you need PCI, SOC2, Privacy Shield or HIPAA compliance.
 
 - You can configure {{site.data.keyword.atracker_short}} to define the {{site.data.keyword.atracker_short}} hosted event search instances where auditing events are routed.
 
