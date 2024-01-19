@@ -159,7 +159,7 @@ The following table lists the actions that you can run to manage targets:
 {: caption="Table 6. Target actions by using the {{site.data.keyword.atracker_full_notm}} REST API" caption-side="top"}
 
 
-For more information, see [{{site.data.keyword.atracker_full_notm}} V2 API](https://{DomainName}/apidocs/atracker).
+For more information, see [{{site.data.keyword.atracker_full_notm}} V2 API](/apidocs/atracker).
 
 
 ## HTTP response codes

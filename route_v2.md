@@ -404,7 +404,7 @@ You can use private and public endpoints to manage routes. For more information 
 
 * You can disable the public endpoints by updating the account settings. For more information, see [Configuring target and region settings](/docs/atracker?topic=atracker-settings).
 
-For more information about the REST API, see [Routes](https://{DomainName}/apidocs/atracker/atracker-v2#create-route){: external}.
+For more information about the REST API, see [Routes](/apidocs/atracker/atracker-v2#create-route).
 {: note}
 
 ## API prerequsites
