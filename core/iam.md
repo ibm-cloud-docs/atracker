@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2023
-lastupdated: "2023-07-17"
+  years: 2019, 2024
+lastupdated: "2024-01-18"
 
 keywords:
 
@@ -88,7 +88,7 @@ For {{site.data.keyword.atracker_short}}, the IAM actions and Activity Tracker a
 ## Assigning access to {{site.data.keyword.atracker_full_notm}}
 {: #iam-assign-access-how}
 
-For details on assigning access, see [Assigning access to {{site.data.keyword.atracker_full_notm}}](docs/atracker?topic=atracker-iam-assign-access).
+For details on assigning access, see [Assigning access to {{site.data.keyword.atracker_full_notm}}](/docs/atracker?topic=atracker-iam).
 
 ## How do I know which access policies are set for me?
 {: #iam_accesspolicy}

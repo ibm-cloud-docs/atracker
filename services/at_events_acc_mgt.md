@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2023
-lastupdated: "2021-08-09"
+  years: 2019, 2024
+lastupdated: "2024-01-18"
 
 keywords:
 
@@ -18,7 +18,7 @@ subcollection: atracker
 As a security officer, auditor, or manager, you can use the {{site.data.keyword.at_full_notm}} service to track how users and applications interact with an {{site.data.keyword.cloud}} account.
 {: shortdesc}
 
-The {{site.data.keyword.at_full_notm}} service records user-initiated activities that change the state of a service in {{site.data.keyword.cloud_notm}}. To get started, see [{{site.data.keyword.at_full_notm}}](/docs/services/activity-tracker?topic=activity-tracker-getting-started#getting-started).
+The {{site.data.keyword.at_full_notm}} service records user-initiated activities that change the state of a service in {{site.data.keyword.cloud_notm}}. To get started, see [{{site.data.keyword.at_full_notm}}](/docs/activity-tracker?topic=activity-tracker-getting-started).
 
 
 
@@ -231,13 +231,24 @@ The following table lists the actions that generate an event:
 | `user-management.user-setting.update` | An event is generated when you update the user's login configuration settings: User one-time passcode authentication ,Require MFA security questions at login, User-managed login or Setting up security questions |
 {: caption="Table 15. Actions that generate events" caption-side="top"}
 
+## Events for carbon calculator
+{: #at_events_carbon_calculator}
+
+The following table lists the actions that generate an event:
+
+| Action                               | Description |
+|--------------------------------------|-------------|
+| `carbon-calculator.carbon-emissions.list`        | Request to get the carbon emissions for a given account. |
+| `carbon-calculator.services.list`        | Request the list the services for which carbon emissions can be fetch. |
+| `carbon-calculator.locations.list`        | Request the list of location from where carbon emissions can be fetch. |
+{: caption="Table 16. Actions that generate events" caption-side="top"}
 
 ## Where to look for the events
 {: #at_events_acc_mgt_ui}
 
 Events are available in the **Frankfurt (eu-de)** region.
 
-To view these events, you must [provision an instance](/docs/services/activity-tracker?topic=activity-tracker-provision#provision) of the {{site.data.keyword.at_full_notm}} service in the **Frankfurt (eu-de)** region. Then, you must [open the {{site.data.keyword.at_full_notm}} UI](/docs/atracker?topic=atracker-launch#launch_cloud_ui).
+To view these events, you must [provision an instance](/docs/activity-tracker?topic=activity-tracker-provision#provision) of the {{site.data.keyword.at_full_notm}} service in the **Frankfurt (eu-de)** region. Then, you must [open the {{site.data.keyword.at_full_notm}} UI](/docs/activity-tracker?topic=activity-tracker-launch).
 
 
 ## Analyzing events
@@ -371,7 +382,7 @@ The following table lists *requestData* fields that you can find in events that 
 | `iam_id`                   | String          | Defines the IBM ID of the user whose settings are being modified. |
 | `security_questions_setup` | Boolean         | Defines when a user requires security questions to log in to the account.   \n This field is set to `true` to indicate that questions are required.  |
 | `self_manage`              | Boolean         | Defines whether a user can configure his log in settings on how to log in to the account.    \n This field is set to `true` to allow a user to set password expiration, turn on security questions for login, and define allowed IP addresses for log in to {{site.data.keyword.cloud_notm}} and from classic infrastructure API calls.  |
-{: caption="Table 15. User management requestData fields" caption-side="top"}
+{: caption="Table 17. User management requestData fields" caption-side="top"}
 
 
 
@@ -391,7 +402,7 @@ The following table lists the fields that are available through the `requestData
 | Field | Type | Description | Status |
 |-------|------|-------------|--------|
 | `month` | String | Indicates the month that the user selects to view usage data. | Included always in the event |
-{: caption="Table 16. Account usage summary requestData fields" caption-side="top"}
+{: caption="Table 18. Account usage summary requestData fields" caption-side="top"}
 
 
 The following table lists the fields that are available through the `requestData` field in the events with actions `billing.account-usage-report.read`:
@@ -404,7 +415,7 @@ The following table lists the fields that are available through the `requestData
 | `resource_group`    | String    | Indicates the resource group. | Optional   \n Included if the user filters data by resource group. |
 | `organization_id`   | String    | Indicates the organization ID. | Optional |
 | `daily`             | Boolean   | Indicates the frequency of the report. | Optional |
-{: caption="Table 17. Account usage requestData fields" caption-side="top"}
+{: caption="Table 19. Account usage requestData fields" caption-side="top"}
 
 
 The following table lists the fields that are available through the `requestData` field in the events with actions `billing.enterprise-usage-report.read` and `billing.enterprise-usage-report.download`:
@@ -416,7 +427,7 @@ The following table lists the fields that are available through the `requestData
 | `enterprise_id`     | String    | Indicates the ID of the enterprise. |  Included always in the event |
 | `account_id`        | String    | Indicates the sub-account ID that is requested in the report. | Optional |
 | `account_group_id`  | String    | Indicates the account group when a user selects one. | Optional   \n Included if the user filters data by selecting 1 account group. |
-{: caption="Table 18. Enterprise usage requestData fields" caption-side="top"}
+{: caption="Table 20. Enterprise usage requestData fields" caption-side="top"}
 
 
 The following table lists the fields that are available through the `requestData` field in the events with actions `billing.enterprise-instances-usage-report.download`:
@@ -427,7 +438,7 @@ The following table lists the fields that are available through the `requestData
 | `enterprise_id`     | String    | Indicates the ID of the enterprise. |  Included always in the event |
 | `account_id`        | String    | Indicates the the sub-account IDs that is requested in the report. | Optional |
 | `account_group_id`  | String    | Indicates the account group when a user selects one. | Optional   \n Included if the user filters data by selecting 1 account group. |
-{: caption="Table 19. Enterprise instances usage requestData fields" caption-side="top"}
+{: caption="Table 21. Enterprise instances usage requestData fields" caption-side="top"}
 
 
 
@@ -487,4 +498,4 @@ The following table lists *requestData* fields that you can find in events that 
 |-------|------|-------------|
 | `team_directory_enabled`   | Boolean         | Defines the status of the *User list visibility restriction* IAM account setting.   \n When it is set to `true`, users in your account can view other users from the Users page. |
 | `mfa`                      | String          | Defines the MFA method that is required for users to log in to the account.   \n Valid values are *TOTP*, and *TOTP4ALL*   \n This field is set to `TOTP` when the account requires MFA for non-federated users only. Users are required an ID, password, and a time-based one-time passcode to log in.   \n This field is set to `TOTP4ALL` when the account requires MFA for all users.  \n All users by requiring an ID, password, and a time-based one-time passcode.   \n When this field is empty, MFA is not enabled in the account, and all users log in by using a standard ID and password. |
-{: caption="Table 20. Account IAM settings requestData fields" caption-side="top"}
+{: caption="Table 22. Account IAM settings requestData fields" caption-side="top"}

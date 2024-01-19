@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2022, 2023
-lastupdated: "2022-05-24"
+  years: 2022, 2024
+lastupdated: "2024-01-19"
 
 keywords:
 
@@ -67,7 +67,7 @@ When writing to a COS target you can use the following options to authenticate t
 * By providing an API key when configuring the target.
 
 
-You can configure service-to-service authorization to your COS bucket so you do not need to pass an [API key](#cos_apikey) when writing your encrypted data to the COS bucket.
+You can configure service-to-service authorization to your COS bucket so you do not need to pass an [API key](#target_v2_cos_apikey) when writing your encrypted data to the COS bucket.
 {: note}
 
 
@@ -116,7 +116,7 @@ Do the following to configure a service-to-service authorization using the {{sit
 
 9. Click **Authorize**.  Your new service-to-service authorization will be listed in the **Manage authorizations** view.
 
-You will only be able to authorize to the {{site.data.keyword.cos_full_notm}} instance using the UI. If you want to limit authorization to a specific {{site.data.keyword.cos_full_notm}} bucket, you need to configure authorization using the [API](#cos_s2s_api).
+You will only be able to authorize to the {{site.data.keyword.cos_full_notm}} instance using the UI. If you want to limit authorization to a specific {{site.data.keyword.cos_full_notm}} bucket, you need to configure authorization using the [API](/docs/atracker?topic=atracker-target_v2_cos&interface=api#target_v2_cos_s2s_api).
 {: important}
 
 
@@ -263,7 +263,7 @@ Use this command to create a {{site.data.keyword.cos_full_notm}} target to be us
 :   Your [API key](/docs/account?topic=account-manapikey) value or a reference to the API Key file used to gain access.  For example, `ibmcloud login --apikey $KEYFILE`
 
 `--service-to-service-enabled`
-:   Indicates if [service-to-service authorization](#cos_s2s) has been enabled for the bucket.  Specify `TRUE` if service-to-service authorization is enabled and `FALSE` if service-to-service authorization is not enable.  By default, `service_to_service_enabled` is `FALSE`.
+:   Indicates if [service-to-service authorization](/docs/atracker?topic=atracker-target_v2_cos&interface=ui#target_v2_cos_s2s_ui) has been enabled for the bucket.  Specify `TRUE` if service-to-service authorization is enabled and `FALSE` if service-to-service authorization is not enable.  By default, `service_to_service_enabled` is `FALSE`.
 
 `--output FORMAT`
 :   Currently supported format is JSON. If specified, output will be returned in JSON format.  If `JSON` is not specified, output will be returned in a tabular format.
@@ -362,7 +362,7 @@ ibmcloud atracker target update --target TARGET [--name TARGET_NAME] [ [--file C
 :   Your [API key](/docs/account?topic=account-manapikey) value or a reference to the API Key file used to gain access.  For example, `ibmcloud login --apikey $KEYFILE`
 
 `--service-to-service-enabled (TRUE | FALSE)`
-:   Indicates if [service-to-service authorization](#cos_s2s) has been enabled for the bucket.  Specify `TRUE` if service-to-service authorization is enabled and `FALSE` if service-to-service authorization is not enable.  By default, service-to-service authorization is `FALSE`.
+:   Indicates if [service-to-service authorization](/docs/atracker?topic=atracker-target_v2_cos&interface=cli#target_v2_cos_s2s_cli) has been enabled for the bucket.  Specify `TRUE` if service-to-service authorization is enabled and `FALSE` if service-to-service authorization is not enable.  By default, service-to-service authorization is `FALSE`.
 
 `--output FORMAT`
 :   Currently supported format is JSON. If specified, output will be returned in JSON format.  If `JSON` is not specified, output will be returned in a tabular format.
@@ -605,7 +605,7 @@ For more information about the REST API, see [Targets](https://{DomainName}/apid
 
 To make API calls to manage targets, complete the following steps:
 1. Get an IAM access token. For more information, see [Retrieving IAM access tokens](/docs/atracker?topic=atracker-retrieve-iam-token).
-2. Identify the API endpoint in the region where you plan to configure or manage a target. For more information, see [Endpoints](/docs/atracker?topic=atracker-endpoints#endpoints_api).
+2. Identify the API endpoint in the region where you plan to configure or manage a target. For more information, see [Endpoints](/docs/atracker?topic=atracker-endpoints).
 
 
 
@@ -632,7 +632,7 @@ curl -X POST  <ENDPOINT>/api/v2/targets   -H "Authorization:  $ACCESS_TOKEN"   -
 
 Where
 
-- `<ENDPOINT>` is the API endpoint in the region where you plan to configure or manage a target. For more information, see [Endpoints](/docs/atracker?topic=atracker-endpoints#endpoints_api).
+- `<ENDPOINT>` is the API endpoint in the region where you plan to configure or manage a target. For more information, see [Endpoints](/docs/atracker?topic=atracker-endpoints).
 - `TARGET_NAME` is the name of the target. The maximum length of the name is 256 characters.
 
     Do not include any personal identifying information (PII) in any resource names.
@@ -649,7 +649,7 @@ Where
 
     `API_KEY` contains the API key that has permissions to upload objects into the bucket.  This value is ignore if `service_to_service_enabled` is `true`.
 
-    `SERVICE_TO_SERVICE` indicates if [service-to-service authorization](#cos_s2s) has been enabled for the bucket.  Specify `true` if service-to-service authorization is enabled and `false` if service-to-service authorization is not enable.  By default, service-to-service authorization is `false`.
+    `SERVICE_TO_SERVICE` indicates if [service-to-service authorization](/docs/atracker?topic=atracker-target_v2_cos&interface=cli#target_v2_cos_s2s_cli) has been enabled for the bucket.  Specify `true` if service-to-service authorization is enabled and `false` if service-to-service authorization is not enable.  By default, service-to-service authorization is `false`.
 
 
 For example, you can use the following cURL request to create a target in Dallas:
@@ -700,7 +700,7 @@ curl -X PUT  <ENDPOINT>/api/v2/targets/TARGET_ID  -H "Authorization:  $ACCESS_TO
 
 Where
 
-- `<ENDPOINT>` is the API endpoint in the region where you plan to configure or manage a target. For more information, see [Endpoints](/docs/atracker?topic=atracker-endpoints#endpoints_api).
+- `<ENDPOINT>` is the API endpoint in the region where you plan to configure or manage a target. For more information, see [Endpoints](/docs/atracker?topic=atracker-endpoints).
 - `TARGET_ID` is the ID of the target.
 - `TARGET_NAME` is the name of the target. The maximum length of the name is 256 characters.
 
@@ -718,7 +718,7 @@ Where
 
     `API_KEY` contains the API key that has permissions to upload objects into the bucket.  This value is ignore if `service_to_service_enabled` is `true`.
 
-    `SERVICE_TO_SERVICE` indicates if [service-to-service authorization](#cos_s2s) has been enabled for the bucket.  Specify `true` if service-to-service authorization is enabled and `false` if service-to-service authorization is not enable.  By default, service-to-service authorization is `false`.
+    `SERVICE_TO_SERVICE` indicates if [service-to-service authorization](/docs/atracker?topic=atracker-target_v2_cos&interface=cli#target_v2_cos_s2s_cli) has been enabled for the bucket.  Specify `true` if service-to-service authorization is enabled and `false` if service-to-service authorization is not enable.  By default, service-to-service authorization is `false`.
 
 
 For example, you can use the following cURL request to create a target in Dallas:
@@ -752,7 +752,7 @@ curl -X DELETE <ENDPOINT>/api/v2/targets/<TARGET_ID> -H "Authorization:  $ACCESS
 
 Where
 
-- `<ENDPOINT>` is the API endpoint in the region where you plan to configure or manage a target. For more information, see [Endpoints](/docs/atracker?topic=atracker-endpoints#endpoints_api).
+- `<ENDPOINT>` is the API endpoint in the region where you plan to configure or manage a target. For more information, see [Endpoints](/docs/atracker?topic=atracker-endpoints).
 - `<TARGET_ID>` is the ID of the target.
 
 
@@ -784,7 +784,7 @@ curl -X POST <ENDPOINT>/api/v2/targets/<TARGET_ID>/validate -H "Authorization: $
 
 Where
 
-- `<ENDPOINT>` is the API endpoint in the region where you plan to configure or manage a target. For more information, see [Endpoints](/docs/atracker?topic=atracker-endpoints#endpoints_api).
+- `<ENDPOINT>` is the API endpoint in the region where you plan to configure or manage a target. For more information, see [Endpoints](/docs/atracker?topic=atracker-endpoints).
 - `<TARGET_ID>` is the ID of the target.
 
 For example, you can use the following cURL request to validate a target in US-South with the ID `00000000-0000-0000-0000-000000000000`:
@@ -817,7 +817,7 @@ curl -X GET <ENDPOINT>/api/v2/targets/<TARGET_ID> -H "Authorization: $ACCESS_TOK
 
 Where
 
-- `<ENDPOINT>` is the API endpoint in the region where you plan to configure or manage a target. For more information, see [Endpoints](/docs/atracker?topic=atracker-endpoints#endpoints_api).
+- `<ENDPOINT>` is the API endpoint in the region where you plan to configure or manage a target. For more information, see [Endpoints](/docs/atracker?topic=atracker-endpoints).
 - `<TARGET_ID>` is the ID of the target.
 
 
@@ -843,7 +843,7 @@ curl -X GET <ENDPOINT>/api/v2/targets -H "Authorization: $ACCESS_TOKEN" -H "cont
 
 Where
 
-- `<ENDPOINT>` is the API endpoint in the region where you plan to configure or manage a target. For more information, see [Endpoints](/docs/atracker?topic=atracker-endpoints#endpoints_api).
+- `<ENDPOINT>` is the API endpoint in the region where you plan to configure or manage a target. For more information, see [Endpoints](/docs/atracker?topic=atracker-endpoints).
 
 
 For example, you can run the following cURL request to get information about the targets that are defined in Dallas:

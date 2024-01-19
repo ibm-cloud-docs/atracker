@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2022, 2023
-lastupdated: "2023-07-17"
+  years: 2022, 2024
+lastupdated: "2024-01-18"
 
 keywords:
 
@@ -73,7 +73,8 @@ Complete the following steps:
     Check the limitations of the {{site.data.keyword.messagehub}} service plans. For more information, see [Limits and quotas](https://cloud.ibm.com/docs/EventStreams?topic=EventStreams-kafka_quotas).
     {: note}
 
-    a. Access the [{{site.data.keyword.messagehub}} service](https://cloud.ibm.com/catalog/event-streams){: external} in the **Catalog**.
+    a. Access the {{site.data.keyword.messagehub}} service in the [Catalog.](https://cloud.ibm.com/catalog#services){: external}
+
 
     b. Select the plan on the service instance page.
 
@@ -166,7 +167,7 @@ You must define 2 policies, 1 for the resource type `topic`, and 1 for the resou
         ![Select Role](../images/es-credentials-5.png "Add permissions"){: caption="Select role" caption-side="bottom"}
 
 
-You can [get credentials by using the {{site.data.keyword.cloud_notm}} CLI](/docs/EventStreams?topic=EventStreams-connecting#connect_enterprise_external_cli) and make note of the api key and broker URL values.
+You can [get credentials by using the {{site.data.keyword.cloud_notm}} CLI](/docs/EventStreams?topic=EventStreams-connecting#connection_information) and make note of the api key and broker URL values.
 {: note}
 
 

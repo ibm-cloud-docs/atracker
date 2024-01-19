@@ -41,7 +41,7 @@ Next, log in to {{site.data.keyword.cloud_notm}}. Run the following command: [ib
 
 
 ## Step 1. Get details of your current account settings
-{: #target-default-step1}
+{: #target-locations-step1}
 
 Get details of your current account settings. Run the following command:
 
@@ -53,7 +53,7 @@ ibmcloud atracker setting get
 The setting **Permitted target regions** list all the locations where you allowd administrators to configure targets in the account.
 
 ## Step 2.
-{: #target-default-step2}
+{: #target-locations-step2}
 
 To manage the list of permitted regions, run the following command:
 

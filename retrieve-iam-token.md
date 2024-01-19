@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2023
-lastupdated: "2021-08-09"
+lastupdated: "2024-01-18"
 
 keywords:
 
@@ -55,7 +55,7 @@ Complete the following steps to generate an access token for the current session
 {: #retrieve-iam-token-cli-apikey}
 {: cli}
 
-You can also retrieve your access token programmatically by creating a [service ID API key](/docs/iam?topic=iam-serviceidapikeys) for your application, and then exchanging your API key for an {{site.data.keyword.cloud_notm}} IAM token.
+You can also retrieve your access token programmatically by creating a [service ID API key](/docs/account?topic=account-serviceidapikeys&interface=api) for your application, and then exchanging your API key for an {{site.data.keyword.cloud_notm}} IAM token.
 
 1. Log in to {{site.data.keyword.cloud_notm}} with the [{{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cli-getting-started).
 

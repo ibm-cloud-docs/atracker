@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2023
-lastupdated: "2022-08-08"
+  years: 2019, 2024
+lastupdated: "2024-01-18"
 
 keywords:
 
@@ -174,7 +174,7 @@ You can use private and public endpoints to manage settings. For more informatio
 
 * By default, you can manage settings from the private network. You must use an API endpoint with the following format: `https://private.<region>.atracker.cloud.ibm.com`
 
-* You can also enable public endpoints in a region to manage settings. For more information, see [Managing endpoints](/docs/atracker?topic=atracker-endpoints_manage).
+* You can also enable public endpoints in a region to manage settings. For more information, see [Managing endpoints](/docs/atracker?topic=atracker-endpoints_manage_v2).
 
 For more information about the REST API, see [the settings API](https://{DomainName}/apidocs/atracker/atracker-v2#get-settings){: external}.
 {: note}
@@ -185,7 +185,7 @@ For more information about the REST API, see [the settings API](https://{DomainN
 
 To make API calls to manage settings, complete the following steps:
 1. Get an IAM access token. For more information, see [Retrieving IAM access tokens](/docs/atracker?topic=atracker-retrieve-iam-token).
-2. Identify the API endpoint in the region where you plan to configure or manage settings. For more information, see [Endpoints](/docs/atracker?topic=atracker-endpoints#endpoints_api).
+2. Identify the API endpoint in the region where you plan to configure or manage settings. For more information, see [Endpoints](/docs/atracker?topic=atracker-endpoints).
 
 
 ## Getting settings using the API
@@ -202,7 +202,7 @@ curl -X GET  ENDPOINT/api/v2/settings   -H "Authorization:  $ACCESS_TOKEN"
 Where:
 
 `ENDPOINT`
-:   Is the API endpoint in the region where you plan to configure or manage a target. For more information, see [Endpoints](/docs/atracker?topic=atracker-endpoints#endpoints_api).
+:   Is the API endpoint in the region where you plan to configure or manage a target. For more information, see [Endpoints](/docs/atracker?topic=atracker-endpoints).
 
 For example, you can use the following cURL request settings information the US South region:
 
@@ -269,7 +269,7 @@ curl -X PUT  <ENDPOINT>/api/v2/settings
 Where:
 
 `ENDPOINT`
-:    Is the API endpoint in the region where you plan to configure or manage a target. For more information, see [Endpoints](/docs/atracker?topic=atracker-endpoints#endpoints_api).
+:    Is the API endpoint in the region where you plan to configure or manage a target. For more information, see [Endpoints](/docs/atracker?topic=atracker-endpoints).
 
 `default_targets`
 :   Is a list of target IDs.  If no routing rules cause events to be sent to other targets, these targets will received the events.
