@@ -176,7 +176,7 @@ You can use private and public endpoints to manage settings. For more informatio
 
 * You can also enable public endpoints in a region to manage settings. For more information, see [Managing endpoints](/docs/atracker?topic=atracker-endpoints_manage_v2).
 
-For more information about the REST API, see [the settings API](/apidocs/atracker/atracker-v2#get-settings).
+For more information about the REST API, see [the settings API](/apidocs/atracker#get-settings).
 {: note}
 
 ## API prerequsites

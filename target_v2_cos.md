@@ -595,7 +595,7 @@ You can use private and public endpoints to manage targets. For more information
 
 * You can disable the public endpoints by updating the account settings. For more information, see [Configuring target and region settings](/docs/atracker?topic=atracker-settings).
 
-For more information about the REST API, see [Targets](/apidocs/atracker/atracker-v2#create-target).
+For more information about the REST API, see [Targets](/apidocs/atracker#create-target).
 {: note}
 
 
