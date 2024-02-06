@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2024
-lastupdated: "2024-01-18"
+lastupdated: "2024-02-06"
 
 keywords:
 
@@ -95,7 +95,15 @@ The following table lists observability services that send auditing events:
 | [{{site.data.keyword.mon_full}}](/docs/monitoring?topic=monitoring-getting-started) | `sysdig-monitor` | [Location-based events](/docs/monitoring?topic=monitoring-at_events) |
 {: caption="Table 8. List of observability services" caption-side="top"}
 
+## Platform services
+{: #platform_core_integrated}
 
+The following table lists platform services that send auditing events:
+
+| Service     | CRN service name | Events |
+|-------------|--------------|--------|
+| [Projects](/docs/secure-enterprise?topic=secure-enterprise-understanding-projects) | `project` | [Global events](/docs/secure-enterprise?topic=secure-enterprise-at_events) |
+{: caption="Table 9. List of platform services" caption-side="top"}
 
 
 ## Watson AI
