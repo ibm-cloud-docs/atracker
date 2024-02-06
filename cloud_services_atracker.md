@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2024
-lastupdated: "2024-01-18"
+lastupdated: "2024-02-06"
 
 keywords:
 
@@ -216,13 +216,10 @@ The following table lists VPC infrastructure services that send auditing events:
 
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
-| [Storage resources](/docs/vpc?topic=vpc-block-storage-about) | `is.volume` | [Location-based events](/docs/vpc?topic=vpc-at-events#events-storage) |
-| [Compute resources](/docs/vpc?topic=vpc-about-advanced-virtual-servers) | `is.instance` | [Location-based events](/docs/vpc?topic=vpc-at-events#events-compute) |
-| [Network resources](/docs/vpc?topic=vpc-about-networking-for-vpc) | `is.subnet` | [Location-based events](/docs/vpc?topic=vpc-at-events#events-network) |
+| [VPC](/docs/vpc?topic=vpc-getting-started) | `is` | [Location-based events](/docs/vpc?topic=vpc-at-events) |
 | [Load Balancer](/docs/vpc?topic=vpc-load-balancers)| `is.load-balancer` | [Location-based events](/docs/vpc?topic=vpc-at-events#events-load-balancers) |
 | [VPN](/docs/vpc?topic=vpc-using-vpn)| `is.vpn` | [Location-based events](/docs/vpc?topic=vpc-at-events#at-events) |
 | [Client VPN](/docs/vpc?topic=vpc-vpn-client-to-site-overview)| `is.vpn-server` | [Location-based events](/docs/vpc?topic=vpc-at-events#events-vpn-server) |
-| [Images](/docs/vpc?topic=vpc-about-images) | `is.image` | [Location-based events](/docs/vpc?topic=vpc-at-events#events-images) |
 {: caption="Table 13. List of VPC infrastructure services (generation 2)" caption-side="top"}
 
 ## Watson AI
@@ -232,7 +229,7 @@ The following table lists Watson AI services that send auditing events:
 
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
-| [{{site.data.keyword.conversationfull}}](/docs/assistant?topic=assistant-getting-started) | `conversation`  | [Location-based events](/docs/assistant?topic=assistant-at-events) |
+| [{{site.data.keyword.conversationfull}}](/docs/watson-assistant?topic=watson-assistant-getting-started) | `conversation`  | [Location-based events](/docs/watson-assistant?topic=watson-assistant-admin-auditing) |
 | [{{site.data.keyword.discoveryfull}}](/docs/discovery-data?topic=discovery-data-getting-started) | `discovery` | [Location-based events](/docs/discovery-data?topic=discovery-data-at_events)  |
 | [{{site.data.keyword.knowledgestudiofull}}](/docs/watson-knowledge-studio) | `knowledge-studio` | [Location-based events](/docs/watson-knowledge-studio?topic=watson-knowledge-studio-activity-tracker-events) |
 | [{{site.data.keyword.nlufull}}](/docs/natural-language-understanding) | `natural-language-understanding` | [Location-based events](/docs/natural-language-understanding?topic=natural-language-understanding-at_events) |
@@ -251,17 +248,6 @@ The following table lists Power IaaS infrastructure services that send auditing 
 
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
-| [Images](/docs/power-iaas?topic=power-iaas-deploy-custom-image) | `power-iaas` | [Location-based events](/docs/power-iaas?topic=power-iaas-at-events#at-actions-images) |
-| [Networks](/docs/power-iaas?topic=power-iaas-cloud-connections) | `power-iaas` | [Location-based events](/docs/power-iaas?topic=power-iaas-at-events#at-actions-networks) |
-| [PVM-Instance](/docs/power-iaas?topic=power-iaas-creating-power-virtual-server) | `power-iaas` | [Location-based events](/docs/power-iaas?topic=power-iaas-at-events#at-actions-servers) |
-| [Volumes](/docs/power-iaas?topic=power-iaas-modifying-server#modifying-volume-network) | `power-iaas` | [Location-based events](/docs/power-iaas?topic=power-iaas-at-events#at-actions-volumes) |
-| [VPN](/docs/power-iaas?topic=power-iaas-VPN-connections) | `power-iaas` | [Location-based events](/docs/power-iaas?topic=power-iaas-at-events#at-vpn-connection) |
-| [PlacementGroups](/docs/power-iaas?topic=power-iaas-placement-groups) | `power-iaas` | [Location-based events](/docs/power-iaas?topic=power-iaas-at-events#at-placement-groups) |
-| [CloudConnections](/docs/power-iaas?topic=power-iaas-cloud-connections) | `power-iaas` | [Location-based events](/docs/power-iaas?topic=power-iaas-at-events#at-cloud-connection) |
-| [SAP](/docs/power-iaas?topic=power-iaas-about-virtual-server#support-SAPNetWeaver-or-SAPHANA) | `power-iaas` | [Location-based events](/docs/power-iaas?topic=power-iaas-at-events#at-sap) |
-| [NetworkPorts](/docs/power-iaas?topic=power-iaas-configuring-subnet) | `power-iaas` | [Location-based events](/docs/power-iaas?topic=power-iaas-at-events#at-network-ports) |
-| [Tenant](/docs/power-iaas?topic=power-iaas-managing-resources-and-users) | `power-iaas` | [Location-based events](/docs/power-iaas?topic=power-iaas-at-events#at-tenants) |
+| [{{site.data.keyword.powerSys_notm}}](/docs/power-iaas?topic=power-iaas-getting-started) | `power-iaas` | [Location-based events](/docs/power-iaas?topic=power-iaas-at-events) |
 | [SSHKeys](/docs/power-iaas?topic=power-iaas-create-vm) | `pcloud.ssh-key` | [Location-based events](/docs/power-iaas?topic=power-iaas-at-events#at-actions-ssh) |
-| [IKE](/docs/power-iaas?topic=power-iaas-ordering-direct-link-connect) | `power-iaas` |  [Location-based events](/docs/power-iaas?topic=power-iaas-at-events#at-ike-policy) |
-| [IPSec](/docs/power-iaas?topic=power-iaas-ordering-direct-link-connect) | `power-iaas` | [Location-based events](/docs/power-iaas?topic=power-iaas-at-events#at-ipsec-policy) |
 {: caption="Table 16. List of Power Systems Virtual Server infrastructure services" caption-side="top"}

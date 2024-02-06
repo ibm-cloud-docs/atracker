@@ -118,3 +118,15 @@ The following table lists Watson AI services that send auditing events:
 | [{{site.data.keyword.languagetranslatorfull}}](/docs/language-translator?topic=language-translator-about) | `language-translator` | [Location-based events](/docs/language-translator?topic=language-translator-at_events) |
 | [{{site.data.keyword.pm_full}}](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/ml-overview.html) | `pm-20` | [Location-based events](https://dataplatform.cloud.ibm.com/docs/content/wsj/admin/at-events.html?context=cpdaas#wml) |
 {: caption="Table 10. List of Watson AI services" caption-side="top"}
+
+## Cloud Pak
+{: #cloud_pak}
+
+
+The following table lists Cloud Pak services that send auditing events:
+
+| Service     | Service name |   Events |
+|-------------|--------------|--------|
+| [{{site.data.keyword.cpd_short}}](https://www.ibm.com/docs/en/cloud-paks/cp-data/4.8.x){: external} | `cp4d`  | [List of events](https://www.ibm.com/docs/en/cloud-paks/cp-data/4.8.x?topic=data-services-that-support-audit-logging){: external} |
+| [{{site.data.keyword.cpd_short}} as a Service](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/welcome-main.html?context=cpdaas&audience=wdp){: external} | `cpdaas` | [List of events](https://dataplatform.cloud.ibm.com/docs/content/wsj/admin/at-events.html?context=cpdaas&audience=wdp){: external} |
+{: caption="Table 11. List of {{site.data.keyword.cpd_full_notm}} services" caption-side="top"}
