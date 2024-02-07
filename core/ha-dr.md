@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2024
-lastupdated: "2024-01-18"
+lastupdated: "2024-02-07"
 
 keywords:
 
@@ -93,20 +93,18 @@ The MZR architecture offers automatic failover between zones within the region, 
 {{site.data.keyword.atracker_short}} data is replicated across multiple regions.
 - Regular backups are stored across multiple regions, and are restorable to other regions.
 
-<!--
 The following table shows the regions where the copy of a regular backup is replicated and available:
 
 | Geography             | Region                   | Other regions that keep a copy of the backup   |
 |-----------------------|--------------------------|-------------------------|
 | `North America`       | `Dallas (us-south)`      | `Washington (us-east)`  |
 | `North America`       | `Washington (us-east)`   | `Dallas (us-south)`     |
-| `Europe`              | `Frankfurt (eu-de)`      | `London (eu-gb)`        |
-| `Europe`              | `London (eu-gb)`         | `Sydney (au-syd)`     |
+| `Europe`              | `Frankfurt (eu-de)`      | `Madrid (eu-es)`        |
+| `Europe`              | `London (eu-gb)`         | `Sydney (au-syd)`       |
 | `Europe`              | `Madrid (eu-es)`         | `Frankfurt (eu-de)`     |
-| `Asia Pacific`        | `Sydney (au-syd)`        | `Frankfurt (eu-de)`     |
+| `Asia Pacific`        | `Sydney (au-syd)`        | `London (eu-gb)`        |
 {: caption="Table 2. List of locations where a copy of the backup is available" caption-side="top"}
 
--->
 
 ## Disaster recovery (DR) in a region
 {: #dr}
@@ -162,7 +160,7 @@ The following table indicates the recovery region in the event of a DR situation
 | `Europe`              | `London (eu-gb)`         | `Frankfurt (eu-de)`     |
 | `Europe`              | `Madrid (eu-es)`         | `Frankfurt (eu-de)`     |
 | `Asia Pacific`        | `Sydney (au-syd)`        | `Frankfurt (eu-de)`     |
-{: caption="Table 2. List of locations where a region is recovered" caption-side="top"}
+{: caption="Table 3. List of locations where a region is recovered" caption-side="top"}
 
 
 ## DR recovery time
