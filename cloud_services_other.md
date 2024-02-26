@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2024
-lastupdated: "2024-02-06"
+lastupdated: "2024-02-26"
 
 keywords:
 
@@ -92,7 +92,6 @@ The following table lists observability services that send auditing events:
 |-------------|------------------|--------|
 | [{{site.data.keyword.at_full}} hosted event search offering](/docs/activity-tracker?topic=activity-tracker-getting-started) | `logdnaat` | [Location-based events](/docs/activity-tracker?topic=activity-tracker-at_events) |
 | [{{site.data.keyword.la_full}}](/docs/log-analysis?topic=log-analysis-getting-started#getting-started) | `logdna` | [Location-based events](/docs/log-analysis?topic=log-analysis-at_events) |
-| [{{site.data.keyword.mon_full}}](/docs/monitoring?topic=monitoring-getting-started) | `sysdig-monitor` | [Location-based events](/docs/monitoring?topic=monitoring-at_events) |
 {: caption="Table 8. List of observability services" caption-side="top"}
 
 ## Platform services
