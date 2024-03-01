@@ -18,6 +18,7 @@ toc:
         navtitle: Overview
       - topic: scenarios.md
         navtitle: Scenarios
+      - new_region_support.md
 
       - topicgroup:
           label:  Configuring the account

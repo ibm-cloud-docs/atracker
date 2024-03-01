@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2024
-lastupdated: "2024-01-18"
+lastupdated: "2024-03-01"
 
 keywords:
 
@@ -21,6 +21,13 @@ content-type: release-note
 
 Use these release notes to learn about the latest updates to {{site.data.keyword.atracker_full}}.
 {: shortdesc}
+
+## 01 March 2024
+{: #activity-tracker-mar0124}
+{: release-note}
+
+Support for br-sao, ca-tor, jp-osa, jp-tok and in-che regions planned for April 2024
+:  If you have services in the br-sao, ca-tor, jp-osa, jp-tok or in-che regions and you have an existing {{site.data.keyword.atracker_full_notm}} configuration, action might be required to continue processing AT events in these regions. To determine if you are impacted, see [Required actions for newly supported regions](/docs/atracker?topic=atracker-new_region_support)
 
 ## 26 September 2023
 {: #activity-tracker-sep2623}
