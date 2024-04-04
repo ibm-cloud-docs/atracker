@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2024
-lastupdated: "2024-03-01"
+lastupdated: "2024-03-27"
 
 keywords:
 
@@ -21,6 +21,13 @@ content-type: release-note
 
 Use these release notes to learn about the latest updates to {{site.data.keyword.atracker_full}}.
 {: shortdesc}
+
+## 03 April 2024
+{: #activity-tracker-apr0324}
+{: release-note}
+
+Osaka (jp-osa) and Tokyo (jp-tok) region support
+:   Osaka and Tokyo are now online regions for {{site.data.keyword.atracker_full_notm}}. Services can now be provisioned in those regions and endpoints in those regions can be used.
 
 ## 01 March 2024
 {: #activity-tracker-mar0124}

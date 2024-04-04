@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2024
-lastupdated: "2024-02-07"
+lastupdated: "2024-03-27"
 
 keywords:
 
@@ -52,7 +52,9 @@ The following table lists the high-availability (HA) status for the regions (loc
 | `Europe`              | `Frankfurt (eu-de)`      | ![Checkmark icon](../images/checkmark-icon.svg "checkmark") | `MZR`     |
 | `Europe`              | `London (eu-gb)`         | `N/A`        | `MZR`     |
 | `Europe`              | `Madrid (eu-es)`         | ![Checkmark icon](../images/checkmark-icon.svg "checkmark")         | `MZR`     |
+| `Asia Pacific`        | `Osaka (jp-osa)`        | `N/A`        | `MZR`     |
 | `Asia Pacific`        | `Sydney (au-syd)`        | `N/A`        | `MZR`     |
+| `Asia Pacific`        | `Tokyo (jp-tok)`        | `N/A`        | `MZR`     |
 {: caption="Table 1. List of locations where the service is available" caption-side="top"}
 
 
@@ -102,7 +104,9 @@ The following table shows the regions where the copy of a regular backup is repl
 | `Europe`              | `Frankfurt (eu-de)`      | `Madrid (eu-es)`        |
 | `Europe`              | `London (eu-gb)`         | `Sydney (au-syd)`       |
 | `Europe`              | `Madrid (eu-es)`         | `Frankfurt (eu-de)`     |
+| `Asia Pacific`        | `Osaka (jp-osa)`        | `Tokyo (jp-tok)`        |
 | `Asia Pacific`        | `Sydney (au-syd)`        | `London (eu-gb)`        |
+| `Asia Pacific`        | `Tokyo (jp-tok)`        | `Osaka (jp-osa)`        |
 {: caption="Table 2. List of locations where a copy of the backup is available" caption-side="top"}
 
 
@@ -159,7 +163,9 @@ The following table indicates the recovery region in the event of a DR situation
 | `Europe`              | `Frankfurt (eu-de)`      | `Madrid (eu-es)`        |
 | `Europe`              | `London (eu-gb)`         | `Frankfurt (eu-de)`     |
 | `Europe`              | `Madrid (eu-es)`         | `Frankfurt (eu-de)`     |
+| `Asia Pacific`        | `Osaka (jp-osa)`        | `Tokyo (jp-tok)`     |
 | `Asia Pacific`        | `Sydney (au-syd)`        | `Frankfurt (eu-de)`     |
+| `Asia Pacific`        | `Tokyo (jp-tok)`        | `Osaka (jp-osa)`     |
 {: caption="Table 3. List of locations where a region is recovered" caption-side="top"}
 
 

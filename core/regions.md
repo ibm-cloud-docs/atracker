@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2023
-lastupdated: "2023-09-12"
+  years: 2019, 2024
+lastupdated: "2024-03-27"
 
 keywords:
 
@@ -27,7 +27,9 @@ This image is an artistic representation and does not reflect actual political o
 
 | Geography             | Region                   | EU-Supported | HA Status |
 |-----------------------|--------------------------|--------------|-----------|
+| `Asia Pacific`        | `Osaka (jp-osa)`        | `N/A`        | `MZR`     |
 | `Asia Pacific`        | `Sydney (au-syd)`        | `N/A`        | `MZR`     |
+| `Asia Pacific`        | `Tokyo (jp-tok)`        | `N/A`        | `MZR`     |
 | `Europe`              | `Frankfurt (eu-de) (*)`  | `YES`        | `MZR`     |
 | `Europe`              | `London (eu-gb)`  | `NO`        | `MZR`     |
 | `Europe`              | `Madrid (eu-es) (*)`  | `YES`        | `MZR`     |
