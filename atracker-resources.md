@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2022, 2023
-lastupdated: "2023-07-17"
+  years: 2022, 2023, 2024
+lastupdated: "2024-04-10"
 
 keywords:
 
@@ -126,11 +126,11 @@ A route defines the rules that indicate where auditing events that are generated
 
 * Routes may be managed from any regional {{site.data.keyword.atracker_full}} API endpoint.
 
-* You can define up to 4 routes for an account.
+* You can define up to 30 routes for an account.
 
 * By default, the account has 0 routes configured.
 
-* You can configure up to 4 rules for each route. A routing rule indicates the locations and associated targets where auditing events are routed.
+* You can configure up to 10 rules for each route. A routing rule indicates the locations and associated targets where auditing events are routed.
 
 * You can configure up to 8 locations for each rule.
 

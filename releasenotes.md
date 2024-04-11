@@ -29,6 +29,9 @@ Use these release notes to learn about the latest updates to {{site.data.keyword
 Toronto (ca-tor) and Sao Paulo (br-sao) region support
 :   Toronto and Sao Paulo are now online regions for {{site.data.keyword.atracker_full_notm}}. Services can now be provisioned in those regions and endpoints in those regions can be used.
 
+Increase routes and rules limits
+:   The maximum number of routes for each account is increased to 30 and the maximum number of rules for each route is increased to 10.
+
 ## 03 April 2024
 {: #activity-tracker-apr0324}
 {: release-note}
