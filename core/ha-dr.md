@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2024
-lastupdated: "2024-03-27"
+lastupdated: "2024-04-05"
 
 keywords:
 
@@ -48,7 +48,9 @@ The following table lists the high-availability (HA) status for the regions (loc
 | Geography             | Region                   | EU-Supported | HA Status |
 |-----------------------|--------------------------|--------------|-----------|
 | `North America`       | `Dallas (us-south)`      | `N/A`        | `MZR`     |
+| `North America`       | `Toronto (ca-tor)`      | `N/A`        | `MZR`     |
 | `North America`       | `Washington (us-east)`   | `N/A`        | `MZR`     |
+| `South America`       | `Sao Paulo (br-sao)`   | `N/A`        | `MZR`     |
 | `Europe`              | `Frankfurt (eu-de)`      | ![Checkmark icon](../images/checkmark-icon.svg "checkmark") | `MZR`     |
 | `Europe`              | `London (eu-gb)`         | `N/A`        | `MZR`     |
 | `Europe`              | `Madrid (eu-es)`         | ![Checkmark icon](../images/checkmark-icon.svg "checkmark")         | `MZR`     |
@@ -100,7 +102,9 @@ The following table shows the regions where the copy of a regular backup is repl
 | Geography             | Region                   | Other regions that keep a copy of the backup   |
 |-----------------------|--------------------------|-------------------------|
 | `North America`       | `Dallas (us-south)`      | `Washington (us-east)`  |
+| `North America`       | `Toronto (ca-tor)`      | `Washington (us-east)`  |
 | `North America`       | `Washington (us-east)`   | `Dallas (us-south)`     |
+| `South America`       | `Sao Paulo (br-sao)`   | `Washington (us-east)`     |
 | `Europe`              | `Frankfurt (eu-de)`      | `Madrid (eu-es)`        |
 | `Europe`              | `London (eu-gb)`         | `Sydney (au-syd)`       |
 | `Europe`              | `Madrid (eu-es)`         | `Frankfurt (eu-de)`     |
@@ -159,7 +163,9 @@ The following table indicates the recovery region in the event of a DR situation
 | Geography             | Source region            | Recovery region   |
 |-----------------------|--------------------------|--------------|
 | `North America`       | `Dallas (us-south)`      | `Washington (us-east)`  |
+| `North America`       | `Toronto (ca-tor)`      | `Washington (us-east)`  |
 | `North America`       | `Washington (us-east)`   | `Dallas (us-south)`     |
+| `South America`       | `Sao Paulo (br-sao)`   | `Washington (us-east)`     |
 | `Europe`              | `Frankfurt (eu-de)`      | `Madrid (eu-es)`        |
 | `Europe`              | `London (eu-gb)`         | `Frankfurt (eu-de)`     |
 | `Europe`              | `Madrid (eu-es)`         | `Frankfurt (eu-de)`     |

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2024
-lastupdated: "2024-03-27"
+lastupdated: "2024-04-05"
 
 keywords:
 
@@ -34,7 +34,9 @@ This image is an artistic representation and does not reflect actual political o
 | `Europe`              | `London (eu-gb)`  | `NO`        | `MZR`     |
 | `Europe`              | `Madrid (eu-es) (*)`  | `YES`        | `MZR`     |
 | `North America`       | `Dallas (us-south)`      | `N/A`        | `MZR`     |
+| `North America`       | `Toronto (ca-tor)`      | `N/A`        | `MZR`     |
 | `North America`       | `Washington (us-east)`   | `N/A`        | `MZR`     !
+| `South America`       | `Sao Paulo (br-sao)`   | `N/A`        | `MZR`     !
 {: caption="Table 1. List of locations for {{site.data.keyword.atracker_short}}" caption-side="top"}
 
 Where
