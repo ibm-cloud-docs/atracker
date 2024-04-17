@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2024
-lastupdated: "2024-04-05"
+lastupdated: "2024-04-15"
 
 keywords:
 
@@ -21,6 +21,15 @@ The following Classless Inter-Domain Routing (CIDR) blocks are available:
 ## Public CIDR blocks
 {: #cidr_public_atracker_gen2}
 
+### Chennai
+{: #cidr_public_atracker_in_che}
+
+| Region   | CIDR block |
+|----------|------------|
+| Chennai  | 169.38.71.96/28  |
+| Chennai  | 169.38.91.192/27  |
+{: caption="Table 1. Chennai public CIDR blocks" caption-side="top"}
+
 ### Frankfurt
 {: #cidr_public_atracker_gen2_3}
 
@@ -32,7 +41,7 @@ The following Classless Inter-Domain Routing (CIDR) blocks are available:
 | Frankfurt  | 161.156.108.224/28 |
 | Frankfurt  | 149.81.105.32/27 |
 | Frankfurt  | 149.81.106.144/28 |
-{: caption="Table 1. Frankfurt public CIDR blocks - Event Routing" caption-side="top"}
+{: caption="Table 2. Frankfurt public CIDR blocks" caption-side="top"}
 
 ### London
 {: #cidr_public_atracker_gen2_4}
@@ -45,7 +54,7 @@ The following Classless Inter-Domain Routing (CIDR) blocks are available:
 | London  | 158.175.126.224/28  |
 | London  | 141.125.75.128/27 |
 | London  | 141.125.137.128/28 |
-{: caption="Table 2. London public CIDR blocks - Event Routing" caption-side="top"}
+{: caption="Table 3. London public CIDR blocks" caption-side="top"}
 
 ### Madrid
 {: #cidr_public_atracker_gen2_es}
@@ -57,7 +66,7 @@ The following Classless Inter-Domain Routing (CIDR) blocks are available:
 | Madrid  | 13.121.68.144/29 |
 | Madrid  | 13.122.68.80/28  |
 | Madrid  | 13.122.68.176/29 |
-{: caption="Table 3. Madrid public CIDR blocks - Event Routing" caption-side="top"}
+{: caption="Table 4. Madrid public CIDR blocks" caption-side="top"}
 
 ### Osaka
 {: #cidr_public_atracker_gen2_osa}
@@ -68,7 +77,7 @@ The following Classless Inter-Domain Routing (CIDR) blocks are available:
 | Osaka  | 163.69.69.176/28 |
 | Osaka  | 163.73.67.16/28 |
 | Osaka  | 163.73.67.32/29 |
-{: caption="Table 4. Osaka public CIDR blocks - Event Routing" caption-side="top"}
+{: caption="Table 5. Osaka public CIDR blocks" caption-side="top"}
 
 ### Sao Paulo
 {: #cidr_public_atracker_br_sao}
@@ -79,7 +88,7 @@ The following Classless Inter-Domain Routing (CIDR) blocks are available:
 | Sao Paulo  | 169.57.216.240/28 |
 | Sao Paulo  | 163.107.72.176/28 |
 | Sao Paulo  | 163.109.67.0/28 |
-{: caption="Table 5. Sao Paulo public CIDR blocks - Event Routing" caption-side="top"}
+{: caption="Table 6. Sao Paulo public CIDR blocks" caption-side="top"}
 
 ### Sydney
 {: #cidr_public_atracker_gen2_5}
@@ -91,7 +100,7 @@ The following Classless Inter-Domain Routing (CIDR) blocks are available:
 | Sydney  | 130.198.123.64/28 |
 | Sydney  | 135.90.92.0/28 |
 | Sydney  | 135.90.98.64/27 |
-{: caption="Table 6. Sydney public CIDR blocks - Event Routing" caption-side="top"}
+{: caption="Table 7. Sydney public CIDR blocks" caption-side="top"}
 
 ### Tokyo
 {: #cidr_public_atracker_gen2_tok}
@@ -101,7 +110,7 @@ The following Classless Inter-Domain Routing (CIDR) blocks are available:
 | Tokyo  | 162.133.87.192/28 |
 | Tokyo  | 128.168.107.0/28 |
 | Tokyo  | 165.192.86.64/28 |
-{: caption="Table 7. Tokyo public CIDR blocks - Event Routing" caption-side="top"}
+{: caption="Table 8. Tokyo public CIDR blocks" caption-side="top"}
 
 ### Toronto
 {: #cidr_public_atracker_ca_tor}
@@ -111,7 +120,7 @@ The following Classless Inter-Domain Routing (CIDR) blocks are available:
 | Toronto  | 169.55.177.32/28 |
 | Toronto  | 163.75.72.144/28 |
 | Toronto  | 163.74.65.32/28 |
-{: caption="Table 8. Toronto public CIDR blocks - Event Routing" caption-side="top"}
+{: caption="Table 9. Toronto public CIDR blocks" caption-side="top"}
 
 ### US East
 {: #cidr_public_atracker_gen2_2}
@@ -124,7 +133,7 @@ The following Classless Inter-Domain Routing (CIDR) blocks are available:
 | US-East  | 169.60.103.240/28 |
 | US-East  | 52.117.68.128/27 |
 | US-East  | 52.117.116.160/28 |
-{: caption="Table 9. US-East public CIDR blocks - Event Routing" caption-side="top"}
+{: caption="Table 10. US-East public CIDR blocks" caption-side="top"}
 
 ### US South
 {: #cidr_public_atracker_gen2_1}
@@ -137,7 +146,7 @@ The following Classless Inter-Domain Routing (CIDR) blocks are available:
 | US-South | 169.59.240.48/28 |
 | US-South | 52.117.31.64/27 |
 | US-South | 169.61.48.48/28 |
-{: caption="Table 10. US-South public CIDR blocks - Event Routing" caption-side="top"}
+{: caption="Table 11. US-South public CIDR blocks" caption-side="top"}
 
 
 
@@ -146,6 +155,13 @@ The following Classless Inter-Domain Routing (CIDR) blocks are available:
 ## Private CIDR blocks
 {: #cidr_private_atracker_gen2}
 
+### Chennai
+{: #cidr_private_atracker_in_che}
+
+| Region   | CIDR block |
+|----------|------------|
+| Chennai  | 10.162.208.0/26 |
+{: caption="Table 12. Chennai private CIDR blocks" caption-side="top"}
 
 ### Frankfurt
 {: #cidr_private_atracker_gen2_3}
@@ -155,7 +171,7 @@ The following Classless Inter-Domain Routing (CIDR) blocks are available:
 | Frankfurt  | 10.85.82.0/26 |
 | Frankfurt  | 10.240.156.128/26 |
 | Frankfurt  | 10.123.179.128/26 |
-{: caption="Table 11. Frankfurt private CIDR blocks - Event Routing" caption-side="top"}
+{: caption="Table 13. Frankfurt private CIDR blocks" caption-side="top"}
 
 ### London
 {: #cidr_private_atracker_gen2_4}
@@ -165,7 +181,7 @@ The following Classless Inter-Domain Routing (CIDR) blocks are available:
 | London  | 10.112.246.128/26 |
 | London  | 10.45.252.128/26 |
 | London  | 10.196.7.192/26 |
-{: caption="Table 12. London private CIDR blocks - Event Routing" caption-side="top"}
+{: caption="Table 14. London private CIDR blocks" caption-side="top"}
 
 ### Madrid
 {: #cidr_private_atracker_gen2_es}
@@ -176,7 +192,7 @@ The following Classless Inter-Domain Routing (CIDR) blocks are available:
 | Madrid  | 10.118.16.136/29 |
 | Madrid  | 10.118.77.128/26 |
 | Madrid  | 10.118.143.64/26 |
-{: caption="Table 13. Madrid private CIDR blocks - Event Routing" caption-side="top"}
+{: caption="Table 15. Madrid private CIDR blocks" caption-side="top"}
 
 ### Osaka
 {: #cidr_private_atracker_gen2_osa}
@@ -186,7 +202,7 @@ The following Classless Inter-Domain Routing (CIDR) blocks are available:
 | Osaka  | 10.8.56.128/26 |
 | Osaka  | 10.9.19.128/26 |
 | Osaka  | 10.10.17.64/26 |
-{: caption="Table 14. Osaka private CIDR blocks - Event Routing" caption-side="top"}
+{: caption="Table 16. Osaka private CIDR blocks" caption-side="top"}
 
 ### Sao Paulo
 {: #cidr_private_atracker_br_sao}
@@ -196,7 +212,7 @@ The following Classless Inter-Domain Routing (CIDR) blocks are available:
 | Sao Paulo  | 10.151.85.192/26 |
 | Sao Paulo  | 10.14.7.128/26 |
 | Sao Paulo  | 10.15.22.192/26 |
-{: caption="Table 15. Sao Paulo private CIDR blocks - Event Routing" caption-side="top"}
+{: caption="Table 17. Sao Paulo private CIDR blocks" caption-side="top"}
 
 ### Sydney
 {: #cidr_private_atracker_gen2_5}
@@ -206,7 +222,7 @@ The following Classless Inter-Domain Routing (CIDR) blocks are available:
 | Sydney  | 10.210.37.192/26 |
 | Sydney  | 10.63.29.192/26 |
 | Sydney  | 10.195.92.128/26 |
-{: caption="Table 16. Sydney private CIDR blocks - Event Routing" caption-side="top"}
+{: caption="Table 18. Sydney private CIDR blocks" caption-side="top"}
 
 ### Tokyo
 {: #cidr_private_atracker_gen2_tok}
@@ -216,7 +232,7 @@ The following Classless Inter-Domain Routing (CIDR) blocks are available:
 | Tokyo  | 10.212.20.0/26  |
 | Tokyo  | 10.192.202.128/26 |
 | Tokyo  | 10.193.66.0/26 |
-{: caption="Table 17. Tokyo private CIDR blocks - Event Routing" caption-side="top"}
+{: caption="Table 19. Tokyo private CIDR blocks" caption-side="top"}
 
 ### Toronto
 {: #cidr_private_atracker_ca_tor}
@@ -226,7 +242,7 @@ The following Classless Inter-Domain Routing (CIDR) blocks are available:
 | Toronto  | 10.167.19.192/26 |
 | Toronto  | 10.243.124.0/26 |
 | Toronto  | 10.11.8.64/26 |
-{: caption="Table 18. Toronto private CIDR blocks - Event Routing" caption-side="top"}
+{: caption="Table 20. Toronto private CIDR blocks" caption-side="top"}
 
 ### US East
 {: #cidr_private_atracker_gen2_2}
@@ -236,7 +252,7 @@ The following Classless Inter-Domain Routing (CIDR) blocks are available:
 | US-East  | 10.39.3.192/26 |
 | US-East  | 10.188.255.128/26 |
 | US-East  | 10.213.37.128/26 |
-{: caption="Table 19. US-East private CIDR blocks - Event Routing" caption-side="top"}
+{: caption="Table 21. US-East private CIDR blocks" caption-side="top"}
 
 ### US South
 {: #cidr_private_atracker_gen2_1}
@@ -247,4 +263,4 @@ The following Classless Inter-Domain Routing (CIDR) blocks are available:
 | US-South | 10.177.221.0/26 |
 | US-South | 10.185.179.192/26 |
 | US-South | 10.241.242.128/25 |
-{: caption="Table 20. US-South private CIDR blocks - Event Routing" caption-side="top"}
+{: caption="Table 22. US-South private CIDR blocks" caption-side="top"}

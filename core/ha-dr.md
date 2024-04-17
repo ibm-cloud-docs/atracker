@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2024
-lastupdated: "2024-04-05"
+lastupdated: "2024-04-15"
 
 keywords:
 
@@ -47,16 +47,17 @@ The following table lists the high-availability (HA) status for the regions (loc
 
 | Geography             | Region                   | EU-Supported | HA Status |
 |-----------------------|--------------------------|--------------|-----------|
-| `North America`       | `Dallas (us-south)`      | `N/A`        | `MZR`     |
-| `North America`       | `Toronto (ca-tor)`      | `N/A`        | `MZR`     |
-| `North America`       | `Washington (us-east)`   | `N/A`        | `MZR`     |
-| `South America`       | `Sao Paulo (br-sao)`   | `N/A`        | `MZR`     |
-| `Europe`              | `Frankfurt (eu-de)`      | ![Checkmark icon](../images/checkmark-icon.svg "checkmark") | `MZR`     |
-| `Europe`              | `London (eu-gb)`         | `N/A`        | `MZR`     |
-| `Europe`              | `Madrid (eu-es)`         | ![Checkmark icon](../images/checkmark-icon.svg "checkmark")         | `MZR`     |
-| `Asia Pacific`        | `Osaka (jp-osa)`        | `N/A`        | `MZR`     |
-| `Asia Pacific`        | `Sydney (au-syd)`        | `N/A`        | `MZR`     |
-| `Asia Pacific`        | `Tokyo (jp-tok)`        | `N/A`        | `MZR`     |
+| Asia Pacific        | Chennai `(in-che)`        | `N/A`        | `SZR`     |
+| Asia Pacific        | Osaka `(jp-osa)`        | `N/A`        | `MZR`     |
+| Asia Pacific        | Sydney `(au-syd)`        | `N/A`        | `MZR`     |
+| Asia Pacific        | Tokyo `(jp-tok)`        | `N/A`        | `MZR`     |
+| Europe              | Frankfurt `(eu-de)`      | ![Checkmark icon](../images/checkmark-icon.svg "checkmark") | `MZR`     |
+| Europe              | London `(eu-gb)`         | `N/A`        | `MZR`     |
+| Europe              | Madrid `(eu-es)`         | ![Checkmark icon](../images/checkmark-icon.svg "checkmark")         | `MZR`     |
+| North America       | Dallas `(us-south)`      | `N/A`        | `MZR`     |
+| North America       | Toronto `(ca-tor)`      | `N/A`        | `MZR`     |
+| North America       | Washington `(us-east)`   | `N/A`        | `MZR`     |
+| South America       | Sao Paulo `(br-sao)`   | `N/A`        | `MZR`     |
 {: caption="Table 1. List of locations where the service is available" caption-side="top"}
 
 
@@ -101,16 +102,16 @@ The following table shows the regions where the copy of a regular backup is repl
 
 | Geography             | Region                   | Other regions that keep a copy of the backup   |
 |-----------------------|--------------------------|-------------------------|
-| `North America`       | `Dallas (us-south)`      | `Washington (us-east)`  |
-| `North America`       | `Toronto (ca-tor)`      | `Washington (us-east)`  |
-| `North America`       | `Washington (us-east)`   | `Dallas (us-south)`     |
-| `South America`       | `Sao Paulo (br-sao)`   | `Washington (us-east)`     |
-| `Europe`              | `Frankfurt (eu-de)`      | `Madrid (eu-es)`        |
-| `Europe`              | `London (eu-gb)`         | `Sydney (au-syd)`       |
-| `Europe`              | `Madrid (eu-es)`         | `Frankfurt (eu-de)`     |
-| `Asia Pacific`        | `Osaka (jp-osa)`        | `Tokyo (jp-tok)`        |
-| `Asia Pacific`        | `Sydney (au-syd)`        | `London (eu-gb)`        |
-| `Asia Pacific`        | `Tokyo (jp-tok)`        | `Osaka (jp-osa)`        |
+| Asia Pacific        | Chennai `(in-che)`        | Tokyo `(jp-tok)`        |
+| Asia Pacific        | Sydney `(au-syd)`        | London `(eu-gb)`        |
+| Asia Pacific        | Tokyo `(jp-tok)`        | Osaka `(jp-osa)`        |
+| Europe              | Frankfurt `(eu-de)`      | Madrid `(eu-es)`        |
+| Europe              | London `(eu-gb)`         | Sydney `(au-syd)`       |
+| Europe              | Madrid `(eu-es)`         | Frankfurt `(eu-de)`     |
+| North America       | Dallas `(us-south)`      | Washington `(us-east)`  |
+| North America       | Toronto `(ca-tor)`      | Washington `(us-east)`  |
+| North America       | Washington `(us-east)`   | Dallas `(us-south)`     |
+| South America       | Sao Paulo `(br-sao)`   | Washington `(us-east)`     |
 {: caption="Table 2. List of locations where a copy of the backup is available" caption-side="top"}
 
 
@@ -162,16 +163,16 @@ The following table indicates the recovery region in the event of a DR situation
 
 | Geography             | Source region            | Recovery region   |
 |-----------------------|--------------------------|--------------|
-| `North America`       | `Dallas (us-south)`      | `Washington (us-east)`  |
-| `North America`       | `Toronto (ca-tor)`      | `Washington (us-east)`  |
-| `North America`       | `Washington (us-east)`   | `Dallas (us-south)`     |
-| `South America`       | `Sao Paulo (br-sao)`   | `Washington (us-east)`     |
-| `Europe`              | `Frankfurt (eu-de)`      | `Madrid (eu-es)`        |
-| `Europe`              | `London (eu-gb)`         | `Frankfurt (eu-de)`     |
-| `Europe`              | `Madrid (eu-es)`         | `Frankfurt (eu-de)`     |
-| `Asia Pacific`        | `Osaka (jp-osa)`        | `Tokyo (jp-tok)`     |
-| `Asia Pacific`        | `Sydney (au-syd)`        | `Frankfurt (eu-de)`     |
-| `Asia Pacific`        | `Tokyo (jp-tok)`        | `Osaka (jp-osa)`     |
+| Asia Pacific        | Chennai `(in-che)`        | Tokyo `(jp-tok)`     |
+| Asia Pacific        | Sydney `(au-syd)`        | Frankfurt `(eu-de)`     |
+| Asia Pacific        | Tokyo `(jp-tok)`        | Osaka `(jp-osa)`     |
+| Europe              | Frankfurt `(eu-de)`      | Madrid `(eu-es)`        |
+| Europe              | London `(eu-gb)`         | Frankfurt `(eu-de)`     |
+| Europe              | Madrid `(eu-es)`         | Frankfurt `(eu-de)`     |
+| North America       | Dallas `(us-south)`      | Washington `(us-east)`  |
+| North America       | Toronto `(ca-tor)`      | Washington `(us-east)`  |
+| North America       | Washington `(us-east)`   | Dallas `(us-south)`     |
+| South America       | Sao Paulo `(br-sao)`   | Washington `(us-east)`     |
 {: caption="Table 3. List of locations where a region is recovered" caption-side="top"}
 
 

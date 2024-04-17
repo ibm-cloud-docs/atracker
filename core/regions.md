@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2024
-lastupdated: "2024-04-05"
+lastupdated: "2024-04-15"
 
 keywords:
 
@@ -27,6 +27,7 @@ This image is an artistic representation and does not reflect actual political o
 
 | Geography             | Region                   | EU-Supported | HA Status |
 |-----------------------|--------------------------|--------------|-----------|
+| `Asia Pacific`        | `Chennai (in-che)`        | `N/A`        | `SZR`     |
 | `Asia Pacific`        | `Osaka (jp-osa)`        | `N/A`        | `MZR`     |
 | `Asia Pacific`        | `Sydney (au-syd)`        | `N/A`        | `MZR`     |
 | `Asia Pacific`        | `Tokyo (jp-tok)`        | `N/A`        | `MZR`     |
@@ -35,8 +36,8 @@ This image is an artistic representation and does not reflect actual political o
 | `Europe`              | `Madrid (eu-es) (*)`  | `YES`        | `MZR`     |
 | `North America`       | `Dallas (us-south)`      | `N/A`        | `MZR`     |
 | `North America`       | `Toronto (ca-tor)`      | `N/A`        | `MZR`     |
-| `North America`       | `Washington (us-east)`   | `N/A`        | `MZR`     !
-| `South America`       | `Sao Paulo (br-sao)`   | `N/A`        | `MZR`     !
+| `North America`       | `Washington (us-east)`   | `N/A`        | `MZR`     |
+| `South America`       | `Sao Paulo (br-sao)`   | `N/A`        | `MZR`     |
 {: caption="Table 1. List of locations for {{site.data.keyword.atracker_short}}" caption-side="top"}
 
 Where

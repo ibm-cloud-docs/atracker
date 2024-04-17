@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2024
-lastupdated: "2024-04-11"
+lastupdated: "2024-04-15"
 
 keywords:
 
@@ -21,6 +21,13 @@ content-type: release-note
 
 Use these release notes to learn about the latest updates to {{site.data.keyword.atracker_full}}.
 {: shortdesc}
+
+## 15 April 2024
+{: #activity-tracker-apr1524}
+{: release-note}
+
+Chennai (in-che) region support
+:   Chennai is now an online region for {{site.data.keyword.atracker_full_notm}}. Services can now be provisioned Chennai and endpoints in Chennai can be used.
 
 ## 11 April 2024
 {: #activity-tracker-apr1124}
