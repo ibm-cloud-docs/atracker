@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2024
-lastupdated: "2024-01-18"
+lastupdated: "2024-04-17"
 
 keywords:
 
@@ -23,21 +23,8 @@ Learn how to configure your account to manage auditing events by using {{site.da
 
 You can use {{site.data.keyword.atracker_short}}, a platform service, to manage auditing events at the account-level by configuring targets and routes that define where auditing data is routed. {{site.data.keyword.atracker_short}} can only route events that are generated in [supported regions](/docs/atracker?topic=atracker-regions). Other regions, where {{site.data.keyword.atracker_short}} is not available, continue to manage events by using [{{site.data.keyword.atracker_short}} hosted event search](/docs/atracker?topic=atracker-getting-started).
 
-The following table outlines the locations where you can configure {{site.data.keyword.atracker_short}} to collect and manage auditing events:
+See [locations](/docs/atracker?topic=atracker-regions) for the locations where you can configure {{site.data.keyword.atracker_short}} to collect and manage auditing events.
 
-| Geo                   | Region                   | {{site.data.keyword.atracker_short}} |
-|-----------------------|--------------------------|----------------------------------------------------|
-| `Asia Pacific`        | `Chennai (in-che)`       |  |
-| `Asia Pacific`        | `Tokyo (jp-tok)`         |  |
-| `Asia Pacific`        | `Sydney (au-syd)`        |  ![Checkmark icon](images/checkmark-icon.svg) |
-| `Asia Pacific`        | `Osaka (jp-osa)`         |  |
-| `Europe`              | `Frankfurt (eu-de)`      |  ![Checkmark icon](images/checkmark-icon.svg) |
-| `Europe`              | `London (eu-gb)`         |  ![Checkmark icon](images/checkmark-icon.svg) |
-| `North America`       | `Dallas (us-south)`      |  ![Checkmark icon](images/checkmark-icon.svg) |
-| `North America`       | `Washington (us-east)`   |  ![Checkmark icon](images/checkmark-icon.svg) |
-| `North America`       | `Toronto (ca-tor)`       |  |
-| `South America`       | `Sao Paulo (br-sao)`     |  |
-{: caption="Table 1. Locations where audit events are generated" caption-side="bottom"}
 
 
 You can use {{site.data.keyword.atracker_short}} to manage events from enabled-services in the account. To see the list of services that generate events that you can manage by using {{site.data.keyword.atracker_short}}, see [Services generating events](/docs/atracker?topic=atracker-cloud_services_atracker). Other services that generate events in the account, you can continue to manage these events by using [{{site.data.keyword.atracker_short}} hosted event search](/docs/atracker?topic=atracker-getting-started). To see the list of services that you cannot manage through {{site.data.keyword.atracker_short}}, see [Other services](/docs/atracker?topic=atracker-cloud_services_other).
