@@ -224,13 +224,47 @@ The following table lists the actions that generate an event:
 
 | Action                               | Description |
 |--------------------------------------|-------------|
-| `user-management.user.create`        | An event is generated when you invite a user to the account. |
+| `user-management.user.invite`        | An event is generated when you invite a user to the account. |
+| `user-management.user.resend-invite` | An event is generated when you resend a invite to a user for the account. |
+| `user-management.cloud-user.list`    | An event is generated when you retrieve users from the account. |
+| `user-management.user.read`          | An event is generated when you retrieve a user's information from the account. |
 | `billing.user.active`                | An event is generated when a user, that has received an email invitation to join an account, verifies the email address. |
 | `user-management.user.update`        | An event is generated when log in configurations are modified for a user from the {{site.data.keyword.cloud_notm}} UI. |
+| `user-management.user-realm.update`  | An event is generated when you update a user's IBM ID. |
 | `user-management.user.delete`        | An event is generated when you remove a user from the account. |
+| `user-management.user-setting.read`  | An event is generated when you retrieve the user's login configuration settings: User one-time passcode authentication ,Require MFA security questions at login, User-managed login or Setting up security questions |
 | `user-management.user-setting.update` | An event is generated when you update the user's login configuration settings: User one-time passcode authentication ,Require MFA security questions at login, User-managed login or Setting up security questions |
 {: caption="Table 15. Actions that generate events" caption-side="top"}
 
+### Inviting a user to an account
+Separate events are generated for this asynchronous activity: one showing a pending invitation and one showing the completion or failure of the invitation.
+* A pending invitation event would contain the following values for the action, outcome and message fields.
+```json
+"action": "user-management.user.invite",
+"outcome": "pending",
+"message": "IAM User Management: invite user -pending"
+``` 
+* A completed invitation event would contain the following values for the action, outcome and message fields
+```json
+"action": "user-management.user.invite",
+"outcome": "success",
+"message": "IAM User Management: invite user"
+``` 
+
+### Deleting a user from an account
+Separate events are generated for asynchronous delete users requests: one showing a pending deletion and one showing the completion or failure of the delete
+* A pending delete user event would contain the following values for the action, outcome and message fields
+```json
+"action": "user-management.user.delete",
+"outcome": "pending",
+"message": " IAM User Management: delete user IBMid-Example -pending"
+``` 
+* A completed delete user event would contain the following values for the action, outcome and message fields
+```json
+"action": "user-management.user.delete",
+"outcome": "success",
+"message": " IAM User Management: delete user IBMid-Example"
+``` 
 ## Events for carbon calculator
 {: #at_events_carbon_calculator}
 
