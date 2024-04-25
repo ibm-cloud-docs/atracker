@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2024
-lastupdated: "2024-01-18"
+lastupdated: "2024-04-25"
 
 keywords:
 
@@ -237,34 +237,51 @@ The following table lists the actions that generate an event:
 {: caption="Table 15. Actions that generate events" caption-side="top"}
 
 ### Inviting a user to an account
+{: #acc_invite_user}
+
 Separate events are generated for this asynchronous activity: one showing a pending invitation and one showing the completion or failure of the invitation.
+
 * A pending invitation event would contain the following values for the action, outcome and message fields.
+
 ```json
 "action": "user-management.user.invite",
 "outcome": "pending",
 "message": "IAM User Management: invite user -pending"
-``` 
-* A completed invitation event would contain the following values for the action, outcome and message fields
+```
+{: codeblock}
+
+* A completed invitation event would contain the following values for the action, outcome and message fields.
+
 ```json
 "action": "user-management.user.invite",
 "outcome": "success",
 "message": "IAM User Management: invite user"
 ``` 
+{: codeblock}
 
 ### Deleting a user from an account
-Separate events are generated for asynchronous delete users requests: one showing a pending deletion and one showing the completion or failure of the delete
-* A pending delete user event would contain the following values for the action, outcome and message fields
+{: #acc_delete_user}
+
+Separate events are generated for asynchronous delete users requests: one showing a pending deletion and one showing the completion or failure of the delete.
+
+* A pending delete user event would contain the following values for the action, outcome and message fields.
+
 ```json
 "action": "user-management.user.delete",
 "outcome": "pending",
 "message": " IAM User Management: delete user IBMid-Example -pending"
 ``` 
-* A completed delete user event would contain the following values for the action, outcome and message fields
+{: codeblock}
+
+* A completed delete user event would contain the following values for the action, outcome and message fields.
+
 ```json
 "action": "user-management.user.delete",
 "outcome": "success",
 "message": " IAM User Management: delete user IBMid-Example"
-``` 
+```
+{: codeblock}
+ 
 ## Events for carbon calculator
 {: #at_events_carbon_calculator}
 
