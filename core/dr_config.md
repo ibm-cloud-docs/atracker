@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2023
-lastupdated: "2023-12-04"
+  years: 2019, 2023, 2024
+lastupdated: "2023-05-31"
 
 keywords:
 
@@ -67,7 +67,7 @@ When you configure an environment with a backup target, you need to consider the
 
    If context-based rules are configured in the account, make sure that the rules are defined for both the primary and backup locations. 
 
-   You can configure context-based restrictions rules for {{site.data.keyword.at_full_notm}}, {{site.data.keyword.cos_full_notm}} (COS), and {{site.data.keyword.messagehub_full}} targets.
+   You can configure context-based restrictions rules for {{site.data.keyword.at_full_notm}}, {{site.data.keyword.cos_full_notm}} (COS),{{site.data.keyword.logs_full_notm}}, and {{site.data.keyword.messagehub_full}} targets.
 
    For a full list of services supporting context-based restrictions, see [Services integrated with context-based restrictions](/docs/account?topic=account-context-restrictions-whatis#cbr-adopters).
 
@@ -83,4 +83,5 @@ In this case, no extra charges for a second [target instance](#dr_config_backup)
 * No access is available to any historical data from the region that incurred the disaster.
 * Data is lost while you configure a new instance while the existing instance is not available.
 * Events routed to an {{site.data.keyword.at_full_notm}} target can be [archived](/docs/activity-tracker?topic=activity-tracker-archiving-ov). However, a delay of archived data is possible and the data is not guaranteed to be available for the prior 24 hours. For information about {{site.data.keyword.cos_full_notm}} (COS), see [{{site.data.keyword.cos_full_notm}}](/docs/cloud-object-storage).
+* Any events that are routed to an {{site.data.keyword.logs_full_notm}} target can be [archived](/docs/cloud-logs?topic=cloud-logs-about-bucket). For more information, see [Understanding your responsibilities when you use {{site.data.keyword.logs_full_notm}}](/docs/cloud-logs?topic=cloud-logs-shared-responsibilities).
 * Any events that are routed to an {{site.data.keyword.at_full_notm}} target that are then [streamed to an {{site.data.keyword.messagehub_full}} instance](/docs/activity-tracker?topic=activity-tracker-streaming-configure) are only maintained up to the buffer size for 24 hours. Data can then be lost. For more information, see [Understanding your responsibilities when you use Event Streams](/docs/EventStreams?topic=EventStreams-event_streams_responsibilities).

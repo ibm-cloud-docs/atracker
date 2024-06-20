@@ -13,7 +13,7 @@ subcollection: atracker
 {{site.data.keyword.attribute-definition-list}}
 
 
-# Managing {{site.data.keyword.atracker_full_notm}} hosted event search targets
+# Managing {{site.data.keyword.at_full_notm}} hosted event search targets
 {: #target_v2_at}
 
 You can manage {{site.data.keyword.atracker_full}} hosted event search targets in your account by using the {{site.data.keyword.atracker_full_notm}} CLI, the {{site.data.keyword.atracker_full_notm}} REST API, and Terraform scripts. A target is a resource where you can collect auditing events.
@@ -59,11 +59,11 @@ Before you use the CLI to manage targets, complete the following steps:
 3. Log in to {{site.data.keyword.cloud_notm}}. Run the following command: [ibmcloud login](/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_login)
 
 
-## Creating an {{site.data.keyword.atracker_full_notm}} hosted event search offering target using the CLI
+## Creating an {{site.data.keyword.at_full_notm}} hosted event search offering target using the CLI
 {: #target-create-cli-at}
 {: cli}
 
-Use this command to create an {{site.data.keyword.atracker_full_notm}} hosted event search offering target to be used to configure a destination for activity events.
+Use this command to create an {{site.data.keyword.at_full_notm}} hosted event search offering target to be used to configure a destination for activity events.
 
 ```sh
 ibmcloud atracker target create --name TARGET_NAME --type TARGET_TYPE ( [--file LOGDNA_ENDPOINT_DEFINITION_JSON_FILE] | ( [--target-crn LOGDNA_TARGET_CRN] [--ingestion-key LOGDNA_INGESTION_KEY] ) ) [--region REGION] [--output FORMAT]
@@ -97,7 +97,7 @@ ibmcloud atracker target create --name TARGET_NAME --type TARGET_TYPE ( [--file 
     {: codeblock}
 
 `--target-crn LOGDNA_TARGET_CRN`
-:   The CRN of the {{site.data.keyword.atracker_full_notm}} hosted event search offering instance.
+:   The CRN of the {{site.data.keyword.at_full_notm}} hosted event search offering instance.
 
 `--ingestion-key LOGDNA_INGESTION_KEY`
 :   `LOGDNA_INGESTION_KEY` is the ingestion key that will be used to gain access to the {{site.data.keyword.atracker_full_notm}} instance.
@@ -130,11 +130,11 @@ UpdatedAt:           2022-05-06T18:59:26.760Z
 {: screen}
 
 
-## Updating an {{site.data.keyword.atracker_full_notm}} hosted event search offering target using the CLI
+## Updating an {{site.data.keyword.at_full_notm}} hosted event search offering target using the CLI
 {: #target-update-cli-at}
 {: cli}
 
-Use this command to update an {{site.data.keyword.atracker_full_notm}} hosted event search offering target to be used to configure a destination for activity events.
+Use this command to update an {{site.data.keyword.at_full_notm}} hosted event search offering target to be used to configure a destination for activity events.
 
 ```sh
 ibmcloud atracker target update --target TARGET [--name TARGET_NAME] ( --file @LOGDNA_ENDPOINT_DEFINITION_JSON_FILE ) | (--target-crn LOGDNA_TARGET_CRN --ingestion-key LOGDNA_INGESTION_KEY )  [--region REGION] [--output FORMAT]
@@ -168,7 +168,7 @@ ibmcloud atracker target update --target TARGET [--name TARGET_NAME] ( --file @L
     {: codeblock}
 
 `--target-crn LOGDNA_TARGET_CRN`
-:   The CRN of the {{site.data.keyword.atracker_full_notm}} hosted event search offering instance.
+:   The CRN of the {{site.data.keyword.at_full_notm}} hosted event search offering instance.
 
 `--ingestion-key LOGDNA_INGESTION_KEY`
 :   `LOGDNA_INGESTION_KEY` is the ingestion key for the {{site.data.keyword.atracker_full_notm}} instance.
@@ -282,7 +282,7 @@ ibmcloud atracker target validate --target TARGET [--region REGION] [--output FO
 
 The following is an example using the **`ibmcloud atracker target validate --target new-target-name`** command.
 
-This example shows a successfully validated {{site.data.keyword.atracker_full_notm}} hosted event search target.
+This example shows a successfully validated {{site.data.keyword.at_full_notm}} hosted event search target.
 {: note}
 
 ```text
@@ -316,7 +316,7 @@ ibmcloud atracker target get --target TARGET [--output FORMAT]
 ### Example
 {: #target-get-example-at}
 
-The following is an example using the **`ibmcloud atracker target get --target new-target-name`** command showing an {{site.data.keyword.atracker_full_notm}} hosted event search target.
+The following is an example using the **`ibmcloud atracker target get --target new-target-name`** command showing an {{site.data.keyword.at_full_notm}} hosted event search target.
 
 ```text
 OK
@@ -386,7 +386,7 @@ You can use private and public endpoints to manage targets. For more information
 
 * You can disable the public endpoints by updating the account settings. For more information, see [Configuring target and region settings](/docs/atracker?topic=atracker-settings).
 
-For more information about the REST API, see [Targets](/apidocs/atracker#create-target).
+For more information about the REST API, see [Targets](/apidocs/atracker#create-target){: external}.
 {: note}
 
 
@@ -402,11 +402,11 @@ To make API calls to manage targets, complete the following steps:
 
 
 
-## Creating a {{site.data.keyword.atracker_full_notm}} hosted event search offering target using the API
+## Creating an {{site.data.keyword.at_full_notm}} hosted event search offering target using the API
 {: #target-create-api-at-at}
 {: api}
 
-You can use the following cURL command to create an {{site.data.keyword.atracker_full_notm}} hosted event search offering target:
+You can use the following cURL command to create an {{site.data.keyword.at_full_notm}} hosted event search offering target:
 
 ```shell
 curl -X POST <ENDPOINT>/api/v2/targets
@@ -432,7 +432,7 @@ Where
     {: important}
 
 - `TARGET_TYPE` is the type of the target. The valid type is `logdna`.
-- `logdna_endpoint` includes information about the target. This includes the CRN of the {{site.data.keyword.atracker_full_notm}} hosted event search offering instance and the ingestion key of the instance.
+- `logdna_endpoint` includes information about the target. This includes the CRN of the {{site.data.keyword.at_full_notm}} hosted event search offering instance and the ingestion key of the instance.
 
     `TARGET_CRN` indicates the [CRN](/docs/account?topic=account-crn) of the {{site.data.keyword.atracker_full_notm}} instance.
 
@@ -458,15 +458,15 @@ In the response, you get information about the target such as the `id`, that ind
 
 
 
-## Updating an {{site.data.keyword.atracker_full_notm}} hosted event search offering target
+## Updating an {{site.data.keyword.at_full_notm}} hosted event search offering target
 {: #target-update-at-api-at}
 {: api}
 
-When you update an {{site.data.keyword.atracker_full_notm}} hosted event search offering target, you must include the target information in the data section of the request.
+When you update an {{site.data.keyword.at_full_notm}} hosted event search offering target, you must include the target information in the data section of the request.
 - You must pass all fields.
 - Update the fields that need to be changed.
 
-You can use the following cURL command to update an {{site.data.keyword.atracker_full_notm}} hosted event search offering target:
+You can use the following cURL command to update an {{site.data.keyword.at_full_notm}} hosted event search offering target:
 
 ```shell
 curl -X PUT <ENDPOINT>/api/v2/targets
@@ -492,7 +492,7 @@ Where
     {: important}
 
 - `TARGET_TYPE` is the type of the target. The valid type is `logdna`.
-- `logdna_endpoint` includes information about the target. This includes the CRN of the {{site.data.keyword.atracker_full_notm}} hosted event search offering instance and the ingestion key of the instance.
+- `logdna_endpoint` includes information about the target. This includes the CRN of the {{site.data.keyword.at_full_notm}} hosted event search offering instance and the ingestion key of the instance.
 
     `TARGET_CRN` indicates the [CRN](/docs/account?topic=account-crn) of the {{site.data.keyword.atracker_full_notm}} instance.
 
@@ -588,7 +588,7 @@ curl -X GET https://private.us-south.atracker.cloud.ibm.com/api/v2/targets/00000
 ```
 {: screen}
 
-Results will show if the target is a [COS (`"target_type": "cloud_object_storage"`)](/docs/atracker?topic=atracker-target_v2_cos) target or an {{site.data.keyword.atracker_full_notm}} hosted event search offering (`"target_type": "logdna"`) target.
+Results will show if the target is a [COS (`"target_type": "cloud_object_storage"`)](/docs/atracker?topic=atracker-target_v2_cos) target or an {{site.data.keyword.at_full_notm}} hosted event search offering (`"target_type": "logdna"`) target.
 
 ## Listing all targets using the API
 {: #target-list-targets-at}
@@ -613,7 +613,7 @@ curl -X GET https://private.us-south.atracker.cloud.ibm.com/api/v2/targets -H "A
 ```
 {: screen}
 
-Results will show if the target is COS (`"target_type": "cloud_object_storage"`) or an {{site.data.keyword.atracker_full_notm}} hosted event search offering (`"target_type": "logdna"`).
+Results will show if the target is COS (`"target_type": "cloud_object_storage"`) or an {{site.data.keyword.at_full_notm}} hosted event search offering (`"target_type": "logdna"`).
 
 
 ## HTTP response codes
@@ -639,3 +639,83 @@ See the following table for some HTTP response codes:
 | `429` |	Too Many Requests |	Too many requests hit the API too quickly. |
 | `500` |	Internal Server Error |	Something went wrong in {{site.data.keyword.atracker_full_notm}} processing. |
 {: caption="Table 3. List of HTTP response codes" caption-side="top"}
+
+
+## Creating an {{site.data.keyword.at_full_notm}} hosted event search offering target using the UI
+{: #target-create-ui-at}
+{: ui}
+
+Only resources in your account are listed and selectable. To specify a resource in a different account, select **Specify CRN** under **Choose destination**.
+{: important}
+
+1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
+2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability**.
+3. Select **Activity Tracker**.
+4. Select **Routing**.
+5. Select **Targets**.
+6. Click **Create** to open the create panel.
+7. **Choose type**: Click **Activity Tracker**.
+8. **Choose destination**: Pick **Search by instance** or **Specify CRN**
+    - **Search by instance**: Select an {{site.data.keyword.at_full_notm}} hosted event search instance from the table or click **Create** to create a new {{site.data.keyword.at_full_notm}} hosted event search instance.
+    - **Specify CRN**: Enter the Cloud Resource Name (CRN) of the {{site.data.keyword.at_full_notm}} hosted event search instance. If you want to target an instance in a different account, you must specify the CRN.
+9. **Ingestion key**: Select or enter the ingestion key for the targeted {{site.data.keyword.at_full_notm}} hosted event search instance.
+10. **Target name**: Enter a meaningful name for the target.
+11. **Target region**: Select the region that will process the event data.
+12. Toggle **Set as default target** to automatically set your new target as a default target in your {{site.data.keyword.atracker_full_notm}} settings. See [the default targets documentation](/docs/atracker?topic=atracker-planning#planning-4) for more details.
+13. Click **Create target**.
+
+
+## Updating an {{site.data.keyword.at_full_notm}} hosted event search offering target using the UI
+{: #target-update-ui-at}
+{: ui}
+
+Only resources in your account are listed and selectable. To specify a resource in a different account, select **Specify CRN** under **Choose destination**.
+{: important}
+
+1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
+2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability**.
+3. Select **Activity Tracker**.
+4. Select **Routing**.
+5. Select **Targets**.
+6. Determine which target to update and click the ![Actions icon](../icons/action-menu-icon.svg "Actions").
+7. Click **Unset as default** to remove your target as a default target in your {{site.data.keyword.atracker_full_notm}} settings. See [the default targets documentation](/docs/atracker?topic=atracker-planning#planning-4) for more details.
+8. Click **Edit** to open the update panel.
+9. **Details**: Click **Edit** to update your target's name or region. You can also toggle **Default target** to add or remove your target as a default target in your {{site.data.keyword.atracker_full_notm}} settings.
+10. Click **Save** to update your target.
+11. **Destination**: Click **Edit** to change the {{site.data.keyword.at_full_notm}} hosted event search instance and ingestion key associated with your target.
+12. Click **Save** to update your target.
+
+## Deleting a target using the UI
+{: #target-delete-ui-at}
+{: ui}
+
+You cannot delete an {{site.data.keyword.atracker_full_notm}} target if it is used in a route or as a default target setting.
+{: important}
+
+1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
+2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability**.
+3. Select **Activity Tracker**.
+4. Select **Routing**.
+5. Select **Targets**.
+6. Determine which target to delete and click the ![Actions icon](../icons/action-menu-icon.svg "Actions").
+7. Click **Delete** and then click **Delete** in the confirmation panel.
+
+
+## Listing all targets in a region
+{: #target-list-ui-at}
+{: ui}
+
+1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
+2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability**.
+3. Select **Activity Tracker**.
+4. Select **Routing**.
+5. Select **Targets**.
+
+The table details:
+- Target type
+- Destination name
+- Destination region
+- **Routes**: If it is used in any routes
+- **Target status**:
+    - **Active**: The target is working as expected
+    - **Error**: The target is misconfigured and events will not be routed to the destination. Update your target details or destination to fix the target configuration or delete the target if it is no longer needed

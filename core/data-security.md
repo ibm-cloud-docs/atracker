@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2023
-lastupdated: "2021-08-09"
+  years: 2019, 2023, 2024
+lastupdated: "2024-05-31"
 
 keywords:
 
@@ -83,10 +83,11 @@ To ensure that you have enhanced control and security over your data, your accou
 
 You can define 1 or more routing rules that define how auditing events are routed in the account. Auditing data from an {{site.data.keyword.cloud_notm}} service to your target service in {{site.data.keyword.cloud_notm}} is secure via private connection. The connection supports TLS 1.2.
 
-You can store auditing data to any of the following target types:
+You can route auditing data to any of the following target types:
 - An {{site.data.keyword.cos_full_notm}} bucket: You create and manage the bucket, and the data that is collected in the bucket. For more information about COS data security, see [Data security](/docs/cloud-object-storage?topic=cloud-object-storage-security).
 - An {{site.data.keyword.at_short}} instance: You manage the instance and the data that is collected in the instance. For more information, see [Data security](/docs/activity-tracker?topic=activity-tracker-mng-data).
-
+- An {{site.data.keyword.logs_full_notm}} instance: You manage the instance and the data that is collected in the instance. For more information, see [Data security](/docs/cloud-logs?topic=cloud-logs-mng-data).
+- An {{site.data.keyword.messagehub}} topic: You create and manage the topic. For more information, see [Data security](/docs/EventStreams?topic=EventStreams-data_security).
 
 
 ## How can you delete any stored data
@@ -113,3 +114,4 @@ To delete auditing data, check the target type instructions.
 - For {{site.data.keyword.cos_full_notm}} bucket, see [Data security](/docs/cloud-object-storage?topic=cloud-object-storage-security).
 - For {{site.data.keyword.at_short}} instance, see [Data security](/docs/activity-tracker?topic=activity-tracker-mng-data).
 - For {{site.data.keyword.messagehub}}, see [Data security](/docs/EventStreams?topic=EventStreams-data_security).
+- For {{site.data.keyword.logs_full_notm}}, see [Data security](/docs/cloud-logs?topic=cloud-logs-mng-data).

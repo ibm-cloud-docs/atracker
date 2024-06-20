@@ -25,13 +25,13 @@ completion-time: 1h
 {: toc-completion-time="1h"}
 
 
-You can define an {{site.data.keyword.messagehub}} topic as a {{site.data.keyword.atracker_full_notm}} target to send auditing events to other corporate tools such as Security Information and Event Management (SIEM) tools.
+You can define an {{site.data.keyword.messagehub}} topic as an {{site.data.keyword.atracker_full_notm}} target to send auditing events to other corporate tools such as Security Information and Event Management (SIEM) tools.
 {: shortdesc}
 
 ## Scenarios
 {: #getting-started-target-event-streams-scenarios}
 
-You can define an {{site.data.keyword.messagehub}} topic as a {{site.data.keyword.atracker_full_notm}} target to send auditing events to other corporate tools such as Security Information and Event Management (SIEM) tools. When you route data to data lakes, other analysis tools, or other SIEM tools, you can add additional capabilities to the ones provided by {{site.data.keyword.atracker_short}}:
+You can define an {{site.data.keyword.messagehub}} topic as an {{site.data.keyword.atracker_full_notm}} target to send auditing events to other corporate tools such as Security Information and Event Management (SIEM) tools. When you route data to data lakes, other analysis tools, or other SIEM tools, you can add additional capabilities to the ones provided by {{site.data.keyword.atracker_short}}:
 - You can gain visibility into enterprise data across on-premises and cloud-based environments.
 - You can identify and prioritize security threats that might affect your organization.
 - You can detect vulnerabilities by using Artificial Intelligence (AI) to investigate threats and incidents.

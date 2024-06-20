@@ -2,7 +2,7 @@
 
 copyright:
   years: 2022, 2024
-lastupdated: "2024-01-18"
+lastupdated: "2024-05-31"
 
 keywords:
 
@@ -50,8 +50,9 @@ You can configure any of the following target types:
 | Target                                                             | Type                     | Learn more |
 |--------------------------------------------------------------------|--------------------------|------------|
 | {{site.data.keyword.cos_full_notm}} (COS)                          | `cloud_object_storage`   | [Managing {{site.data.keyword.cos_full_notm}} (COS) targets](/docs/atracker?topic=atracker-target_v2_cos) |
-| {{site.data.keyword.atracker_full_notm}} AT hosted event search    | `logdna`                 | [Managing {{site.data.keyword.atracker_full_notm}} hosted event search targets](/docs/atracker?topic=atracker-target_v2_at). |
+| {{site.data.keyword.at_full_notm}} hosted event search    | `logdna`                 | [Managing {{site.data.keyword.atracker_full_notm}} hosted event search targets](/docs/atracker?topic=atracker-target_v2_at). |
 | {{site.data.keyword.messagehub_full}} (Event Streams)              | `event_streams`          | [Managing {{site.data.keyword.messagehub_full}} (Event Streams) targets](/docs/atracker?topic=atracker-target_v2_ies) |
+| {{site.data.keyword.logs_full_notm}}                          | `cloud_logs`   | [Managing {{site.data.keyword.logs_full_notm}} (ICL) targets](/docs/atracker?topic=atracker-target_v2_icl) |
 {: caption="Table 1. List of targets" caption-side="top"}
 
 
@@ -86,6 +87,7 @@ To route events to a target, check the options that you can use to authenticate 
 | `cloud_object_storage`   | ![Checkmark icon](../icons/checkmark-icon.svg "checkmark") | ![Checkmark icon](../icons/checkmark-icon.svg "checkmark") |
 | `logdna`                 |  | ![Checkmark icon](../icons/checkmark-icon.svg "checkmark") |
 | `event_streams`          |  |  ![Checkmark icon](../icons/checkmark-icon.svg "checkmark") |
+| `cloud_logs`   | ![Checkmark icon](../icons/checkmark-icon.svg "checkmark") | |
 {: caption="Table 3. Authentication options by target type" caption-side="top"}
 
 
@@ -101,6 +103,7 @@ You can validate a target by using the {{site.data.keyword.metrics_router_full_n
 | `cloud-object-storage` | [Validate via CLI](/docs/atracker?topic=atracker-target_v2_cos&interface=cli#target-validate-cli-cos) | [Validate via API](/docs/atracker?topic=atracker-target_v2_cos&interface=api#target-validate-api-cos) |
 | `logdna` | [Validate via CLI](/docs/atracker?topic=atracker-target_v2_at&interface=cli#target-validate-cli-at) | [Validate via API](/docs/atracker?topic=atracker-target_v2_at&interface=api#target-validate-api-at) |
 | `event_streams` | [Validate via CLI](/docs/atracker?topic=atracker-target_v2_ies&interface=cli#target-validate-cli-ies) | [Validate via API](/docs/atracker?topic=atracker-target_v2_ies&interface=api#target-validate-api-ies) |
+| `cloud_logs` | [Validate via CLI](/docs/atracker?topic=atracker-target_v2_icl&interface=cli#target-validate-cli-icl) | [Validate via API](/docs/atracker?topic=atracker-target_v2_icl&interface=api#target-validate-api-icl) |
 {: caption="Table 4. Validating options by target type" caption-side="top"}
 
 
@@ -159,7 +162,7 @@ The following table lists the actions that you can run to manage targets:
 {: caption="Table 6. Target actions by using the {{site.data.keyword.atracker_full_notm}} REST API" caption-side="top"}
 
 
-For more information, see [{{site.data.keyword.atracker_full_notm}} V2 API](/apidocs/atracker).
+For more information, see [{{site.data.keyword.atracker_full_notm}} V2 API](https://{DomainName}/apidocs/atracker).
 
 
 ## HTTP response codes
@@ -192,5 +195,20 @@ See the following table for some HTTP response codes:
 
 Choose 1 of the following options to configure a target in your account:
 - [Managing {{site.data.keyword.cos_full_notm}} (COS) targets](/docs/atracker?topic=atracker-target_v2_cos).
-- [Managing {{site.data.keyword.atracker_full_notm}} hosted event search targets](/docs/atracker?topic=atracker-target_v2_at).
+- [Managing {{site.data.keyword.at_full_notm}} hosted event search targets](/docs/atracker?topic=atracker-target_v2_at).
 - [Managing {{site.data.keyword.messagehub_full}} targets](/docs/atracker?topic=atracker-target_v2_ies)
+- [Managing {{site.data.keyword.logs_full_notm}} targets](/docs/atracker?topic=atracker-target_v2_icl)
+
+
+## Managing targets using the UI
+{: #target-v2-ui}
+{: ui}
+
+You can manage your {{site.data.keyword.atracker_full_notm}} targets, routes, and settings using the IBM Console.
+
+1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
+2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability**.
+3. Select **Activity Tracker**.
+4. Select **Routing**.
+
+For more information, see [Managing {{site.data.keyword.logs_full_notm}} targets](/docs/atracker?topic=atracker-target_v2_icl&interface=ui).

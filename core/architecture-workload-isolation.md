@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2024
-lastupdated: "2024-01-18"
+lastupdated: "2024-05-31"
 
 keywords:
 
@@ -84,6 +84,7 @@ Review the {{site.data.keyword.cloud_notm}} services that {{site.data.keyword.at
 | {{site.data.keyword.messagehub}} | {{site.data.keyword.atracker_short}} routes customer data to {{site.data.keyword.messagehub}} by using a private connection. All data is encrypted in transit and at rest. For more information, see [Managing your data in {{site.data.keyword.atracker_short}}](/docs/atracker?topic=atracker-mng-data).|
 | {{site.data.keyword.cloud_notm}} Platform | To authenticate requests to the service and authorize user actions, {{site.data.keyword.atracker_short}} implements platform and service access roles in {{site.data.keyword.iamshort}} (IAM). For more information about required IAM permissions to work with the service, see [Managing access for {{site.data.keyword.atracker_short}}](/docs/atracker?topic=atracker-iam). Connections from {{site.data.keyword.atracker_short}} to IAM do not use private connections. |
 | {{site.data.keyword.databases-for-postgresql_full_notm}} | {{site.data.keyword.atracker_short}} uses {{site.data.keyword.databases-for-postgresql_full_notm}}  for storing metadata. |
+| {{site.data.keyword.logs_full_notm}} | {{site.data.keyword.atracker_short}} routes customer data to {{site.data.keyword.logs_full_notm}} by using a private connection. All data is encrypted in transit and at rest. For more information, see [Managing your data in {{site.data.keyword.atracker_short}}](/docs/atracker?topic=atracker-mng-data).|
 {: caption="Table 1. {{site.data.keyword.atracker_short}} dependencies to other {{site.data.keyword.cloud_notm}} services." caption-side="top"}
 {: summary="The first column is the service. The second column is a description of the service."}
 

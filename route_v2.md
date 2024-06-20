@@ -2,7 +2,7 @@
 
 copyright:
   years: 2022, 2024
-lastupdated: "2024-05-06"
+lastupdated: "2024-05-31"
 
 keywords:
 
@@ -28,11 +28,9 @@ Note the following information about routes:
 
 * Routes may be accessed from any regional {{site.data.keyword.atracker_short}} API endpoint.
 
-* You can define up to 10 routes for an account.
 
 * By default, the account has 0 routes configured.
 
-* You can configure up to 30 rules for each route.
 
 * You can configure up to 8 locations for each rule.
 
@@ -49,7 +47,7 @@ Note the following information about routes:
 After you configure a route, it might take up to 1 hour for the configuration to be enabled.
 {: note}
 
-The target defines where auditing events are collected. The target can be an [{{site.data.keyword.cos_full_notm}} (COS) target](/docs/atracker?topic=atracker-target_v2_cos), an [{{site.data.keyword.at_short}} hosted event search target](/docs/atracker?topic=atracker-target_v2_at) or an [{{site.data.keyword.messagehub_full}} target](/docs/atracker?topic=atracker-target_v2_ies&interface=cli).  The route defines what auditing events are routed to a target.
+The target defines where auditing events are collected. The target can be an [{{site.data.keyword.cos_full_notm}} (COS) target](/docs/atracker?topic=atracker-target_v2_cos), an [{{site.data.keyword.at_short}} hosted event search target](/docs/atracker?topic=atracker-target_v2_at), an [{{site.data.keyword.logs_full_notm}} target](/docs/atracker?topic=atracker-target_v2_icl), or an [{{site.data.keyword.messagehub_full}} target](/docs/atracker?topic=atracker-target_v2_ies&interface=cli).  The route defines what auditing events are routed to a target.
 
 The following sample route definition will:
 - send all `us-south`, `us-east` and `global` events to the target identified by the ID `281f78a2-3333-4444-5555-e896f03cb403`
@@ -608,3 +606,76 @@ See the following table for some HTTP response codes:
 | `429` |	Too Many Requests |	Too many requests hit the API too quickly. |
 | `500` |	Internal Server Error |	Something went wrong in {{site.data.keyword.atracker_short}} processing. |
 {: caption="Table 2. List of HTTP response codes" caption-side="top"}
+
+
+## Creating a route using the UI
+{: #route-create-ui}
+{: ui}
+
+1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
+2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability**.
+3. Select **Activity Tracker**.
+4. Select **Routing**.
+5. Select **Routes**.
+6. Click **Create** to open the create page.
+7. Enter a meaningful name for the route.
+8. In **Routing rules**, modify **Rule 1**:
+    - **Send audit events from**: Select the auditing event locations that will match this rule.
+    - **To targets**: Select a target that will be attached to this rule. Click **Add target** to add more targets to the rule.
+9. Click **Add rule** to add additional rules to the route.
+    - The order of route rules affects the routing behavior. Rules are processed in order and once a rule is matched, the subsequent rules are not processed.
+10. Each rule has an up and down arrow that lets you to change the rule order.
+11. Each rule has a **Remove** button that lets you delete a rule from a route.
+12. Review the route definition ensuring the order of the rules is as intended.
+13. Click **Create**.
+
+
+## Updating a route using the UI
+{: #route-update-ui}
+{: ui}
+
+1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
+2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability**.
+3. Select **Activity Tracker**.
+4. Select **Routing**.
+5. Select **Routes**.
+6. Determine which route to update and click the ![Actions icon](../icons/action-menu-icon.svg "Actions").
+7. Click **Rename** to rename the route.
+8. Click **Edit** to update the route rules.
+9. If desired, edit the existing rules:
+    - **Send audit events from**: Select the auditing event locations that will match this rule.
+    - **To targets**: Select a target that will be attached to this rule. Click **Add target** to add more targets to the rule.
+10. Click **Add rule** to add additional rules to the route.
+    - The order of route rules affects the routing behavior. Rules are processed in order and once a rule is matched, the subsequent rules are not processed.
+11. Each rule has an up and down arrow that lets you to change the rule order.
+12. Each rule has a **Remove** button that lets you delete a rule from a route.
+13. Click **Update** to make changes to your route.
+
+
+## Viewing a route using the UI
+{: #route-view-ui}
+{: ui}
+
+1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
+2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability**.
+3. Select **Activity Tracker**.
+4. Select **Routing**.
+5. Select **Routes**.
+6. The routes table is ordered by creation date. The order of the routes does not affect the routing behavior.
+7. Each route block displays the route name and rules.
+8. The routes page also displays **Routing guidance** with additional information about configuring routing.
+
+
+## Deleting a route using the UI
+{: #route-delete-ui}
+{: ui}
+
+1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
+2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability**.
+3. Select **Activity Tracker**.
+4. Select **Routing**.
+5. Select **Routes**.
+6. Determine which route to update and click the ![Actions icon](../icons/action-menu-icon.svg "Actions").
+7. Click **Delete** to delete the entire route. You must enter the route name before the route is deleted.
+
+

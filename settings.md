@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2024
-lastupdated: "2024-01-18"
+lastupdated: "2024-05-07"
 
 keywords:
 
@@ -80,7 +80,7 @@ When you define a policy, you can must set the scope of the policy to the accoun
 
 Before you use the the CLI to manage {{site.data.keyword.atracker_short}} account settings, [Install the {{site.data.keyword.atracker_full_notm}} CLI](/docs/atracker?topic=atracker-atracker-cli-config).
 
-Check that you have IAM permissions to read, update, or both the {{site.data.keyword.atracker_short}} account settings.
+Check that you have IAM permissions to read or update the {{site.data.keyword.atracker_short}} account settings.
 
 
 ## Getting account settings using the CLI
@@ -176,7 +176,7 @@ You can use private and public endpoints to manage settings. For more informatio
 
 * You can also enable public endpoints in a region to manage settings. For more information, see [Managing endpoints](/docs/atracker?topic=atracker-endpoints_manage_v2).
 
-For more information about the REST API, see [the settings API](/apidocs/atracker#get-settings).
+For more information about the REST API, see [the settings API](/apidocs/atracker#get-settings){: external}.
 {: note}
 
 ## API prerequsites
@@ -311,3 +311,35 @@ See the following table for some HTTP response codes:
 | `429` |	Too Many Requests |	Too many requests hit the API too quickly. |
 | `500` |	Internal Server Error |	Something went wrong in {{site.data.keyword.atracker_full_notm}} processing. |
 {: caption="Table 2. List of HTTP response codes" caption-side="top"}
+
+## Getting account settings using the UI
+{: #settings-get-ui}
+{: ui}
+
+1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
+2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability**.
+3. Select **Activity Tracker**.
+4. Select **Routing**.
+5. Select **Settings**.
+
+On this page you can view the following settings:
+- **Metadata location**: Displays Primary metadata region and Backup metadata region.
+- **Permitted target regions**. Displays the targets regions where events can be sent.
+- **Default targets**: Displays the configured default targets.
+- **Public endpoints**: Displays if public endpoints are enabled. When disabled, the {{site.data.keyword.atracker_short}} UI cannot be accessed.
+- **Reports**: Displays the configuration in JSON format.
+
+## Updating settings using the UI
+{: #settings-update-ui}
+{: ui}
+
+1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
+2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability**.
+3. Select **Activity Tracker**.
+4. Select **Routing**.
+5. Select **Settings**.
+
+Click **Edit** next to the setting to be changed. You can modify the following settings:
+- **Metadata location**: Select your desired Primary metadata region and Backup metadata region.
+- **Permitted target regions**: Select the region where targets can be created. If no regions are selected, then all regions can receive events.
+- **Default targets**: Select the target that will be used by default when routing rules do not exist or are not matched.
