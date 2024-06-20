@@ -59,6 +59,8 @@ toc:
         navtitle: Configuring a logdna target
       - topic: tutorials/getting-started-target-event-streams.md
         navtitle: Configuring an Event Streams target
+      - topic: tutorials/getting-started-cloud-logs.md
+        navtitle: Configuring a Cloud Logs target
 
   - navgroup:
       id: howto
@@ -96,8 +98,7 @@ toc:
           - topic: target-locations.md
             navtitle: Enforcing target locations
           - topic: target-default-reset.md
-            navtitle: Reseting default targets
-
+            navtitle: Resetting default targets
 
       - topicgroup:
           label: Managing endpoints
@@ -116,6 +117,8 @@ toc:
           - topic: target_v2.md
           - topic: target_v2_cos.md
             navtitle: Managing a COS target
+          - topic: target_v2_icl.md
+            navtitle: Managing a Cloud Logs target
           - topic: target_v2_at.md
             navtitle: Managing a logdna target
           - topic: target_v2_ies.md

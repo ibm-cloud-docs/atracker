@@ -828,7 +828,7 @@ curl -X GET https://private.us-south.atracker.cloud.ibm.com/api/v2/targets/00000
 ```
 {: screen}
 
-Results will show if the target is COS (`"target_type": "cloud_object_storage"`) or an {{site.data.keyword.atracker_full_notm}} hosted event search offering (`"target_type": "logdna"`).
+Results will show if the target is COS (`"target_type": "cloud_object_storage"`) or an {{site.data.keyword.at_full_notm}} hosted event search offering (`"target_type": "logdna"`).
 
 ## Listing all targets using the API
 {: #target-list-targets-cos}
@@ -853,7 +853,7 @@ curl -X GET https://private.us-south.atracker.cloud.ibm.com/api/v2/targets -H "A
 ```
 {: screen}
 
-Results will show if the target is a COS (`"target_type": "cloud_object_storage"`) target or an [{{site.data.keyword.atracker_full_notm}} hosted event search offering (`"target_type": "logdna"`) target}](/docs/atracker?topic=atracker-target_v2_at) target.
+Results will show if the target is a COS (`"target_type": "cloud_object_storage"`) target or an [{{site.data.keyword.at_full_notm}} hosted event search offering (`"target_type": "logdna"`) target}](/docs/atracker?topic=atracker-target_v2_at) target.
 
 
 ## HTTP response codes
@@ -879,3 +879,84 @@ See the following table for some HTTP response codes:
 | `429` |	Too Many Requests |	Too many requests hit the API too quickly. |
 | `500` |	Internal Server Error |	Something went wrong in {{site.data.keyword.atracker_full_notm}} processing. |
 {: caption="Table 3. List of HTTP response codes" caption-side="top"}
+
+
+## Creating a {{site.data.keyword.cos_full_notm}} target using the UI
+{: #target-create-ui-cos}
+{: ui}
+
+Only resources in your account are listed and selectable. To specify a resource in a different account, select **Specify CRN** under **Choose destination**.
+{: important}
+
+1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
+2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability**.
+3. Select **Activity Tracker**.
+4. Select **Routing**.
+5. Select **Targets**.
+6. Click **Create** to open the create panel.
+7. **Choose type**: Click **Object Storage**.
+8. **Service authorization required**: Service authorization is required to allow {{site.data.keyword.atracker_full_notm}} to communicate with {{site.data.keyword.cos_full_notm}}. Click **Authorize now** to create the policy automatically or click **Grant access in IAM**.
+9.  **Choose destination**: Pick **Search by instance** or **Specify CRN**
+    - **Search by instance**: Select an {{site.data.keyword.cos_full_notm}} instance from the table or click **Create** to create a new {{site.data.keyword.cos_full_notm}} instance. After selecting an instance, select an {{site.data.keyword.cos_full_notm}} bucket.
+    - **Specify CRN**: Enter the Cloud Resource Name (CRN) of the {{site.data.keyword.cos_full_notm}} bucket. This enables you to enter a CRN from a different account.
+- **Bucket endpoint**: Use the default bucket endpoint or change it.
+- **Target name**: Enter a meaningful name for the target.
+- **Target region**: Select the region that will process the event data.
+- Toggle **Set as default target** to automatically set your new target as a default target in your {{site.data.keyword.atracker_full_notm}} settings. See [the default targets documentation](/docs/atracker?topic=atracker-planning#planning-4) for more details.
+- Click **Create target**.
+
+
+## Updating a {{site.data.keyword.cos_full_notm}} target using the UI
+{: #target-update-ui-cos}
+{: ui}
+
+Only resources in your account are listed and selectable. To specify a resource in a different account, select **Specify CRN** under **Choose destination**.
+{: important}
+
+1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
+2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability**.
+3. Select **Activity Tracker**.
+4. Select **Routing**.
+5. Select **Targets**.
+6. Determine which target to update and click the ![Actions icon](../icons/action-menu-icon.svg "Actions").
+7. Click **Unset as default** to remove your target as a default target in your {{site.data.keyword.atracker_full_notm}} settings. See [the default targets documentation](/docs/atracker?topic=atracker-planning#planning-4) for more details.
+8. Click **Edit** to open the update panel.
+9.  **Details**: Click **Edit** to update your target's name or region. You can also toggle **Default target** to add or remove your target as a default target in your {{site.data.keyword.atracker_full_notm}} settings.
+10. Click **Save** to update your target.
+11. **Destination**: Click **Edit** to change the {{site.data.keyword.cos_full_notm}} instance or buckets associated with your target.
+12. Click **Save** to update your target.
+
+## Deleting a target using the UI
+{: #target-delete-ui-cos}
+{: ui}
+
+You cannot delete an {{site.data.keyword.atracker_full_notm}} target if it is used in a route or as a default target setting.
+{: important}
+
+1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
+2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability**.
+3. Select **Activity Tracker**.
+4. Select **Routing**.
+5. Select **Targets**.
+6. Determine which target to delete and click the ![Actions icon](../icons/action-menu-icon.svg "Actions").
+7. Click **Delete** and then click **Delete** in the confirmation panel.
+
+
+## Listing all targets in a region
+{: #target-list-ui-cos}
+{: ui}
+
+1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
+2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability**.
+3. Select **Activity Tracker**.
+4. Select **Routing**.
+5. Select **Targets**.
+
+The table details:
+- Target type
+- Destination name
+- Destination region
+- **Routes**: If it is used in any routes
+- **Target status**:
+    - **Active**: The target is working as expected
+    - **Error**: The target is miscosfigured and events will not be routed to the destination. Update your target details or destination to fix the target configuration or delete the target if it is no longer needed

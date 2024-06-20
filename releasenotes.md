@@ -22,6 +22,13 @@ content-type: release-note
 Use these release notes to learn about the latest updates to {{site.data.keyword.atracker_full}}.
 {: shortdesc}
 
+## 20 June 2024
+{: #activity-tracker-june2024}
+{: release-note}
+
+Configure {{site.data.keyword.atracker_full_notm}} using the IBM Console
+:   {{site.data.keyword.atracker_full_notm}} provides a new user interface through the IBM Console where you can configure routes and targets. For more information, see [Getting account settings using the UI](/docs/atracker?topic=atracker-settings&interface=ui#settings-get-ui).
+
 ## 15 April 2024
 {: #activity-tracker-apr1524}
 {: release-note}

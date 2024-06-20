@@ -281,7 +281,7 @@ Separate events are generated for asynchronous delete users requests: one showin
 "message": " IAM User Management: delete user IBMid-Example"
 ```
 {: codeblock}
- 
+
 ## Events for carbon calculator
 {: #at_events_carbon_calculator}
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2022, 2023, 2024
-lastupdated: "2024-04-10"
+lastupdated: "2024-05-31"
 
 keywords:
 
@@ -93,6 +93,8 @@ Note the following information about targets:
 
    * An {{site.data.keyword.messagehub_full}} topic
 
+   * An {{site.data.keyword.logs_full_notm}} offering
+
 * All targets can be accessed by any {{site.data.keyword.atracker_short}} API endpoint.
 
 * Targets are created within a region but are visible across regions.
@@ -113,6 +115,7 @@ The following table outlines valid target types:
 | {{site.data.keyword.cos_full_notm}} (COS) | `cloud_object_storage`   | [Managing COS targets](/docs/atracker?topic=atracker-target_v2_cos&interface=cli) |
 | {{site.data.keyword.at_short}} | `logdna`   | [Managing {{site.data.keyword.at_short}} hosted event search targets](/docs/atracker?topic=atracker-target_v2_at&interface=cli) |
 | {{site.data.keyword.messagehub_full}} | `event_streams`   | [Managing {{site.data.keyword.messagehub_full}} targets](/docs/atracker?topic=atracker-target_v2_ies&interface=cli) |
+| {{site.data.keyword.logs_full_notm}} | `cloud_logs`   | [Managing Cloud Logs targets](/docs/atracker?topic=atracker-target_v2_icl&interface=cli) |
 {: caption="Table 1. List of targets" caption-side="top"}
 
 

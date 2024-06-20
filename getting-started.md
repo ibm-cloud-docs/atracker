@@ -58,6 +58,7 @@ A target defines where auditing events are collected. For more information about
 
 Choose 1 of the following options to configure a target in your account:
 - [Configuring a Cloud Object Storage target](/docs/atracker?topic=atracker-getting-started-target-cos).
+- [Configuring an {{site.data.keyword.logs_full_notm}} target](/docs/atracker?topic=atracker-target_v2_icl).
 - [Configuring a {{site.data.keyword.at_short}} hosted event search target](/docs/atracker?topic=atracker-getting-started-target-logdna).
 - [Configuring an {{site.data.keyword.messagehub}} target](/docs/atracker?topic=atracker-getting-started-target-event-streams).
 
