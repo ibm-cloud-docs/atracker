@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2024
-lastupdated: "2024-06-20"
+lastupdated: "2024-06-24"
 
 keywords:
 
@@ -21,6 +21,15 @@ content-type: release-note
 
 Use these release notes to learn about the latest updates to {{site.data.keyword.atracker_full}}.
 {: shortdesc}
+
+## 24 June 2024
+{: #activity-tracker-june2424}
+{: release-note}
+
+{{site.data.keyword.atracker_short}} support for {{site.data.keyword.logs_full_notm}} targets.
+:   Using the CLI, API, UI, or Terraform you can configure {{site.data.keyword.atracker_short}} to send events to an {{site.data.keyword.logs_full_notm}} instance. This adds to the existing support for {{site.data.keyword.cos_full_notm}}, {{site.data.keyword.at_short}} hosted event search, and {{site.data.keyword.messagehub}} targets.
+
+For more information, see [Configuring an IBM Cloud Logs target](/docs/atracker?topic=atracker-getting-started-target-cloud-logs) and [Managing IBM Cloud Logs targets](/docs/atracker?topic=atracker-target_v2_icl&interface=ui)
 
 ## 20 June 2024
 {: #activity-tracker-june2024}
