@@ -28,9 +28,11 @@ Note the following information about routes:
 
 * Routes may be accessed from any regional {{site.data.keyword.atracker_short}} API endpoint.
 
+* You can define up to 10 routes for an account.
 
 * By default, the account has 0 routes configured.
 
+* You can configure up to 30 rules for each route.
 
 * You can configure up to 8 locations for each rule.
 

@@ -8,7 +8,6 @@ toc:
     href: /docs/atracker
     path: atracker
     label: Activity Tracker Event Routing
-
   entries:
   - navgroup:
       id: learn
@@ -18,8 +17,6 @@ toc:
         navtitle: Overview
       - topic: scenarios.md
         navtitle: Scenarios
-      - new_region_support.md
-
       - topicgroup:
           label:  Configuring the account
           topics:
@@ -29,7 +26,6 @@ toc:
             navtitle: Planning
           - topic: atracker-resources.md
             navtitle: Specifications
-
       - topicgroup:
           label: IBM Cloud services generating auditing events
           topics:
@@ -37,7 +33,6 @@ toc:
             navtitle: Managed through Activity Tracker Event Routing
           - topic: cloud_services_other.md
             navtitle: Managed through Activity Tracker hosted event search
-
       - topicgroup:
           label: Events
           topics:
@@ -45,45 +40,40 @@ toc:
           - events/event.md
           - events/events_opt-in.md
           - events/events_collect.md
-
       - topic: releasenotes.md
         navtitle: Release notes
       - releasenotes_notifications.md
-
   - navgroup:
       id: tutorial
       topics:
-      - topic: tutorials/getting-started-target-cos.md
-        navtitle: Configuring a COS target
-      - topic: tutorials/getting-started-target-logdna.md
-        navtitle: Configuring a logdna target
-      - topic: tutorials/getting-started-target-event-streams.md
-        navtitle: Configuring an Event Streams target
       - topic: tutorials/getting-started-cloud-logs.md
         navtitle: Configuring a Cloud Logs target
-
+      - topic: tutorials/getting-started-target-cos.md
+        navtitle: Configuring a COS target
+      - topic: tutorials/getting-started-target-event-streams.md
+        navtitle: Configuring an Event Streams target
+      - topic: tutorials/getting-started-target-logdna.md
+        navtitle: Configuring a logdna target
   - navgroup:
       id: howto
       topics:
       - topic: tf/atracker-tf-config.md
         navtitle: Configuring your account by using terraform
-
       - topicgroup:
           label: Enhancing security
           topics:
-          - core/iam.md
+          - topic: core/iam.md
+            navtitle: Managing access with IAM
           - topic: core/architecture-workload-isolation.md
             navtitle: Architecture and workload isolation
           - topic: core/service-endpoints.md
             navtitle: Service endpoints
           - core/data-security.md
-
       - topicgroup:
           label: Generating reports
           topics:
           - topic: config_report_v2.md
             navtitle: Generating a report
-
       - topicgroup:
           label: Managing account settings
           topics:
@@ -97,18 +87,11 @@ toc:
             navtitle: Enforcing target locations
           - topic: target-default-reset.md
             navtitle: Resetting default targets
-
       - topicgroup:
           label: Managing endpoints
           topics:
           - topic: endpoints_manage_v2.md
             navtitle: Managing endpoints
-
-      - topicgroup:
-          label: Managing keys
-          topics:
-          - retrieve-iam-token.md
-
       - topicgroup:
           label: Managing targets
           topics:
@@ -121,21 +104,20 @@ toc:
             navtitle: Managing a logdna target
           - topic: target_v2_ies.md
             navtitle: Managing an Event Streams target
-
       - topicgroup:
           label: Managing routes
           topics:
           - topic: route_v2.md
             navtitle: Managing routes
-
       - topicgroup:
           label: Working with events in non-supported locations
           topics:
+          - topic: new_region_support.md
+            navtitle: Required actions for newly supported regions
           - topic: manage-events-for-new-region.md
             navtitle: Working with events before a region is available
           - topic: manage-events-to-new-region.md
             navtitle: Working with events after a region is open for business
-
       - topicgroup:
           label: Observability
           topics:
@@ -143,7 +125,6 @@ toc:
             navtitle: Activity Tracker events
           - topic: observability/platform_metrics.md
             navtitle: Platform metrics
-
   - navgroup:
       id: reference
       topics:
@@ -161,7 +142,6 @@ toc:
           topics:
           - core/ha-dr.md
           - core/dr_config.md
-
       - topicgroup:
           label: CLI Reference
           topics:
@@ -170,14 +150,15 @@ toc:
           - link:
               label: Event Routing CLI
               href: https://{DomainName}/docs/atracker-cli-plugin?topic=atracker-cli-plugin-atracker-v2-cli
-
       - topicgroup:
           label: API Reference
+          topics:
+          - topic: retrieve-iam-token.md
+            navtitle: Retrieving IAM token
           links:
             - link:
                 label: Activity Tracker Event Routing API
                 href: https://{DomainName}/apidocs/atracker
-
       - topicgroup:
           label: Terraform Reference
           links:
@@ -190,7 +171,6 @@ toc:
             - link:
                 label: Route
                 href: https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/atracker_route
-
       - topicgroup:
           label: Events
           topics:
@@ -199,35 +179,50 @@ toc:
           - services/at_events_rc.md
           - services/at_event_dashdb.md
           - services/at_events_cbr.md
-
       - topicgroup:
           label: Targets
           topics:
           - cos.md
-
   - navgroup:
         id: help
         topics:
         - gettinghelp.md
         - faq.md
-
         - topicgroup:
             label: Troubleshooting
             topics:
-            - ts/troubleshoot-01.md
-            - ts/troubleshoot-02.md
-            - ts/troubleshoot-03.md
-            - ts/troubleshoot-06.md
-            - ts/troubleshoot-07.md
-            - ts/troubleshoot-08.md
-            - ts/troubleshoot-09.md
-            - ts/troubleshoot-10.md
-            - ts/troubleshoot-11.md
-            - ts/troubleshoot-12.md
-            - ts/troubleshoot-13.md
-            - ts/troubleshoot-14.md
-            - ts/troubleshoot-15.md
-            - ts/troubleshoot-16.md
-            - ts/troubleshoot-17.md
-            - ts/troubleshoot-18.md
-            - ts/troubleshoot-19.md
+            - topicgroup:
+                label: IAM
+                topics:
+                - ts/troubleshoot-15.md
+            - topicgroup:
+                label: API
+                topics:
+                - ts/troubleshoot-01.md
+                - ts/troubleshoot-02.md
+            - topicgroup:
+                label: CLI
+                topics:
+                - ts/troubleshoot-03.md
+            - topicgroup:
+                label: Targets
+                topics:
+                - ts/troubleshoot-06.md
+                - ts/troubleshoot-07.md
+                - ts/troubleshoot-08.md
+                - ts/troubleshoot-09.md
+                - ts/troubleshoot-10.md
+                - ts/troubleshoot-11.md
+                - ts/troubleshoot-12.md
+                - ts/troubleshoot-16.md
+            - topicgroup:
+                label: Routes
+                topics:
+                - ts/troubleshoot-13.md
+                - ts/troubleshoot-17.md
+                - ts/troubleshoot-18.md
+                - ts/troubleshoot-19.md
+            - topicgroup:
+                label: Settings
+                topics:
+                - ts/troubleshoot-14.md

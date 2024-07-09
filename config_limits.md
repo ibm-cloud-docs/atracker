@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2023, 2024
-lastupdated: "2024-07-01"
+  years: 2019, 2024
+lastupdated: "2024-05-31"
 
 keywords:
 
@@ -74,26 +74,3 @@ Consider the following information about rules that you can define per route:
 | Maximum number of targets for each rule | 3 |
 | Wildcard to include all locations in 1 rule | `*` |
 {: caption="Table 4. Limitations for rules" caption-side="bottom"}
-
-### Targets per rule
-{: #limits_routes_targets}
-
-Consider the following information about targets that you can define per rule:
-
-| Description | Limit |
-| -------------- | -------------- |
-| Minimum number of targets per rule | 1 |
-| Maximum number of targets per rule | 16 |
-{: caption="Table 5. Limitations for targets" caption-side="bottom"}
-
-
-### Locations per rule
-{: #limits_routes_locations}
-
-Consider the following information about locations that you can define per rule:
-
-| Description | Limit |
-| -------------- | -------------- |
-| Minimum number of locations per rule | 1 |
-| Maximum number of locations per rule | 16 |
-{: caption="Table 5. Limitations for targets" caption-side="bottom"}

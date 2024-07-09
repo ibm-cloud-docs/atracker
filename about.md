@@ -26,9 +26,9 @@ Use {{site.data.keyword.atracker_full}} to configure how to route auditing event
 auditing events are critical data for security operations and a key element for meeting compliance requirements.
 {: note}
 
-- auditing events increase your visibility to {{site.data.keyword.cloud_notm}} configuration changes so you can manage the risk of incorrectly configured services more effectively.
+- Auditing events increase your visibility to {{site.data.keyword.cloud_notm}} configuration changes so you can manage the risk of incorrectly configured services more effectively.
 
-- auditing events simplify your understanding of IT complexity and agile development actions in the cloud. The combination of events provides a holistic view of what happened.
+- Auditing events simplify your understanding of IT complexity and agile development actions in the cloud. The combination of events provides a holistic view of what happened.
 
 - Insights from the auditing event data help accelerate identification of abnormal activities. For example, you can track the frequency and volume of access management events or multi-factor authentication configuration changes.
 
