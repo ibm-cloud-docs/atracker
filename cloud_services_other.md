@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2024
-lastupdated: "2024-07-01"
+  years:  2021, 2024
+lastupdated: "2024-07-09"
 
 keywords:
 
@@ -32,7 +32,7 @@ The following table lists analytics services that send auditing events:
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
 | [{{site.data.keyword.iae_full}}](/docs/AnalyticsEngine?topic=AnalyticsEngine-getting-started) | `ibmanalyticsengine` | [Location-based events](/docs/AnalyticsEngine?topic=AnalyticsEngine-at_events-serverless) |
-| [{{site.data.keyword.sqlquery_full}}](/docs/sql-query?topic=sql-query-overview#overview)[Deprecated]{: tag-deprecated} | `sql-query` | [Location-based events](/docs/sql-query?topic=sql-query-activitytracker#activitytracker) |
+| [{{site.data.keyword.sqlquery_full}}](/docs/sql-query?topic=sql-query-overview#overview) [Deprecated]{: tag-deprecated} | `sql-query` | [Location-based events](/docs/sql-query?topic=sql-query-activitytracker#activitytracker) |
 | [{{site.data.keyword.dv_short}}](/docs/data-virtualization?topic=data-virtualization-getting-started) | `data-virtualization` | [Location-based events](https://dataplatform.cloud.ibm.com/docs/content/wsj/admin/at-events.html?context=cpdaas&audience=wdp#dv){: exernal} |
 {: caption="Table 1. List of analytics services" caption-side="top"}
 
@@ -79,7 +79,7 @@ The following table lists network services that send auditing events:
 
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
-| [Content Delivery Network](/docs/CDN#getting-started)[Deprecated]{: tag-deprecated} | `cdn-powered-by-akamai` | [Global events](/docs/CDN?topic=CDN-at_events)|
+| [Content Delivery Network](/docs/CDN#getting-started) [Deprecated]{: tag-deprecated} | `cdn-powered-by-akamai` | [Global events](/docs/CDN?topic=CDN-at_events)|
 {: caption="Table 7. List of network services" caption-side="top"}
 
 ## Observability services
