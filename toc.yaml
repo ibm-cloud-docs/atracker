@@ -60,25 +60,15 @@ toc:
       - topic: tf/atracker-tf-config.md
         navtitle: Configuring your account by using terraform
       - topicgroup:
-          label: Controlling access
-          topics:
-          - topic: core/iam.md
-            navtitle: Managing IAM access
-          - topic: core/iam-assign-access.md
-            navtitle: Assigning access
-          - topic: core/iam-service-auth.md
-            navtitle: Managing authorizations
-          - topic: core/iam-custom-roles.md
-            navtitle: Managing custom roles
-      - topicgroup:
           label: Enhancing security
           topics:
+          - topic: core/iam.md
+            navtitle: Managing access with IAM
           - topic: core/architecture-workload-isolation.md
             navtitle: Architecture and workload isolation
           - topic: core/service-endpoints.md
             navtitle: Service endpoints
           - core/data-security.md
-          - scc.md
       - topicgroup:
           label: Generating reports
           topics:
@@ -120,11 +110,6 @@ toc:
           - topic: route_v2.md
             navtitle: Managing routes
       - topicgroup:
-          label: Streaming data (WIP)
-          topics:
-          - topic: qradar-integration.md
-            navtitle: Streaming events to QRadar
-      - topicgroup:
           label: Working with events in non-supported locations
           topics:
           - topic: new_region_support.md
@@ -133,11 +118,6 @@ toc:
             navtitle: Working with events before a region is available
           - topic: manage-events-to-new-region.md
             navtitle: Working with events after a region is open for business
-      - topicgroup:
-          label: Querying events
-          topics:
-          - topic: data-engine.md
-            navtitle: Querying data in a COS bucket
       - topicgroup:
           label: Observability
           topics:
