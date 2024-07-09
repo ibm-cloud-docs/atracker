@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2022, 2024
-lastupdated: "2024-01-18"
+  years:  2021, 2024
+lastupdated: "2024-07-09"
 
 keywords:
 
@@ -740,7 +740,7 @@ You cannot delete an {{site.data.keyword.atracker_full_notm}} target if it is us
 7. Click **Delete** and then click **Delete** in the confirmation panel.
 
 
-## Listing all targets in a region
+## Listing all targets in a region using the UI
 {: #target-list-ui-ies}
 {: ui}
 
