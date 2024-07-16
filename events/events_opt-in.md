@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2024
-lastupdated: "2024-01-18"
+  years:  2021, 2024
+lastupdated: "2024-07-16"
 
 keywords:
 
@@ -43,7 +43,7 @@ The following table lists the services that require additional steps for you to 
 | Service                            | Upgrade plan                       | Configure the service              | More info |
 |------------------------------------|------------------------------------|------------------------------------|-----------|
 | {{site.data.keyword.appid_full}}   | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg)   | [Monitoring runtime activity](/docs/appid?topic=appid-at-events#at-monitor-runtime-activity)   |
-| {{site.data.keyword.cos_full}}     |  | ![Checkmark icon](../../icons/checkmark-icon.svg) | [Enabling {{site.data.keyword.atracker_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-at#at-console-enable) |
+| {{site.data.keyword.cos_full}}     |  | ![Checkmark icon](../../icons/checkmark-icon.svg) | [Enabling {{site.data.keyword.atracker_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-at&interface=ui#at-examples-recommended) |
 | {{site.data.keyword.cloudantfull}} |  | ![Checkmark icon](../../icons/checkmark-icon.svg) | [Configuring data events for an IBM Cloudant instance](/docs/Cloudant?topic=Cloudant-at_events#at_event_configure) |
 | {{site.data.keyword.messagehub_full}} | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) | [Enabling message audit events](/docs/EventStreams?topic=EventStreams-at_events#enable-message-events) |
 | [Watson services](/docs/atracker?topic=atracker-cloud_services_other#cloud_services_other_watson_ai)    | ![Checkmark icon](../../icons/checkmark-icon.svg) |  |   |

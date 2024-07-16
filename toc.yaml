@@ -128,8 +128,6 @@ toc:
   - navgroup:
       id: reference
       topics:
-      - topic: limitations.md
-        navtitle: Restrictions and limitations
       - config_limits.md
       - core/iam_by_role.md
       - core/regions.md

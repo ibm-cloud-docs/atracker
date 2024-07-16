@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2024
-lastupdated: "2024-07-09"
+lastupdated: "2024-07-16"
 
 keywords:
 
@@ -45,13 +45,13 @@ The following table lists database services that send auditing events:
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
 | [{{site.data.keyword.databases-for-enterprisedb_full}}](/docs/databases-for-enterprisedb?topic=databases-for-enterprisedb-getting-started) | `databases-for-enterprisedb-group` | [Location-based events](/docs/databases-for-enterprisedb?topic=databases-for-enterprisedb-activity-tracker) |
-| [{{site.data.keyword.databases-for-postgresql_full}}](/docs/databases-for-postgresql?topic=databases-for-postgresql-getting-started) | `databases-for-postgresql` | [Location-based events](/docs/databases-for-postgresql?topic=databases-for-postgresql-activity-tracker) |
+| [{{site.data.keyword.databases-for-postgresql_full}}](/docs/databases-for-postgresql?topic=databases-for-postgresql-getting-started) | `databases-for-postgresql` | [Location-based events](/docs/cloud-databases?topic=cloud-databases-activity-tracker) |
 | [{{site.data.keyword.databases-for-redis_full_notm}}](/docs/databases-for-redis?topic=databases-for-redis-getting-started) | `databases-for-redis-group` | [Location-based events](/docs/databases-for-redis?topic=databases-for-redis-activity-tracker) |
 | [{{site.data.keyword.databases-for-etcd_full_notm}}](/docs/databases-for-etcd?topic=databases-for-etcd-getting-started) | `databases-for-etcd-group` | [Location-based events](/docs/databases-for-etcd?topic=databases-for-etcd-activity-tracker) |
-| [{{site.data.keyword.databases-for-elasticsearch_full_notm}}](/docs/databases-for-elasticsearch?topic=databases-for-elasticsearch-getting-started) | `databases-for-elasticsearch-group` | [Location-based events](/docs/databases-for-elasticsearch?topic=databases-for-elasticsearch-activity-tracker) |
+| [{{site.data.keyword.databases-for-elasticsearch_full_notm}}](/docs/databases-for-elasticsearch?topic=databases-for-elasticsearch-getting-started) | `databases-for-elasticsearch-group` | [Location-based events](/docs/cloud-databases?topic=cloud-databases-activity-tracker) |
 | [{{site.data.keyword.messages-for-rabbitmq_full}}](/docs/messages-for-rabbitmq?topic=messages-for-rabbitmq-getting-started)  | `messages-for-rabbitmq-group` | [Location-based events](/docs/messages-for-rabbitmq?topic=messages-for-rabbitmq-activity-tracker) |
 | [{{site.data.keyword.databases-for-mongodb_full_notm}}](/docs/databases-for-mongodb) | `databases-for-mongodb-group` | [Location-based events](/docs/databases-for-mongodb?topic=databases-for-mongodb-activity-tracker) |
-| [{{site.data.keyword.databases-for-mysql_full}}](/docs/databases-for-mysql) | `databases-for-mysql-group` | [Location-based events](/docs/databases-for-mysql?topic=databases-for-mysql-activity-tracker) |
+| [{{site.data.keyword.databases-for-mysql_full}}](/docs/databases-for-mysql) | `databases-for-mysql-group` | [Location-based events](/docs/cloud-databases?topic=cloud-databases-activity-tracker) |
 | [{{site.data.keyword.Db2_on_Cloud_long}}](/docs/Db2onCloud?topic=Db2onCloud-about) | `db2oncloud` | [Location-based events](/docs/Db2onCloud?topic=Db2onCloud-auditing) |
 {: caption="Table 3. List of database services" caption-side="top"}
 
@@ -94,7 +94,7 @@ The following table lists observability services that send auditing events:
 {: caption="Table 8. List of observability services" caption-side="top"}
 
 ## Platform services
-{: #platform_core_integrated}
+{: #platform_core_other_integrated}
 
 The following table lists platform services that send auditing events:
 
