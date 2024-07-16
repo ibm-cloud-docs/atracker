@@ -117,8 +117,8 @@ The following table lists network services that send auditing events:
 
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
-| [{{site.data.keyword.BluDirectLink}} solution](/docs/dl?topic=dl-get-started-with-ibm-cloud-dl) | `directlink.dedicated` | [Global events](/docs/dl?topic=dl-at_events) |
-| [{{site.data.keyword.tg_full}}](/docs/transit-gateway?topic=transit-gateway-getting-started) | `transit` | [Global events](/docs/transit-gateway?topic=transit-gateway-at_events) |
+| [{{site.data.keyword.BluDirectLink}} solution](/docs/dl?topic=dl-get-started-with-ibm-cloud-dl) | `directlink.dedicated` | [Global events](/docs/dl?topic=dl-new-at_events) |
+| [{{site.data.keyword.tg_full}}](/docs/transit-gateway?topic=transit-gateway-getting-started) | `transit` | [Global events](/docs/transit-gateway?topic=transit-gateway-new-at_events) |
 | [{{site.data.keyword.dns_full}}](/docs/dns-svcs?topic=dns-svcs-getting-started) | `dns-svcs` | [Global events](/docs/dns-svcs?topic=dns-svcs-at_events) |
 | [{{site.data.keyword.cis_full}} (CIS)](/docs/cis?topic=cis-getting-started)| `internet-svcs` | [Global events](/docs/cis?topic=cis-at_events) |
 {: caption="Table 7. List of network services" caption-side="top"}
@@ -218,7 +218,7 @@ The following table lists VPC infrastructure services that send auditing events:
 |-------------|------------------|--------|
 | [VPC](/docs/vpc?topic=vpc-getting-started) | `is` | [Location-based events](/docs/vpc?topic=vpc-at_events) |
 | [Load Balancer](/docs/vpc?topic=vpc-load-balancers)| `is.load-balancer` | [Location-based events](/docs/vpc?topic=vpc-at_events#events-load-balancers) |
-| [VPN](/docs/vpc?topic=vpc-using-vpn)| `is.vpn` | [Location-based events](/docs/vpc?topic=vpc-at_events#at-events) |
+| [VPN](/docs/vpc?topic=vpc-using-vpn)| `is.vpn` | [Location-based events](/docs/vpc?topic=vpc-at_events) |
 | [Client VPN](/docs/vpc?topic=vpc-vpn-client-to-site-overview)| `is.vpn-server` | [Location-based events](/docs/vpc?topic=vpc-at_events#events-vpn-server) |
 {: caption="Table 13. List of VPC infrastructure services (generation 2)" caption-side="top"}
 
