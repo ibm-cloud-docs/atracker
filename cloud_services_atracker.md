@@ -57,7 +57,7 @@ The following table lists container platform services that send auditing events:
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
 | [{{site.data.keyword.registrylong}}](/docs/Registry?topic=Registry-getting-started) | `container-registry` | [Location-based events](/docs/Registry?topic=Registry-at_events) |
-| [{{site.data.keyword.containerlong}}](/docs/containers?topic=containers-getting-started) | `containers-kubernetes` | [Location-based events](/docs/containers?topic=containers-at_events) |
+| [{{site.data.keyword.containerlong}}](/docs/containers?topic=containers-getting-started) | `containers-kubernetes` | [Location-based events](/docs/containers?topic=containers-at_events_ref) |
 | [{{site.data.keyword.openshiftlong}}](/docs/openshift?topic=openshift-getting-started) | `openshift` | [Location-based events](/docs/openshift?topic=openshift-at_events) |
 | [{{site.data.keyword.satellitelong}}](/docs/satellite?topic=satellite-getting-started) | `satellite` | [Location-based events](/docs/satellite?topic=satellite-at_events) |
 {: caption="Table 3. Container events" caption-side="top"}
