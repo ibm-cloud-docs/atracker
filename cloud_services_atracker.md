@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2024
-lastupdated: "2024-02-26"
+  years:  2021, 2024
+lastupdated: "2024-07-16"
 
 keywords:
 
@@ -83,7 +83,6 @@ The following table lists developer tools and DevOps services that send auditing
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
 | [{{site.data.keyword.bplong}}](/docs/schematics?topic=schematics-getting-started)  | `schematics` | [Location-based events](/docs/schematics?topic=schematics-at_events) |
-| [Apps](/docs/apps?topic=apps-getting-started) | `developer-experience` | Location-based events |
 | [{{site.data.keyword.en_full}}](/docs/event-notifications?topic=event-notifications-getting-started) | `event-notifications`| [Location-based events](/docs/event-notifications?topic=event-notifications-en-at_events)|
 | [{{site.data.keyword.appconfig_full}}](/docs/app-configuration?topic=app-configuration-getting-started) | `apprapp`| [Location-based events](/docs/app-configuration?topic=app-configuration-ac-at_events)|
 | [{{site.data.keyword.cloud-shell_full}}](/docs/cloud-shell?topic=cloud-shell-getting-started) | `cloudshell` | [Location-based events](/docs/cloud-shell?topic=cloud-shell-at_events) |
@@ -217,10 +216,10 @@ The following table lists VPC infrastructure services that send auditing events:
 
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
-| [VPC](/docs/vpc?topic=vpc-getting-started) | `is` | [Location-based events](/docs/vpc?topic=vpc-at-events) |
-| [Load Balancer](/docs/vpc?topic=vpc-load-balancers)| `is.load-balancer` | [Location-based events](/docs/vpc?topic=vpc-at-events#events-load-balancers) |
-| [VPN](/docs/vpc?topic=vpc-using-vpn)| `is.vpn` | [Location-based events](/docs/vpc?topic=vpc-at-events#at-events) |
-| [Client VPN](/docs/vpc?topic=vpc-vpn-client-to-site-overview)| `is.vpn-server` | [Location-based events](/docs/vpc?topic=vpc-at-events#events-vpn-server) |
+| [VPC](/docs/vpc?topic=vpc-getting-started) | `is` | [Location-based events](/docs/vpc?topic=vpc-at_events) |
+| [Load Balancer](/docs/vpc?topic=vpc-load-balancers)| `is.load-balancer` | [Location-based events](/docs/vpc?topic=vpc-at_events#events-load-balancers) |
+| [VPN](/docs/vpc?topic=vpc-using-vpn)| `is.vpn` | [Location-based events](/docs/vpc?topic=vpc-at_events#at-events) |
+| [Client VPN](/docs/vpc?topic=vpc-vpn-client-to-site-overview)| `is.vpn-server` | [Location-based events](/docs/vpc?topic=vpc-at_events#events-vpn-server) |
 {: caption="Table 13. List of VPC infrastructure services (generation 2)" caption-side="top"}
 
 ## Watson AI
