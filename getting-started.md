@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2024
-lastupdated: "2024-07-01"
+  years:  2021, 2024
+lastupdated: "2024-08-12"
 
 keywords: Observability
 
@@ -20,7 +20,7 @@ Use {{site.data.keyword.atracker_full}} to configure how to route auditing event
 {: shortdesc}
 
 
-You can use {{site.data.keyword.atracker_short}}, a platform service, to manage auditing events at the account-level by configuring targets and routes that define where auditing data is routed. {{site.data.keyword.atracker_short}} can only route events that are generated in [supported regions](/docs/atracker?topic=atracker-regions). Other regions, where {{site.data.keyword.atracker_short}} is not available, continue to manage events by using [{{site.data.keyword.at_full_notm}} hosted event search](/docs/activity-tracker?topic=activity-tracker-getting-started). For more information about {{site.data.keyword.atracker_full_notm}}, see [About {{site.data.keyword.atracker_short}}](/docs/atracker?topic=atracker-about).
+You can use {{site.data.keyword.atracker_short}}, a platform service, to manage auditing events at the account-level by configuring targets and routes that define where auditing data is routed. {{site.data.keyword.atracker_short}} can route events that are generated in [supported regions](/docs/atracker?topic=atracker-regions). For more information about {{site.data.keyword.atracker_full_notm}}, see [About {{site.data.keyword.atracker_short}}](/docs/atracker?topic=atracker-about).
 
 
 ## Prerequisites

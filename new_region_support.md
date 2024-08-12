@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2024
-lastupdated: "2024-03-01"
+  years:  2021, 2024
+lastupdated: "2024-08-12"
 
 keywords:
 
@@ -16,7 +16,7 @@ subcollection: atracker
 # Required actions for newly supported regions
 {: #new_region_support}
 
-{{site.data.keyword.atracker_full}} is planned to be supported in the br-sao, ca-tor, jp-osa, jp-tok and in-che regions in April 2024. As a result, all existing customers need to evaluate their {{site.data.keyword.atracker_full_notm}} configurations and make any required changes.
+If {{site.data.keyword.atracker_full}} is planned to be supported in a currently non-supported region, all existing customers will need to evaluate their {{site.data.keyword.atracker_full_notm}} configurations and make any required changes. IBM will announce if a new region is supported.
 {: shortdesc}
 
 ## Check whether you have the right permissions
