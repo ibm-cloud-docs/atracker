@@ -266,5 +266,4 @@ The following table lists Power IaaS infrastructure services that send auditing 
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
 | [{{site.data.keyword.powerSys_notm}}](/docs/power-iaas?topic=power-iaas-getting-started) | `power-iaas` | [Location-based events](/docs/power-iaas?topic=power-iaas-at-events) |
-| [SSHKeys](/docs/power-iaas?topic=power-iaas-create-vm) | `pcloud.ssh-key` | [Location-based events](/docs/power-iaas?topic=power-iaas-at-events#at-actions-ssh) |
 {: caption="Table 16. List of Power Systems Virtual Server infrastructure services" caption-side="top"}
