@@ -73,12 +73,12 @@ The following table lists database services that send auditing events:
 | [{{site.data.keyword.cloudantfull}}](/docs/Cloudant?topic=Cloudant-getting-started-with-cloudant) | `cloudantnosqldb`  | [Location-based events](/docs/Cloudant?topic=Cloudant-at_events) |
 | [{{site.data.keyword.dashdblong_notm}}](/docs/Db2whc?topic=Db2whc-getting-started) | `dashdb` | [Global events](/docs/atracker?topic=atracker-at_events_dashdb) |
 | [{{site.data.keyword.databases-for-postgresql_full}}](/docs/databases-for-postgresql?topic=databases-for-postgresql-getting-started) | `databases-for-postgresql` | [Location-based events](/docs/cloud-databases?topic=cloud-databases-activity-tracker) |
-| [{{site.data.keyword.databases-for-redis_full_notm}}](/docs/databases-for-redis?topic=databases-for-redis-getting-started) | `databases-for-redis-group` | [Location-based events](/docs/databases-for-redis?topic=databases-for-redis-activity-tracker) |
-| [{{site.data.keyword.databases-for-etcd_full_notm}}](/docs/databases-for-etcd?topic=databases-for-etcd-getting-started) | `databases-for-etcd-group` | [Location-based events](/docs/databases-for-etcd?topic=databases-for-etcd-activity-tracker) |
-| [{{site.data.keyword.databases-for-elasticsearch_full_notm}}](/docs/databases-for-elasticsearch?topic=databases-for-elasticsearch-getting-started) | `databases-for-elasticsearch-group` | [Location-based events](/docs/cloud-databases?topic=cloud-databases-activity-tracker) |
-| [{{site.data.keyword.messages-for-rabbitmq_full}}](/docs/messages-for-rabbitmq?topic=messages-for-rabbitmq-getting-started)  | `messages-for-rabbitmq-group` | [Location-based events](/docs/cloud-databases?topic=cloud-databases-activity-tracker) |
-| [{{site.data.keyword.databases-for-mongodb_full_notm}}](/docs/databases-for-mongodb) | `databases-for-mongodb-group` | [Location-based events](/docs/databases-for-mongodb?topic=databases-for-mongodb-activity-tracker) |
-| [{{site.data.keyword.databases-for-mysql_full}}](/docs/databases-for-mysql) | `databases-for-mysql-group` | [Location-based events](/docs/cloud-databases?topic=cloud-databases-activity-tracker) |
+| [{{site.data.keyword.databases-for-redis_full_notm}}](/docs/databases-for-redis?topic=databases-for-redis-getting-started) | `databases-for-redis` | [Location-based events](/docs/databases-for-redis?topic=databases-for-redis-activity-tracker) |
+| [{{site.data.keyword.databases-for-etcd_full_notm}}](/docs/databases-for-etcd?topic=databases-for-etcd-getting-started) | `databases-for-etcd` | [Location-based events](/docs/databases-for-etcd?topic=databases-for-etcd-activity-tracker) |
+| [{{site.data.keyword.databases-for-elasticsearch_full_notm}}](/docs/databases-for-elasticsearch?topic=databases-for-elasticsearch-getting-started) | `databases-for-elasticsearch` | [Location-based events](/docs/cloud-databases?topic=cloud-databases-activity-tracker) |
+| [{{site.data.keyword.messages-for-rabbitmq_full}}](/docs/messages-for-rabbitmq?topic=messages-for-rabbitmq-getting-started)  | `messages-for-rabbitmq` | [Location-based events](/docs/cloud-databases?topic=cloud-databases-activity-tracker) |
+| [{{site.data.keyword.databases-for-mongodb_full_notm}}](/docs/databases-for-mongodb) | `databases-for-mongodb` | [Location-based events](/docs/databases-for-mongodb?topic=databases-for-mongodb-activity-tracker) |
+| [{{site.data.keyword.databases-for-mysql_full}}](/docs/databases-for-mysql) | `databases-for-mysql` | [Location-based events](/docs/cloud-databases?topic=cloud-databases-activity-tracker) |
 {: caption="Table 4. List of database services" caption-side="top"}
 
 
@@ -112,7 +112,7 @@ The following table lists integration services that send auditing events:
 
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
-| [{{site.data.keyword.messagehub_full}}](/docs/EventStreams?topic=EventStreams-getting-started)| `event-streams` | [Location-based events](/docs/EventStreams?topic=EventStreams-at_events) |
+| [{{site.data.keyword.messagehub_full}}](/docs/EventStreams?topic=EventStreams-getting-started)| `messagehub` | [Location-based events](/docs/EventStreams?topic=EventStreams-at_events) |
 | [MQ on IBM Cloud](/docs/mqcloud?topic=mqcloud-getting_started) |`mqcloud` | [Location-based events](/docs/mqcloud?topic=mqcloud-at_events) |
 |[{{site.data.keyword.apiconnect_long}}](/docs/apiconnect?topic=apiconnect-getting-started)| `apiconnect` | [Location-based events](/docs/apiconnect?topic=apiconnect-at_events) |
 {: caption="Table 7. List of integration Cloud services" caption-side="top"}
@@ -139,6 +139,7 @@ The following table lists observability services that send auditing events:
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
 | [{{site.data.keyword.atracker_full}}](/docs/atracker?topic=atracker-getting-started) | `atracker` | [Location-based events](/docs/atracker?topic=atracker-at_events). |
+| [{{site.data.keyword.logs_router_full}}](/docs/logs-router?topic=logs-router-getting-startedd) | `log-router` | [Location-based events](/docs/logs-router?topic=logs-router-activity-tracker). |
 | [{{site.data.keyword.metrics_router_full}}](/docs/metrics-router?topic=metrics-router-getting-started) | `metrics-router` | [Location-based events](/docs/metrics-router?topic=metrics-router-at_events). |
 | [{{site.data.keyword.mon_full}}](/docs/monitoring?topic=monitoring-getting-started) | `sysdig-monitor` | [Location-based events](/docs/monitoring?topic=monitoring-at_events) |
 {: caption="Table 9. List of observability services" caption-side="top"}
