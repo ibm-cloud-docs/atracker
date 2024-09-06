@@ -155,15 +155,15 @@ The following table lists platform services that send auditing events:
 | [User management](/docs/account?topic=account-iamuserinv) | `user-management` | [Global events](/docs/atracker?topic=atracker-at_events_acc_mgt#at_events_acc_mgt_users) |
 | [Provisioning](/docs/account?topic=account-manage_resource) | `provisioning` | [Global events](/docs/atracker?topic=atracker-at_events_rc#at_events_rc) |
 | [{{site.data.keyword.iamlong}}](/docs/account?topic=account-iamoverview)   | `iam-identity`   \n `iam-groups`   \n `iam-am` | [Global events](/docs/atracker?topic=atracker-at_events_iam) |
-| [{{site.data.keyword.compliance_full}}](/docs/security-compliance?topic=security-compliance-getting-started) | `compliance`  \n `security-advisor` | [Location-based events (note)](/docs/security-compliance?topic=security-compliance-at_events) |
+| [{{site.data.keyword.compliance_full}}](/docs/security-compliance?topic=security-compliance-getting-started) `[*]`| `compliance`  \n `security-advisor` | [Location-based events(/docs/security-compliance?topic=security-compliance-at_events) |
 | [Global Search Service](/docs/account?topic=account-tag) | `global-search-tagging` | [Global events](/docs/atracker?topic=atracker-at_events_acc_mgt#at_events_acc_mgt_resources) |
-| [Catalog Management (note)](/docs/account?topic=account-filter-account) | `globalcatalog-collection` | [Global events](/docs/atracker?topic=atracker-at_events_acc_mgt#at_events_catalog_management) |
-| [Software instances (note)](/docs/account?topic=account-sw-instance-details) | `globalcatalog-instance` | [Global events](/docs/atracker?topic=atracker-at_events_acc_mgt#at_events_sw_instance) |
+| [Catalog Management](/docs/account?topic=account-filter-account)`[*]` | `globalcatalog-collection` | [Global events](/docs/atracker?topic=atracker-at_events_acc_mgt#at_events_catalog_management) |
+| [Software instance](/docs/account?topic=account-sw-instance-details) `[*]` | `globalcatalog-instance` | [Global events](/docs/atracker?topic=atracker-at_events_acc_mgt#at_events_sw_instance) |
 | [Context-based restrictions](/docs/account?topic=account-context-restrictions-whatis) | `context-based-restrictions` | [Global events](/docs/activity-tracker?topic=activity-tracker-events_context_based#restriction_rules_events) |
 | [Projects](/docs/secure-enterprise?topic=secure-enterprise-understanding-projects) | `project` | [Global events](/docs/secure-enterprise?topic=secure-enterprise-at_events) |
 {: caption="Table 10. List of platform services" caption-side="top"}
 
-Event routing available to {{site.data.keyword.at_full_notm}} only.
+`[*]` - Event routing available to {{site.data.keyword.at_full_notm}} only.
 {: note}
 
 ## Security services
@@ -210,10 +210,10 @@ The following table lists VMware solution services that send auditing events:
 |-------------|------------------|--------|
 | [{{site.data.keyword.vmwaresolutions_short}}](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview)   | `vmware-solutions` | [Global events](/docs/vmwaresolutions?topic=vmwaresolutions-at-events#at-events) |
 | [{{site.data.keyword.cloud}} for VMware® Solutions Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview)      | `vmware-solutions` | [Location-based events](/docs/vmwaresolutions?topic=vmwaresolutions-at-events#at-events-instance-mgmt) |
-| [KMIP for VMware (note)](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations) | `vmware-solutions` | [Location-based events](/docs/vmwaresolutions?topic=vmwaresolutions-at-events#at-events-kmip) |
+| [KMIP for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations) `[*]` | `vmware-solutions` | [Location-based events](/docs/vmwaresolutions?topic=vmwaresolutions-at-events#at-events-kmip) |
 {: caption="Table 13. List of VMware solution services" caption-side="top"}
 
-Event routing available to {{site.data.keyword.at_full_notm}} only.
+`[*]` - Event routing available to {{site.data.keyword.at_full_notm}} only.
 {: note}
 
 
@@ -245,13 +245,13 @@ The following table lists Watson AI services that send auditing events:
 | [{{site.data.keyword.knowledgestudiofull}}](/docs/watson-knowledge-studio) | `knowledge-studio` | [Location-based events](/docs/watson-knowledge-studio?topic=watson-knowledge-studio-activity-tracker-events) |
 | [{{site.data.keyword.nlufull}}](/docs/natural-language-understanding) | `natural-language-understanding` | [Location-based events](/docs/natural-language-understanding?topic=natural-language-understanding-at_events) |
 | [watsonx.governance ({{site.data.keyword.aios_full_notm}})](https://dataplatform.cloud.ibm.com/docs/content/svc-welcome/aiopenscale.html?context=wx&audience=wdp){: external} | `aiopenscale` | [Location-based events](https://dataplatform.cloud.ibm.com/docs/content/wsj/admin/at-events.html?context=cpdaas&audience=wdp#wos){: external} |
-| [{{site.data.keyword.conversationfull}} (note)](/docs/watson-assistant?topic=watson-assistant-getting-started) | `conversation`  | [Location-based events](/docs/watson-assistant?topic=watson-assistant-admin-auditing) |
-| [{{site.data.keyword.discoveryfull}} (note)](/docs/discovery-data?topic=discovery-data-getting-started) | `discovery` | [Location-based events](/docs/discovery-data?topic=discovery-data-at_events)  |
-| [{{site.data.keyword.speechtotextfull}} (note)](/docs/speech-to-text?topic=speech-to-text-gettingStarted) | `speech-to-text` | [Location-based events](/docs/speech-to-text?topic=speech-to-text-at-events) |
-| [{{site.data.keyword.texttospeechfull}} (note)](/docs/text-to-speech?topic=text-to-speech-gettingStarted) | `text-to-speech` | [Location-based events](/docs/text-to-speech?topic=text-to-speech-at-events) |
+| [{{site.data.keyword.conversationfull}}](/docs/watson-assistant?topic=watson-assistant-getting-started) `[*]` | `conversation`  | [Location-based events](/docs/watson-assistant?topic=watson-assistant-admin-auditing) |
+| [{{site.data.keyword.discoveryfull}}](/docs/discovery-data?topic=discovery-data-getting-started) `[*]` | `discovery` | [Location-based events](/docs/discovery-data?topic=discovery-data-at_events)  |
+| [{{site.data.keyword.speechtotextfull}}](/docs/speech-to-text?topic=speech-to-text-gettingStarted) `[*]` | `speech-to-text` | [Location-based events](/docs/speech-to-text?topic=speech-to-text-at-events) |
+| [{{site.data.keyword.texttospeechfull}}](/docs/text-to-speech?topic=text-to-speech-gettingStarted) `[*]` | `text-to-speech` | [Location-based events](/docs/text-to-speech?topic=text-to-speech-at-events) |
 {: caption="Table 15. List of Watson AI services" caption-side="top"}
 
-Event routing available to {{site.data.keyword.at_full_notm}} only.
+`[*]` - Event routing available to {{site.data.keyword.at_full_notm}} only.
 {: note}
 
 ## Power IaaS services

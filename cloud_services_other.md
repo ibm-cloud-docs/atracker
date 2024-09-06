@@ -33,7 +33,6 @@ The following table lists analytics services that send auditing events:
 |-------------|------------------|--------|
 | [{{site.data.keyword.iae_full}}](/docs/AnalyticsEngine?topic=AnalyticsEngine-getting-started) | `ibmanalyticsengine` | [Location-based events](/docs/AnalyticsEngine?topic=AnalyticsEngine-at_events-serverless) |
 | [{{site.data.keyword.sqlquery_full}}](/docs/sql-query?topic=sql-query-overview#overview) [Deprecated]{: tag-deprecated} | `sql-query` | [Location-based events](/docs/sql-query?topic=sql-query-activitytracker#activitytracker) |
-| [{{site.data.keyword.dv_short}}](/docs/data-virtualization?topic=data-virtualization-getting-started) | `data-virtualization` | [Location-based events](https://dataplatform.cloud.ibm.com/docs/content/wsj/admin/at-events.html?context=cpdaas&audience=wdp#dv){: exernal} |
 {: caption="Table 1. List of analytics services" caption-side="top"}
 
 
@@ -68,8 +67,8 @@ The following table lists observability services that send auditing events:
 
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
-| [{{site.data.keyword.at_full}} hosted event search offering](/docs/activity-tracker?topic=activity-tracker-getting-started) | `logdnaat` | [Location-based events](/docs/activity-tracker?topic=activity-tracker-at_events) |
-| [{{site.data.keyword.la_full}}](/docs/log-analysis?topic=log-analysis-getting-started#getting-started) | `logdna` | [Location-based events](/docs/log-analysis?topic=log-analysis-at_events) |
+| [{{site.data.keyword.at_full}} hosted event search offering](/docs/activity-tracker?topic=activity-tracker-getting-started) [Deprecated]{: tag-deprecated} | `logdnaat` | [Location-based events](/docs/activity-tracker?topic=activity-tracker-at_events) |
+| [{{site.data.keyword.la_full}}](/docs/log-analysis?topic=log-analysis-getting-started#getting-started) [Deprecated]{: tag-deprecated} | `logdna` | [Location-based events](/docs/log-analysis?topic=log-analysis-at_events) |
 {: caption="Table 4. List of observability services" caption-side="top"}
 
 
@@ -80,8 +79,6 @@ The following table lists Watson AI services that send auditing events:
 
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
-| [{{site.data.keyword.DSX_full}}](https://dataplatform.cloud.ibm.com/docs/content/svc-welcome/wsl.html?context=cpdaas) | `data-science-experience`  | [Location-based events](https://dataplatform.cloud.ibm.com/docs/content/wsj/admin/at-events.html?context=cpdaas#ws) |
-| [IBM Watson&trade; Knowledge Catalog](https://dataplatform.cloud.ibm.com/docs/content/svc-welcome/wkc.html?context=cpdaas) | `datacatalog` | [Location-based events](https://dataplatform.cloud.ibm.com/docs/content/wsj/admin/at-events.html?context=cpdaas#wkc) |
 | [{{site.data.keyword.languagetranslatorfull}}](/docs/language-translator?topic=language-translator-about) | `language-translator` | [Location-based events](/docs/language-translator?topic=language-translator-at_events) |
 | [{{site.data.keyword.pm_full}}](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/ml-overview.html) | `pm-20` | [Location-based events](https://dataplatform.cloud.ibm.com/docs/content/wsj/admin/at-events.html?context=cpdaas#wml) |
 {: caption="Table 5. List of Watson AI services" caption-side="top"}
