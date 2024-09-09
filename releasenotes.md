@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2024
-lastupdated: "2024-06-24"
+  years:  2021, 2024
+lastupdated: "2024-09-09"
 
 keywords:
 
@@ -21,6 +21,13 @@ content-type: release-note
 
 Use these release notes to learn about the latest updates to {{site.data.keyword.atracker_full}}.
 {: shortdesc}
+
+## 09 September 2024
+{: #activity-tracker-sep0924}
+{: release-note}
+
+Changes to Management API IP addresses
+: The [API Management IP addresses](/docs/atracker?topic=atracker-endpoints) for the Dallas, Frankfurt, London, Sydney and Washington regions are changing on or after 9 October 2024. To avoid disruption, customers with firewalls must include the new IP addresses.
 
 ## 24 June 2024
 {: #activity-tracker-june2424}
