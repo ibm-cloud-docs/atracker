@@ -27,7 +27,7 @@ The IP addresses with a date next to them indicate when the IP addresses will be
 The following table shows the private API endpoints. The port for all endpoints is `https/443` .
 
 | Region                   | ATracker Private endpoint                         | IPs |
-|--------------------------|---------------------------------------------------|--------------|-----|
+|--------------------------|---------------------------------------------------|-------|
 | Chennai (`in-che`)      | `https://private.in-che.atracker.cloud.ibm.com` | 166.9.249.118  \n 166.9.249.147  \n 166.9.249.183 |
 | Dallas (`us-south`)      | `https://private.us-south.atracker.cloud.ibm.com` | 166.9.58.136 [Deprecated 9 October 2024]{: tag-deprecated}   \n 166.9.51.140 [Deprecated 9 October 2024]{: tag-deprecated}  \n 166.9.48.211 [Deprecated 9 October 2024]{: tag-deprecated}  \n 166.9.228.73 [New 9 October 2024]{: tag-cool-gray}  \n 166.9.229.64 [New 9 October 2024]{: tag-cool-gray}  \n 166.9.230.57 [New 9 October 2024]{: tag-cool-gray} |
 | Frankfurt (`eu-de`)      | `https://private.eu-de.atracker.cloud.ibm.com`  | 166.9.30.195 [Deprecated 10 October 2024]{: tag-deprecated}   \n 166.9.28.229 [Deprecated 10 October 2024]{: tag-deprecated}  \n 166.9.32.161 [Deprecated 10 October 2024]{: tag-deprecated}  \n 166.9.209.204 [New 10 October 2024]{: tag-cool-gray}  \n 166.9.209.236 [New 10 October 2024]{: tag-cool-gray}  \n 166.9.210.2 [New 10 October 2024]{: tag-cool-gray} |
