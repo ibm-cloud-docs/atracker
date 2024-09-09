@@ -36,9 +36,9 @@ The following table shows the private API endpoints. The port for all endpoints 
 | Osaka (`jp-osa`)         | `https://private.jp-osa.atracker.cloud.ibm.com`  | 166.9.247.46  \n 166.9.247.71  \n 166.9.247.110 |
 | Sao Paulo (`br-sao`)        | `https://private.br-sao.atracker.cloud.ibm.com` | 166.9.246.76  \n 166.9.246.109  \n 166.9.246.157 |
 | Sydney (`au-syd`)        | `https://private.au-syd.atracker.cloud.ibm.com` | 166.9.54.51 [Deprecated 7 October 2024]{: tag-deprecated}  \n  166.9.52.48 [Deprecated 7 October 2024]{: tag-deprecated}  \n 166.9.56.53 [Deprecated 7 October 2024]{: tag-deprecated}  \n 166.9.244.119 [New 7 October 2024]{: tag-cool-gray}  \n 166.9.244.151 [New 7 October 2024]{: tag-cool-gray}  \n 166.9.244.183 [New 7 October 2024]{: tag-cool-gray} |
-| Tokyo  \n (`jp-tok`)         | `https://private.jp-tok.atracker.cloud.ibm.com`  | 166.9.249.115   \n 166.9.249.144  \n 166.9.249.180 |
-| Toronto  \n (`ca-tor`)         | `https://private.ca-tor.atracker.cloud.ibm.com`  | 166.9.247.154   \n 166.9.247.183  \n 166.9.247.216 |
-| Washington  \n (`us-east`)   | `https://private.us-east.atracker.cloud.ibm.com`  | 166.9.24.96 [Deprecated 8 October 2024]{: tag-deprecated}  \n 166.9.22.84 [Deprecated 8 October 2024]{: tag-deprecated}  \n 166.9.20.212 [Deprecated 8 October 2024]{: tag-deprecated}  \n 166.9.231.252 [New 8 October 2024]{: tag-cool-gray}  \n 166.9.251.89 [New 8 October 2024]{: tag-cool-gray}  \n 166.9.233.28 [New 8 October 2024]{: tag-cool-gray} |
+| Tokyo  (`jp-tok`)         | `https://private.jp-tok.atracker.cloud.ibm.com`  | 166.9.249.115   \n 166.9.249.144  \n 166.9.249.180 |
+| Toronto  (`ca-tor`)         | `https://private.ca-tor.atracker.cloud.ibm.com`  | 166.9.247.154   \n 166.9.247.183  \n 166.9.247.216 |
+| Washington (`us-east`)   | `https://private.us-east.atracker.cloud.ibm.com`  | 166.9.24.96 [Deprecated 8 October 2024]{: tag-deprecated}  \n 166.9.22.84 [Deprecated 8 October 2024]{: tag-deprecated}  \n 166.9.20.212 [Deprecated 8 October 2024]{: tag-deprecated}  \n 166.9.231.252 [New 8 October 2024]{: tag-cool-gray}  \n 166.9.251.89 [New 8 October 2024]{: tag-cool-gray}  \n 166.9.233.28 [New 8 October 2024]{: tag-cool-gray} |
 {: caption="Table 1. Lists of private API endpoints for interacting with {{site.data.keyword.atracker_full_notm}}" caption-side="top"}
 
 
