@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2024
-lastupdated: "2024-09-06"
+lastupdated: "2024-09-10"
 
 keywords:
 
@@ -31,10 +31,8 @@ The following table lists analytics services that send auditing events:
 
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
-| [{{site.data.keyword.iae_full}}](/docs/AnalyticsEngine?topic=AnalyticsEngine-getting-started) | `ibmanalyticsengine` | [Location-based events](/docs/AnalyticsEngine?topic=AnalyticsEngine-at_events-serverless) |
 | [{{site.data.keyword.sqlquery_full}}](/docs/sql-query?topic=sql-query-overview#overview) [Deprecated]{: tag-deprecated} | `sql-query` | [Location-based events](/docs/sql-query?topic=sql-query-activitytracker#activitytracker) |
 {: caption="Table 1. List of analytics services" caption-side="top"}
-
 
 ## Database services
 {: #cloud_services_other_database}
@@ -43,7 +41,6 @@ The following table lists database services that send auditing events:
 
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
-| [{{site.data.keyword.databases-for-enterprisedb_full}}](/docs/databases-for-enterprisedb?topic=databases-for-enterprisedb-getting-started) | `databases-for-enterprisedb-group` | [Location-based events](/docs/databases-for-enterprisedb?topic=databases-for-enterprisedb-activity-tracker) |
 | [{{site.data.keyword.Db2_on_Cloud_long}}](/docs/Db2onCloud?topic=Db2onCloud-about) | `db2oncloud` | [Location-based events](/docs/Db2onCloud?topic=Db2onCloud-auditing) |
 {: caption="Table 2. List of database services" caption-side="top"}
 
@@ -79,7 +76,6 @@ The following table lists Watson AI services that send auditing events:
 
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
-| [{{site.data.keyword.languagetranslatorfull}}](/docs/language-translator?topic=language-translator-about) | `language-translator` | [Location-based events](/docs/language-translator?topic=language-translator-at_events) |
 | [{{site.data.keyword.pm_full}}](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/ml-overview.html) | `pm-20` | [Location-based events](https://dataplatform.cloud.ibm.com/docs/content/wsj/admin/at-events.html?context=cpdaas#wml) |
 {: caption="Table 5. List of Watson AI services" caption-side="top"}
 
