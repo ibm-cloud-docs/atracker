@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2024
-lastupdated: "2024-09-09"
+lastupdated: "2024-09-12"
 
 keywords:
 
@@ -29,16 +29,16 @@ The following table shows the private API endpoints. The port for all endpoints 
 | Region                   | ATracker Private endpoint                         | IPs |
 |--------------------------|---------------------------------------------------|-------|
 | Chennai (`in-che`)      | `https://private.in-che.atracker.cloud.ibm.com` | 166.9.249.118  \n 166.9.249.147  \n 166.9.249.183 |
-| Dallas (`us-south`)      | `https://private.us-south.atracker.cloud.ibm.com` | 166.9.58.136 [Deprecated 14 October 2024]{: tag-deprecated}   \n 166.9.51.140 [Deprecated 14 October 2024]{: tag-deprecated}  \n 166.9.48.211 [Deprecated 14 October 2024]{: tag-deprecated}  \n 166.9.228.73 [New 14 October 2024]{: tag-cool-gray}  \n 166.9.229.64 [New 14 October 2024]{: tag-cool-gray}  \n 166.9.230.57 [New 14 October 2024]{: tag-cool-gray} |
-| Frankfurt (`eu-de`)      | `https://private.eu-de.atracker.cloud.ibm.com`  | 166.9.30.195 [Deprecated 15 October 2024]{: tag-deprecated}   \n 166.9.28.229 [Deprecated 15 October 2024]{: tag-deprecated}  \n 166.9.32.161 [Deprecated 15 October 2024]{: tag-deprecated}  \n 166.9.209.204 [New 15 October 2024]{: tag-cool-gray}  \n 166.9.209.236 [New 15 October 2024]{: tag-cool-gray}  \n 166.9.210.2 [New 15 October 2024]{: tag-cool-gray} |
-| London (`eu-gb`)         | `https://private.eu-gb.atracker.cloud.ibm.com`  | 166.9.38.78 [Deprecated 10 October 2024]{: tag-deprecated}  \n 166.9.34.154 [Deprecated 10 October 2024]{: tag-deprecated}  \n 166.9.36.109 [Deprecated 10 October 2024]{: tag-deprecated}  \n 166.9.245.170 [New 10 October 2024]{: tag-cool-gray}  \n 166.9.245.202 [New 10 October 2024]{: tag-cool-gray}  \n 166.9.245.234 [New 10 October 2024]{: tag-cool-gray} |
+| Dallas (`us-south`)      | `https://private.us-south.atracker.cloud.ibm.com` | 166.9.58.136 [Deprecated 16 October 2024]{: tag-deprecated}   \n 166.9.51.140 [Deprecated 16 October 2024]{: tag-deprecated}  \n 166.9.48.211 [Deprecated 16 October 2024]{: tag-deprecated}  \n 166.9.228.73 [New 16 October 2024]{: tag-cool-gray}  \n 166.9.229.64 [New 16 October 2024]{: tag-cool-gray}  \n 166.9.230.57 [New 16 October 2024]{: tag-cool-gray} |
+| Frankfurt (`eu-de`)      | `https://private.eu-de.atracker.cloud.ibm.com`  | 166.9.30.195 [Deprecated 17 October 2024]{: tag-deprecated}   \n 166.9.28.229 [Deprecated 17 October 2024]{: tag-deprecated}  \n 166.9.32.161 [Deprecated 17 October 2024]{: tag-deprecated}  \n 166.9.209.204 [New 17 October 2024]{: tag-cool-gray}  \n 166.9.209.236 [New 17 October 2024]{: tag-cool-gray}  \n 166.9.210.2 [New 17 October 2024]{: tag-cool-gray} |
+| London (`eu-gb`)         | `https://private.eu-gb.atracker.cloud.ibm.com`  | 166.9.38.78 [Deprecated 15 October 2024]{: tag-deprecated}  \n 166.9.34.154 [Deprecated 15 October 2024]{: tag-deprecated}  \n 166.9.36.109 [Deprecated 15 October 2024]{: tag-deprecated}  \n 166.9.245.170 [New 15 October 2024]{: tag-cool-gray}  \n 166.9.245.202 [New 15 October 2024]{: tag-cool-gray}  \n 166.9.245.234 [New 15 October 2024]{: tag-cool-gray} |
 | Madrid (`eu-es`)         | `https://private.eu-es.atracker.cloud.ibm.com`  | 166.9.225.11  \n 166.9.226.12  \n 166.9.227.11 |
 | Osaka (`jp-osa`)         | `https://private.jp-osa.atracker.cloud.ibm.com`  | 166.9.247.46  \n 166.9.247.71  \n 166.9.247.110 |
 | Sao Paulo (`br-sao`)        | `https://private.br-sao.atracker.cloud.ibm.com` | 166.9.246.76  \n 166.9.246.109  \n 166.9.246.157 |
-| Sydney (`au-syd`)        | `https://private.au-syd.atracker.cloud.ibm.com` | 166.9.54.51 [Deprecated 9 October 2024]{: tag-deprecated}  \n  166.9.52.48 [Deprecated 9 October 2024]{: tag-deprecated}  \n 166.9.56.53 [Deprecated 9 October 2024]{: tag-deprecated}  \n 166.9.244.119 [New 9 October 2024]{: tag-cool-gray}  \n 166.9.244.151 [New 9 October 2024]{: tag-cool-gray}  \n 166.9.244.183 [New 9 October 2024]{: tag-cool-gray} |
+| Sydney (`au-syd`)        | `https://private.au-syd.atracker.cloud.ibm.com` | 166.9.54.51 [Deprecated 14 October 2024]{: tag-deprecated}  \n  166.9.52.48 [Deprecated 14 October 2024]{: tag-deprecated}  \n 166.9.56.53 [Deprecated 14 October 2024]{: tag-deprecated}  \n 166.9.244.119 [New 14 October 2024]{: tag-cool-gray}  \n 166.9.244.151 [New 14 October 2024]{: tag-cool-gray}  \n 166.9.244.183 [New 14 October 2024]{: tag-cool-gray} |
 | Tokyo  (`jp-tok`)         | `https://private.jp-tok.atracker.cloud.ibm.com`  | 166.9.249.115   \n 166.9.249.144  \n 166.9.249.180 |
 | Toronto  (`ca-tor`)         | `https://private.ca-tor.atracker.cloud.ibm.com`  | 166.9.247.154   \n 166.9.247.183  \n 166.9.247.216 |
-| Washington (`us-east`)   | `https://private.us-east.atracker.cloud.ibm.com`  | 166.9.24.96 [Deprecated 10 October 2024]{: tag-deprecated}  \n 166.9.22.84 [Deprecated 10 October 2024]{: tag-deprecated}  \n 166.9.20.212 [Deprecated 10 October 2024]{: tag-deprecated}  \n 166.9.231.252 [New 10 October 2024]{: tag-cool-gray}  \n 166.9.251.89 [New 10 October 2024]{: tag-cool-gray}  \n 166.9.233.28 [New 10 October 2024]{: tag-cool-gray} |
+| Washington (`us-east`)   | `https://private.us-east.atracker.cloud.ibm.com`  | 166.9.24.96 [Deprecated 15 October 2024]{: tag-deprecated}  \n 166.9.22.84 [Deprecated 15 October 2024]{: tag-deprecated}  \n 166.9.20.212 [Deprecated 15 October 2024]{: tag-deprecated}  \n 166.9.231.252 [New 15 October 2024]{: tag-cool-gray}  \n 166.9.251.89 [New 15 October 2024]{: tag-cool-gray}  \n 166.9.233.28 [New 15 October 2024]{: tag-cool-gray} |
 {: caption="Table 1. Lists of private API endpoints for interacting with {{site.data.keyword.atracker_full_notm}}" caption-side="top"}
 
 
