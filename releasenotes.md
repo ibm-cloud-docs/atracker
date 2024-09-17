@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2024
-lastupdated: "2024-09-12"
+lastupdated: "2024-09-17"
 
 keywords:
 
@@ -21,6 +21,13 @@ content-type: release-note
 
 Use these release notes to learn about the latest updates to {{site.data.keyword.atracker_full}}.
 {: shortdesc}
+
+## 24 September 2024
+{: #activity-tracker-sep2424}
+{: release-note}
+
+Additional service-to-service authentication support.
+:  {{site.data.keyword.atracker_full}} now supports service-to-service authentication to {{site.data.keyword.messagehub}} endpoints.
 
 ## 09 September 2024
 {: #activity-tracker-sep0924}
