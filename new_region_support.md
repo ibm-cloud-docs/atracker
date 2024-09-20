@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2024
-lastupdated: "2024-08-12"
+lastupdated: "2024-09-20"
 
 keywords:
 
@@ -19,7 +19,7 @@ subcollection: atracker
 If {{site.data.keyword.atracker_full}} is planned to be supported in a currently non-supported region, all existing customers will need to evaluate their {{site.data.keyword.atracker_full_notm}} configurations and make any required changes. IBM will announce if a new region is supported.
 {: shortdesc}
 
-## Check whether you have the right permissions
+## Check whether you have the correct permissions
 {: #new_region_1}
 
 Log in to the {{site.data.keyword.cloud_notm}} by using an ID with {{site.data.keyword.iamshort}} with [Administrator permissions.](/docs/atracker?topic=atracker-iam)
@@ -119,7 +119,3 @@ Metadata region backup:                              us-east
 Default targets:                                     [aa34579944-99c2-4592-99a8-1e1994926295]
 ```
 {: screen}
-
-
-
-
