@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2022, 2024
-lastupdated: "2024-01-18"
+  years:  2021, 2024
+lastupdated: "2024-09-20"
 
 keywords:
 
@@ -171,7 +171,7 @@ You can [get credentials by using the {{site.data.keyword.cloud_notm}} CLI](/doc
 {: note}
 
 ## Configure service-to-service authorization
-{: #getting-started-routing-step3}
+{: #getting-started-routing-es-step3}
 {: step}
 
 Configure service-to-service authorization to your {{site.data.keyword.messagehub}} topic so you do not need to pass an API key when writing your encrypted data to the {{site.data.keyword.messagehub}} topic.
