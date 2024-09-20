@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2024
-lastupdated: "2024-09-10"
+lastupdated: "2024-09-20"
 
 keywords:
 
@@ -41,7 +41,7 @@ The following table lists services that send auditing events:
 
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
-| [{{site.data.keyword.BluVirtServers_full}} (Classic)](/docs/virtual-servers?topic=virtual-servers-about-virtual-servers)| `audit-log` | [Location-based events](/docs/virtual-servers?topic=virtual-servers-at_events#at_events) |
+| [{{site.data.keyword.BluVirtServers_full}} (Classic)](/docs/virtual-servers?topic=virtual-servers-about-virtual-servers)| `audit-log` | Location-based events |
 | [{{site.data.keyword.baremetal_long}} (Classic)](/docs/bare-metal?topic=bare-metal-about-bm#about-bm) | `audit-log` | [Location-based events](/docs/bare-metal?topic=bare-metal-bm-at-events#bm-at-events) |
 {: caption="Table 2. List of classic services" caption-side="top"}
 
@@ -134,8 +134,8 @@ The following table lists network services that send auditing events:
 
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
-| [{{site.data.keyword.BluDirectLink}} solution](/docs/dl?topic=dl-get-started-with-ibm-cloud-dl) | `directlink.dedicated` | [Global events](/docs/dl?topic=dl-new-at_events) |
-| [{{site.data.keyword.tg_full}}](/docs/transit-gateway?topic=transit-gateway-getting-started) | `transit` | [Global events](/docs/transit-gateway?topic=transit-gateway-new-at_events) |
+| [{{site.data.keyword.BluDirectLink}} solution](/docs/dl?topic=dl-get-started-with-ibm-cloud-dl) | `directlink.dedicated` | [Global events](docs/dl?topic=dl-at_events) |
+| [{{site.data.keyword.tg_full}}](/docs/transit-gateway?topic=transit-gateway-getting-started) | `transit` | [Global events](/docs/transit-gateway?topic=transit-gateway-at_events) |
 | [{{site.data.keyword.dns_full}}](/docs/dns-svcs?topic=dns-svcs-getting-started) | `dns-svcs` | [Global events](/docs/dns-svcs?topic=dns-svcs-at_events) |
 | [{{site.data.keyword.cis_full}} (CIS)](/docs/cis?topic=cis-getting-started)| `internet-svcs` | [Global events](/docs/cis?topic=cis-at_events) |
 {: caption="Table 9. List of network services" caption-side="top"}
@@ -149,7 +149,7 @@ The following table lists observability services that send auditing events:
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
 | [{{site.data.keyword.atracker_full}}](/docs/atracker?topic=atracker-getting-started) | `atracker` | [Location-based events](/docs/atracker?topic=atracker-at_events). |
-| [{{site.data.keyword.logs_routing_full}}](/docs/logs-router?topic=logs-router-getting-startedd) | `log-router` | [Location-based events](/docs/logs-router?topic=logs-router-activity-tracker). |
+| [{{site.data.keyword.logs_routing_full}}](/docs/logs-router) | `log-router` | [Location-based events](/docs/logs-router?topic=logs-router-activity-tracker). |
 | [{{site.data.keyword.metrics_router_full}}](/docs/metrics-router?topic=metrics-router-getting-started) | `metrics-router` | [Location-based events](/docs/metrics-router?topic=metrics-router-at_events). |
 | [{{site.data.keyword.mon_full}}](/docs/monitoring?topic=monitoring-getting-started) | `sysdig-monitor` | [Location-based events](/docs/monitoring?topic=monitoring-at_events) |
 {: caption="Table 10. List of observability services" caption-side="top"}
@@ -221,9 +221,9 @@ The following table lists VMware solution services that send auditing events:
 
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
-| [{{site.data.keyword.vmwaresolutions_short}}](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview)   | `vmware-solutions` | [Global events](/docs/vmwaresolutions?topic=vmwaresolutions-at-events#at-events) |
-| [{{site.data.keyword.cloud}} for VMware® Solutions Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview)      | `vmware-solutions` | [Location-based events](/docs/vmwaresolutions?topic=vmwaresolutions-at-events#at-events-instance-mgmt) |
-| [KMIP for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations) `[*]` | `vmware-solutions` | [Location-based events](/docs/vmwaresolutions?topic=vmwaresolutions-at-events#at-events-kmip) |
+| [{{site.data.keyword.vmwaresolutions_short}}](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview)   | `vmware-solutions` | [Global events](/docs/vmwaresolutions?topic=vmwaresolutions-at_events) |
+| [{{site.data.keyword.cloud}} for VMware® Solutions Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview)      | `vmware-solutions` | [Location-based events](/docs/vmwaresolutions?topic=vmwaresolutions-at_events#at-events-vdc) |
+| [KMIP for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations) `[*]` | `vmware-solutions` | [Location-based events](/docs/vmwaresolutions?topic=vmwaresolutions-at_events#at-events-kmip) |
 {: caption="Table 14. List of VMware solution services" caption-side="top"}
 
 `[*]` - Event routing available to {{site.data.keyword.at_full_notm}} only.
@@ -259,7 +259,7 @@ The following table lists Watson AI services that send auditing events:
 | [{{site.data.keyword.nlufull}}](/docs/natural-language-understanding) | `natural-language-understanding` | [Location-based events](/docs/natural-language-understanding?topic=natural-language-understanding-at_events) |
 | [watsonx.governance ({{site.data.keyword.aios_full_notm}})](https://dataplatform.cloud.ibm.com/docs/content/svc-welcome/aiopenscale.html?context=wx&audience=wdp){: external} |
 | [watsonx.orchestrate}}](https://www.ibm.com/docs/en/watsonx/watson-orchestrate/current?topic=getting-started-watsonx-orchestrate){: external} |  `watsonx-orchestrate` | [Location-based events](https://www.ibm.com/docs/en/SSAVQO/security/activity_tracker.html){: external} |
-| [{{site.data.keyword.conversationfull}}](/docs/watson-assistant?topic=watson-assistant-getting-started) | `conversation`  | [Location-based events](/docs/watson-assistant?topic=watson-assistant-admin-auditing) |
+| [{{site.data.keyword.conversationfull}}](/docs/watson-assistant?topic=watson-assistant-getting-started) | `conversation`  | [Location-based events](/docs/assistant?topic=assistant-at-events) |
 | [{{site.data.keyword.discoveryfull}}](/docs/discovery-data?topic=discovery-data-getting-started) | `discovery` | [Location-based events](/docs/discovery-data?topic=discovery-data-at_events)  |
 | [{{site.data.keyword.speechtotextfull}}](/docs/speech-to-text?topic=speech-to-text-gettingStarted) | `speech-to-text` | [Location-based events](/docs/speech-to-text?topic=speech-to-text-at-events) |
 | [{{site.data.keyword.texttospeechfull}}](/docs/text-to-speech?topic=text-to-speech-gettingStarted) | `text-to-speech` | [Location-based events](/docs/text-to-speech?topic=text-to-speech-at-events) |
