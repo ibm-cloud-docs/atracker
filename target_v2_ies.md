@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2024
-lastupdated: "2024-07-09"
+lastupdated: "2024-09-17"
 
 keywords:
 
@@ -50,6 +50,19 @@ If you need to restrict access to a single {{site.data.keyword.messagehub}} topi
 
 For more information, see the [{{site.data.keyword.messagehub_full}} documentation.](/docs/EventStreams?topic=EventStreams-security)
 
+## Authentication options
+{: #target_v2_ies_auth_opts}
+
+When writing to an {{site.data.keyword.messagehub}} target you can use one of the following options to authenticate to an {{site.data.keyword.messagehub_full}} topic.
+
+* By configuring service-to-service (S2S) authorization (recommended).
+* By providing an API key when configuring the target.
+
+
+You can configure service-to-service authorization to your {{site.data.keyword.messagehub}} topic so you do not need to pass an [API key](#target_v2_ies_apikey) when writing your data to the {{site.data.keyword.messagehub}} topic.
+{: note}
+
+
 ## CLI prerequisites
 {: #target_prereqs_ies}
 {: cli}
@@ -65,6 +78,126 @@ Before you use the CLI to manage targets, complete the following steps:
 
 3. Log in to {{site.data.keyword.cloud_notm}}. Run the following command: [ibmcloud login](/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_login)
 
+## Obtaining your {{site.data.keyword.messagehub}} Instance API key
+{: #target_v2_ies_apikey}
+
+For information on obtaining your {{site.data.keyword.messagehub}} Instance API key, see [generating an API key to access a topic](/docs/EventStreams?topic=EventStreams-connecting).
+
+## Configuring S2S authorization using the UI within the same account
+{: #target_v2_ies_s2s_ui}
+{: ui}
+
+Do the following to configure a service-to-service authorization using the {{site.data.keyword.cloud_notm}} UI.
+
+1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external} as the account owner that will be configuring {{site.data.keyword.atracker_full_notm}} targets.
+
+	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} dashboard opens.
+
+2. Click **Manage** &gt; **Access (IAM)**.  **Manage access and users** is displayed.
+
+3. Click **Authorizations**.
+
+4. Click **Create**.
+
+5. For **Source service** select *Activity Tracker* and for **How do you want to scope the access?** select *All resources*.
+
+6. For **Target service** select *Message Hub* for **How do you want to scope the access?** select *Resources based on selected attributes*.
+
+7. Select **Service instance** and **string equals** the name of your {{site.data.keyword.messagehub}} instance.
+
+8. For **Service access** select **Object writer**.
+
+9. Click **Authorize**.  Your new service-to-service authorization will be listed in the **Manage authorizations** view.
+
+## Configuring S2S authorization using the CLI
+{: #target_v2_ies_s2s_cli}
+{: cli}
+
+Do the following to configure a service-to-service authorization using the {{site.data.keyword.cloud_notm}} CLI.
+
+1. [Log in to your {{site.data.keyword.cloud_notm}} account](/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_login) as the account owner that will be configuring {{site.data.keyword.atracker_full_notm}} authorization.
+
+2. Create an authorization policy defining your service-to-service authorization.
+
+   ```sh
+   ibmcloud iam authorization-policy-create atracker messagehub "Writer" [--target-service-instance-id <IES_SERVICE_INSTANCE>
+   ```
+   {: pre}
+
+   Where:
+
+   `IES_SERVICE_INSTANCE` is the CRN of the {{site.data.keyword.messagehub}} instance to be authorized.
+
+
+## Configuring S2S authorization using the API
+{: #target_v2_ies_s2s_api}
+{: api}
+
+Do the following to configure a service-to-service authorization using the {{site.data.keyword.cloud_notm}} API.
+
+1. [Log in to your {{site.data.keyword.cloud_notm}} account](/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_login) as the account owner that will be configuring {{site.data.keyword.atracker_full_notm}} IAM authorization.
+
+2. Create an `authorization_policy_resource.json` file defining your service-to-service authorization.
+
+   ```json
+   {
+       "type": "authorization",
+       "subjects": [
+           {
+               "attributes": [
+                 {
+                      "name": "accountId",
+                      "value": "CUSTOMER_ACCOUNT_ID"
+                  },
+                  {
+                       "name": "serviceName",
+                       "value": "atracker"
+                   }
+               ]
+           }
+       ],
+       "roles": [
+           {
+               "role_id": "crn:v1:bluemix:public:iam::::serviceRole:Writer"
+           }
+       ],
+       "resources": [
+           {
+               "attributes": [
+                 {
+                      "name": "accountId",
+                      "value": "CUSTOMER_ACCOUNT_ID"
+                  },
+                  {
+                       "name": "serviceName",
+                       "value": "messagehub"
+                   },
+                   {
+                       "name": "serviceInstance",
+                       "value": "IES_SERVICE_INSTANCE"
+                   }
+               ]
+           }
+       ]
+   }
+   ```
+   {: codeblock}
+
+   Where:
+
+   `CUSTOMER_ACCOUNT_ID` is the account GUID for the account that will be configuring targets.  This can be found by using the [`ibmcloud account list`](/docs/cli?topic=cli-ibmcloud_commands_account#ibmcloud_account_list) command.
+
+   `IES_SERVICE_INSTANCE` is the CRN of the IES instance to be authorized.
+
+3. Get an IAM access token. For more information, see [Retrieving IAM access tokens](/docs/atracker?topic=atracker-retrieve-iam-token).
+
+4. Run the following command to configure your service-to-service authorization:
+
+   ```sh
+   curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header "Authorization: $ACCESS_TOKEN" -d @authorization_policy_resource.json "https://iam.cloud.ibm.com/v1/policies"
+   ```
+   {: pre}
+
 
 ## Creating an {{site.data.keyword.messagehub}} target using the CLI
 {: #target-create-cli-ies}
@@ -73,7 +206,7 @@ Before you use the CLI to manage targets, complete the following steps:
 Use this command to create a {{site.data.keyword.messagehub_full}} target to be used to configure a destination for activity events.
 
 ```sh
- ibmcloud atracker target create --name TARGET_NAME --type TARGET_TYPE ( [--file EVENTSTREAMS_ENDPOINT_DEFINITION_JSON_FILE] | ( [--target-crn EVENTSTREAMS_TARGET_CRN] [--brokers BROKER_LIST] [--topic TOPIC] [--api-key ( EVENTSTREAMS_API_KEY | @EVENTSTREAMS_API_KEY_FILE )] ) ) [--region REGION] [--output FORMAT]
+ ibmcloud atracker target create --name TARGET_NAME --type TARGET_TYPE ( [--file EVENTSTREAMS_ENDPOINT_DEFINITION_JSON_FILE] | ( [--target-crn EVENTSTREAMS_TARGET_CRN] [--brokers BROKER_LIST] [--topic TOPIC] [--api-key ( EVENTSTREAMS_API_KEY | @EVENTSTREAMS_API_KEY_FILE )] | [--service-to-service-enabled ( TRUE | FALSE )]) ) [--region REGION] [--output FORMAT]
 ```
 {: pre}
 
@@ -117,6 +250,9 @@ Use this command to create a {{site.data.keyword.messagehub_full}} target to be 
 `--api-key EVENTSTREAMS_API_KEY` | `@EVENTSTREAMS_API_KEY_FILE`
 :   The password value found in the {{site.data.keyword.messagehub}} service credential. This is the IAM API key.
 
+`--service-to-service-enabled`
+:   Determines if  {{site.data.keyword.atracker_full_notm}} has service to service authentication enabled. Set this flag to true if service to service is enabled and do not supply an apikey.
+
 `--output FORMAT`
 :   Currently supported format is JSON. If specified, output will be returned in JSON format.  If `JSON` is not specified, output will be returned in a tabular format.
 
@@ -155,7 +291,7 @@ UpdatedAt:                2022-10-20T19:20:38.888Z
 Use this command to update an {{site.data.keyword.messagehub}} target for an {{site.data.keyword.atracker_full_notm}} region.  Any specified value that is different from when the target was originally created will be updated to the value specified in the command.
 
 ```sh
-ibmcloud atracker target update --target TARGET [--name TARGET_NAME] [ [--file EVENTSTREAMS_ENDPOINT_DEFINITION_JSON_FILE] | ( [--brokers BROKER_LIST] [--target-crn EVENTSTREAMS_TARGET_CRN] [--topic TOPIC] ( [--api-key ( EVENTSTREAMS_API_KEY | @EVENTSTREAMS_API_KEY_FILE )]))] [--output FORMAT]
+ibmcloud atracker target update --target TARGET [--name TARGET_NAME] [ [--file EVENTSTREAMS_ENDPOINT_DEFINITION_JSON_FILE] | ( [--brokers BROKER_LIST] [--target-crn EVENTSTREAMS_TARGET_CRN] [--topic TOPIC] ( [--api-key ( EVENTSTREAMS_API_KEY | @EVENTSTREAMS_API_KEY_FILE )] | [--service-to-service-enabled ( TRUE | FALSE )]))] [--output FORMAT]
 ```
 {: pre}
 
@@ -210,6 +346,9 @@ ibmcloud atracker target update --target TARGET [--name TARGET_NAME] [ [--file E
 
 `--api-key EVENTSTREAMS_API_KEY` | `@EVENTSTREAMS_API_KEY_FILE`
 :   The password value found in the {{site.data.keyword.messagehub}} service credential. This is the IAM API key
+
+`--service-to-service-enabled`
+:   Determines if  {{site.data.keyword.atracker_full_notm}} has service to service authentication enabled. Set this flag to true if service to service is enabled and do not supply an apikey.
 
 `--output FORMAT`
 :   Currently supported format is JSON. If specified, output will be returned in JSON format.  If `JSON` is not specified, output will be returned in a tabular format.
@@ -470,7 +609,8 @@ curl -X POST  <ENDPOINT>/api/v2/targets   -H "Authorization:  $ACCESS_TOKEN"   -
         "target_crn": "EVENTSTREAMS_CRN",
         "brokers": "BROKER_LIST",
         "topic”: "TOPIC_NAME",
-        "password": "API_KEY"}
+        "password": "API_KEY",
+        "service_to_service_enabled": false}
     }
   }'
 ```
@@ -490,6 +630,8 @@ Where
 - `TOPIC_NAME` is the name of an {{site.data.keyword.messagehub}} topic name where the events are sent.
 
 - `API_KEY` is the password value found in the {{site.data.keyword.messagehub}} service credential. This is the IAM API key.
+
+- `service_to_service_enabled` determines if  {{site.data.keyword.atracker_full_notm}} has service to service authentication enabled. Set this flag to true if service to service is enabled and do not supply an apikey.
 
 In the response, you get information about the target such as the `id`, that indicates the GUID of the target, and the `crn`, that indicates the CRN of the target.
 
@@ -513,7 +655,8 @@ curl -X PUT  <ENDPOINT>/api/v2/targets/TARGET_ID  -H "Authorization:  $ACCESS_TO
       "target_crn": "EVENTSTREAMS_CRN",
       "brokers": "BROKER_LIST",
       "topic”: "TOPIC_NAME",
-      "password": "API_KEY"}
+      "password": "API_KEY",
+      "service_to_service_enabled": false}
     }
   }'
 ```
@@ -536,6 +679,7 @@ Where
 
 - `API_KEY` is the password value found in the {{site.data.keyword.messagehub}} service credential. This is the IAM API key.
 
+- `service_to_service_enabled` determines if {{site.data.keyword.atracker_full_notm}} has service to service authentication enabled. Set this flag to true if service to service is enabled and do not supply an apikey.
 
 ## Deleting a target using the API
 {: #target-delete-api-ies}

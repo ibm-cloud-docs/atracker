@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2024
-lastupdated: "2024-01-18"
+  years:  2021, 2024
+lastupdated: "2024-09-20"
 
 keywords:
 
@@ -177,7 +177,7 @@ In the {{site.data.keyword.cloud_notm}}, an administrator, or a user that has th
 * A user can log in by using an API key.
 * A federated user that uses a corporate or enterprise single sign-on ID can log in to {{site.data.keyword.cloud_notm}} by applying a trusted profile.
 
-The following fields include extra information:
+The following fields include additional information:
 * The `initiator.name` includes information about the user that logs in to the account.
 * The `X-Global-Transaction-Id` includes an ID that you can use when you open a support ticket if you need to get more information.
 
@@ -188,7 +188,7 @@ The following fields include extra information:
 
 When a user logs in from the {{site.data.keyword.cloud_notm}} UI, you get an event in the account with action `iam-identity.user-refreshtoken.login`.
 
-The following field includes extra information:
+The following field includes additional information:
 * In requestData, the `client_id` field is set to **HOP55v1CCT**. This value indicates a UI request.
 
 #### Log in with a federated ID from the {{site.data.keyword.cloud_notm}} CLI by using a one-time passcode or an API key
@@ -198,7 +198,7 @@ When a user [logs in from the {{site.data.keyword.cloud_notm}} CLI by using a on
 
 When a user [logs in from the {{site.data.keyword.cloud_notm}} CLI by using an API key](/docs/account?topic=account-federated_id#api_key), you get an event in the account with action `iam-identity.user-apikey.login`.
 
-The following field includes extra information:
+The following field includes additional information:
 * In requestData, the `client_id` field is set to **bx**. This value indicates a CLI request.
 
 #### Log in with a federated ID by using trusted profiles
@@ -228,7 +228,7 @@ A service ID identifies a service or application similar to how a user ID identi
 
 When an action to update a service ID is requested, you get an event in the account with action `iam-identity.account-serviceid.update`.
 
-The following fields include extra information:
+The following fields include additional information:
 * The `initiator.name` field includes information about who has requested to update the service ID.
 * The `target.name` field includes information about the service ID that is changed.
 * The `initiator.host.agent` field indicates if the request comes from the UI or the CLI. When the field is set to **Not Set**, the request originates in the UI. When the field is set to **{{site.data.keyword.cloud_notm}} CLI**, the request originates at the command line.
@@ -236,7 +236,7 @@ The following fields include extra information:
 #### Lock and unlock a service ID
 {: #at_events_iam_analyze_update_acc_scvid_1}
 
-The following field includes extra information:
+The following field includes additional information:
 * In requestData, the `lock` field is set to **true** when the service ID is locked, and to **false** when it is unlocked.
 
 #### Add or modify a description
@@ -249,7 +249,7 @@ When a request to change a description generates an event, the following fields 
 #### Change the name of a service ID
 {: #at_events_iam_analyze_update_acc_scvid_3}
 
-The following fields include extra information:
+The following fields include additional information:
 * In requestData, the `lock` field is set to **false**.
 * In requestData, the `instance_name` field includes the new name of the API key.
 * In requestData, the `prev_instance_name` field includes the name of the API key before it was changed.
@@ -263,7 +263,7 @@ When an action to update an API key is requested, you get an event in the accoun
 * To update a user API key, the action is `iam-identity.user-apikey.update`.
 * To update a service ID API key, the action is `iam-identity.account-serviceid.update`.
 
-The following fields include extra information:
+The following fields include additional information:
 * The `initiator.name` field includes information about who has requested to update the API key.
 * The `target.name` field includes information about the API key that is changed.
 * The `initiator.host.agent` field indicates if the request comes from the UI or the CLI. When the field is set to **Not Set**, the request originates in the UI. When the field is set to **{{site.data.keyword.cloud_notm}} CLI**, the request originates at the command line.
@@ -271,7 +271,7 @@ The following fields include extra information:
 #### Lock and unlock a service ID
 {: #at_events_iam_update_apikey_1}
 
-The following field includes extra information:
+The following field includes additional information:
 * In requestData, the `lock` field is set to **true** when the API key is locked, and to **false** when it is unlocked.
 
 #### Add or modify a description
@@ -284,7 +284,7 @@ When a request to change a description generates an event, the following fields 
 #### Change the name of a service ID
 {: #at_events_iam_update_apikey_3}
 
-The following fields include extra information:
+The following fields include additional information:
 * In requestData, the `lock` field is set to **false**.
 * In requestData, the `instance_name` field includes the new name of the API key.
 * In requestData, the `prev_instance_name` field includes the name of the API key before it was changed.

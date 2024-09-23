@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2023, 2024
-lastupdated: "2023-05-31"
+  years:  2021, 2024
+lastupdated: "2024-09-20"
 
 keywords:
 
@@ -43,7 +43,7 @@ Before creating a backup region, you need to understand targets and routes.
 
 You can configure a backup target for data that is routed by your {{site.data.keyword.atracker_full_notm}} instance to a target that is running in a different region. You can then route all data to both your primary and backup targets. Configuring a backup target gives you targets that are in sync. You can switch to the backup with no downtime and minimal data loss if a regional disaster occurs.
 
-Creating a second target for backup purposes results in extra charges for running the backup target instance.
+Creating a second target for backup purposes results in additional charges for running the backup target instance.
 {: important}
 
 ![Example of a routing configuration that creates a backup of all auditing events to a second target in a different region.](../images/Activity-Tracker-Routing-04-Recovery.svg "Example of a routing configuration that creates a backup of all auditing events to a second target in a different region"){: caption="Figure 1. Example of a routing configuration that creates a backup of all auditing events to a second target in a different region" caption-side="bottom"}
@@ -63,7 +63,7 @@ In addition, you must define a backup metadata region for your metadata backup. 
 
 When you configure an environment with a backup target, you need to consider the following:
 
-* Context-based restrictions give account owners and administrators the ability to define and enforce access restrictions for {{site.data.keyword.cloud_notm}} resources based on a rule's criteria. The criteria includes the network location of access requests, the endpoint type from where the request is sent, and sometimes the API that the request tries to access. These restrictions work with traditional IAM policies, which are based on identity, to provide an extra layer of protection. For more information, see [What are context-based restrictions?](/docs/account?topic=account-context-restrictions-whatis)
+* Context-based restrictions give account owners and administrators the ability to define and enforce access restrictions for {{site.data.keyword.cloud_notm}} resources based on a rule's criteria. The criteria includes the network location of access requests, the endpoint type from where the request is sent, and sometimes the API that the request tries to access. These restrictions work with traditional IAM policies, which are based on identity, to provide an additional layer of protection. For more information, see [What are context-based restrictions?](/docs/account?topic=account-context-restrictions-whatis)
 
    If context-based rules are configured in the account, make sure that the rules are defined for both the primary and backup locations. 
 
@@ -78,7 +78,7 @@ When you configure an environment with a backup target, you need to consider the
 
 You can choose to allow {{site.data.keyword.atracker_full_notm}} to handle a regional disaster as described in [High availability and disaster recovery](/docs/atracker?topic=atracker-ha_dr).
 
-In this case, no extra charges for a second [target instance](#dr_config_backup) are charged. However, you also have the following risks:
+In this case, no additional charges for a second [target instance](#dr_config_backup) are charged. However, you also have the following risks:
 
 * No access is available to any historical data from the region that incurred the disaster.
 * Data is lost while you configure a new instance while the existing instance is not available.

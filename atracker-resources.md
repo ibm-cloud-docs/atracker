@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2022, 2023, 2024
-lastupdated: "2024-05-31"
+  years:  2021, 2024
+lastupdated: "2024-09-17"
 
 keywords:
 
@@ -101,7 +101,7 @@ Note the following information about targets:
 
 * You can define targets in the same account where events are generated or in a different account.
 
-* When you define a Cloud Object Storage target, you can use an API key or service to service authentication to upload events.
+* When you define a Cloud Object Storage or {{site.data.keyword.messagehub}} target, you can use an API key or service-to-service authentication to upload events.
 
 * You can manage targets in your account by using the {{site.data.keyword.atracker_short}} CLI, and programmatically by using the {{site.data.keyword.atracker_short}} REST API and Terraform scripts.
 

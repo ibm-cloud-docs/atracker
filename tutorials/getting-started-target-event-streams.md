@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2022, 2024
-lastupdated: "2024-01-18"
+  years:  2021, 2024
+lastupdated: "2024-09-20"
 
 keywords:
 
@@ -170,6 +170,45 @@ You must define 2 policies, 1 for the resource type `topic`, and 1 for the resou
 You can [get credentials by using the {{site.data.keyword.cloud_notm}} CLI](/docs/EventStreams?topic=EventStreams-connecting#connection_information) and make note of the api key and broker URL values.
 {: note}
 
+## Configure service-to-service authorization
+{: #getting-started-routing-es-step3}
+{: step}
+
+Configure service-to-service authorization to your {{site.data.keyword.messagehub}} topic so you do not need to pass an API key when writing your encrypted data to the {{site.data.keyword.messagehub}} topic.
+
+The following steps show how to define service-to-service authorization when the {{site.data.keyword.messagehub}} topic is available in a different account from where auditing events are generated:
+
+You must complete these steps in the account where the {{site.data.keyword.messagehub}} topic is available.
+{: important}
+
+1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external} as the account owner that will be configuring {{site.data.keyword.atracker_full_notm}} targets.
+
+	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} dashboard opens.
+
+2. Click **Manage** &gt; **Access (IAM)**.  **Manage access and users** is displayed.
+
+3. Click **Authorizations**.
+
+4. Click **Create**.
+
+5. Select the **Source account**. Choose **Other account**. Then, enter the account ID for the source service. An account ID is a 32 character, unique account identifier.
+
+6. For **Source service** select *Activity Tracker Event Routing* and for **How do you want to scope the access?** select *All resources*.
+
+7. For **Target service** select *Message Hub* for **How do you want to scope the access?** select *Resources based on selected attributes*.
+
+8. Select **Service instance** and **string equals** the name of your {{site.data.keyword.messagehub}} instance.
+
+9. For **Service access** select **Writer**.
+
+10. Click **Authorize**.  Your new service-to-service authorization will be listed in the **Manage authorizations** view.
+
+Alternately, you can create the service-to-service policy by running the following command:
+
+```text
+ibmcloud iam authorization-policy-create atracker messagehub Writer --source-service-account sourceAccountID
+```
+{: pre}
 
 
 ## Create a target
@@ -197,8 +236,14 @@ Where
 `--topic <TOPIC>`
 :    The name of the {{site.data.keyword.messagehub}} topic to be associated with the target.
 
+`--api-key <EVENTSTREAMS_API_KEY>` | `@EVENTSTREAMS_API_KEY_FILE`
+:   The password value found in the {{site.data.keyword.messagehub}} service credential. This is the IAM API key
+
 `--target-crn <EVENT_STREAMS_TARGET_CRN>`
 :   The CRN of the {{site.data.keyword.messagehub}} instance.
+
+`--service-to-service-enabled <true/false>`
+:   Determines if  {{site.data.keyword.atracker_full_notm}} has service to service authentication enabled. Set this flag to true if service to service is enabled and do not supply an apikey.
 
 
 For example, to create a target in the US-South region, you can run the following command:
