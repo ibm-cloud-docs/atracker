@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2024
-lastupdated: "2024-09-17"
+lastupdated: "2024-09-23"
 
 keywords:
 
@@ -22,8 +22,8 @@ content-type: release-note
 Use these release notes to learn about the latest updates to {{site.data.keyword.atracker_full}}.
 {: shortdesc}
 
-## 24 September 2024
-{: #activity-tracker-sep2424}
+## 23 September 2024
+{: #activity-tracker-sep2324}
 {: release-note}
 
 Additional service-to-service authentication support.
