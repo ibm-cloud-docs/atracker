@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2024
-lastupdated: "2024-07-09"
+lastupdated: "2024-09-25"
 
 keywords:
 
@@ -43,6 +43,9 @@ When you define a target in {{site.data.keyword.cos_full_notm}} (COS), consider 
 You must grant users IAM permissions to manage targets. For more information, see [Assign access to resources](/docs/account?topic=account-assign-access-resources).
 
 When you define a policy, you can indicate the scope of the permissions. You can choose from granting permissions for a specific region or for the entire account.
+
+If you have the IAM permission to create policies and authorizations, you can grant only the level of access that you have as a user of the target service. For example, if you have viewer access for the target service, you can assign only the viewer role for the authorization. If you attempt to assign a higher permission such as administrator, it might appear that permission is granted, however, only the highest level permission you have for the target service, that is viewer, will be assigned. 
+{: important}
 
 Users with regional scope will be limited to access targets in their authorized region.
 {: note}
