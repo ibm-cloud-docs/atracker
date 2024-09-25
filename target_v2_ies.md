@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2024
-lastupdated: "2024-09-17"
+lastupdated: "2024-09-25"
 
 keywords:
 
@@ -105,7 +105,7 @@ Do the following to configure a service-to-service authorization using the {{sit
 
 7. Select **Service instance** and **string equals** the name of your {{site.data.keyword.messagehub}} instance.
 
-8. For **Service access** select **Object writer**.
+8. For **Service access** select **Writer**.
 
 9. Click **Authorize**.  Your new service-to-service authorization will be listed in the **Manage authorizations** view.
 
