@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2022, 2024
-lastupdated: "2024-05-31"
+  years:  2021, 2024
+lastupdated: "2024-09-25"
 
 keywords:
 
@@ -84,6 +84,9 @@ To include global events in a route, specify `global` in the list of `locations`
 {: #route_access}
 
 You must grant users IAM permissions to manage routes. For more information, see [Assign access to resources](/docs/account?topic=account-assign-access-resources).
+
+If you have the IAM permission to create policies and authorizations, you can grant only the level of access that you have as a user of the target service. For example, if you have viewer access for the target service, you can assign only the viewer role for the authorization. If you attempt to assign a higher permission such as administrator, it might appear that permission is granted, however, only the highest level permission you have for the target service, that is viewer, will be assigned. 
+{: important}
 
 When you define a policy, you can must set the scope of the policy to the account. A route is a global resource that is not bound to a specific region.
 {: note}
@@ -679,5 +682,3 @@ See the following table for some HTTP response codes:
 5. Select **Routes**.
 6. Determine which route to update and click the ![Actions icon](../icons/action-menu-icon.svg "Actions").
 7. Click **Delete** to delete the entire route. You must enter the route name before the route is deleted.
-
-
