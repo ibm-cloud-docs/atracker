@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2024
-lastupdated: "2024-10-02"
+lastupdated: "2024-10-03"
 
 keywords:
 
@@ -17,7 +17,7 @@ subcollection: atracker
 # Event fields
 {: #event}
 
-{{site.data.keyword.at_full_notm}} events are based on the Cloud Auditing Data Federation (CADF) standard.
+Activity tracking events are based on the Cloud Auditing Data Federation (CADF) standard.
 {: shortdesc}
 
 The CADF standard defines a full event model that includes the information that is needed to certify, manage, and audit security of applications in cloud environments.
@@ -98,7 +98,10 @@ YYYY-MM-DDTHH:mm:ss.SS+0000
 
 For example, a sample eventTime is `2017-10-19T19:07:50.32+0000`.
 
+## id (string)
+{: #at_id}
 
+An optional field that can be used to correlate activity tracking events within a service.
 
 ## Initiator fields
 {: #initiator}
@@ -430,6 +433,9 @@ This field is optional.
 {: #labels}
 
 Labels and line identifiers provide information about the service that is generating the event.
+
+These are only used for events sent to {{site.data.keyword.at_full_notm}} hosted event search.
+{: note}
 
 The following table outlines common labels and line identifiers that you can find in events:
 
