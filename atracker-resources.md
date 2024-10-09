@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2024
-lastupdated: "2024-09-17"
+lastupdated: "2024-10-09"
 
 keywords:
 
@@ -20,7 +20,7 @@ Use {{site.data.keyword.atracker_full}} to configure how to route audit events, 
 {: shortdesc}
 
 
-![The {{site.data.keyword.atracker_short}} service](images/atracker_ov.svg "The {{site.data.keyword.atracker_short}} service"){: caption="Figure 1. The {{site.data.keyword.atracker_short}} service" caption-side="bottom"}
+![The {{site.data.keyword.atracker_short}} service](images/atracker_ov.svg "The {{site.data.keyword.atracker_short}} service"){: caption="The {{site.data.keyword.atracker_short}} service" caption-side="bottom"}
 
 
 ## Configuring the account
@@ -116,7 +116,7 @@ The following table outlines valid target types:
 | {{site.data.keyword.at_short}} | `logdna`   | [Managing {{site.data.keyword.at_short}} hosted event search targets](/docs/atracker?topic=atracker-target_v2_at&interface=cli) |
 | {{site.data.keyword.messagehub_full}} | `event_streams`   | [Managing {{site.data.keyword.messagehub_full}} targets](/docs/atracker?topic=atracker-target_v2_ies&interface=cli) |
 | {{site.data.keyword.logs_full_notm}} | `cloud_logs`   | [Managing Cloud Logs targets](/docs/atracker?topic=atracker-target_v2_icl&interface=cli) |
-{: caption="Table 1. List of targets" caption-side="top"}
+{: caption="List of targets" caption-side="top"}
 
 
 

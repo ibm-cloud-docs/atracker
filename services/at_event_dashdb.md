@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2024
-lastupdated: "2024-01-18"
+  years:  2021, 2024
+lastupdated: "2024-10-09"
 
 keywords:
 
@@ -39,7 +39,7 @@ The following table lists the actions that generate an event:
 | `dashdb.instance.delete`           | An event is generated when a service instance is deleted. |
 | `dashdb.instance.schedule_reclaim` | An event is generated when a service instance is pending_reclamation. |
 | `dashdb.instance.restore`          | An event is generated when a service instance is restored. |
-{: caption="Table 1. Actions that generate platform events" caption-side="top"}
+{: caption="Actions that generate platform events" caption-side="top"}
 
 The following table lists the actions that generate an event for managing service credentials that are associated to a service instance:
 
@@ -47,7 +47,7 @@ The following table lists the actions that generate an event for managing servic
 |--------------------------------|---------|
 | `service_name.key.create` | An event is generated when an API key is created for a service instance through the *Service credentials* section of the service instance UI. |
 | `service_name.key.delete` | An event is generated when an API key that is associated with a service instance is deleted from the *Service credentials* section of the service instance UI. |
-{: caption="Table 2. Actions that generate service credentials events" caption-side="top"}
+{: caption="Actions that generate service credentials events" caption-side="top"}
 
 
 ## Viewing events

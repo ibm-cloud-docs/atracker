@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2024
-lastupdated: "2024-04-15"
+  years:  2021, 2024
+lastupdated: "2024-10-09"
 
 keywords:
 
@@ -19,7 +19,7 @@ subcollection: atracker
 {: shortdesc}
 
 
-![The image shows the locations where the {{site.data.keyword.atracker_short}} service is available.](../images/Activity-Tracker-Routing-03-Locations.svg){: caption="Figure 1. Displays the regions where you can create and manage {{site.data.keyword.atracker_short}} resources." caption-side="bottom"}
+![The image shows the locations where the {{site.data.keyword.atracker_short}} service is available.](../images/Activity-Tracker-Routing-03-Locations.svg){: caption="Displays the regions where you can create and manage {{site.data.keyword.atracker_short}} resources." caption-side="bottom"}
 
 This image is an artistic representation and does not reflect actual political or geographic boundaries.
 {: note}
@@ -38,7 +38,7 @@ This image is an artistic representation and does not reflect actual political o
 | `North America`       | `Toronto (ca-tor)`      | `N/A`        | `MZR`     |
 | `North America`       | `Washington (us-east)`   | `N/A`        | `MZR`     |
 | `South America`       | `Sao Paulo (br-sao)`   | `N/A`        | `MZR`     |
-{: caption="Table 1. List of locations for {{site.data.keyword.atracker_short}}" caption-side="top"}
+{: caption="List of locations for {{site.data.keyword.atracker_short}}" caption-side="top"}
 
 Where
 * A *geography* is a geographic area or larger political body that contains one or more regions.

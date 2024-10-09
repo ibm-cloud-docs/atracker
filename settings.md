@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2024
-lastupdated: "2024-09-25"
+lastupdated: "2024-10-09"
 
 keywords:
 
@@ -72,7 +72,7 @@ When you define a policy, you can must set the scope of the policy to the accoun
 | ------------------------ | ----------------- | ---------------------------------- | -------------- |
 | `atracker.setting.get`    | Account        | `Administrator`  \n `Editor`  \n `Viewer`  \n `Operator` | Get settings information |
 | `atracker.setting.update` | Account        | `Administrator`| Update settings |
-{: caption="Table 1. Required IAM roles}
+{: caption="Required IAM roles}
 
 
 
@@ -171,7 +171,7 @@ The following table lists the actions that you can run to manage settings:
 |----------------------------|------------------|--------------------------------------------------|
 | Get settings information            | `GET`           | `<ENDPOINT>/api/v2/settings`              |
 | Update settings            | `PUT`            | `<ENDPOINT>/api/v2/settings`  |
-{: caption="Table 1. Settings actions by using the {{site.data.keyword.atracker_full_notm}} REST API" caption-side="top"}
+{: caption="Settings actions by using the {{site.data.keyword.atracker_full_notm}} REST API" caption-side="top"}
 
 You can use private and public endpoints to manage settings. For more information about the list of `ENDPOINTS` that are available, see [Endpoints](/docs/atracker?topic=atracker-endpoints).
 
@@ -313,7 +313,7 @@ See the following table for some HTTP response codes:
 | `404` | Not Found |	The requested resource doesn't exist or is already deleted. |
 | `429` |	Too Many Requests |	Too many requests hit the API too quickly. |
 | `500` |	Internal Server Error |	Something went wrong in {{site.data.keyword.atracker_full_notm}} processing. |
-{: caption="Table 2. List of HTTP response codes" caption-side="top"}
+{: caption="List of HTTP response codes" caption-side="top"}
 
 ## Getting account settings using the UI
 {: #settings-get-ui}

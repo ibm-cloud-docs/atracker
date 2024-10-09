@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2024
-lastupdated: "2024-07-16"
+lastupdated: "2024-10-09"
 
 keywords:
 
@@ -30,7 +30,7 @@ The following table lists the services that require additional steps for you to 
 | Service                            | Upgrade plan                       | Configure the service              | More info |
 |------------------------------------|------------------------------------|------------------------------------|-----------|
 | [Watson services](/docs/atracker?topic=atracker-cloud_services_other#cloud_services_other_watson_ai) `[*]`  | ![Checkmark icon](../../icons/checkmark-icon.svg) |  |   |
-{: caption="Table 1. {{site.data.keyword.cloud_notm}} services that require actions for management events" caption-side="top"}
+{: caption="{{site.data.keyword.cloud_notm}} services that require actions for management events" caption-side="top"}
 
 `[*]` You might need to upgrade to a paid plan to enable collection of Watson Activity Tracker events in your account. See [Details per Watson service](/docs/atracker?topic=atracker-cloud_services_other#cloud_services_other_watson_ai) to check requirements by service.
 
@@ -47,7 +47,7 @@ The following table lists the services that require additional steps for you to 
 | {{site.data.keyword.cloudantfull}} |  | ![Checkmark icon](../../icons/checkmark-icon.svg) | [Configuring data events for an IBM Cloudant instance](/docs/Cloudant?topic=Cloudant-at_events#at_event_configure) |
 | {{site.data.keyword.messagehub_full}} | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) | [Enabling message audit events](/docs/EventStreams?topic=EventStreams-at_events#enable-message-events) |
 | [Watson services](/docs/atracker?topic=atracker-cloud_services_other#cloud_services_other_watson_ai)    | ![Checkmark icon](../../icons/checkmark-icon.svg) |  |   |
-{: caption="Table 2. {{site.data.keyword.cloud_notm}} services that require actions for data events" caption-side="top"}
+{: caption="{{site.data.keyword.cloud_notm}} services that require actions for data events" caption-side="top"}
 
 
 ## Details per Watson service
@@ -67,7 +67,7 @@ The following table lists the Watson services and related information about addi
 | {{site.data.keyword.nlufull}} | ![Checkmark icon](../../icons/checkmark-icon.svg) |   |
 | {{site.data.keyword.speechtotextfull}} | ![Checkmark icon](../../icons/checkmark-icon.svg) |   |
 | {{site.data.keyword.texttospeechfull}} | ![Checkmark icon](../../icons/checkmark-icon.svg) |   |
-{: caption="Table 3. Watson services that require actions for data events" caption-side="top"}
+{: caption="Watson services that require actions for data events" caption-side="top"}
 
 The following table lists Watson services that are deprecated:
 
@@ -78,4 +78,4 @@ The following table lists Watson services that are deprecated:
 | {{site.data.keyword.iva_full}} | ![Checkmark icon](../../icons/checkmark-icon.svg) |   |
 | {{site.data.keyword.nlclassifierfull}} | ![Checkmark icon](../../icons/checkmark-icon.svg) |   |
 | {{site.data.keyword.wh-acd_full}} |   |   |
-{: caption="Table 3. Watson services that require actions for data events and are deprecated" caption-side="top"}
+{: caption="Watson services that require actions for data events and are deprecated" caption-side="top"}

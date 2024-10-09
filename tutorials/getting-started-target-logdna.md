@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2024
-lastupdated: "2024-01-18"
+  years:  2021, 2024
+lastupdated: "2024-10-09"
 
 keywords:
 
@@ -79,7 +79,7 @@ Users must have the following [IAM roles](/docs/account?topic=account-assign-acc
 | ------------------------- | -------------- | ---------------------- | -------------- |
 | `atracker.setting.get`    | Account        | `Administrator`  \n `Editor`  \n `Viewer`  \n `Operator` | Get setting information |
 | `atracker.setting.update` | Account        | `Administrator`| Update settings |
-{: caption="Table 1. Required IAM roles to manage the {{site.data.keyword.atracker_short}} account settings." caption-side="top"}
+{: caption="Required IAM roles to manage the {{site.data.keyword.atracker_short}} account settings." caption-side="top"}
 
 Users must have the following [{{site.data.keyword.atracker_full}} IAM roles](/docs/account?topic=account-assign-access-resources) to work with targets. Users with regional IAM scope will be limited to access targets in their authorized region.
 
@@ -90,7 +90,7 @@ Users must have the following [{{site.data.keyword.atracker_full}} IAM roles](/d
 | `atracker.target.update` | Region | `Administrator`  \n `Editor` | Update a target |
 | `atracker.target.delete` | Region | `Administrator`  \n `Editor` | Delete a target |
 | `atracker.target.list` | Account | `Administrator`  \n `Editor`  \n `Viewer`  \n `Operator` | List all targets |
-{: caption="Table 2. Required IAM roles"}
+{: caption="Required IAM roles"}
 
 Choose one of the following options to grant your user permissions:
 - [Using the console to assign access](/docs/account?topic=account-account-services&interface=ui#console-acct-mgmt)
@@ -154,7 +154,7 @@ Complete the following steps to create a target in the US-South region in your a
 |-------|-------------|
 | `target_crn` | Indicates the [CRN](/docs/account?topic=account-crn) of the {{site.data.keyword.atracker_short}} instance. |
 | `ingestion_key`| Contains the API key that has permissions to send events to an {{site.data.keyword.atracker_short}} instance. |
-{: caption="Table 2. Target endpoint fields" caption-side="top"}
+{: caption="Target endpoint fields" caption-side="top"}
 
 For example, to create a target in the US-South region, you can run the following cURL command:
 

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2024
-lastupdated: "2024-01-19"
+  years:  2021, 2024
+lastupdated: "2024-10-09"
 
 keywords:
 
@@ -42,7 +42,7 @@ The following table outlines the options to configure {{site.data.keyword.atrack
 | `North America`       | `Washington (us-east)`   | ![Checkmark icon](images/checkmark-icon.svg) | ![Checkmark icon](images/checkmark-icon.svg) |
 | `North America`       | `Toronto (ca-tor)`       | ![Checkmark icon](images/checkmark-icon.svg) | |
 | `South America`       | `Sao Paulo (br-sao)`     | ![Checkmark icon](images/checkmark-icon.svg) | |
-{: caption="Table 1. Configuration options" caption-side="bottom"}
+{: caption="Configuration options" caption-side="bottom"}
 
 
 ## What targets should I use based on my compliance needs?

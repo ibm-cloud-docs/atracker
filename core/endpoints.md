@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2024
-lastupdated: "2024-09-12"
+lastupdated: "2024-10-09"
 
 keywords:
 
@@ -39,7 +39,7 @@ The following table shows the private API endpoints. The port for all endpoints 
 | Tokyo  (`jp-tok`)         | `https://private.jp-tok.atracker.cloud.ibm.com`  | 166.9.249.115   \n 166.9.249.144  \n 166.9.249.180 |
 | Toronto  (`ca-tor`)         | `https://private.ca-tor.atracker.cloud.ibm.com`  | 166.9.247.154   \n 166.9.247.183  \n 166.9.247.216 |
 | Washington (`us-east`)   | `https://private.us-east.atracker.cloud.ibm.com`  | 166.9.24.96 [Deprecated 15 October 2024]{: tag-deprecated}  \n 166.9.22.84 [Deprecated 15 October 2024]{: tag-deprecated}  \n 166.9.20.212 [Deprecated 15 October 2024]{: tag-deprecated}  \n 166.9.231.252 [New 15 October 2024]{: tag-cool-gray}  \n 166.9.251.89 [New 15 October 2024]{: tag-cool-gray}  \n 166.9.233.28 [New 15 October 2024]{: tag-cool-gray} |
-{: caption="Table 1. Lists of private API endpoints for interacting with {{site.data.keyword.atracker_full_notm}}" caption-side="top"}
+{: caption="Lists of private API endpoints for interacting with {{site.data.keyword.atracker_full_notm}}" caption-side="top"}
 
 
 ## Public API endpoints
@@ -60,4 +60,4 @@ The following table shows the public API endpoints:
 | Tokyo (`jp-tok`)         | `https://jp-tok.atracker.cloud.ibm.com`          | `https/443`  |
 | Toronto (`ca-tor`)         | `https://ca-tor.atracker.cloud.ibm.com`          | `https/443`  |
 | Washington (`us-east`)   | `https://us-east.atracker.cloud.ibm.com`          | `https/443`  |
-{: caption="Table 2. Lists of public API endpoints for interacting with {{site.data.keyword.atracker_full_notm}}" caption-side="top"}
+{: caption="Lists of public API endpoints for interacting with {{site.data.keyword.atracker_full_notm}}" caption-side="top"}

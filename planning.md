@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2022, 2024
-lastupdated: "2024-01-19"
+  years:  2021, 2024
+lastupdated: "2024-10-09"
 
 keywords:
 
@@ -28,7 +28,7 @@ Plan the account's {{site.data.keyword.atracker_short}} configuration to manage 
 | **5** | **Default targets**  \n Define 1 default target for each account to configure where auditing events that are not explicitly managed in the account's routing rules are routed.  \n   \n Consider defining a second default target for each account when you want to collect the data in a backup location or account. | [link](#planning-4) |
 | **6** | **Number and location of targets**  \n Define the targets where you plan to collect auditing events based on your regulatory and corporate requirements. | [link](#planning-5) |
 | **7** | **Routing rules**  \n Define the routing rules that indicate how to route events in your account.  \n  \n Decide if you want to drop the collection of auditing events in 1 or more regions. Check any compliance requirements to confirm that you can. | [link](#planning-6) |
-{: caption="Table 1. Planning" caption-side="bottom"}
+{: caption="Planning" caption-side="bottom"}
 
 ## Locations and services
 {: #planning-0}

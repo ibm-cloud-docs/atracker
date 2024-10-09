@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2024
-lastupdated: "2024-09-20"
+lastupdated: "2024-10-09"
 
 keywords:
 
@@ -38,7 +38,7 @@ The following table lists the actions that generate an event:
 |-----------------------------|-------------|
 | `iam-groups.account-settings.read` | An event is generated when an initiator views the account settings for the access groups service. |
 | `iam-groups.account-settings.update` | An event is generated when an initiator updates their account settings for the access groups service. |
-{: caption="Table 1. Events that are generated for access groups" caption-side="top"}
+{: caption="Events that are generated for access groups" caption-side="top"}
 
 
 
@@ -54,7 +54,7 @@ The following table lists the actions that generate an event:
 | `iam-groups.group.update`   | An event is generated when an initiator updates a group name or a description. |
 | `iam-groups.group.delete`   | An event is generated when an initiator deletes an access group. |
 | `iam-groups.groups.list`    | An event is generated when an initiator views the access groups. |
-{: caption="Table 2. Events that are generated for access groups" caption-side="top"}
+{: caption="Events that are generated for access groups" caption-side="top"}
 
 ### Members events
 {: #at_events_iam_access_members}
@@ -68,7 +68,7 @@ The following table lists the actions that generate an event:
 | `iam-groups.member.delete`  | An event is generated when an initiator removes a member from an access group. |
 | `iam-groups.member.read`    | An event is generated when an initiator views a member's membership. |
 |`iam-groups.members.list`    | An event is generated when an initiator views the members for an access group. |
-{: caption="Table 3. Events that are generated for access groups" caption-side="top"}
+{: caption="Events that are generated for access groups" caption-side="top"}
 
 ### Rules events
 {: #at_events_iam_access_rules}
@@ -82,7 +82,7 @@ The following table lists the actions that generate an event:
 | `iam-groups.rule.update`    | An event is generated when an initiator modifies the rule name. |
 | `iam-groups.rule.delete`    | An event is generated when an initiator deletes a rule from an access group. |
 | `iam-groups.rules.list`     | An event is generated when an initiator views the rules for an access group. |
-{: caption="Table 4. Events that are generated for access groups" caption-side="top"}
+{: caption="Events that are generated for access groups" caption-side="top"}
 
 ## Trusted profiles events
 {: #at_events_iam_profiles}
@@ -94,7 +94,7 @@ The following table lists the actions that generate an event:
 | `iam-identity.account-profile.create`  | An event is generated when an initiator creates a trusted profile. |
 | `iam-identity.account-profile.update`   | An event is generated when an initiator updates a trusted profile. |
 | `iam-identity.account-profile.delete`   | An event is generated when an initiator deletes a trusted profile. |
-{: caption="Table 5. Events that are generated for trusted profiles" caption-side="top"}
+{: caption="Events that are generated for trusted profiles" caption-side="top"}
 
 ## Policy events
 {: #at_events_iam_policies}
@@ -106,7 +106,7 @@ The following table lists the actions that generate an event:
 | `iam-am.policy.create` | An event is generated when an initiator adds a policy to a user or access group. |
 | `iam-am.policy.update` | An event is generated when an initiator modifies permissions to a policy of a user or access group.|
 | `iam-am.policy.delete` | An event is generated when an initiator deletes a policy that is assigned to a user or access group. |
-{: caption="Table 6. Events that are generated for policy actions" caption-side="top"}
+{: caption="Events that are generated for policy actions" caption-side="top"}
 
 
 
@@ -120,7 +120,7 @@ The following table lists the actions that generate an event:
 | `iam-identity.account-serviceid.create` | An event is generated when an initiator creates a service ID.  |
 | `iam-identity.account-serviceid.update` | An event is generated when an initiator renames a service ID or modifies its description. |
 | `iam-identity.account-serviceid.delete` | An event is generated when an initiator deletes a service ID. |
-{: caption="Table 7. Events that are generated for service IDs actions" caption-side="top"}
+{: caption="Events that are generated for service IDs actions" caption-side="top"}
 
 
 ## API key events
@@ -136,7 +136,7 @@ The following table lists the actions that generate an event:
 | `iam-identity.serviceid-apikey.create` | An event is generated when an initiator creates an API key for a service ID. |
 | `iam-identity.serviceid-apikey.delete` | An event is generated when an initiator deletes an API key for a service ID. |
 | `iam-identity.serviceid-apikey.update` | An event is generated when an initiator renames an API key for a service ID or modifies its description. |
-{: caption="Table 8. Events that are generated for API keys actions" caption-side="top"}
+{: caption="Events that are generated for API keys actions" caption-side="top"}
 
 
 ## Login and logout events
@@ -152,7 +152,7 @@ The following table lists the actions that generate an event:
 | `iam-identity.user-refreshtoken.login`   | This is an event that is generated when the initiator logs in to {{site.data.keyword.cloud_notm}}, or when an initiator that is already logged in requests a new refresh token to run an action. |
 | `iam-identity.user-passcode.login` `iam-identity.trustedprofile-apikey.login` | This is an event that is generated when the initiator logs in to {{site.data.keyword.cloud_notm}} by applying a trusted profile, or when an initiator that is already logged in by applying a trusted profile requests a new refresh token to run an action. |
 | `iam-identity.user.logout` | This is an event that is generated when the initiator logs out of the {{site.data.keyword.cloud_notm}}. |
-{: caption="Table 9. Events that are generated for user login and logout actions" caption-side="top"}
+{: caption="Events that are generated for user login and logout actions" caption-side="top"}
 
 
 
