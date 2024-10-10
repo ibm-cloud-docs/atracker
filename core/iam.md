@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2024
-lastupdated: "2024-09-25"
+lastupdated: "2024-10-09"
 
 keywords:
 
@@ -42,7 +42,7 @@ Use the following table to identify the **Account management** **{{site.data.key
 | Operator                 | As an operator, you can view {{site.data.keyword.atracker_short}} configuration resources such as routes and targets. |
 | Editor                   | As an editor, you can view, create, update, and delete {{site.data.keyword.atracker_short}} resources such as routes and targets. |
 | Administrator            | As an administrator, you can view, create, update, and delete {{site.data.keyword.atracker_short}} resources. You can also assign access policies to manage {{site.data.keyword.atracker_short}} resources to other users in the account. |
-{: caption="Table 1. IAM platform roles for {{site.data.keyword.atracker_short}}" caption-side="top"}
+{: caption="IAM platform roles for {{site.data.keyword.atracker_short}}" caption-side="top"}
 {: summary="Descriptions of the actions in the service that are permitted for the listed platform management role."}
 
 
@@ -60,7 +60,7 @@ For {{site.data.keyword.atracker_short}}, the IAM actions and Activity Tracker a
 | Grant other account members access to configure {{site.data.keyword.atracker_short}} | `iam-am.policy.create` |![Checkmark icon](../../icons/checkmark-icon.svg) | | | |
 | Revoke member access to configure {{site.data.keyword.atracker_short}} | `iam-am.policy.delete` | ![Checkmark icon](../../icons/checkmark-icon.svg) | | | |
 | Modify member access to configure {{site.data.keyword.atracker_short}}  | `iam-am.policy.update` | ![Checkmark icon](../../icons/checkmark-icon.svg) | | | |
-{: caption="Table 2. IAM platform roles for {{site.data.keyword.atracker_short}} access actions" caption-side="top"}
+{: caption="IAM platform roles for {{site.data.keyword.atracker_short}} access actions" caption-side="top"}
 
 
 | Action | IAM and Activity Tracker action | Administrator | Editor | Operator | Viewer |
@@ -70,7 +70,7 @@ For {{site.data.keyword.atracker_short}}, the IAM actions and Activity Tracker a
 | Create a target    | `atracker.target.create` |![Checkmark icon](../../icons/checkmark-icon.svg) |![Checkmark icon](../../icons/checkmark-icon.svg) | | |
 | Update a target    | `atracker.target.update` |![Checkmark icon](../../icons/checkmark-icon.svg) |![Checkmark icon](../../icons/checkmark-icon.svg) | | |
 | Delete a target    | `atracker.target.delete` |![Checkmark icon](../../icons/checkmark-icon.svg) |![Checkmark icon](../../icons/checkmark-icon.svg) | | |
-{: caption="Table 3. IAM platform roles for {{site.data.keyword.atracker_short}} target actions" caption-side="top"}
+{: caption="IAM platform roles for {{site.data.keyword.atracker_short}} target actions" caption-side="top"}
 
 | Action | IAM and Activity Tracker | Administrator | Editor | Operator | Viewer |
 |--------|------------|---------------|--------|-----------|--------|
@@ -79,14 +79,14 @@ For {{site.data.keyword.atracker_short}}, the IAM actions and Activity Tracker a
 | Create a route | `atracker.route.create` |![Checkmark icon](../../icons/checkmark-icon.svg) |![Checkmark icon](../../icons/checkmark-icon.svg) | | |
 | Update a route | `atracker.route.update` |![Checkmark icon](../../icons/checkmark-icon.svg) |![Checkmark icon](../../icons/checkmark-icon.svg) | | |
 | Delete a route | `atracker.route.delete` |![Checkmark icon](../../icons/checkmark-icon.svg) |![Checkmark icon](../../icons/checkmark-icon.svg) | | |
-{: caption="Table 4. IAM platform roles for {{site.data.keyword.atracker_short}} route actions" caption-side="top"}
+{: caption="IAM platform roles for {{site.data.keyword.atracker_short}} route actions" caption-side="top"}
 
 
 | Action | IAM and Activity Tracker action | Administrator | Editor | Operator | Viewer |
 |--------|------------|---------------|--------|-----------|--------|
 | View configuration settings  | `atracker.setting.get` | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) |
 | Update configuration settings | `atracker.setting.update` | ![Checkmark icon](../../icons/checkmark-icon.svg) | | | |
-{: caption="Table 5. IAM platform roles for {{site.data.keyword.atracker_short}} configuration actions" caption-side="top"}
+{: caption="IAM platform roles for {{site.data.keyword.atracker_short}} configuration actions" caption-side="top"}
 
 ## Assigning access to {{site.data.keyword.atracker_full_notm}}
 {: #iam-assign-access-how}

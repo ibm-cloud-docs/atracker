@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2024
-lastupdated: "2024-09-20"
+lastupdated: "2024-10-09"
 
 keywords:
 
@@ -46,7 +46,7 @@ You can configure a backup target for data that is routed by your {{site.data.ke
 Creating a second target for backup purposes results in additional charges for running the backup target instance.
 {: important}
 
-![Example of a routing configuration that creates a backup of all auditing events to a second target in a different region.](../images/Activity-Tracker-Routing-04-Recovery.svg "Example of a routing configuration that creates a backup of all auditing events to a second target in a different region"){: caption="Figure 1. Example of a routing configuration that creates a backup of all auditing events to a second target in a different region" caption-side="bottom"}
+![Example of a routing configuration that creates a backup of all auditing events to a second target in a different region.](../images/Activity-Tracker-Routing-04-Recovery.svg "Example of a routing configuration that creates a backup of all auditing events to a second target in a different region"){: caption="Example of a routing configuration that creates a backup of all auditing events to a second target in a different region" caption-side="bottom"}
 
 In this example, the source of the auditing events is in the Toronto region (`ca-tor`). Auditing events from the {{site.data.keyword.cloud_notm}} service are sent by {{site.data.keyword.atracker_full_notm}} to an {{site.data.keyword.at_full_notm}} instance in Dallas (`us-south`). A regional disaster resilient routing configuration is created to route auditing events to an {{site.data.keyword.at_full_notm}} instance (Target 2) in the Washington region (`us-east`) as well. All events are sent to both the target in the Dallas region (`us-south`) and Washington region (`us-east`).
 

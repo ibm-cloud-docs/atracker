@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2023, 2024
-lastupdated: "2024-05-31"
+  years:  2021, 2024
+lastupdated: "2024-10-09"
 
 keywords: Observability
 
@@ -31,7 +31,7 @@ You cannot control when an {{site.data.keyword.cloud_notm}} service makes the sw
 Data is not sent to both locations, so you must take action before that switch is done by a service to mitigate any loss of data.
 {: important}
 
-![Flow of events in a single region](images/Activity-Tracker-Routing-05-Madrid-MZR.svg "The {{site.data.keyword.atracker_full_notm}} service"){: caption="Figure 1. Flow of events in a single region" caption-side="bottom"}
+![Flow of events in a single region](images/Activity-Tracker-Routing-05-Madrid-MZR.svg "The {{site.data.keyword.atracker_full_notm}} service"){: caption="Flow of events in a single region" caption-side="bottom"}
 
 Consider the following to plan for the switch over:
 

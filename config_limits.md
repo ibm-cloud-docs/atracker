@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2024
-lastupdated: "2024-05-31"
+  years:  2021, 2024
+lastupdated: "2024-10-09"
 
 keywords:
 
@@ -33,7 +33,7 @@ Consider the following information about targets:
 | Maximum number of targets for each {{site.data.keyword.cloud_notm}} account | 16 |
 | Maximum number of default targets for each {{site.data.keyword.cloud_notm}} account | 2 |
 | Maximum number of target types for each target | 1 |
-{: caption="Table 1. Limitations for targets" caption-side="bottom"}
+{: caption="Limitations for targets" caption-side="bottom"}
 
 
 ### Types
@@ -47,7 +47,7 @@ List of supported target types:
 | {{site.data.keyword.at_full_notm}} hosted event search    | `logdna`                 | [Managing {{site.data.keyword.atracker_full_notm}} hosted event search targets](/docs/atracker?topic=atracker-target_v2_at). |
 | {{site.data.keyword.messagehub_full}} (Event Streams)              | `event_streams`          | [Managing {{site.data.keyword.messagehub_full}} (Event Streams) targets](/docs/atracker?topic=atracker-target_v2_ies) |
 | {{site.data.keyword.logs_full_notm}} | `cloud_logs`          | [Managing {{site.data.keyword.logs_full_notm}} targets](/docs/atracker?topic=atracker-target_v2_icl) |
-{: caption="Table 2. List of target types" caption-side="top"}
+{: caption="List of target types" caption-side="top"}
 
 
 ## Routes
@@ -59,7 +59,7 @@ Consider the following information about routes:
 | -------------- | -------------- |
 | Minimum number of routes for each {{site.data.keyword.cloud_notm}} account | 0 |
 | Maximum number of routes for each {{site.data.keyword.cloud_notm}} account | 30 |
-{: caption="Table 3. Limitations for routes" caption-side="bottom"}
+{: caption="Limitations for routes" caption-side="bottom"}
 
 ### Rules
 {: #limits_routes_rules}
@@ -73,4 +73,4 @@ Consider the following information about rules that you can define per route:
 | Maximum number of locations for each rule | 8 |
 | Maximum number of targets for each rule | 3 |
 | Wildcard to include all locations in 1 rule | `*` |
-{: caption="Table 4. Limitations for rules" caption-side="bottom"}
+{: caption="Limitations for rules" caption-side="bottom"}

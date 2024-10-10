@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2024
-lastupdated: "2024-09-25"
+lastupdated: "2024-10-09"
 
 keywords:
 
@@ -99,7 +99,7 @@ When you define a policy, you can must set the scope of the policy to the accoun
 | `atracker.route.update` | Account | `Administrator`  \n `Editor` | Update a route |
 | `atracker.route.delete` | Account | `Administrator`  \n `Editor` | Delete a route |
 | `atracker.route.list` | Account | `Administrator`  \n `Editor`  \n `Viewer`  \n `Operator` | List all routes |
-{: caption="Table 1. Required IAM roles}
+{: caption="Required IAM roles}
 
 ## CLI prerequisites
 {: #route-prereqs-cli}
@@ -397,7 +397,7 @@ The following table lists the actions that you can run to manage routes:
 | Delete a route            | `DELETE`         | `<ENDPOINT>/api/v2/routes/<ROUTE_ID>`  |
 | Get information about a route             | `GET`            | `<ENDPOINT>/api/v2/routes/<ROUTE_ID>`  |
 | List all routes           | `GET`            | `<ENDPOINT>/api/v2/routes`             |
-{: caption="Table 1. Target actions by using the {{site.data.keyword.atracker_short}} REST API" caption-side="top"}
+{: caption="Target actions by using the {{site.data.keyword.atracker_short}} REST API" caption-side="top"}
 
 You can use private and public endpoints to manage routes. For more information about the list of `ENDPOINTS` that are available, see [Endpoints](/docs/atracker?topic=atracker-endpoints).
 
@@ -610,7 +610,7 @@ See the following table for some HTTP response codes:
 | `404` | Not Found |	The requested resource doesn't exist or is already deleted. |
 | `429` |	Too Many Requests |	Too many requests hit the API too quickly. |
 | `500` |	Internal Server Error |	Something went wrong in {{site.data.keyword.atracker_short}} processing. |
-{: caption="Table 2. List of HTTP response codes" caption-side="top"}
+{: caption="List of HTTP response codes" caption-side="top"}
 
 
 ## Creating a route using the UI

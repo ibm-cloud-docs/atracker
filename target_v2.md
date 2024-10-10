@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2024
-lastupdated: "2024-09-25"
+lastupdated: "2024-10-09"
 
 keywords:
 
@@ -53,7 +53,7 @@ You can configure any of the following target types:
 | {{site.data.keyword.at_full_notm}} hosted event search    | `logdna`                 | [Managing {{site.data.keyword.atracker_full_notm}} hosted event search targets](/docs/atracker?topic=atracker-target_v2_at). |
 | {{site.data.keyword.messagehub_full}} (Event Streams)              | `event_streams`          | [Managing {{site.data.keyword.messagehub_full}} (Event Streams) targets](/docs/atracker?topic=atracker-target_v2_ies) |
 | {{site.data.keyword.logs_full_notm}}                          | `cloud_logs`   | [Managing {{site.data.keyword.logs_full_notm}} (ICL) targets](/docs/atracker?topic=atracker-target_v2_icl) |
-{: caption="Table 1. List of targets" caption-side="top"}
+{: caption="List of targets" caption-side="top"}
 
 
 
@@ -77,7 +77,7 @@ Users with regional scope will be limited to access targets in their authorized 
 | `atracker.target.update` | Region         | `Administrator`  \n `Editor`                             | Update a target |
 | `atracker.target.delete` | Region         | `Administrator`  \n `Editor`                             | Delete a target |
 | `atracker.target.list`   | Account        | `Administrator`  \n `Editor`  \n `Viewer`  \n `Operator` | List all targets |
-{: caption="Table 2. Required IAM roles}
+{: caption="Required IAM roles}
 
 
 ## Authentication options
@@ -91,7 +91,7 @@ To route events to a target, check the options that you can use to authenticate 
 | `logdna`                 |  | ![Checkmark icon](../icons/checkmark-icon.svg "checkmark") |
 | `event_streams`          | ![Checkmark icon](../icons/checkmark-icon.svg "checkmark") | ![Checkmark icon](../icons/checkmark-icon.svg "checkmark") |
 | `cloud_logs`   | ![Checkmark icon](../icons/checkmark-icon.svg "checkmark") | |
-{: caption="Table 3. Authentication options by target type" caption-side="top"}
+{: caption="Authentication options by target type" caption-side="top"}
 
 
 ## Validating targets
@@ -107,7 +107,7 @@ You can validate a target by using the {{site.data.keyword.metrics_router_full_n
 | `logdna` | [Validate via CLI](/docs/atracker?topic=atracker-target_v2_at&interface=cli#target-validate-cli-at) | [Validate via API](/docs/atracker?topic=atracker-target_v2_at&interface=api#target-validate-api-at) |
 | `event_streams` | [Validate via CLI](/docs/atracker?topic=atracker-target_v2_ies&interface=cli#target-validate-cli-ies) | [Validate via API](/docs/atracker?topic=atracker-target_v2_ies&interface=api#target-validate-api-ies) |
 | `cloud_logs` | [Validate via CLI](/docs/atracker?topic=atracker-target_v2_icl&interface=cli#target-validate-cli-icl) | [Validate via API](/docs/atracker?topic=atracker-target_v2_icl&interface=api#target-validate-api-icl) |
-{: caption="Table 4. Validating options by target type" caption-side="top"}
+{: caption="Validating options by target type" caption-side="top"}
 
 
 
@@ -136,7 +136,7 @@ The following table lists the actions that you can run to manage targets:
 | Read a target              | `ibmcloud atracker target get`      |
 | List all targets           | `ibmcloud atracker target ls`       |
 | Validate a target          | `ibmcloud atracker target validate` |
-{: caption="Table 5. Target actions by using the {{site.data.keyword.atracker_full_notm}}Event Routing CLI" caption-side="top"}
+{: caption="Target actions by using the {{site.data.keyword.atracker_full_notm}}Event Routing CLI" caption-side="top"}
 
 
 For more information, see [{{site.data.keyword.atracker_full_notm}} V2 CLI](/docs/atracker-cli-plugin?topic=atracker-cli-plugin-atracker-v2-cli).
@@ -162,7 +162,7 @@ The following table lists the actions that you can run to manage targets:
 | Read a target              | `GET`            | `<ENDPOINT>/api/v2/targets/<TARGET_ID>`  |
 | List all targets           | `GET`            | `<ENDPOINT>/api/v2/targets`             |
 | Validate a target          | `POST`           | `<ENDPOINT>/api/v2/targets/{id}/validate` |
-{: caption="Table 6. Target actions by using the {{site.data.keyword.atracker_full_notm}} REST API" caption-side="top"}
+{: caption="Target actions by using the {{site.data.keyword.atracker_full_notm}} REST API" caption-side="top"}
 
 
 For more information, see [{{site.data.keyword.atracker_full_notm}} V2 API](https://{DomainName}/apidocs/atracker).
@@ -190,7 +190,7 @@ See the following table for some HTTP response codes:
 | `404` | Not Found |	The requested resource doesn't exist or is already deleted. |
 | `429` |	Too Many Requests |	Too many requests hit the API too quickly. |
 | `500` |	Internal Server Error |	Something went wrong in {{site.data.keyword.atracker_full_notm}} processing. |
-{: caption="Table 7. List of HTTP response codes" caption-side="top"}
+{: caption="List of HTTP response codes" caption-side="top"}
 
 
 ## Next

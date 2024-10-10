@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2023
-lastupdated: "2023-07-17"
+  years:  2021, 2024
+lastupdated: "2024-10-09"
 
 keywords:
 
@@ -34,7 +34,7 @@ For {{site.data.keyword.atracker_short}}, the IAM actions and Activity Tracker a
 | Operator      | `atracker.setting.get`  | View configuration settings  |
 | Operator      | `atracker.target.list`  | List all targets |
 | Operator      | `atracker.route.list`   | List all routes |
-{: caption="Table 1. {{site.data.keyword.atracker_short}} actions for the operator role" caption-side="top"}
+{: caption="{{site.data.keyword.atracker_short}} actions for the operator role" caption-side="top"}
 
 ## Viewer
 {: #iam_by_role_viewer}
@@ -46,7 +46,7 @@ For {{site.data.keyword.atracker_short}}, the IAM actions and Activity Tracker a
 | Viewer | `atracker.setting.get` | View configuration settings |
 | Viewer | `atracker.target.list` | List all targets |
 | Viewer | `atracker.route.list` | List all routes |
-{: caption="Table 2. {{site.data.keyword.atracker_short}} actions for the viewer role" caption-side="top"}
+{: caption="{{site.data.keyword.atracker_short}} actions for the viewer role" caption-side="top"}
 
 ## Editor
 {: #iam_by_role_editor}
@@ -64,7 +64,7 @@ For {{site.data.keyword.atracker_short}}, the IAM actions and Activity Tracker a
 | Editor | `atracker.route.delete` | Delete a route |
 | Editor | `atracker.target.list` | List all targets |
 | Editor | `atracker.route.list` | List all routes |
-{: caption="Table 3. {{site.data.keyword.atracker_short}} actions for the editor role" caption-side="top"}
+{: caption="{{site.data.keyword.atracker_short}} actions for the editor role" caption-side="top"}
 
 
 ## Administrator
@@ -83,4 +83,4 @@ For {{site.data.keyword.atracker_short}}, the IAM actions and Activity Tracker a
 | Administrator | `atracker.route.delete` | Delete a route |
 | Administrator | `atracker.target.list` | List all targets |
 | Administrator | `atracker.route.list` | List all routes |
-{: caption="Table 4. {{site.data.keyword.atracker_short}} actions for the administrator role" caption-side="top"}
+{: caption="{{site.data.keyword.atracker_short}} actions for the administrator role" caption-side="top"}

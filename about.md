@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2023, 2024
-lastupdated: "2024-05-31"
+  years:  2021, 2024
+lastupdated: "2024-10-09"
 
 keywords:
 
@@ -60,7 +60,7 @@ You can configure different types of targets:
 | {{site.data.keyword.logs_full_notm}}| `cloud_logs`   | To view, search, and manage auditing data through the UI. |
 | {{site.data.keyword.at_short}} hosted event search | `logdna`   | To view, search, and manage auditing data through the UI. |
 | {{site.data.keyword.messagehub_full}} | `event_streams`   | To send auditing data to data lakes, other analysis tools, and to other corporate tools such as Security Information and Event Management (SIEM) tools. |
-{: caption="Table 1. List of targets" caption-side="top"}
+{: caption="List of targets" caption-side="top"}
 
 In {{site.data.keyword.atracker_full_notm}}, a route defines the rules that indicate where auditing events that are generated in an account are routed. For more information, see [Routes](/docs/atracker?topic=atracker-atracker-resources#atracker-resources-routes).
 

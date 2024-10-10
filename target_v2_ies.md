@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2024
-lastupdated: "2024-09-25"
+lastupdated: "2024-10-09"
 
 keywords:
 
@@ -41,7 +41,7 @@ Users with regional scope will be limited to access targets in their authorized 
 | `atracker.target.update` | Region            | `Administrator`  \n `Editor` | Update a target |
 | `atracker.target.delete` | Region            | `Administrator`  \n `Editor` | Delete a target |
 | `atracker.target.list`   | Account           | `Administrator`  \n `Editor`  \n `Viewer`  \n `Operator` | List all targets |
-{: caption="Table 1. IAM actions and the IAM roles that include them."}
+{: caption="IAM actions and the IAM roles that include them."}
 
 ### IAM access for {{site.data.keyword.messagehub}}
 {: #target_es}
@@ -574,7 +574,7 @@ The following table lists the actions that you can run to manage targets:
 | Read a target              | `GET`            | `<ENDPOINT>/api/v2/targets/<TARGET_ID>`  |
 | List all targets           | `GET`            | `<ENDPOINT>/api/v2/targets`             |
 | Validate a target          | `POST`           | `<ENDPOINT>/api/v2/targets/{id}/validate` |
-{: caption="Table 2. Target actions by using the {{site.data.keyword.atracker_full_notm}} REST API" caption-side="top"}
+{: caption="Target actions by using the {{site.data.keyword.atracker_full_notm}} REST API" caption-side="top"}
 
 You can use private and public endpoints to manage targets. For more information about the list of `ENDPOINTS` that are available, see [Endpoints](/docs/atracker?topic=atracker-endpoints).
 
@@ -823,7 +823,7 @@ See the following table for some HTTP response codes:
 | `404` | Not Found |	The requested resource doesn't exist or is already deleted. |
 | `429` |	Too Many Requests |	Too many requests hit the API too quickly. |
 | `500` |	Internal Server Error |	Something went wrong in {{site.data.keyword.atracker_full_notm}} processing. |
-{: caption="Table 3. List of HTTP response codes" caption-side="top"}
+{: caption="List of HTTP response codes" caption-side="top"}
 
 
 ## Creating a {{site.data.keyword.messagehub}} target using the UI

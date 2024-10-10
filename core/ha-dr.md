@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2024
-lastupdated: "2024-04-15"
+  years:  2021, 2024
+lastupdated: "2024-10-09"
 
 keywords:
 
@@ -58,7 +58,7 @@ The following table lists the high-availability (HA) status for the regions (loc
 | North America       | Toronto `(ca-tor)`      | `N/A`        | `MZR`     |
 | North America       | Washington `(us-east)`   | `N/A`        | `MZR`     |
 | South America       | Sao Paulo `(br-sao)`   | `N/A`        | `MZR`     |
-{: caption="Table 1. List of locations where the service is available" caption-side="top"}
+{: caption="List of locations where the service is available" caption-side="top"}
 
 
 Where
@@ -112,7 +112,7 @@ The following table shows the regions where the copy of a regular backup is repl
 | North America       | Toronto `(ca-tor)`      | Washington `(us-east)`  |
 | North America       | Washington `(us-east)`   | Dallas `(us-south)`     |
 | South America       | Sao Paulo `(br-sao)`   | Washington `(us-east)`     |
-{: caption="Table 2. List of locations where a copy of the backup is available" caption-side="top"}
+{: caption="List of locations where a copy of the backup is available" caption-side="top"}
 
 
 ## Disaster recovery (DR) in a region
@@ -173,7 +173,7 @@ The following table indicates the recovery region in the event of a DR situation
 | North America       | Toronto `(ca-tor)`      | Washington `(us-east)`  |
 | North America       | Washington `(us-east)`   | Dallas `(us-south)`     |
 | South America       | Sao Paulo `(br-sao)`   | Washington `(us-east)`     |
-{: caption="Table 3. List of locations where a region is recovered" caption-side="top"}
+{: caption="List of locations where a region is recovered" caption-side="top"}
 
 
 ## DR recovery time
@@ -185,4 +185,4 @@ The following table indicates the estimated recovery times in the event of a DR 
 |-------------------------------------------------------------------|----------------|
 | Maximum Tolerable Downtime (MTD) / Recovery Time Objective (RTO)  | Less than 24 hours |
 | Recovery Point Objective (RPO)                                    | Less than 24 hours |
-{: caption="Table 4. Recovery objectives for DR" caption-side="top"}
+{: caption="Recovery objectives for DR" caption-side="top"}

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2023
-lastupdated: "2022-08-12"
+  years:  2021, 2024
+lastupdated: "2024-10-09"
 
 keywords:
 
@@ -33,7 +33,7 @@ To enforce target locations in your {{site.data.keyword.cloud_notm}} account, yo
 | ------------------------- | -------------- | ---------------------- | -------------- |
 | `atracker.setting.get`    | Account        | `Administrator`  \n `Editor`  \n `Viewer`  \n `Operator` | Get setting information |
 | `atracker.setting.update` | Account        | `Administrator`| Update settings |
-{: caption="Table 1. Required IAM roles to manage the {{site.data.keyword.atracker_short}} account settings." caption-side="top"}
+{: caption="Required IAM roles to manage the {{site.data.keyword.atracker_short}} account settings." caption-side="top"}
 
 
 Next, log in to {{site.data.keyword.cloud_notm}}. Run the following command: [ibmcloud login](/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_login)
