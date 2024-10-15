@@ -1,49 +1,45 @@
-
 {
-    "title": "IBM Cloud Activity Tracker Event Routing",
-    "lastupdated": "2022-11-18",
-    "introduction": "Use IBM Cloud Activity Tracker Event Routing to configure how to route auditing events, both global and location-based event data, in your IBM Cloud account. Audit events are critical data for security operations and a key element for meeting compliance requirements. Control of the storage location is critical to building enterprise-grade solutions.",
-    "section_devtools": {
-      "api": "/apidocs/atracker",
-      "cli": "/docs/atracker-cli-plugin?topic=atracker-cli-plugin-atracker-cli-overview",
-      "terraform": "/docs/atracker?topic=atracker-atracker-tf-config"
-    },
-    "section_recommended": [
+  "version": 2,
+  "title": "IBM Cloud Activity Tracker Event Routing",
+  "introduction": "Use IBM Cloud Activity Tracker Event Routing to configure how to route auditing events, both global and location-based event data, in your IBM Cloud. Auditing events are critical data for security operations and a key element for meeting compliance requirements. Control of the storage location is critical to building enterprise-grade solutions on the IBM Cloud.",
+  "section_topics": {
+    "links": [
       {
-        "title": "Understanding IBM Cloud Activity Tracker Event Routing",
-        "description": "Learn about how to manage auditing events by using IBM Cloud Activity Tracker",
-        "href": "/docs/atracker?topic=atracker-about"
-      },
-      {
-        "title": "Getting started with Activity Tracker Event Routing",
-        "description": "Use the Activity Tracker CLI to configure your account to manage auditing events.",
+        "title": "Getting started with IBM Cloud Activity Tracker Event Routing",
         "href": "/docs/atracker?topic=atracker-getting-started"
       },
       {
-        "title": "Planning your environment",
-        "description": "Plan how to configure the account to manage auditing events.",
-        "href": "/docs/atracker?topic=atracker-planning"
+        "title": "About IBM Cloud Activity Tracker Event Routing",
+        "href": "/docs/atracker?topic=atracker-about"
       },
       {
-        "title": "See what's new",
-        "description": "Read about the latest changes to IBM Cloud Activity Tracker Event Routing. ",
-        "href": "/docs/atracker?topic=atracker-activity-tracker-release-notes"
+        "title": "Managing access with IAM",
+        "href": "/docs/atracker?topic=atracker-iam"
       },
       {
-        "title": "Find out which IBM Cloud services are onboarded",
-        "description": "Learn about the IBM Cloud services that you can monitor in your account and the actions that they report on.",
-        "href": "/docs/atracker?topic=atracker-cloud_services_atracker&interface=cli"
+        "title": "Auditing events for IBM Cloud Activity Tracker Event Routing",
+        "href": "/docs/atracker?topic=atracker-at_events"
       },
       {
-        "title": "Looking for compliance with Financial Services (FS)?",
-        "description": "Learn how you can use Activity Tracker in a Financial Services (FS) validated environment.",
-        "href": "/docs/atracker?topic=atracker-scenarios&interface=cli#scenarios-1"
+        "title": "Platform metrics for IBM Cloud Activity Tracker Event Routing",
+        "href": "/docs/atracker?topic=atracker-monitoring_metrics"
+      },
+      {
+        "title": "Understanding your responsibilities when using IBM Cloud Activity Tracker Event Routing",
+        "href": "/docs/atracker?topic=atracker-shared-responsibilities"
+      },
+      {
+        "title": "Frequently asked questions (FAQs)",
+        "href": "/docs/atracker?topic=atracker-faq"
       }
-    ],
-    "section_learn": {
-      "developer": "https://developer.ibm.com/depmodels/cloud/",
-      "architecture": "https://www.ibm.com/architectures/hybrid",
-      "training": "https://www.ibm.com/training/cloud",
-      "community": "https://community.ibm.com/community/user/cloud/home"
-    }
+    ]
+  },
+  "section_devtools": {
+    "api": "/apidocs/atracker",
+    "cli": "/docs/atracker-cli-plugin?topic=atracker-cli-plugin-atracker-v2-cli",
+    "terraform": "https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/atracker_route"
+  },
+  "section_updates": {
+    "view_more": "/docs/atracker?topic=atracker-activity-tracker-release-notes"
+  }
 }
