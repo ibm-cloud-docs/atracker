@@ -40,6 +40,7 @@ toc:
           - events/event.md
           - events/events_opt-in.md
           - events/events_collect.md
+          - events/es_headers.md
       - topic: releasenotes.md
         navtitle: Release notes
       - releasenotes_notifications.md
