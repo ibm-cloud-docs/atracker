@@ -19,6 +19,8 @@ subcollection: atracker
 {{site.data.keyword.atracker_full}} adds header information to activity tracking events routed to {{site.data.keyword.messagehub_full}} targets.
 {: shortdesc}
 
+The data included in the {{site.data.keyword.messagehub_full_notm}} header can be used to filter events routed by {{site.data.keyword.atracker_full_notm}} from multiple locations to a single {{site.data.keyword.messagehub_full_notm}}.
+
 Each activity tracking event sent to {{site.data.keyword.messagehub_full_notm}} includes the following header information:
 
 ```json
@@ -42,8 +44,3 @@ Where:
 
 `location`
 :   The location from the event's `logSourceCRN`.
-
-## Usage
-{: #es_header_usage}
-
-The data included in the {{site.data.keyword.messagehub_full_notm}} header can be used to filter events routed by {{site.data.keyword.atracker_full_notm}} from multiple locations to a single {{site.data.keyword.messagehub_full_notm}}.
