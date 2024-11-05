@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2024
-lastupdated: "2024-11-04"
+lastupdated: "2024-11-05"
 
 keywords:
 
@@ -28,19 +28,10 @@ Each activity tracking event sent to {{site.data.keyword.messagehub_full_notm}} 
 ```
 {: codeblock}
 
-Where:
-
-`type`
-:   Is always `audit`.
-
-`account`
-:   Is the account owning the {{site.data.keyword.atracker_full}} target.
-
-    This is not the account of the target destination.
-    {: note}
-
-`region`
-:   The target region. For example, `au-syd`.
-
-`location`
-:   The location from the event's `logSourceCRN`.
+| Key | Value |
+|--------------|-------------------|
+| `type` | Is always `audit`. |
+| `account` | The account originating the activity tracking event.  \n  \n This is not the account of the target destination. |
+| `region` | The target region where the event was processed. |
+| `location` | The location field from the `logSourceCRN` identifying the source of the activity tracking event. |
+{: caption="Header key values" caption-side="bottom"}
