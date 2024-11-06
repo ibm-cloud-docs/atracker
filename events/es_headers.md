@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2024
-lastupdated: "2024-11-05"
+lastupdated: "2024-11-06"
 
 keywords:
 
@@ -23,15 +23,12 @@ The data included in the {{site.data.keyword.messagehub_full_notm}} header can b
 
 Each activity tracking event sent to {{site.data.keyword.messagehub_full_notm}} includes the following header information:
 
-```json
-"headers": "{ Key: type, Value: audit, Key: account, Value: <account>, Key: region, Value: <region>, Key: location, Value: <location> }"
-```
-{: codeblock}
+
 
 | Key | Value |
 |--------------|-------------------|
 | `type` | Is always `audit`. |
-| `account` | The account originating the activity tracking event.  \n  \n This is not the account of the target destination. |
+| `account` | The account where the activity tracking event applies. |
 | `region` | The target region where the event was processed. |
 | `location` | The location field from the `logSourceCRN` identifying the source of the activity tracking event. |
 {: caption="Header key values" caption-side="bottom"}
