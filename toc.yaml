@@ -30,9 +30,7 @@ toc:
           label: IBM Cloud services generating auditing events
           topics:
           - topic: cloud_services_atracker.md
-            navtitle: Managed through Activity Tracker Event Routing
-          - topic: cloud_services_other.md
-            navtitle: Managed through Activity Tracker hosted event search
+            navtitle: Managed through Activity Tracker Event Routing 
       - topicgroup:
           label: Events
           topics:
