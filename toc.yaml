@@ -26,11 +26,8 @@ toc:
             navtitle: Planning
           - topic: atracker-resources.md
             navtitle: Specifications
-      - topicgroup:
-          label: IBM Cloud services generating auditing events
-          topics:
-          - topic: cloud_services_atracker.md
-            navtitle: Managed through Activity Tracker Event Routing 
+      - topic: cloud_services_atracker.md
+        navtitle: IBM Cloud services generating auditing events
       - topicgroup:
           label: Events
           topics:
