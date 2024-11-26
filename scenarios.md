@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2024
-lastupdated: "2024-01-19"
+  years:  2021, 2024
+lastupdated: "2024-11-26"
 
 keywords:
 
@@ -33,7 +33,7 @@ Check out these sample scenarios to learn how to set up your account so that you
 
 - Route data to a Data Lake for analytics. See [Data lake scenario](/docs/atracker?topic=atracker-scenarios&interface=cli#scenarios-5).
 
-- Route data to
+
 
 
 
