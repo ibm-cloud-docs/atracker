@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2024
-lastupdated: "2024-10-09"
+lastupdated: "2024-12-09"
 
 keywords:
 
@@ -22,10 +22,9 @@ You can configure the {{site.data.keyword.atracker_short}} account settings in y
 When you configure or modify the {{site.data.keyword.atracker_short}} account settings, consider the following information:
 
 - Every time you modify the {{site.data.keyword.atracker_short}} account settings, the data that is passed in the new request replaces any existing configuration data. You must ensure that any existing data is not deleted when you run an update of the account settings by including it in the new request.
-{: important}
 
 - Before you disable public endpoints by setting `--private-api-endpoint-only TRUE`, make sure your account has access to the private endpoint.  You can do this by running the command `ibmcloud account show`.  If `VRF Enabled` is `true` and `Service Endpoint Enabled` is `true` then you have access to the private endpoint.  If you do not have access to the private endpoint, you will be unable to re-enable the public endpoint since private endpoint access is required to re-enable the public endpoint.
-{: important}
+
 
 
 
@@ -62,7 +61,7 @@ You can define any of the following information:
 
 You must grant users IAM permissions to manage the account settings. For more information, see [Assign access to resources](/docs/account?topic=account-assign-access-resources).
 
-If you have the IAM permission to create policies and authorizations, you can grant only the level of access that you have as a user of the target service. For example, if you have viewer access for the target service, you can assign only the viewer role for the authorization. If you attempt to assign a higher permission such as administrator, it might appear that permission is granted, however, only the highest level permission you have for the target service, that is viewer, will be assigned. 
+If you have the IAM permission to create policies and authorizations, you can grant only the level of access that you have as a user of the target service. For example, if you have viewer access for the target service, you can assign only the viewer role for the authorization. If you attempt to assign a higher permission such as administrator, it might appear that permission is granted, however, only the highest level permission you have for the target service, that is viewer, will be assigned.
 {: important}
 
 When you define a policy, you can must set the scope of the policy to the account. A route is a global resource that is not bound to a specific region.
