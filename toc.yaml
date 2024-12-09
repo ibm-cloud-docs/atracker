@@ -130,7 +130,7 @@ toc:
       - core/endpoints.md
       - core/cidr.md
       - topic: core/shared-responsibilities.md
-        navtitle: Your responsibilities
+        navtitle: Your responsibilities   
       - topic: core/data-portability.md
         navtitle: Data portability
       - topicgroup:
