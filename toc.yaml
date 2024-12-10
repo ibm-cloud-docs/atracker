@@ -122,13 +122,14 @@ toc:
       - core/endpoints.md
       - core/cidr.md
       - topic: core/shared-responsibilities.md
-        navtitle: Your responsibilities
+        navtitle: Your responsibilities   
       - topic: core/data-portability.md
         navtitle: Data portability
       - topicgroup:
           label: High availability and disaster recovery
           topics:
-          - core/ha-dr.md
+          - topic: core/ha-dr.md
+            navtitle: Understanding high availability and disaster recovery
           - core/dr_config.md
       - topicgroup:
           label: CLI Reference
