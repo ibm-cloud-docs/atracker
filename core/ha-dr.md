@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2024
-lastupdated: "2024-10-09"
+lastupdated: "2024-12-10"
 
 keywords:
 
@@ -14,11 +14,13 @@ subcollection: atracker
 
 {{site.data.keyword.attribute-definition-list}}
 
-# High availability and disaster recovery
-{: #ha_dr}
+# Understanding high availability and disaster recovery for {{site.data.keyword.atracker_full_notm}}
+{: #atracker-ha-dr}
+
+[High availability](#x2284708){: term} (HA) is the ability for a service to remain operational and accessible in the presence of unexpected failures. [Disaster recovery](#x2113280){: term} is the process of recovering the service instance to a working state.
+{: shortdesc}
 
 {{site.data.keyword.atracker_full_notm}} is a highly available, multi-tenant, regional service. In this topic, you can learn more about {{site.data.keyword.atracker_short}}'s availability and disaster recovery strategies.
-{: shortdesc}
 
 ## Service high availability (HA)
 {: #ha_dr_svc_availability}
