@@ -58,6 +58,14 @@ toc:
       - topic: core/iam.md
         navtitle: Managing access with IAM
       - topicgroup:
+          label: Enhancing security
+          topics:
+          - topic: core/architecture-workload-isolation.md
+            navtitle: Architecture and workload isolation
+          - topic: core/service-endpoints.md
+            navtitle: Service endpoints
+          - core/data-security.md
+      - topicgroup:
           label: Generating reports
           topics:
           - topic: config_report_v2.md
