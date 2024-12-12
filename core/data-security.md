@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2024
-lastupdated: "2024-12-10"
+lastupdated: "2024-12-12"
 
 keywords:
 
@@ -44,7 +44,7 @@ To configure {{site.data.keyword.atracker_short}}, you must configure account se
 
     You can control the locations in the account where a target is defined by specifying the allowed locations in the {{site.data.keyword.atracker_short}} account settings.
 
-    Targe definitions are stored in the primary metadata location. If you have a backup metadata location, target definitions are also stored there.
+    Target definitions are stored in the primary metadata location. If you have a backup metadata location, target definitions are also stored there.
 
 - Route definitions are stored in the primary metadata location. If you have a backup metadata location, route definitions are also stored there.
 
@@ -99,7 +99,7 @@ You can route auditing data to any of the following target types:
 
 {{site.data.keyword.atracker_short}} stores configuration data only.
 
-You can delete any route, target and account setting configuration by using the API, the CLI or terraform scripts.
+You can delete any route or target by using the API, the CLI or terraform scripts. You can also reset account setting configuration, other than the primary metadata region, to empty values.
 
 - To stop {{site.data.keyword.atracker_short}} from routing audit events to the configured targets, you must [remove any default targets](/docs/atracker?topic=atracker-target-default-reset) and delete all routes.
 - To delete auditing event destinations, you must delete the target definitions.

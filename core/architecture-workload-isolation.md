@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2024
-lastupdated: "2024-12-10"
+lastupdated: "2024-12-12"
 
 keywords:
 
@@ -34,7 +34,15 @@ The following figure shows the high level architecture for {{site.data.keyword.a
 
 All data and the configuration for each service deployment is retained within the region in which it is hosted.
 
-You can use the {{site.data.keyword.atracker_full_notm}} CLI, the {{site.data.keyword.atracker_full_notm}} API, and {{site.data.keyword.atracker_full_notm}} Terraform to manage the service in your account. You must define targets and routes to define how to manage auditing events per region in your account.
+You can use the following to manage the service in your account:
+
+* The {{site.data.keyword.atracker_full_notm}} CLI
+
+* The {{site.data.keyword.atracker_full_notm}} API
+
+* The {{site.data.keyword.atracker_full_notm}} Terraform
+
+You must define targets and routes to define how to manage auditing events per region in your account.
 - A target is a resource where you can collect auditing events.
 - A route defines the rules that determine where auditing events that are genererated in the account are routed.
 
@@ -46,7 +54,7 @@ In your account, auditing events are automatically collected from {{site.data.ke
 
 After you configure targets and routes in the account, auditing events that are collected are uploaded to the destination target of your choice. You are responsible for managing the auditing data in the target resources.
 
-The flow of all customer data between {{site.data.keyword.atracker_short}} and its dependencies uses private network connections. For more information about private connections, see [Securing your connection to {{site.data.keyword.atracker_short}}](/docs/atracker?topic=atracker-mng-data).
+
 
 
 ## Connections
@@ -64,7 +72,10 @@ You cannot disable private endpoints.
 ### Public connections
 {: #compute-isolation-public-connections}
 
-You can choose to disable public endpoints for {{site.data.keyword.atracker_short}}.
+You can choose to disable public endpoints for {{site.data.keyword.atracker_short}}. 
+
+Disabling public endpoints will disable the {{site.data.keyword.atracker_short}} UI.
+{: important}
 
 For more information, see [Enforcing private endpoints to configure {{site.data.keyword.atracker_short}} resources](/docs/atracker?topic=atracker-getting-started-mng-endpoints).
 
@@ -81,7 +92,7 @@ Review the {{site.data.keyword.cloud_notm}} services that {{site.data.keyword.at
 | {{site.data.keyword.mon_full_notm}} | {{site.data.keyword.atracker_short}} integrates with {{site.data.keyword.mon_short}}, by using a private connection, to send platform metrics. For more information, see [Monitoring metrics for {{site.data.keyword.atracker_short}}](/docs/atracker?topic=atracker-monitoring_metrics). |
 | {{site.data.keyword.cos_full_notm}} | {{site.data.keyword.atracker_short}} stores customer data in {{site.data.keyword.cos_short}} by using a private connection. All data is encrypted in transit and at rest. For more information, see [Managing your data in {{site.data.keyword.atracker_short}}](/docs/atracker?topic=atracker-mng-data).|
 | {{site.data.keyword.at_full_notm}} hosted event search | {{site.data.keyword.atracker_short}} stores customer data in {{site.data.keyword.at_short}} hosted event search by using a private connection. All data is encrypted in transit and at rest. For more information, see [Managing your data in {{site.data.keyword.atracker_short}}](/docs/atracker?topic=atracker-mng-data).|
-| {{site.data.keyword.messagehub}} | {{site.data.keyword.atracker_short}} routes customer data to {{site.data.keyword.messagehub}} by using a private connection. All data is encrypted in transit and at rest. For more information, see [Managing your data in {{site.data.keyword.atracker_short}}](/docs/atracker?topic=atracker-mng-data).|
+| {{site.data.keyword.messagehub}} | {{site.data.keyword.atracker_short}} routes customer data to {{site.data.keyword.messagehub}} by using a public connection unless the {{site.data.keyword.messagehub}} target is running the Enterprise plan. All data is encrypted in transit and at rest. For more information, see [Managing your data in {{site.data.keyword.atracker_short}}](/docs/atracker?topic=atracker-mng-data).|
 | {{site.data.keyword.cloud_notm}} Platform | To authenticate requests to the service and authorize user actions, {{site.data.keyword.atracker_short}} implements platform and service access roles in {{site.data.keyword.iamshort}} (IAM). For more information about required IAM permissions to work with the service, see [Managing access for {{site.data.keyword.atracker_short}}](/docs/atracker?topic=atracker-iam). Connections from {{site.data.keyword.atracker_short}} to IAM do not use private connections. |
 | {{site.data.keyword.databases-for-postgresql_full_notm}} | {{site.data.keyword.atracker_short}} uses {{site.data.keyword.databases-for-postgresql_full_notm}}  for storing metadata. |
 | {{site.data.keyword.logs_full_notm}} | {{site.data.keyword.atracker_short}} routes customer data to {{site.data.keyword.logs_full_notm}} by using a private connection. All data is encrypted in transit and at rest. For more information, see [Managing your data in {{site.data.keyword.atracker_short}}](/docs/atracker?topic=atracker-mng-data).|
