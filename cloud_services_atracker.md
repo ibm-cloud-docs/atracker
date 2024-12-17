@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2024
-lastupdated: "2024-11-20"
+lastupdated: "2024-12-17"
 
 keywords:
 
@@ -217,14 +217,14 @@ The following table lists storage services that send auditing events:
 
 With {{site.data.keyword.vmwaresolutions_full_notm}}, you can quickly and seamlessly integrate or migrate your on-premises VMware workloads to the {{site.data.keyword.cloud_notm}} by using the scalable, secure, and high-performance {{site.data.keyword.cloud_notm}} infrastructure and the industry-leading VMware hybrid virtualization technology. You can easily deploy your VMware virtual environments and manage the infrastructure resources on {{site.data.keyword.cloud_notm}}. At the same time, you can still use your familiar native VMware product console to manage the VMware workloads. [Learn more](https://www.ibm.com/products/vmware){: external}.
 
-The following table lists VMware solution services that send auditing events:
+The following table lists VMware Solutions services that send auditing events:
 
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
-| [{{site.data.keyword.vmwaresolutions_short}}](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview)   | `vmware-solutions` | [Global events](/docs/vmwaresolutions?topic=vmwaresolutions-at_events) |
-| [{{site.data.keyword.cloud}} for VMware® Solutions Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview)      | `vmware-solutions` | [Location-based events](/docs/vmwaresolutions?topic=vmwaresolutions-at_events#at-events-vdc) |
+| [{{site.data.keyword.vmwaresolutions_short}}](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) | `vmware-solutions` | [Global events](/docs/vmwaresolutions?topic=vmwaresolutions-at_events#at-viewing) |
+| [{{site.data.keyword.cloud}} for VMware Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview) | `vmware-solutions` | [Location-based events](/docs/vmwaresolutions?topic=vmwaresolutions-at_events#at-events-vdc) |
 | [KMIP for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations) `[*]` | `vmware-solutions` | [Location-based events](/docs/vmwaresolutions?topic=vmwaresolutions-at_events#at-events-kmip) |
-{: caption="List of VMware solution services" caption-side="top"}
+{: caption="List of VMware Solutions services" caption-side="top"}
 
 `[*]` - Event routing available to {{site.data.keyword.at_full_notm}} only.
 {: note}
