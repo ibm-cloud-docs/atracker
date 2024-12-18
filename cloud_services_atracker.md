@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2024
-lastupdated: "2024-12-17"
+lastupdated: "2024-12-18"
 
 keywords:
 
@@ -221,14 +221,26 @@ The following table lists VMware Solutions services that send auditing events:
 
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
-| [{{site.data.keyword.vmwaresolutions_short}}](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview) | `vmware-solutions` | [Global events](/docs/vmwaresolutions?topic=vmwaresolutions-at_events#at-viewing) |
-| [{{site.data.keyword.cloud}} for VMware Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview) | `vmware-solutions` | [Location-based events](/docs/vmwaresolutions?topic=vmwaresolutions-at_events#at-events-vdc) |
+| [{{site.data.keyword.vmwaresolutions_short}}](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview)   | `vmware-solutions` | [Global events](/docs/vmwaresolutions?topic=vmwaresolutions-at_events) |
+| [{{site.data.keyword.cloud}} for VMware Shared](/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview)      | `vmware-solutions` | [Location-based events](/docs/vmwaresolutions?topic=vmwaresolutions-at_events#at-events-vdc) |
 | [KMIP for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations) `[*]` | `vmware-solutions` | [Location-based events](/docs/vmwaresolutions?topic=vmwaresolutions-at_events#at-events-kmip) |
 {: caption="List of VMware Solutions services" caption-side="top"}
 
 `[*]` - Event routing available to {{site.data.keyword.at_full_notm}} only.
 {: note}
 
+## VMware Cloud Foundation as a Service 
+{: #vmware_service}
+
+{{site.data.keyword.vmware-service_notm}} provides the VMware Cloud Director™ platform as either a dedicated or shared managed service. IBM performs the configuration, hosting, operations, and lifecycle management of the VMware by Broadcom software so you can quickly deploy your VMware-based cloud computing environments. Compute resources are available as either dedicated or multitenant hosts that use {{site.data.keyword.cloud_notm}} bare metal servers.
+
+The following table lists VMware Cloud Foundation (VCF) as a Service services that send auditing events:
+
+| Service     | CRN service name | Events |
+|-------------|--------------|--------|
+| [VCF as a Service - Cloud Director sites](/docs/vmware-service?topic=vmware-service-tenant-ordering) | `vmware.directorsite` | ![Checkmark](/images/checkmark-icon.svg "Checkmark") | [Global events](/docs/vmware-service?topic=vmware-service-at_events#at-events-director-site) |
+| [VCF as a Service - virtual data centers](/docs/vmware-service?topic=vmware-service-vdc-adding) | `vmware.vdc` | ![Checkmark](/images/checkmark-icon.svg "Checkmark") | [Global events](/docs/vmware-service?topic=vmware-service-at_events#at-events-vdc) |
+{: caption="List of VCF as a Service services" caption-side="top"}
 
 ## VPC services
 {: #vpc_services}
