@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2024
-lastupdated: "2024-12-18"
+lastupdated: "2024-12-19"
 
 keywords:
 
@@ -275,7 +275,6 @@ The following table lists Watson AI services that send auditing events:
 | [{{site.data.keyword.discoveryfull}}](/docs/discovery-data?topic=discovery-data-getting-started) | `discovery` | [Location-based events](/docs/discovery-data?topic=discovery-data-at_events)  |
 | [{{site.data.keyword.speechtotextfull}}](/docs/speech-to-text?topic=speech-to-text-gettingStarted) | `speech-to-text` | [Location-based events](/docs/speech-to-text?topic=speech-to-text-at-events) |
 | [{{site.data.keyword.texttospeechfull}}](/docs/text-to-speech?topic=text-to-speech-gettingStarted) | `text-to-speech` | [Location-based events](/docs/text-to-speech?topic=text-to-speech-at-events) |
-| [{{site.data.keyword.languagetranslatorfull}}](/docs/language-translator?topic=language-translator-about) | `language-translator` | [Location-based events](/docs/language-translator?topic=language-translator-at_events) |
 {: caption="List of Watson AI services" caption-side="top"}
 
 
