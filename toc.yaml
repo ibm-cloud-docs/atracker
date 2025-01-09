@@ -56,6 +56,28 @@ toc:
       - topic: tf/atracker-tf-config.md
         navtitle: Configuring your account by using terraform
       - topicgroup:
+          label: Controlling access
+          topics:
+          - topic: iam.md
+            navtitle: Managing access with IAM
+          - topic: iam-assign-access.md
+            navtitle: Assigning access
+          - topicgroup:
+              label: S2S authorizations
+              topics:
+               - topic: iam-service-auth.md
+                 navtitle: Managing authorizations
+               - topic: iam-service-auth-cos.md
+                 navtitle: S2S for Cloud Object Storage
+               - topic: iam-service-auth-logs.md
+                 navtitle: S2S for Cloud Logs
+               - topic: iam-service-auth-es.md
+                 navtitle: S2S for Event Streams
+               - topic: iam-service-auth-remove-auth.md
+                 navtitle: Removing authorizations
+          - topic: iam-custom-roles.md
+            navtitle: Managing custom roles
+      - topicgroup:
           label: Enhancing security
           topics:
           - topic: core/architecture-workload-isolation.md
