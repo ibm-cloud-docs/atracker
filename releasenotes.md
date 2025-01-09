@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2021, 2024
-lastupdated: "2024-09-23"
+  years:  2021, 2025
+lastupdated: "2025-01-09"
 
 keywords:
 
@@ -21,6 +21,13 @@ content-type: release-note
 
 Use these release notes to learn about the latest updates to {{site.data.keyword.atracker_full}}.
 {: shortdesc}
+
+## 07 January 2025
+{: #activity-tracker-jan0725}
+{: release-note}
+
+Some {{site.data.keyword.cos_full}} events will be dropped.
+:  {{site.data.keyword.atracker_full}} will drop successful `cloud-object-storage.object.read` events that are initiated by {{site.data.keyword.logs_full_notm}} instances because they are not needed.
 
 ## 23 September 2024
 {: #activity-tracker-sep2324}
