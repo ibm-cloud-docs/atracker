@@ -43,7 +43,7 @@ toc:
       id: tutorial
       topics:
       - topic: tutorials/getting-started-cloud-logs.md
-        navtitle: Configuring a Cloud Logs target
+        navtitle: Configuring Cloud Logs as a target 
       - topic: tutorials/getting-started-target-cos.md
         navtitle: Configuring a COS target
       - topic: tutorials/getting-started-target-event-streams.md
