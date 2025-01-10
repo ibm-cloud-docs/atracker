@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2025
-lastupdated: "2025-01-09"
+lastupdated: "2025-01-10"
 
 keywords:
 
@@ -37,7 +37,7 @@ You can view whether the source service is located in the current account or ano
 For more information, see [Using authorizations to grant access between services](/docs/account?topic=account-serviceauth).
 
 
-## Supported service to service authorizations
+## Service to service authorizations
 {: #iam-service-auth-2}
 
 The following table lists the different S2S authorizations that you can configure when you use the {{site.data.keyword.atracker_full_notm}} service:

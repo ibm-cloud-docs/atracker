@@ -74,9 +74,7 @@ toc:
                - topic: iam-service-auth-es.md
                  navtitle: S2S for Event Streams
                - topic: iam-service-auth-remove-auth.md
-                 navtitle: Removing authorizations
-          - topic: iam-custom-roles.md
-            navtitle: Managing custom roles
+                 navtitle: Removing authorizations 
       - topicgroup:
           label: Enhancing security
           topics:
