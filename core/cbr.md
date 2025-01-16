@@ -90,7 +90,7 @@ To configure context-based restrictions, do the following:
    ```
    {: screen}
 
-4. Create or validate the target that points to the destination resources. If your CBR rule is configured property, a test event will be able to write to the destination and the target will be created or validated. If not, you will receive an *access forbidden* error instead. For example:
+4. Create or validate the target that points to the destination resources. If your CBR rule is configured properly, a test event will be able to write to the destination and the target will be created or validated. If not, you will receive an *access forbidden* error instead. For example:
    
    ```text
    ibmcloud at target validate --target <target-uuid>
