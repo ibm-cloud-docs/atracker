@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2021, 2024
-lastupdated: "2024-08-12"
+  years:  2021, 2025
+lastupdated: "2025-01-17"
 
 keywords: Observability
 
@@ -37,7 +37,7 @@ You can use {{site.data.keyword.atracker_short}}, a platform service, to manage 
 ## Step 1. Configure the account global settings
 {: #getting-started-step1}
 
-When you configure {{site.data.keyword.atracker_short}} in your account, you can configure the account settings such as the metadata location, type of endpoints allowed to manage the configuration, locations where targets can be defined, and default targets for collecting auditing events in regions that yiu have not explicitly configured. For more information, see [Configuring {{site.data.keyword.atracker_short}} account settings](/docs/atracker?topic=atracker-settings&interface=cli).
+When you configure {{site.data.keyword.atracker_short}} in your account, you can configure the account settings such as the metadata location, type of endpoints allowed to manage the configuration, locations where targets can be defined, and default targets for collecting auditing events in regions that you have not explicitly configured. For more information, see [Configuring {{site.data.keyword.atracker_short}} account settings](/docs/atracker?topic=atracker-settings&interface=cli).
 
 Set these settings to define where and how auditing events are collected, routed, and managed in your account. For example, to configure the primary metadata location that defines the region where all your {{site.data.keyword.atracker_short}} resource definitions are stored, run the following command:
 
