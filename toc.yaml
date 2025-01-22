@@ -82,8 +82,6 @@ toc:
             navtitle: Architecture and workload isolation
           - topic: core/service-endpoints.md
             navtitle: Service endpoints
-          - topic: core/cbr.md
-            navtitle: Restricting access by context-based restrictions
           - core/data-security.md
       - topicgroup:
           label: Generating reports
