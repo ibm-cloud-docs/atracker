@@ -38,7 +38,6 @@ The following table lists the actions that generate an event:
 |-----------------------------|-------------|
 | `iam-groups.account-settings.read` | An event is generated when an initiator views the account settings for the access groups service. |
 | `iam-groups.account-settings.update` | An event is generated when an initiator updates their account settings for the access groups service. |
-| `iam-access-management.account-settings.eval` | An event is generated when an external identity attempts to access a resource while the account hosting the resource restricts external identity access through an IAM setting. This event is generated when access is blocked in "limited" mode, and also in "report-only" mode, regardless of whether access would have been allowed or restricted by the setting. Reference `responseData.decision` and `responseData.isEnforced` event fields to differentiate these cases. |
 {: caption="Events that are generated for IAM account Settings" caption-side="top"}
 
 
