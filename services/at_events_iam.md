@@ -1,8 +1,8 @@
----
+![image](https://github.ibm.com/cloud-docs/atracker/assets/2782/ea48ad72-7460-4051-8584-8cb2ef5f24b4)---
 
 copyright:
-  years:  2021, 2024
-lastupdated: "2024-10-09"
+  years:  2021, 2025
+lastupdated: "2025-01-23"
 
 keywords:
 
@@ -38,7 +38,8 @@ The following table lists the actions that generate an event:
 |-----------------------------|-------------|
 | `iam-groups.account-settings.read` | An event is generated when an initiator views the account settings for the access groups service. |
 | `iam-groups.account-settings.update` | An event is generated when an initiator updates their account settings for the access groups service. |
-{: caption="Events that are generated for access groups" caption-side="top"}
+| `iam-access-management.account-settings.eval` | An event is generated when an external identity attempts to access a resource while the account hosting the resource restricts external identity access through an IAM setting. This event is generated when access is blocked in "limited" mode, and also in "report-only" mode, regardless of whether access would have been allowed or restricted by the setting. Reference `responseData.decision` and `responseData.isEnforced` event fields to differentiate these cases. |
+{: caption="Events that are generated for IAM account Settings" caption-side="top"}
 
 
 
