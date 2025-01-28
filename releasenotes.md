@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2025
-lastupdated: "2025-01-22"
+lastupdated: "2025-01-28"
 
 keywords:
 
@@ -22,7 +22,12 @@ content-type: release-note
 Use these release notes to learn about the latest updates to {{site.data.keyword.atracker_full}}.
 {: shortdesc}
 
+## 28 January 2025
+{: #activity-tracker-jan2825}
+{: release-note}
 
+Context-based restrictions
+:  {{site.data.keyword.atracker_full}} now supports context-based restrictions (CBR). For more information see, [Restricting access by context-based restrictions](/docs/atracker?topic=atracker-context-based-restrictions).
 
 ## 07 January 2025
 {: #activity-tracker-jan0725}
