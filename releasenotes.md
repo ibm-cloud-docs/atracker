@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-01-29"
 
 keywords:
 
@@ -21,6 +21,8 @@ content-type: release-note
 
 Use these release notes to learn about the latest updates to {{site.data.keyword.atracker_full}}.
 {: shortdesc}
+
+
 
 ## 28 January 2025
 {: #activity-tracker-jan2825}

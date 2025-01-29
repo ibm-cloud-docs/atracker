@@ -82,8 +82,11 @@ toc:
           topics:
           - topic: core/architecture-workload-isolation.md
             navtitle: Architecture and workload isolation
-          - topic: core/service-endpoints.md
-            navtitle: Service endpoints
+          - topicgroup:
+              label: Privately connecting to Activity Tracker Event Routing
+              topics:
+              - topic: core/service-endpoints.md
+                navtitle: Service endpoints
           - topic: core/cbr.md
             navtitle: Restricting access by context-based restrictions
           - core/data-security.md
