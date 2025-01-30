@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2021, 2024
-lastupdated: "2024-12-19"
+  years:  2021, 2025
+lastupdated: "2025-01-30"
 
 keywords:
 
@@ -41,7 +41,6 @@ The following table lists services that send auditing events:
 
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
-| [{{site.data.keyword.BluVirtServers_full}} (Classic)](/docs/virtual-servers?topic=virtual-servers-about-virtual-servers)| `audit-log` | Location-based events |
 | [{{site.data.keyword.baremetal_long}} (Classic)](/docs/bare-metal?topic=bare-metal-about-bm#about-bm) | `audit-log` | [Location-based events](/docs/bare-metal?topic=bare-metal-bm-at-events#bm-at-events) |
 {: caption="List of classic services" caption-side="top"}
 
