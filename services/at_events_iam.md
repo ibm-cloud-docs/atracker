@@ -1,8 +1,8 @@
-![image](https://github.ibm.com/cloud-docs/atracker/assets/2782/ea48ad72-7460-4051-8584-8cb2ef5f24b4)---
+---
 
 copyright:
   years:  2021, 2025
-lastupdated: "2025-01-23"
+lastupdated: "2025-01-30"
 
 keywords:
 
