@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2025
-lastupdated: "2025-01-29"
+lastupdated: "2025-01-31"
 
 keywords:
 
@@ -22,6 +22,12 @@ content-type: release-note
 Use these release notes to learn about the latest updates to {{site.data.keyword.atracker_full}}.
 {: shortdesc}
 
+## 31 January 2025
+{: #activity-tracker-jan3125}
+{: release-note}
+
+Virtual private endpoints
+:  {{site.data.keyword.atracker_full}} now supports virtual private endpoints (VPE) for all API regions. For more information see, [Using virtual private endpoints for VPC to privately connect to {{site.data.keyword.atracker_short}}](/docs/atracker?topic=atracker-vpe-connection).
 
 
 ## 28 January 2025
