@@ -85,6 +85,8 @@ toc:
           - topicgroup:
               label: Privately connecting to Activity Tracker Event Routing
               topics:
+              - topic: core/vpe.md
+                navtitle: Using virtual private endpoints for VPC
               - topic: core/service-endpoints.md
                 navtitle: Service endpoints
           - topic: core/cbr.md
