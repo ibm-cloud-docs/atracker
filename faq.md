@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2021, 2024
-lastupdated: "2024-10-09"
+  years:  2021, 2025
+lastupdated: "2025-02-04"
 
 keywords:
 
@@ -12,10 +12,10 @@ subcollection: atracker
 
 {{site.data.keyword.attribute-definition-list}}
 
-# FAQs
+# FAQ for {{site.data.keyword.atracker_full_notm}}
 {: #faq}
 
-Frequently asked questions about {{site.data.keyword.atracker_short}}.
+Frequently asked questions about {{site.data.keyword.atracker_full}}.
 {: shortdesc}
 
 ## What are the different ways to manage auditing events?
