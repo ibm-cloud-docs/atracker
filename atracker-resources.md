@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2021, 2024
-lastupdated: "2024-10-09"
+  years:  2021, 2025
+lastupdated: "2025-02-14"
 
 keywords:
 
@@ -20,7 +20,7 @@ Use {{site.data.keyword.atracker_full}} to configure how to route audit events, 
 {: shortdesc}
 
 
-![The {{site.data.keyword.atracker_short}} service](images/atracker_ov.svg "The {{site.data.keyword.atracker_short}} service"){: caption="The {{site.data.keyword.atracker_short}} service" caption-side="bottom"}
+![The {{site.data.keyword.atracker_short}} service](images/overview.svg "The {{site.data.keyword.atracker_short}} service"){: caption="The {{site.data.keyword.atracker_short}} service" caption-side="bottom"}
 
 
 ## Configuring the account
