@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2025
-lastupdated: "2025-02-05"
+lastupdated: "2025-02-20"
 
 keywords:
 
@@ -110,7 +110,7 @@ The following table lists {{site.data.keyword.contdelivery_full}} services that 
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
 | [{{site.data.keyword.contdelivery_full}}](/docs/ContinuousDelivery?topic=ContinuousDelivery-getting-started) | `continuous-delivery` | [Location-based events](/docs/ContinuousDelivery?topic=ContinuousDelivery-cd-at-events) |
-| [Toolchain](/docs/ContinuousDelivery?topic=ContinuousDelivery-cd_about) | `toolchain` | [Location-based events](/docs/ContinuousDelivery?topic=ContinuousDelivery-cd-at-events#toolchain-events) |
+| [Toolchain](/docs/ContinuousDelivery?topic=ContinuousDelivery-cd_about) | `toolchain` | [Location-based events](/docs/ContinuousDelivery?topic=ContinuousDelivery-at_events#at_actions_toolchain) |
 {: caption="List of developer tools services" caption-side="top"}
 
 
