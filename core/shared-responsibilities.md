@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2021, 2024
-lastupdated: "2024-10-09"
+  years:  2021, 2025
+lastupdated: "2025-02-22"
 
 keywords:
 
@@ -74,7 +74,7 @@ Review the following sections for the specific responsibilities for you and for 
 
 | Task                                                            | {{site.data.keyword.IBM_notm}} Responsibilities | Your Responsibilities |
 |-----------------------------------------------------------------|-------------------------------------------------|-----------------------|
-| Restore functionality for {{site.data.keyword.atracker_short}}  | Automatically recover and restart {{site.data.keyword.atracker_short}} components after any disaster event.    \n In case of a regional disaster, {{site.data.keyword.cloud_notm}} service teams, who are responsible for the operations of services that generate auditing events, will point their service to {{site.data.keyword.atracker_short}} endpoints in their alternate region within the same regulatory boundaries. | [Complete the disaster recovery (DR) steps for {{site.data.keyword.atracker_short}}](/docs/atracker?topic=atracker-ha_dr). |
+| Restore functionality for {{site.data.keyword.atracker_short}}  | Automatically recover and restart {{site.data.keyword.atracker_short}} components after any disaster event.    \n In case of a regional disaster, {{site.data.keyword.cloud_notm}} service teams, who are responsible for the operations of services that generate auditing events, will point their service to {{site.data.keyword.atracker_short}} endpoints in their alternate region within the same regulatory boundaries. | [Complete the disaster recovery (DR) steps for {{site.data.keyword.atracker_short}}](/docs/atracker?topic=atracker-atracker-ha-dr). |
 | Backup {{site.data.keyword.atracker_short}} components   | Daily backup of the {{site.data.keyword.atracker_short}} infrastructure and components. | `N/A` |
 {: caption="Responsibilities for disaster recovery" caption-side="top"}
 

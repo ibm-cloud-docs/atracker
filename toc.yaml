@@ -152,7 +152,7 @@ toc:
       id: reference
       topics:
       - config_limits.md
-      - core/iam_by_role.md
+      - iam_by_role.md
       - core/regions.md
       - core/endpoints.md
       - core/cidr.md

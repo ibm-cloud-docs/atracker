@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-02-22"
 keywords:
 
 subcollection: atracker
@@ -16,7 +16,7 @@ subcollection: atracker
 # Restricting access by context-based restrictions
 {: #context-based-restrictions}
 
-[Context-based restrictions (CBR)](/docs/account?topic=account-context-restrictions-whatis&interface=ui) provides a way for administrators to limit access to {{site.data.keyword.atracker_full}} destination resources or the {{site.data.keyword.atracker_full_notm}} public API. For general context-based restrictions instructions, see [Creating context-based restrictions](docs/account?topic=account-context-restrictions-create&interface=ui). 
+[Context-based restrictions (CBR)](/docs/account?topic=account-context-restrictions-whatis&interface=ui) provides a way for administrators to limit access to {{site.data.keyword.atracker_full}} destination resources or the {{site.data.keyword.atracker_full_notm}} public API. For general context-based restrictions instructions, see [Creating context-based restrictions](/docs/account?topic=account-context-restrictions-create&interface=ui). 
 {: shortdesc}
 
 Any audit events generated come from the context-based restrictions service, and not {{site.data.keyword.atracker_full_notm}}. For more information, see [Monitoring context-based restrictions](/docs/account?topic=account-cbr-monitor).
@@ -54,7 +54,7 @@ To configure context-based restrictions, do the following:
 
 2. Define one or more [network zones](/docs/account?topic=account-context-restrictions-create&interface=cli#network-zones-create-cli) that you might want to access resources from the UI, CLI or any other clients.
 
-3. Create a [CBR rule](docs/account?topic=account-context-restrictions-create&interface=cli#context-restrictions-create-rules-cli) that can be scoped to the resource instance, or resource, you want the rule to protect, and select the network zones you defined in the previous steps. Here are 2 examples to define rules to protect 1 {{site.data.keyword.cos_full_notm}} bucket and 1 {{site.data.keyword.logs_full_notm}} instance:
+3. Create a [CBR rule](/docs/account?topic=account-context-restrictions-create&interface=cli#context-restrictions-create-rules-cli) that can be scoped to the resource instance, or resource, you want the rule to protect, and select the network zones you defined in the previous steps. Here are 2 examples to define rules to protect 1 {{site.data.keyword.cos_full_notm}} bucket and 1 {{site.data.keyword.logs_full_notm}} instance:
 
    ```text
    ibmcloud cbr rule-create --description "Allow Atracker-Zone-All-Regions and Client-GreenZone to access the Log instance" --service-name logs --service-instance 44445555-a4f1-4f8a-a954-75f083c7e001 --zone-id "222220d595a54f650157aa5e2b26d002,1111b52afc14facafe797e34292b1001" --enforcement-mode "enabled"

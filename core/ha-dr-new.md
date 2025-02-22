@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2025
-lastupdated: "2025-02-07"
+lastupdated: "2025-02-22"
 
 keywords: HA for IBM Cloud Activity Tracker Event Routing, DR for IBM Cloud Activity Tracker Event Routing, IBM Cloud Activity Tracker Event Routing recovery time objective, IBM Cloud Activity Tracker Event Routing recovery point objective
 
@@ -165,7 +165,7 @@ In the event of a regional disaster, you must complete the following steps to es
 
 1. Decide which location is going to be your recovery region. Choose 1 of the following options:
 
-    - [Check the suggested DR recovery region](/docs/atracker?topic=atracker-ha_dr#bc-dr-locations) and use that region as your recovery region.
+    - [Check the suggested DR recovery region](/docs/atracker?topic=atracker-atracker-ha-dr#ibm-disaster-recovery) and use that region as your recovery region.
 
     - If you have configured the {{site.data.keyword.atracker_short}} account settings with a primary location and a secondary backup location, check if either location is still operational and use 1 of those locations as your recovery region.
 

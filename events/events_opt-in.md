@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2021, 2024
-lastupdated: "2024-10-09"
+  years:  2021, 2025
+lastupdated: "2025-02-22"
 
 keywords:
 
@@ -29,10 +29,10 @@ The following table lists the services that require additional steps for you to 
 
 | Service                            | Upgrade plan                       | Configure the service              | More info |
 |------------------------------------|------------------------------------|------------------------------------|-----------|
-| [Watson services](/docs/atracker?topic=atracker-cloud_services_other#cloud_services_other_watson_ai) `[*]`  | ![Checkmark icon](../../icons/checkmark-icon.svg) |  |   |
+| [Watson services](docs/atracker?topic=atracker-cloud_services_atracker) `[*]`  | ![Checkmark icon](../../icons/checkmark-icon.svg) |  |   |
 {: caption="{{site.data.keyword.cloud_notm}} services that require actions for management events" caption-side="top"}
 
-`[*]` You might need to upgrade to a paid plan to enable collection of Watson Activity Tracker events in your account. See [Details per Watson service](/docs/atracker?topic=atracker-cloud_services_other#cloud_services_other_watson_ai) to check requirements by service.
+`[*]` You might need to upgrade to a paid plan to enable collection of Watson Activity Tracker events in your account. See [Details per Watson service](docs/atracker?topic=atracker-cloud_services_atracker) to check requirements by service.
 
 
 ## Data events
@@ -46,7 +46,7 @@ The following table lists the services that require additional steps for you to 
 | {{site.data.keyword.cos_full}}     |  | ![Checkmark icon](../../icons/checkmark-icon.svg) | [Enabling {{site.data.keyword.atracker_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-at&interface=ui#at-examples-recommended) |
 | {{site.data.keyword.cloudantfull}} |  | ![Checkmark icon](../../icons/checkmark-icon.svg) | [Configuring data events for an IBM Cloudant instance](/docs/Cloudant?topic=Cloudant-at_events#at_event_configure) |
 | {{site.data.keyword.messagehub_full}} | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) | [Enabling message audit events](/docs/EventStreams?topic=EventStreams-at_events#enable-message-events) |
-| [Watson services](/docs/atracker?topic=atracker-cloud_services_other#cloud_services_other_watson_ai)    | ![Checkmark icon](../../icons/checkmark-icon.svg) |  |   |
+| [Watson services](docs/atracker?topic=atracker-cloud_services_atracker)    | ![Checkmark icon](../../icons/checkmark-icon.svg) |  |   |
 {: caption="{{site.data.keyword.cloud_notm}} services that require actions for data events" caption-side="top"}
 
 
