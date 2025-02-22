@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2024
-lastupdated: "2024-01-18"
+  years:  2021, 2025
+lastupdated: "2025-02-22"
 
 keywords:
 
@@ -119,7 +119,7 @@ The following services generate global events in the {{site.data.keyword.cloud_n
 * {{site.data.keyword.vmwaresolutions_short}}
 * {{site.data.keyword.BluDirectLink}} solution
 
-For more information on services generating global events, see [Services that generate events that are managed through {{site.data.keyword.atracker_full_notm}}](/atracker?topic=atracker-cloud_services_atracker) and [Services that generate events that are managed through {{site.data.keyword.at_full_notm}} hosted event search](/docs/atracker?topic=atracker-cloud_services_other).
+For more information on services generating global events, see [Services that generate events that are managed through {{site.data.keyword.atracker_full_notm}}](/atracker?topic=atracker-cloud_services_atracker).
 
 For {{site.data.keyword.atracker_short}}, you can choose the region where events are collected. [Learn more](/docs/atracker?topic=atracker-getting-started).
 

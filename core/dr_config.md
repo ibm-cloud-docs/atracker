@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2021, 2024
-lastupdated: "2024-10-09"
+  years:  2021, 2025
+lastupdated: "2025-02-22"
 
 keywords:
 
@@ -20,7 +20,7 @@ subcollection: atracker
 {{site.data.keyword.atracker_full_notm}} is a highly available, multi-tenant, regional service. However, you can also configure a routing configuration to a backup instance to mitigate data loss if a regional disaster occurs.
 {: shortdesc}
 
-For more information about {{site.data.keyword.atracker_full_notm}} availability and recovery that is provided by the service, see [High availability and disaster recovery](/docs/atracker?topic=atracker-ha_dr).
+For more information about {{site.data.keyword.atracker_full_notm}} availability and recovery that is provided by the service, see [High availability and disaster recovery](/docs/atracker?topic=atracker-atracker-ha-dr).
 {: note}
 
 ## Understanding targets and routes
@@ -76,7 +76,7 @@ When you configure an environment with a backup target, you need to consider the
 ## Automatic disaster management
 {: #dr_config_auto}
 
-You can choose to allow {{site.data.keyword.atracker_full_notm}} to handle a regional disaster as described in [High availability and disaster recovery](/docs/atracker?topic=atracker-ha_dr).
+You can choose to allow {{site.data.keyword.atracker_full_notm}} to handle a regional disaster as described in [High availability and disaster recovery](/docs/atracker?topic=atracker-atracker-ha-dr).
 
 In this case, no additional charges for a second [target instance](#dr_config_backup) are charged. However, you also have the following risks:
 

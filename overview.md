@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2025
-lastupdated: "2025-02-14"
+lastupdated: "2025-02-22"
 
 keywords:
 
@@ -27,8 +27,7 @@ The following table outlines the locations where you can configure {{site.data.k
 
 See [locations](/docs/atracker?topic=atracker-regions) for the locations where you can configure {{site.data.keyword.atracker_short}} to collect and manage auditing events.
 
-You can use {{site.data.keyword.atracker_short}} to manage events from enabled-services in the account. To see the list of services that generate events that you can manage by using {{site.data.keyword.atracker_short}}, see [Services generating events](/docs/atracker?topic=atracker-cloud_services_atracker). Other services that generate events in the account, you can continue to manage these events by using [{{site.data.keyword.atracker_short}} hosted event search](/docs/atracker?topic=atracker-getting-started). To see the list of services that you cannot manage through {{site.data.keyword.atracker_short}}, see [Other services](/docs/atracker?topic=atracker-cloud_services_other).
-
+You can use {{site.data.keyword.atracker_short}} to manage events from enabled-services in the account. To see the list of services that generate events that you can manage by using {{site.data.keyword.atracker_short}}, see [Services generating events](/docs/atracker?topic=atracker-cloud_services_atracker). Other services that generate events in the account, you can continue to manage these events by using [{{site.data.keyword.atracker_short}} hosted event search](/docs/atracker?topic=atracker-getting-started). 
 
 
 

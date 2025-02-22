@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2025
-lastupdated: "2025-02-20"
+lastupdated: "2025-02-22"
 
 keywords:
 
@@ -67,7 +67,7 @@ The following table lists container platform services that send auditing events:
 |-------------|------------------|--------|
 | [{{site.data.keyword.registrylong}}](/docs/Registry?topic=Registry-getting-started) | `container-registry` | [Location-based events](/docs/Registry?topic=Registry-at_events) |
 | [{{site.data.keyword.containerlong}}](/docs/containers?topic=containers-getting-started) | `containers-kubernetes` | [Location-based events](/docs/containers?topic=containers-at_events_ref) |
-| [{{site.data.keyword.openshiftlong}}](/docs/openshift?topic=openshift-getting-started) | `openshift` | [Location-based events](/docs/openshift?topic=openshift-at_events) |
+| [{{site.data.keyword.openshiftlong}}](/docs/openshift?topic=openshift-getting-started) | `openshift` | Location-based events  |
 {: caption="Container events" caption-side="top"}
 
 
@@ -99,8 +99,8 @@ The following table lists developer tools and DevOps services that send auditing
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
 | [{{site.data.keyword.bplong}}](/docs/schematics?topic=schematics-getting-started)  | `schematics` | [Location-based events](/docs/schematics?topic=schematics-at_events) |
-| [{{site.data.keyword.en_full}}](/docs/event-notifications?topic=event-notifications-getting-started) | `event-notifications`| [Location-based events](/docs/event-notifications?topic=event-notifications-en-at_events)|
-| [{{site.data.keyword.appconfig_full}}](/docs/app-configuration?topic=app-configuration-getting-started) | `apprapp`| [Location-based events](/docs/app-configuration?topic=app-configuration-ac-at_events)|
+| [{{site.data.keyword.en_full}}](/docs/event-notifications?topic=event-notifications-getting-started) | `event-notifications`| Location-based events |
+| [{{site.data.keyword.appconfig_full}}](/docs/app-configuration?topic=app-configuration-getting-started) | `apprapp`| [Location-based events](/docs/app-configuration?topic=app-configuration-at_events)|
 | [{{site.data.keyword.cloud-shell_full}}](/docs/cloud-shell?topic=cloud-shell-getting-started) | `cloudshell` | [Location-based events](/docs/cloud-shell?topic=cloud-shell-at_events) |
 {: caption="List of developer tools services" caption-side="top"}
 
@@ -109,7 +109,7 @@ The following table lists {{site.data.keyword.contdelivery_full}} services that 
 
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
-| [{{site.data.keyword.contdelivery_full}}](/docs/ContinuousDelivery?topic=ContinuousDelivery-getting-started) | `continuous-delivery` | [Location-based events](/docs/ContinuousDelivery?topic=ContinuousDelivery-cd-at-events) |
+| [{{site.data.keyword.contdelivery_full}}](/docs/ContinuousDelivery?topic=ContinuousDelivery-getting-started) | `continuous-delivery` | [Location-based events](/docs/ContinuousDelivery?topic=ContinuousDelivery-at_events) |
 | [Toolchain](/docs/ContinuousDelivery?topic=ContinuousDelivery-cd_about) | `toolchain` | [Location-based events](/docs/ContinuousDelivery?topic=ContinuousDelivery-at_events#at_actions_toolchain) |
 {: caption="List of developer tools services" caption-side="top"}
 
@@ -186,7 +186,7 @@ The following table lists security Cloud services that send auditing events:
 |-------------|------------------|--------|
 | [{{site.data.keyword.appid_full}}](/docs/appid?topic=appid-getting-started) | `appid` | [Location-based events](/docs/appid?topic=appid-at-events)   |
 | [{{site.data.keyword.cloud_notm}} {{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-get-started) | `hs-crypto` | [Location-based events](/docs/hs-crypto?topic=hs-crypto-at-events) |
-| [{{site.data.keyword.secrets-manager_full}}](/docs/secrets-manager?topic=secrets-manager-getting-started) | `secrets-manager` |  [Location-based events](/docs/secrets-manager?topic=secrets-manager-at-events) |
+| [{{site.data.keyword.secrets-manager_full}}](/docs/secrets-manager?topic=secrets-manager-getting-started) | `secrets-manager` |  [Location-based events](/docs/secrets-manager?topic=secrets-manager-at_events) |
 | [{{site.data.keyword.keymanagementservicelong}}](/docs/key-protect?topic=key-protect-getting-started-tutorial#getting-started-tutorial) | `kms` | [Location-based events](/docs/key-protect?topic=key-protect-at-events) |
 | [{{site.data.keyword.compliance_full}}](/docs/security-compliance?topic=security-compliance-getting-started) `[*]`| `compliance`  \n `security-advisor` | [Location-based events](/docs/security-compliance?topic=security-compliance-at_events) |
 {: caption="List of security services" caption-side="top"}

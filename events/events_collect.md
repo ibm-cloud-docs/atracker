@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2024
-lastupdated: "2024-01-18"
+  years:  2021, 2025
+lastupdated: "2025-02-22"
 
 keywords:
 
@@ -78,6 +78,6 @@ You can choose 1 of the following options to collect [location-based events](/do
 
     Routing of location-based events from a given region is only supported for the regions where {{site.data.keyword.atracker_short}} is supported. For more information about supported regions, see [Locations](/docs/atracker?topic=atracker-regions).
 
-2. Configure {{site.data.keyword.at_short}} hosted event search for events that are not routed by {{site.data.keyword.atracker_short}}: Location-based events are available through the {{site.data.keyword.at_short}} instance that is available in the same region as the service. For a list of services, see [{{site.data.keyword.cloud_notm}} services that generate events that are managed through {{site.data.keyword.at_short}} hosted event search](/docs/atracker?topic=atracker-cloud_services_other).
+2. Configure {{site.data.keyword.at_short}} hosted event search for events that are not routed by {{site.data.keyword.atracker_short}}: Location-based events are available through the {{site.data.keyword.at_short}} instance that is available in the same region as the service. 
 
     {{site.data.keyword.at_short}} hosted event search routes location-based auditing events to an {{site.data.keyword.at_short}} instance in the region where they are generated.
