@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-12-17"
+lastupdated: "2025-02-28"
 
 keywords:
 
@@ -66,7 +66,7 @@ The following table provides the dependency listing of this service following a 
 | IBM Cloud Classic NTP Servers | Availability, Change management, configuration-management | No | Both |  Same data center  |
 | IBM Key Protect for IBM Cloud | Availability, Change management, Disaster recovery, Security compliance | No | Both |  Same region  |
 | IBM Log Analysis and IBM Cloud Activity Tracker | Availability, Operations | No | Both |  Same region  |
-| IBM Log Analysis & IBM Cloud Activity Tracker | Availability, Operations | No | Both |  Same region  |
+| IBM Cloud Logs | Availability, Operations | No | Both |  Same region  |
 | Let's Encrypt | Availability, Security compliance | No | Both |  [Global](https://cloud.ibm.com/docs/overview?topic=overview-zero-downtime#global-platform)  |
 {: row-headers}
 {: caption="IBM Cloud Activity Tracker Event Routing service dependency information - Significant dependencies" caption-side="top"}
