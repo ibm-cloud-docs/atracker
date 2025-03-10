@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2025
-lastupdated: "2025-02-28"
+lastupdated: "2025-03-10"
 
 keywords:
 
@@ -203,6 +203,7 @@ The following table lists storage services that send auditing events:
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
 | [{{site.data.keyword.cos_full}}](/docs/cloud-object-storage?topic=cloud-object-storage-getting-started-cloud-object-storage)| `cloud-object-storage` | [Global and location-based events `[*]`](/docs/cloud-object-storage?topic=cloud-object-storage-at-events) |
+| [{{site.data.keyword.cephaas_full}}](/docs/cephaas?topic=cephaas-getting-started)| `software-defined-storage` | [Global events](/docs/cephaas?topic=cephaas-at_events) |
 {: caption="List of storage events" caption-side="top"}
 
 
