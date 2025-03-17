@@ -28,7 +28,6 @@ Use these release notes to learn about the latest updates to {{site.data.keyword
 {: release-note}
 
 Changes to the {{site.data.keyword.cos_full_notm}} file naming convention for I{{site.data.keyword.atracker_full_notm}}
-
 :  {{site.data.keyword.atracker_full_notm}} will change the {{site.data.keyword.cos_full_notm}} (COS) file naming convention for activity tracking events sent to COS buckets. With this change, customers that have a dependency on the current file naming convention might need to adjust automation to reflect the new naming convention.  The format of the data in the files will not change.
 
    The change will take effect on 23 April 2025. For more information, see [Changes to Cloud Object Storage file naming convention](/docs/atracker?topic=change_cos_filename_convention).
