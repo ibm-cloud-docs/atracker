@@ -151,7 +151,7 @@ toc:
   - navgroup:
       id: reference
       topics:
-      - change_cos_filename.md
+      - change_cos_filename_convention.md
       - config_limits.md
       - iam_by_role.md
       - core/regions.md
