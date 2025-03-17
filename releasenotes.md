@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2025
-lastupdated: "2025-01-31"
+lastupdated: "2025-03-17"
 
 keywords:
 
@@ -21,6 +21,13 @@ content-type: release-note
 
 Use these release notes to learn about the latest updates to {{site.data.keyword.atracker_full}}.
 {: shortdesc}
+
+## 7 March 2025
+{: #activity-tracker-mar0725}
+{: release-note}
+
+Removal of `logdna` targets
+: {{site.data.keyword.la_full_notm}} and {{site.data.keyword.at_full_notm}} hosted event search will no longer be supported on 30 March 2025. {{site.data.keyword.atracker_full_notm}} will stop supporting `logdna` targets at the same time and no events will be routed to these type of targets after that date. You should make sure that you have configured {{site.data.keyword.atracker_full_notm}} to direct your activity tracking events to another destination before 30 March 2025. Any `logdna` targets still configured after 30 April 2025 will be removed automatically from your {{site.data.keyword.atracker_full_notm}} configuration.
 
 ## 31 January 2025
 {: #activity-tracker-jan3125}
