@@ -155,6 +155,9 @@ toc:
       - config_limits.md
       - iam_by_role.md
       - core/regions.md
+      - link:
+          label: Considerations for Montreal
+          href: /cloud-logs/cloud-logs-montreal-temp
       - core/endpoints.md
       - core/cidr.md
       - topic: core/shared-responsibilities.md
