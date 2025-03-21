@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2025
-lastupdated: "2025-03-17"
+lastupdated: "2025-03-21"
 
 keywords:
 
@@ -31,4 +31,8 @@ With the change, the new naming convention appends a unique ID to the current na
 ```
 {: codeblock}
 
-Customers that have a dependency on the current file naming convention might need to update automation referencing the file naming to the new naming convention. 
+Before 23 April 2025, customers that have a dependency on the current file naming convention might need to update their automation to reference the common file name prefix to handle both the current and new conventions.
+
+- If your automation tool uses the current naming convention to list and download objects (for example, files) in a COS bucket, change the automation to use a common prefix for both naming conventions. For example, use the common prefix `<region>/date and hour>/<timestamp>`.
+
+- If you already use a prefix that is common for both naming conventions, no action is required.
