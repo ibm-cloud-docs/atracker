@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2025
-lastupdated: "2025-02-22"
+lastupdated: "2025-03-24"
 
 keywords: HA for IBM Cloud Activity Tracker Event Routing, DR for IBM Cloud Activity Tracker Event Routing, IBM Cloud Activity Tracker Event Routing recovery time objective, IBM Cloud Activity Tracker Event Routing recovery point objective
 
@@ -28,7 +28,7 @@ subcollection: atracker
 
 ![Diagram displaying the high availability architecture for {{site.data.keyword.atracker_short}}](../images/AT_HA_diagram.png "High availability architecture"){: caption="High availability architecture" caption-side="bottom"}
 
-{{site.data.keyword.databases-for-postgresql_full}} controls distribution of requests between postgres members, which is outlined in [High availability for PostgreSQL](/docs/databases-for-postgresql?topic=databases-for-postgresql-high-availability)
+{{site.data.keyword.databases-for-postgresql_full}} controls distribution of requests between postgres members, which is outlined in [High availability for PostgreSQL](/docs/databases-for-postgresql?topic=databases-for-postgresql-postgresql-ha-dr)
 
 An availability zone is a logically and physically isolated location within an {{site.data.keyword.cloud_notm}} region where your data is processed and hosted.
 * An availability zone has independent power, cooling, and network infrastructures that are isolated from other zones to strengthen fault tolerance by avoiding single points of failure between zones.
@@ -106,7 +106,7 @@ Upon ingestion by {{site.data.keyword.atracker_full_notm}}, every event is pushe
 
 ![Diagram displaying the disaster recovery architecture for {{site.data.keyword.atracker_short}}](../images/AT_DR_diagram.png "Disaster recovery architecture"){: caption="Disaster recovery architecture" caption-side="bottom"}
 
-{{site.data.keyword.databases-for-postgresql_full}} controls distrubution of requests between postgres members, which is outlined in [High availability for PostgreSQL](/docs/databases-for-postgresql?topic=databases-for-postgresql-high-availability)
+{{site.data.keyword.databases-for-postgresql_full}} controls distrubution of requests between postgres members, which is outlined in [High availability for PostgreSQL](/docs/databases-for-postgresql?topic=databases-for-postgresql-postgresql-ha-dr)
 
 {{site.data.keyword.cos_full_notm}} manages the geo buckets used to store the postgres backups for {{site.data.keyword.atracker_full_notm}}. Geo location bucket management is outlined in [High availability for {{site.data.keyword.cos_full_notm}}](/docs/cloud-object-storage?topic=cloud-object-storage-cos-ha-dr)
 
@@ -131,7 +131,7 @@ machine failure.
 | Feature | Description | Consideration |
 | -------------- | -------------- | -------------- |
 | Multiple configurable destinations | Details can be found for customers to create disaster resiliant configurations leveraging {{site.data.keyword.atracker_full_notm}} [here](/docs/atracker?topic=atracker-dr_config)| This must be implemented by the customer. |
-| Cross site read-only replica for customer's metadata | Customer target and route configurations within {{site.data.keyword.atracker_full_notm}} are maintained in a regional database instance as well as in a read-only replica in the recovery region. This can be used in the event of a regional disaster to restore the region's metadata| For more information, see [High availability for PostgreSQL](/docs/databases-for-postgresql?topic=databases-for-postgresql-high-availability) |
+| Cross site read-only replica for customer's metadata | Customer target and route configurations within {{site.data.keyword.atracker_full_notm}} are maintained in a regional database instance as well as in a read-only replica in the recovery region. This can be used in the event of a regional disaster to restore the region's metadata| For more information, see [High availability for PostgreSQL](/docs/databases-for-postgresql?topic=databases-for-postgresql-postgresql-ha-dr) |
 | Cross site database backup for customer's metadata | Customer target and route configurations within {{site.data.keyword.atracker_full_notm}} are maintained in a cross regional {{site.data.keyword.cos_full_notm}} bucket in the recovery geo. This can be used in the event of a regional disaster to restore the region's metadata| For more information see [{{site.data.keyword.cos_full_notm}} cross region endpoints](/docs/cloud-object-storage?topic=cloud-object-storage-endpoints#endpoints-geo) |
 {: caption="DR features for {{site.data.keyword.atracker_full_notm}}" caption-side="bottom"}
 
