@@ -89,7 +89,7 @@ Note the following information about targets:
 
    * An {{site.data.keyword.cos_full_notm}} (COS) bucket
 
-   * The {{site.data.keyword.atracker_short}} hosted event search offering
+   
 
    * An {{site.data.keyword.messagehub_full}} topic
 
