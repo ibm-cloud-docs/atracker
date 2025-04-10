@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2025
-lastupdated: "2025-03-21"
+lastupdated: "2025-04-10"
 
 keywords:
 
@@ -24,15 +24,17 @@ The current naming convention is:
 ```
 {: codeblock}
 
-With the change, the new naming convention appends a unique ID to the current naming convention:
+The new naming convention prepends the account ID to the file path and appends a unique ID to the current naming convention:
 
 ```text
-<region>/date and hour>/<timestamp>+<offset>_<uuid>.log
+<account_id>/<region>/date and hour>/<timestamp>+<offset>_<uuid>.log
 ```
 {: codeblock}
 
-Before 23 April 2025, customers that have a dependency on the current file naming convention might need to update their automation to reference the common file name prefix to handle both the current and new conventions.
+Before 15 May 2025, customers that have a dependency on the current file naming convention might need to update their automation to reference the common file name prefix to handle both the current and new conventions.
 
-- If your automation tool uses the current naming convention to list and download objects (for example, files) in a COS bucket, change the automation to use a common prefix for both naming conventions. For example, use the common prefix `<region>/date and hour>/<timestamp>`.
+- If your automation tool does not use a prefix to list objects in a COS bucket, no action is required.
 
-- If you already use a prefix that is common for both naming conventions, no action is required.
+- If your automation tool uses a prefix to list objects (for example, files) in a COS bucket, update the automation so that it can list objects with both the old and new naming conventions.
+    - A simple approach is to list objects twice, first in the old naming convention and then in the new naming convention, so that you can get the objects regardless of the old or new naming convention.
+    - The list call for the old naming convention can be removed after 15 May 2025.
