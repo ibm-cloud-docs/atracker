@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2021, 2024
-lastupdated: "2024-10-09"
+  years:  2021, 2025
+lastupdated: "2025-04-10"
 
 keywords:
 
@@ -50,9 +50,8 @@ You can configure any of the following target types:
 | Target                                                             | Type                     | Learn more |
 |--------------------------------------------------------------------|--------------------------|------------|
 | {{site.data.keyword.cos_full_notm}} (COS)                          | `cloud_object_storage`   | [Managing {{site.data.keyword.cos_full_notm}} (COS) targets](/docs/atracker?topic=atracker-target_v2_cos) |
-| {{site.data.keyword.at_full_notm}} hosted event search    | `logdna`                 | [Managing {{site.data.keyword.atracker_full_notm}} hosted event search targets](/docs/atracker?topic=atracker-target_v2_at). |
 | {{site.data.keyword.messagehub_full}} (Event Streams)              | `event_streams`          | [Managing {{site.data.keyword.messagehub_full}} (Event Streams) targets](/docs/atracker?topic=atracker-target_v2_ies) |
-| {{site.data.keyword.logs_full_notm}}                          | `cloud_logs`   | [Managing {{site.data.keyword.logs_full_notm}} (ICL) targets](/docs/atracker?topic=atracker-target_v2_icl) |
+| {{site.data.keyword.logs_full_notm}}                          | `cloud_logs`   | [Managing {{site.data.keyword.logs_full_notm}} targets](/docs/atracker?topic=atracker-target_v2_icl) |
 {: caption="List of targets" caption-side="top"}
 
 
@@ -198,7 +197,6 @@ See the following table for some HTTP response codes:
 
 Choose 1 of the following options to configure a target in your account:
 - [Managing {{site.data.keyword.cos_full_notm}} (COS) targets](/docs/atracker?topic=atracker-target_v2_cos).
-- [Managing {{site.data.keyword.at_full_notm}} hosted event search targets](/docs/atracker?topic=atracker-target_v2_at).
 - [Managing {{site.data.keyword.messagehub_full}} targets](/docs/atracker?topic=atracker-target_v2_ies)
 - [Managing {{site.data.keyword.logs_full_notm}} targets](/docs/atracker?topic=atracker-target_v2_icl)
 

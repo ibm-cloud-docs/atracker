@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2025
-lastupdated: "2025-02-22"
+lastupdated: "2025-04-10"
 
 keywords:
 
@@ -46,15 +46,3 @@ For each account, you can choose the regions where auditing events are collected
 
 You can only configure regions where {{site.data.keyword.atracker_short}} is supported. See [Locations](/docs/atracker?topic=atracker-regions).
 {: important}
-
-
-
-
-## Configuring {{site.data.keyword.at_short}} in other regions
-{: #overview-2}
-
-To configure your account to manage auditing events that are generated in regions where {{site.data.keyword.atracker_short}} is not available or in regions where is supported but some services that you use are not supported, use {{site.data.keyword.at_short}} hosted event search.
-
-You must provision 1 instance of the {{site.data.keyword.at_short}} hosted event search service for each location where you operate and {{site.data.keyword.atracker_short}} is [not supported](/docs/atracker?topic=atracker-regions).
-
-You can provision only 1 instance of the {{site.data.keyword.at_short}} hosted event search service per location. To get the list of locations where the service is available in the {{site.data.keyword.cloud_notm}}, see [Locations](/docs/activity-tracker?topic=activity-tracker-regions).

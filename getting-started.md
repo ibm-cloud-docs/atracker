@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2025
-lastupdated: "2025-01-17"
+lastupdated: "2025-04-10"
 
 keywords: Observability
 
@@ -60,7 +60,8 @@ Choose 1 of the following options to configure a target in your account:
 - [Configuring a Cloud Object Storage target](/docs/atracker?topic=atracker-getting-started-target-cos).
 - [Configuring an {{site.data.keyword.logs_full_notm}} target](/docs/atracker?topic=atracker-target_v2_icl).
 - [Configuring an {{site.data.keyword.messagehub}} target](/docs/atracker?topic=atracker-getting-started-target-event-streams).
-- [Configuring an {{site.data.keyword.at_short}} hosted event search target](/docs/atracker?topic=atracker-getting-started-target-logdna).
+
+
 
 The rest of the instructions assume that you configure a `cloud-object-storage` target.
 

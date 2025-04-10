@@ -1,10 +1,8 @@
 ---
 
 copyright:
-  years:  2021, 2024
-lastupdated: "2024-10-09"
-
-keywords:
+  years:  2021, 2025
+lastupdated: "2025-04-10"
 
 subcollection: atracker
 
@@ -12,104 +10,63 @@ subcollection: atracker
 
 {{site.data.keyword.attribute-definition-list}}
 
-
-
-# Auditing events for {{site.data.keyword.atracker_short}}
+# Activity tracking events for {{site.data.keyword.atracker_full_notm}}
 {: #at_events}
 
-As a security officer, auditor, or manager, you can use the {{site.data.keyword.atracker_short}} service to track how users and applications interact with the {{site.data.keyword.atracker_short}} service in {{site.data.keyword.cloud_notm}}.
+{{site.data.keyword.cloud}} services, such as {{site.data.keyword.atracker_full_notm}}, generate activity tracking events.
 {: shortdesc}
 
-{{site.data.keyword.atracker_short}} records user-initiated activities that change the state of a service in {{site.data.keyword.cloud_notm}}. You can use this service to investigate abnormal activity and critical actions and to comply with regulatory audit requirements. In addition, you can be alerted about actions as they happen. The events that are collected comply with the Cloud Auditing Data Federation (CADF) standard.
+Activity tracking events report on activities that change the state of a service in {{site.data.keyword.cloud_notm}}. You can use the events to investigate abnormal activity and critical actions and to comply with regulatory audit requirements.
+
+You can use {{site.data.keyword.atracker_full_notm}}, a platform service, to route auditing events in your account to destinations of your choice by configuring targets and routes that define where activity tracking events are sent. For more information, see [About {{site.data.keyword.atracker_full_notm}}](/docs/atracker?topic=atracker-about).
+
+You can use {{site.data.keyword.logs_full_notm}} to visualize and alert on events that are generated in your account and routed by {{site.data.keyword.atracker_full_notm}} to an {{site.data.keyword.logs_full_notm}} instance.
+
+## Locations where activity tracking events are generated
+{: #at-locations}
+
+{{site.data.keyword.atracker_full_notm}} sends activity tracking events by {{site.data.keyword.atracker_full_notm}} in the regions that are indicated in the following table.
+
+| Dallas (`us-south`) | Washington (`us-east`)  | Toronto (`ca-tor`) | Sao Paulo (`br-sao`) |
+|---------------------|-------------------------|-------------------|----------------------|
+| [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
+{: caption="Regions where activity tracking events are sent in Americas locations" caption-side="top"}
+{: #atracker-table-1}
+{: tab-title="Americas"}
+{: tab-group="atracker"}
+{: class="simple-tab-table"}
+{: row-headers}
+
+| Tokyo (`jp-tok`)    | Sydney (`au-syd`) |  Osaka (`jp-osa`) | Chennai (`in-che`) |
+|---------------------|------------------|------------------|--------------------|
+| [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [No]{: tag-red} |
+{: caption="Regions where activity tracking events are sent in Asia Pacific locations" caption-side="top"}
+{: #atracker-table-2}
+{: tab-title="Asia Pacific"}
+{: tab-group="atracker"}
+{: class="simple-tab-table"}
+{: row-headers}
+
+| Frankfurt (`eu-de`)  | London (`eu-gb`) | Madrid (`eu-es`) |
+|---------------------------------------------------------------|---------------------|------------------|
+| [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
+{: caption="Regions where activity tracking events are sent in Europe locations" caption-side="top"}
+{: #atracker-table-3}
+{: tab-title="Europe"}
+{: tab-group="atracker"}
+{: class="simple-tab-table"}
+{: row-headers}
 
 
-## Managing auditing events in an {{site.data.keyword.cloud_notm}} account
-{: #at_events_rollout}
+## Viewing activity tracking events for {{site.data.keyword.atracker_full_notm}}
+{: #at-viewing}
 
-You can manage auditing events in an {{site.data.keyword.cloud_notm}} account in any of the following ways:
-- By configuring {{site.data.keyword.at_short}} hosted event search in the {{site.data.keyword.cloud_notm}} account
+You can use {{site.data.keyword.logs_full_notm}} to visualize and alert on events that are generated in your account and routed by {{site.data.keyword.atracker_full_notm}} to an {{site.data.keyword.logs_full_notm}} instance.
 
-    You can use {{site.data.keyword.at_short}} hosted event search, an IAM enabled service, to manage auditing events through instances that you provision in each {{site.data.keyword.cloud_notm}} region where you operate.
+### Launching {{site.data.keyword.logs_full_notm}} from the Observability page
+{: #log-launch-standalone}
 
-    {{site.data.keyword.at_short}} hosted event search routes location-based auditing events to an {{site.data.keyword.at_short}} instance in the region where they are generated and routes global auditing events to the {{site.data.keyword.atracker_short}} instance that is provisioned in Frankfurt. For more information about locations where {{site.data.keyword.atracker_short}} generates events, see [Locations of {{site.data.keyword.atracker_short}} events](#at_events_locations).
-
-    For more information about how to configure {{site.data.keyword.at_short}} hosted event search, see [Getting started with {{site.data.keyword.at_short}} hosted event search](/docs/activity-tracker?topic=activity-tracker-getting-started).
-
-- By configuring {{site.data.keyword.atracker_short}} in the {{site.data.keyword.cloud_notm}} account
-
-    You can use {{site.data.keyword.atracker_short}}, a platform service, to manage auditing events at the account-level by configuring targets and routes that define where auditing data is routed.
-
-    {{site.data.keyword.atracker_short}} routes events based on the location that is specified in the `logSourceCRN` field included in the event. You can define a target, the resource where events are routed to, in any {{site.data.keyword.atracker_short}} supported region. However, the target resource can be located in any region where that type of target is supported, in the same account or in a different account. You can define rules to determine where auditing events are to be routed by configuring 1 or more routes in the account. You can define rules for managing global events and location-based events that are generated in regions where {{site.data.keyword.atracker_short}} is supported.
-
-    For more information about how to configure {{site.data.keyword.atracker_short}}, see [Getting started with {{site.data.keyword.atracker_short}}](/docs/atracker?topic=atracker-getting-started).
-
-    {{site.data.keyword.atracker_short}} can only route events that are generated in [supported regions](/docs/atracker?topic=atracker-regions). Other regions, where {{site.data.keyword.atracker_short}} is not available, continue to manage events by using {{site.data.keyword.at_short}} hosted event search.
-    {: important}
-
-
-You can manage auditing events that are generated by {{site.data.keyword.atracker_short}} by using any of the following methods:
-
-| Method | Supported |
-|--------|-----------|
-| Configuring {{site.data.keyword.atracker_short}} | ![Checkmark icon](../../icons/checkmark-icon.svg "checkmark") |
-| Configuring {{site.data.keyword.at_short}} hosted event search | ![Checkmark icon](../../icons/checkmark-icon.svg "checkmark") |
-{: caption="Methods to manage auditing events in an {{site.data.keyword.cloud_notm}} account." caption-side="bottom"}
-
-
-
-## Locations of service events
-{: #at_events_locations}
-
-{{site.data.keyword.atracker_short}} automatically generates events in all of the [supported regions](/docs/atracker?topic=atracker-regions) so that you can track activity of the service in the account.
-
-The following tables list the locations where the automatic collection of {{site.data.keyword.atracker_short}} service events is enabled.
-
-| Locations in Americas | Service events available |
-|------------------------|--------------------------|
-| `Dallas (us-south)`    | ![Checkmark icon](../../icons/checkmark-icon.svg "checkmark") |
-| `Washington (us-east)` | ![Checkmark icon](../../icons/checkmark-icon.svg "checkmark") |
-{: caption="The automatic collection of {{site.data.keyword.atracker_short}} service events in Americas locations" caption-side="bottom"}
-
-| Locations in Asia Pacific | Service events available |
-|---------------------------|--------------------------|
-| `Sydney (au-syd)`         | ![Checkmark icon](../../icons/checkmark-icon.svg "checkmark") |
-{: caption="The automatic collection of {{site.data.keyword.atracker_short}} service events in Asia Pacific locations" caption-side="bottom"}
-
-| Locations in Europe | Service events available |
-|---------------------|--------------------------|
-| `Frankfurt (eu-de)` | ![Checkmark icon](../../icons/checkmark-icon.svg "checkmark") |
-| `London (eu-gb)`    | ![Checkmark icon](../../icons/checkmark-icon.svg "checkmark") |
-{: caption="The automatic collection of {{site.data.keyword.atracker_short}} service events in Europe locations" caption-side="bottom"}
-
-
-
-
-## Viewing events
-{: #at_events_ui}
-
-
-### Viewing events managed through {{site.data.keyword.atracker_short}}
-{: #at_events_ui_atracker}
-
-{{site.data.keyword.atracker_short}} routes events based on the location that is specified in the `logSourceCRN` field included in the event.
-
-You can define a target, the resource where events are routed to, in any {{site.data.keyword.atracker_short}} supported region. However, the target resource can be located in any region where that type of target is supported, in the same account or in a different account. For more information about supported targets, see [Targets](/docs/atracker?topic=atracker-atracker-resources#atracker-resources-targets).
-
-You can define rules to determine where auditing events are to be routed by configuring 1 or more routes in the account. You can define rules for managing global events and location-based events that are generated in regions where {{site.data.keyword.atracker_short}} is supported. For more information, see [supported regions](/docs/atracker?topic=atracker-regions).
-
-To view events, you must access the target and download the object.
-
-
-### Viewing events managed through {{site.data.keyword.at_short}} hosted event search
-{: #at_events_ui-at}
-
-{{site.data.keyword.at_short}} hosted event search routes location-based auditing events to an {{site.data.keyword.atracker_short}} instance in the region where they are generated and routes global auditing events to the {{site.data.keyword.atracker_short}} instance that is provisioned in Frankfurt.
-
-Events that are generated by {{site.data.keyword.atracker_short}} are automatically forwarded to the {{site.data.keyword.at_short}} service instance that is available in the same location. For more information, see [Services generating events by location](/docs/activity-tracker?topic=activity-tracker-cloud_services_locations).
-
-{{site.data.keyword.at_short}} can have only one instance per location. To view events, you must access the web UI of the {{site.data.keyword.at_short}} service in the same location where your service instance is available. For more information, see [Launching the web UI through the IBM Cloud UI](/docs/activity-tracker?topic=activity-tracker-launch).
-
-
+For information on launching the {{site.data.keyword.logs_full_notm}} UI, see [Launching the UI in the {{site.data.keyword.logs_full_notm}} documentation.](/docs/cloud-logs?topic=cloud-logs-instance-launch)
 
 ## Management events
 {: #at_events_mgt_atracker}

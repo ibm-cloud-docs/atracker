@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2021, 2024
-lastupdated: "2024-10-09"
+  years:  2021, 2025
+lastupdated: "2025-04-10"
 
 keywords:
 
@@ -49,7 +49,7 @@ Note the following information about routes:
 After you configure a route, it might take up to 1 hour for the configuration to be enabled.
 {: note}
 
-The target defines where auditing events are collected. The target can be an [{{site.data.keyword.cos_full_notm}} (COS) target](/docs/atracker?topic=atracker-target_v2_cos), an [{{site.data.keyword.at_short}} hosted event search target](/docs/atracker?topic=atracker-target_v2_at), an [{{site.data.keyword.logs_full_notm}} target](/docs/atracker?topic=atracker-target_v2_icl), or an [{{site.data.keyword.messagehub_full}} target](/docs/atracker?topic=atracker-target_v2_ies&interface=cli).  The route defines what auditing events are routed to a target.
+The target defines where auditing events are collected. The target can be an [{{site.data.keyword.cos_full_notm}} (COS) target](/docs/atracker?topic=atracker-target_v2_cos), an [{{site.data.keyword.logs_full_notm}} target](/docs/atracker?topic=atracker-target_v2_icl), or an [{{site.data.keyword.messagehub_full}} target](/docs/atracker?topic=atracker-target_v2_ies&interface=cli).  The route defines what auditing events are routed to a target.
 
 The following sample route definition will:
 - send all `us-south`, `us-east` and `global` events to the target identified by the ID `281f78a2-3333-4444-5555-e896f03cb403`

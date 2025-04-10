@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2021, 2024
-lastupdated: "2024-10-09"
+  years:  2021, 2025
+lastupdated: "2025-04-10"
 
 keywords:
 
@@ -15,12 +15,26 @@ subcollection: atracker
 # Auditing events for account management
 {: #at_events_acc_mgt}
 
-As a security officer, auditor, or manager, you can use the {{site.data.keyword.at_full_notm}} service to track how users and applications interact with an {{site.data.keyword.cloud}} account.
+{{site.data.keyword.cloud}} services, such as account management, generate activity tracking events.
 {: shortdesc}
 
-The {{site.data.keyword.at_full_notm}} service records user-initiated activities that change the state of a service in {{site.data.keyword.cloud_notm}}. To get started, see [{{site.data.keyword.at_full_notm}}](/docs/activity-tracker?topic=activity-tracker-getting-started).
+Activity tracking events report on activities that change the state of a service in {{site.data.keyword.cloud_notm}}. You can use the events to investigate abnormal activity and critical actions and to comply with regulatory audit requirements.
+
+You can use {{site.data.keyword.atracker_full_notm}}, a platform service, to route auditing events in your account to destinations of your choice by configuring targets and routes that define where activity tracking events are sent. For more information, see [About {{site.data.keyword.atracker_full_notm}}](/docs/atracker?topic=atracker-about).
+
+You can use {{site.data.keyword.logs_full_notm}} to visualize and alert on events that are generated in your account and routed by {{site.data.keyword.atracker_full_notm}} to an {{site.data.keyword.logs_full_notm}} instance.
 
 
+
+## Viewing activity tracking events for account management
+{: #at-viewing-acc-mgt}
+
+You can use {{site.data.keyword.logs_full_notm}} to visualize and alert on events that are generated in your account and routed by {{site.data.keyword.atracker_full_notm}} to an {{site.data.keyword.logs_full_notm}} instance.
+
+### Launching {{site.data.keyword.logs_full_notm}} from the Observability page
+{: #log-launch-standalone-acc-mgt}
+
+For information on launching the {{site.data.keyword.logs_full_notm}} UI, see [Launching the UI in the {{site.data.keyword.logs_full_notm}} documentation.](/docs/cloud-logs?topic=cloud-logs-instance-launch)
 
 ## Events for managing accounts
 {: #at_events_acc_mgt_account}
@@ -294,12 +308,8 @@ The following table lists the actions that generate an event:
 | `carbon-calculator.locations.list`        | Request the list of location from where carbon emissions can be fetch. |
 {: caption="Actions that generate events" caption-side="top"}
 
-## Where to look for the events
-{: #at_events_acc_mgt_ui}
 
-Events are available in the **Frankfurt (eu-de)** region.
 
-To view these events, you must [provision an instance](/docs/activity-tracker?topic=activity-tracker-provision#provision) of the {{site.data.keyword.at_full_notm}} service in the **Frankfurt (eu-de)** region. Then, you must [open the {{site.data.keyword.at_full_notm}} UI](/docs/activity-tracker?topic=activity-tracker-launch).
 
 
 ## Analyzing events

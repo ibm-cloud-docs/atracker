@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2025
-lastupdated: "2025-02-14"
+lastupdated: "2025-04-10"
 
 keywords:
 
@@ -113,7 +113,6 @@ The following table outlines valid target types:
 | Target                                      | Type                     | More info |
 |---------------------------------------------|--------------------------|-----------|
 | {{site.data.keyword.cos_full_notm}} (COS) | `cloud_object_storage`   | [Managing COS targets](/docs/atracker?topic=atracker-target_v2_cos&interface=cli) |
-| {{site.data.keyword.at_short}} | `logdna`   | [Managing {{site.data.keyword.at_short}} hosted event search targets](/docs/atracker?topic=atracker-target_v2_at&interface=cli) |
 | {{site.data.keyword.messagehub_full}} | `event_streams`   | [Managing {{site.data.keyword.messagehub_full}} targets](/docs/atracker?topic=atracker-target_v2_ies&interface=cli) |
 | {{site.data.keyword.logs_full_notm}} | `cloud_logs`   | [Managing Cloud Logs targets](/docs/atracker?topic=atracker-target_v2_icl&interface=cli) |
 {: caption="List of targets" caption-side="top"}

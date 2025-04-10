@@ -44,19 +44,15 @@ toc:
       topics:
       - topic: tutorials/getting-started-cloud-logs.md
         navtitle: Configuring Cloud Logs as a target
-      - topic: tutorials/hub-spoke.md
-        navtitle: Configuring a hub and spoke architecture
       - topic: tutorials/getting-started-target-cos.md
         navtitle: Configuring a COS target
       - topic: tutorials/getting-started-target-event-streams.md
         navtitle: Configuring an Event Streams target
-      - topic: tutorials/getting-started-target-logdna.md
-        navtitle: Configuring a logdna target
+      - topic: tutorials/hub-spoke.md
+        navtitle: Configuring a hub and spoke architecture
   - navgroup:
       id: howto
       topics:
-      - topic: tf/atracker-tf-config.md
-        navtitle: Configuring your account by using terraform
       - topicgroup:
           label: Controlling access
           topics:
@@ -123,8 +119,6 @@ toc:
             navtitle: Managing a COS target
           - topic: target_v2_icl.md
             navtitle: Managing a Cloud Logs target
-          - topic: target_v2_at.md
-            navtitle: Managing a logdna target
           - topic: target_v2_ies.md
             navtitle: Managing an Event Streams target
       - topicgroup:
