@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2023
-lastupdated: "2022-05-16"
+  years:  2021, 2025
+lastupdated: "2025-04-10"
 
 keywords:
 
@@ -19,7 +19,7 @@ content-type: troubleshoot
 {: troubleshoot}
 {: support}
 
-When updating settings, the following message is returned: `Your request has failed because the target id target-logdna is not valid.`.
+When updating settings, the following message is returned: `Your request has failed because the target id target-cloudlogs is not valid.`.
 {: shortdesc}
 
 

@@ -14,7 +14,7 @@ subcollection: atracker
 
 
 
-# Auditing events for {{site.data.keyword.dashdblong}}
+# Auditing events for {{site.data.keyword.dashdblong_notm}}
 {: #at_events_dashdb}
 
 {{site.data.keyword.cloud}} services, such as {{site.data.keyword.dashdblong}}, generate activity tracking events.
@@ -28,7 +28,7 @@ You can use {{site.data.keyword.logs_full_notm}} to visualize and alert on event
 
 
 
-## Viewing activity tracking events for {{site.data.keyword.dashdblong}}
+## Viewing activity tracking events for {{site.data.keyword.dashdblong_notm}}
 {: #at-viewing-dashdb}
 
 You can use {{site.data.keyword.logs_full_notm}} to visualize and alert on events that are generated in your account and routed by {{site.data.keyword.atracker_full_notm}} to an {{site.data.keyword.logs_full_notm}} instance.

@@ -53,6 +53,8 @@ toc:
   - navgroup:
       id: howto
       topics:
+      - topic: tf/atracker-tf-config.md
+        navtitle: Configuring your account by using terraform
       - topicgroup:
           label: Controlling access
           topics:
@@ -135,11 +137,14 @@ toc:
             navtitle: Working with events before a region is available
           - topic: manage-events-to-new-region.md
             navtitle: Working with events after a region is open for business
+          - link:
+             label: Considerations for Montreal
+             href: /cloud-logs/cloud-logs-montreal-temp
       - topicgroup:
           label: Observability
           topics:
           - topic: observability/at_events.md
-            navtitle: Activity Tracker events
+            navtitle: Activity tracking events
           - topic: observability/platform_metrics.md
             navtitle: Platform metrics
   - navgroup:
@@ -149,9 +154,6 @@ toc:
       - config_limits.md
       - iam_by_role.md
       - core/regions.md
-      - link:
-          label: Considerations for Montreal
-          href: /cloud-logs/cloud-logs-montreal-temp
       - core/endpoints.md
       - core/cidr.md
       - topic: core/shared-responsibilities.md
@@ -203,10 +205,7 @@ toc:
           - services/at_events_rc.md
           - services/at_event_dashdb.md
           - services/at_events_cbr.md
-      - topicgroup:
-          label: Targets
-          topics:
-          - cos.md
+      - cos.md
   - navgroup:
         id: help
         topics:

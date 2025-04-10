@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2021, 2024
-lastupdated: "2024-10-09"
+  years:  2021, 2025
+lastupdated: "2025-04-10"
 
 keywords:
 
@@ -153,6 +153,6 @@ The following attributes are available for one or more attributes described in t
 
 | Attribute     | Attribute Name             | Attribute Description |
 |---------------|----------------------------|-----------------------|
-| `target type` | `ibm_atracker_target_type` | The target type destination of the event. Valid values are: `cloud_object_storage`, `logdna`, or `event_streams`. |
+| `target type` | `ibm_atracker_target_type` | The target type destination of the event. Valid values are: `cloud_object_storage`, `cloud_logs`, or `event_streams`. |
 | `reason`      | `ibm_atracker_reason_code` | The reason for the failure of an event delivery to its destination. |
 {: caption="Other atributes" caption-side="top"}
