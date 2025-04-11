@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2021, 2024
-lastupdated: "2024-10-09"
+  years:  2021, 2025
+lastupdated: "2025-04-10"
 
 keywords:
 
@@ -50,9 +50,8 @@ You can configure any of the following target types:
 | Target                                                             | Type                     | Learn more |
 |--------------------------------------------------------------------|--------------------------|------------|
 | {{site.data.keyword.cos_full_notm}} (COS)                          | `cloud_object_storage`   | [Managing {{site.data.keyword.cos_full_notm}} (COS) targets](/docs/atracker?topic=atracker-target_v2_cos) |
-| {{site.data.keyword.at_full_notm}} hosted event search    | `logdna`                 | [Managing {{site.data.keyword.atracker_full_notm}} hosted event search targets](/docs/atracker?topic=atracker-target_v2_at). |
 | {{site.data.keyword.messagehub_full}} (Event Streams)              | `event_streams`          | [Managing {{site.data.keyword.messagehub_full}} (Event Streams) targets](/docs/atracker?topic=atracker-target_v2_ies) |
-| {{site.data.keyword.logs_full_notm}}                          | `cloud_logs`   | [Managing {{site.data.keyword.logs_full_notm}} (ICL) targets](/docs/atracker?topic=atracker-target_v2_icl) |
+| {{site.data.keyword.logs_full_notm}}                          | `cloud_logs`   | [Managing {{site.data.keyword.logs_full_notm}} targets](/docs/atracker?topic=atracker-target_v2_icl) |
 {: caption="List of targets" caption-side="top"}
 
 
@@ -88,7 +87,6 @@ To route events to a target, check the options that you can use to authenticate 
 | Target                   | Service to Service (S2S) authentication | API key    |
 |--------------------------|-----------------------------------------|------------|
 | `cloud_object_storage`   | ![Checkmark icon](../icons/checkmark-icon.svg "checkmark") | ![Checkmark icon](../icons/checkmark-icon.svg "checkmark") |
-| `logdna`                 |  | ![Checkmark icon](../icons/checkmark-icon.svg "checkmark") |
 | `event_streams`          | ![Checkmark icon](../icons/checkmark-icon.svg "checkmark") | ![Checkmark icon](../icons/checkmark-icon.svg "checkmark") |
 | `cloud_logs`   | ![Checkmark icon](../icons/checkmark-icon.svg "checkmark") | |
 {: caption="Authentication options by target type" caption-side="top"}
@@ -104,7 +102,6 @@ You can validate a target by using the {{site.data.keyword.metrics_router_full_n
 | Target type | CLI | API |
 |-------------|-----|-----|
 | `cloud-object-storage` | [Validate via CLI](/docs/atracker?topic=atracker-target_v2_cos&interface=cli#target-validate-cli-cos) | [Validate via API](/docs/atracker?topic=atracker-target_v2_cos&interface=api#target-validate-api-cos) |
-| `logdna` | [Validate via CLI](/docs/atracker?topic=atracker-target_v2_at&interface=cli#target-validate-cli-at) | [Validate via API](/docs/atracker?topic=atracker-target_v2_at&interface=api#target-validate-api-at) |
 | `event_streams` | [Validate via CLI](/docs/atracker?topic=atracker-target_v2_ies&interface=cli#target-validate-cli-ies) | [Validate via API](/docs/atracker?topic=atracker-target_v2_ies&interface=api#target-validate-api-ies) |
 | `cloud_logs` | [Validate via CLI](/docs/atracker?topic=atracker-target_v2_icl&interface=cli#target-validate-cli-icl) | [Validate via API](/docs/atracker?topic=atracker-target_v2_icl&interface=api#target-validate-api-icl) |
 {: caption="Validating options by target type" caption-side="top"}
@@ -198,7 +195,6 @@ See the following table for some HTTP response codes:
 
 Choose 1 of the following options to configure a target in your account:
 - [Managing {{site.data.keyword.cos_full_notm}} (COS) targets](/docs/atracker?topic=atracker-target_v2_cos).
-- [Managing {{site.data.keyword.at_full_notm}} hosted event search targets](/docs/atracker?topic=atracker-target_v2_at).
 - [Managing {{site.data.keyword.messagehub_full}} targets](/docs/atracker?topic=atracker-target_v2_ies)
 - [Managing {{site.data.keyword.logs_full_notm}} targets](/docs/atracker?topic=atracker-target_v2_icl)
 

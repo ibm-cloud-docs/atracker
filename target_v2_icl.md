@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2021, 2024
-lastupdated: "2024-10-09"
+  years:  2021, 2025
+lastupdated: "2025-04-11"
 
 keywords:
 
@@ -102,7 +102,7 @@ Do the following to configure a service-to-service authorization using the {{sit
 
 Do the following to configure a service-to-service authorization using the {{site.data.keyword.cloud_notm}} CLI.
 
-1. [Log in to your {{site.data.keyword.cloud_notm}} account] (/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_login) as the account owner that will be configuring {{site.data.keyword.atracker_full_notm}} authorization.
+1. [Log in to your {{site.data.keyword.cloud_notm}} account](/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_login) as the account owner that will be configuring {{site.data.keyword.atracker_full_notm}} authorization.
 
 2. Create an authorization policy defining your service-to-service authorization.
 
@@ -709,7 +709,7 @@ curl -X GET https://private.us-south.atracker.cloud.ibm.com/api/v2/targets/00000
 ```
 {: screen}
 
-Results will show if the target is COS (`"target_type": "cloud_object_storage"`), {{site.data.keyword.atracker_full_notm}} hosted event search offering (`"target_type": "logdna"`), or {{site.data.keyword.logs_full_notm}} offering (`"target_type": "cloud_logs"`)
+Results will show if the target is COS (`"target_type": "cloud_object_storage"`), or {{site.data.keyword.logs_full_notm}} offering (`"target_type": "cloud_logs"`)
 
 ## Listing all targets using the API
 {: #target-list-targets-icl}
@@ -734,7 +734,7 @@ curl -X GET https://private.us-south.atracker.cloud.ibm.com/api/v2/targets -H "A
 ```
 {: screen}
 
-Results will show if the target is COS (`"target_type": "cloud_object_storage"`), {{site.data.keyword.atracker_full_notm}} hosted event search offering (`"target_type": "logdna"`), or {{site.data.keyword.logs_full_notm}} offering (`"target_type": "cloud_logs"`)
+Results will show if the target is COS (`"target_type": "cloud_object_storage"`), or {{site.data.keyword.logs_full_notm}} offering (`"target_type": "cloud_logs"`)
 
 
 ## HTTP response codes

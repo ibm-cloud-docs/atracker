@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2021, 2024
-lastupdated: "2024-12-12"
+  years:  2021, 2025
+lastupdated: "2025-04-10"
 
 keywords:
 
@@ -24,7 +24,7 @@ Review the following sample architecture for {{site.data.keyword.atracker_full}}
 ## {{site.data.keyword.atracker_full_notm}} architecture
 {: #architecture}
 
-{{site.data.keyword.at_full_notm}} is a multi-tenant, regional service that is available in {{site.data.keyword.cloud_notm}}. With {{site.data.keyword.atracker_short}}, you can manage collection and storage of auditing data to monitor and audit activity in your account.
+{{site.data.keyword.atracker_full_notm}} is a multi-tenant, regional service that is available in {{site.data.keyword.cloud_notm}}. With {{site.data.keyword.atracker_short}}, you can manage collection and storage of auditing data to monitor and audit activity in your account.
 
 The following figure shows the high level architecture for {{site.data.keyword.atracker_full_notm}}:
 
@@ -91,7 +91,6 @@ Review the {{site.data.keyword.cloud_notm}} services that {{site.data.keyword.at
 | {{site.data.keyword.containerlong_notm}} | {{site.data.keyword.atracker_short}} uses {{site.data.keyword.containerlong_notm}} to run its service. |
 | {{site.data.keyword.mon_full_notm}} | {{site.data.keyword.atracker_short}} integrates with {{site.data.keyword.mon_short}}, by using a private connection, to send platform metrics. For more information, see [Monitoring metrics for {{site.data.keyword.atracker_short}}](/docs/atracker?topic=atracker-monitoring_metrics). |
 | {{site.data.keyword.cos_full_notm}} | {{site.data.keyword.atracker_short}} stores customer data in {{site.data.keyword.cos_short}} by using a private connection. All data is encrypted in transit and at rest. For more information, see [Managing your data in {{site.data.keyword.atracker_short}}](/docs/atracker?topic=atracker-mng-data).|
-| {{site.data.keyword.at_full_notm}} hosted event search | {{site.data.keyword.atracker_short}} stores customer data in {{site.data.keyword.at_short}} hosted event search by using a private connection. All data is encrypted in transit and at rest. For more information, see [Managing your data in {{site.data.keyword.atracker_short}}](/docs/atracker?topic=atracker-mng-data).|
 | {{site.data.keyword.messagehub}} | {{site.data.keyword.atracker_short}} routes customer data to {{site.data.keyword.messagehub}} by using a public connection unless the {{site.data.keyword.messagehub}} target is running the Enterprise plan. All data is encrypted in transit and at rest. For more information, see [Managing your data in {{site.data.keyword.atracker_short}}](/docs/atracker?topic=atracker-mng-data).|
 | {{site.data.keyword.cloud_notm}} Platform | To authenticate requests to the service and authorize user actions, {{site.data.keyword.atracker_short}} implements platform and service access roles in {{site.data.keyword.iamshort}} (IAM). For more information about required IAM permissions to work with the service, see [Managing access for {{site.data.keyword.atracker_short}}](/docs/atracker?topic=atracker-iam). Connections from {{site.data.keyword.atracker_short}} to IAM do not use private connections. |
 | {{site.data.keyword.databases-for-postgresql_full_notm}} | {{site.data.keyword.atracker_short}} uses {{site.data.keyword.databases-for-postgresql_full_notm}}  for storing metadata. |

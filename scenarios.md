@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2021, 2024
-lastupdated: "2024-11-26"
+  years:  2021, 2025
+lastupdated: "2025-04-11"
 
 keywords:
 
@@ -56,8 +56,7 @@ Therefore, to configure {{site.data.keyword.atracker_short}} for your account, y
 
 - You can define 1 or more targets of type `cloud-object-storage` to store your auditing events.
 
-    You cannot define targets of type `logdna`.
-    {: important}
+
 
     You can define a cloud-object-storage target in any of the permitted regions.
 
@@ -139,23 +138,23 @@ target-cross-acc-cos       <COS TARGET ID 2>                      eu-de    cloud
 Improve data residency compliance by keeping data at-rest within EU-managed locations.
 {: note}
 
-If you require a solution that is EU-managed compliant, you must run your business in {{site.data.keyword.cloud_notm}} in the Frankfurt (eu-de) region, which is the only supported location that is EU-managed compliant.
+If you require a solution that is EU-managed compliant, you must run your business in {{site.data.keyword.cloud_notm}} in the Frankfurt (eu-de) or Madrid (eu-es) region, which are the only supported locations that are EU-managed compliant.
 
 Therefore, to configure {{site.data.keyword.atracker_short}} for your account, you must define your account settings, targets and routes as follows:
 
-- You must set your account *Metadata region primary* setting to `Frankfurt (eu-de)`.
+- You must set your account *Metadata region primary* setting to `Frankfurt (eu-de)` or `Madrid (eu-es)`.
 
-- You must set your account *Permitted target region* to `eu-de`. This setting will prevent administrators from creating targets in non-allowed locations.
+- You must set your account *Permitted target region* to `eu-de` or `eu-es`. This setting will prevent administrators from creating targets in non-allowed locations.
 
 - You can set your account *Private api endpoint only* setting to specifiy whether you allow administrators to use public endpoints, private endpoints, or both. This setting indicate the type of endpoints that are allowed to manage the {{site.data.keyword.atracker_short}} configuration.
 
-- You can define 1 or more targets of type `cloud-object-storage` or `logdna` to store your auditing events. These targets must be located in Frankfurt.
+- You can define 1 or more targets of type `cloud-object-storage` or `cloud-logs` to store your auditing events. These targets must be located in Frankfurt or Madrid.
 
-   You can define a cloud-object-storage target in Frankfurt to store auditing events for long term storage.
+   You can define a `cloud-object-storage` target in Frankfurt or Madrid to store auditing events for long term storage.
 
-   You can define a logdna target in Frankfurt to allow administrators to graphically search, and monitor auditing events, as well as define alerts.
+   You can define a `cloud-logs` target in Frankfurt or Madrid to allow administrators to graphically search, and monitor auditing events, as well as define alerts.
 
-- You can define the *Default targets* setting to configure up to 2 default targets that are used to collect auditing events that are not explicitly managed in the account's routing rules. For example, you can configure a cloud-object-storage target and a logdna target. You can setup alerts in the logdna target to get notified when events that are generated in non-eu managed locations in your account are reported.
+- You can define the *Default targets* setting to configure up to 2 default targets that are used to collect auditing events that are not explicitly managed in the account's routing rules. For example, you can configure a `cloud-object-storage` target and a `cloud-logs` target. You can setup alerts in the `cloud-logs` target to get notified when events that are generated in non-eu managed locations in your account are reported.
 
 - You must define 1 route to configure the account to route global auditing events and location-based auditing events that are generated in Frankfurt to the targets specified in the routing rule.
 
@@ -168,7 +167,7 @@ Therefore, to configure {{site.data.keyword.atracker_short}} for your account, y
          ],
          "target_ids":[
             "<COS TARGET ID>",
-            "<LOGDNA TARGET ID>"
+            "<CLOUD LOGS TARGET ID>"
          ]
       }
     ]
@@ -184,7 +183,7 @@ ibmcloud atracker setting get
 OK
 IBM Cloud Activity Tracker settings
 Metadata region primary:                             eu-de
-Default targets:                                     [<LOGDNA TARGET ID>,<COS TARGET ID>]
+Default targets:                                     [<CLOUD LOGS ID>,<COS TARGET ID>]
 Permitted target regions:                            [eu-de]
 Private api endpoint only:                           false
 API version:                                         2
@@ -198,7 +197,7 @@ ibmcloud atracker target ls
 Listing IBM Cloud Activity Tracker targets for all regions...
 OK
 Name            ID                                     Region   Type                   Service to Service Enabled   CreatedAt                  UpdatedAt
-target-logdna   <LOGDNA TARGET ID>                     eu-de    logdna                 -                            2022-05-16T17:03:00.968Z   2022-05-16T17:03:00.968Z
+target-cloudlogs   <CLOUD LOGS TARGET ID>                     eu-de    cloud_logs                 -                            2022-05-16T17:03:00.968Z   2022-05-16T17:03:00.968Z
 target-cos      <COS TARGET ID>                        eu-de    cloud_object_storage   true                         2022-05-16T17:16:05.721Z   2022-05-16T17:16:05.721Z
 ```
 {: screen}
@@ -212,7 +211,7 @@ target-cos      <COS TARGET ID>                        eu-de    cloud_object_sto
 Consolidate {{site.data.keyword.atracker_short}} data to the account and region of your primary operations. You can also route auditing events to multiple locations.
 {: note}
 
-For example, if you have an Enterprise with multiple child accounts, you can run your business in {{site.data.keyword.cloud_notm}} across multiple regions such as us-south, us-east, eu-de, au-syd, and eu-gb.
+For example, if you have an enterprise with multiple child accounts, you can run your business in {{site.data.keyword.cloud_notm}} across multiple regions such as us-south, us-east, eu-de, au-syd, and eu-gb.
 - You run development in the us-south region.
 - You run QA in the eu-gb region.
 - You run production in the eu-de and us-east regions.
@@ -227,9 +226,9 @@ In this scenario, to configure {{site.data.keyword.atracker_short}} for your acc
 
 - You must set your account *Private api endpoint only* setting to only allow administrators to use private endpoints to manage the {{site.data.keyword.atracker_short}} configuration.
 
-- You can define 1 or more targets of type `cloud-object-storage` or `logdna` to store your auditing events.
+- You can define 1 or more targets of type `cloud-object-storage` or `cloud-logs` to store your auditing events.
 
-- You can define the *Default targets* setting to configure up to 2 default targets that are used to collect auditing events that are not explicitly managed in the account's routing rules. For example,  you can define 1 target in a different account and route auditing events from any child accounts in your Enterprise to this target. You can also define a local target in the account to keep a copy local to the child account.
+- You can define the *Default targets* setting to configure up to 2 default targets that are used to collect auditing events that are not explicitly managed in the account's routing rules. For example, you can define 1 target in a different account and route auditing events from any child accounts in your enterprise to this target. You can also define a local target in the account to keep a copy local to the child account.
 
 - You must define 1 route to configure the account to route global auditing events and location-based auditing events.
 
@@ -279,7 +278,7 @@ In this scenario, to configure {{site.data.keyword.atracker_short}} for your acc
     ```
     {: codeblock}
 
-    If what you need is to capture auditing events across all supported locations in the account that generates the events and also in a different account where you collect events from all your Enterprise accounts, you can define a route with the following rule:
+    If what you need is to capture auditing events across all supported locations in the account that generates the events and also in a different account where you collect events from all your enterprise accounts, you can define a route with the following rule:
 
     ```json
     [
@@ -332,21 +331,23 @@ target-cross-acc-cos       <COS TARGET ID 2>                      eu-de    cloud
 Manage global events in an account and route them to the location of your choice.
 {: note}
 
-If you manage auditing events through {{site.data.keyword.atracker_short}} event search instances in the account, global events are automatically routed to the instance in Frankfurt. However, you can configure {{site.data.keyword.atracker_short}} to configure the {{site.data.keyword.atracker_short}} instance of your choice where you can manage global events.
+
+
+You can configure {{site.data.keyword.atracker_short}} to configure the {{site.data.keyword.logs_full_notm}} instance of your choice where you can manage global events.
 
 For example,
 - You run your business in {{site.data.keyword.cloud_notm}} across multiple regions such as us-south, us-east, ca-tor, au-syd, and br-sao.
-- You want to collect global events in a different location from Frankfurt. Notice that Frankfurt is the location where global events are available if you configure {{site.data.keyword.atracker_short}} event search in the account to manage auditing events in the account.
+- You want to collect global events in a different location from Frankfurt.
 
 In this example, to configure {{site.data.keyword.atracker_short}} for your account, you must define your account settings, targets and routes as follows:
 
 - You must set your account *Metadata region primary* setting to any of the supported {{site.data.keyword.atracker_short}} regions in {{site.data.keyword.cloud_notm}}. For example, you can set it to `us-east`.
 
-- You must set your account *Permitted target region* to the region where you want to define the target resource that indicates the {{site.data.keyword.atracker_short}} instance where global events are routed. Consider setting it to the same location as the metadata region.
+- You must set your account *Permitted target region* to the region where you want to define the target resource that indicates the {{site.data.keyword.logs_full_notm}} instance where global events are routed. Consider setting it to the same location as the metadata region.
 
-- You must define 1 target of type `logdna` to store your global auditing events.
+- You must define 1 target of type `cloud-logs` to store your global auditing events.
 
-- You must not set a default target to allow the default flows that route events for all regions to continue routing auditing events to each {{site.data.keyword.atracker_short}} instance in each region.
+
 
 - You must define 1 route to configure the account to route global auditing events to the {{site.data.keyword.atracker_short}} instance of your choice.
 
@@ -359,7 +360,7 @@ In this example, to configure {{site.data.keyword.atracker_short}} for your acco
             "global"
          ],
          "target_ids":[
-            "<LOGDNA TARGET ID 1>"
+            "<CLOUD LOGS TARGET ID 1>"
          ]
       }
     ]
@@ -387,7 +388,7 @@ ibmcloud atracker target ls
 Listing IBM Cloud Activity Tracker targets for all regions...
 OK
 Name                       ID                                     Region     Type                   Service to Service Enabled   CreatedAt                  UpdatedAt
-target-logdna              <LOGDNA TARGET ID 1>                   us-east    logdna                 -                            2022-05-16T17:16:05.234Z   2022-05-16T17:16:05.234Z
+target-cloudlogs              <CLOUD LOGS TARGET ID 1>                   us-east    cloud_logs                 -                            2022-05-16T17:16:05.234Z   2022-05-16T17:16:05.234Z
 ```
 {: screen}
 
@@ -397,14 +398,7 @@ target-logdna              <LOGDNA TARGET ID 1>                   us-east    log
 ## Data Lake scenario
 {: #scenarios-5}
 
-You can choose any of the following options to send auditing events to a data lake:
-
-- Configure your account to route auditing events to {{site.data.keyword.atracker_short}} hosted event search instances. Stream the events to {{site.data.keyword.messagehub}}, and then, send them to a data lake. You can filter the data to be streamed to the data lake.
-
-    Simplify the {{site.data.keyword.atracker_short}} hosted event search configuration so only 1 instance needs to be configured to feed auditing events to {{site.data.keyword.messagehub}}.
-    {: note}
-
-- Configure {{site.data.keyword.atracker_short}} in your account to route auditing events directly to an {{site.data.keyword.cos_full_notm}} data lake.
+You can configure {{site.data.keyword.atracker_short}} in your account to route auditing events directly to an {{site.data.keyword.cos_full_notm}} data lake.
 
     Use this option for Financial Services Cloud workloads where end-to-end compliance is required.
     {: note}

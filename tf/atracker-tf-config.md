@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2021, 2024
-lastupdated: "2024-10-09"
+  years:  2021, 2025
+lastupdated: "2025-04-10"
 
 keywords:
 
@@ -14,7 +14,7 @@ subcollection: atracker
 
 
 
-# Configuring {{site.data.keyword.at_short}} in the account by using Terraform
+# Configuring {{site.data.keyword.atracker}} in the account by using Terraform
 {: #atracker-tf-config}
 
 Terraform on {{site.data.keyword.cloud}} enables predictable and consistent provisioning of {{site.data.keyword.cloud_notm}} services so that you can rapidly build complex, multitier cloud environments that follow Infrastructure as Code (IaC) principles. Similar to using the {{site.data.keyword.cloud_notm}} CLI or API and SDKs, you can automate the creation, update, and deletion of your {{site.data.keyword.atracker_short}} resources by using HashiCorp Configuration Language (HCL).
@@ -99,7 +99,7 @@ For example, to run your Terraform configuration files with Terraform version 0.
 2. Store the `versions.tf` file in your Git repository or the folder where Terraform is set up.
 
 
-If you are using Terraform on {{site.data.keyword.cloud_notm}} modules, you must add a `versions.tf` file to all the module folders. You can refer the Terraform provider block from the [provider registry](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest){: external}. You can use the [IBM Cloud Observability - Terraform Module](https://registry.terraform.io/modules/terraform-ibm-modules/observability/ibm/latest){: external} module to configure an instance.
+If you are using Terraform on {{site.data.keyword.cloud_notm}} modules, you must add a `versions.tf` file to all the module folders. You can refer the Terraform provider block from the [provider registry](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest){: external}. 
 {: note}
 
 
@@ -213,7 +213,7 @@ variable "atracker_metadata_region_backup" {
 
 // Data source arguments for atracker_targets
 variable "target_type" {
-  description = "Type of resource that can be defined as a target. Valid values are cloud_object_storage, logdna and event_streams"
+  description = "Type of resource that can be defined as a target. Valid values are cloud_object_storage, cloud_logs and event_streams"
   type        = string
 }
 
@@ -318,15 +318,14 @@ resource "ibm_atracker_target" "atracker_target" {
   region = "us-south"
 }
 
-# Target type: logdna
-# Using an ingestion key
-resource "ibm_atracker_target" "atracker_logdna_target" {
-  logdna_endpoint {
-    target_crn = "crn:v1:bluemix:public:logdna:us-south:a/11111111111111111111111111111111:22222222-2222-2222-2222-222222222222::"
-    ingestion_key = "xxxxxxxxxxxxxx"
+# Target type: cloud_logs
+# Using a service ID API key
+resource "ibm_atracker_target" "atracker_cloudlogs_target" {
+  cloudlogs_endpoint {
+    target_crn = "crn:v1:bluemix:public:logs:eu-es:a/11111111111111111111111111111111:22222222-2222-2222-2222-222222222222::"
   }
   name = "<Target-Name>"
-  target_type = "logdna"
+  target_type = "cloud_logs"
   region = "us-south"
 }
 
@@ -334,7 +333,7 @@ resource "ibm_atracker_target" "atracker_logdna_target" {
 # Using a service ID API key
 resource "ibm_atracker_target" "atracker_eventstreams_target" {
   eventstreams_endpoint {
-    target_crn = "crn:v1:bluemix:public:logdna:us-south:a/11111111111111111111111111111111:22222222-2222-2222-2222-222222222222::"
+    target_crn = "crn:v1:bluemix:public:logs:us-south:a/11111111111111111111111111111111:22222222-2222-2222-2222-222222222222::"
     brokers = ["xxxxx.cloud.ibm.com:9093","yyyyy.cloud.ibm.com:9093"]
     topic = "my-topic"
     api_key = "api-key"
@@ -426,3 +425,5 @@ Complete the following steps:
 
 
 Verify that the resources are created.
+
+

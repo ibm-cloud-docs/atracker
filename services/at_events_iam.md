@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2025
-lastupdated: "2025-01-30"
+lastupdated: "2025-04-10"
 
 keywords:
 
@@ -17,14 +17,27 @@ subcollection: atracker
 # Auditing events for IAM
 {: #at_events_iam}
 
-As a security officer, auditor, or manager, you can use the {{site.data.keyword.at_full_notm}} service to track how users and applications interact with the {{site.data.keyword.iamlong}} (IAM) service in {{site.data.keyword.cloud_notm}}.
+
+{{site.data.keyword.cloud}} services, such as {{site.data.keyword.iamlong}} (IAM), generate activity tracking events.
 {: shortdesc}
 
-IAM enables you to securely authenticate users for both platform services and control access to resources consistently across {{site.data.keyword.cloud_notm}}. [Learn more](/docs/account?topic=account-iamoverview).
+Activity tracking events report on activities that change the state of a service in {{site.data.keyword.cloud_notm}}. You can use the events to investigate abnormal activity and critical actions and to comply with regulatory audit requirements.
+
+You can use {{site.data.keyword.atracker_full_notm}}, a platform service, to route auditing events in your account to destinations of your choice by configuring targets and routes that define where activity tracking events are sent. For more information, see [About {{site.data.keyword.atracker_full_notm}}](/docs/atracker?topic=atracker-about).
+
+You can use {{site.data.keyword.logs_full_notm}} to visualize and alert on events that are generated in your account and routed by {{site.data.keyword.atracker_full_notm}} to an {{site.data.keyword.logs_full_notm}} instance.
 
 
-The {{site.data.keyword.at_full_notm}} service records user-initiated activities that change the state of a service in {{site.data.keyword.cloud_notm}}. To get started monitoring your user's actions, see [{{site.data.keyword.at_full_notm}}](/docs/activity-tracker?topic=activity-tracker-getting-started). An initiator can be a user, a service, or an application.
 
+## Viewing activity tracking events for {{site.data.keyword.iamshort}} 
+{: #at-viewing-iam}
+
+You can use {{site.data.keyword.logs_full_notm}} to visualize and alert on events that are generated in your account and routed by {{site.data.keyword.atracker_full_notm}} to an {{site.data.keyword.logs_full_notm}} instance.
+
+### Launching {{site.data.keyword.logs_full_notm}} from the Observability page
+{: #log-launch-standalone-iam}
+
+For information on launching the {{site.data.keyword.logs_full_notm}} UI, see [Launching the UI in the {{site.data.keyword.logs_full_notm}} documentation.](/docs/cloud-logs?topic=cloud-logs-instance-launch)
 
 ## Access groups events
 {: #at_events_iam_access}
@@ -156,14 +169,6 @@ The following table lists the actions that generate an event:
 
 
 
-## Viewing events
-{: #at_events_iam_ui}
-
-Events are available in the **Frankfurt (eu-de)** region.
-
-To view these events, you must [provision an instance](/docs/activity-tracker?topic=activity-tracker-provision#provision) of the {{site.data.keyword.at_full_notm}} service in the **Frankfurt (eu-de)** region. Then, you must [open the {{site.data.keyword.at_full_notm}} UI](/docs/activity-tracker?topic=activity-tracker-launch).
-
-
 ## Analyzing events
 {: #at_events_iam_analyze}
 
@@ -214,7 +219,7 @@ When a user logs in to the {{site.data.keyword.cloud_notm}}, the user ID (IBMid)
 
 After the user ID is authenticated successfully in the {{site.data.keyword.cloud_notm}}, the user can choose an account. It is at this point in the process that an account is associated to the log in request, and an event with action `iam-identity.user-refreshtoken.login`, or `iam-identity.user-apikey.login` is generated in your account.
 
-In Activity Tracker, you can see events that are associated to your account. Failed log in actions do not generate an event that you can monitor in your account.
+In {{site.data.keyword.logs_full_notm}}, you can see events that are associated to your account. Failed log in actions do not generate an event that you can monitor in your account.
 
 ### Logout events
 {: #at_events_iam_analyze_logout_events}

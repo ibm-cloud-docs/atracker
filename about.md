@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2021, 2024
-lastupdated: "2024-10-09"
+  years:  2021, 2025
+lastupdated: "2025-04-10"
 
 keywords:
 
@@ -58,7 +58,6 @@ You can configure different types of targets:
 |---------------------------------------------|--------------------------|------------|
 | {{site.data.keyword.cos_full_notm}} (COS)   | `cloud_object_storage`   | To comply with Financial Services regulations. |
 | {{site.data.keyword.logs_full_notm}}| `cloud_logs`   | To view, search, and manage auditing data through the UI. |
-| {{site.data.keyword.at_short}} hosted event search | `logdna`   | To view, search, and manage auditing data through the UI. |
 | {{site.data.keyword.messagehub_full}} | `event_streams`   | To send auditing data to data lakes, other analysis tools, and to other corporate tools such as Security Information and Event Management (SIEM) tools. |
 {: caption="List of targets" caption-side="top"}
 

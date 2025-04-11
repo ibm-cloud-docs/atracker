@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2023
-lastupdated: "2022-05-13"
+  years:  2021, 2025
+lastupdated: "2025-04-10"
 
 keywords:
 
@@ -29,5 +29,5 @@ Your request fails with an error message and a code of `target_limit_reached`.
 You are trying to create a new target and you already have 16 targets configured in your account.
 {: tsCauses}
 
-Only 16 targets are supported in an account across all regions. If you need to create a new target, delete an existing [COS target](/docs/atracker?topic=atracker-target_v2_cos&interface=api#target-delete-api-cos) or an existing [LogDNA target](/docs/atracker?topic=atracker-target_v2_at&interface=api#target-delete-api-at) that is no longer needed and retry the request.
+Only 16 targets are supported in an account across all regions. If you need to create a new target, delete an existing [target](/docs/atracker?topic=atracker-target_v2&interface=ui) that is no longer needed and retry the request.
 {: tsResolve}

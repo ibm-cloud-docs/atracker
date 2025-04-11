@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2021, 2024
-lastupdated: "2024-10-09"
+  years:  2021, 2025
+lastupdated: "2025-04-10"
 
 keywords:
 
@@ -831,7 +831,7 @@ curl -X GET https://private.us-south.atracker.cloud.ibm.com/api/v2/targets/00000
 ```
 {: screen}
 
-Results will show if the target is COS (`"target_type": "cloud_object_storage"`) or an {{site.data.keyword.at_full_notm}} hosted event search offering (`"target_type": "logdna"`).
+Results will show if the target is COS (`"target_type": "cloud_object_storage"`).
 
 ## Listing all targets using the API
 {: #target-list-targets-cos}
@@ -856,7 +856,7 @@ curl -X GET https://private.us-south.atracker.cloud.ibm.com/api/v2/targets -H "A
 ```
 {: screen}
 
-Results will show if the target is a COS (`"target_type": "cloud_object_storage"`) target or an [{{site.data.keyword.at_full_notm}} hosted event search offering (`"target_type": "logdna"`) target}](/docs/atracker?topic=atracker-target_v2_at) target.
+Results will show if the target is a COS (`"target_type": "cloud_object_storage"`) target.
 
 
 ## HTTP response codes

@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2025
-lastupdated: "2025-02-22"
+lastupdated: "2025-04-10"
 
 keywords:
 
@@ -16,7 +16,7 @@ subcollection: atracker
 # Enabling Activity Tracker events
 {: #events-opt-in}
 
-In {{site.data.keyword.at_full_notm}}, events are collected automatically for most enabled-services. However, some services might require an upgrade of the service plan, a configuration setting, or both, for you to be able to collect and analyze them.
+Activity tracking events are collected automatically for most enabled-services. However, some services might require an upgrade of the service plan, a configuration setting, or both, for you to be able to collect and analyze them.
 {: shortdesc}
 
 

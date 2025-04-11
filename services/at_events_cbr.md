@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2021, 2024
-lastupdated: "2024-10-09"
+  years:  2021, 2025
+lastupdated: "2025-04-10"
 
 keywords:
 
@@ -15,12 +15,27 @@ subcollection: atracker
 # Auditing events for context-based restrictions
 {: #events_context_based}
 
-As a security officer, auditor, or manager, you can use the {{site.data.keyword.at_full_notm}} to track how users and applications interact with the Context-based restrictions rules and network zones in {{site.data.keyword.cloud_notm}}.
 
-The {{site.data.keyword.at_full_notm}} service records user-initiated activities that change the state of these resources in {{site.data.keyword.cloud_notm}}.
+{{site.data.keyword.cloud}} services, such as context-based restrictions rules and network zones in {{site.data.keyword.cloud_notm}}, generate activity tracking events.
+{: shortdesc}
 
-To get started monitoring your user's actions, see [IBM Cloud Activity Tracker](/docs/activity-tracker?topic=activity-tracker-getting-started). An initiator can be a user, a service, or an application.
+Activity tracking events report on activities that change the state of a service in {{site.data.keyword.cloud_notm}}. You can use the events to investigate abnormal activity and critical actions and to comply with regulatory audit requirements.
 
+You can use {{site.data.keyword.atracker_full_notm}}, a platform service, to route auditing events in your account to destinations of your choice by configuring targets and routes that define where activity tracking events are sent. For more information, see [About {{site.data.keyword.atracker_full_notm}}](/docs/atracker?topic=atracker-about).
+
+You can use {{site.data.keyword.logs_full_notm}} to visualize and alert on events that are generated in your account and routed by {{site.data.keyword.atracker_full_notm}} to an {{site.data.keyword.logs_full_notm}} instance.
+
+
+
+## Viewing activity tracking events for context-based restrictions
+{: #at-viewing-cbr}
+
+You can use {{site.data.keyword.logs_full_notm}} to visualize and alert on events that are generated in your account and routed by {{site.data.keyword.atracker_full_notm}} to an {{site.data.keyword.logs_full_notm}} instance.
+
+### Launching {{site.data.keyword.logs_full_notm}} from the Observability page
+{: #log-launch-standalone-cbr}
+
+For information on launching the {{site.data.keyword.logs_full_notm}} UI, see [Launching the UI in the {{site.data.keyword.logs_full_notm}} documentation.](/docs/cloud-logs?topic=cloud-logs-instance-launch)
 
 ## Network zone events
 {: #network_zone_events}
@@ -61,11 +76,3 @@ The following table lists the actions that generate account settings events:
 | -----  | ----------- |
 | context-based-restrictions.account-settings.read | An event is generated when an initiator looks at information that is related with account settings. |
 {: caption="Actions generating account settings events" caption-side="bottom"}
-
-
-## Viewing events
-{: #cdr_viewing_events}
-
-Events are available in the Frankfurt (eu-de) region. To view these events, complete the following steps:
-1. Provision an instance of the {{site.data.keyword.at_full_notm}} service in the Frankfurt (eu-de) region.
-1. Open the {{site.data.keyword.at_full_notm}} UI.

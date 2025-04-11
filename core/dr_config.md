@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2025
-lastupdated: "2025-02-22"
+lastupdated: "2025-04-10"
 
 keywords:
 
@@ -48,7 +48,7 @@ Creating a second target for backup purposes results in additional charges for r
 
 ![Example of a routing configuration that creates a backup of all auditing events to a second target in a different region.](../images/Activity-Tracker-Routing-04-Recovery.svg "Example of a routing configuration that creates a backup of all auditing events to a second target in a different region"){: caption="Example of a routing configuration that creates a backup of all auditing events to a second target in a different region" caption-side="bottom"}
 
-In this example, the source of the auditing events is in the Toronto region (`ca-tor`). Auditing events from the {{site.data.keyword.cloud_notm}} service are sent by {{site.data.keyword.atracker_full_notm}} to an {{site.data.keyword.at_full_notm}} instance in Dallas (`us-south`). A regional disaster resilient routing configuration is created to route auditing events to an {{site.data.keyword.at_full_notm}} instance (Target 2) in the Washington region (`us-east`) as well. All events are sent to both the target in the Dallas region (`us-south`) and Washington region (`us-east`).
+In this example, the source of the auditing events is in the Toronto region (`ca-tor`). Auditing events from the {{site.data.keyword.cloud_notm}} service are sent by {{site.data.keyword.atracker_full_notm}} to an {{site.data.keyword.logs_full_notm}} instance in Dallas (`us-south`). A regional disaster resilient routing configuration is created to route auditing events to an {{site.data.keyword.logs_full_notm}} instance (Target 2) in the Washington region (`us-east`) as well. All events are sent to both the target in the Dallas region (`us-south`) and Washington region (`us-east`).
 
 Target 2 provides the user with historical auditing events in the Washington region (`us-east`). If the Dallas region (`us-south`) is not available, users have Toronto (`ca-tor`) activity events available in the Washington region (`us-east`).
 
@@ -67,7 +67,7 @@ When you configure an environment with a backup target, you need to consider the
 
    If context-based rules are configured in the account, make sure that the rules are defined for both the primary and backup locations. 
 
-   You can configure context-based restrictions rules for {{site.data.keyword.at_full_notm}}, {{site.data.keyword.cos_full_notm}} (COS),{{site.data.keyword.logs_full_notm}}, and {{site.data.keyword.messagehub_full}} targets.
+   You can configure context-based restrictions rules for {{site.data.keyword.cos_full_notm}} (COS),{{site.data.keyword.logs_full_notm}}, and {{site.data.keyword.messagehub_full}} targets.
 
    For a full list of services supporting context-based restrictions, see [Services integrated with context-based restrictions](/docs/account?topic=account-context-restrictions-whatis#cbr-adopters).
 
@@ -82,6 +82,4 @@ In this case, no additional charges for a second [target instance](#dr_config_ba
 
 * No access is available to any historical data from the region that incurred the disaster.
 * Data is lost while you configure a new instance while the existing instance is not available.
-* Events routed to an {{site.data.keyword.at_full_notm}} target can be [archived](/docs/activity-tracker?topic=activity-tracker-archiving-ov). However, a delay of archived data is possible and the data is not guaranteed to be available for the prior 24 hours. For information about {{site.data.keyword.cos_full_notm}} (COS), see [{{site.data.keyword.cos_full_notm}}](/docs/cloud-object-storage).
 * Any events that are routed to an {{site.data.keyword.logs_full_notm}} target can be [archived](/docs/cloud-logs?topic=cloud-logs-about-bucket). For more information, see [Understanding your responsibilities when you use {{site.data.keyword.logs_full_notm}}](/docs/cloud-logs?topic=cloud-logs-shared-responsibilities).
-* Any events that are routed to an {{site.data.keyword.at_full_notm}} target that are then [streamed to an {{site.data.keyword.messagehub_full}} instance](/docs/activity-tracker?topic=activity-tracker-streaming-configure) are only maintained up to the buffer size for 24 hours. Data can then be lost. For more information, see [Understanding your responsibilities when you use Event Streams](/docs/EventStreams?topic=EventStreams-event_streams_responsibilities).
