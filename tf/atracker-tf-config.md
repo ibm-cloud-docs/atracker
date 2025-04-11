@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2025
-lastupdated: "2025-04-10"
+lastupdated: "2025-04-11"
 
 keywords:
 
@@ -14,7 +14,7 @@ subcollection: atracker
 
 
 
-# Configuring {{site.data.keyword.atracker}} in the account by using Terraform
+# Configuring {{site.data.keyword.atracker_short}} in the account by using Terraform
 {: #atracker-tf-config}
 
 Terraform on {{site.data.keyword.cloud}} enables predictable and consistent provisioning of {{site.data.keyword.cloud_notm}} services so that you can rapidly build complex, multitier cloud environments that follow Infrastructure as Code (IaC) principles. Similar to using the {{site.data.keyword.cloud_notm}} CLI or API and SDKs, you can automate the creation, update, and deletion of your {{site.data.keyword.atracker_short}} resources by using HashiCorp Configuration Language (HCL).
@@ -425,5 +425,3 @@ Complete the following steps:
 
 
 Verify that the resources are created.
-
-
