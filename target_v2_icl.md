@@ -102,7 +102,7 @@ Do the following to configure a service-to-service authorization using the {{sit
 
 Do the following to configure a service-to-service authorization using the {{site.data.keyword.cloud_notm}} CLI.
 
-1. [Log in to your {{site.data.keyword.cloud_notm}} account] (/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_login) as the account owner that will be configuring {{site.data.keyword.atracker_full_notm}} authorization.
+1. [Log in to your {{site.data.keyword.cloud_notm}} account](/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_login) as the account owner that will be configuring {{site.data.keyword.atracker_full_notm}} authorization.
 
 2. Create an authorization policy defining your service-to-service authorization.
 
