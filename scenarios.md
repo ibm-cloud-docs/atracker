@@ -197,7 +197,7 @@ ibmcloud atracker target ls
 Listing IBM Cloud Activity Tracker targets for all regions...
 OK
 Name            ID                                     Region   Type                   Service to Service Enabled   CreatedAt                  UpdatedAt
-target-cloudlogs   <CLOUD LOGS TARGET ID>                     eu-de    cloud-logs                 -                            2022-05-16T17:03:00.968Z   2022-05-16T17:03:00.968Z
+target-cloudlogs   <CLOUD LOGS TARGET ID>                     eu-de    cloud_logs                 -                            2022-05-16T17:03:00.968Z   2022-05-16T17:03:00.968Z
 target-cos      <COS TARGET ID>                        eu-de    cloud_object_storage   true                         2022-05-16T17:16:05.721Z   2022-05-16T17:16:05.721Z
 ```
 {: screen}
