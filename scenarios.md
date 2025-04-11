@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2025
-lastupdated: "2025-04-10"
+lastupdated: "2025-04-11"
 
 keywords:
 
@@ -388,7 +388,7 @@ ibmcloud atracker target ls
 Listing IBM Cloud Activity Tracker targets for all regions...
 OK
 Name                       ID                                     Region     Type                   Service to Service Enabled   CreatedAt                  UpdatedAt
-target-cloudlogs              <CLOUD LOGS TARGET ID 1>                   us-east    logdna                 -                            2022-05-16T17:16:05.234Z   2022-05-16T17:16:05.234Z
+target-cloudlogs              <CLOUD LOGS TARGET ID 1>                   us-east    cloud_logs                 -                            2022-05-16T17:16:05.234Z   2022-05-16T17:16:05.234Z
 ```
 {: screen}
 
