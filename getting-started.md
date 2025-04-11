@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2025
-lastupdated: "2025-04-10"
+lastupdated: "2025-04-11"
 
 keywords: Observability
 
@@ -139,7 +139,7 @@ us-south/2021-02-23T15/2021-02-23T15:38+05.log
 
 
 You can choose any of the following methods to list objects in a bucket:
-- [List objects in a given bucket by using the CLI](/docs/cloud-object-storage-cli-plugin?topic=cloud-object-storage-cli-plugin-ic-cos-cli#ic-list-objects).
+- [List objects in a given bucket by using the CLI](/docs/cloud-object-storage?topic=cloud-object-storage-ic-cos-cli#list-objects-v2).
 - [List objects in a given bucket by using the API](/docs/cloud-object-storage?topic=cloud-object-storage-compatibility-api-bucket-operations#compatibility-api-list-objects-v2)
 - [List objects in a given bucket through the {{site.data.keyword.cloud_notm}} UI](/docs/atracker?topic=atracker-cos#cos_bucket_list_objects_ui).
 
