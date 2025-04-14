@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2025
-lastupdated: "2025-04-11"
+lastupdated: "2025-04-14"
 
 keywords:
 
@@ -400,5 +400,5 @@ target-cloudlogs              <CLOUD LOGS TARGET ID 1>                   us-east
 
 You can configure {{site.data.keyword.atracker_short}} in your account to route auditing events directly to an {{site.data.keyword.cos_full_notm}} data lake.
 
-    Use this option for Financial Services Cloud workloads where end-to-end compliance is required.
-    {: note}
+Use this option for Financial Services Cloud workloads where end-to-end compliance is required.
+{: note}
