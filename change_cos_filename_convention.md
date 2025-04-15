@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2025
-lastupdated: "2025-04-10"
+lastupdated: "2025-04-15"
 
 keywords:
 
@@ -17,19 +17,26 @@ subcollection: atracker
 
 For {{site.data.keyword.cos_full}} targets (target type = `cos`), the auditing events are routed to the corresponding {{site.data.keyword.cos_full_notm}} (COS) buckets and stored in time-based files. The file naming convention is being changed. The format of the data in the files is not changed.
 
-The current naming convention is:
+The following is the current naming convention, where `<region>` is the COS target's region and `<timestamp>` is in UTC.
 
 ```text
 <region>/<date and hour>/<timestamp>+<offset>.log
 ```
 {: codeblock}
 
-The new naming convention prepends the account ID to the file path and appends a unique ID to the current naming convention:
+An example of the current COS file name: `us-south/2025-04-10T00/2025-04-10T00:01+00.log`
+
+The new naming convention has 2 updates:
+
+- Prepend the source account ID for the events to the path to allow consolidation of events from multiple accounts in the same COS bucket.
+- Append a unique ID to the file name to permit multiple writers and avoid file name collisions.
 
 ```text
-<account_id>/<region>/date and hour>/<timestamp>+<offset>_<uuid>.log
+<account_id>/<region>/<date and hour>/<timestamp>+<offset>_<uuid>.log
 ```
 {: codeblock}
+
+An example of the new COS file name: `f12375ed17a24ecfb1f32afcf47285f3/us-south/2025-04-10T21/2025-04-10T21:02+01_0196361c-7836-7cdd-808c-92a417338cbd.log`
 
 Before 15 May 2025, customers that have a dependency on the current file naming convention might need to update their automation to reference the common file name prefix to handle both the current and new conventions.
 
