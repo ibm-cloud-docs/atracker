@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2025
-lastupdated: "2025-04-10"
+lastupdated: "2025-05-01"
 
 keywords:
 
@@ -42,7 +42,7 @@ The following table lists the services that require additional steps for you to 
 
 | Service                            | Upgrade plan                       | Configure the service              | More info |
 |------------------------------------|------------------------------------|------------------------------------|-----------|
-| {{site.data.keyword.appid_full}}   | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg)   | [Monitoring runtime activity](/docs/appid?topic=appid-at-events#at-monitor-runtime-activity)   |
+| {{site.data.keyword.appid_full}}   | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg)   | [Monitoring runtime activity](/docs/appid?topic=appid-at_events#at-monitor-runtime)   |
 | {{site.data.keyword.cos_full}}     |  | ![Checkmark icon](../../icons/checkmark-icon.svg) | [Enabling {{site.data.keyword.atracker_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-at&interface=ui#at-examples-recommended) |
 | {{site.data.keyword.cloudantfull}} |  | ![Checkmark icon](../../icons/checkmark-icon.svg) | [Configuring data events for an IBM Cloudant instance](/docs/Cloudant?topic=Cloudant-at_events#at_event_configure) |
 | {{site.data.keyword.messagehub_full}} | ![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) | [Enabling message audit events](/docs/EventStreams?topic=EventStreams-at_events#enable-message-events) |
