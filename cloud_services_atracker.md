@@ -32,7 +32,7 @@ The following table lists analytics services that send auditing events:
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
 | [{{site.data.keyword.iae_full}}](/docs/AnalyticsEngine?topic=AnalyticsEngine-getting-started) | `ibmanalyticsengine` | [Location-based events](/docs/AnalyticsEngine?topic=AnalyticsEngine-at_events-serverless) |
-| [{{site.data.keyword.openpages_full_notm}}](/docs/openpages?topic=openpages-gettingstartedtutorial) | `openpages` | [Auditing events for {{site.data.keyword.openpages_short}}](/docs/openpages?topic=openpages-at_events) |
+| [{{site.data.keyword.openpages_full_notm}}](/docs/openpages?topic=openpages-gettingstartedtutorial) | `openpages` | [Location-based events](/docs/openpages?topic=openpages-at_events) |
 {: caption="List of analytics services" caption-side="top"}
 
 ## Classic services
