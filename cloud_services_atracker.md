@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2025
-lastupdated: "2025-05-01"
+lastupdated: "2025-05-05"
 
 keywords:
 
@@ -32,6 +32,7 @@ The following table lists analytics services that send auditing events:
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
 | [{{site.data.keyword.iae_full}}](/docs/AnalyticsEngine?topic=AnalyticsEngine-getting-started) | `ibmanalyticsengine` | [Location-based events](/docs/AnalyticsEngine?topic=AnalyticsEngine-at_events-serverless) |
+| [{{site.data.keyword.openpages_full_notm}}](/docs/openpages?topic=openpages-gettingstartedtutorial) | `openpages` | [Location-based events](/docs/openpages?topic=openpages-at_events) |
 {: caption="List of analytics services" caption-side="top"}
 
 ## Classic services
@@ -229,7 +230,7 @@ The following table lists VMware Solutions services that send auditing events:
 `[*]` - Event routing available to {{site.data.keyword.at_full_notm}} only.
 {: note}
 
-## VMware Cloud Foundation as a Service 
+## VMware Cloud Foundation as a Service
 {: #vmware_service}
 
 {{site.data.keyword.vmware-service_notm}} provides the VMware Cloud Director™ platform as either a dedicated or shared managed service. IBM performs the configuration, hosting, operations, and lifecycle management of the VMware by Broadcom software so you can quickly deploy your VMware-based cloud computing environments. Compute resources are available as either dedicated or multitenant hosts that use {{site.data.keyword.cloud_notm}} bare metal servers.
