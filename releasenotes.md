@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2025
-lastupdated: "2025-04-10"
+lastupdated: "2025-05-22"
 
 keywords:
 
@@ -144,12 +144,11 @@ References to {{site.data.keyword.atracker_short}} V1 API removed.
 {{site.data.keyword.atracker_short}} support for {{site.data.keyword.messagehub_full}} targets.
 :   Using the CLI, API, or Terraform you can configure {{site.data.keyword.atracker_short}} to send events to an {{site.data.keyword.messagehub}} topic. This adds to the existing support for {{site.data.keyword.cos_full_notm}} and {{site.data.keyword.at_short}} hosted event search targets.
 
+
 New documentation locations for {{site.data.keyword.atracker_short}} and {{site.data.keyword.at_short}} hosted event search
 :   There are now two different locations for {{site.data.keyword.at_short}} documentation depending on your use case.
 
-    * For {{site.data.keyword.atracker_short}}, see the [{{site.data.keyword.atracker_short}} documentation.](/docs/atracker)
 
-    * For {{site.data.keyword.at_short}} hosted event search, see the [{{site.data.keyword.at_short}} hosted event search documentation.](/docs/activity-tracker?topic=activity-tracker-getting-started)
 
 ## 25 May 2022
 {: #activity-tracker-may2522}
