@@ -2,7 +2,6 @@ toc:
   properties:
     subcollection: atracker
     service-name: atracker
-    version: 2
     category: logging_monitoring
     audience: service
     href: /docs/atracker
