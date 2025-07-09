@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2025
-lastupdated: "2025-05-22"
+lastupdated: "2025-07-09"
 
 keywords:
 
@@ -22,6 +22,12 @@ content-type: release-note
 Use these release notes to learn about the latest updates to {{site.data.keyword.atracker_full}}.
 {: shortdesc}
 
+## 9 July 2025
+{: #activity-tracker-jul0925}
+
+Updated Montreal considerations
+:   As {{site.data.keyword.cloud_notm}} provides support for the Montreal (`ca-mon`) region, you need to understand how {{site.data.keyword.cloud_notm}} Observability services are made available and the actions you need to take to operate in Montreal. For more information, see the [Considerations for workloads in the Montreal region](/docs/cloud-logs?topic=cloud-logs-montreal-temp) for updated considerations for all {{site.data.keyword.cloud_notm}} Observability services.
+
   
 ## 10 April 2025
 {: #activity-tracker-apr1025}
@@ -31,6 +37,7 @@ Changes to the {{site.data.keyword.cos_full_notm}} file naming convention for {{
 :  {{site.data.keyword.atracker_full_notm}} will change the {{site.data.keyword.cos_full_notm}} (COS) file naming convention for activity tracking events sent to COS buckets. With this change, customers that have a dependency on the current file naming convention might need to adjust automation to reflect the new naming convention.  The format of the data in the files will not change.
 
    The change will take effect on 15 May 2025. For more information, see [Changes to Cloud Object Storage file naming convention](/docs/atracker?topic=atracker-change_cos_filename_convention).
+
 
 
 ## 7 March 2025
