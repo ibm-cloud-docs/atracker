@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2025
-lastupdated: "2025-01-31"
+lastupdated: "2025-07-23"
 
 keywords:
 
@@ -71,12 +71,39 @@ Now your virtual server instances in the VPC can access your {{site.data.keyword
 
 After you create an endpoint gateway for {{site.data.keyword.atracker_short}}, you can use the VPE with the VPC API.
 
-### Using the VPE with the VPC API
+### Using the VPE with the API
 {: #vpe-api}
+{: api}
 
-After creating an endpoint gateway for the {{site.data.keyword.atracker_short}} service, use the service endpoints FQDN `private.<REGION>.atracker.cloud.ibm.com` in the URL to access the service. For example:
+After creating an endpoint gateway for the {{site.data.keyword.atracker_short}} service, use the service endpoint's FQDN `private.<REGION>.atracker.cloud.ibm.com` in the URL to access the service. For example:
 
 ```sh
 curl https://private.au-syd.atracker.cloud.ibm.com/api/v2/targets' -H "Authorization: Bearer $iam_token"
+```
+{: pre}
+
+
+
+### Using the VPE with the CLI
+{: #vpe-cli}
+{: cli}
+
+After creating an endpoint gateway for the {{site.data.keyword.atracker_short}} service, run the following command with the service endpoint's FQDN `private.<REGION>.atracker.cloud.ibm.com` to access the service. For example:
+
+```sh
+export ATRACKER_API_ENDPOINT=https://private.au-syd.atracker.cloud.ibm.com
+```
+{: pre}
+
+
+
+### Using the VPE with Terraform
+{: #vpe-terraform}
+{: terraform}
+
+After creating an endpoint gateway for the {{site.data.keyword.atracker_short}} service, run the following command with the service endpoint's FQDN `private.<REGION>.atracker.cloud.ibm.com` to access the service. For example:
+
+```sh
+export IBMCLOUD_ATRACKER_API_ENDPOINT=https://private.au-syd.atracker.cloud.ibm.com
 ```
 {: pre}

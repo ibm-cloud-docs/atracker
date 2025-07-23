@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2025
-lastupdated: "2025-04-10"
+lastupdated: "2025-07-23"
 
 keywords:
 
@@ -20,6 +20,45 @@ You can use the {{site.data.keyword.mon_full}} service to monitor platform metri
 {: shortdesc}
 
 {{site.data.keyword.mon_full_notm}} is a cloud-native, and container-intelligence management system that you can include as part of your {{site.data.keyword.cloud_notm}} architecture. You can use it to gain operational visibility into the performance and health of your applications, services, and platforms. It offers administrators, DevOps teams, and developers full stack telemetry with advanced features to monitor and troubleshoot, define alerts, and design custom dashboards.
+
+## Locations where platform metrics are generated
+{: #mon-locations}
+
+{{site.data.keyword.atracker_full_notm}} sends metrics in the regions that are indicated in the following table.
+
+
+| Dallas (`us-south`) | Washington (`us-east`)  | Toronto (`ca-tor`) | Sao Paulo (`br-sao`) |
+|---------------------|-------------------------|-------------------|----------------------|
+| [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
+{: caption="Regions where platform metrics are sent in Americas locations" caption-side="top"}
+{: mon-table-1}
+{: tab-title="Americas"}
+{: tab-group="mon"}
+{: class="simple-tab-table"}
+{: row-headers}
+
+
+
+
+| Tokyo (`jp-tok`)    | Sydney (`au-syd`) |  Osaka (`jp-osa`) | Chennai (`in-che`) |
+|---------------------|------------------|------------------|--------------------|
+| [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
+{: caption="Regions where platform metrics are sent in Asia Pacific locations" caption-side="top"}
+{: #mon-table-2}
+{: tab-title="Asia Pacific"}
+{: tab-group="mon"}
+{: class="simple-tab-table"}
+{: row-headers}
+
+| Frankfurt (`eu-de`)  | London (`eu-gb`) | Madrid (`eu-es`) |
+|---------------------------------------------------------------|---------------------|------------------|
+| [Yes]{: tag-green} | [Yes]{: tag-green} | [Yes]{: tag-green} |
+{: caption="Regions where platform metrics are sent in Europe locations" caption-side="top"}
+{: #mon-table-3}
+{: tab-title="Europe"}
+{: tab-group="mon"}
+{: class="simple-tab-table"}
+{: row-headers}
 
 ## Enabling platform metrics
 {: #monitoring_metrics_enable}

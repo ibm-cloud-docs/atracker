@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2025
-lastupdated: "2025-04-11"
+lastupdated: "2025-07-23"
 
 keywords:
 
@@ -221,6 +221,8 @@ Use this command to create a {{site.data.keyword.logs_full_notm}} target to be u
 `--target-crn CLOUD_LOGS_TARGET_CRN`
 :   The CRN of the {{site.data.keyword.logs_full_notm}} instance.
 
+
+
 `--output FORMAT`
 :   Currently supported format is JSON. If specified, output will be returned in JSON format.  If `JSON` is not specified, output will be returned in a tabular format.
 
@@ -286,6 +288,8 @@ ibmcloud atracker target update --target TARGET [--name TARGET_NAME] [ [--file C
 
 `--target-crn CLOUD_LOGS_TARGET_CRN`
 :   The CRN of the {{site.data.keyword.logs_full_notm}} instance.
+
+
 
 `--output FORMAT`
 :   Currently supported format is JSON. If specified, output will be returned in JSON format.  If `JSON` is not specified, output will be returned in a tabular format.
@@ -552,6 +556,8 @@ Where
 
     `CLOUD_LOGS_CRN` indicates the [CRN](/docs/account?topic=account-crn) of the {{site.data.keyword.logs_full_notm}} instance.
 
+    
+
 For example, you can use the following cURL request to create a target in Dallas:
 
 ```shell
@@ -603,6 +609,8 @@ Where
 - `cloudlogs_endpoint` includes information about the target. 
 
     `CLOUD_LOGS_CRN` indicates the [CRN](/docs/account?topic=account-crn) of the {{site.data.keyword.logs_full_notm}} instance.
+
+
 
 
 For example, you can use the following cURL request to update a target in Dallas:
@@ -779,6 +787,8 @@ Only resources in your account are listed and selectable. To specify a resource 
 8. **Service authorization required**: Service authorization is required to allow {{site.data.keyword.atracker_full_notm}} to communicate with {{site.data.keyword.logs_full_notm}}. Click **Authorize now** to create the policy automatically or click **Grant access in IAM**.
 9.  **Choose destination**: Pick **Search by instance** or **Specify CRN**
     - **Search by instance**: Select an {{site.data.keyword.logs_full_notm}} instance from the table or click **Create** to create a new {{site.data.keyword.logs_full_notm}} instance.
+
+
 - **Target name**: Enter a meaningful name for the target.
 - **Target region**: Select the region that will process the event data.
 - Toggle **Set as default target** to automatically set your new target as a default target in your {{site.data.keyword.atracker_full_notm}} settings. See [the default targets documentation](/docs/atracker?topic=atracker-planning#planning-4) for more details.
@@ -803,6 +813,8 @@ Only resources in your account are listed and selectable. To specify a resource 
 9.  **Details**: Click **Edit** to update your target's name or region. You can also toggle **Default target** to add or remove your target as a default target in your {{site.data.keyword.atracker_full_notm}} settings.
 10. Click **Save** to update your target.
 11. **Destination**: Click **Edit** to change the {{site.data.keyword.logs_full_notm}} instance associated with your target.
+
+
 12. Click **Save** to update your target.
 
 ## Deleting a target using the UI
