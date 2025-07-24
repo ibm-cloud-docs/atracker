@@ -224,7 +224,7 @@ The following table lists VMware Solutions services that send auditing events:
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
 | [{{site.data.keyword.vmwaresolutions_short}}](/docs/vmwaresolutions?topic=vmwaresolutions-vc_vcenterserveroverview)   | `vmware-solutions` | [Global events](/docs/vmwaresolutions?topic=vmwaresolutions-at_events) |
-| [{{site.data.keyword.cloud}} for VMware Shared](m/docs/vmwaresolutions?topic=vmwaresolutions-vmware-aas-overview)      | `vmware-solutions` | [Global events](/docs/vmware-service?topic=vmware-service-at_events) |
+| [{{site.data.keyword.cloud}} for VMware Shared](/docs/vmwaresolutions?topic=vmwaresolutions-vmware-aas-overview)      | `vmware-solutions` | [Global events](/docs/vmware-service?topic=vmware-service-at_events) |
 | [KMIP for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations) `[*]` | `vmware-solutions` | [Location-based events](/docs/vmwaresolutions?topic=vmwaresolutions-at_events#at-events-kmip) |
 {: caption="List of VMware Solutions services" caption-side="top"}
 
