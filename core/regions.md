@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2021, 2024
-lastupdated: "2024-10-09"
+  years:  2021, 2025
+lastupdated: "2025-07-23"
 
 keywords:
 
@@ -20,6 +20,9 @@ subcollection: atracker
 
 
 ![The image shows the locations where the {{site.data.keyword.atracker_short}} service is available.](../images/Activity-Tracker-Routing-03-Locations.svg){: caption="Displays the regions where you can create and manage {{site.data.keyword.atracker_short}} resources." caption-side="bottom"}
+
+
+
 
 This image is an artistic representation and does not reflect actual political or geographic boundaries.
 {: note}
