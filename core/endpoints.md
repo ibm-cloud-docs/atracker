@@ -33,7 +33,7 @@ The following table shows the private API endpoints. The port for all endpoints 
 | Frankfurt (`eu-de`)      | `https://private.eu-de.atracker.cloud.ibm.com`  |  166.9.209.204   \n 166.9.209.236   \n 166.9.210.2  |
 | London (`eu-gb`)         | `https://private.eu-gb.atracker.cloud.ibm.com`  |  166.9.245.170   \n 166.9.245.202   \n 166.9.245.234  |
 | Madrid (`eu-es`)         | `https://private.eu-es.atracker.cloud.ibm.com`  | 166.9.225.11  \n 166.9.226.12  \n 166.9.227.11 |
-| Montreal (`ca-mon`)         | `https://private.ca-mon.atracker.cloud.ibm.com`  | 166.9.232.49 \n 166.9.231.29 \n 166.9.233.49  |
+| Montreal (`ca-mon`)         | `https://private.ca-mon.atracker.cloud.ibm.com`  | 166.9.232.49  \n 166.9.231.29  \n 166.9.233.49  |
 | Osaka (`jp-osa`)         | `https://private.jp-osa.atracker.cloud.ibm.com`  | 166.9.247.46  \n 166.9.247.71  \n 166.9.247.110 |
 | Sao Paulo (`br-sao`)        | `https://private.br-sao.atracker.cloud.ibm.com` | 166.9.246.76  \n 166.9.246.109  \n 166.9.246.157 |
 | Sydney (`au-syd`)        | `https://private.au-syd.atracker.cloud.ibm.com` |  166.9.244.119   \n 166.9.244.151   \n 166.9.244.183  |
