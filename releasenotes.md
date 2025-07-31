@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2025
-lastupdated: "2025-07-23"
+lastupdated: "2025-07-31"
 
 keywords:
 
@@ -22,6 +22,12 @@ content-type: release-note
 Use these release notes to learn about the latest updates to {{site.data.keyword.atracker_full}}.
 {: shortdesc}
 
+
+## 31 July 2025
+{: #activity-tracker-jul3125}
+
+Montreal support
+:   The {{site.data.keyword.atracker_full_notm}} service is fully supported in the Montreal (`ca-mon`) region.
 
 
 ## 9 July 2025

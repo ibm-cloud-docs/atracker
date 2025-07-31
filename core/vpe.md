@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2025
-lastupdated: "2025-07-23"
+lastupdated: "2025-07-31"
 
 keywords:
 
@@ -43,6 +43,7 @@ When you create a VPE gateway by using the CLI or API, you must specify the [Clo
 |-----------------|-----------------|
 | `au-syd` | `crn:v1:bluemix:public:atracker:au-syd:::endpoint:private.au-syd.atracker.cloud.ibm.com` |
 | `br-sao` | `crn:v1:bluemix:public:atracker:br-sao:::endpoint:private.br-sao.atracker.cloud.ibm.com` |
+| `ca-mon` | `crn:v1:bluemix:public:atracker:ca-mon:::endpoint:api.private.ca-mon.atracker.cloud.ibm.com` |
 | `ca-tor` | `crn:v1:bluemix:public:atracker:ca-tor:::endpoint:private.ca-tor.atracker.cloud.ibm.com` |
 | `eu-de` | `crn:v1:bluemix:public:atracker:eu-de:::endpoint:private.eu-de.atracker.cloud.ibm.com` |
 | `eu-es` | `crn:v1:bluemix:public:atracker:eu-es:::endpoint:private.eu-es.atracker.cloud.ibm.com` |
@@ -75,7 +76,7 @@ After you create an endpoint gateway for {{site.data.keyword.atracker_short}}, y
 {: #vpe-api}
 {: api}
 
-After creating an endpoint gateway for the {{site.data.keyword.atracker_short}} service, use the service endpoint's FQDN `private.<REGION>.atracker.cloud.ibm.com` in the URL to access the service. For example:
+After creating an endpoint gateway for the {{site.data.keyword.atracker_short}} service, use the service endpoint's FQDN `private.<REGION>.atracker.cloud.ibm.com` `[*]` in the URL to access the service. For example:
 
 ```sh
 curl https://private.au-syd.atracker.cloud.ibm.com/api/v2/targets' -H "Authorization: Bearer $iam_token"
@@ -83,12 +84,15 @@ curl https://private.au-syd.atracker.cloud.ibm.com/api/v2/targets' -H "Authoriza
 {: pre}
 
 
+`[*]` - for Montreal (`ca-mon`) the FQDN is `api.private.ca-mon.atracker.cloud.ibm.com`.
+{: important}
+
 
 ### Using the VPE with the CLI
 {: #vpe-cli}
 {: cli}
 
-After creating an endpoint gateway for the {{site.data.keyword.atracker_short}} service, run the following command with the service endpoint's FQDN `private.<REGION>.atracker.cloud.ibm.com` to access the service. For example:
+After creating an endpoint gateway for the {{site.data.keyword.atracker_short}} service, run the following command with the service endpoint's FQDN `private.<REGION>.atracker.cloud.ibm.com` `[*]` to access the service. For example:
 
 ```sh
 export ATRACKER_API_ENDPOINT=https://private.au-syd.atracker.cloud.ibm.com
@@ -96,14 +100,21 @@ export ATRACKER_API_ENDPOINT=https://private.au-syd.atracker.cloud.ibm.com
 {: pre}
 
 
+`[*]` - for Montreal (`ca-mon`) the FQDN is `api.private.ca-mon.atracker.cloud.ibm.com`.
+{: important}
+
 
 ### Using the VPE with Terraform
 {: #vpe-terraform}
 {: terraform}
 
-After creating an endpoint gateway for the {{site.data.keyword.atracker_short}} service, run the following command with the service endpoint's FQDN `private.<REGION>.atracker.cloud.ibm.com` to access the service. For example:
+After creating an endpoint gateway for the {{site.data.keyword.atracker_short}} service, run the following command with the service endpoint's FQDN `private.<REGION>.atracker.cloud.ibm.com` `[*]` to access the service. For example:
 
 ```sh
 export IBMCLOUD_ATRACKER_API_ENDPOINT=https://private.au-syd.atracker.cloud.ibm.com
 ```
 {: pre}
+
+
+`[*]` - for Montreal (`ca-mon`) the FQDN is `api.private.ca-mon.atracker.cloud.ibm.com`.
+{: important}

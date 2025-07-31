@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2025
-lastupdated: "2025-07-23"
+lastupdated: "2025-07-31"
 
 keywords:
 
@@ -222,6 +222,9 @@ Use this command to create a {{site.data.keyword.logs_full_notm}} target to be u
 :   The CRN of the {{site.data.keyword.logs_full_notm}} instance.
 
 
+     If you want to use an {{site.data.keyword.logs_full_notm}} instance in Montreal (`ca-mon`), then the region of the target must also be Montreal (`ca-mon`).
+    {: restriction}
+
 
 `--output FORMAT`
 :   Currently supported format is JSON. If specified, output will be returned in JSON format.  If `JSON` is not specified, output will be returned in a tabular format.
@@ -289,6 +292,9 @@ ibmcloud atracker target update --target TARGET [--name TARGET_NAME] [ [--file C
 `--target-crn CLOUD_LOGS_TARGET_CRN`
 :   The CRN of the {{site.data.keyword.logs_full_notm}} instance.
 
+
+     If you want to use an {{site.data.keyword.logs_full_notm}} instance in Montreal (`ca-mon`), then the region of the target must also be Montreal (`ca-mon`).
+    {: restriction}
 
 
 `--output FORMAT`
@@ -557,6 +563,9 @@ Where
     `CLOUD_LOGS_CRN` indicates the [CRN](/docs/account?topic=account-crn) of the {{site.data.keyword.logs_full_notm}} instance.
 
     
+     If you want to use an {{site.data.keyword.logs_full_notm}} instance in Montreal (`ca-mon`), then the region of the target must also be Montreal (`ca-mon`).
+    {: restriction}
+
 
 For example, you can use the following cURL request to create a target in Dallas:
 
@@ -610,6 +619,9 @@ Where
 
     `CLOUD_LOGS_CRN` indicates the [CRN](/docs/account?topic=account-crn) of the {{site.data.keyword.logs_full_notm}} instance.
 
+
+     If you want to use an {{site.data.keyword.logs_full_notm}} instance in Montreal (`ca-mon`), then the region of the target must also be Montreal (`ca-mon`).
+    {: restriction}
 
 
 
@@ -789,6 +801,9 @@ Only resources in your account are listed and selectable. To specify a resource 
     - **Search by instance**: Select an {{site.data.keyword.logs_full_notm}} instance from the table or click **Create** to create a new {{site.data.keyword.logs_full_notm}} instance.
 
 
+     If you want to use an {{site.data.keyword.logs_full_notm}} instance in Montreal (`ca-mon`), then the region of the target must also be Montreal (`ca-mon`).
+    {: restriction}
+
 - **Target name**: Enter a meaningful name for the target.
 - **Target region**: Select the region that will process the event data.
 - Toggle **Set as default target** to automatically set your new target as a default target in your {{site.data.keyword.atracker_full_notm}} settings. See [the default targets documentation](/docs/atracker?topic=atracker-planning#planning-4) for more details.
@@ -814,6 +829,9 @@ Only resources in your account are listed and selectable. To specify a resource 
 10. Click **Save** to update your target.
 11. **Destination**: Click **Edit** to change the {{site.data.keyword.logs_full_notm}} instance associated with your target.
 
+
+     If you want to use an {{site.data.keyword.logs_full_notm}} instance in Montreal (`ca-mon`), then the region of the target must also be Montreal (`ca-mon`).
+    {: restriction}
 
 12. Click **Save** to update your target.
 
