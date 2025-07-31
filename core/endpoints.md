@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2025
-lastupdated: "2025-07-23"
+lastupdated: "2025-07-31"
 
 keywords:
 
@@ -33,6 +33,7 @@ The following table shows the private API endpoints. The port for all endpoints 
 | Frankfurt (`eu-de`)      | `https://private.eu-de.atracker.cloud.ibm.com`  |  166.9.209.204   \n 166.9.209.236   \n 166.9.210.2  |
 | London (`eu-gb`)         | `https://private.eu-gb.atracker.cloud.ibm.com`  |  166.9.245.170   \n 166.9.245.202   \n 166.9.245.234  |
 | Madrid (`eu-es`)         | `https://private.eu-es.atracker.cloud.ibm.com`  | 166.9.225.11  \n 166.9.226.12  \n 166.9.227.11 |
+| Montreal (`ca-mon`)         | `https://private.ca-mon.atracker.cloud.ibm.com`  | 166.9.232.49. \n 166.9.231.29. \n 166.9.233.49  |
 | Osaka (`jp-osa`)         | `https://private.jp-osa.atracker.cloud.ibm.com`  | 166.9.247.46  \n 166.9.247.71  \n 166.9.247.110 |
 | Sao Paulo (`br-sao`)        | `https://private.br-sao.atracker.cloud.ibm.com` | 166.9.246.76  \n 166.9.246.109  \n 166.9.246.157 |
 | Sydney (`au-syd`)        | `https://private.au-syd.atracker.cloud.ibm.com` |  166.9.244.119   \n 166.9.244.151   \n 166.9.244.183  |
@@ -54,6 +55,7 @@ The following table shows the public API endpoints:
 | Frankfurt (`eu-de`)      | `https://eu-de.atracker.cloud.ibm.com`          | `https/443`  |
 | London (`eu-gb`)         | `https://eu-gb.atracker.cloud.ibm.com`          | `https/443`  |
 | Madrid (`eu-es`)         | `https://eu-es.atracker.cloud.ibm.com`          | `https/443`  |
+| Montreal (`ca-mon`)         | `https://ca-mon.atracker.cloud.ibm.com`          | `https/443`  |
 | Osaka (`jp-osa`)         | `https://jp-osa.atracker.cloud.ibm.com`          | `https/443`  |
 | Sao Paulo (`br-sao`)        | `https://br-sao.atracker.cloud.ibm.com` | `https/443`  |
 | Sydney (`au-syd`)        | `https://au-syd.atracker.cloud.ibm.com` | `https/443`  |

@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2025
-lastupdated: "2025-07-23"
+lastupdated: "2025-07-31"
 
 keywords:
 
@@ -19,9 +19,7 @@ subcollection: atracker
 {: shortdesc}
 
 
-![The image shows the locations where the {{site.data.keyword.atracker_short}} service is available.](../images/Activity-Tracker-Routing-03-Locations.svg){: caption="Displays the regions where you can create and manage {{site.data.keyword.atracker_short}} resources." caption-side="bottom"}
-
-
+![The image shows the locations where the {{site.data.keyword.atracker_short}} service is available.](../images/locations_with_chennai.svg){: caption="Displays the regions where you can create and manage {{site.data.keyword.atracker_short}} resources." caption-side="bottom"}
 
 
 This image is an artistic representation and does not reflect actual political or geographic boundaries.
@@ -38,6 +36,7 @@ This image is an artistic representation and does not reflect actual political o
 | `Europe`              | `London (eu-gb)`  | `NO`        | `MZR`     |
 | `Europe`              | `Madrid (eu-es) (*)`  | `YES`        | `MZR`     |
 | `North America`       | `Dallas (us-south)`      | `N/A`        | `MZR`     |
+| `North America`       | `Montreal (ca-mon)`      | `N/A`        | `MZR`     |
 | `North America`       | `Toronto (ca-tor)`      | `N/A`        | `MZR`     |
 | `North America`       | `Washington (us-east)`   | `N/A`        | `MZR`     |
 | `South America`       | `Sao Paulo (br-sao)`   | `N/A`        | `MZR`     |

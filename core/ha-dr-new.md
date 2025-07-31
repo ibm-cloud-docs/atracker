@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2025
-lastupdated: "2025-07-24"
+lastupdated: "2025-07-31"
 
 keywords: HA for IBM Cloud Activity Tracker Event Routing, DR for IBM Cloud Activity Tracker Event Routing, IBM Cloud Activity Tracker Event Routing recovery time objective, IBM Cloud Activity Tracker Event Routing recovery point objective
 
@@ -61,6 +61,7 @@ The following table lists the high-availability (HA) status for the regions (loc
 | Europe              | London `(eu-gb)`         | `N/A`        | `MZR`     |
 | Europe              | Madrid `(eu-es)`         | ![Checkmark icon](../images/checkmark-icon.svg "checkmark")         | `MZR`     |
 | North America       | Dallas `(us-south)`      | `N/A`        | `MZR`     |
+| North America       | Montreal `(ca-mon)`      | `N/A`        | `MZR`     |
 | North America       | Toronto `(ca-tor)`      | `N/A`        | `MZR`     |
 | North America       | Washington `(us-east)`   | `N/A`        | `MZR`     |
 | South America       | Sao Paulo `(br-sao)`   | `N/A`        | `MZR`     |
@@ -255,6 +256,7 @@ The following table shows the regions where the copy of a regular backup is repl
 | Europe              | London `(eu-gb)`         | Sydney `(au-syd)`       |
 | Europe              | Madrid `(eu-es)`         | Frankfurt `(eu-de)`     |
 | North America       | Dallas `(us-south)`      | Washington `(us-east)`  |
+| North America       | Montreal `(ca-mon)`      | Washington `(us-east)`  |
 | North America       | Toronto `(ca-tor)`      | Washington `(us-east)`  |
 | North America       | Washington `(us-east)`   | Dallas `(us-south)`     |
 | South America       | Sao Paulo `(br-sao)`   | Washington `(us-east)`     |
@@ -273,6 +275,7 @@ The following table indicates the recovery region in the event of a DR situation
 | Europe              | London `(eu-gb)`         | Frankfurt `(eu-de)`     |
 | Europe              | Madrid `(eu-es)`         | Frankfurt `(eu-de)`     |
 | North America       | Dallas `(us-south)`      | Washington `(us-east)`  |
+| North America       | Montreal `(ca-mon)`      | Toronto `(ca-tor)`  |
 | North America       | Toronto `(ca-tor)`      | Washington `(us-east)`  |
 | North America       | Washington `(us-east)`   | Dallas `(us-south)`     |
 | South America       | Sao Paulo `(br-sao)`   | Washington `(us-east)`     |

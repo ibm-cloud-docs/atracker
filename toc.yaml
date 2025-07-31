@@ -136,9 +136,6 @@ toc:
             navtitle: Working with events before a region is available
           - topic: manage-events-to-new-region.md
             navtitle: Working with events after a region is open for business
-          - link:
-             label: Considerations for Montreal
-             href: /cloud-logs/cloud-logs-montreal-temp
       - topicgroup:
           label: Observability
           topics:

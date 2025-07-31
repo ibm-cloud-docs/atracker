@@ -37,6 +37,17 @@
 {: caption="Madrid public CIDR blocks" caption-side="top"}
 
 
+### Montreal
+{: #cidr_public_atracker_gen2_mon}
+
+| Region   | CIDR block |
+|----------|------------|
+| Montreal  | 64.5.41.148/32	|
+| Montreal  | 64.5.44.70/32 |
+| Montreal  | 64.5.48.123/32 |
+{: caption="Montreal public CIDR blocks" caption-side="top"}
+
+
 
 ### Osaka
 {: #cidr_public_atracker_gen2_osa}
