@@ -100,7 +100,7 @@ The following table lists developer tools and DevOps services that send auditing
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
 | [{{site.data.keyword.bplong}}](/docs/schematics?topic=schematics-getting-started)  | `schematics` | [Location-based events](/docs/schematics?topic=schematics-at_events) |
-| [{{site.data.keyword.en_full}}](/docs/event-notifications?topic=event-notifications-getting-started) | `event-notifications`| Location-based events |
+| [{{site.data.keyword.en_full}}](/docs/event-notifications?topic=event-notifications-getting-started) | `event-notifications`| [Location-based events](/docs/event-notifications?topic=event-notifications-at_events) |
 | [{{site.data.keyword.appconfig_full}}](/docs/app-configuration?topic=app-configuration-getting-started) | `apprapp`| [Location-based events](/docs/app-configuration?topic=app-configuration-at_events)|
 | [{{site.data.keyword.cloud-shell_full}}](/docs/cloud-shell?topic=cloud-shell-getting-started) | `cloudshell` | [Location-based events](/docs/cloud-shell?topic=cloud-shell-at_events) |
 {: caption="List of developer tools services" caption-side="top"}
@@ -209,7 +209,7 @@ The following table lists storage services that send auditing events:
 {: caption="List of storage events" caption-side="top"}
 
 
-`[*]` {{site.data.keyword.cos_full_notm}} (COS) generates global, and location-based events.
+`[*]` {{site.data.keyword.cos_full_notm}} (COS) generates global and location-based events.
 * By default, bucket management events such as the creation of a bucket are collected automatically.
 * Collection of data events in your account is optional. You must configure each bucket to enable data events by selecting the option **Track data events**.
 
@@ -240,8 +240,8 @@ The following table lists VMware Cloud Foundation (VCF) as a Service services th
 
 | Service     | CRN service name | Events |
 |-------------|--------------|--------|
-| [VCF as a Service - Cloud Director sites](/docs/vmware-service?topic=vmware-service-tenant-ordering) | `vmware.directorsite` | ![Checkmark](/images/checkmark-icon.svg "Checkmark") | [Global events](/docs/vmware-service?topic=vmware-service-at_events#at-events-director-site) |
-| [VCF as a Service - virtual data centers](/docs/vmware-service?topic=vmware-service-vdc-adding) | `vmware.vdc` | ![Checkmark](/images/checkmark-icon.svg "Checkmark") | [Global events](/docs/vmware-service?topic=vmware-service-at_events#at-events-vdc) |
+| [VCF as a Service - Cloud Director sites](/docs/vmware-service?topic=vmware-service-tenant-ordering) | `vmware.directorsite` | [Global events](/docs/vmware-service?topic=vmware-service-at_events#at-events-director-site) |
+| [VCF as a Service - virtual data centers](/docs/vmware-service?topic=vmware-service-vdc-adding) | `vmware.vdc` | [Global events](/docs/vmware-service?topic=vmware-service-at_events#at-events-vdc) |
 {: caption="List of VCF as a Service services" caption-side="top"}
 
 ## VPC services
@@ -271,7 +271,7 @@ The following table lists Watson AI services that send auditing events:
 | [{{site.data.keyword.DSX_short}}](https://dataplatform.cloud.ibm.com/docs/content/svc-welcome/wsl.html?context=wx){: external} | `data-science-experience` | [Location-based events](https://dataplatform.cloud.ibm.com/docs/content/wsj/admin/at-events.html?context=cpdaas&audience=wdp#shared){: external} |
 | [{{site.data.keyword.knowledgestudiofull}}](/docs/watson-knowledge-studio) | `knowledge-studio` | [Location-based events](/docs/watson-knowledge-studio?topic=watson-knowledge-studio-activity-tracker-events) |
 | [{{site.data.keyword.nlufull}}](/docs/natural-language-understanding) | `natural-language-understanding` | [Location-based events](/docs/natural-language-understanding?topic=natural-language-understanding-at_events) |
-| [watsonx.governance ({{site.data.keyword.aios_full_notm}})](https://dataplatform.cloud.ibm.com/docs/content/svc-welcome/aiopenscale.html?context=wx&audience=wdp){: external} |
+| [watsonx.governance ({{site.data.keyword.aios_full_notm}})](https://dataplatform.cloud.ibm.com/docs/content/svc-welcome/aiopenscale.html?context=wx&audience=wdp){: external} | `aiopenscale` | [Location-based events](https://dataplatform.cloud.ibm.com/docs/content/wsj/admin/at-events.html?context=wx&audience=wdp&locale=en#wos){: external} |
 | [watsonx.orchestrate](https://www.ibm.com/docs/en/watsonx/watson-orchestrate/base?topic=getting-started-watsonx-orchestrate){: external} |  `watsonx-orchestrate` | [Location-based events](https://www.ibm.com/docs/en/SSAVQO/security/activity_tracker.html){: external} |
 | [{{site.data.keyword.conversationfull}}](/docs/watson-assistant?topic=watson-assistant-getting-started) | `conversation`  | [Location-based events](/docs/watson-assistant?topic=watson-assistant-at-events) |
 | [{{site.data.keyword.discoveryfull}}](/docs/discovery-data?topic=discovery-data-getting-started) | `discovery` | [Location-based events](/docs/discovery-data?topic=discovery-data-at_events)  |
