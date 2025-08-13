@@ -175,7 +175,7 @@ The following table lists platform services that send auditing events:
 | [Projects](/docs/secure-enterprise?topic=secure-enterprise-understanding-projects) | `project` | [Global events](/docs/secure-enterprise?topic=secure-enterprise-at_events) |
 {: caption="List of platform services" caption-side="top"}
 
-`[*]` - Event routing available to {{site.data.keyword.at_full_notm}} only.
+`[*]` - Event routing available to {{site.data.keyword.logs_full_notm}} only.
 {: note}
 
 ## Security services
@@ -193,7 +193,7 @@ The following table lists security Cloud services that send auditing events:
 | [{{site.data.keyword.compliance_full}}](/docs/security-compliance?topic=security-compliance-getting-started) `[*]`| `compliance`  \n `security-advisor` | [Location-based events](/docs/security-compliance?topic=security-compliance-at_events) |
 {: caption="List of security services" caption-side="top"}
 
-`[*]` - Event routing available to {{site.data.keyword.at_full_notm}} only.
+`[*]` - Event routing available to {{site.data.keyword.logs_full_notm}} only.
 {: note}
 
 ## Storage services
@@ -228,7 +228,7 @@ The following table lists VMware Solutions services that send auditing events:
 | [KMIP for VMware](/docs/vmwaresolutions?topic=vmwaresolutions-kmip_standalone_considerations) `[*]` | `vmware-solutions` | [Location-based events](/docs/vmwaresolutions?topic=vmwaresolutions-at_events#at-events-kmip) |
 {: caption="List of VMware Solutions services" caption-side="top"}
 
-`[*]` - Event routing available to {{site.data.keyword.at_full_notm}} only.
+`[*]` - Event routing available to {{site.data.keyword.logs_full_notm}} only.
 {: note}
 
 ## VMware Cloud Foundation as a Service
