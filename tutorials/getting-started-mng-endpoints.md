@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2025
-lastupdated: "2025-04-10"
+lastupdated: "2025-09-03"
 
 keywords:
 
@@ -103,7 +103,7 @@ Complete the following steps to provision a VPC VSI so that you can run cURL com
 
 3. [Connect to the VSI](/docs/vpc?topic=vpc-vsi_is_connecting_linux) from a terminal in your local environment.
 
-4. After you ssh into the VSI, [install the IBM Cloud CLI](https://cloud.ibm.com/docs/cli?topic=cli-install-ibmcloud-cli). Run the following command:
+4. After you ssh into the VSI, [install the IBM Cloud CLI](/docs/cli?topic=cli-install-ibmcloud-cli). Run the following command:
 
     ```shell
     curl -fsSL https://clis.cloud.ibm.com/install/linux | sh
