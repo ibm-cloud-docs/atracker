@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2021, 2024
-lastupdated: "2024-09-20"
+  years:  2021, 2025
+lastupdated: "2025-09-03"
 
 keywords:
 
@@ -70,7 +70,7 @@ Complete the following steps:
 
 2. Create an {{site.data.keyword.messagehub}} instance.
 
-    Check the limitations of the {{site.data.keyword.messagehub}} service plans. For more information, see [Limits and quotas](https://cloud.ibm.com/docs/EventStreams?topic=EventStreams-kafka_quotas).
+    Check the limitations of the {{site.data.keyword.messagehub}} service plans. For more information, see [Limits and quotas](/docs/EventStreams?topic=EventStreams-kafka_quotas).
     {: note}
 
     a. Access the {{site.data.keyword.messagehub}} service in the [Catalog.](https://cloud.ibm.com/catalog#services){: external}
