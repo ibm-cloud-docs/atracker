@@ -169,9 +169,8 @@ toc:
           topics:
           - topic: cli/atracker-cli-config.md
             navtitle: Configuring the CLI
-          - link:
-              label: Event Routing CLI
-              href: https://{DomainName}/docs/atracker-cli-plugin?topic=atracker-cli-plugin-atracker-v2-cli
+          - topic: cli/atracker-cli-v2.md
+            navtitle: Event Routing CLI
       - topicgroup:
           label: API Reference
           topics:
