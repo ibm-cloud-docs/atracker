@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2025
-lastupdated: "2025-04-10"
+lastupdated: "2025-09-17"
 
 keywords:
 
@@ -63,7 +63,7 @@ You must grant users IAM permissions to manage targets. For more information, se
 
 When you define a policy, you can indicate the scope of the permissions. You can choose from granting permissions for a specific region or for the entire account.
 
-If you have the IAM permission to create policies and authorizations, you can grant only the level of access that you have as a user of the target service. For example, if you have viewer access for the target service, you can assign only the viewer role for the authorization. If you attempt to assign a higher permission such as administrator, it might appear that permission is granted, however, only the highest level permission you have for the target service, that is viewer, will be assigned. 
+If you have the IAM permission to create policies and authorizations, you can grant only the level of access that you have as a user of the target service. For example, if you have viewer access for the target service, you can assign only the viewer role for the authorization. If you attempt to assign a higher permission such as administrator, it might appear that permission is granted, however, only the highest level permission you have for the target service, that is viewer, will be assigned.
 {: important}
 
 Users with regional scope will be limited to access targets in their authorized region.
@@ -136,7 +136,7 @@ The following table lists the actions that you can run to manage targets:
 {: caption="Target actions by using the {{site.data.keyword.atracker_full_notm}}Event Routing CLI" caption-side="top"}
 
 
-For more information, see [{{site.data.keyword.atracker_full_notm}} V2 CLI](/docs/atracker-cli-plugin?topic=atracker-cli-plugin-atracker-v2-cli).
+For more information, see [{{site.data.keyword.atracker_full_notm}} V2 CLI](/docs/atracker?topic=atracker-atracker-v2-cli).
 
 
 

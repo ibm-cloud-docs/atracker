@@ -36,7 +36,7 @@
   },
   "section_devtools": {
     "api": "/apidocs/atracker",
-    "cli": "/docs/atracker-cli-plugin?topic=atracker-cli-plugin-atracker-v2-cli",
+    "cli": "/docs/atracker?topic=atracker-atracker-v2-cli",
     "terraform": "https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/atracker_route"
   },
   "section_updates": {
