@@ -17,7 +17,7 @@ toc:
       - topic: scenarios.md
         navtitle: Scenarios
       - topicgroup:
-          label:  Configuring the account
+          label: Configuring the account
           topics:
           - topic: overview.md
             navtitle: Overview
@@ -64,16 +64,16 @@ toc:
           - topicgroup:
               label: S2S authorizations
               topics:
-               - topic: iam-service-auth.md
-                 navtitle: Managing authorizations
-               - topic: iam-service-auth-cos.md
-                 navtitle: S2S for Cloud Object Storage
-               - topic: iam-service-auth-logs.md
-                 navtitle: S2S for Cloud Logs
-               - topic: iam-service-auth-es.md
-                 navtitle: S2S for Event Streams
-               - topic: iam-service-auth-remove-auth.md
-                 navtitle: Removing authorizations 
+              - topic: iam-service-auth.md
+                navtitle: Managing authorizations
+              - topic: iam-service-auth-cos.md
+                navtitle: S2S for Cloud Object Storage
+              - topic: iam-service-auth-logs.md
+                navtitle: S2S for Cloud Logs
+              - topic: iam-service-auth-es.md
+                navtitle: S2S for Event Streams
+              - topic: iam-service-auth-remove-auth.md
+                navtitle: Removing authorizations
       - topicgroup:
           label: Enhancing security
           topics:
@@ -177,21 +177,21 @@ toc:
           - topic: retrieve-iam-token.md
             navtitle: Retrieving IAM token
           links:
-            - link:
-                label: Activity Tracker Event Routing API
-                href: https://{DomainName}/apidocs/atracker
+          - link:
+              label: Activity Tracker Event Routing API
+              href: https://{DomainName}/apidocs/atracker
       - topicgroup:
           label: Terraform Reference
           links:
-            - link:
-                label: Settings
-                href: https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/atracker_settings
-            - link:
-                label: Target
-                href: https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/atracker_target
-            - link:
-                label: Route
-                href: https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/atracker_route
+          - link:
+              label: Settings
+              href: https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/atracker_settings
+          - link:
+              label: Target
+              href: https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/atracker_target
+          - link:
+              label: Route
+              href: https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/atracker_route
       - topicgroup:
           label: Events
           topics:
@@ -202,46 +202,46 @@ toc:
           - services/at_events_cbr.md
       - cos.md
   - navgroup:
-        id: help
-        topics:
-        - gettinghelp.md
-        - faq.md
-        - topicgroup:
-            label: Troubleshooting
-            topics:
-            - topicgroup:
-                label: IAM
-                topics:
-                - ts/troubleshoot-15.md
-            - topicgroup:
-                label: API
-                topics:
-                - ts/troubleshoot-01.md
-                - ts/troubleshoot-02.md
-            - topicgroup:
-                label: CLI
-                topics:
-                - ts/troubleshoot-03.md
-            - topicgroup:
-                label: Targets
-                topics:
-                - ts/troubleshoot-06.md
-                - ts/troubleshoot-07.md
-                - ts/troubleshoot-08.md
-                - ts/troubleshoot-09.md
-                - ts/troubleshoot-10.md
-                - ts/troubleshoot-11.md
-                - ts/troubleshoot-12.md
-                - ts/troubleshoot-16.md
-                - ts/troubleshoot-20.md
-            - topicgroup:
-                label: Routes
-                topics:
-                - ts/troubleshoot-13.md
-                - ts/troubleshoot-17.md
-                - ts/troubleshoot-18.md
-                - ts/troubleshoot-19.md
-            - topicgroup:
-                label: Settings
-                topics:
-                - ts/troubleshoot-14.md
+      id: help
+      topics:
+      - gettinghelp.md
+      - faq.md
+      - topicgroup:
+          label: Troubleshooting
+          topics:
+          - topicgroup:
+              label: IAM
+              topics:
+              - ts/troubleshoot-15.md
+          - topicgroup:
+              label: API
+              topics:
+              - ts/troubleshoot-01.md
+              - ts/troubleshoot-02.md
+          - topicgroup:
+              label: CLI
+              topics:
+              - ts/troubleshoot-03.md
+          - topicgroup:
+              label: Targets
+              topics:
+              - ts/troubleshoot-06.md
+              - ts/troubleshoot-07.md
+              - ts/troubleshoot-08.md
+              - ts/troubleshoot-09.md
+              - ts/troubleshoot-10.md
+              - ts/troubleshoot-11.md
+              - ts/troubleshoot-12.md
+              - ts/troubleshoot-16.md
+              - ts/troubleshoot-20.md
+          - topicgroup:
+              label: Routes
+              topics:
+              - ts/troubleshoot-13.md
+              - ts/troubleshoot-17.md
+              - ts/troubleshoot-18.md
+              - ts/troubleshoot-19.md
+          - topicgroup:
+              label: Settings
+              topics:
+              - ts/troubleshoot-14.md
