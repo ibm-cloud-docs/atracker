@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2025
-lastupdated: "2025-08-13"
+lastupdated: "2025-10-23"
 
 keywords:
 
@@ -88,7 +88,6 @@ The following table lists database services that send auditing events:
 | [{{site.data.keyword.messages-for-rabbitmq_full}}](/docs/messages-for-rabbitmq?topic=messages-for-rabbitmq-getting-started)  | `messages-for-rabbitmq` | [Location-based events](/docs/messages-for-rabbitmq?topic=messages-for-rabbitmq-at_events) |
 | [{{site.data.keyword.databases-for-mongodb_full_notm}}](/docs/databases-for-mongodb) | `databases-for-mongodb` | [Location-based events](/docs/databases-for-mongodb?topic=databases-for-mongodb-at_events) |
 | [{{site.data.keyword.databases-for-mysql_full}}](/docs/databases-for-mysql) | `databases-for-mysql` | [Location-based events](/docs/databases-for-mysql?topic=databases-for-mysql-at_events) |
-| [{{site.data.keyword.databases-for-enterprisedb_full}}](/docs/databases-for-enterprisedb?topic=databases-for-enterprisedb-getting-started) | `databases-for-enterprisedb-group` | [Location-based events](/docs/databases-for-enterprisedb?topic=databases-for-enterprisedb-at_events) |
 {: caption="List of database services" caption-side="top"}
 
 
