@@ -127,6 +127,11 @@ toc:
           topics:
           - topic: route_v2.md
             navtitle: Managing routes
+          - topicgroup:
+              label: Example routing scenarios
+              topics:
+              - topic: cross-account-scenario.md
+                navtitle: Routing events across accounts
       - topicgroup:
           label: Working with events in non-supported locations
           topics:
