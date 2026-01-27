@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2021, 2025
-lastupdated: "2025-09-03"
+  years:  2021, 2026
+lastupdated: "2026-01-27"
 
 keywords:
 
@@ -22,6 +22,12 @@ content-type: release-note
 Use these release notes to learn about the latest updates to {{site.data.keyword.atracker_full}}.
 {: shortdesc}
 
+## 27 January 2026
+{: #activity-tracker-jan2726}
+
+Route rules now support location hierarchies
+:   {{site.data.keyword.atracker_full}} route rules previously only matched exact AT event locations. Moving forward, a rule will match an event if the event's location is within a rule location. For example, rule location `eu-de` will now match event locations: `eu-de`, `eu-de-1`, `eu-de-2`, and `eu-de-3`. Or rule location `jp` will now match all events within Japan. Run `ibmcloud catalog locations` to see the Cloud location hierarchies.
+
 
 ## 31 July 2025
 {: #activity-tracker-jul3125}
@@ -36,7 +42,7 @@ Montreal support
 Updated Montreal considerations
 :   As {{site.data.keyword.cloud_notm}} provides support for the Montreal (`ca-mon`) region, you need to understand how {{site.data.keyword.cloud_notm}} Observability services are made available and the actions you need to take to operate in Montreal.
 
-  
+
 ## 10 April 2025
 {: #activity-tracker-apr1025}
 {: release-note}
