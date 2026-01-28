@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2021, 2025
-lastupdated: "2025-04-10"
+  years:  2021, 2026
+lastupdated: "2026-01-27"
 
 keywords:
 
@@ -41,6 +41,8 @@ Note the following information about routes:
 * Routes are processed independently.  If you have multiple routes with rules that match the same event, that event will be sent to multiple targets.
 
 * Rules are processed in order.  The first matching rule (for example,  `location`) an event matches will be used to process the event.  Once an event has been processed it will not be processed by a subsequent rule within that route's definition. If you want to specify a default rule for all events that were not processed by other rules you would specify the rule (`"locations" : ["*"]`) as the final rule in your `rules` definition for the `route`.
+
+* Rules will match an event if the event's location is within a rule location. For example, rule location `eu-de` will match event locations: `eu-de`, `eu-de-1`, `eu-de-2`, and `eu-de-3`. Or rule location `jp` will match all events within Japan. Run `ibmcloud catalog locations` to see the Cloud location hierarchies.
 
 * If an event doesn't match any rule and no default target is configured, the event will be dropped and not routed to any target.
 
@@ -85,7 +87,7 @@ To include global events in a route, specify `global` in the list of `locations`
 
 You must grant users IAM permissions to manage routes. For more information, see [Assign access to resources](/docs/account?topic=account-assign-access-resources).
 
-If you have the IAM permission to create policies and authorizations, you can grant only the level of access that you have as a user of the target service. For example, if you have viewer access for the target service, you can assign only the viewer role for the authorization. If you attempt to assign a higher permission such as administrator, it might appear that permission is granted, however, only the highest level permission you have for the target service, that is viewer, will be assigned. 
+If you have the IAM permission to create policies and authorizations, you can grant only the level of access that you have as a user of the target service. For example, if you have viewer access for the target service, you can assign only the viewer role for the authorization. If you attempt to assign a higher permission such as administrator, it might appear that permission is granted, however, only the highest level permission you have for the target service, that is viewer, will be assigned.
 {: important}
 
 When you define a policy, you can must set the scope of the policy to the account. A route is a global resource that is not bound to a specific region.

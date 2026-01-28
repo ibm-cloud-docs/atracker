@@ -2,7 +2,7 @@
 
 copyright:
   years:  2023, 2025
-lastupdated: "2025-10-29"
+lastupdated: "2025-12-05"
 
 keywords:
 
@@ -39,13 +39,13 @@ This example uses terraform. However, other configuration methods can be used as
 {: #step-create-target-instance-terraform}
 {: terraform}
 
-Follow [Provisioning an {{site.data.keyword.logs_full_notm}} instance by using Terraform](/docs/cloud-logs?topic=cloud-logs-terraform-setup) to create the instance. The instance will not receive activity tracker events until the spoke accounts are configured to send their events to the instance.
+Follow [Provisioning an {{site.data.keyword.logs_full_notm}} instance by using Terraform](/docs/cloud-logs?topic=cloud-logs-terraform-setup) to create the instance in the hub account. The instance will not receive activity tracker events until the spoke accounts are configured to send their events to the instance.
 
 ## Step 2 - Create hub authorization policies
 {: #step-create-authorization-policy-terraform}
 {: terraform}
 
-Create an {{site.data.keyword.iamshort}} (IAM) service to service Authorization Policy in the hub account for each of your spoke accounts. In this example there are two spoke accounts.
+Create an {{site.data.keyword.iamshort}} (IAM) service to service authorization policy in the hub account for each of your spoke accounts. In this example there are two spoke accounts.
 
 ```terraform
 # FILE: hub/main.tf
@@ -102,7 +102,7 @@ This step ensures {{site.data.keyword.atracker_full}} is authorized to route spo
 {: #step-create-spoke-targets}
 {: terraform}
 
-Now that the hub account is now fully configured, you need to create {{site.data.keyword.atracker_full_notm}} targets for each spoke account where the target destination is the hub account's {{site.data.keyword.logs_full_notm}} instance. In this example, there are only two spoke accounts, but there is no limitation to the number of spoke accounts that can be targeted to a single hub account.
+Now that the hub account is fully configured, you need to create {{site.data.keyword.atracker_full_notm}} targets in each spoke account, the target destination is the hub account's {{site.data.keyword.logs_full_notm}} instance. In this example, there are only two spoke accounts, but there is no limitation to the number of spoke accounts that can be targeted to a single hub account.
 
 ```terraform
 # NEW FILE: spoke_a/main.tf
@@ -176,7 +176,7 @@ This step creates {{site.data.keyword.atracker_full}} targets pointing to the hu
 {: #step-create-spoke-routes}
 {: terraform}
 
-Create {{site.data.keyword.atracker_full_notm}} routes for each spoke account. You can route all activity tracker events to the hub or a subset of activity tracker events to the hub. In this example, spoke A will route all activity tracker events to the hub and spoke B will route activity tracker events from specific locations to the hub.
+Create {{site.data.keyword.atracker_full_notm}} routes in each spoke account. You can route all activity tracker events to the hub or a subset of activity tracker events to the hub. In this example, spoke A will route all activity tracker events to the hub and spoke B will route activity tracker events from specific locations to the hub.
 
 See [IBM Cloud services that generate events that are managed through {{site.data.keyword.atracker_full}}](/docs/atracker?topic=atracker-cloud_services_atracker).
 
