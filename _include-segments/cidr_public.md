@@ -1,3 +1,13 @@
+### Chennai
+{: #cidr_public_atracker_gen2_3}
+
+| Region   | CIDR block |
+|----------|------------|
+| Chennai  | 169.38.8.235/32 |
+| Chennai  | 169.38.12.118/32 |
+| Chennai  | 169.38.17.62/32 |
+{: caption="Chennai public CIDR blocks" caption-side="top"}
+
 ### Frankfurt
 {: #cidr_public_atracker_gen2_3}
 

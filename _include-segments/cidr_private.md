@@ -1,3 +1,13 @@
+### Chennai
+{: #cidr_private_atracker_gen2_3}
+
+| Region   | CIDR block |
+|----------|------------|
+| Chennai  | 10.46.129.234/32 |
+| Chennai  | 10.46.133.234/32 |
+| Chennai  | 10.46.137.234/32 |
+{: caption="Chennai private CIDR blocks" caption-side="top"}
+
 ### Frankfurt
 {: #cidr_private_atracker_gen2_3}
 
