@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2021, 2025
-lastupdated: "2025-02-22"
+  years:  2021, 2026
+lastupdated: "2026-02-25"
 
 keywords:
 
@@ -83,4 +83,10 @@ For {{site.data.keyword.atracker_short}}, the IAM actions and Activity Tracker a
 | Administrator | `atracker.route.delete` | Delete a route |
 | Administrator | `atracker.target.list` | List all targets |
 | Administrator | `atracker.route.list` | List all routes |
+| Administrator | `atracker.enterprise-target.create` | Create an enterprise target. See [Enterprise-managed routing](/docs/atracker?topic=atracker-cross-account-scenario). |
+| Administrator | `atracker.enterprise-target.update` | Update an enterprise target. |
+| Administrator | `atracker.enterprise-target.delete` | Delete an enterprise target. |
+| Administrator | `atracker.enterprise-route.create` | Create an enterprise route. See [Enterprise-managed routing](/docs/atracker?topic=atracker-cross-account-scenario). |
+| Administrator | `atracker.enterprise-route.update` | Update an enterprise route. |
+| Administrator | `atracker.enterprise-route.delete` | Delete an enterprise route. |
 {: caption="{{site.data.keyword.atracker_short}} actions for the administrator role" caption-side="top"}
