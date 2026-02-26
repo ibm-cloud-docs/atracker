@@ -15,7 +15,6 @@ subcollection: atracker
 # Enterprise-managed routing
 {: #enterprise-routing-scenario}
 
-
 Use {{site.data.keyword.atracker_full}} to configure the routing of activity tracker events from your enterprise child accounts to your enterprise parent account, then use {{site.data.keyword.iamshort}} (IAM) Action Control to restrict changes to the enterprise-managed routing.
 {: shortdesc}
 
