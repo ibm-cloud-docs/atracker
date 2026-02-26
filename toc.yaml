@@ -132,6 +132,8 @@ toc:
               topics:
               - topic: cross-account-scenario.md
                 navtitle: Routing events across accounts
+              - topic: enterprise-routing-scenario.md
+                navtitle: Enterprise routing
       - topicgroup:
           label: Working with events in non-supported locations
           topics:
