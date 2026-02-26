@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-02-09"
+lastupdated: "2026-02-26"
 
 keywords:
 
@@ -17,6 +17,14 @@ subcollection: atracker
 
 The following Classless Inter-Domain Routing (CIDR) blocks are available:
 {: shortdesc}
+
+If the Cloud Object Storage bucket or Event Streams instance receiving your Activity Tracker events is configured with network access restrictions, then you will need to include the private or public CIDRs below in the configuration of your Cloud Object Storage bucket or Event Streams instance.
+{: note}
+
+The type of CIDR (public or private) you need to use depends on the configuration of the destination service.
+- For a COS destination, the endpoint address when configuring the Activity Tracker Event Routing target determines whether the request will use a public or private route.
+- For an Event Streams definition, the broker addresses provided when configuring the Activity Tracker Event Routing target determines whether the request will use a public or private route.
+
 
 ## Public CIDR blocks
 {: #cidr_public_atracker_gen2}
