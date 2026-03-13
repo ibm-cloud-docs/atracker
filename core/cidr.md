@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-03-12"
+lastupdated: "2026-03-13"
 
 keywords:
 
@@ -42,7 +42,7 @@ The type of CIDR (public or private) you need to use depends on the configuratio
 
 
 ### Frankfurt
-{: #cidr_public_atracker_gen2_3}
+{: #cidr_public_atracker_gen2_eu_de}
 
 | Region   | CIDR block |
 |----------|------------|
@@ -55,7 +55,7 @@ The type of CIDR (public or private) you need to use depends on the configuratio
 {: caption="Frankfurt public CIDR blocks" caption-side="top"}
 
 ### London
-{: #cidr_public_atracker_gen2_4}
+{: #cidr_public_atracker_gen2_eu_gb}
 
 | Region   | CIDR block |
 |----------|------------|
@@ -68,7 +68,7 @@ The type of CIDR (public or private) you need to use depends on the configuratio
 {: caption="London public CIDR blocks" caption-side="top"}
 
 ### Madrid
-{: #cidr_public_atracker_gen2_es}
+{: #cidr_public_atracker_gen2_eu_es}
 
 | Region   | CIDR block |
 |----------|------------|
@@ -81,7 +81,7 @@ The type of CIDR (public or private) you need to use depends on the configuratio
 
 
 ### Montreal
-{: #cidr_public_atracker_gen2_mon}
+{: #cidr_public_atracker_gen2_ca_mon}
 
 | Region   | CIDR block |
 |----------|------------|
@@ -93,7 +93,7 @@ The type of CIDR (public or private) you need to use depends on the configuratio
 
 
 ### Osaka
-{: #cidr_public_atracker_gen2_osa}
+{: #cidr_public_atracker_gen2_jp_osa}
 
 | Region   | CIDR block |
 |----------|------------|
@@ -104,7 +104,7 @@ The type of CIDR (public or private) you need to use depends on the configuratio
 {: caption="Osaka public CIDR blocks" caption-side="top"}
 
 ### Sao Paulo
-{: #cidr_public_atracker_br_sao}
+{: #cidr_public_atracker_gen2_br_sao}
 
 | Region   | CIDR block |
 |----------|------------|
@@ -118,7 +118,7 @@ The type of CIDR (public or private) you need to use depends on the configuratio
 {: caption="Sao Paulo public CIDR blocks" caption-side="top"}
 
 ### Sydney
-{: #cidr_public_atracker_gen2_5}
+{: #cidr_public_atracker_gen2_au_syd}
 
 | Region   | CIDR block |
 |----------|------------|
@@ -130,7 +130,7 @@ The type of CIDR (public or private) you need to use depends on the configuratio
 {: caption="Sydney public CIDR blocks" caption-side="top"}
 
 ### Tokyo
-{: #cidr_public_atracker_gen2_tok}
+{: #cidr_public_atracker_gen2_jp_tok}
 
 | Region   | CIDR block |
 |----------|------------|
@@ -140,7 +140,7 @@ The type of CIDR (public or private) you need to use depends on the configuratio
 {: caption="Tokyo public CIDR blocks" caption-side="top"}
 
 ### Toronto
-{: #cidr_public_atracker_ca_tor}
+{: #cidr_public_atracker_gen2_ca_tor}
 
 | Region   | CIDR block |
 |----------|------------|
@@ -150,7 +150,7 @@ The type of CIDR (public or private) you need to use depends on the configuratio
 {: caption="Toronto public CIDR blocks" caption-side="top"}
 
 ### US East
-{: #cidr_public_atracker_gen2_2}
+{: #cidr_public_atracker_gen2_us_east}
 
 | Region   | CIDR block |
 |----------|------------|
@@ -163,7 +163,7 @@ The type of CIDR (public or private) you need to use depends on the configuratio
 {: caption="US-East public CIDR blocks" caption-side="top"}
 
 ### US South
-{: #cidr_public_atracker_gen2_1}
+{: #cidr_public_atracker_gen2_us_south}
 
 | Region | CIDR block |
 |--------|------------|
@@ -180,7 +180,7 @@ The type of CIDR (public or private) you need to use depends on the configuratio
 {: #cidr_private_atracker_gen2}
 
 ### Chennai
-{: #cidr_private_atracker_in_che}
+{: #cidr_private_atracker_gen2_in_che}
 
 | Region   | CIDR block |
 |----------|------------|
@@ -191,7 +191,7 @@ The type of CIDR (public or private) you need to use depends on the configuratio
 
 
 ### Frankfurt
-{: #cidr_private_atracker_gen2_3}
+{: #cidr_private_atracker_gen2_eu_de}
 
 | Region   | CIDR block |
 |----------|------------|
@@ -201,7 +201,7 @@ The type of CIDR (public or private) you need to use depends on the configuratio
 {: caption="Frankfurt private CIDR blocks" caption-side="top"}
 
 ### London
-{: #cidr_private_atracker_gen2_4}
+{: #cidr_private_atracker_gen2_eu_gb}
 
 | Region   | CIDR block |
 |----------|------------|
@@ -211,7 +211,7 @@ The type of CIDR (public or private) you need to use depends on the configuratio
 {: caption="London private CIDR blocks" caption-side="top"}
 
 ### Madrid
-{: #cidr_private_atracker_gen2_es}
+{: #cidr_private_atracker_gen2_eu_es}
 
 | Region   | CIDR block |
 |----------|------------|
@@ -223,7 +223,7 @@ The type of CIDR (public or private) you need to use depends on the configuratio
 
 
 ### Montreal
-{: #cidr_private_atracker_gen2_mon}
+{: #cidr_private_atracker_gen2_ca_mon}
 
 | Region   | CIDR block |
 |----------|------------|
@@ -235,7 +235,7 @@ The type of CIDR (public or private) you need to use depends on the configuratio
 
 
 ### Osaka
-{: #cidr_private_atracker_gen2_osa}
+{: #cidr_private_atracker_gen2_jp_osa}
 
 | Region   | CIDR block |
 |----------|------------|
@@ -245,7 +245,7 @@ The type of CIDR (public or private) you need to use depends on the configuratio
 {: caption="Osaka private CIDR blocks" caption-side="top"}
 
 ### Sao Paulo
-{: #cidr_private_atracker_br_sao}
+{: #cidr_private_atracker_gen2_br_sao}
 
 | Region   | CIDR block |
 |----------|------------|
@@ -258,7 +258,7 @@ The type of CIDR (public or private) you need to use depends on the configuratio
 {: caption="Sao Paulo private CIDR blocks" caption-side="top"}
 
 ### Sydney
-{: #cidr_private_atracker_gen2_5}
+{: #cidr_private_atracker_gen2_au_syd}
 
 | Region   | CIDR block |
 |----------|------------|
@@ -268,7 +268,7 @@ The type of CIDR (public or private) you need to use depends on the configuratio
 {: caption="Sydney private CIDR blocks" caption-side="top"}
 
 ### Tokyo
-{: #cidr_private_atracker_gen2_tok}
+{: #cidr_private_atracker_gen2_jp_tok}
 
 | Region   | CIDR block |
 |----------|------------|
@@ -278,7 +278,7 @@ The type of CIDR (public or private) you need to use depends on the configuratio
 {: caption="Tokyo private CIDR blocks" caption-side="top"}
 
 ### Toronto
-{: #cidr_private_atracker_ca_tor}
+{: #cidr_private_atracker_gen2_ca_tor}
 
 | Region   | CIDR block |
 |----------|------------|
@@ -288,7 +288,7 @@ The type of CIDR (public or private) you need to use depends on the configuratio
 {: caption="Toronto private CIDR blocks" caption-side="top"}
 
 ### US East
-{: #cidr_private_atracker_gen2_2}
+{: #cidr_private_atracker_gen2_us_east}
 
 | Region   | CIDR block |
 |----------|------------|
@@ -298,7 +298,7 @@ The type of CIDR (public or private) you need to use depends on the configuratio
 {: caption="US-East private CIDR blocks" caption-side="top"}
 
 ### US South
-{: #cidr_private_atracker_gen2_1}
+{: #cidr_private_atracker_gen2_us_south}
 
 | Region | CIDR block |
 |--------|------------|
