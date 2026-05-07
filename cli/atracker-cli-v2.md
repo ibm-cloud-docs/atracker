@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2026
-lastupdated: "2026-05-01"
+lastupdated: "2026-05-07"
 
 subcollection: atracker
 
@@ -258,7 +258,7 @@ Use this command to create a {{site.data.keyword.cos_full_notm}} target to be us
 :   The CRN of the {{site.data.keyword.cos_full_notm}} instance.
 
 `--api-key COS_API_KEY` | `@COS_API_KEY_FILE`
-:   Your [API key](/docs/account?topic=account-manapikey) value or a reference to the API Key file used to gain access.  For example, `ibmcloud login --apikey $KEYFILE`
+:   Your [API key](/docs/iam?topic=iam-manapikey) value or a reference to the API Key file used to gain access.  For example, `ibmcloud login --apikey $KEYFILE`
 
 `--service-to-service-enabled`
 :   Indicates if [service-to-service authorization](/docs/atracker?topic=atracker-iam-service-auth-cos&interface=ui) has been enabled for the bucket.  Specify `TRUE` if service-to-service authorization is enabled and `FALSE` if service-to-service authorization is not enable.  By default, `service_to_service_enabled` is `FALSE`.
@@ -446,7 +446,7 @@ ibmcloud atracker target update --target TARGET [--name TARGET_NAME] [ [--file C
 :   The CRN of the {{site.data.keyword.cos_full_notm}} instance.
 
 `--api-key COS_API_KEY` | `@COS_API_KEY_FILE`
-:   Your [API key](/docs/account?topic=account-manapikey) value or a reference to the API Key file used to gain access.  For example, `ibmcloud login --apikey $KEYFILE`
+:   Your [API key](/docs/iam?topic=iam-manapikey) value or a reference to the API Key file used to gain access.  For example, `ibmcloud login --apikey $KEYFILE`
 
 `--service-to-service-enabled (TRUE | FALSE)`
 :   Indicates if [service-to-service authorization](/docs/atracker?topic=atracker-iam-service-auth-cos&interface=ui) has been enabled for the bucket.  Specify `TRUE` if service-to-service authorization is enabled and `FALSE` if service-to-service authorization is not enable.  By default, service-to-service authorization is `FALSE`.
