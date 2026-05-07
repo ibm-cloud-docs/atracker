@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-01-27"
+lastupdated: "2026-05-07"
 
 keywords:
 
@@ -22,8 +22,16 @@ content-type: release-note
 Use these release notes to learn about the latest updates to {{site.data.keyword.atracker_full}}.
 {: shortdesc}
 
+## 06 May 2026
+{: #activity-tracker-may0626}
+{: release-note}
+
+CIDR blocks added
+:   Public and private CIDR blocks are added to {{site.data.keyword.atracker_full}} for Chennai (in-che), Madrid (eu-es), London (eu-gb), and Toronto (ca-tor). See [CIDR blocks](/docs/atracker?topic=atracker-cidr).
+
 ## 27 January 2026
 {: #activity-tracker-jan2726}
+{: release-note}
 
 Route rules now support location hierarchies
 :   {{site.data.keyword.atracker_full}} route rules previously only matched exact AT event locations. Moving forward, a rule will match an event if the event's location is within a rule location. For example, rule location `eu-de` will now match event locations: `eu-de`, `eu-de-1`, `eu-de-2`, and `eu-de-3`. Or rule location `jp` will now match all events within Japan. Run `ibmcloud catalog locations` to see the Cloud location hierarchies.
@@ -38,6 +46,7 @@ Montreal support
 
 ## 9 July 2025
 {: #activity-tracker-jul0925}
+{: release-note}
 
 Updated Montreal considerations
 :   As {{site.data.keyword.cloud_notm}} provides support for the Montreal (`ca-mon`) region, you need to understand how {{site.data.keyword.cloud_notm}} Observability services are made available and the actions you need to take to operate in Montreal.

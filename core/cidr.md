@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-03-13"
+lastupdated: "2026-05-07"
 
 keywords:
 
@@ -36,6 +36,9 @@ The type of CIDR (public or private) you need to use depends on the configuratio
 |----------|------------|
 | Chennai  | 169.38.71.96/28  |
 | Chennai  | 169.38.91.192/27  |
+| Chennai  | 169.38.8.235/32  |
+| Chennai  | 169.38.12.118/32  |
+| Chennai  | 169.38.17.62/32  |
 {: caption="Chennai public CIDR blocks" caption-side="top"}
 
 
@@ -65,6 +68,9 @@ The type of CIDR (public or private) you need to use depends on the configuratio
 | London  | 158.175.126.224/28  |
 | London  | 141.125.75.128/27 |
 | London  | 141.125.137.128/28 |
+| London  | 161.156.198.18/32 |
+| London  | 141.125.157.238/32 |
+| London  | 158.176.191.148/32 |
 {: caption="London public CIDR blocks" caption-side="top"}
 
 ### Madrid
@@ -77,6 +83,9 @@ The type of CIDR (public or private) you need to use depends on the configuratio
 | Madrid  | 13.121.68.144/29 |
 | Madrid  | 13.122.68.80/28  |
 | Madrid  | 13.122.68.176/29 |
+| Madrid  | 13.120.86.11/32 |
+| Madrid  | 13.121.88.193/32 |
+| Madrid  | 13.122.95.60/32 |
 {: caption="Madrid public CIDR blocks" caption-side="top"}
 
 
@@ -147,6 +156,9 @@ The type of CIDR (public or private) you need to use depends on the configuratio
 | Toronto  | 169.55.177.32/28 |
 | Toronto  | 163.75.72.144/28 |
 | Toronto  | 163.74.65.32/28 |
+| Toronto  | 163.66.93.174/32 |
+| Toronto  | 163.74.95.233/32 |
+| Toronto  | 163.75.85.102/32 |
 {: caption="Toronto public CIDR blocks" caption-side="top"}
 
 ### US East
@@ -185,6 +197,10 @@ The type of CIDR (public or private) you need to use depends on the configuratio
 | Region   | CIDR block |
 |----------|------------|
 | Chennai  | 10.162.208.0/26 |
+| Chennai  | 10.46.129.234/32  |
+| Chennai  | 10.46.133.234/32  |
+| Chennai  | 10.46.137.234/32  |
+
 {: caption="Chennai private CIDR blocks" caption-side="top"}
 
 
@@ -208,6 +224,9 @@ The type of CIDR (public or private) you need to use depends on the configuratio
 | London  | 10.112.246.128/26 |
 | London  | 10.45.252.128/26 |
 | London  | 10.196.7.192/26 |
+| London  | 10.16.55.25/32 |
+| London  | 10.16.62.191/32 |
+| London  | 10.249.110.241/32 |
 {: caption="London private CIDR blocks" caption-side="top"}
 
 ### Madrid
@@ -219,6 +238,9 @@ The type of CIDR (public or private) you need to use depends on the configuratio
 | Madrid  | 10.118.16.136/29 |
 | Madrid  | 10.118.77.128/26 |
 | Madrid  | 10.118.143.64/26 |
+| Madrid  | 10.22.182.22/32 |
+| Madrid  | 10.22.185.114/32 |
+| Madrid  | 10.22.211.95/32 |
 {: caption="Madrid private CIDR blocks" caption-side="top"}
 
 
@@ -285,6 +307,9 @@ The type of CIDR (public or private) you need to use depends on the configuratio
 | Toronto  | 10.167.19.192/26 |
 | Toronto  | 10.243.124.0/26 |
 | Toronto  | 10.11.8.64/26 |
+| Toronto  | 10.223.159.102/32 |
+| Toronto  | 10.223.165.184/32 |
+| Toronto  | 10.223.182.47/32 |
 {: caption="Toronto private CIDR blocks" caption-side="top"}
 
 ### US East
