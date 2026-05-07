@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-04-30"
+lastupdated: "2026-05-07"
 
 keywords:
 
@@ -100,8 +100,7 @@ The following table lists developer tools and DevOps services that send auditing
 | [{{site.data.keyword.bplong}}](/docs/schematics?topic=schematics-getting-started)  | `schematics` | [Location-based events](/docs/schematics?topic=schematics-at_events) |
 | [{{site.data.keyword.en_full}}](/docs/event-notifications?topic=event-notifications-getting-started) | `event-notifications`| [Location-based events](/docs/event-notifications?topic=event-notifications-at_events) |
 | [{{site.data.keyword.appconfig_full}}](/docs/app-configuration?topic=app-configuration-getting-started) | `apprapp`| [Location-based events](/docs/app-configuration?topic=app-configuration-at_events)|
-| [{{site.data.keyword.cloud-shell_full}}](/docs/cloud-shell?topic=cloud-shell-getting-started) | `cloudshell` | [Location-based events](/docs/cloud-shell?topic=cloud-shell-at_events) |
-| [{{site.data.keyword.sandbox_full_notm}}](/docs-draft/sandbox?topic=sandbox-getting-started-sandbox) | `sandbox` | [Location-based events](/docs/sandbox?topic=sandbox-at_events) |
+| [{{site.data.keyword.cloud-shell_full}}](/docs/cloud-shell?topic=cloud-shell-getting-started) | `cloudshell` | [Location-based events](/docs/cloud-shell?topic=cloud-shell-at_events) | 
 {: caption="List of developer tools services" caption-side="top"}
 
 

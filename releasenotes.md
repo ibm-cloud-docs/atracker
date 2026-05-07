@@ -36,9 +36,9 @@ CIDR blocks added
 Route rules now support location hierarchies
 :   {{site.data.keyword.atracker_full}} route rules previously only matched exact AT event locations. Moving forward, a rule will match an event if the event's location is within a rule location. For example, rule location `eu-de` will now match event locations: `eu-de`, `eu-de-1`, `eu-de-2`, and `eu-de-3`. Or rule location `jp` will now match all events within Japan. Run `ibmcloud catalog locations` to see the Cloud location hierarchies.
 
-
 ## 31 July 2025
 {: #activity-tracker-jul3125}
+{: release-note}
 
 Montreal support
 :   The {{site.data.keyword.atracker_full_notm}} service is fully supported in the Montreal (`ca-mon`) region.
