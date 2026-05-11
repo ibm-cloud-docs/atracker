@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-05-07"
+lastupdated: "2026-05-11"
 
 keywords:
 
@@ -21,6 +21,12 @@ content-type: release-note
 
 Use these release notes to learn about the latest updates to {{site.data.keyword.atracker_full}}.
 {: shortdesc}
+
+## 13 May 2026
+{: #activity-tracker-may1326}
+
+Mumbai support
+:   The {{site.data.keyword.atracker_full_notm}} service is fully supported in the Mumbai (`in-mum`) region.
 
 ## 11 May 2026
 {: #activity-tracker-may1126}

@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-05-07"
+lastupdated: "2026-05-11"
 
 keywords:
 
@@ -28,6 +28,18 @@ The type of CIDR (public or private) you need to use depends on the configuratio
 
 ## Public CIDR blocks
 {: #cidr_public_atracker_gen2}
+
+### Mumbai
+{: #cidr_public_atracker_in_mum}
+
+| Region   | CIDR block |
+|----------|------------|
+| Mumbai  | 169.38.215.19/32  |
+| Mumbai  | 169.38.238.76/32  |
+| Mumbai  | 169.38.44.154/32 |
+{: caption="Mumbai public CIDR blocks" caption-side="top"}
+
+
 
 ### Chennai
 {: #cidr_public_atracker_in_che}
@@ -254,6 +266,17 @@ The type of CIDR (public or private) you need to use depends on the configuratio
 | Montreal  | 10.46.80.217/32 |
 {: caption="Montreal private CIDR blocks" caption-side="top"}
 
+
+
+### Mumbai
+{: #cidr_private_atracker_gen2_in_mum}
+
+| Region   | CIDR block |
+|----------|------------|
+| Mumbai  | 10.223.11.141/32 |
+| Mumbai  | 10.223.96.165/32 |
+| Mumbai  | 10.249.117.132/32 |
+{: caption="Mumbai private CIDR blocks" caption-side="top"}
 
 
 ### Osaka
