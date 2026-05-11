@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2021, 2025
-lastupdated: "2025-07-31"
+  years:  2021, 2026
+lastupdated: "2026-05-11"
 
 keywords: HA for IBM Cloud Activity Tracker Event Routing, DR for IBM Cloud Activity Tracker Event Routing, IBM Cloud Activity Tracker Event Routing recovery time objective, IBM Cloud Activity Tracker Event Routing recovery point objective
 
@@ -54,6 +54,7 @@ The following table lists the high-availability (HA) status for the regions (loc
 | Geography             | Region                   | EU-Supported | HA Status |
 |-----------------------|--------------------------|--------------|-----------|
 | Asia Pacific        | Chennai `(in-che)`        | `N/A`        | `SZR`     |
+| Asia Pacific        | Mumbai `(in-mum)`        | `N/A`        | `SZR`     |
 | Asia Pacific        | Osaka `(jp-osa)`        | `N/A`        | `MZR`     |
 | Asia Pacific        | Sydney `(au-syd)`        | `N/A`        | `MZR`     |
 | Asia Pacific        | Tokyo `(jp-tok)`        | `N/A`        | `MZR`     |
@@ -250,6 +251,7 @@ The following table shows the regions where the copy of a regular backup is repl
 | Geography             | Region                   | Other regions that keep a copy of the backup   |
 |-----------------------|--------------------------|-------------------------|
 | Asia Pacific        | Chennai `(in-che)`        | Tokyo `(jp-tok)`        |
+| Asia Pacific        | Mumbai `(in-mum)`        | Tokyo `(jp-tok)`        |
 | Asia Pacific        | Sydney `(au-syd)`        | London `(eu-gb)`        |
 | Asia Pacific        | Tokyo `(jp-tok)`        | Osaka `(jp-osa)`        |
 | Europe              | Frankfurt `(eu-de)`      | Madrid `(eu-es)`        |
@@ -269,6 +271,7 @@ The following table indicates the recovery region in the event of a DR situation
 | Geography             | Source region            | Recovery region   |
 |-----------------------|--------------------------|--------------|
 | Asia Pacific        | Chennai `(in-che)`        | Tokyo `(jp-tok)`     |
+| Asia Pacific        | Mumbai `(in-mum)`        | Tokyo `(jp-tok)`     |
 | Asia Pacific        | Sydney `(au-syd)`        | Frankfurt `(eu-de)`     |
 | Asia Pacific        | Tokyo `(jp-tok)`        | Osaka `(jp-osa)`     |
 | Europe              | Frankfurt `(eu-de)`      | Madrid `(eu-es)`        |

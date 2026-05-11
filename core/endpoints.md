@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2021, 2025
-lastupdated: "2025-07-31"
+  years:  2021, 2026
+lastupdated: "2026-05-11"
 
 keywords:
 
@@ -29,6 +29,7 @@ The following table shows the private API endpoints. The port for all endpoints 
 | Region                   | ATracker Private endpoint                         | IPs |
 |--------------------------|---------------------------------------------------|-------|
 | Chennai (`in-che`)      | `https://private.in-che.atracker.cloud.ibm.com` | 166.9.249.118  \n 166.9.249.147  \n 166.9.249.183 |
+| Mumbai (`in-mum`)      | `https://private.in-mum.atracker.cloud.ibm.com` | 166.9.212.21  \n 166.9.216.22  \n 166.9.214.22 |
 | Dallas (`us-south`)      | `https://private.us-south.atracker.cloud.ibm.com` | 166.9.228.73   \n 166.9.229.64   \n 166.9.230.57  |
 | Frankfurt (`eu-de`)      | `https://private.eu-de.atracker.cloud.ibm.com`  |  166.9.209.204   \n 166.9.209.236   \n 166.9.210.2  |
 | London (`eu-gb`)         | `https://private.eu-gb.atracker.cloud.ibm.com`  |  166.9.245.170   \n 166.9.245.202   \n 166.9.245.234  |
@@ -51,6 +52,7 @@ The following table shows the public API endpoints:
 | Region                   | ATracker Public endpoint                         | Port         |
 |--------------------------|---------------------------------------------------|--------------|
 | Chennai (`in-che`)      | `https://in-che.atracker.cloud.ibm.com`         | `https/443`  |
+| Mumbai (`in-mum`)      | `https://in-mum.atracker.cloud.ibm.com`         | `https/443`  |
 | Dallas (`us-south`)      | `https://us-south.atracker.cloud.ibm.com`         | `https/443`  |
 | Frankfurt (`eu-de`)      | `https://eu-de.atracker.cloud.ibm.com`          | `https/443`  |
 | London (`eu-gb`)         | `https://eu-gb.atracker.cloud.ibm.com`          | `https/443`  |

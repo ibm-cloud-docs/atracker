@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-05-07"
+lastupdated: "2026-05-11"
 
 keywords:
 
@@ -21,6 +21,15 @@ content-type: release-note
 
 Use these release notes to learn about the latest updates to {{site.data.keyword.atracker_full}}.
 {: shortdesc}
+
+
+## 11 May 2026
+{: #activity-tracker-may1126}
+{: release-note}
+
+CIDR blocks added
+:   Public and private CIDR blocks are added to {{site.data.keyword.atracker_full}} for Mumbai (in-mum). See [CIDR blocks](/docs/atracker?topic=atracker-cidr).
+
 
 ## 06 May 2026
 {: #activity-tracker-may0626}
