@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2021, 2025
-lastupdated: "2025-01-10"
+  years:  2021, 2026
+lastupdated: "2026-05-27"
 
 keywords:
 
@@ -27,6 +27,8 @@ completion-time: 1h
 
 A target is an {{site.data.keyword.cloud_notm}} resource where you can collect auditing events. Use this tutorial to learn how to configure an {{site.data.keyword.logs_full_notm}} target in the account.
 {: shortdesc}
+
+Alternatively, you can also use the [Terraform IBM Modules for {{site.data.keyword.atracker_full_notm}}](https://registry.terraform.io/modules/terraform-ibm-modules/activity-tracker/ibm/latest){: external} which provide pre-built configurations, including an [advanced example](https://registry.terraform.io/modules/terraform-ibm-modules/activity-tracker/ibm/latest/examples/advanced){: external}, to configure an {{site.data.keyword.logs_full_notm}} instance as a target.
 
 ## Scenarios
 {: #getting-started-target-cloud-logs-scenarios}

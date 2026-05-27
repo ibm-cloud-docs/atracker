@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2021, 2025
-lastupdated: "2025-09-03"
+  years:  2021, 2026
+lastupdated: "2026-05-27"
 
 keywords:
 
@@ -27,6 +27,8 @@ completion-time: 1h
 
 You can define an {{site.data.keyword.messagehub}} topic as an {{site.data.keyword.atracker_full_notm}} target to send auditing events to other corporate tools such as Security Information and Event Management (SIEM) tools.
 {: shortdesc}
+
+Alternatively, you can also use the [Terraform IBM Modules for {{site.data.keyword.atracker_full_notm}}](https://registry.terraform.io/modules/terraform-ibm-modules/activity-tracker/ibm/latest){: external} which provide pre-built configurations, including an [advanced example](https://registry.terraform.io/modules/terraform-ibm-modules/activity-tracker/ibm/latest/examples/basic){: external}, to configure an {{site.data.keyword.messagehub}} target.
 
 ## Scenarios
 {: #getting-started-target-event-streams-scenarios}
