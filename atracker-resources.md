@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2021, 2025
-lastupdated: "2025-04-10"
+  years:  2021, 2026
+lastupdated: "2026-05-27"
 
 keywords:
 
@@ -156,4 +156,4 @@ A route defines the rules that indicate where auditing events that are generated
 
 To collect auditing events in your {{site.data.keyword.cloud_notm}} account, you can configure {{site.data.keyword.atracker_short}} by using the {{site.data.keyword.atracker_short}} API, the {{site.data.keyword.atracker_short}} CLI and Terraform scripts.
 
-For more in formation, see [Collecting events](/docs/atracker?topic=atracker-events_collect&interface=cli).
+For more information, see [Collecting events](/docs/atracker?topic=atracker-events_collect&interface=cli).

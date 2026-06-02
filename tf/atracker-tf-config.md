@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2021, 2025
-lastupdated: "2025-09-23"
+  years:  2021, 2026
+lastupdated: "2026-05-27"
 
 keywords:
 
@@ -20,6 +20,8 @@ subcollection: atracker
 Terraform on {{site.data.keyword.cloud}} enables predictable and consistent provisioning of {{site.data.keyword.cloud_notm}} services so that you can rapidly build complex, multitier cloud environments that follow Infrastructure as Code (IaC) principles. Similar to using the {{site.data.keyword.cloud_notm}} CLI or API and SDKs, you can automate the creation, update, and deletion of your {{site.data.keyword.atracker_short}} resources by using HashiCorp Configuration Language (HCL).
 {: shortdesc}
 
+Alternatively, you can use pre-built, open-source and enterprise-ready Terraform IBM Modules (TIM) for [{{site.data.keyword.atracker_full_notm}}](https://registry.terraform.io/modules/terraform-ibm-modules/activity-tracker/ibm/latest){: external} to configure targets, routes and account settings. This module simplifies the creation and management of targets and routes following the best practices.
+{: tip}
 
 Looking for a managed Terraform on {{site.data.keyword.cloud_notm}} solution? Try out [{{site.data.keyword.bplong}}](/docs/schematics?topic=schematics-getting-started). With {{site.data.keyword.bpshort}}, you can use the Terraform scripting language that you are familiar with, but you don't need to worry about setting up and maintaining the Terraform command line and the {{site.data.keyword.cloud_notm}} Provider plug-in. {{site.data.keyword.bpshort}} also provides pre-defined Terraform templates that you can install from the {{site.data.keyword.cloud_notm}} catalog.
 {: tip}
@@ -98,8 +100,7 @@ For example, to run your Terraform configuration files with Terraform version 0.
 
 2. Store the `versions.tf` file in your Git repository or the folder where Terraform is set up.
 
-
-If you are using Terraform on {{site.data.keyword.cloud_notm}} modules, you must add a `versions.tf` file to all the module folders. You can refer the Terraform provider block from the [provider registry](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest){: external}. 
+If you are using Terraform on {{site.data.keyword.cloud_notm}} modules, you must add a `versions.tf` file to all the module folders. You can refer the Terraform provider block from the [provider registry](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest){: external}. For {{site.data.keyword.atracker_short}} configurations, you can use the [Terraform IBM Modules for {{site.data.keyword.atracker_full_notm}}](https://registry.terraform.io/modules/terraform-ibm-modules/activity-tracker/ibm/latest){: external} which provides pre-built, tested modules for common {{site.data.keyword.atracker_full_notm}} configurations. 
 {: note}
 
 
@@ -269,6 +270,8 @@ To see the list of valid regions, see [Locations](/docs/atracker?topic=atracker-
 
 Next, create a Terraform configuration file that is named `main.tf`. In this file, you configure {{site.data.keyword.atracker_short}} by using HashiCorp Configuration Language (HCL). For more information, see the [Terraform documentation](https://developer.hashicorp.com/terraform/language){: external}.
 
+### Using IBM Cloud Provider resources directly
+
 The following code shows a sample configuration file to define the account setting configuration:
 
 ```terraform
@@ -389,6 +392,32 @@ resource "ibm_atracker_route" "atracker_route_instance-global" {
 ```
 {: codeblock}
 
+### Using Terraform IBM Modules
+
+Alternatively, you can use the [Terraform IBM Modules for {{site.data.keyword.atracker_full_notm}}](https://registry.terraform.io/modules/terraform-ibm-modules/activity-tracker/ibm/latest){: external} which provide pre-built configurations following {{site.data.keyword.cloud_notm}} best practices.
+
+```terraform
+module "activity_tracker" {
+  source  = "terraform-ibm-modules/activity-tracker/ibm"
+  version = "X.Y.Z" # Replace with a specific release version
+  
+  cos_targets = [{
+    bucket_name   = var.cos_bucket_name
+    endpoint      = var.cos_endpoint
+    instance_id   = var.cos_target_crn
+    target_region = "us-south"
+    target_name   = "<Target-Name>"
+  }]
+  
+  activity_tracker_routes = [{
+    route_name = "<Route-Name>"
+    locations  = ["eu-de"]
+    target_ids = [module.activity_tracker.activity_tracker_targets[var.cos_bucket_name].id]
+  }]
+}
+```
+{: codeblock}
+
 
 ## Step 7. Provision resources
 {: #terraform-provision}
@@ -419,9 +448,10 @@ Complete the following steps:
     To delete resources, run `./terraform destroy`.
     {: tip}
 
-
 ## What's next?
 {: #terraform_setup_next}
 
 
 Verify that the resources are created.
+
+Explore all available modules in the [Terraform IBM Modules (TIM) registry](https://registry.terraform.io/namespaces/terraform-ibm-modules){: external}.

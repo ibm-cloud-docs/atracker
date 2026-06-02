@@ -199,6 +199,9 @@ toc:
           - link:
               label: Route
               href: https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/atracker_route
+          - link:
+              label: Terraform IBM Modules (TIM) for Activity Tracker Event Routing
+              href: https://registry.terraform.io/modules/terraform-ibm-modules/activity-tracker/ibm/latest
       - topicgroup:
           label: Events
           topics:
