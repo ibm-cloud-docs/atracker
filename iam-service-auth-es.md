@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2021, 2025
-lastupdated: "2025-01-09"
+  years:  2021, 2026
+lastupdated: "2026-06-02"
 
 keywords:
 
@@ -46,7 +46,7 @@ You must grant `Writer` role to handle source integration with the {{site.data.k
 
 Complete the following steps:
 
-1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Authorizations**.
+1. In the {{site.data.keyword.cloud_notm}} console, click **Manage > Access (IAM) > Authorizations**.
 2. Click **Create**.
 3. Select a source account.
 

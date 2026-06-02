@@ -22,7 +22,7 @@ You can use {{site.data.keyword.atracker_full_notm}}, a platform service, to rou
 
 You can use {{site.data.keyword.logs_full_notm}} to visualize and alert on events that are generated in your account and routed by {{site.data.keyword.atracker_full_notm}} to an {{site.data.keyword.logs_full_notm}} instance.
 
-You can use {{site.data.keyword.apprapp_full_notm}} to visualize and alert on events that are generated in your account and routed by {{site.data.keyword.atracker_full_notm}} to an {{site.data.keyword.apprapp_full_notm}} instance.
+
 
 ## Locations where activity tracking events are generated
 {: #at-locations}

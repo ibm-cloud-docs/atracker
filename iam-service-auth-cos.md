@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2021, 2025
-lastupdated: "2025-01-09"
+  years:  2021, 2026
+lastupdated: "2026-06-02"
 
 keywords:
 
@@ -47,7 +47,7 @@ You must grant `Object Writer` role to grant permissions to only write objects t
 
 Complete the following steps to grant {{site.data.keyword.atracker_full_notm}} access to an {{site.data.keyword.cos_full_notm}} bucket:
 
-1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Authorizations**.
+1. In the {{site.data.keyword.cloud_notm}} console, click **Manage > Access (IAM) > Authorizations**.
 2. Click **Create**.
 3. Select a source account.
 

@@ -56,12 +56,10 @@ When you set the metadata location, check any compliance or industry regulations
 
 A target defines where auditing events are collected. For more information about targets, see [Understanding how targets work in your account](/docs/atracker?topic=atracker-target_v2&interface=cli#target_v2_behavior).
 
-Choose 1 of the following options to configure a target in your account:
-- [Configuring an App Configuration target](/docs/atracker?topic=atracker-getting-started-target-apprapp).
-- [Configuring a Cloud Object Storage target](/docs/atracker?topic=atracker-getting-started-target-cos).
+Choose 1 of the following options to configure a target in your account: 
+- [Configuring an {{site.data.keyword.cos_full}} target](/docs/atracker?topic=atracker-getting-started-target-cos).
 - [Configuring an {{site.data.keyword.logs_full_notm}} target](/docs/atracker?topic=atracker-target_v2_icl).
 - [Configuring an {{site.data.keyword.messagehub}} target](/docs/atracker?topic=atracker-getting-started-target-event-streams).
-
 
 
 The rest of the instructions assume that you configure a `cloud-object-storage` target.

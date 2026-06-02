@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2021, 2025
-lastupdated: "2025-07-31"
+  years:  2021, 2026
+lastupdated: "2026-06-02"
 
 keywords:
 
@@ -36,7 +36,7 @@ You must grant users IAM permissions to manage targets. For more information, se
 
 When you define a policy, you can indicate the scope of the permissions. You can choose from granting permissions for a specific region or for the entire account.
 
-If you have the IAM permission to create policies and authorizations, you can grant only the level of access that you have as a user of the target service. For example, if you have viewer access for the target service, you can assign only the viewer role for the authorization. If you attempt to assign a higher permission such as administrator, it might appear that permission is granted, however, only the highest level permission you have for the target service, that is viewer, will be assigned. 
+If you have the IAM permission to create policies and authorizations, you can grant only the level of access that you have as a user of the target service. For example, if you have viewer access for the target service, you can assign only the viewer role for the authorization. If you attempt to assign a higher permission such as administrator, it might appear that permission is granted, however, only the highest level permission you have for the target service, that is viewer, will be assigned.
 {: important}
 
 Users with regional scope will be limited to access targets in their authorized region.
@@ -80,21 +80,19 @@ Do the following to configure a service-to-service authorization using the {{sit
 
 	After you log in with your user ID and password, the {{site.data.keyword.cloud_notm}} dashboard opens.
 
-2. Click **Manage** &gt; **Access (IAM)**.  **Manage access and users** is displayed.
+2. Click **Manage** &gt; **Access (IAM)** &gt; **Authorizations**.
 
-3. Click **Authorizations**.
+3. Click **Create**.
 
-4. Click **Create**.
+4. For **Source service** select *Activity Tracker* and for **How do you want to scope the access?** select *All resources*.
 
-5. For **Source service** select *Activity Tracker* and for **How do you want to scope the access?** select *All resources*.
+5. For **Target service** select *{{site.data.keyword.logs_full_notm}}* for **How do you want to scope the access?** select *Resources based on selected attributes*.
 
-6. For **Target service** select *{{site.data.keyword.logs_full_notm}}* for **How do you want to scope the access?** select *Resources based on selected attributes*.
+6. Select **Service instance** and **string equals** the name of your {{site.data.keyword.logs_full_notm}} instance.
 
-7. Select **Service instance** and **string equals** the name of your {{site.data.keyword.logs_full_notm}} instance.
+7. For **Service access** select **Sender**.
 
-8. For **Service access** select **Sender**.
-
-9. Click **Authorize**.  Your new service-to-service authorization will be listed in the **Manage authorizations** view.
+8. Click **Authorize**.  Your new service-to-service authorization will be listed in the **Manage authorizations** view.
 
 ## Configuring S2S authorization using the CLI
 {: #target_v2_icl_s2s_cli}
@@ -615,7 +613,7 @@ Where
     {: important}
 
 - `TARGET_TYPE` is the type of the target. Set the value to `cloud_logs` for a {{site.data.keyword.logs_full_notm}} target.
-- `cloudlogs_endpoint` includes information about the target. 
+- `cloudlogs_endpoint` includes information about the target.
 
     `CLOUD_LOGS_CRN` indicates the [CRN](/docs/account?topic=account-crn) of the {{site.data.keyword.logs_full_notm}} instance.
 
