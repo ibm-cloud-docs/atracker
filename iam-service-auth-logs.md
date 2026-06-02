@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2021, 2025
-lastupdated: "2025-01-09"
+  years:  2021, 2026
+lastupdated: "2026-06-02"
 
 keywords:
 
@@ -35,11 +35,33 @@ You must configure the service to service (S2S) authorization in the {{site.data
 
 - If you create an authorization between a service in another account and a target service in your current account, you need to have access only to the target resource. For the source account, you need only the account ID. 
 
+# Creating a S2S authorization to grant access to the {{site.data.keyword.apprapp_full_notm}} service
+{: #iam-service-auth-apprapp}
+
+Use {{site.data.keyword.iamlong}} (IAM) to create an authorization that grants {{site.data.keyword.atracker_full_notm}} access to the {{site.data.keyword.apprapp_full_notm}} service.
+{: shortdesc}
+
+You must configure the service to service (S2S) authorization in the {{site.data.keyword.cloud_notm}} account where the {{site.data.keyword.apprapp_full_notm}} instance is located.
+{: important}
+
+## Before you begin
+{: #iam-service-auth-logs-prereqs}
+
+- Read about [Managing authorizations to grant access between services](/docs/atracker?topic=atracker-iam-service-auth).
+
+- You must have access to the target service to manage authorization between services. For more information, see [Permissions to manage authorizations](/docs/atracker?topic=atracker-iam-service-auth#iam-service-auth-permissions).
+
+
+- The autorization that you define for the {{site.data.keyword.atracker_full_notm}} service requires that you have `Administrator` role for the {{site.data.keyword.apprapp_full_notm}} target instance.
+
+- Make sure that you are defining the authorization in the account where the {{site.data.keyword.apprapp_full_notm}} instance is located.
+
+- If you create an authorization between a service in another account and a target service in your current account, you need to have access only to the target resource. For the source account, you need only the account ID. 
 
 ## Service access roles
 {: #iam-service-auth-logs-roles}
 
-You must grant `Sender` role to grant permissions to send data to the {{site.data.keyword.logs_full_notm}} instance.
+You must grant `Configuration Update Reporter` role to grant permissions to send data to the {{site.data.keyword.apprapp_full_notm}} instance.
 
 
 ## Creating an authorization through the console
@@ -52,19 +74,19 @@ Complete the following steps:
 2. Click **Create**.
 3. Select a source account.
 
-    If {{site.data.keyword.atracker_full_notm}} and the {{site.data.keyword.logs_full_notm}} instance are in the same account where you are defining the authorization, select **This account**.
+    If {{site.data.keyword.atracker_full_notm}} and the {{site.data.keyword.logs_full_notm}} or {{site.data.keyword.apprapp_full_notm}} instance are in the same account where you are defining the authorization, select **This account**.
 
-    If {{site.data.keyword.atracker_full_notm}} and the {{site.data.keyword.logs_full_notm}} instance are in different accounts, select **Other account**. Then, enter the account ID of the source account, that is, the account where {{site.data.keyword.atracker_full_notm}} is to be configured to send data to an {{site.data.keyword.logs_full_notm}} instance.
+    If {{site.data.keyword.atracker_full_notm}} and the {{site.data.keyword.logs_full_notm}} or {{site.data.keyword.apprapp_full_notm}} instance are in different accounts, select **Other account**. Then, enter the account ID of the source account, that is, the account where {{site.data.keyword.atracker_full_notm}} is to be configured to send data to an {{site.data.keyword.logs_full_notm}} or {{site.data.keyword.apprapp_full_notm}} instance.
 
 4. Select `Activity Tracker Event Routing` as the source service. Then, set the scope of the access to **All resources**.
 
-5. Select **Cloud Logs** as the target service. Then, set the scope of the access.
+5. Select **Cloud Logs** or **App Configuration** as the target service. Then, set the scope of the access.
 
     To grant access to all instances and resources in the account, select **All resources**.
 
     To grant access to a specific instance, select single instance by configuring **Resources based on selected attributes** &gt; **Service Instance**.
 
-6. In the *Service Access* section, select **Sender** to assign {{site.data.keyword.atracker_full_notm}} access to the bucket.
+6. In the *Service Access* section, select **Sender** to assign {{site.data.keyword.atracker_full_notm}} access to the bucket or select **Configuration Update Reporter** to assign {{site.data.keyword.atracker_full_notm}} access.
 
 7. Click **Authorize**.
 

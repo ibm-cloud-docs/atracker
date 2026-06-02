@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2021, 2025
-lastupdated: "2025-01-10"
+  years:  2021, 2026
+lastupdated: "2026-06-02"
 
 keywords:
 
@@ -47,6 +47,7 @@ The following table lists the different S2S authorizations that you can configur
 | Authorize access to write data into a bucket | {{site.data.keyword.atracker_full_notm}} | {{site.data.keyword.cos_full_notm}} |
 | Authorize access to send data to the {{site.data.keyword.messagehub_full}} service | {{site.data.keyword.atracker_full_notm}} | {{site.data.keyword.messagehub_full}} |
 | Authorize access to send data to the {{site.data.keyword.logs_full_notm}} service | {{site.data.keyword.atracker_full_notm}} | {{site.data.keyword.logs_full_notm}} |
+| Authorize access to send data to the {{site.data.keyword.apprapp_full_notm}} service | {{site.data.keyword.atracker_full_notm}} | {{site.data.keyword.apprapp_full_notm}} |
 {: caption="S2S authorizations."}
 
 Service to service authorizations are supported in the following use cases:
@@ -79,6 +80,8 @@ The autorization that you define for the {{site.data.keyword.atracker_full_notm}
 | Authorize access to write data into a bucket | {{site.data.keyword.cos_full_notm}} | Object Writer |
 | Authorize access to the {{site.data.keyword.messagehub_full}} service | {{site.data.keyword.messagehub_full}} | Writer |
 | Authorize access to send data to the {{site.data.keyword.logs_full_notm}} service | {{site.data.keyword.logs_full}} | Sender |
+| Authorize access to send data to the {{site.data.keyword.apprapp_full_notm}} service | {{site.data.keyword.apprapp_full}} | Configuration Update Reporter |
+
 {: caption="S2S authorizations."}
 
 
@@ -91,6 +94,7 @@ Choose one of the following options to create a S2S authorization:
 - [Authorize access to write data into a bucket](/docs/atracker?topic=atracker-iam-service-auth-cos).
 - [Authorize working with the {{site.data.keyword.messagehub_full}} service](/docs/atracker?topic=atracker-iam-service-auth-es).
 - [Authorize working with the {{site.data.keyword.logs_full}} service](/docs/atracker?topic=atracker-iam-service-auth-logs).
+- [Authorize working with the {{site.data.keyword.apprapp_full}} service](/docs/atracker?topic=atracker-iam-service-auth-apprapp).
 
 
 

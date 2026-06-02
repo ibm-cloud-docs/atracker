@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2021, 2025
-lastupdated: "2025-02-22"
+  years:  2021, 2026
+lastupdated: "2026-06-02"
 keywords:
 
 subcollection: atracker
@@ -16,7 +16,7 @@ subcollection: atracker
 # Restricting access by context-based restrictions
 {: #context-based-restrictions}
 
-[Context-based restrictions (CBR)](/docs/account?topic=account-context-restrictions-whatis&interface=ui) provides a way for administrators to limit access to {{site.data.keyword.atracker_full}} destination resources or the {{site.data.keyword.atracker_full_notm}} public API. For general context-based restrictions instructions, see [Creating context-based restrictions](/docs/account?topic=account-context-restrictions-create&interface=ui). 
+[Context-based restrictions (CBR)](/docs/account?topic=account-context-restrictions-whatis&interface=ui) provides a way for administrators to limit access to {{site.data.keyword.atracker_full}} destination resources or the {{site.data.keyword.atracker_full_notm}} public API. For general context-based restrictions instructions, see [Creating context-based restrictions](/docs/account?topic=account-context-restrictions-create&interface=ui).
 {: shortdesc}
 
 Any audit events generated come from the context-based restrictions service, and not {{site.data.keyword.atracker_full_notm}}. For more information, see [Monitoring context-based restrictions](/docs/account?topic=account-cbr-monitor).
@@ -25,9 +25,9 @@ Any audit events generated come from the context-based restrictions service, and
 ## Using context-based restrictions to protect destination resources
 {: #cbr-config}
 
-As an administrator, you can limit access to {{site.data.keyword.cos_full_notm}}, {{site.data.keyword.logs_full_notm}}, and {{site.data.keyword.messagehub_full}} destination resources. A properly configured CBR rule restricts all access to resources unless the request originates from {{site.data.keyword.atracker_full_notm}} or approved locations. 
+As an administrator, you can limit access to {{site.data.keyword.cos_full_notm}}, {{site.data.keyword.logs_full_notm}}, {{site.data.keyword.apprapp_full_notm}} and {{site.data.keyword.messagehub_full}} destination resources. A properly configured CBR rule restricts all access to resources unless the request originates from {{site.data.keyword.atracker_full_notm}} or approved locations. 
 
-Make sure you also have a service to service policy defined between {{site.data.keyword.atracker_full_notm}} and your destination resources. 
+Make sure you also have a service to service policy defined between {{site.data.keyword.atracker_full_notm}} and your destination resources.
 {: important}
 
 To configure context-based restrictions, do the following:
@@ -94,7 +94,7 @@ To configure context-based restrictions, do the following:
    {: screen}
 
 4. Create or validate the target that points to the destination resources. If your CBR rule is configured properly, a test event will be able to write to the destination and the target will be created or validated. If not, you will receive an *access forbidden* error instead. For example:
-   
+
    ```text
    ibmcloud at target validate --target <target-uuid>
    OK
@@ -176,7 +176,7 @@ To configure context-based restrictions to protect the API, do the following:
 ## Invoking public and private endpoints
 {: #cbr-invoke}
 
-{{site.data.keyword.atracker_full_notm}} API supports both public endpoints and private endpoints. Depending on where the API requests come from and the endpoint type, the addresses used in CBR zone definition could be different. The following table provides some example request origins and corresponding addresses used in the CBR zone definition. 
+{{site.data.keyword.atracker_full_notm}} API supports both public endpoints and private endpoints. Depending on where the API requests come from and the endpoint type, the addresses used in CBR zone definition could be different. The following table provides some example request origins and corresponding addresses used in the CBR zone definition.
 
 |Request Origin|Endpoint Type| Addresses in zone definition |
 |---|---|---|

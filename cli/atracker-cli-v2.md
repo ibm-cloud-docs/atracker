@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2026
-lastupdated: "2026-05-07"
+lastupdated: "2026-06-02"
 
 subcollection: atracker
 
@@ -388,6 +388,57 @@ Use this command to create a {{site.data.keyword.logs_full_notm}} target to be u
 ```
 {: pre}
 
+## `ibmcloud atracker target create` ({{site.data.keyword.apprapp_full_notm}})
+{: #target-create-cli-appconfig}
+
+Use this command to create a {{site.data.keyword.appconfig_full}} target to be used to configure a destination for activity events.
+
+```sh
+ ibmcloud atracker target create --name TARGET_NAME --type TARGET_TYPE ( [--file APPCONFIG_ENDPOINT_DEFINITION_JSON_FILE] | ( [--target-crn APPCONFIG_TARGET_CRN] ) ) [--region REGION] [--output FORMAT]
+```
+{: pre}
+
+### Command options
+{: #target-create-options-appconfig}
+
+`--region REGION` | `-r REGION`
+:   Name of the region that determines the {{site.data.keyword.atracker_full_notm}} API endpoint for the request, for example, `us-south` or `eu-gb`. If not specified, the region logged into, or targeted, will be used.
+
+`--name TARGET_NAME`
+:   The name to be given to the target.
+
+    Do not include any personal identifying information (PII) in any resource names.
+    {: important}
+
+`--type TARGET_TYPE`
+:   Set the `TARGET_TYPE` to `app_config` for an {{site.data.keyword.apprapp_full_notm}} target.
+
+`--file @APPCONFIG_ENDPOINT_DEFINITION_JSON_FILE`
+:   A file containing an endpoint definition in the following format:
+
+    ```json
+    {
+      "target_crn": "yyyyy"
+    }
+    ```
+    {: codeblock}
+
+`--target-crn APPCONFIG_TARGET_CRN`
+:   The CRN of the {{site.data.keyword.apprapp_full_notm}} instance.
+
+`--output FORMAT`
+:   Currently supported format is JSON. If specified, output will be returned in JSON format.  If `JSON` is not specified, output will be returned in a tabular format.
+
+`help` | `--help` | `-h`
+:   List options available for the command.## ibmcloud atracker target create.
+
+Use this command to create a {{site.data.keyword.apprapp_full_notm}} target to be used to configure a destination for activity events.
+
+```sh
+ ibmcloud atracker target create --name new-target-name --type app-config --target-crn "crn:v1:bluemix:public:logs:eu-de:a/11111111111111111111111111111111:22222222-2222-2222-2222-222222222222::"
+```
+{: pre}
+
 ## `ibmcloud atracker target update` (COS)
 {: #target-update-v2-cli-cos}
 
@@ -549,6 +600,47 @@ ibmcloud atracker target update --target TARGET [--name TARGET_NAME] ( --file @C
 
 `--target-crn CLOUD_LOGS_TARGET_CRN`
 :   The CRN of the {{site.data.keyword.logs_full_notm}} instance.
+
+`--output FORMAT`
+:   Currently support format is JSON. If specified, output will be returned in JSON format.  If `JSON` is not specified, output will be returned in a tabular format.
+
+`help` | `--help` | `-h`
+:   List options available for the command.
+
+## `ibmcloud atracker target update` ({{site.data.keyword.apprapp_full_notm}})
+{: #target-update-cli-appconfig}
+
+Use this command to update an {{site.data.keyword.apprapp_full_notm}} target to be used to configure a destination for activity events.
+
+```sh
+ibmcloud atracker target update --target TARGET [--name TARGET_NAME] ( --file @APPCONFIG_ENDPOINT_DEFINITION_JSON_FILE ) | (--target-crn APPCONFIG_TARGET_CRN) [--output FORMAT]
+```
+{: pre}
+
+### Command options
+{: #target-update-options-appconfig}
+
+`--target TARGET`
+:   The ID or current target name.
+
+`--name TARGET_NAME`
+:   The name to be given to the target.
+
+    Do not include any personal identifying information (PII) in any resource names.
+    {: important}
+
+`--file @APPCONFIG_ENDPOINT_DEFINITION_JSON_FILE`
+:   A file containing an endpoint definition in the following format:
+
+    ```json
+    {
+      "target_crn": "yyyyy",
+    }
+    ```
+    {: codeblock}
+
+`--target-crn APPCONFIG_TARGET_CRN`
+:   The CRN of the {{site.data.keyword.apprapp_full_notm}} instance.
 
 `--output FORMAT`
 :   Currently support format is JSON. If specified, output will be returned in JSON format.  If `JSON` is not specified, output will be returned in a tabular format.

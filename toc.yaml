@@ -116,6 +116,8 @@ toc:
           label: Managing targets
           topics:
           - topic: target_v2.md
+          - topic: target_v2_appconfig.md
+            navtitle: Managing an App Configuration target
           - topic: target_v2_cos.md
             navtitle: Managing a COS target
           - topic: target_v2_icl.md
