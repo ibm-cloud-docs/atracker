@@ -88,8 +88,7 @@ To route events to a target, check the options that you can use to authenticate 
 |--------------------------|-----------------------------------------|------------|
 | `cloud_object_storage`   | ![Checkmark icon](../icons/checkmark-icon.svg "checkmark") | ![Checkmark icon](../icons/checkmark-icon.svg "checkmark") |
 | `event_streams`          | ![Checkmark icon](../icons/checkmark-icon.svg "checkmark") | ![Checkmark icon](../icons/checkmark-icon.svg "checkmark") |
-| `cloud_logs`   | ![Checkmark icon](../icons/checkmark-icon.svg "checkmark") | |
-| `app_config`   | ![Checkmark icon](../icons/checkmark-icon.svg "checkmark") | |
+| `cloud_logs`   | ![Checkmark icon](../icons/checkmark-icon.svg "checkmark") | | 
 {: caption="Authentication options by target type" caption-side="top"}
 
 
