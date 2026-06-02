@@ -51,8 +51,7 @@ You can configure any of the following target types:
 |--------------------------------------------------------------------|--------------------------|------------|
 | {{site.data.keyword.cos_full_notm}} (COS)                          | `cloud_object_storage`   | [Managing {{site.data.keyword.cos_full_notm}} (COS) targets](/docs/atracker?topic=atracker-target_v2_cos) |
 | {{site.data.keyword.messagehub_full}} (Event Streams)              | `event_streams`          | [Managing {{site.data.keyword.messagehub_full}} (Event Streams) targets](/docs/atracker?topic=atracker-target_v2_ies) |
-| {{site.data.keyword.logs_full_notm}}                          | `cloud_logs`   | [Managing {{site.data.keyword.logs_full_notm}} targets](/docs/atracker?topic=atracker-target_v2_icl) |
-| {{site.data.keyword.apprapp_full_notm}}                          | `app_config`   | [Managing {{site.data.keyword.apprapp_full_notm}} targets](/docs/atracker?topic=atracker-target_v2_icl) |
+| {{site.data.keyword.logs_full_notm}}                          | `cloud_logs`   | [Managing {{site.data.keyword.logs_full_notm}} targets](/docs/atracker?topic=atracker-target_v2_icl) | 
 {: caption="List of targets" caption-side="top"}
 
 
@@ -105,8 +104,7 @@ You can validate a target by using the {{site.data.keyword.metrics_router_full_n
 |-------------|-----|-----|
 | `cloud-object-storage` | [Validate via CLI](/docs/atracker?topic=atracker-target_v2_cos&interface=cli#target-validate-cli-cos) | [Validate via API](/docs/atracker?topic=atracker-target_v2_cos&interface=api#target-validate-api-cos) |
 | `event_streams` | [Validate via CLI](/docs/atracker?topic=atracker-target_v2_ies&interface=cli#target-validate-cli-ies) | [Validate via API](/docs/atracker?topic=atracker-target_v2_ies&interface=api#target-validate-api-ies) |
-| `cloud_logs` | [Validate via CLI](/docs/atracker?topic=atracker-target_v2_icl&interface=cli#target-validate-cli-icl) | [Validate via API](/docs/atracker?topic=atracker-target_v2_icl&interface=api#target-validate-api-icl) |
-| `app_config` | [Validate via CLI](/docs/atracker?topic=atracker-target_v2_icl&interface=cli#target-validate-cli-icl) | [Validate via API](/docs/atracker?topic=atracker-target_v2_icl&interface=api#target-validate-api-appconf) |
+| `cloud_logs` | [Validate via CLI](/docs/atracker?topic=atracker-target_v2_icl&interface=cli#target-validate-cli-icl) | [Validate via API](/docs/atracker?topic=atracker-target_v2_icl&interface=api#target-validate-api-icl) | 
 {: caption="Validating options by target type" caption-side="top"}
 
 
@@ -199,8 +197,7 @@ See the following table for some HTTP response codes:
 Choose 1 of the following options to configure a target in your account:
 - [Managing {{site.data.keyword.cos_full_notm}} (COS) targets](/docs/atracker?topic=atracker-target_v2_cos).
 - [Managing {{site.data.keyword.messagehub_full}} targets](/docs/atracker?topic=atracker-target_v2_ies)
-- [Managing {{site.data.keyword.logs_full_notm}} targets](/docs/atracker?topic=atracker-target_v2_icl)
-- [Managing {{site.data.keyword.apprapp_full_notm}} targets](/docs/atracker?topic=atracker-target_v2_apprapp)
+- [Managing {{site.data.keyword.logs_full_notm}} targets](/docs/atracker?topic=atracker-target_v2_icl) 
 
 ## Managing targets using the UI
 {: #target-v2-ui}
