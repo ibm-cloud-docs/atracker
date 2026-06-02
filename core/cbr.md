@@ -25,7 +25,7 @@ Any audit events generated come from the context-based restrictions service, and
 ## Using context-based restrictions to protect destination resources
 {: #cbr-config}
 
-As an administrator, you can limit access to {{site.data.keyword.cos_full_notm}}, {{site.data.keyword.logs_full_notm}}, {{site.data.keyword.apprapp_full_notm}} and {{site.data.keyword.messagehub_full}} destination resources. A properly configured CBR rule restricts all access to resources unless the request originates from {{site.data.keyword.atracker_full_notm}} or approved locations. 
+As an administrator, you can limit access to {{site.data.keyword.cos_full_notm}}, {{site.data.keyword.logs_full_notm}},  and {{site.data.keyword.messagehub_full}} destination resources. A properly configured CBR rule restricts all access to resources unless the request originates from {{site.data.keyword.atracker_full_notm}} or approved locations.
 
 Make sure you also have a service to service policy defined between {{site.data.keyword.atracker_full_notm}} and your destination resources.
 {: important}

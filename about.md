@@ -54,12 +54,11 @@ In {{site.data.keyword.atracker_full_notm}}, a target defines where auditing eve
 
 You can configure different types of targets:
 
-| Target                                      | Type                     | When to use |
-|---------------------------------------------|--------------------------|------------|
-| {{site.data.keyword.apprapp_full_notm}}| `app_config`   | To view, search, and manage auditing data through the UI. |
-| {{site.data.keyword.cos_full_notm}} (COS)   | `cloud_object_storage`   | To comply with Financial Services regulations. |
-| {{site.data.keyword.logs_full_notm}}| `cloud_logs`   | To view, search, and manage auditing data through the UI. |
-| {{site.data.keyword.messagehub_full}} | `event_streams`   | To send auditing data to data lakes, other analysis tools, and to other corporate tools such as Security Information and Event Management (SIEM) tools. |
+| Target                                                                 | Type                     | When to use |
+|------------------------------------------------------------------------|--------------------------|-------------|
+| {{site.data.keyword.cos_full_notm}} (COS)                              | `cloud_object_storage`   | To comply with Financial Services regulations. |
+| {{site.data.keyword.logs_full_notm}}                                   | `cloud_logs`             | To view, search, and manage auditing data through the UI. |
+| {{site.data.keyword.messagehub_full}}                                  | `event_streams`   | To send auditing data to data lakes, other analysis tools, and to other corporate tools such as Security Information and Event Management (SIEM) tools. |
 {: caption="List of targets" caption-side="top"}
 
 In {{site.data.keyword.atracker_full_notm}}, a route defines the rules that indicate where auditing events that are generated in an account are routed. For more information, see [Routes](/docs/atracker?topic=atracker-atracker-resources#atracker-resources-routes).

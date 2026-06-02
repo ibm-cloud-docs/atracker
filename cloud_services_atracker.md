@@ -148,7 +148,6 @@ The following table lists observability services that send auditing events:
 |-------------|------------------|--------|
 | [{{site.data.keyword.atracker_full}}](/docs/atracker?topic=atracker-getting-started) | `atracker` | [Location-based events](/docs/atracker?topic=atracker-at_events). |
 | [{{site.data.keyword.logs_full_notm}}](/docs/cloud-logs?topic=cloud-logs-getting-started) | `logs` | [Location-based events](/docs/cloud-logs?topic=cloud-logs-at_events) |
-| [{{site.data.keyword.apprapp_full_notm}}](/docs/app-config?topic=app-config-getting-started) | `apprapp` | [Location-based events](/docs/app-config?topic=app-config-at_events) |
 | [{{site.data.keyword.logs_routing_full}}](/docs/logs-router) | `log-router` | [Location-based events](/docs/logs-router?topic=logs-router-at_events). |
 | [{{site.data.keyword.metrics_router_full}}](/docs/metrics-router?topic=metrics-router-getting-started) | `metrics-router` | [Location-based events](/docs/metrics-router?topic=metrics-router-at_events). |
 | [{{site.data.keyword.mon_full}}](/docs/monitoring?topic=monitoring-getting-started) | `sysdig-monitor` | [Location-based events](/docs/monitoring?topic=monitoring-at_events) |

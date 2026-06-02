@@ -15,7 +15,7 @@ subcollection: atracker
 
 
 # Securing your data
-{: #mng-data}
+{: #data-security}
 
 To ensure that you can securely manage your data when you use {{site.data.keyword.atracker_short}}, it is important to know exactly what data is stored and encrypted, and how you can delete any stored data.
 {: shortdesc}
@@ -23,13 +23,13 @@ To ensure that you can securely manage your data when you use {{site.data.keywor
 
 
 ## What data is stored in {{site.data.keyword.atracker_short}}
-{: #mng-data-stored}
+{: #data-security-stored}
 
 When you use {{site.data.keyword.atracker_short}} to manage your audit events, you should differentiate between configuration data and audit data.
 
 
 ### Configuration data
-{: #mng-data-config}
+{: #data-security-config}
 
 
 To configure {{site.data.keyword.atracker_short}}, you must configure account settings, targets, and routes. You can configure {{site.data.keyword.atracker_short}} via REST API calls, CLI commands, or by using terraform scripts. The definitions of these resources are hosted on the {{site.data.keyword.cloud_notm}}.
@@ -50,7 +50,7 @@ To configure {{site.data.keyword.atracker_short}}, you must configure account se
 
 
 ### Auditing data
-{: #mng-data-audit}
+{: #data-security-audit}
 
 {{site.data.keyword.atracker_short}} routes management and data events from {{site.data.keyword.cloud_notm}} services and resources:
 * **Management Events** are generated when an API call changes the state of a Cloud resource. A resource might be an entire service instance or a resource managed by the service.
@@ -66,7 +66,7 @@ Data from [{{site.data.keyword.cloud_notm}} services and resources](/docs/atrack
 {: #data-storage}
 
 ### Configuration data
-{: #mng-data-storage-config}
+{: #data-security-storage-config}
 
 You can configure {{site.data.keyword.atracker_short}} resources by using public and private endpoints.
 
@@ -79,22 +79,21 @@ To ensure that you have enhanced control and security over your data, your accou
 
 
 ### Auditing data
-{: #mng-data-storage-audit}
+{: #data-security-storage-audit}
 
 You can define 1 or more routing rules that define how auditing events are routed in the account. Auditing data from an {{site.data.keyword.cloud_notm}} service to your target service in {{site.data.keyword.cloud_notm}} is secure via private connection. The connection supports TLS 1.2.
 
 You can route auditing data to any of the following target types:
 - An {{site.data.keyword.cos_full_notm}} bucket: You create and manage the bucket, and the data that is collected in the bucket. For more information about COS data security, see [Data security](/docs/cloud-object-storage?topic=cloud-object-storage-security).
-- An {{site.data.keyword.logs_full_notm}} instance: You manage the instance and the data that is collected in the instance. 
-- An {{site.data.keyword.messagehub}} topic: You create and manage the topic. For more information, see [Data security](/docs/EventStreams?topic=EventStreams-data_security).
-- An {{site.data.keyword.apprapp_full_notm}} instance: You manage the instance and the data that is collected in the instance. 
+- An {{site.data.keyword.logs_full_notm}} instance: You manage the instance and the data that is collected in the instance. For more information, see [Data security](/docs/cloud-logs?topic=cloud-logs-mng-data).
+- An {{site.data.keyword.messagehub}} topic: You create and manage the topic. For more information, see [Data security](/docs/EventStreams?topic=EventStreams-data_security). 
 
 
 ## How can you delete any stored data
-{: #mng-data-storage-delete}
+{: #data-security-storage-delete}
 
 ### Configuration data
-{: #mng-data-storage-delete-config}
+{: #data-security-storage-delete-config}
 
 
 {{site.data.keyword.atracker_short}} stores configuration data only.
@@ -107,10 +106,9 @@ You can delete any route or target by using the API, the CLI or terraform script
 
 
 ### Auditing data
-{: #mng-data-storage-delete-audit}
+{: #data-security-storage-delete-audit}
 
 To delete auditing data, check the target type instructions.
-
+- For {{site.data.keyword.logs_full_notm}}, see [Data security](/docs/cloud-logs?topic=cloud-logs-mng-data).
 - For {{site.data.keyword.cos_full_notm}} bucket, see [Data security](/docs/cloud-object-storage?topic=cloud-object-storage-security).
-- For {{site.data.keyword.messagehub}}, see [Data security](/docs/EventStreams?topic=EventStreams-data_security).
-- For {{site.data.keyword.apprapp_full_notm}}, see [Data security](/docs/app-config?topic=app-config-mng-data).
+- For {{site.data.keyword.messagehub}}, see [Data security](/docs/EventStreams?topic=EventStreams-data_security). 
