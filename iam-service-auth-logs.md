@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2021, 2025
-lastupdated: "2025-01-09"
+  years:  2021, 2026
+lastupdated: "2026-06-02"
 
 keywords:
 
@@ -27,7 +27,6 @@ You must configure the service to service (S2S) authorization in the {{site.data
 - Read about [Managing authorizations to grant access between services](/docs/atracker?topic=atracker-iam-service-auth).
 
 - You must have access to the target service to manage authorization between services. For more information, see [Permissions to manage authorizations](/docs/atracker?topic=atracker-iam-service-auth#iam-service-auth-permissions).
-
 
 - The autorization that you define for the {{site.data.keyword.atracker_full_notm}} service requires that you have `Administrator` role for the {{site.data.keyword.logs_full_notm}} target instance.
 
@@ -64,7 +63,7 @@ Complete the following steps:
 
     To grant access to a specific instance, select single instance by configuring **Resources based on selected attributes** &gt; **Service Instance**.
 
-6. In the *Service Access* section, select **Sender** to assign {{site.data.keyword.atracker_full_notm}} access to the bucket.
+6. In the *Service Access* section, select **Sender** to assign {{site.data.keyword.atracker_full_notm}} permissions to send data to the {{site.data.keyword.logs_full_notm}} instance.
 
 7. Click **Authorize**.
 
@@ -97,7 +96,7 @@ For more information about all of the parameters that are available for this com
 Run the following command to create an authorization in the account where the target service is located when the {{site.data.keyword.atracker_full_notm}} service and the target service are in different accounts:
 
 ```sh
-ibmcloud iam authorization-policy-create atracker cloud-object-storage "Object Writer" [--target-service-instance-id TARGET_SERVICE_INSTANCE_ID] [--source-service-account SOURCE_SERVICE_ACCOUNT_GUID ]
+ibmcloud iam authorization-policy-create atracker cloud-logs "Sender" [--target-service-instance-id <CLOUD_LOGS_SERVICE_INSTANCE> [--source-service-account SOURCE_SERVICE_ACCOUNT_GUID ]
 ```
 {: codeblock}
 

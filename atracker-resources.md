@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-05-27"
+lastupdated: "2026-06-02"
 
 keywords:
 
@@ -68,10 +68,8 @@ When you configure the {{site.data.keyword.atracker_short}} account settings, yo
 When you configure or modify the {{site.data.keyword.atracker_short}} account settings, consider the following information:
 
 - Every time you modify the {{site.data.keyword.atracker_short}} account settings, the data that is passed in the new request replaces any existing configuration data. You must ensure that any existing data is not deleted when you run an update of the account settings by including it in the new request.
-{: important}
 
 - Before you disable public endpoints by setting `--private-api-endpoint-only TRUE`, make sure your account has access to the private endpoint.  You can do this by running the command `ibmcloud account show`.  If `VRF Enabled` is `true` and `Service Endpoint Enabled` is `true` then you have access to the private endpoint.  If you do not have access to the private endpoint, you will be unable to re-enable the public endpoint since private endpoint access is required to re-enable the public endpoint.
-{: important}
 
 
 ## Targets
@@ -87,13 +85,11 @@ Note the following information about targets:
 
 * A target can be:
 
-   * An {{site.data.keyword.cos_full_notm}} (COS) bucket
+    * An {{site.data.keyword.cos_full_notm}} (COS) bucket
 
-   
+    * An {{site.data.keyword.messagehub_full}} topic
 
-   * An {{site.data.keyword.messagehub_full}} topic
-
-   * An {{site.data.keyword.logs_full_notm}} offering
+    * An {{site.data.keyword.logs_full_notm}} offering 
 
 * All targets can be accessed by any {{site.data.keyword.atracker_short}} API endpoint.
 
@@ -110,11 +106,11 @@ Note the following information about targets:
 
 The following table outlines valid target types:
 
-| Target                                      | Type                     | More info |
-|---------------------------------------------|--------------------------|-----------|
-| {{site.data.keyword.cos_full_notm}} (COS) | `cloud_object_storage`   | [Managing COS targets](/docs/atracker?topic=atracker-target_v2_cos&interface=cli) |
-| {{site.data.keyword.messagehub_full}} | `event_streams`   | [Managing {{site.data.keyword.messagehub_full}} targets](/docs/atracker?topic=atracker-target_v2_ies&interface=cli) |
-| {{site.data.keyword.logs_full_notm}} | `cloud_logs`   | [Managing Cloud Logs targets](/docs/atracker?topic=atracker-target_v2_icl&interface=cli) |
+| Target                                           | Type                     | More info |
+|--------------------------------------------------|--------------------------|-----------|
+| {{site.data.keyword.cos_full_notm}} (COS)        | `cloud_object_storage`   | [Managing COS targets](/docs/atracker?topic=atracker-target_v2_cos&interface=cli) |
+| {{site.data.keyword.messagehub_full}}            | `event_streams`          | [Managing {{site.data.keyword.messagehub_full}} targets](/docs/atracker?topic=atracker-target_v2_ies&interface=cli) |
+| {{site.data.keyword.logs_full_notm}}             | `cloud_logs`             | [Managing Cloud Logs targets](/docs/atracker?topic=atracker-target_v2_icl&interface=cli) | 
 {: caption="List of targets" caption-side="top"}
 
 

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2021, 2025
-lastupdated: "2025-04-10"
+  years:  2021, 2026
+lastupdated: "2026-06-02"
 
 keywords:
 
@@ -45,7 +45,7 @@ List of supported target types:
 |--------------------------------------------------------------------|--------------------------|------------|
 | {{site.data.keyword.cos_full_notm}} (COS)                          | `cloud_object_storage`   | [Managing {{site.data.keyword.cos_full_notm}} (COS) targets](/docs/atracker?topic=atracker-target_v2_cos) |
 | {{site.data.keyword.messagehub_full}} (Event Streams)              | `event_streams`          | [Managing {{site.data.keyword.messagehub_full}} (Event Streams) targets](/docs/atracker?topic=atracker-target_v2_ies) |
-| {{site.data.keyword.logs_full_notm}} | `cloud_logs`          | [Managing {{site.data.keyword.logs_full_notm}} targets](/docs/atracker?topic=atracker-target_v2_icl) |
+| {{site.data.keyword.logs_full_notm}}                               | `cloud_logs`             | [Managing {{site.data.keyword.logs_full_notm}} targets](/docs/atracker?topic=atracker-target_v2_icl) | 
 {: caption="List of target types" caption-side="top"}
 
 

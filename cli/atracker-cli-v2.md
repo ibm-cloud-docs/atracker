@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2026
-lastupdated: "2026-05-07"
+lastupdated: "2026-06-02"
 
 subcollection: atracker
 
@@ -19,7 +19,6 @@ content-type: cli-docs
 
 The {{site.data.keyword.cloud}} command-line interface (CLI) provides extra capabilities for service offerings. This information describes how you can use the CLI to define and manage settings for your {{site.data.keyword.atracker_full}} instance using the CLI.
 {: shortdesc}
-
 
 
 ## Prerequisites
@@ -270,7 +269,6 @@ Use this command to create a {{site.data.keyword.cos_full_notm}} target to be us
 :   List options available for the command.
 
 
-
 ## `ibmcloud atracker target create` (Event Streams)
 {: #target-create-cli-ies}
 
@@ -388,6 +386,8 @@ Use this command to create a {{site.data.keyword.logs_full_notm}} target to be u
 ```
 {: pre}
 
+
+
 ## `ibmcloud atracker target update` (COS)
 {: #target-update-v2-cli-cos}
 
@@ -456,7 +456,6 @@ ibmcloud atracker target update --target TARGET [--name TARGET_NAME] [ [--file C
 
 `help` | `--help` | `-h`
 :   List options available for the command.
-
 
 
 ## `ibmcloud atracker target update` (Event Streams)
@@ -555,6 +554,8 @@ ibmcloud atracker target update --target TARGET [--name TARGET_NAME] ( --file @C
 
 `help` | `--help` | `-h`
 :   List options available for the command.
+
+
 
 ## `ibmcloud atracker target rm`
 {: #target-delete-v2-cli}
