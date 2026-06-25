@@ -23,8 +23,8 @@ Use these release notes to learn about the latest updates to {{site.data.keyword
 {: shortdesc}
 
 
-## 28 June 2026
-{: #activity-tracker-june2826}
+## 25 June 2026
+{: #activity-tracker-june2526}
 {: release-note}
 
 {{site.data.keyword.atracker_short}} support for {{site.data.keyword.appconfig_notm}} targets.
