@@ -72,6 +72,8 @@ toc:
                 navtitle: S2S for Cloud Logs
               - topic: iam-service-auth-es.md
                 navtitle: S2S for Event Streams
+              - topic: iam-service-auth-appconfig.md
+                navtitle: S2S for App Config
               - topic: iam-service-auth-remove-auth.md
                 navtitle: Removing authorizations
       - topicgroup:
@@ -116,6 +118,8 @@ toc:
           label: Managing targets
           topics:
           - topic: target_v2.md
+          - topic: target_v2_appconf.md
+            navtitle: Managing an App Configuration target
           - topic: target_v2_cos.md
             navtitle: Managing a COS target
           - topic: target_v2_icl.md
@@ -142,12 +146,7 @@ toc:
           - topic: manage-events-for-new-region.md
             navtitle: Working with events before a region is available
           - topic: manage-events-to-new-region.md
-            navtitle: Working with events after a region is open for business <stage>
-      - topicgroup:
-          label: Observability
-          topics:
-          - topic: streaming-data.md
-            navtitle: Streaming data </stage>
+            navtitle: Working with events after a region is open for business
       - topicgroup:
           label: Streaming data
           topics:
