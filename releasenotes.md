@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-06-02"
+lastupdated: "2026-06-25"
 
 keywords:
 
@@ -21,6 +21,16 @@ content-type: release-note
 
 Use these release notes to learn about the latest updates to {{site.data.keyword.atracker_full}}.
 {: shortdesc}
+
+
+## 28 June 2026
+{: #activity-tracker-june2826}
+{: release-note}
+
+{{site.data.keyword.atracker_short}} support for {{site.data.keyword.appconfig_notm}} targets.
+:   Using the CLI, API, UI, or Terraform, you can configure {{site.data.keyword.atracker_short}} to send events to an {{site.data.keyword.appconfig_notm}} instance. This adds to the existing support for {{site.data.keyword.logs_full_notm}}, {{site.data.keyword.cos_full_notm}}, and {{site.data.keyword.messagehub}} targets.
+
+For more information, see [Managing IBM App Configuration targets](/docs/atracker?topic=atracker-target_v2_appconf).
 
 
 

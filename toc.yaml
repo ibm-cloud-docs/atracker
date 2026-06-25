@@ -72,6 +72,8 @@ toc:
                 navtitle: S2S for Cloud Logs
               - topic: iam-service-auth-es.md
                 navtitle: S2S for Event Streams
+              - topic: iam-service-auth-appconfig.md
+                navtitle: S2S for App Config
               - topic: iam-service-auth-remove-auth.md
                 navtitle: Removing authorizations
       - topicgroup:
@@ -116,6 +118,8 @@ toc:
           label: Managing targets
           topics:
           - topic: target_v2.md
+          - topic: target_v2_appconf.md
+            navtitle: Managing an App Configuration target
           - topic: target_v2_cos.md
             navtitle: Managing a COS target
           - topic: target_v2_icl.md

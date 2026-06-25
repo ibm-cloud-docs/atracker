@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-06-02"
+lastupdated: "2026-06-25"
 
 keywords: Observability
 
@@ -47,6 +47,7 @@ Choose 1 of the following options to configure a target in Madrid in your accoun
 - [Configuring a Cloud Object Storage target](/docs/atracker?topic=atracker-getting-started-target-cos).
 - [Configuring an {{site.data.keyword.messagehub}} target](/docs/atracker?topic=atracker-getting-started-target-event-streams).
 - [Configuring an {{site.data.keyword.logs_full_notm}} target](/docs/atracker?topic=atracker-getting-started-target-cloud-logs). 
+- [Configuring an {{site.data.keyword.appconfig_notm}} target](/docs/atracker?topic=atracker-getting-started-target-app-config). 
 
 
 
