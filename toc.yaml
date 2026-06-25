@@ -148,10 +148,12 @@ toc:
           - topic: manage-events-to-new-region.md
             navtitle: Working with events after a region is open for business
       - topicgroup:
-          label: Streaming data
+          label: Observability
           topics:
-          - topic: .md
+          - topic: observability/at_events.md
             navtitle: Activity tracking events
+          - topic: observability/platform_metrics.md
+            navtitle: Platform metrics
   - navgroup:
       id: reference
       topics:
