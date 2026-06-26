@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-06-25"
+lastupdated: "2026-06-26"
 
 keywords:
 
@@ -26,9 +26,12 @@ For more information on {{site.data.keyword.atracker_full_notm}} targets, see [T
 ## About {{site.data.keyword.appconfig_notm}} targets
 {: #target_v2_appconf_targets}
 
-If you are using an {{site.data.keyword.appconfig_notm}} target, you can use the same {{site.data.keyword.appconfig_notm}} instance for collecting auditing events in your account across multiple regions.  In that scenario events are forwarded to the target region before being routed to the {{site.data.keyword.appconfig_notm}} instance.
+If you are using an {{site.data.keyword.appconfig_notm}} target, you can use the same {{site.data.keyword.appconfig_notm}} instance for collecting auditing events in your account across multiple regions.  In that scenario events are directly sent to the {{site.data.keyword.appconfig_notm}} instance from source regions.
 
 You may consider defining an {{site.data.keyword.appconfig_notm}} instance in each region to improve performance and reduce network latency.
+{: important}
+
+{{site.data.keyword.appconfig_notm}} targets cannot be configured as default targets in settings. Use routes and rules to configure a {{site.data.keyword.appconfig_notm}} type of target as the destination.
 {: important}
 
 ## IAM Access
