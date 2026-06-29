@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-06-26"
+lastupdated: "2026-06-29"
 
 keywords:
 
@@ -778,7 +778,7 @@ Only resources in your account are listed and selectable. To specify a resource 
 
 1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
 2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) > **Observability**.
-3. Select **Activity Tracker**.
+3. Select **Activity Tracking**.
 4. Select **Routing**.
 5. Select **Targets**.
 6. Click **Create** to open the create panel.

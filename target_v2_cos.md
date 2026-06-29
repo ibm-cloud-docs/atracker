@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2021, 2025
-lastupdated: "2025-04-10"
+  years:  2021, 2026
+lastupdated: "2026-06-29"
 
 keywords:
 
@@ -893,13 +893,11 @@ Only resources in your account are listed and selectable. To specify a resource 
 
 1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
 2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability**.
-3. Select **Activity Tracker**.
-4. Select **Routing**.
-5. Select **Targets**.
-6. Click **Create** to open the create panel.
-7. **Choose type**: Click **Object Storage**.
-8. **Service authorization required**: Service authorization is required to allow {{site.data.keyword.atracker_full_notm}} to communicate with {{site.data.keyword.cos_full_notm}}. Click **Authorize now** to create the policy automatically or click **Grant access in IAM**.
-9.  **Choose destination**: Pick **Search by instance** or **Specify CRN**
+3. Select **Activity Tracking**.
+4. Click **Create** to open the create panel.
+5. **Choose type**: Click **Object Storage**.
+6. **Service authorization required**: Service authorization is required to allow {{site.data.keyword.atracker_full_notm}} to communicate with {{site.data.keyword.cos_full_notm}}. Click **Authorize now** to create the policy automatically or click **Grant access in IAM**.
+7.  **Choose destination**: Pick **Search by instance** or **Specify CRN**
     - **Search by instance**: Select an {{site.data.keyword.cos_full_notm}} instance from the table or click **Create** to create a new {{site.data.keyword.cos_full_notm}} instance. After selecting an instance, select an {{site.data.keyword.cos_full_notm}} bucket.
     - **Specify CRN**: Enter the Cloud Resource Name (CRN) of the {{site.data.keyword.cos_full_notm}} bucket. This enables you to enter a CRN from a different account.
 - **Bucket endpoint**: Use the default bucket endpoint or change it.
