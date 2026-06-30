@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-06-25"
+lastupdated: "2026-06-29"
 
 keywords:
 
@@ -210,7 +210,7 @@ You can manage your {{site.data.keyword.atracker_full_notm}} targets, routes, an
 
 1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
 2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability**.
-3. Select **Activity Tracker**.
-4. Select **Routing**.
+3. Select **Activity Tracking**.
+4. Select **Routes**.
 
 For more information, see [Managing {{site.data.keyword.logs_full_notm}} targets](/docs/atracker?topic=atracker-target_v2_icl&interface=ui).
