@@ -768,7 +768,8 @@ See the following table for some HTTP response codes:
 | `500` |	Internal Server Error |	Something went wrong in {{site.data.keyword.atracker_full_notm}} processing. |
 {: caption="List of HTTP response codes" caption-side="top"}
 
-
+<staging>
+	
 ## Creating an {{site.data.keyword.appconfig_notm}} target using the UI
 {: #target-create-ui-appconf}
 {: ui}
@@ -847,3 +848,6 @@ The table details:
 - **Target status**:
     - **Active**: The target is working as expected
     - **Error**: The target is misconfigured and events will not be routed to the destination. Update your target details or destination to fix the target configuration or delete the target if it is no longer needed
+ 
+</staging>
+
