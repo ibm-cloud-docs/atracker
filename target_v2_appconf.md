@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-06-29"
+lastupdated: "2026-06-30"
 
 keywords:
 
@@ -767,83 +767,3 @@ See the following table for some HTTP response codes:
 | `429` |	Too Many Requests |	Too many requests hit the API too quickly. |
 | `500` |	Internal Server Error |	Something went wrong in {{site.data.keyword.atracker_full_notm}} processing. |
 {: caption="List of HTTP response codes" caption-side="top"}
-
-
-## Creating an {{site.data.keyword.appconfig_notm}} target using the UI
-{: #target-create-ui-appconf}
-{: ui}
-
-Only resources in your account are listed and selectable. To specify a resource in a different account, select **Specify CRN** under **Choose destination**.
-{: important}
-
-1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
-2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) > **Observability**.
-3. Select **Activity Tracking**.
-4. Select **Routing**.
-5. Select **Targets**.
-6. Click **Create** to open the create panel.
-7. **Choose type**: Click **App Configuration**.
-8. **Service authorization required**: Service authorization is required to allow {{site.data.keyword.atracker_full_notm}} to communicate with {{site.data.keyword.appconfig_notm}}. Click **Authorize now** to create the policy automatically or click **Grant access in IAM**.
-9.  **Choose destination**: Pick **Search by instance** or **Specify CRN**
-    - **Search by instance**: Select an {{site.data.keyword.appconfig_notm}} instance from the table or click **Create** to create a new {{site.data.keyword.appconfig_notm}} instance.
-    - **Specify CRN**: Enter the Cloud Resource Name (CRN) of the {{site.data.keyword.appconfig_notm}} instance. This enables you to enter a CRN from a different account.
-- **Target name**: Enter a meaningful name for the target.
-- **Target region**: Select the region that will process the event data.
-- Toggle **Set as default target** to automatically set your new target as a default target in your {{site.data.keyword.atracker_full_notm}} settings. See [the default targets documentation](/docs/atracker?topic=atracker-planning#planning-4) for more details.
-- Click **Create target**.
-
-
-## Updating an {{site.data.keyword.appconfig_notm}} target using the UI
-{: #target-update-ui-appconf}
-{: ui}
-
-Only resources in your account are listed and selectable. To specify a resource in a different account, select **Specify CRN** under **Choose destination**.
-{: important}
-
-1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
-2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) > **Observability**.
-3. Select **Activity Tracker**.
-4. Select **Routing**.
-5. Select **Targets**.
-6. Determine which target to update and click the ![Actions icon](../icons/action-menu-icon.svg "Actions").
-7. Click **Unset as default** to remove your target as a default target in your {{site.data.keyword.atracker_full_notm}} settings. See [the default targets documentation](/docs/atracker?topic=atracker-planning#planning-4) for more details.
-8. Click **Edit** to open the update panel.
-9.  **Details**: Click **Edit** to update your target's name or region. You can also toggle **Default target** to add or remove your target as a default target in your {{site.data.keyword.atracker_full_notm}} settings.
-10. Click **Save** to update your target.
-11. **Destination**: Click **Edit** to change the {{site.data.keyword.appconfig_notm}} instance associated with your target.
-12. Click **Save** to update your target.
-
-## Deleting a target using the UI
-{: #target-delete-ui-appconf}
-{: ui}
-
-You cannot delete an {{site.data.keyword.atracker_full_notm}} target if it is used in a route or as a default target setting.
-{: important}
-
-1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
-2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) > **Observability**.
-3. Select **Activity Tracker**.
-4. Select **Routing**.
-5. Select **Targets**.
-6. Determine which target to delete and click the ![Actions icon](../icons/action-menu-icon.svg "Actions").
-7. Click **Delete** and then click **Delete** in the confirmation panel.
-
-
-## Listing all targets in a region using the UI
-{: #target-list-ui-appconf}
-{: ui}
-
-1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
-2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) > **Observability**.
-3. Select **Activity Tracker**.
-4. Select **Routing**.
-5. Select **Targets**.
-
-The table details:
-- Target type
-- Destination name
-- Destination region
-- **Routes**: If it is used in any routes
-- **Target status**:
-    - **Active**: The target is working as expected
-    - **Error**: The target is misconfigured and events will not be routed to the destination. Update your target details or destination to fix the target configuration or delete the target if it is no longer needed
