@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-06-02"
+lastupdated: "2026-07-13"
 
 keywords:
 
@@ -789,13 +789,11 @@ Only resources in your account are listed and selectable. To specify a resource 
 
 1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
 2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability**.
-3. Select **Activity Tracker**.
-4. Select **Routing**.
-5. Select **Targets**.
-6. Click **Create** to open the create panel.
-7. **Choose type**: Click **Cloud Logs**.
-8. **Service authorization required**: Service authorization is required to allow {{site.data.keyword.atracker_full_notm}} to communicate with {{site.data.keyword.logs_full_notm}}. Click **Authorize now** to create the policy automatically or click **Grant access in IAM**.
-9.  **Choose destination**: Pick **Search by instance** or **Specify CRN**
+3. Select **Activity Tracking**.
+4. Click **Create** to open the create panel.
+5. **Choose type**: Click **Cloud Logs**.
+6. **Service authorization required**: Service authorization is required to allow {{site.data.keyword.atracker_full_notm}} to communicate with {{site.data.keyword.logs_full_notm}}. Click **Authorize now** to create the policy automatically or click **Grant access in IAM**.
+7.  **Choose destination**: Pick **Search by instance** or **Specify CRN**
     - **Search by instance**: Select an {{site.data.keyword.logs_full_notm}} instance from the table or click **Create** to create a new {{site.data.keyword.logs_full_notm}} instance.
 
 
@@ -817,15 +815,13 @@ Only resources in your account are listed and selectable. To specify a resource 
 
 1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
 2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability**.
-3. Select **Activity Tracker**.
-4. Select **Routing**.
-5. Select **Targets**.
-6. Determine which target to update and click the ![Actions icon](../icons/action-menu-icon.svg "Actions").
-7. Click **Unset as default** to remove your target as a default target in your {{site.data.keyword.atracker_full_notm}} settings. See [the default targets documentation](/docs/atracker?topic=atracker-planning#planning-4) for more details.
-8. Click **Edit** to open the update panel.
-9.  **Details**: Click **Edit** to update your target's name or region. You can also toggle **Default target** to add or remove your target as a default target in your {{site.data.keyword.atracker_full_notm}} settings.
-10. Click **Save** to update your target.
-11. **Destination**: Click **Edit** to change the {{site.data.keyword.logs_full_notm}} instance associated with your target.
+3. Select **Activity Tracking**.
+4. Determine the target to update and click the ![Actions icon](../icons/action-menu-icon.svg "Actions").
+5. Click **Unset as default** to remove your target as a default target in your {{site.data.keyword.atracker_full_notm}} settings. See [the default targets documentation](/docs/atracker?topic=atracker-planning#planning-4) for more details.
+6. Click **Edit** to open the update panel.
+7.  **Details**: Click **Edit** to update your target's name or region. You can also toggle **Default target** to add or remove your target as a default target in your {{site.data.keyword.atracker_full_notm}} settings.
+8. Click **Save** to update your target.
+9. **Destination**: Click **Edit** to change the {{site.data.keyword.logs_full_notm}} instance associated with your target.
 
 
      If you want to use an {{site.data.keyword.logs_full_notm}} instance in Montreal (`ca-mon`), then the region of the target must also be Montreal (`ca-mon`).
@@ -842,11 +838,9 @@ You cannot delete an {{site.data.keyword.atracker_full_notm}} target if it is us
 
 1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
 2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability**.
-3. Select **Activity Tracker**.
-4. Select **Routing**.
-5. Select **Targets**.
-6. Determine which target to delete and click the ![Actions icon](../icons/action-menu-icon.svg "Actions").
-7. Click **Delete** and then click **Delete** in the confirmation panel.
+3. Select **Activity Tracking**
+4. Determine the target to delete and click the ![Actions icon](../icons/action-menu-icon.svg "Actions").
+5. Click **Delete** and then click **Delete** in the confirmation panel.
 
 
 ## Listing all targets in a region using the UI
@@ -855,11 +849,9 @@ You cannot delete an {{site.data.keyword.atracker_full_notm}} target if it is us
 
 1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
 2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability**.
-3. Select **Activity Tracker**.
-4. Select **Routing**.
-5. Select **Targets**.
+3. Select **Activity Tracking**.
 
-The table details:
+The table lists the target details:
 - Target type
 - Destination name
 - Destination region

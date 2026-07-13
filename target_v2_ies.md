@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2021, 2025
-lastupdated: "2025-04-10"
+  years:  2021, 2026
+lastupdated: "2026-07-13"
 
 keywords:
 
@@ -835,12 +835,10 @@ Only resources in your account are listed and selectable. To specify a resource 
 
 1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
 2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability**.
-3. Select **Activity Tracker**.
-4. Select **Routing**.
-5. Select **Targets**.
-6. Click **Create** to open the create panel.
-7. **Choose type**: Click **Event Streams**.
-8. **Choose destination**: Pick **Search by instance** or **Specify CRN**
+3. Select **Activity Tracking**..
+4. Click **Create** to open the create panel.
+5. **Choose type**: Click **Event Streams**.
+6. **Choose destination**: Pick **Search by instance** or **Specify CRN**
     - **Search by instance**: Select an {{site.data.keyword.messagehub}} instance from the table or click **Create** to create a new {{site.data.keyword.messagehub}} instance.
     - **Specify CRN**: Enter the Cloud Resource Name (CRN) of the {{site.data.keyword.messagehub}} instance. This enables you to enter a CRN from a different account.
 - **Service credentials**: Select one of the service credentials, it contains the brokers list username, and api_key or password.
@@ -860,16 +858,14 @@ Only resources in your account are listed and selectable. To specify a resource 
 
 1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
 2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability**.
-3. Select **Activity Tracker**.
-4. Select **Routing**.
-5. Select **Targets**.
-6. Determine which target to update and click the ![Actions icon](../icons/action-menu-icon.svg "Actions").
-7. You can click **Unset as default** to remove your target as a default target in your {{site.data.keyword.atracker_full_notm}} settings. See [Default targets documentation](/docs/atracker?topic=atracker-planning#planning-4) for more details.
-8. Click **Edit** to open the update panel.
-9. **Details**: Click **Edit** to update your target's name or region. You can also toggle **Default target** to add or remove your target as a default target in your {{site.data.keyword.atracker_full_notm}} settings.
+3. Select **Activity Tracking**.
+4. Determine the target to update and click the ![Actions icon](../icons/action-menu-icon.svg "Actions").
+5. You can click **Unset as default** to remove your target as a default target in your {{site.data.keyword.atracker_full_notm}} settings. See [Default targets documentation](/docs/atracker?topic=atracker-planning#planning-4) for more details.
+6. Click **Edit** to open the update panel.
+7. **Details**: Click **Edit** to update your target's name or region. You can also toggle **Default target** to add or remove your target as a default target in your {{site.data.keyword.atracker_full_notm}} settings.
+8. Click **Save** to update your target.
+9. **Destination**: Click **Edit** to change the {{site.data.keyword.messagehub}} instance, service credential, or topic associated with your target.
 10. Click **Save** to update your target.
-11. **Destination**: Click **Edit** to change the {{site.data.keyword.messagehub}} instance, service credential, or topic associated with your target.
-12. Click **Save** to update your target.
 
 ## Deleting a target using the UI
 {: #target-delete-ui-ies}
@@ -880,11 +876,9 @@ You cannot delete an {{site.data.keyword.atracker_full_notm}} target if it is us
 
 1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
 2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability**.
-3. Select **Activity Tracker**.
-4. Select **Routing**.
-5. Select **Targets**.
-6. Determine which target to delete and click the ![Actions icon](../icons/action-menu-icon.svg "Actions").
-7. Click **Delete** and then click **Delete** in the confirmation panel.
+3. Select **Activity Tracking**.
+4. Determine the target to delete and click the ![Actions icon](../icons/action-menu-icon.svg "Actions").
+5. Click **Delete** and then click **Delete** in the confirmation panel.
 
 
 ## Listing all targets in a region using the UI
@@ -893,11 +887,9 @@ You cannot delete an {{site.data.keyword.atracker_full_notm}} target if it is us
 
 1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
 2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability**.
-3. Select **Activity Tracker**.
-4. Select **Routing**.
-5. Select **Targets**.
+3. Select **Activity Tracking**.
 
-The table details:
+The table lists all the target details:
 - Target type
 - Destination name
 - Destination region
