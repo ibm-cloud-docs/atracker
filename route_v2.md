@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-01-27"
+lastupdated: "2026-07-13"
 
 keywords:
 
@@ -621,20 +621,19 @@ See the following table for some HTTP response codes:
 
 1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
 2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability**.
-3. Select **Activity Tracker**.
-4. Select **Routing**.
-5. Select **Routes**.
-6. Click **Create** to open the create page.
-7. Enter a meaningful name for the route.
-8. In **Routing rules**, modify **Rule 1**:
+3. Select **Activity Tracking**.
+4. Select **Routes**.
+5. Click **Create** to open the create page.
+6. Enter a meaningful name for the route.
+7. In **Routing rules**, modify **Rule 1**:
     - **Send audit events from**: Select the auditing event locations that will match this rule.
     - **To targets**: Select a target that will be attached to this rule. Click **Add target** to add more targets to the rule.
-9. Click **Add rule** to add additional rules to the route.
+8. Click **Add rule** to add additional rules to the route.
     - The order of route rules affects the routing behavior. Rules are processed in order and once a rule is matched, the subsequent rules are not processed.
-10. Each rule has an up and down arrow that lets you to change the rule order.
-11. Each rule has a **Remove** button that lets you delete a rule from a route.
-12. Review the route definition ensuring the order of the rules is as intended.
-13. Click **Create**.
+9. Each rule has an up and down arrow that lets you to change the rule order.
+10. Each rule has a **Remove** button that lets you delete a rule from a route.
+11. Review the route definition ensuring the order of the rules is as intended.
+12. Click **Create**.
 
 
 ## Updating a route using the UI
@@ -643,20 +642,19 @@ See the following table for some HTTP response codes:
 
 1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
 2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability**.
-3. Select **Activity Tracker**.
-4. Select **Routing**.
-5. Select **Routes**.
-6. Determine which route to update and click the ![Actions icon](../icons/action-menu-icon.svg "Actions").
-7. Click **Rename** to rename the route.
-8. Click **Edit** to update the route rules.
-9. If desired, edit the existing rules:
+3. Select **Activity Tracking**.
+4. Select **Routes**.
+5. Determine which route to update and click the ![Actions icon](../icons/action-menu-icon.svg "Actions").
+6. Click **Rename** to rename the route.
+7. Click **Edit** to update the route rules.
+8. If desired, edit the existing rules:
     - **Send audit events from**: Select the auditing event locations that will match this rule.
     - **To targets**: Select a target that will be attached to this rule. Click **Add target** to add more targets to the rule.
-10. Click **Add rule** to add additional rules to the route.
+9. Click **Add rule** to add additional rules to the route.
     - The order of route rules affects the routing behavior. Rules are processed in order and once a rule is matched, the subsequent rules are not processed.
-11. Each rule has an up and down arrow that lets you to change the rule order.
-12. Each rule has a **Remove** button that lets you delete a rule from a route.
-13. Click **Update** to make changes to your route.
+10. Each rule has an up and down arrow that lets you to change the rule order.
+11. Each rule has a **Remove** button that lets you delete a rule from a route.
+12. Click **Update** to make changes to your route.
 
 
 ## Viewing a route using the UI
@@ -665,12 +663,11 @@ See the following table for some HTTP response codes:
 
 1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
 2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability**.
-3. Select **Activity Tracker**.
-4. Select **Routing**.
-5. Select **Routes**.
-6. The routes table is ordered by creation date. The order of the routes does not affect the routing behavior.
-7. Each route block displays the route name and rules.
-8. The routes page also displays **Routing guidance** with additional information about configuring routing.
+3. Select **Activity Tracking**.
+4. Select **Routes**.
+5. The routes table is ordered by creation date. The order of the routes does not affect the routing behavior.
+6. Each route block displays the route name and rules.
+7. The routes page also displays **Routing guidance** with additional information about configuring routing.
 
 
 ## Deleting a route using the UI
@@ -679,8 +676,7 @@ See the following table for some HTTP response codes:
 
 1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
 2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability**.
-3. Select **Activity Tracker**.
-4. Select **Routing**.
-5. Select **Routes**.
-6. Determine which route to update and click the ![Actions icon](../icons/action-menu-icon.svg "Actions").
-7. Click **Delete** to delete the entire route. You must enter the route name before the route is deleted.
+3. Select **Activity Tracking**.
+4. Select **Routes**.
+5. Determine which route to update and click the ![Actions icon](../icons/action-menu-icon.svg "Actions").
+6. Click **Delete** to delete the entire route. You must enter the route name before the route is deleted.

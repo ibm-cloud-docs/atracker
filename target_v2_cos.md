@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-06-29"
+lastupdated: "2026-07-13"
 
 keywords:
 
@@ -66,7 +66,7 @@ Users with regional scope will be limited to access targets in their authorized 
 
 When writing to a COS target you can use the following options to authenticate to an {{site.data.keyword.cos_full_notm}} (COS) bucket.
 
-* By configuring service-to-service (S2S) authorization (recommended).
+* By configuring serviconfigre-to-service (S2S) authorization (recommended).
 * By providing an API key when configuring the target.
 
 
@@ -916,16 +916,14 @@ Only resources in your account are listed and selectable. To specify a resource 
 
 1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
 2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability**.
-3. Select **Activity Tracker**.
-4. Select **Routing**.
-5. Select **Targets**.
-6. Determine which target to update and click the ![Actions icon](../icons/action-menu-icon.svg "Actions").
-7. Click **Unset as default** to remove your target as a default target in your {{site.data.keyword.atracker_full_notm}} settings. See [the default targets documentation](/docs/atracker?topic=atracker-planning#planning-4) for more details.
-8. Click **Edit** to open the update panel.
-9.  **Details**: Click **Edit** to update your target's name or region. You can also toggle **Default target** to add or remove your target as a default target in your {{site.data.keyword.atracker_full_notm}} settings.
+3. Select **Activity Tracking**.
+4. Determine the target to update and click the ![Actions icon](../icons/action-menu-icon.svg "Actions").
+5. Click **Unset as default** to remove your target as a default target in your {{site.data.keyword.atracker_full_notm}} settings. See [the default targets documentation](/docs/atracker?topic=atracker-planning#planning-4) for more details.
+6. Click **Edit** to open the update panel.
+7.  **Details**: Click **Edit** to update your target's name or region. You can also toggle **Default target** to add or remove your target as a default target in your {{site.data.keyword.atracker_full_notm}} settings.
+8. Click **Save** to update your target.
+9. **Destination**: Click **Edit** to change the {{site.data.keyword.cos_full_notm}} instance or buckets associated with your target.
 10. Click **Save** to update your target.
-11. **Destination**: Click **Edit** to change the {{site.data.keyword.cos_full_notm}} instance or buckets associated with your target.
-12. Click **Save** to update your target.
 
 ## Deleting a target using the UI
 {: #target-delete-ui-cos}
@@ -936,11 +934,9 @@ You cannot delete an {{site.data.keyword.atracker_full_notm}} target if it is us
 
 1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
 2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability**.
-3. Select **Activity Tracker**.
-4. Select **Routing**.
-5. Select **Targets**.
-6. Determine which target to delete and click the ![Actions icon](../icons/action-menu-icon.svg "Actions").
-7. Click **Delete** and then click **Delete** in the confirmation panel.
+3. Select **Activity Tracking**.
+4. Determine which target to delete and click the ![Actions icon](../icons/action-menu-icon.svg "Actions").
+5. Click **Delete** and then click **Delete** in the confirmation panel.
 
 
 ## Listing all targets in a region using the UI
@@ -949,11 +945,9 @@ You cannot delete an {{site.data.keyword.atracker_full_notm}} target if it is us
 
 1. [Log in to your {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/login){: external}.
 2. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) &gt; **Observability**.
-3. Select **Activity Tracker**.
-4. Select **Routing**.
-5. Select **Targets**.
+3. Select **Activity Tracking**.
 
-The table details:
+The table lists the target details:
 - Target type
 - Destination name
 - Destination region
