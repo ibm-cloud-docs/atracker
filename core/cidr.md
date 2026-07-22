@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-06-01"
+lastupdated: "2026-07-22"
 
 keywords:
 
@@ -29,18 +29,6 @@ The type of CIDR (public or private) you need to use depends on the configuratio
 ## Public CIDR blocks
 {: #cidr_public_atracker_gen2}
 
-### Mumbai
-{: #cidr_public_atracker_in_mum}
-
-| Region   | CIDR block |
-|----------|------------|
-| Mumbai  | 169.38.215.19/32  |
-| Mumbai  | 169.38.238.76/32  |
-| Mumbai  | 169.38.44.154/32 |
-{: caption="Mumbai public CIDR blocks" caption-side="top"}
-
-
-
 ### Chennai
 {: #cidr_public_atracker_in_che}
 
@@ -51,6 +39,9 @@ The type of CIDR (public or private) you need to use depends on the configuratio
 | Chennai  | 169.38.8.235/32  |
 | Chennai  | 169.38.12.118/32  |
 | Chennai  | 169.38.17.62/32  |
+| Chennai  | 169.38.11.45/32  |
+| Chennai  | 169.38.13.184/32  |
+| Chennai  | 169.38.17.85/32  |
 {: caption="Chennai public CIDR blocks" caption-side="top"}
 
 
@@ -112,6 +103,9 @@ The type of CIDR (public or private) you need to use depends on the configuratio
 | Montreal  | 64.5.41.148/32	|
 | Montreal  | 64.5.44.70/32 |
 | Montreal  | 64.5.48.123/32 |
+| Montreal  | 64.5.43.41/32 |
+| Montreal  | 64.5.47.57/32 |
+| Montreal  | 64.5.49.66/32 |
 {: caption="Montreal public CIDR blocks" caption-side="top"}
 
 
@@ -124,6 +118,9 @@ The type of CIDR (public or private) you need to use depends on the configuratio
 | Mumbai  | 169.38.215.19/32 |
 | Mumbai  | 169.38.44.154/32 |
 | Mumbai  | 169.38.238.76/32 |
+| Mumbai  | 169.38.238.208/32 |
+| Mumbai  | 169.38.35.69/32 |
+| Mumbai  | 169.38.203.166/32 |
 {: caption="Mumbai public CIDR blocks" caption-side="top"}
 
 ### Osaka
@@ -234,6 +231,9 @@ The type of CIDR (public or private) you need to use depends on the configuratio
 | Chennai  | 10.46.129.234/32  |
 | Chennai  | 10.46.133.234/32  |
 | Chennai  | 10.46.137.234/32  |
+| Chennai  | 10.46.130.151/32  |
+| Chennai  | 10.46.133.243/32  |
+| Chennai  | 10.46.137.229/32  |
 
 {: caption="Chennai private CIDR blocks" caption-side="top"}
 
@@ -289,6 +289,9 @@ The type of CIDR (public or private) you need to use depends on the configuratio
 | Montreal  | 10.46.72.217/32 |
 | Montreal  | 10.46.76.217/32 |
 | Montreal  | 10.46.80.217/32 |
+| Montreal  | 10.46.74.172/32 |
+| Montreal  | 10.46.78.197/32 |
+| Montreal  | 10.46.82.171/32 |
 {: caption="Montreal private CIDR blocks" caption-side="top"}
 
 
@@ -301,6 +304,9 @@ The type of CIDR (public or private) you need to use depends on the configuratio
 | Mumbai  | 10.223.11.141/32 |
 | Mumbai  | 10.223.96.165/32 |
 | Mumbai  | 10.249.117.132/32 |
+| Mumbai  | 10.223.4.38/32 |
+| Mumbai  | 10.223.101.202/32 |
+| Mumbai  | 10.249.115.3/32 |
 {: caption="Mumbai private CIDR blocks" caption-side="top"}
 
 ### Osaka
