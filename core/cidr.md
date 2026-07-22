@@ -29,18 +29,6 @@ The type of CIDR (public or private) you need to use depends on the configuratio
 ## Public CIDR blocks
 {: #cidr_public_atracker_gen2}
 
-### Mumbai
-{: #cidr_public_atracker_in_mum}
-
-| Region   | CIDR block |
-|----------|------------|
-| Mumbai  | 169.38.215.19/32  |
-| Mumbai  | 169.38.238.76/32  |
-| Mumbai  | 169.38.44.154/32 |
-{: caption="Mumbai public CIDR blocks" caption-side="top"}
-
-
-
 ### Chennai
 {: #cidr_public_atracker_in_che}
 
