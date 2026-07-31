@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-07-28"
+lastupdated: "2026-07-31"
 
 keywords:
 
@@ -22,12 +22,19 @@ content-type: release-note
 Use these release notes to learn about the latest updates to {{site.data.keyword.atracker_full}}.
 {: shortdesc}
 
+## 30 July 2026
+{: #activity-tracker-july3026}
+{: release-note}
+
+CIDR blocks added
+:  Public and private CIDR blocks are added to {{site.data.keyword.atracker_full}} for Dallas (us-south) and Frankfurt (eu-de). See [CIDR blocks](/docs/atracker?topic=atracker-cidr).
+
 ## 27 July 2026
 {: #activity-tracker-july2726}
 {: release-note}
 
 CIDR blocks added
-:  Public and private CIDR blocks are added to {{site.data.keyword.atracker_full}} for Londo(eu-gb), Madrid(eu-es), Sao paulo(br-sao) and Toronto (ca-tor). See [CIDR blocks](/docs/atracker?topic=atracker-cidr).
+:  Public and private CIDR blocks are added to {{site.data.keyword.atracker_full}} for London(eu-gb), Madrid(eu-es), Sao Paulo(br-sao) and Toronto (ca-tor). See [CIDR blocks](/docs/atracker?topic=atracker-cidr).
 
 ## 21 July 2026
 {: #activity-tracker-july2126}
