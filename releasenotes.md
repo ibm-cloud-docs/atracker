@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-07-31"
+lastupdated: "2026-08-07"
 
 keywords:
 
@@ -21,6 +21,14 @@ content-type: release-note
 
 Use these release notes to learn about the latest updates to {{site.data.keyword.atracker_full}}.
 {: shortdesc}
+
+
+## 06 August 2026
+{: #activity-tracker-august0626}
+{: release-note}
+
+CIDR blocks added
+:  Public and private CIDR blocks are added to {{site.data.keyword.atracker_full}} for Tokyo (jp-tok). See [CIDR blocks](/docs/atracker?topic=atracker-cidr).
 
 ## 30 July 2026
 {: #activity-tracker-july3026}
