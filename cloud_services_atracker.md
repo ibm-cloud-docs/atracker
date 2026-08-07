@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-06-02"
+lastupdated: "2026-08-07"
 
 keywords:
 
@@ -57,6 +57,17 @@ The following table lists serverless compute services that send auditing events:
 | [{{site.data.keyword.satellitelong}}](/docs/satellite?topic=satellite-getting-started) | `satellite` | [Location-based events](/docs/satellite?topic=satellite-at_events) |
 {: caption="List of serverless compute services" caption-side="top"}
 
+
+
+## Compute services
+{: #compute}
+
+The following table lists compute services that send auditing events:
+
+| Service     | CRN service name | Events |
+|-------------|------------------|--------|
+| [{{site.data.keyword.quantum_long}}](https://quantum.cloud.ibm.com/docs/guides){: external} | `quantum-computing` | [Location-based events](https://quantum.cloud.ibm.com/docs/guides/observability-runtime-rest){: external} |
+{: caption="List of compute services" caption-side="top"}
 
 
 ## Container services
