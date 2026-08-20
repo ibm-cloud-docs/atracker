@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-08-07"
+lastupdated: "2026-08-20"
 
 keywords:
 
@@ -138,6 +138,9 @@ The type of CIDR (public or private) you need to use depends on the configuratio
 | Osaka  | 163.69.69.176/28 |
 | Osaka  | 163.73.67.16/28 |
 | Osaka  | 163.73.67.32/29 |
+| Osaka  | 163.68.93.216/32 |
+| Osaka  | 163.69.80.141/32 |
+| Osaka  | 163.73.92.78/32 |
 {: caption="Osaka public CIDR blocks" caption-side="top"}
 
 ### Sao Paulo
@@ -167,6 +170,9 @@ The type of CIDR (public or private) you need to use depends on the configuratio
 | Sydney  | 130.198.123.64/28 |
 | Sydney  | 135.90.92.0/28 |
 | Sydney  | 135.90.98.64/27 |
+| Sydney  | 159.23.94.180/32 |
+| Sydney  | 130.198.8.10/32 |
+| Sydney  | 135.90.129.148/32 |
 {: caption="Sydney public CIDR blocks" caption-side="top"}
 
 ### Tokyo
@@ -335,6 +341,9 @@ The type of CIDR (public or private) you need to use depends on the configuratio
 | Osaka  | 10.8.56.128/26 |
 | Osaka  | 10.9.19.128/26 |
 | Osaka  | 10.10.17.64/26 |
+| Osaka  | 10.12.16.181/32 |
+| Osaka  | 10.12.28.219/32 |
+| Osaka  | 10.12.42.14/32 |
 {: caption="Osaka private CIDR blocks" caption-side="top"}
 
 ### Sao Paulo
@@ -361,6 +370,9 @@ The type of CIDR (public or private) you need to use depends on the configuratio
 | Sydney  | 10.210.37.192/26 |
 | Sydney  | 10.63.29.192/26 |
 | Sydney  | 10.195.92.128/26 |
+| Sydney  | 10.223.239.170/32 |
+| Sydney  | 10.223.248.133/32 |
+| Sydney  | 10.12.7.91/32 |
 {: caption="Sydney private CIDR blocks" caption-side="top"}
 
 ### Tokyo

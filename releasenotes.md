@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-08-07"
+lastupdated: "2026-08-20"
 
 keywords:
 
@@ -22,6 +22,12 @@ content-type: release-note
 Use these release notes to learn about the latest updates to {{site.data.keyword.atracker_full}}.
 {: shortdesc}
 
+## 20 August 2026
+{: #activity-tracker-august2026}
+{: release-note}
+
+CIDR blocks added
+:  Public and private CIDR blocks are added to {{site.data.keyword.atracker_full}} for Sydney (au-syd) and Osaka (jp-osa). See [CIDR blocks](/docs/atracker?topic=atracker-cidr).
 
 ## 06 August 2026
 {: #activity-tracker-august0626}
