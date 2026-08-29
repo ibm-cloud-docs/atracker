@@ -70,7 +70,7 @@ Before you use the CLI to manage targets, complete the following steps:
 
 3. Log in to {{site.data.keyword.cloud_notm}}. Run the following command: [ibmcloud login](/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_login)
 
-## Configuring S2S authorization using the UI witihin the same account
+## Configuring S2S authorization using the UI within the same account
 {: #target_v2_icl_s2s_ui}
 {: ui}
 
