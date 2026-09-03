@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-06-25"
+lastupdated: "2026-09-03"
 
 keywords:
 
@@ -81,7 +81,6 @@ The autorization that you define for the {{site.data.keyword.atracker_full_notm}
 | Authorize access to the {{site.data.keyword.messagehub_full}} service | {{site.data.keyword.messagehub_full}} | Writer |
 | Authorize access to send data to the {{site.data.keyword.logs_full_notm}} service | {{site.data.keyword.logs_full}} | Sender | 
 | Authorize access to send data to the {{site.data.keyword.appconfig_notm}} service | {{site.data.keyword.apprapp_full}} | Configuration Update Reporter | 
-
 {: caption="S2S authorizations."}
 
 
