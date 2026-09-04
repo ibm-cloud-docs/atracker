@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021, 2025
-lastupdated: "2025-10-27"
+  years: 2021, 2026
+lastupdated: "2026-09-04"
 
 keywords:
 
@@ -23,7 +23,7 @@ VPEs are virtual IP interfaces that are bound to an endpoint gateway created on 
 
 
 ## Before you begin
-{: #prereq-service-endpoint}
+{: #vpe-prereqs}
 
 Before you target a virtual private endpoint for {{site.data.keyword.atracker_short}} you must complete the following tasks.
 

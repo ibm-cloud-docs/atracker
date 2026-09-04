@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-07-13"
+lastupdated: "2026-09-04"
 
 keywords:
 
@@ -214,7 +214,7 @@ Use this command to create a {{site.data.keyword.messagehub_full}} target to be 
 {: pre}
 
 ### Command options
-{: #target-create-options-ies}
+{: #target-v2-ies-create-options-ies}
 
 `--region REGION` | `-r REGION`
 :   Name of the region, for example, `us-south` or `eu-gb`. If not specified, the region logged into, or targeted, will be used.
@@ -299,7 +299,7 @@ ibmcloud atracker target update --target TARGET [--name TARGET_NAME] [ [--file E
 {: pre}
 
 ### Command options
-{: #target-update-options-ies}
+{: #target-v2-ies-update-options}
 
 `--region REGION` | `-r REGION`
 :   Name of the region, for example, `us-south` or `eu-gb`. If not specified, the region logged into, or targeted, will be used.
