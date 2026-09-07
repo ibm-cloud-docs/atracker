@@ -210,10 +210,13 @@ toc:
           label: Events
           topics:
           - services/at_events_iam.md
-          - services/at_events_acc_mgt.md
           - services/at_events_rc.md
           - services/at_event_dashdb.md
           - services/at_events_cbr.md
+          links:
+          - link:
+              label: Auditing events for account management
+              href: https://{DomainName}/docs/account?topic=account-at_events_am
       - cos.md
   - navgroup:
       id: help
