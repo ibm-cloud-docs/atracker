@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-05-11"
+lastupdated: "2026-09-04"
 
 keywords: HA for IBM Cloud Activity Tracker Event Routing, DR for IBM Cloud Activity Tracker Event Routing, IBM Cloud Activity Tracker Event Routing recovery time objective, IBM Cloud Activity Tracker Event Routing recovery point objective
 
@@ -206,7 +206,7 @@ The following table indicates the estimated recovery times in the event of a DR 
 {: caption="Recovery objectives for DR" caption-side="top"}
 
 ## Change management
-{: #change-management}
+{: #ha-dr-change-management}
 
 
 

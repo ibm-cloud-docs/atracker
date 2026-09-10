@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-08-20"
+lastupdated: "2026-09-03"
 
 keywords:
 
@@ -252,7 +252,6 @@ The type of CIDR (public or private) you need to use depends on the configuratio
 | Chennai  | 10.46.130.151/32  |
 | Chennai  | 10.46.133.243/32  |
 | Chennai  | 10.46.137.229/32  |
-
 {: caption="Chennai private CIDR blocks" caption-side="top"}
 
 

@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-07-13"
+lastupdated: "2026-09-04"
 
 keywords:
 
@@ -312,7 +312,7 @@ ibmcloud atracker target update --target TARGET [--name TARGET_NAME] [ [--file C
 {: pre}
 
 ### Command options
-{: #target-update-options-cos}
+{: #target-v2-cos-update-options}
 
 `--target TARGET`
 :   The ID or current target name.

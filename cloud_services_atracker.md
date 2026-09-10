@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-08-13"
+lastupdated: "2026-09-08"
 
 keywords:
 
@@ -172,15 +172,15 @@ The following table lists platform services that send auditing events:
 
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
-| [Billing](/docs/account?topic=account-account-services&interface=ui#billing-acct-mgmt ) | `billing` | [Global events](/docs/atracker?topic=atracker-at_events_acc_mgt#at_events_acc_mgt_account) |
-| [User management](/docs/account?topic=account-iamuserinv) | `user-management` | [Global events](/docs/atracker?topic=atracker-at_events_acc_mgt#at_events_acc_mgt_users) |
+| [Billing](/docs/account?topic=account-account-services&interface=ui#billing-acct-mgmt ) | `billing` | [Global events](/docs/account?topic=account-at_events_am#account_management_events) |
+| [User management](/docs/account?topic=account-iamuserinv) | `user-management` | [Global events](/docs/account?topic=account-at_events_am#at_events_acc_mgt_users) |
 | [Provisioning](/docs/account?topic=account-manage_resource) | `provisioning` | [Global events](/docs/atracker?topic=atracker-at_events_rc#at_events_rc) |
-| [Carbon Calculator](/docs/account?topic=account-what-is-cloud-calc) | `carbon-calculator` | [Global events](/docs/atracker?topic=atracker-at_events_acc_mgt#at_events_carbon_calculator) |
-| [{{site.data.keyword.iamlong}}](/docs/account?topic=account-iamoverview)   | `iam-identity`   \n `iam-groups`   \n `iam-am` | [Global events](/docs/atracker?topic=atracker-at_events_iam) |
-| [Global Search Service](/docs/account?topic=account-tag) | `global-search-tagging` | [Global events](/docs/atracker?topic=atracker-at_events_acc_mgt#at_events_acc_mgt_resources) |
-| [Catalog Management](/docs/account?topic=account-filter-account)`[*]` | `globalcatalog-collection` | [Global events](/docs/atracker?topic=atracker-at_events_acc_mgt#at_events_catalog_management) |
-| [Software instance](/docs/account?topic=account-sw-instance-details) `[*]` | `globalcatalog-instance` | [Global events](/docs/atracker?topic=atracker-at_events_acc_mgt#at_events_sw_instance) |
-| [Context-based restrictions](/docs/account?topic=account-context-restrictions-whatis) | `context-based-restrictions` | [Global events](/docs/atracker?topic=atracker-events_context_based) |
+| [Carbon Calculator](/docs/account?topic=account-what-is-cloud-calc) | `carbon-calculator` | [Global events](/docs/account?topic=account-at_events_am#at_events_carbon_calculator) |
+| [IBM Cloud Identity Access](/docs/account?topic=account-iamoverview)   | `iam-identity`   \n `iam-groups`   \n `iam-am` | [Global events](/docs/iam?topic=iam-at_events_iam) |
+| [Global Search Service](/docs/account?topic=account-tag) | `global-search-tagging` | [Global events](/docs/account?topic=account-at_events_am#at_events_catalog_management) |
+| [Catalog Management](/docs/account?topic=account-filter-account)`[*]` | `globalcatalog-collection` | [Global events](/docs/account?topic=account-at_events_am#at_events_catalog_management) |
+| [Software instance](/docs/account?topic=account-sw-instance-details) `[*]` | `globalcatalog-instance` | [Global events](/docs/account?topic=account-at_events_am#at_events_sw_instance) |
+| [Context-based restrictions](/docs/account?topic=account-context-restrictions-whatis) | `context-based-restrictions` | [Global events](/docs/iam?topic=iam-at_events_cbr) |
 | [Projects](/docs/secure-enterprise?topic=secure-enterprise-understanding-projects) | `project` | [Global events](/docs/secure-enterprise?topic=secure-enterprise-at_events) |
 {: caption="List of platform services" caption-side="top"}
 

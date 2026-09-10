@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2023, 2025
-lastupdated: "2025-12-05"
+  years:  2023, 2026
+lastupdated: "2026-09-04"
 
 keywords:
 
@@ -36,13 +36,13 @@ This example uses terraform. However, other configuration methods can be used as
 - You must have the Administrator role with permissions to manage {{site.data.keyword.atracker_full_notm}} in the source accounts. See [Managing access with IAM](/docs/atracker?topic=atracker-iam) and [Assigning access to {{site.data.keyword.atracker_full_notm}}](/docs/atracker?topic=atracker-iam-assign-access).
 
 ## Step 1 - Create the hub account instance
-{: #step-create-target-instance-terraform}
+{: #cross-account-step-create-target-instance-terraform}
 {: terraform}
 
 Follow [Provisioning an {{site.data.keyword.logs_full_notm}} instance by using Terraform](/docs/cloud-logs?topic=cloud-logs-terraform-setup) to create the instance in the hub account. The instance will not receive activity tracker events until the spoke accounts are configured to send their events to the instance.
 
 ## Step 2 - Create hub authorization policies
-{: #step-create-authorization-policy-terraform}
+{: #cross-account-step-create-authorization-policy-terraform}
 {: terraform}
 
 Create an {{site.data.keyword.iamshort}} (IAM) service to service authorization policy in the hub account for each of your spoke accounts. In this example there are two spoke accounts.

@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-07-13"
+lastupdated: "2026-09-04"
 
 keywords:
 
@@ -127,7 +127,7 @@ ibmcloud atracker route create --name ROUTE_NAME  ( --target-ids TARGETS  [--loc
 
 
 ### Command options
-{: #route-create-options}
+{: #route-v2-create-options}
 
 `--name ROUTE_NAME`
 :   The name to be given to the route.
@@ -198,7 +198,7 @@ ibmcloud atracker route update --route ROUTE [--name ROUTE_NAME] [--force] ( [--
 {: pre}
 
 ### Command options
-{: #route-update-options}
+{: #route-v2-update-options}
 
 `--route ROUTE`
 :   The existing name or ID of the route.

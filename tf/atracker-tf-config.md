@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-05-27"
+lastupdated: "2026-09-03"
 
 keywords:
 
@@ -271,6 +271,7 @@ To see the list of valid regions, see [Locations](/docs/atracker?topic=atracker-
 Next, create a Terraform configuration file that is named `main.tf`. In this file, you configure {{site.data.keyword.atracker_short}} by using HashiCorp Configuration Language (HCL). For more information, see the [Terraform documentation](https://developer.hashicorp.com/terraform/language){: external}.
 
 ### Using IBM Cloud Provider resources directly
+{: #terraform-cloud-provider-resources}
 
 The following code shows a sample configuration file to define the account setting configuration:
 
@@ -393,6 +394,7 @@ resource "ibm_atracker_route" "atracker_route_instance-global" {
 {: codeblock}
 
 ### Using Terraform IBM Modules
+{: #terraform-main-using-terraform}
 
 Alternatively, you can use the [Terraform IBM Modules for {{site.data.keyword.atracker_full_notm}}](https://registry.terraform.io/modules/terraform-ibm-modules/activity-tracker/ibm/latest){: external} which provide pre-built configurations following {{site.data.keyword.cloud_notm}} best practices.
 
