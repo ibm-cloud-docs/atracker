@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-06-29"
+lastupdated: "2026-09-11"
 
 keywords:
 
@@ -19,7 +19,7 @@ subcollection: atracker
 {: shortdesc}
 
 
-![The image shows the locations where the {{site.data.keyword.atracker_short}} service is available.](../images/cloud-Atracker-Locations.png){: caption="Displays the regions where you can create and manage {{site.data.keyword.atracker_short}} resources." caption-side="bottom"}
+![The image shows the locations where the {{site.data.keyword.atracker_short}} service is available.](../images/Atracker-location.Mumbai.png){: caption="Displays the regions where you can create and manage {{site.data.keyword.atracker_short}} resources." caption-side="bottom"}
 
 
 This image is an artistic representation and does not reflect actual political or geographic boundaries.
