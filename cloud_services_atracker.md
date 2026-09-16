@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-09-08"
+lastupdated: "2026-09-16"
 
 keywords:
 
@@ -131,8 +131,8 @@ The following table lists integration services that send auditing events:
 
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
-| [{{site.data.keyword.messagehub_full}}](/docs/EventStreams?topic=EventStreams-getting-started)| `messagehub` | [Location-based events](/docs/EventStreams?topic=EventStreams-at_events) |
-| [MQ on IBM Cloud](/docs/mqcloud?topic=mqcloud-getting_started) |`mqcloud` | [Location-based events](/docs/mqcloud?topic=mqcloud-at_events) |
+| [{{site.data.keyword.messagehub_full}}](/docs//EventStreams?topic=EventStreams-quick_setup_guide&interface=ui)| `messagehub` | [Location-based events](/docs/EventStreams?topic=EventStreams-at_events) |
+| [MQ on IBM Cloud](/docs/mqcloud?topic=mqcloud-getting_started) |`mqcloud` | [Location-based events](/docs/mqcloud?topic=mqcloud-getting_started) |
 |[{{site.data.keyword.apiconnect_long}}](/docs/apiconnect?topic=apiconnect-getting-started)| `apiconnect` | [Location-based events](/docs/apiconnect?topic=apiconnect-at_events) |
 {: caption="List of integration Cloud services" caption-side="top"}
 
@@ -172,15 +172,15 @@ The following table lists platform services that send auditing events:
 
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
-| [Billing](/docs/account?topic=account-account-services&interface=ui#billing-acct-mgmt ) | `billing` | [Global events](/docs/account?topic=account-at_events_am#account_management_events) |
-| [User management](/docs/account?topic=account-iamuserinv) | `user-management` | [Global events](/docs/account?topic=account-at_events_am#at_events_acc_mgt_users) |
+| [Billing](/docs/iam?topic=iam-account-services&interface=ui#billing-acct-mgmt) | `billing` | [Global events](/docs/account?topic=account-at_events_am#account_management_events) |
+| [User management](/docs/iam?topic=iam-iamuserinv&interface=ui) | `user-management` | [Global events](/docs/account?topic=account-at_events_am#at_events_acc_mgt_users) |
 | [Provisioning](/docs/account?topic=account-manage_resource) | `provisioning` | [Global events](/docs/atracker?topic=atracker-at_events_rc#at_events_rc) |
 | [Carbon Calculator](/docs/account?topic=account-what-is-cloud-calc) | `carbon-calculator` | [Global events](/docs/account?topic=account-at_events_am#at_events_carbon_calculator) |
-| [IBM Cloud Identity Access](/docs/account?topic=account-iamoverview)   | `iam-identity`   \n `iam-groups`   \n `iam-am` | [Global events](/docs/iam?topic=iam-at_events_iam) |
+| [IBM Cloud Identity Access](/docs/iam?topic=iam-iamoverview)   | `iam-identity`   \n `iam-groups`   \n `iam-am` | [Global events](/docs/iam?topic=iam-at_events_iam) |
 | [Global Search Service](/docs/account?topic=account-tag) | `global-search-tagging` | [Global events](/docs/account?topic=account-at_events_am#at_events_catalog_management) |
 | [Catalog Management](/docs/account?topic=account-filter-account)`[*]` | `globalcatalog-collection` | [Global events](/docs/account?topic=account-at_events_am#at_events_catalog_management) |
 | [Software instance](/docs/account?topic=account-sw-instance-details) `[*]` | `globalcatalog-instance` | [Global events](/docs/account?topic=account-at_events_am#at_events_sw_instance) |
-| [Context-based restrictions](/docs/account?topic=account-context-restrictions-whatis) | `context-based-restrictions` | [Global events](/docs/iam?topic=iam-at_events_cbr) |
+| [Context-based restrictions](/docs/iam?topic=iam-context-restrictions-whatis) | `context-based-restrictions` | [Global events](/docs/iam?topic=iam-at_events_cbr) |
 | [Projects](/docs/secure-enterprise?topic=secure-enterprise-understanding-projects) | `project` | [Global events](/docs/secure-enterprise?topic=secure-enterprise-at_events) |
 {: caption="List of platform services" caption-side="top"}
 
@@ -281,7 +281,7 @@ The following table lists Watson AI services that send auditing events:
 | [{{site.data.keyword.knowledgestudiofull}}](/docs/watson-knowledge-studio) | `knowledge-studio` | [Location-based events](/docs/watson-knowledge-studio?topic=watson-knowledge-studio-activity-tracker-events) |
 | [{{site.data.keyword.nlufull}}](/docs/natural-language-understanding) | `natural-language-understanding` | [Location-based events](/docs/natural-language-understanding?topic=natural-language-understanding-at_events) |
 | [watsonx.governance ({{site.data.keyword.aios_full_notm}})](https://dataplatform.cloud.ibm.com/docs/content/svc-welcome/aiopenscale.html?context=wx&audience=wdp){: external} | `aiopenscale` | [Location-based events](https://dataplatform.cloud.ibm.com/docs/content/wsj/admin/at-events.html?context=wx&audience=wdp&locale=en#wos){: external} |
-| [watsonx.orchestrate](https://www.ibm.com/docs/en/watsonx/watson-orchestrate/base?topic=getting-started-watsonx-orchestrate){: external} |  `watsonx-orchestrate` | [Location-based events](https://www.ibm.com/docs/en/SSAVQO/security/activity_tracker.html){: external} |
+| [watsonx.orchestrate](https://www.ibm.com/docs/en/watsonx/watson-orchestrate/base?topic=getting-started){: external} |  `watsonx-orchestrate` | [Location-based events](https://www.ibm.com/docs/en/SSAVQO/security/activity_tracker.html){: external} |
 | [{{site.data.keyword.conversationfull}}](/docs/watson-assistant?topic=watson-assistant-getting-started) | `conversation`  | [Location-based events](/docs/watson-assistant?topic=watson-assistant-at-events) |
 | [{{site.data.keyword.discoveryfull}}](/docs/discovery-data?topic=discovery-data-getting-started) | `discovery` | [Location-based events](/docs/discovery-data?topic=discovery-data-at_events)  |
 | [{{site.data.keyword.speechtotextfull}}](/docs/speech-to-text?topic=speech-to-text-gettingStarted) | `speech-to-text` | [Location-based events](/docs/speech-to-text?topic=speech-to-text-at_events) |

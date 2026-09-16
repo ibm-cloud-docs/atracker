@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-06-25"
+lastupdated: "2026-09-16"
 keywords:
 
 subcollection: atracker
@@ -16,10 +16,10 @@ subcollection: atracker
 # Restricting access by context-based restrictions
 {: #context-based-restrictions}
 
-[Context-based restrictions (CBR)](/docs/account?topic=account-context-restrictions-whatis&interface=ui) provides a way for administrators to limit access to {{site.data.keyword.atracker_full}} destination resources or the {{site.data.keyword.atracker_full_notm}} public API. For general context-based restrictions instructions, see [Creating context-based restrictions](/docs/account?topic=account-context-restrictions-create&interface=ui).
+[Context-based restrictions (CBR)](/docs/iam?topic=iam-context-restrictions-whatis) provides a way for administrators to limit access to {{site.data.keyword.atracker_full}} destination resources or the {{site.data.keyword.atracker_full_notm}} public API. For general context-based restrictions instructions, see [Creating context-based restrictions](/docs/iam?topic=iam-context-restrictions-create&interface=ui).
 {: shortdesc}
 
-Any audit events generated come from the context-based restrictions service, and not {{site.data.keyword.atracker_full_notm}}. For more information, see [Monitoring context-based restrictions](/docs/account?topic=account-cbr-monitor).
+Any audit events generated come from the context-based restrictions service, and not {{site.data.keyword.atracker_full_notm}}. For more information, see [Monitoring context-based restrictions](/docs/iam?topic=iam-cbr-monitor).
 {: note}
 
 ## Using context-based restrictions to protect destination resources
@@ -32,7 +32,7 @@ Make sure you also have a service to service policy defined between {{site.data.
 
 To configure context-based restrictions, do the following:
 
-1. Define a [network zone](/docs/account?topic=account-context-restrictions-create&interface=cli#network-zones-create-cli) that references {{site.data.keyword.atracker_full_notm}} from the service drop-down list. The **Locations** option is optional. If you do not specify a location, all  {{site.data.keyword.atracker_full_notm}} service locations are included. Here is an example to create a zone by using the CLI CBR plug-in:
+1. Define a [network zone](/docs/iam?topic=iam-context-restrictions-create&interface=ui#network-zones-create-cli) that references {{site.data.keyword.atracker_full_notm}} from the service drop-down list. The **Locations** option is optional. If you do not specify a location, all  {{site.data.keyword.atracker_full_notm}} service locations are included. Here is an example to create a zone by using the CLI CBR plug-in:
 
    ```text
    ibmcloud cbr zone-create --name "Atracker-Zone-All-Regions" --description "Activity Tracker Event Routing For All regions" --service-ref service_name=atracker
@@ -52,9 +52,9 @@ To configure context-based restrictions, do the following:
    ```
    {: screen}
 
-2. Define one or more [network zones](/docs/account?topic=account-context-restrictions-create&interface=cli#network-zones-create-cli) that you might want to access resources from the UI, CLI or any other clients.
+2. Define one or more [network zones](/docs/iam?topic=iam-context-restrictions-create&interface=ui#network-zones-create-cli) that you might want to access resources from the UI, CLI or any other clients.
 
-3. Create a [CBR rule](/docs/account?topic=account-context-restrictions-create&interface=cli#context-restrictions-create-rules-cli) that can be scoped to the resource instance, or resource, you want the rule to protect, and select the network zones you defined in the previous steps. Here are 2 examples to define rules to protect 1 {{site.data.keyword.cos_full_notm}} bucket and 1 {{site.data.keyword.logs_full_notm}} instance:
+3. Create a [CBR rule](/docs/iam?topic=iam-context-restrictions-create&interface=ui#context-restrictions-create-rules-cli) that can be scoped to the resource instance, or resource, you want the rule to protect, and select the network zones you defined in the previous steps. Here are 2 examples to define rules to protect 1 {{site.data.keyword.cos_full_notm}} bucket and 1 {{site.data.keyword.logs_full_notm}} instance:
 
    ```text
    ibmcloud cbr rule-create --description "Allow Atracker-Zone-All-Regions and Client-GreenZone to access the Log instance" --service-name logs --service-instance 44445555-a4f1-4f8a-a954-75f083c7e001 --zone-id "222220d595a54f650157aa5e2b26d002,1111b52afc14facafe797e34292b1001" --enforcement-mode "enabled"
@@ -117,7 +117,7 @@ As an account owner, you can limit access to the {{site.data.keyword.atracker_fu
 
 To configure context-based restrictions to protect the API, do the following:
 
-1. Define one or more [network zones](/docs/account?topic=account-context-restrictions-whatis#network-zones-whatis) that might call the {{site.data.keyword.atracker_full_notm}} API from the UI, CLI or any other clients. You can define network zones from the {{site.data.keyword.cloud_notm}} UI or CLI. The following is an example of how to create a zone by using the CLI CBR plug-in:
+1. Define one or more [network zones](/docs/iam?topic=iam-context-restrictions-whatis#network-zones-whatis) that might call the {{site.data.keyword.atracker_full_notm}} API from the UI, CLI or any other clients. You can define network zones from the {{site.data.keyword.cloud_notm}} UI or CLI. The following is an example of how to create a zone by using the CLI CBR plug-in:
 
    ```text
    % ibmcloud cbr zone-create --name "Atracker-Api-client-zone" --description "Network zone for ATracker CLI, UI or any other clients" --addresses 169.70.115.5,169.60.137.153
@@ -138,7 +138,7 @@ To configure context-based restrictions to protect the API, do the following:
    ```
    {: screen}
 
-2. Create a [CBR rule](/docs/account?topic=account-context-restrictions-whatis#rule-scope) to protect the {{site.data.keyword.atracker_full_notm}} API for your account using the network zones created in the previous step. You can create CBR rules from the {{site.data.keyword.cloud_notm}} UI or CLI. The following is an example of how to create such a rule by using CLI CBR plug-in:
+2. Create a [CBR rule](/docs/iam?topic=iam-context-restrictions-whatis#rule-scope) to protect the {{site.data.keyword.atracker_full_notm}} API for your account using the network zones created in the previous step. You can create CBR rules from the {{site.data.keyword.cloud_notm}} UI or CLI. The following is an example of how to create such a rule by using CLI CBR plug-in:
 
    ```text
    % ibmcloud cbr rule-create --description "Allow Atracker-Api-client-zone to call ATracker API" --service-name atracker --zone-id 86e1776051c9b23a0b3c038b412eb08e --enforcement-mode enabled

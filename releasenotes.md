@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-09-08"
+lastupdated: "2026-09-16"
 
 keywords:
 
@@ -23,58 +23,58 @@ Use these release notes to learn about the latest updates to {{site.data.keyword
 {: shortdesc}
 
 ## 20 August 2026
-{: #activity-tracker-august2026}
+{: #activity-tracker-aug2026}
 {: release-note}
 
 CIDR blocks added
-:  Public and private CIDR blocks are added to {{site.data.keyword.atracker_full}} for Sydney (au-syd) and Osaka (jp-osa). See [CIDR blocks](/docs/atracker?topic=atracker-cidr).
+: Public and private CIDR blocks are added to {{site.data.keyword.atracker_full}} for Sydney (au-syd) and Osaka (jp-osa). See [CIDR blocks](/docs/atracker?topic=atracker-cidr).
 
 ## 06 August 2026
-{: #activity-tracker-august0626}
+{: #activity-tracker-aug0626}
 {: release-note}
 
 CIDR blocks added
-:  Public and private CIDR blocks are added to {{site.data.keyword.atracker_full}} for Tokyo (jp-tok). See [CIDR blocks](/docs/atracker?topic=atracker-cidr).
+: Public and private CIDR blocks are added to {{site.data.keyword.atracker_full}} for Tokyo (jp-tok). See [CIDR blocks](/docs/atracker?topic=atracker-cidr).
 
 ## 30 July 2026
-{: #activity-tracker-july3026}
+{: #activity-tracker-jul3026}
 {: release-note}
 
 CIDR blocks added
-:  Public and private CIDR blocks are added to {{site.data.keyword.atracker_full}} for Dallas (us-south) and Frankfurt (eu-de). See [CIDR blocks](/docs/atracker?topic=atracker-cidr).
+: Public and private CIDR blocks are added to {{site.data.keyword.atracker_full}} for Dallas (us-south) and Frankfurt (eu-de). See [CIDR blocks](/docs/atracker?topic=atracker-cidr).
 
 ## 27 July 2026
-{: #activity-tracker-july2726}
+{: #activity-tracker-jul2726}
 {: release-note}
 
 CIDR blocks added
-:  Public and private CIDR blocks are added to {{site.data.keyword.atracker_full}} for London(eu-gb), Madrid(eu-es), Sao Paulo(br-sao) and Toronto (ca-tor). See [CIDR blocks](/docs/atracker?topic=atracker-cidr).
+: Public and private CIDR blocks are added to {{site.data.keyword.atracker_full}} for London(eu-gb), Madrid(eu-es), Sao Paulo(br-sao) and Toronto (ca-tor). See [CIDR blocks](/docs/atracker?topic=atracker-cidr).
 
 ## 21 July 2026
-{: #activity-tracker-july2126}
+{: #activity-tracker-jul2126}
 {: release-note}
 
 CIDR blocks added
-:  Public and private CIDR blocks are added to {{site.data.keyword.atracker_full}} for Montreal (ca-mon), Chennai (in-che) and Mumbai (in-mum). See [CIDR blocks](/docs/atracker?topic=atracker-cidr).
+: Public and private CIDR blocks are added to {{site.data.keyword.atracker_full}} for Montreal (ca-mon), Chennai (in-che) and Mumbai (in-mum). See [CIDR blocks](/docs/atracker?topic=atracker-cidr).
 
 
-## 25 June 2026
-{: #activity-tracker-june2526}
+## 25 June   2026
+{: #activity-tracker-jun2526}
 {: release-note}
 
 {{site.data.keyword.atracker_short}} support for {{site.data.keyword.appconfig_notm}} targets.
-:   Using the CLI, API, UI, or Terraform, you can configure {{site.data.keyword.atracker_short}} to send events to an {{site.data.keyword.appconfig_notm}} instance. This adds to the existing support for {{site.data.keyword.logs_full_notm}}, {{site.data.keyword.cos_full_notm}}, and {{site.data.keyword.messagehub}} targets.
+: Using the CLI, API, UI, or Terraform, you can configure {{site.data.keyword.atracker_short}} to send events to an {{site.data.keyword.appconfig_notm}} instance. This adds to the existing support for {{site.data.keyword.logs_full_notm}}, {{site.data.keyword.cos_full_notm}}, and {{site.data.keyword.messagehub}} targets.
 
 For more information, see [Managing IBM App Configuration targets](/docs/atracker?topic=atracker-target_v2_appconf).
 
 
 
 ## 02 June 2026
-{: #activity-tracker-june0226}
+{: #activity-tracker-jun0226}
 {: release-note}
 
 CIDR blocks added
-:   Public and private CIDR blocks are added to {{site.data.keyword.atracker_full}} for Dallas (us-south), Frankfurt (eu-de), Tokyo (jp-tok), and Washington DC (us-east). See [CIDR blocks](/docs/atracker?topic=atracker-cidr).
+:  Public and private CIDR blocks are added to {{site.data.keyword.atracker_full}} for Dallas (us-south), Frankfurt (eu-de), Tokyo (jp-tok), and Washington DC (us-east). See [CIDR blocks](/docs/atracker?topic=atracker-cidr).
 
 
 ## 11 May 2026
@@ -82,7 +82,7 @@ CIDR blocks added
 {: release-note}
 
 CIDR blocks added
-:   Public and private CIDR blocks are added to {{site.data.keyword.atracker_full}} for Mumbai (in-mum). See [CIDR blocks](/docs/atracker?topic=atracker-cidr).
+:  Public and private CIDR blocks are added to {{site.data.keyword.atracker_full}} for Mumbai (in-mum). See [CIDR blocks](/docs/atracker?topic=atracker-cidr).
 
 
 ## 06 May 2026
@@ -90,14 +90,14 @@ CIDR blocks added
 {: release-note}
 
 CIDR blocks added
-:   Public and private CIDR blocks are added to {{site.data.keyword.atracker_full}} for Chennai (in-che), Madrid (eu-es), London (eu-gb), and Toronto (ca-tor). See [CIDR blocks](/docs/atracker?topic=atracker-cidr).
+:  Public and private CIDR blocks are added to {{site.data.keyword.atracker_full}} for Chennai (in-che), Madrid (eu-es), London (eu-gb), and Toronto (ca-tor). See [CIDR blocks](/docs/atracker?topic=atracker-cidr).
 
 ## 27 January 2026
 {: #activity-tracker-jan2726}
 {: release-note}
 
 Route rules now support location hierarchies
-:   {{site.data.keyword.atracker_full}} route rules previously only matched exact AT event locations. Moving forward, a rule will match an event if the event's location is within a rule location. For example, rule location `eu-de` will now match event locations: `eu-de`, `eu-de-1`, `eu-de-2`, and `eu-de-3`. Or rule location `jp` will now match all events within Japan. Run `ibmcloud catalog locations` to see the Cloud location hierarchies.
+:  {{site.data.keyword.atracker_full}} route rules previously only matched exact AT event locations. Moving forward, a rule will match an event if the event's location is within a rule location. For example, rule location `eu-de` will now match event locations: `eu-de`, `eu-de-1`, `eu-de-2`, and `eu-de-3`. Or rule location `jp` will now match all events within Japan. Run `ibmcloud catalog locations` to see the Cloud location hierarchies.
 
 ## 31 July 2025
 {: #activity-tracker-jul3125}
@@ -170,7 +170,7 @@ Changes to Management API IP addresses
 : The [API Management IP addresses](/docs/atracker?topic=atracker-endpoints) for the Dallas, Frankfurt, London, Sydney and Washington regions are changing on or after 14 October 2024. To avoid disruption, customers with firewalls must include the new IP addresses.
 
 ## 24 June 2024
-{: #activity-tracker-june2424}
+{: #activity-tracker-jun2424}
 {: release-note}
 
 {{site.data.keyword.atracker_short}} support for {{site.data.keyword.logs_full_notm}} targets.
@@ -179,7 +179,7 @@ Changes to Management API IP addresses
 For more information, see [Configuring an IBM Cloud Logs target](/docs/atracker?topic=atracker-getting-started-target-cloud-logs) and [Managing IBM Cloud Logs targets](/docs/atracker?topic=atracker-target_v2_icl&interface=ui)
 
 ## 20 June 2024
-{: #activity-tracker-june2024}
+{: #activity-tracker-jun2024}
 {: release-note}
 
 Configure {{site.data.keyword.atracker_full_notm}} using the IBM Console
