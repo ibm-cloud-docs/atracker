@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2021, 2024
-lastupdated: "2024-12-09"
+  years:  2021, 2026
+lastupdated: "2026-09-17"
 
 keywords:
 
@@ -59,7 +59,7 @@ You can define any of the following information:
 ## IAM permissions
 {: #settings_access}
 
-You must grant users IAM permissions to manage the account settings. For more information, see [Assign access to resources](/docs/account?topic=account-assign-access-resources).
+You must grant users IAM permissions to manage the account settings. For more information, see [Assign access to resources](/docs/iam?topic=iam-assign-access-resources&interface=ui).
 
 If you have the IAM permission to create policies and authorizations, you can grant only the level of access that you have as a user of the target service. For example, if you have viewer access for the target service, you can assign only the viewer role for the authorization. If you attempt to assign a higher permission such as administrator, it might appear that permission is granted, however, only the highest level permission you have for the target service, that is viewer, will be assigned.
 {: important}

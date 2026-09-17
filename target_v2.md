@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-06-29"
+lastupdated: "2026-09-17"
 
 keywords:
 
@@ -60,7 +60,7 @@ You can configure any of the following target types:
 ## IAM Access
 {: #target_v2_iam}
 
-You must grant users IAM permissions to manage targets. For more information, see [Assign access to resources](/docs/account?topic=account-assign-access-resources).
+You must grant users IAM permissions to manage targets. For more information, see [Assign access to resources](/docs/iam?topic=iam-assign-access-resources&interface=ui).
 
 When you define a policy, you can indicate the scope of the permissions. You can choose from granting permissions for a specific region or for the entire account.
 

@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-06-25"
+lastupdated: "2026-09-17"
 
 keywords: Observability
 
@@ -30,7 +30,7 @@ You can use {{site.data.keyword.atracker_short}}, a platform service, to manage 
 
 - [Install the {{site.data.keyword.atracker_full_notm}} CLI](/docs/atracker?topic=atracker-atracker-cli-config).
 
-- You must have a user ID with permissions to manage {{site.data.keyword.atracker_full_notm}}. For more information about IAM roles and how to assign them, see [Managing access with IAM](/docs/atracker?topic=atracker-iam) and [IAM roles](/docs/account?topic=account-assign-access-resources).
+- You must have a user ID with permissions to manage {{site.data.keyword.atracker_full_notm}}. For more information about IAM roles and how to assign them, see [Managing access with IAM](/docs/atracker?topic=atracker-iam) and [IAM roles](/docs/iam?topic=iam-assign-access-resources&interface=ui).
 
 
 
@@ -57,7 +57,7 @@ When you set the metadata location, check any compliance or industry regulations
 A target defines where auditing events are collected. For more information about targets, see [Understanding how targets work in your account](/docs/atracker?topic=atracker-target_v2&interface=cli#target_v2_behavior).
 
 Choose 1 of the following options to configure a target in your account: 
-- [Configuring an {{site.data.keyword.appconfig_notm}} target](/docs/atracker?topic=atracker-getting-started-target-apprapp). 
+- [Configuring an {{site.data.keyword.appconfig_notm}} target](/docs/atracker?topic=atracker-target_v2_appconf&interface=ui). 
 - [Configuring an {{site.data.keyword.cos_full}} target](/docs/atracker?topic=atracker-getting-started-target-cos).
 - [Configuring an {{site.data.keyword.logs_full_notm}} target](/docs/atracker?topic=atracker-target_v2_icl).
 - [Configuring an {{site.data.keyword.messagehub}} target](/docs/atracker?topic=atracker-getting-started-target-event-streams).
