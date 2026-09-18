@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-09-04"
+lastupdated: "2026-09-17"
 
 keywords:
 
@@ -40,7 +40,7 @@ When you define a target in {{site.data.keyword.cos_full_notm}} (COS), consider 
 ## IAM Access
 {: #target_v2_iam_access_cos}
 
-You must grant users IAM permissions to manage targets. For more information, see [Assign access to resources](/docs/account?topic=account-assign-access-resources).
+You must grant users IAM permissions to manage targets. For more information, see [Assign access to resources](/docs/iam?topic=iam-assign-access-resources&interface=ui).
 
 When you define a policy, you can indicate the scope of the permissions. You can choose from granting permissions for a specific region or for the entire account.
 
@@ -263,7 +263,7 @@ Use this command to create a {{site.data.keyword.cos_full_notm}} target to be us
 :   The CRN of the {{site.data.keyword.cos_full_notm}} instance.
 
 `--api-key COS_API_KEY` | `@COS_API_KEY_FILE`
-:   Your [API key](/docs/account?topic=account-manapikey) value or a reference to the API Key file used to gain access.  For example, `ibmcloud login --apikey $KEYFILE`
+:   Your [API key](/docs/iam?topic=iam-manapikey) value or a reference to the API Key file used to gain access.  For example, `ibmcloud login --apikey $KEYFILE`
 
 `--service-to-service-enabled`
 :   Indicates if [service-to-service authorization](/docs/atracker?topic=atracker-target_v2_cos&interface=ui#target_v2_cos_s2s_ui) has been enabled for the bucket.  Specify `TRUE` if service-to-service authorization is enabled and `FALSE` if service-to-service authorization is not enable.  By default, `service_to_service_enabled` is `FALSE`.

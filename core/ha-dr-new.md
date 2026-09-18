@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-09-04"
+lastupdated: "2026-09-17"
 
 keywords: HA for IBM Cloud Activity Tracker Event Routing, DR for IBM Cloud Activity Tracker Event Routing, IBM Cloud Activity Tracker Event Routing recovery time objective, IBM Cloud Activity Tracker Event Routing recovery point objective
 
@@ -315,4 +315,4 @@ All upgrades follow the {{site.data.keyword.IBM_notm}} service best practices an
 Complex changes are enabled and disabled with feature flags to control exposure.
 
 
-Changes that impact customer workloads are detailed in notifications. For more information, see [monitoring notifications and status](/docs/account?topic=account-viewing-cloud-status) for planned maintenance, announcements, and release notes that impact this service.
+Changes that impact customer workloads are detailed in notifications. For more information, see [monitoring notifications and status](/docs/account) for planned maintenance, announcements, and release notes that impact this service.

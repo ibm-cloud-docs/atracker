@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2021, 2025
-lastupdated: "2025-04-10"
+  years:  2021, 2026
+lastupdated: "2026-09-17"
 
 keywords:
 
@@ -63,13 +63,13 @@ In addition, you must define a backup metadata region for your metadata backup. 
 
 When you configure an environment with a backup target, you need to consider the following:
 
-* Context-based restrictions give account owners and administrators the ability to define and enforce access restrictions for {{site.data.keyword.cloud_notm}} resources based on a rule's criteria. The criteria includes the network location of access requests, the endpoint type from where the request is sent, and sometimes the API that the request tries to access. These restrictions work with traditional IAM policies, which are based on identity, to provide an additional layer of protection. For more information, see [What are context-based restrictions?](/docs/account?topic=account-context-restrictions-whatis)
+* Context-based restrictions give account owners and administrators the ability to define and enforce access restrictions for {{site.data.keyword.cloud_notm}} resources based on a rule's criteria. The criteria includes the network location of access requests, the endpoint type from where the request is sent, and sometimes the API that the request tries to access. These restrictions work with traditional IAM policies, which are based on identity, to provide an additional layer of protection. For more information, see [What are context-based restrictions?](/docs/iam?topic=iam-context-restrictions-whatis)
 
    If context-based rules are configured in the account, make sure that the rules are defined for both the primary and backup locations. 
 
    You can configure context-based restrictions rules for {{site.data.keyword.cos_full_notm}} (COS),{{site.data.keyword.logs_full_notm}}, and {{site.data.keyword.messagehub_full}} targets.
 
-   For a full list of services supporting context-based restrictions, see [Services integrated with context-based restrictions](/docs/account?topic=account-context-restrictions-whatis#cbr-adopters).
+   For a full list of services supporting context-based restrictions, see [Services integrated with context-based restrictions](/docs/iam?topic=iam-context-restrictions-whatis#cbr-adopters).
 
 * {{site.data.keyword.iamlong}} (IAM) enables you to securely control access to all cloud resources consistently in the {{site.data.keyword.cloud_notm}}. The IAM permissions and authorizations must allow the service to route events to both the primary and backup targets.
 

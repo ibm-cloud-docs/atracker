@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2021, 2025
-lastupdated: "2025-05-22"
+  years:  2021, 2026
+lastupdated: "2026-09-17"
 
 keywords:
 
@@ -21,7 +21,7 @@ Buckets are a way to organize your data in an {{site.data.keyword.cos_full_notm}
 {: shortdesc}
 
 
-To manage buckets, your user must be granted permissions to work with buckets on the {{site.data.keyword.cos_full_notm}} instance. For more information about roles, see [Identity and Access Management roles](/docs/cloud-object-storage?topic=cloud-object-storage-getting-started-with-iam&interface=ui).
+To manage buckets, your user must be granted permissions to work with buckets on the {{site.data.keyword.cos_full_notm}} instance. For more information about roles, see [Identity and Access Management roles](/docs/cloud-object-storage?topic=cloud-object-storage-cos-ha-dr).
 
 
 
@@ -173,7 +173,7 @@ To define a policy, first you must set the scope. You can define a policy to gra
 After you define the scope of the access policy, you must assign a role.
 - For more information about what actions are allowed per role within the {{site.data.keyword.cos_short}} service, see [COS Identity and Access Management roles](/docs/cloud-object-storage?topic=cloud-object-storage-getting-started-with-iam&interface=ui).
 - For more information about bucket permissions per role, see [Bucket permissions](/docs/cloud-object-storage?topic=cloud-object-storage-iam-bucket-permissions).
-- For information about assigning roles, see [Managing IAM access](/docs/account?topic=account-assign-access-resources).
+- For information about assigning roles, see [Managing IAM access](/docs/iam?topic=iam-assign-access-resources&interface=ui).
 
 IAM policies are enforced hierarchically, from greatest level of access to most restricted. Conflicts are resolved to the more permissive policy. For example, if a user has both the `Writer` and `Reader` service access role on a bucket, the policy granting the `Reader` role is ignored. This is also applicable to service instance and bucket level policies, for example:
 - If a user has a policy granting the `Writer` role on a service instance and the `Reader` role on a single bucket, the bucket-level policy is ignored.

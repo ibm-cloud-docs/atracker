@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-09-08"
+lastupdated: "2026-09-17"
 
 keywords:
 
@@ -91,7 +91,7 @@ The following table lists database services that send auditing events:
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
 | [{{site.data.keyword.cloudantfull}}](/docs/Cloudant?topic=Cloudant-getting-started-with-cloudant) | `cloudantnosqldb`  | [Location-based events](/docs/Cloudant?topic=Cloudant-at_events) |
-| [{{site.data.keyword.dashdblong_notm}}](/docs/db2wh-saas?topic=db2wh-saas-getting-started) | `dashdb` | [Global events](/docs/atracker?topic=atracker-at_events_dashdb) |
+| [{{site.data.keyword.dashdblong_notm}}](/docs/db2wh-saas?topic=db2wh-saas-getting-started) | `dashdb` | [Global events](/docs/atracker?topic=atracker-at_events) |
 | [{{site.data.keyword.databases-for-postgresql_full}}](/docs/databases-for-postgresql?topic=databases-for-postgresql-getting-started) | `databases-for-postgresql` | [Location-based events](/docs/databases-for-postgresql?topic=databases-for-postgresql-at_events) |
 | [{{site.data.keyword.databases-for-redis_full_notm}}](/docs/databases-for-redis?topic=databases-for-redis-getting-started) | `databases-for-redis` | [Location-based events](/docs/databases-for-redis?topic=databases-for-redis-at_events) |
 | [{{site.data.keyword.databases-for-elasticsearch_full_notm}}](/docs/databases-for-elasticsearch?topic=databases-for-elasticsearch-getting-started) | `databases-for-elasticsearch` | [Location-based events](/docs/databases-for-elasticsearch?topic=databases-for-elasticsearch-at_events) |
@@ -131,8 +131,8 @@ The following table lists integration services that send auditing events:
 
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
-| [{{site.data.keyword.messagehub_full}}](/docs/EventStreams?topic=EventStreams-getting-started)| `messagehub` | [Location-based events](/docs/EventStreams?topic=EventStreams-at_events) |
-| [MQ on IBM Cloud](/docs/mqcloud?topic=mqcloud-getting_started) |`mqcloud` | [Location-based events](/docs/mqcloud?topic=mqcloud-at_events) |
+| [{{site.data.keyword.messagehub_full}}](/docs//EventStreams?topic=EventStreams-quick_setup_guide&interface=ui)| `messagehub` | [Location-based events](/docs/EventStreams?topic=EventStreams-at_events) |
+| [MQ on IBM Cloud](/docs/mqcloud?topic=mqcloud-getting_started) |`mqcloud` | [Location-based events](/docs/mqcloud?topic=mqcloud-getting_started) |
 |[{{site.data.keyword.apiconnect_long}}](/docs/apiconnect?topic=apiconnect-getting-started)| `apiconnect` | [Location-based events](/docs/apiconnect?topic=apiconnect-at_events) |
 {: caption="List of integration Cloud services" caption-side="top"}
 
@@ -172,15 +172,15 @@ The following table lists platform services that send auditing events:
 
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
-| [Billing](/docs/account?topic=account-account-services&interface=ui#billing-acct-mgmt ) | `billing` | [Global events](/docs/account?topic=account-at_events_am#account_management_events) |
-| [User management](/docs/account?topic=account-iamuserinv) | `user-management` | [Global events](/docs/account?topic=account-at_events_am#at_events_acc_mgt_users) |
+| [Billing](/docs/iam?topic=iam-account-services&interface=ui#billing-acct-mgmt) | `billing` | [Global events](/docs/account?topic=account-at_events_am#account_management_events) |
+| [User management](/docs/iam?topic=iam-iamuserinv&interface=ui) | `user-management` | [Global events](/docs/account?topic=account-at_events_am#at_events_acc_mgt_users) |
 | [Provisioning](/docs/account?topic=account-manage_resource) | `provisioning` | [Global events](/docs/atracker?topic=atracker-at_events_rc#at_events_rc) |
 | [Carbon Calculator](/docs/account?topic=account-what-is-cloud-calc) | `carbon-calculator` | [Global events](/docs/account?topic=account-at_events_am#at_events_carbon_calculator) |
-| [IBM Cloud Identity Access](/docs/account?topic=account-iamoverview)   | `iam-identity`   \n `iam-groups`   \n `iam-am` | [Global events](/docs/iam?topic=iam-at_events_iam) |
+| [IBM Cloud Identity Access](/docs/iam?topic=iam-iamoverview)   | `iam-identity`   \n `iam-groups`   \n `iam-am` | [Global events](/docs/iam?topic=iam-at_events_iam) |
 | [Global Search Service](/docs/account?topic=account-tag) | `global-search-tagging` | [Global events](/docs/account?topic=account-at_events_am#at_events_catalog_management) |
 | [Catalog Management](/docs/account?topic=account-filter-account)`[*]` | `globalcatalog-collection` | [Global events](/docs/account?topic=account-at_events_am#at_events_catalog_management) |
 | [Software instance](/docs/account?topic=account-sw-instance-details) `[*]` | `globalcatalog-instance` | [Global events](/docs/account?topic=account-at_events_am#at_events_sw_instance) |
-| [Context-based restrictions](/docs/account?topic=account-context-restrictions-whatis) | `context-based-restrictions` | [Global events](/docs/iam?topic=iam-at_events_cbr) |
+| [Context-based restrictions](/docs/iam?topic=iam-context-restrictions-whatis) | `context-based-restrictions` | [Global events](/docs/iam?topic=iam-at_events_cbr) |
 | [Projects](/docs/secure-enterprise?topic=secure-enterprise-understanding-projects) | `project` | [Global events](/docs/secure-enterprise?topic=secure-enterprise-at_events) |
 {: caption="List of platform services" caption-side="top"}
 
@@ -195,11 +195,11 @@ The following table lists security Cloud services that send auditing events:
 
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
-| [{{site.data.keyword.appid_full}}](/docs/appid?topic=appid-getting-started) | `appid` | [Location-based events](/docs/appid?topic=appid-at_events)   |
+| [{{site.data.keyword.appid_full}}](/docs/workload-protection?topic=workload-protection-getting-started) | `appid` | [Location-based events](/docs/appid?topic=appid-at_events)   |
 | [{{site.data.keyword.cloud_notm}} {{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-get-started) | `hs-crypto` | [Location-based events](/docs/hs-crypto?topic=hs-crypto-at-events) |
 | [{{site.data.keyword.secrets-manager_full}}](/docs/secrets-manager?topic=secrets-manager-getting-started) | `secrets-manager` |  [Location-based events](/docs/secrets-manager?topic=secrets-manager-at_events) |
 | [{{site.data.keyword.keymanagementservicelong}}](/docs/key-protect?topic=key-protect-getting-started-tutorial#getting-started-tutorial) | `kms` | [Location-based events](/docs/key-protect?topic=key-protect-at-events) |
-| [{{site.data.keyword.compliance_full}}](/docs/security-compliance?topic=security-compliance-getting-started) `[*]`| `compliance`  \n `security-advisor` | [Location-based events](/docs/security-compliance?topic=security-compliance-at_events) |
+| [{{site.data.keyword.compliance_full}}](/docs/security-compliance?topic=security-compliance-getting-started) `[*]`| `compliance`  \n `security-advisor` | [Location-based events](/docs/workload-protection?topic=workload-protection-at_events) |
 {: caption="List of security services" caption-side="top"}
 
 `[*]` - Event routing available to {{site.data.keyword.logs_full_notm}} only.
@@ -214,7 +214,7 @@ The following table lists storage services that send auditing events:
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
 | [{{site.data.keyword.cos_full}}](/docs/cloud-object-storage?topic=cloud-object-storage-getting-started-cloud-object-storage)| `cloud-object-storage` | [Global and location-based events `[*]`](/docs/cloud-object-storage?topic=cloud-object-storage-at-events) |
-| [{{site.data.keyword.cephaas_full}}](/docs/cephaas?topic=cephaas-getting-started)| `software-defined-storage` | [Global events](/docs/cephaas?topic=cephaas-at_events) |
+| [{{site.data.keyword.cephaas_full}}](/docs/cephaas?topic=cephaas?topic=cephaas-getting-started-cephaas)| `software-defined-storage` | [Global events](/docs/cephaas?topic=cephaas-at_events_cephaas) |
 {: caption="List of storage events" caption-side="top"}
 
 
@@ -281,7 +281,7 @@ The following table lists Watson AI services that send auditing events:
 | [{{site.data.keyword.knowledgestudiofull}}](/docs/watson-knowledge-studio) | `knowledge-studio` | [Location-based events](/docs/watson-knowledge-studio?topic=watson-knowledge-studio-activity-tracker-events) |
 | [{{site.data.keyword.nlufull}}](/docs/natural-language-understanding) | `natural-language-understanding` | [Location-based events](/docs/natural-language-understanding?topic=natural-language-understanding-at_events) |
 | [watsonx.governance ({{site.data.keyword.aios_full_notm}})](https://dataplatform.cloud.ibm.com/docs/content/svc-welcome/aiopenscale.html?context=wx&audience=wdp){: external} | `aiopenscale` | [Location-based events](https://dataplatform.cloud.ibm.com/docs/content/wsj/admin/at-events.html?context=wx&audience=wdp&locale=en#wos){: external} |
-| [watsonx.orchestrate](https://www.ibm.com/docs/en/watsonx/watson-orchestrate/base?topic=getting-started-watsonx-orchestrate){: external} |  `watsonx-orchestrate` | [Location-based events](https://www.ibm.com/docs/en/SSAVQO/security/activity_tracker.html){: external} |
+| [watsonx.orchestrate](https://www.ibm.com/docs/en/watsonx/watson-orchestrate/base?topic=getting-started){: external} |  `watsonx-orchestrate` | [Location-based events](https://www.ibm.com/docs/en/SSAVQO/security/activity_tracker.html){: external} |
 | [{{site.data.keyword.conversationfull}}](/docs/watson-assistant?topic=watson-assistant-getting-started) | `conversation`  | [Location-based events](/docs/watson-assistant?topic=watson-assistant-at-events) |
 | [{{site.data.keyword.discoveryfull}}](/docs/discovery-data?topic=discovery-data-getting-started) | `discovery` | [Location-based events](/docs/discovery-data?topic=discovery-data-at_events)  |
 | [{{site.data.keyword.speechtotextfull}}](/docs/speech-to-text?topic=speech-to-text-gettingStarted) | `speech-to-text` | [Location-based events](/docs/speech-to-text?topic=speech-to-text-at_events) |
@@ -301,5 +301,5 @@ The following table lists Power IaaS infrastructure services that send auditing 
 
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
-| [{{site.data.keyword.powerSys_notm}}](/docs/power-iaas?topic=power-iaas-getting-started) | `power-iaas` | [Location-based events](/docs/power-iaas?topic=power-iaas-at-events) |
+| [{{site.data.keyword.powerSys_notm}}](/docs/power-iaas?topic=power-iaas-getting-started) | `power-iaas` | [Location-based events](/docs/power-iaas?topic=power-iaas-cloud-log-events) |
 {: caption="List of Power Systems Virtual Server infrastructure services" caption-side="top"}
