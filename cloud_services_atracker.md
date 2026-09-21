@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-09-17"
+lastupdated: "2026-09-21"
 
 keywords:
 
@@ -174,7 +174,7 @@ The following table lists platform services that send auditing events:
 |-------------|------------------|--------|
 | [Billing](/docs/iam?topic=iam-account-services&interface=ui#billing-acct-mgmt) | `billing` | [Global events](/docs/account?topic=account-at_events_am#account_management_events) |
 | [User management](/docs/iam?topic=iam-iamuserinv&interface=ui) | `user-management` | [Global events](/docs/account?topic=account-at_events_am#at_events_acc_mgt_users) |
-| [Provisioning](/docs/account?topic=account-manage_resource) | `provisioning` | [Global events](/docs/atracker?topic=atracker-at_events_rc#at_events_rc) |
+| [Provisioning](/docs/account?topic=account-manage_resource) | `provisioning` | [Global events](/docs/atracker?topic=atracker-at_events) |
 | [Carbon Calculator](/docs/account?topic=account-what-is-cloud-calc) | `carbon-calculator` | [Global events](/docs/account?topic=account-at_events_am#at_events_carbon_calculator) |
 | [IBM Cloud Identity Access](/docs/iam?topic=iam-iamoverview)   | `iam-identity`   \n `iam-groups`   \n `iam-am` | [Global events](/docs/iam?topic=iam-at_events_iam) |
 | [Global Search Service](/docs/account?topic=account-tag) | `global-search-tagging` | [Global events](/docs/account?topic=account-at_events_am#at_events_catalog_management) |
@@ -199,7 +199,7 @@ The following table lists security Cloud services that send auditing events:
 | [{{site.data.keyword.cloud_notm}} {{site.data.keyword.hscrypto}}](/docs/hs-crypto?topic=hs-crypto-get-started) | `hs-crypto` | [Location-based events](/docs/hs-crypto?topic=hs-crypto-at-events) |
 | [{{site.data.keyword.secrets-manager_full}}](/docs/secrets-manager?topic=secrets-manager-getting-started) | `secrets-manager` |  [Location-based events](/docs/secrets-manager?topic=secrets-manager-at_events) |
 | [{{site.data.keyword.keymanagementservicelong}}](/docs/key-protect?topic=key-protect-getting-started-tutorial#getting-started-tutorial) | `kms` | [Location-based events](/docs/key-protect?topic=key-protect-at-events) |
-| [{{site.data.keyword.compliance_full}}](/docs/security-compliance?topic=security-compliance-getting-started) `[*]`| `compliance`  \n `security-advisor` | [Location-based events](/docs/workload-protection?topic=workload-protection-at_events) |
+| [{{site.data.keyword.compliance_full}}](/docs/workload-protection?topic=workload-protection-getting-started) `[*]`| `compliance`  \n `security-advisor` | [Location-based events](/docs/workload-protection?topic=workload-protection-at_events) |
 {: caption="List of security services" caption-side="top"}
 
 `[*]` - Event routing available to {{site.data.keyword.logs_full_notm}} only.
@@ -214,7 +214,7 @@ The following table lists storage services that send auditing events:
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
 | [{{site.data.keyword.cos_full}}](/docs/cloud-object-storage?topic=cloud-object-storage-getting-started-cloud-object-storage)| `cloud-object-storage` | [Global and location-based events `[*]`](/docs/cloud-object-storage?topic=cloud-object-storage-at-events) |
-| [{{site.data.keyword.cephaas_full}}](/docs/cephaas?topic=cephaas?topic=cephaas-getting-started-cephaas)| `software-defined-storage` | [Global events](/docs/cephaas?topic=cephaas-at_events_cephaas) |
+| [{{site.data.keyword.cephaas_full}}](/docs/cephaas?topic=cephaas-getting-started-cephaas)| `software-defined-storage` | [Global events](/docs/cephaas?topic=cephaas-at_events_cephaas) |
 {: caption="List of storage events" caption-side="top"}
 
 

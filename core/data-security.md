@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-09-17"
+lastupdated: "2026-09-21"
 
 keywords:
 
@@ -87,7 +87,7 @@ You can route auditing data to any of the following target types:
 - An {{site.data.keyword.cos_full_notm}} bucket: You create and manage the bucket, and the data that is collected in the bucket. For more information about COS data security, see [Data security](/docs/cloud-object-storage?topic=cloud-object-storage-security).
 - An {{site.data.keyword.logs_full_notm}} instance: You manage the instance and the data that is collected in the instance. For more information, see [Data security](/docs/cloud-logs?topic=cloud-logs-mng-data).
 - An {{site.data.keyword.messagehub}} topic: You create and manage the topic. For more information, see [Data security](/docs/EventStreams?topic=EventStreams-data_security). 
-- An {{site.data.keyword.appconfig_notm}} instance: You manage the instance and the data that is collected in the instance. For more information, see [Data security](/docs/app-configuration?topic=app-configuration-ac-data-security-and-compliance-data).
+- An {{site.data.keyword.appconfig_notm}} instance: You manage the instance and the data that is collected in the instance. For more information, see [Data security](/docs/app-configuration/build/app-configuration-review-output?topic=app-configuration-ac-data-security-and-compliance).
 
 
 ## How can you delete any stored data

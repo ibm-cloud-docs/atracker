@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years:  2021, 2025
-lastupdated: "2025-09-23"
+  years:  2021, 2026
+lastupdated: "2026-09-21"
 
 keywords:
 
@@ -25,4 +25,4 @@ If you have problems or questions when using the {{site.data.keyword.atracker_fu
 
 
 
-* If you still can't resolve the problem, you can open an IBM support ticket. For information about opening an IBM support ticket, or about support levels and ticket severities, see [Creating support cases](/docs/account?topic=account-open-case&interface=ui).
+* If you still can't resolve the problem, you can open an IBM support ticket. For information about opening an IBM support ticket, or about support levels and ticket severities, see [Creating support cases](/docs/support?topic=support-open-case&interface=ui).
