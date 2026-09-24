@@ -40,6 +40,6 @@
     "terraform": "https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/atracker_route"
   },
   "section_updates": {
-    "view_more": "/docs/atracker?topic=atracker-activity-tracker-release-notes"
+    "view_more": "/docs/atracker?topic=atracker-atracker-release-notes"
   }
 }

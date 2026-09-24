@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-09-17"
+lastupdated: "2026-09-21"
 
 keywords:
 
@@ -200,7 +200,7 @@ Choose 1 of the following options to configure a target in your account:
 - [Managing {{site.data.keyword.cos_full_notm}} (COS) targets](/docs/atracker?topic=atracker-target_v2_cos).
 - [Managing {{site.data.keyword.messagehub_full}} targets](/docs/atracker?topic=atracker-target_v2_ies)
 - [Managing {{site.data.keyword.logs_full_notm}} targets](/docs/atracker?topic=atracker-target_v2_icl) 
-- [Managing {{site.data.keyword.appconfig_notm}}targets](/docs/atracker?topic=atracker-target_v2_apprapp) 
+- [Managing {{site.data.keyword.appconfig_notm}}targets](/docs/atracker?topic=atracker-target_v2&interface=ui) 
 
 ## Managing targets using the UI
 {: #target-v2-ui}
