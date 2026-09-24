@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-09-21"
+lastupdated: "2026-09-24"
 
 keywords:
 
@@ -15,6 +15,9 @@ subcollection: atracker
 
 # Managing targets
 {: #target_v2}
+
+Only Event Streams Gen 1 is supported.
+{: important}
 
 You can manage {{site.data.keyword.atracker_full}} targets in your account by using the {{site.data.keyword.atracker_short}} CLI, the {{site.data.keyword.atracker_short}} REST API, and Terraform scripts. A target is a resource where you can collect auditing events.
 {: shortdesc}
