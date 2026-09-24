@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-09-21"
+lastupdated: "2026-09-24"
 
 keywords:
 
@@ -91,7 +91,7 @@ The following table lists database services that send auditing events:
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
 | [{{site.data.keyword.cloudantfull}}](/docs/Cloudant?topic=Cloudant-getting-started-with-cloudant) | `cloudantnosqldb`  | [Location-based events](/docs/Cloudant?topic=Cloudant-at_events) |
-| [{{site.data.keyword.dashdblong_notm}}](/docs/db2wh-saas?topic=db2wh-saas-getting-started) | `dashdb` | [Global events](/docs/atracker?topic=atracker-at_events) |
+| [{{site.data.keyword.dashdblong_notm}}](/docs/db2wh-saas?topic=db2wh-saas-auditing-for-ibm-db2-warehouse-as-a-service) | `dashdb` | [Global events](/docs/atracker?topic=atracker-at_events) |
 | [{{site.data.keyword.databases-for-postgresql_full}}](/docs/databases-for-postgresql?topic=databases-for-postgresql-getting-started) | `databases-for-postgresql` | [Location-based events](/docs/databases-for-postgresql?topic=databases-for-postgresql-at_events) |
 | [{{site.data.keyword.databases-for-redis_full_notm}}](/docs/databases-for-redis?topic=databases-for-redis-getting-started) | `databases-for-redis` | [Location-based events](/docs/databases-for-redis?topic=databases-for-redis-at_events) |
 | [{{site.data.keyword.databases-for-elasticsearch_full_notm}}](/docs/databases-for-elasticsearch?topic=databases-for-elasticsearch-getting-started) | `databases-for-elasticsearch` | [Location-based events](/docs/databases-for-elasticsearch?topic=databases-for-elasticsearch-at_events) |
