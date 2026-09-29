@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-09-24"
+lastupdated: "2026-09-29"
 
 keywords:
 
@@ -131,7 +131,7 @@ The following table lists integration services that send auditing events:
 
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
-| [{{site.data.keyword.messagehub_full}}](/docs//EventStreams?topic=EventStreams-quick_setup_guide&interface=ui)| `messagehub` | [Location-based events](/docs/EventStreams?topic=EventStreams-at_events) |
+| [{{site.data.keyword.messagehub_full}}](/docs/EventStreams?topic=EventStreams-quick_setup_guide&interface=ui)| `messagehub` | [Location-based events](/docs/EventStreams?topic=EventStreams-at_events) |
 | [MQ on IBM Cloud](/docs/mqcloud?topic=mqcloud-getting_started) |`mqcloud` | [Location-based events](/docs/mqcloud?topic=mqcloud-getting_started) |
 |[{{site.data.keyword.apiconnect_long}}](/docs/apiconnect?topic=apiconnect-getting-started)| `apiconnect` | [Location-based events](/docs/apiconnect?topic=apiconnect-at_events) |
 {: caption="List of integration Cloud services" caption-side="top"}

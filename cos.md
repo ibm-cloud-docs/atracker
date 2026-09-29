@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-09-21"
+lastupdated: "2026-09-29"
 
 keywords:
 
@@ -86,8 +86,6 @@ Complete the following steps to create a bucket through the {{site.data.keyword.
     {: important}
 
     All objects are encrypted by default using randomly generated keys and an all-or-nothing-transform. While this default encryption model provides at-rest security, some workloads need to be in possession of the encryption keys used. For more information, see [Manage encryption](/docs/cloud-object-storage?topic=cloud-object-storage-encryption).
-
-
 
 
 

@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-09-21"
+lastupdated: "2026-09-29"
 
 keywords:
 
@@ -113,4 +113,4 @@ To delete auditing data, check the target type instructions.
 - For {{site.data.keyword.logs_full_notm}}, see [Data security](/docs/cloud-logs?topic=cloud-logs-mng-data).
 - For {{site.data.keyword.cos_full_notm}} bucket, see [Data security](/docs/cloud-object-storage?topic=cloud-object-storage-security).
 - For {{site.data.keyword.messagehub}}, see [Data security](/docs/EventStreams?topic=EventStreams-data_security). 
-- For {{site.data.keyword.appconfig_notm}}, see [Data security](/docs/app-configuration?topic=app-configuration-ac-data-security-and-compliance). 
+- For {{site.data.keyword.appconfig_notm}}, see [Data security](/docs/app-configuration/build/app-configuration-review-output?topic=app-configuration-ac-data-security-and-compliance). 
