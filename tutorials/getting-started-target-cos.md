@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-09-17"
+lastupdated: "2026-10-01"
 
 keywords:
 
@@ -142,25 +142,25 @@ The region identifies the location from which the writing to the bucket will occ
 To [create a target](/docs/atracker?topic=atracker-target_v2_cos&interface=cli#target-create-cli-cos), run the following command:
 
 ```text
-ibmcloud atracker target create --name <TARGET_NAME> --type cloud-object-storage --endpoint <COS_ENDPOINT> --target-crn <COS_TARGET_CRN> --bucket <BUCKET> --region <REGION> --service-to-service-enabled true
+ibmcloud atracker target create --name TARGET_NAME --type cloud-object-storage --endpoint COS_ENDPOINT--target-crn COS_TARGET_CRN --bucket BUCKET --region REGION --service-to-service-enabled true
 ```
 {: pre}
 
 Where
 
-`--region <REGION>`
+`--region REGION`
 :   Name of the region that will process the events, for example, `us-south` or `eu-gb`. If not specified, the region logged into, or targeted, will be used.
 
-`--name <TARGET_NAME>`
+`--name TARGET_NAME`
 :   The name to be given to the target.
 
-`--endpoint <COS_ENDPOINT>`
+`--endpoint COS_ENDPOINT`
 :   The {{site.data.keyword.cos_full_notm}} endpoint to be associated with the {{site.data.keyword.cos_full_notm}} bucket.
 
-`--bucket <BUCKET>`
+`--bucket BUCKET`
 :    The name of the {{site.data.keyword.cos_full_notm}} bucket to be associated with the target.
 
-`--target-crn <COS_TARGET_CRN>`
+`--target-crn COS_TARGET_CRN`
 :   The CRN of the {{site.data.keyword.cos_full_notm}} instance.
 
 `--service-to-service-enabled`

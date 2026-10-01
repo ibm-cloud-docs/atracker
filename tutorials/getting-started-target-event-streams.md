@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-09-17"
+lastupdated: "2026-10-01"
 
 keywords:
 
@@ -220,28 +220,28 @@ ibmcloud iam authorization-policy-create atracker messagehub Writer --source-ser
 To [create a target](/docs/atracker?topic=atracker-target_v2_ies&interface=cli#target-create-cli-ies), run the following command:
 
 ```text
-ibmcloud atracker target create --name <TARGET_NAME> --type event-streams --endpoint <EVENT_STREAMS_ENDPOINT> --target-crn <EVENT_STREAMS_TARGET_CRN> --topic <TOPIC> --region <REGION>
+ibmcloud atracker target create --name TARGET_NAME --type event-streams --endpoint EVENT_STREAMS_ENDPOINT --target-crn EVENT_STREAMS_TARGET_CRN --topic TOPIC --region REGION
 ```
 {: pre}
 
 Where
 
-`--region <REGION>`
+`--region REGION`
 :   Name of the region that will process the events, for example, `us-south` or `eu-gb`. If not specified, the region logged into, or targeted, will be used.
 
-`--name <TARGET_NAME>`
+`--name TARGET_NAME`
 :   The name to be given to the target.
 
-`--endpoint <EVENT_STREAMS_ENDPOINT>`
+`--endpoint EVENT_STREAMS_ENDPOINT`
 :   The {{site.data.keyword.messagehub}} endpoint to be associated with the topic.
 
-`--topic <TOPIC>`
+`--topic TOPIC`
 :    The name of the {{site.data.keyword.messagehub}} topic to be associated with the target.
 
-`--api-key <EVENTSTREAMS_API_KEY>` | `@EVENTSTREAMS_API_KEY_FILE`
+`--api-key EVENTSTREAMS_API_KEY` | `@EVENTSTREAMS_API_KEY_FILE`
 :   The password value found in the {{site.data.keyword.messagehub}} service credential. This is the IAM API key
 
-`--target-crn <EVENT_STREAMS_TARGET_CRN>`
+`--target-crn EVENT_STREAMS_TARGET_CRN`
 :   The CRN of the {{site.data.keyword.messagehub}} instance.
 
 `--service-to-service-enabled <true/false>`
