@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-09-17"
+lastupdated: "2026-10-01"
 
 keywords: Observability
 
@@ -42,7 +42,7 @@ When you configure {{site.data.keyword.atracker_short}} in your account, you can
 Set these settings to define where and how auditing events are collected, routed, and managed in your account. For example, to configure the primary metadata location that defines the region where all your {{site.data.keyword.atracker_short}} resource definitions are stored, run the following command:
 
 ```pre
-ibmcloud atracker setting update --metadata-region-primary <REGION>
+ibmcloud atracker setting update --metadata-region-primary <REGION> 
 ```
 {: codeblock}
 
@@ -76,7 +76,7 @@ In this step, you will configure a route to redirect regional and global events 
 Run the following command to create the route:
 
 ```text
-ibmcloud atracker route create --name <ROUTE_NAME> --rules
+ibmcloud atracker route create --name <ROUTE_NAME> --rules <ROUTING_RULES>
 ```
 {: pre}
 
@@ -85,7 +85,7 @@ Where
 `--name <ROUTE_NAME>`
 :   The name to be given to the route.
 
-`--rules <ROUTING_RULES>`
+`--rules <ROUTING_RULES>` 
 :   A JSON formatted rule definition enclosed in single quotes. For example:
 
     ```json

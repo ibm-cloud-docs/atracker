@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-06-25"
+lastupdated: "2026-10-01"
 
 keywords:
 
@@ -79,7 +79,7 @@ Complete the following steps:
 Run the following command to create an authorization for the {{site.data.keyword.atracker_full_notm}} service.
 
 ```sh
-ibmcloud iam authorization-policy-create atracker apprapp "ConfigurationUpdateReporter" [--target-service-instance-id <APPCONFIG_SERVICE_INSTANCE>]
+ibmcloud iam authorization-policy-create atracker apprapp "ConfigurationUpdateReporter" [--target-service-instance-id APPCONFIG_SERVICE_INSTANCE]
 ```
 {: codeblock}
 
