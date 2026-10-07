@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-10-01"
+lastupdated: "2026-10-07"
 
 keywords: Observability
 
@@ -144,7 +144,7 @@ You can choose any of the following methods to list objects in a bucket:
 - [List objects in a given bucket through the {{site.data.keyword.cloud_notm}} UI](/docs/atracker?topic=atracker-cos#cos_bucket_list_objects_ui).
 
 
-Alternatively, you can use pre-built, open-source and enterprise-ready [Terraform IBM Modules (TIM)](https://cloud.ibm.com/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim) for [{{site.data.keyword.atracker_full_notm}}](https://registry.terraform.io/modules/terraform-ibm-modules/activity-tracker/ibm/latest){: external} to configure targets, routes and account settings. This module simplifies the creation and management of targets and routes following the best practices.
+Alternatively, you can use pre-built, open-source and enterprise-ready [Terraform IBM Modules (TIM)](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim) for [{{site.data.keyword.atracker_full_notm}}](https://registry.terraform.io/modules/terraform-ibm-modules/activity-tracker/ibm/latest){: external} to configure targets, routes and account settings. This module simplifies the creation and management of targets and routes following the best practices.
 {: tip}
 
 
