@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-09-24"
+lastupdated: "2026-10-08"
 
 keywords:
 
@@ -109,7 +109,7 @@ You can validate a target by using the {{site.data.keyword.metrics_router_full_n
 | `cloud-object-storage` | [Validate via CLI](/docs/atracker?topic=atracker-target_v2_cos&interface=cli#target-validate-cli-cos) | [Validate via API](/docs/atracker?topic=atracker-target_v2_cos&interface=api#target-validate-api-cos) |
 | `event_streams` | [Validate via CLI](/docs/atracker?topic=atracker-target_v2_ies&interface=cli#target-validate-cli-ies) | [Validate via API](/docs/atracker?topic=atracker-target_v2_ies&interface=api#target-validate-api-ies) |
 | `cloud_logs` | [Validate via CLI](/docs/atracker?topic=atracker-target_v2_icl&interface=cli#target-validate-cli-icl) | [Validate via API](/docs/atracker?topic=atracker-target_v2_icl&interface=api#target-validate-api-icl) | 
-| `app_config` | [Validate via CLI](/docs/atracker?topic=atracker-target_v2_icl&interface=cli#target-validate-cli-icl) | [Validate via API](/docs/atracker?topic=atracker-target_v2_icl&interface=api#target-validate-api-appconf) | 
+| `app_config` | [Validate via CLI](/docs/atracker?topic=atracker-target_v2_appconf&interface=cli#target-validate-cli-appconf) | [Validate via API](/docs/atracker?topic=atracker-target_v2_appconf&interface=api#target-validate-api-appconf) | 
 {: caption="Validating options by target type" caption-side="top"}
 
 
