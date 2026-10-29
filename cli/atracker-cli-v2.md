@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2026
-lastupdated: "2026-10-12"
+lastupdated: "2026-10-29"
 
 subcollection: atracker
 
@@ -326,7 +326,7 @@ Use this command to create a {{site.data.keyword.messagehub_full}} target to be 
 :   Currently supported format is JSON. If specified, output will be returned in JSON format.  If `JSON` is not specified, output will be returned in a tabular format.
 
 `help` | `--help` | `-h`
-:   List options available for the command.
+:   List options available for the command.## ibmcloud atracker target create (COS).
 
 Use this command to create a {{site.data.keyword.messagehub_full}} target to be used to configure a destination for activity events.
 
@@ -377,7 +377,7 @@ Use this command to create a {{site.data.keyword.messagehub_full}} target to be 
 :   Currently supported format is JSON. If specified, output will be returned in JSON format.  If `JSON` is not specified, output will be returned in a tabular format.
 
 `help` | `--help` | `-h`
-:   List options available for the command.
+:   List options available for the command.## ibmcloud atracker target create.
 
 Use this command to create a {{site.data.keyword.logs_full_notm}} target to be used to configure a destination for activity events.
 
@@ -430,7 +430,7 @@ Use this command to create a {{site.data.keyword.appconfig_full}} target to be u
 :   Currently supported format is JSON. If specified, output will be returned in JSON format.  If `JSON` is not specified, output will be returned in a tabular format.
 
 `help` | `--help` | `-h`
-:   List options available for the command.
+:   List options available for the command.## ibmcloud atracker target create.
 
 Use this command to create an {{site.data.keyword.appconfig_notm}} target to be used to configure a destination for activity events.
 
@@ -524,14 +524,14 @@ ibmcloud atracker target update --target TARGET [--name TARGET_NAME] [ [--file E
 ### Command options
 {: #target-update-options-ies}
 
-`--target TARGET`
-:   The ID or current target name.
-
 `--name TARGET_NAME`
 :   The name to be given to the target.
 
     Do not include any personal identifying information (PII) in any resource names.
     {: important}
+
+`--type TARGET_TYPE`
+:   Set the `TARGET_TYPE` to `cloud_object_storage` for a COS target.
 
 `--file @EVENTSTREAMS_ENDPOINT_DEFINITION_JSON_FILE`
 :   A file containing an endpoint definition in the following format:
@@ -608,6 +608,8 @@ ibmcloud atracker target update --target TARGET [--name TARGET_NAME] ( --file @C
 `help` | `--help` | `-h`
 :   List options available for the command.
 
+
+
 ## `ibmcloud atracker target update` ({{site.data.keyword.appconfig_notm}})
 {: #target-update-cli-appconfig}
 
@@ -648,6 +650,8 @@ ibmcloud atracker target update --target TARGET [--name TARGET_NAME] ( --file @A
 
 `help` | `--help` | `-h`
 :   List options available for the command.
+
+
 
 ## `ibmcloud atracker target rm`
 {: #target-delete-v2-cli}
