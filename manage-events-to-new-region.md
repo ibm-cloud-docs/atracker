@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-09-17"
+lastupdated: "2026-10-01"
 
 keywords: Observability
 
@@ -62,13 +62,13 @@ For example, in this step, you will reconfigure a route to redirect events that 
 Run the following command to create the route:
 
 ```text
-ibmcloud atracker route update --route <ROUTE_NAME> --rules
+ibmcloud atracker route update --route ROUTE_NAME --rules
 ```
 {: pre}
 
 Where
 
-`--route <ROUTE_NAME>`
+`--route ROUTE_NAME`
 :   The name of the route.
 
 `--rules <ROUTING_RULES>`

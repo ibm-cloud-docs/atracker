@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-09-17"
+lastupdated: "2026-10-08"
 
 keywords: Observability
 
@@ -42,11 +42,11 @@ When you configure {{site.data.keyword.atracker_short}} in your account, you can
 Set these settings to define where and how auditing events are collected, routed, and managed in your account. For example, to configure the primary metadata location that defines the region where all your {{site.data.keyword.atracker_short}} resource definitions are stored, run the following command:
 
 ```pre
-ibmcloud atracker setting update --metadata-region-primary <REGION>
+ibmcloud atracker setting update --metadata-region-primary REGION
 ```
 {: codeblock}
 
-Where `<REGION>` you can set the region to any of the supported locations where {{site.data.keyword.atracker_short}} is available.
+Where `REGION` you can set the region to any of the supported locations where {{site.data.keyword.atracker_short}} is available.
 
 When you set the metadata location, check any compliance or industry regulations that apply to data location.
 {: tip}
@@ -76,16 +76,16 @@ In this step, you will configure a route to redirect regional and global events 
 Run the following command to create the route:
 
 ```text
-ibmcloud atracker route create --name <ROUTE_NAME> --rules
+ibmcloud atracker route create --name ROUTE_NAME --rules ROUTING_RULES
 ```
 {: pre}
 
 Where
 
-`--name <ROUTE_NAME>`
+`--name ROUTE_NAME`
 :   The name to be given to the route.
 
-`--rules <ROUTING_RULES>`
+`--rules ROUTING_RULES` 
 :   A JSON formatted rule definition enclosed in single quotes. For example:
 
     ```json
@@ -139,12 +139,12 @@ us-south/2021-02-23T15/2021-02-23T15:38+05.log
 
 
 You can choose any of the following methods to list objects in a bucket:
-- [List objects in a given bucket by using the CLI](/docs/cloud-object-storage?topic=cloud-object-storage-ic-cos-cli#list-objects-v2).
+- [List objects in a given bucket by using the CLI](/docs/cloud-object-storage?topic=cloud-object-storage-ic-cos-cli#ic-list-objects-v2).
 - [List objects in a given bucket by using the API](/docs/cloud-object-storage?topic=cloud-object-storage-compatibility-api-bucket-operations#compatibility-api-list-objects-v2)
 - [List objects in a given bucket through the {{site.data.keyword.cloud_notm}} UI](/docs/atracker?topic=atracker-cos#cos_bucket_list_objects_ui).
 
 
-Alternatively, you can use pre-built, open-source and enterprise-ready [Terraform IBM Modules (TIM)](https://cloud.ibm.com/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim) for [{{site.data.keyword.atracker_full_notm}}](https://registry.terraform.io/modules/terraform-ibm-modules/activity-tracker/ibm/latest){: external} to configure targets, routes and account settings. This module simplifies the creation and management of targets and routes following the best practices.
+Alternatively, you can use pre-built, open-source and enterprise-ready [Terraform IBM Modules (TIM)](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim) for [{{site.data.keyword.atracker_full_notm}}](https://registry.terraform.io/modules/terraform-ibm-modules/activity-tracker/ibm/latest){: external} to configure targets, routes and account settings. This module simplifies the creation and management of targets and routes following the best practices.
 {: tip}
 
 

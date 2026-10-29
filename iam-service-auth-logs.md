@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-06-02"
+lastupdated: "2026-10-01"
 
 keywords:
 
@@ -96,7 +96,7 @@ For more information about all of the parameters that are available for this com
 Run the following command to create an authorization in the account where the target service is located when the {{site.data.keyword.atracker_full_notm}} service and the target service are in different accounts:
 
 ```sh
-ibmcloud iam authorization-policy-create atracker cloud-logs "Sender" [--target-service-instance-id <CLOUD_LOGS_SERVICE_INSTANCE> [--source-service-account SOURCE_SERVICE_ACCOUNT_GUID ]
+ibmcloud iam authorization-policy-create atracker cloud-logs "Sender" [--target-service-instance-id CLOUD_LOGS_SERVICE_INSTANCE [--source-service-account SOURCE_SERVICE_ACCOUNT_GUID ]
 ```
 {: codeblock}
 

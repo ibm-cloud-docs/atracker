@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-09-24"
+lastupdated: "2026-10-29"
 
 keywords:
 
@@ -131,7 +131,7 @@ The following table lists integration services that send auditing events:
 
 | Service     | CRN service name | Events |
 |-------------|------------------|--------|
-| [{{site.data.keyword.messagehub_full}}](/docs//EventStreams?topic=EventStreams-quick_setup_guide&interface=ui)| `messagehub` | [Location-based events](/docs/EventStreams?topic=EventStreams-at_events) |
+| [{{site.data.keyword.messagehub_full}}](/docs/EventStreams?topic=EventStreams-quick_setup_guide&interface=ui)| `messagehub` | [Location-based events](/docs/EventStreams?topic=EventStreams-at_events) |
 | [MQ on IBM Cloud](/docs/mqcloud?topic=mqcloud-getting_started) |`mqcloud` | [Location-based events](/docs/mqcloud?topic=mqcloud-getting_started) |
 |[{{site.data.keyword.apiconnect_long}}](/docs/apiconnect?topic=apiconnect-getting-started)| `apiconnect` | [Location-based events](/docs/apiconnect?topic=apiconnect-at_events) |
 {: caption="List of integration Cloud services" caption-side="top"}
@@ -182,6 +182,7 @@ The following table lists platform services that send auditing events:
 | [Software instance](/docs/account?topic=account-sw-instance-details) `[*]` | `globalcatalog-instance` | [Global events](/docs/account?topic=account-at_events_am#at_events_sw_instance) |
 | [Context-based restrictions](/docs/iam?topic=iam-context-restrictions-whatis) | `context-based-restrictions` | [Global events](/docs/iam?topic=iam-at_events_cbr) |
 | [Projects](/docs/secure-enterprise?topic=secure-enterprise-understanding-projects) | `project` | [Global events](/docs/secure-enterprise?topic=secure-enterprise-at_events) |
+| [IBM Paver](/docs/paver?topic=paver-getting-started) | `paver` | [Location-based events](/docs/paver?topic=paver-at_events) |
 {: caption="List of platform services" caption-side="top"}
 
 `[*]` - Event routing available to {{site.data.keyword.logs_full_notm}} only.

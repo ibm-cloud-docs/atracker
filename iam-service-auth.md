@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-09-03"
+lastupdated: "2026-09-29"
 
 keywords:
 
@@ -34,7 +34,7 @@ In a service to service (S2S) authorization:
 You can view whether the source service is located in the current account or another account by viewing the Source account column for the specific authorization on the [Authorizations](/iam/authorizations) page in the {{site.data.keyword.cloud}} console.{: tip}
 
 
-For more information, see [Using authorizations to grant access between services](/docs/account?topic=account-serviceauth).
+For more information, see [Using authorizations to grant access between services](/docs/account).
 
 
 ## Service to service authorizations
