@@ -2,7 +2,7 @@
 
 copyright:
   years:  2021, 2026
-lastupdated: "2026-09-29"
+lastupdated: "2026-10-29"
 
 keywords:
 
@@ -182,6 +182,7 @@ The following table lists platform services that send auditing events:
 | [Software instance](/docs/account?topic=account-sw-instance-details) `[*]` | `globalcatalog-instance` | [Global events](/docs/account?topic=account-at_events_am#at_events_sw_instance) |
 | [Context-based restrictions](/docs/iam?topic=iam-context-restrictions-whatis) | `context-based-restrictions` | [Global events](/docs/iam?topic=iam-at_events_cbr) |
 | [Projects](/docs/secure-enterprise?topic=secure-enterprise-understanding-projects) | `project` | [Global events](/docs/secure-enterprise?topic=secure-enterprise-at_events) |
+| [IBM Paver](/docs/paver?topic=paver-getting-started) | `paver` | [Location-based events](/docs/paver?topic=paver-at_events) |
 {: caption="List of platform services" caption-side="top"}
 
 `[*]` - Event routing available to {{site.data.keyword.logs_full_notm}} only.
